@@ -10,11 +10,11 @@
   </parent>
 
   <groupId>com.apollo.swing.component</groupId>
-  <artifactId>com.apollo.swing.component</artifactId>
+  <artifactId>com.apollo.swing.component.text</artifactId>
   <version>${version}</version>
 
-  <name>com.apollo.swing.component</name>
-  <url>https://github.com/apollolee/com.apollo.swing/tree/master/code/com.apollo.swing.component</url>
+  <name>com.apollo.swing.component.text</name>
+  <url>https://github.com/apollolee/com.apollo.swing/tree/master/code/com.apollo.swing.component.text</url>
 
   <dependencies>
     <dependency>
@@ -26,6 +26,12 @@
     <dependency>
       <groupId>com.apollo.swing</groupId>
       <artifactId>com.apollo.swing.laf</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.apollo.swing.component</groupId>
+      <artifactId>com.apollo.swing.component</artifactId>
       <version>1.0.0</version>
     </dependency>
   </dependencies>
