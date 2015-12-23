@@ -5,12 +5,12 @@
 
   <parent>
     <groupId>com.apollo.base.pom</groupId>
-    <artifactId>com.apollo.base.pom.core</artifactId>
+    <artifactId>swing</artifactId>
     <version>1.0.0</version>
   </parent>
 
   <groupId>com.apollo.swing.component</groupId>
-  <artifactId>com.apollo.swing.component.treetable</artifactId>
+  <artifactId>treetable</artifactId>
   <version>${version}</version>
 
   <name>com.apollo.swing.component.treetable</name>
@@ -18,33 +18,15 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.apollo.base</groupId>
-      <artifactId>com.apollo.base.util</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.apollo.swing</groupId>
-      <artifactId>com.apollo.swing.laf</artifactId>
-      <version>1.0.0</version>
+      <groupId>com.apollo.swing.component</groupId>
+      <artifactId>complextree</artifactId>
+      <version>${version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.apollo.swing.component</groupId>
-      <artifactId>com.apollo.swing.component</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.apollo.swing.component</groupId>
-      <artifactId>com.apollo.swing.component.complextree</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.apollo.swing.component</groupId>
-      <artifactId>com.apollo.swing.component.text</artifactId>
-      <version>1.0.0</version>
+      <artifactId>text</artifactId>
+      <version>${version}</version>
     </dependency>
   </dependencies>
 </project>

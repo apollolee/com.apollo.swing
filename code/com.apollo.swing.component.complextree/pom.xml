@@ -5,34 +5,14 @@
 
   <parent>
     <groupId>com.apollo.base.pom</groupId>
-    <artifactId>com.apollo.base.pom.core</artifactId>
+    <artifactId>swing</artifactId>
     <version>1.0.0</version>
   </parent>
 
   <groupId>com.apollo.swing.component</groupId>
-  <artifactId>com.apollo.swing.component.complextree</artifactId>
+  <artifactId>complextree</artifactId>
   <version>${version}</version>
 
   <name>com.apollo.swing.component.complextree</name>
   <url>https://github.com/apollolee/com.apollo.swing/tree/master/code/com.apollo.swing.component.complextree</url>
-
-  <dependencies>
-    <dependency>
-      <groupId>com.apollo.base</groupId>
-      <artifactId>com.apollo.base.util</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.apollo.swing</groupId>
-      <artifactId>com.apollo.swing.laf</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.apollo.swing.component</groupId>
-      <artifactId>com.apollo.swing.component</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-  </dependencies>
 </project>

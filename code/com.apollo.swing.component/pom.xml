@@ -5,12 +5,12 @@
 
   <parent>
     <groupId>com.apollo.base.pom</groupId>
-    <artifactId>com.apollo.base.pom.core</artifactId>
+    <artifactId>core</artifactId>
     <version>1.0.0</version>
   </parent>
 
-  <groupId>com.apollo.swing.component</groupId>
-  <artifactId>com.apollo.swing.component</artifactId>
+  <groupId>com.apollo.swing</groupId>
+  <artifactId>component</artifactId>
   <version>${version}</version>
 
   <name>com.apollo.swing.component</name>
@@ -19,14 +19,14 @@
   <dependencies>
     <dependency>
       <groupId>com.apollo.base</groupId>
-      <artifactId>com.apollo.base.util</artifactId>
-      <version>1.0.0</version>
+      <artifactId>util</artifactId>
+      <version>${version}</version>
     </dependency>
 
     <dependency>
       <groupId>com.apollo.swing</groupId>
-      <artifactId>com.apollo.swing.laf</artifactId>
-      <version>1.0.0</version>
+      <artifactId>laf</artifactId>
+      <version>${version}</version>
     </dependency>
   </dependencies>
 </project>
