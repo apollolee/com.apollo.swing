@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÏÂÎç04:01:02¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸‹åˆ04:01:02ã€‚
  */
 package com.apollo.swing.component.complextable.demo;
 
@@ -54,22 +54,22 @@ import com.apollo.swing.component.text.IntegerField;
 import com.apollo.swing.laf.TLookAndFeelManager;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTableDemo.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íÑİÊ¾Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTableDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨æ¼”ç¤ºç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplexTableManager, TableModelListener {
@@ -113,8 +113,8 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ³ÌĞòÈë¿Ú¡£
-     * @param args Èë¿Ú²ÎÊı¼¯¡£
+     * ç¨‹åºå…¥å£ã€‚
+     * @param args å…¥å£å‚æ•°é›†ã€‚
      */
     public static void main(String[] args) {
         TLookAndFeelManager.loadAlloy(false);
@@ -129,7 +129,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
              * @see java.awt.event.WindowAdapter#windowClosing(java.awt.event.WindowEvent)
              */
             public void windowClosing(WindowEvent evt) {
-                ctd.m_ct.close(); //ÔÚÊÊµ±µÄÊ±ºò¹Ø±Õ×ÛºÏ±í£¬ÒÔ´æ´¢ÁĞ±í¶¨ÖÆĞÅÏ¢
+                ctd.m_ct.close(); //åœ¨é€‚å½“çš„æ—¶å€™å…³é—­ç»¼åˆè¡¨ï¼Œä»¥å­˜å‚¨åˆ—è¡¨å®šåˆ¶ä¿¡æ¯
             }
 
         });
@@ -158,22 +158,22 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ×ÛºÏ±í¡£
+     * ç»¼åˆè¡¨ã€‚
      */
     protected ComplexTable m_ct;
 
     /**
-     * ĞÅÏ¢Ãæ°å¡£
+     * ä¿¡æ¯é¢æ¿ã€‚
      */
     protected JTextArea m_msgTa = new JTextArea();
 
     /**
-     * Çå¿ÕĞÅÏ¢¡£
+     * æ¸…ç©ºä¿¡æ¯ã€‚
      */
     protected Action m_clearMsg = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Çå¿ÕĞÅÏ¢", 'C');
+            BaseUtilities.setAction(this, "æ¸…ç©ºä¿¡æ¯", 'C');
         }
 
         /**
@@ -186,19 +186,19 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * ´òÓ¡ĞÅÏ¢¡£
+     * æ‰“å°ä¿¡æ¯ã€‚
      */
     protected Action m_print = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "´òÓ¡ĞÅÏ¢", 'P');
+            BaseUtilities.setAction(this, "æ‰“å°ä¿¡æ¯", 'P');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            m_ct.save(); //´òÓ¡Ç°ÏÈ±£´æÒ»ÏÂ
+            m_ct.save(); //æ‰“å°å‰å…ˆä¿å­˜ä¸€ä¸‹
 
             m_msgTa.append("---------------------------------------------------------\n");
 
@@ -206,13 +206,13 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
             ComplexTableModel ctm = m_ct.getComplexTableModel();
 
             for (int i = 0; i < rows.length; i++) {
-                m_msgTa.append("ĞÕÃû£º" + ctm.getCell(i, 0).getValue() + " , ");
-                m_msgTa.append("ĞÔ±ğ£º" + ctm.getCell(i, 1).getValue() + " , ");
-                m_msgTa.append("ÄêÁä£º" + ctm.getCell(i, 2).getValue() + " , ");
-                m_msgTa.append("µØÖ·£º" + ctm.getCell(i, 3).getValue() + " , ");
-                m_msgTa.append("»é·ñ£º" + ctm.getCell(i, 4).getValue() + " , ");
-                m_msgTa.append("Ğ½Ë®£º" + ctm.getCell(i, 5).getValue() + " , ");
-                m_msgTa.append("ÈËÆ·£º" + ctm.getCell(i, 6).getValue() + "\n");
+                m_msgTa.append("å§“åï¼š" + ctm.getCell(i, 0).getValue() + " , ");
+                m_msgTa.append("æ€§åˆ«ï¼š" + ctm.getCell(i, 1).getValue() + " , ");
+                m_msgTa.append("å¹´é¾„ï¼š" + ctm.getCell(i, 2).getValue() + " , ");
+                m_msgTa.append("åœ°å€ï¼š" + ctm.getCell(i, 3).getValue() + " , ");
+                m_msgTa.append("å©šå¦ï¼š" + ctm.getCell(i, 4).getValue() + " , ");
+                m_msgTa.append("è–ªæ°´ï¼š" + ctm.getCell(i, 5).getValue() + " , ");
+                m_msgTa.append("äººå“ï¼š" + ctm.getCell(i, 6).getValue() + "\n");
             }
 
             m_msgTa.append("---------------------------------------------------------\n");
@@ -221,12 +221,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * È«Ñ¡»é·ñ¡£
+     * å…¨é€‰å©šå¦ã€‚
      */
     protected Action m_selectAllMarry = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "È«Ñ¡", 'A');
+            BaseUtilities.setAction(this, "å…¨é€‰", 'A');
         }
 
         /**
@@ -241,12 +241,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * È«È¥Ñ¡»é·ñ¡£
+     * å…¨å»é€‰å©šå¦ã€‚
      */
     protected Action m_deselectAllMarry = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "È«È¥Ñ¡", 'M');
+            BaseUtilities.setAction(this, "å…¨å»é€‰", 'M');
         }
 
         /**
@@ -261,30 +261,30 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * »é·ñ¡£
+     * å©šå¦ã€‚
      */
     protected Action m_marry = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "»é·ñ", 'J');
+            BaseUtilities.setAction(this, "å©šå¦", 'J');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            JOptionPane.showMessageDialog(ComplexTableDemo.this, "ÎÒÊÇ»é·ñÁĞ£¡");
+            JOptionPane.showMessageDialog(ComplexTableDemo.this, "æˆ‘æ˜¯å©šå¦åˆ—ï¼");
         }
 
     };
 
     /**
-     * ¼ÓĞ½¡£
+     * åŠ è–ªã€‚
      */
     protected Action m_raises = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "¼ÓĞ½", 'J');
+            BaseUtilities.setAction(this, "åŠ è–ª", 'J');
         }
 
         /**
@@ -295,74 +295,74 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
             int rowIndex = m_ct.getSelectedRow();
             ComplexTableRow row = model.getRow(rowIndex);
             ComplexTableCell pay = row.getCell(5);
-            pay.setValue(((BigInteger) pay.getValue()).add(BigInteger.valueOf(500))); //¸ÄÖµ
-            model.fireTableCellUpdated(rowIndex, 5); //·¢Í¨Öª
-            JOptionPane.showMessageDialog(ComplexTableDemo.this, "¼ÓĞ½500£¡");
+            pay.setValue(((BigInteger) pay.getValue()).add(BigInteger.valueOf(500))); //æ”¹å€¼
+            model.fireTableCellUpdated(rowIndex, 5); //å‘é€šçŸ¥
+            JOptionPane.showMessageDialog(ComplexTableDemo.this, "åŠ è–ª500ï¼");
         }
 
     };
 
     /**
-     * ÆæÊıĞĞ¡£
+     * å¥‡æ•°è¡Œã€‚
      */
     protected Action m_odd = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÆæÊıĞĞ", 'J');
+            BaseUtilities.setAction(this, "å¥‡æ•°è¡Œ", 'J');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            JOptionPane.showMessageDialog(ComplexTableDemo.this, "ÎÒÊÇ£¨Ä£ĞÍ²ã£©ÆæÊıĞĞ£¡");
+            JOptionPane.showMessageDialog(ComplexTableDemo.this, "æˆ‘æ˜¯ï¼ˆæ¨¡å‹å±‚ï¼‰å¥‡æ•°è¡Œï¼");
         }
 
     };
 
     /**
-     * Å¼ÊıĞĞ¡£
+     * å¶æ•°è¡Œã€‚
      */
     protected Action m_even = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Å¼ÊıĞĞ", 'O');
+            BaseUtilities.setAction(this, "å¶æ•°è¡Œ", 'O');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            JOptionPane.showMessageDialog(ComplexTableDemo.this, "ÎÒÊÇ£¨Ä£ĞÍ²ã£©Å¼ÊıĞĞ£¡");
+            JOptionPane.showMessageDialog(ComplexTableDemo.this, "æˆ‘æ˜¯ï¼ˆæ¨¡å‹å±‚ï¼‰å¶æ•°è¡Œï¼");
         }
 
     };
 
     /**
-     * ĞĞ¡£
+     * è¡Œã€‚
      */
     protected Action m_row = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ĞĞ", 'J');
+            BaseUtilities.setAction(this, "è¡Œ", 'J');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            JOptionPane.showMessageDialog(ComplexTableDemo.this, "ÎÒÊÇĞĞ£¡");
+            JOptionPane.showMessageDialog(ComplexTableDemo.this, "æˆ‘æ˜¯è¡Œï¼");
         }
 
     };
 
     /**
-     * ÊÇ·ñÔÊĞíÅÅĞò¡£
+     * æ˜¯å¦å…è®¸æ’åºã€‚
      */
     protected JCheckBoxMenuItem m_sortable = new JCheckBoxMenuItem(new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÔÊĞíÅÅĞò", 'O');
+            BaseUtilities.setAction(this, "å…è®¸æ’åº", 'O');
         }
 
         /**
@@ -375,12 +375,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     });
 
     /**
-     * Ìí¼ÓÁĞ¡£
+     * æ·»åŠ åˆ—ã€‚
      */
     protected Action m_addColumn = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Ìí¼ÓÁĞ", 'L');
+            BaseUtilities.setAction(this, "æ·»åŠ åˆ—", 'L');
         }
 
         /**
@@ -391,14 +391,14 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
 
             ComplexTableRow[] rows = m_ct.getComplexTableModel().getRows();
             for (int i = 0; i < rows.length; i++) {
-                rows[i].add(new ComplexTableCell("ĞÂÔöÖµ" + columnCount));
+                rows[i].add(new ComplexTableCell("æ–°å¢å€¼" + columnCount));
             }
 
-            ComplexTableColumn column = ComplexTableColumn.create("ĞÂÔöÁĞ" + columnCount);
+            ComplexTableColumn column = ComplexTableColumn.create("æ–°å¢åˆ—" + columnCount);
             column.addAction(new AbstractAction() {
 
                 {
-                    BaseUtilities.setAction(this, "É¾³ı´ËÁĞ", 'E');
+                    BaseUtilities.setAction(this, "åˆ é™¤æ­¤åˆ—", 'E');
                 }
 
                 /**
@@ -420,12 +420,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * ¸Ä±äÊı¾İ¡£
+     * æ”¹å˜æ•°æ®ã€‚
      */
     protected Action m_changeData = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "¸Ä±ä½á¹¹", 'S');
+            BaseUtilities.setAction(this, "æ”¹å˜ç»“æ„", 'S');
         }
 
         /**
@@ -438,12 +438,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * Ê¹ÄÜ¡£
+     * ä½¿èƒ½ã€‚
      */
     protected Action m_isEnabled = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Ê¹ÄÜ", 'S');
+            BaseUtilities.setAction(this, "ä½¿èƒ½", 'S');
         }
 
         /**
@@ -456,12 +456,12 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     };
 
     /**
-     * Õ¹ÏÖ±ê¼Ç¡£
+     * å±•ç°æ ‡è®°ã€‚
      */
     protected JCheckBoxMenuItem m_isEnabledShowFlag = new JCheckBoxMenuItem(new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Õ¹ÏÖ±ê¼Ç", 'F');
+            BaseUtilities.setAction(this, "å±•ç°æ ‡è®°", 'F');
         }
 
         /**
@@ -474,14 +474,14 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     });
 
     /**
-     * ½ø¶ÈÌõäÖÈ¾Æ÷¡£
+     * è¿›åº¦æ¡æ¸²æŸ“å™¨ã€‚
      */
     protected TableCellRenderer m_pbRenderer = new TableCellRenderer() {
 
         private final Border noFocusBorder = new EmptyBorder(1, 1, 1, 1);
 
         /**
-         * ½ø¶ÈÌõ¡£
+         * è¿›åº¦æ¡ã€‚
          */
         protected JProgressBar m_pb = new JProgressBar();
 
@@ -532,7 +532,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public ComplexTableDemo() {
         super(new GridBagLayout());
@@ -559,8 +559,8 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
                                 true,
                                 bodyDefaultCustoms,
                                 rowHeaderDefaultCustoms);
-        m_ct.getModel().addTableModelListener(this); //ÕâÀï×¢²áÄ£ĞÍ¼àÌıÆ÷ÊÇÎªÁËÍê³ÉÄ³Ğ©Ô¼Êø¡£
-        //m_ct.setRowHeight(25); //JComboBoxÌ«¸ß£¬È±Ê¡ĞĞ¸ß²»¹»
+        m_ct.getModel().addTableModelListener(this); //è¿™é‡Œæ³¨å†Œæ¨¡å‹ç›‘å¬å™¨æ˜¯ä¸ºäº†å®ŒæˆæŸäº›çº¦æŸã€‚
+        //m_ct.setRowHeight(25); //JComboBoxå¤ªé«˜ï¼Œç¼ºçœè¡Œé«˜ä¸å¤Ÿ
         //m_ct.setReadMode(true);
         //m_ct.setEnabledShowFlag(false);
 
@@ -569,8 +569,8 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
         m_isEnabledShowFlag.setSelected(m_ct.isEnabledShowFlag());
         m_ct.addMenuItem(m_isEnabledShowFlag);
 
-        /* Ìí¼Ó±í¼¶µÄÓÒ¼ü²Ëµ¥¶¯×÷ */
-        JMenu menu = new JMenu("²âÊÔ¹¦ÄÜ");
+        /* æ·»åŠ è¡¨çº§çš„å³é”®èœå•åŠ¨ä½œ */
+        JMenu menu = new JMenu("æµ‹è¯•åŠŸèƒ½");
 
         menu.add(m_sortable);
         menu.add(m_addColumn);
@@ -587,10 +587,10 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
         m_msgTa.setEditable(false);
 
         JScrollPane ctSp = new JScrollPane(m_ct);
-        ctSp.setBorder(BorderFactory.createTitledBorder("×ÛºÏ±í"));
+        ctSp.setBorder(BorderFactory.createTitledBorder("ç»¼åˆè¡¨"));
 
         JScrollPane msgTaSp = new JScrollPane(m_msgTa);
-        msgTaSp.setBorder(BorderFactory.createTitledBorder("ÏûÏ¢¼¯"));
+        msgTaSp.setBorder(BorderFactory.createTitledBorder("æ¶ˆæ¯é›†"));
         JSplitPane sp = new JSplitPane(JSplitPane.VERTICAL_SPLIT, ctSp, msgTaSp);
         sp.setDividerLocation(300);
 
@@ -637,7 +637,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     /*------------------------------------- IComplexTableManager Public Method -------------------------------------*/
 
     /**
-     * ÓÃÓÚÌí¼ÓĞÂĞĞÊ±µÄÈ±Ê¡Êı¾İ¡£
+     * ç”¨äºæ·»åŠ æ–°è¡Œæ—¶çš„ç¼ºçœæ•°æ®ã€‚
      * @see com.apollo.swing.component.complextable.IComplexTableManager#createRow(com.apollo.swing.component.complextable.ComplexTable, int)
      */
     public ComplexTableRow createRow(ComplexTable table, int index) {
@@ -645,7 +645,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
 
         row.add(new ComplexTableCell("Superman"));
 
-        ComplexTableCell sex = new ComplexTableCell("ÄĞ");
+        ComplexTableCell sex = new ComplexTableCell("ç”·");
         sex.setEditable(true);
         row.add(sex);
 
@@ -653,7 +653,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
         age.setEditable(true);
         row.add(age);
 
-        ComplexTableCell addr = new ComplexTableCell("»ğĞÇ");
+        ComplexTableCell addr = new ComplexTableCell("ç«æ˜Ÿ");
         addr.setEditable(true);
         row.add(addr);
 
@@ -683,63 +683,63 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ´´½¨ÁĞ¼¯¡£
-     * @return ÁĞ¼¯¡£
+     * åˆ›å»ºåˆ—é›†ã€‚
+     * @return åˆ—é›†ã€‚
      */
     protected ComplexTableColumn[] createColumns() {
         ComplexTableColumn[] columns = new ComplexTableColumn[7];
 
-        columns[0] = new ComplexTableColumn("ĞÕÃû");
+        columns[0] = new ComplexTableColumn("å§“å");
         columns[0].setCellEditor(new DefaultCellEditor(new JTextField()));
         columns[0].setMinWidth(20);
         columns[0].setMaxWidth(200);
-        columns[0].setPreferredWidth(100); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[0].setPreferredWidth(100); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[1] = new ComplexTableColumn("ĞÔ±ğ");
-        columns[1].setCellEditor(new DefaultCellEditor(new JComboBox(new String[] { "ÄĞ", "Å®" })));
+        columns[1] = new ComplexTableColumn("æ€§åˆ«");
+        columns[1].setCellEditor(new DefaultCellEditor(new JComboBox(new String[] { "ç”·", "å¥³" })));
         columns[1].setMinWidth(20);
         columns[1].setMaxWidth(100);
-        columns[1].setPreferredWidth(50); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[1].setPreferredWidth(50); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[2] = new ComplexTableColumn("ÄêÁä");
+        columns[2] = new ComplexTableColumn("å¹´é¾„");
         columns[2].setCellEditor(new IntegerFieldCellEditor(2, 1, 150));
         columns[2].setMinWidth(100);
         columns[2].setMaxWidth(200);
-        columns[2].setPreferredWidth(150); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[2].setPreferredWidth(150); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[3] = new ComplexTableColumn("µØÖ·");
-        columns[3].setEditable(false); //´ÓÁĞÉÏ½ûÖ¹±à¼­£¬ µ¥Ôª¸ñÉÏÉèÖÃµÄ¶¼ÎŞĞ§ÁË¡£
+        columns[3] = new ComplexTableColumn("åœ°å€");
+        columns[3].setEditable(false); //ä»åˆ—ä¸Šç¦æ­¢ç¼–è¾‘ï¼Œ å•å…ƒæ ¼ä¸Šè®¾ç½®çš„éƒ½æ— æ•ˆäº†ã€‚
         columns[3].setMinWidth(50);
         columns[3].setMaxWidth(500);
-        columns[3].setPreferredWidth(50); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[3].setPreferredWidth(50); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[4] = new ComplexTableColumn("»é·ñ");
-        columns[4].setType(Boolean.class); //ÉèÖÃ¶ÔÏóÀàĞÍ
-        columns[4].addHeaderAction(m_selectAllMarry); //Ìí¼ÓÁĞ¼¶µÄÓÒ¼ü²Ëµ¥¶¯×÷£¨ÔÚÁĞÍ·ÉÏ³öÏÖ£©
-        columns[4].addCellAction(m_deselectAllMarry); //Ìí¼ÓÁĞ¼¶µÄÓÒ¼ü²Ëµ¥¶¯×÷£¨ÔÚÁĞµÄµ¥Ôª¸ñÉÏ³öÏÖ£©
-        columns[4].addAction(m_marry); //Ìí¼ÓÁĞ¼¶µÄÓÒ¼ü²Ëµ¥¶¯×÷£¨ÔÚÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñÉÏ¶¼»á³öÏÖ£©
+        columns[4] = new ComplexTableColumn("å©šå¦");
+        columns[4].setType(Boolean.class); //è®¾ç½®å¯¹è±¡ç±»å‹
+        columns[4].addHeaderAction(m_selectAllMarry); //æ·»åŠ åˆ—çº§çš„å³é”®èœå•åŠ¨ä½œï¼ˆåœ¨åˆ—å¤´ä¸Šå‡ºç°ï¼‰
+        columns[4].addCellAction(m_deselectAllMarry); //æ·»åŠ åˆ—çº§çš„å³é”®èœå•åŠ¨ä½œï¼ˆåœ¨åˆ—çš„å•å…ƒæ ¼ä¸Šå‡ºç°ï¼‰
+        columns[4].addAction(m_marry); //æ·»åŠ åˆ—çº§çš„å³é”®èœå•åŠ¨ä½œï¼ˆåœ¨åˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼ä¸Šéƒ½ä¼šå‡ºç°ï¼‰
         columns[4].setMinWidth(20);
         columns[4].setMaxWidth(50);
-        columns[4].setPreferredWidth(50); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[4].setPreferredWidth(50); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[5] = new ComplexTableColumn("Ğ½Ë®");
+        columns[5] = new ComplexTableColumn("è–ªæ°´");
         columns[5].setCellEditor(new FormattedFieldCellEditor(new IntegerField(4, 1000, 11000)));
         columns[5].setMinWidth(50);
         columns[5].setMaxWidth(150);
-        columns[5].setPreferredWidth(100); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[5].setPreferredWidth(100); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
-        columns[6] = new ComplexTableColumn("ÈËÆ·");
+        columns[6] = new ComplexTableColumn("äººå“");
         columns[6].setCellRenderer(m_pbRenderer);
         columns[6].setMinWidth(100);
         columns[6].setMaxWidth(300);
-        columns[6].setPreferredWidth(150); //¿ÉÒÔÉèÖÃ³õÊ¼¿í¶È
+        columns[6].setPreferredWidth(150); //å¯ä»¥è®¾ç½®åˆå§‹å®½åº¦
 
         return columns;
     }
 
     /**
-     * ´´½¨ĞĞ¼¯¡£
-     * @return ĞĞ¼¯¡£
+     * åˆ›å»ºè¡Œé›†ã€‚
+     * @return è¡Œé›†ã€‚
      */
     protected ComplexTableRow[] createRows() {
         ComplexTableRow[] rows = new ComplexTableRow[5];
@@ -752,7 +752,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
 
             rows[i].add(name);
 
-            ComplexTableCell sex = new ComplexTableCell("ÄĞ");
+            ComplexTableCell sex = new ComplexTableCell("ç”·");
             sex.setEditable(true);
             rows[i].add(sex);
 
@@ -760,10 +760,10 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
             age.setEditable(true);
             rows[i].add(age);
 
-            ComplexTableCell addr = new ComplexTableCell("ÉîÛÚ");
-            addr.setEditable(true); //ÕâÀïÒòÎªÁĞÉÏÏŞÖÆ×¡ÁË£¬ËùÒÔÕâÀïÉèÖÃtrueÒ²ÎŞĞ§£¬ÕâÀï½öÑİÊ¾Ò»ÏÂ¡£
+            ComplexTableCell addr = new ComplexTableCell("æ·±åœ³");
+            addr.setEditable(true); //è¿™é‡Œå› ä¸ºåˆ—ä¸Šé™åˆ¶ä½äº†ï¼Œæ‰€ä»¥è¿™é‡Œè®¾ç½®trueä¹Ÿæ— æ•ˆï¼Œè¿™é‡Œä»…æ¼”ç¤ºä¸€ä¸‹ã€‚
             rows[i].add(addr);
-            addr.setBackground(Color.ORANGE); //ÉèÖÃµ¥Ôª¸ñµÄ±³¾°É«£¨½öÏŞÓÚÈ±Ê¡»ò¼òµ¥µÄäÖÈ¾Æ÷£©
+            addr.setBackground(Color.ORANGE); //è®¾ç½®å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼ˆä»…é™äºç¼ºçœæˆ–ç®€å•çš„æ¸²æŸ“å™¨ï¼‰
 
             ComplexTableCell marry = new ComplexTableCell(Boolean.FALSE);
             marry.setEditable(true);
@@ -771,13 +771,13 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
 
             ComplexTableCell pay = new ComplexTableCell(BigInteger.valueOf((long) (Math.random() * 10000) + 1000));
             pay.setEditable(true);
-            pay.setForeground(Color.BLUE); //ÉèÖÃµ¥Ôª¸ñµÄÇ°¾°É«£¨½öÏŞÓÚÈ±Ê¡»ò¼òµ¥µÄäÖÈ¾Æ÷£©
+            pay.setForeground(Color.BLUE); //è®¾ç½®å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼ˆä»…é™äºç¼ºçœæˆ–ç®€å•çš„æ¸²æŸ“å™¨ï¼‰
             rows[i].add(pay);
 
             ComplexTableCell rp = new ComplexTableCell(BigInteger.valueOf((long) (Math.random() * 100)));
             rows[i].add(rp);
 
-            /* Ìí¼ÓĞĞ¼¶µÄÓÒ¼ü²Ëµ¥¶¯×÷ */
+            /* æ·»åŠ è¡Œçº§çš„å³é”®èœå•åŠ¨ä½œ */
             rows[i].addAction(m_row);
             if ((i + 1) % 2 == 0) {
                 rows[i].addHeaderAction(m_even);
@@ -791,8 +791,8 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     }
 
     /**
-     * Ô¼Êø»é·ñÁĞ¡£
-     * @param row ĞĞ¡£
+     * çº¦æŸå©šå¦åˆ—ã€‚
+     * @param row è¡Œã€‚
      */
     protected void constrainMarry(ComplexTableRow row) {
         try {
@@ -800,7 +800,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
             int age = ((BigInteger) row.getCell(2).getValue()).intValue();
             ComplexTableCell marry = row.getCell(4);
 
-            if (age >= ("ÄĞ".equals(sex) ? 22 : 20)) { //ÄĞ22£¬Å®20²ÅÄÜ½á»é
+            if (age >= ("ç”·".equals(sex) ? 22 : 20)) { //ç”·22ï¼Œå¥³20æ‰èƒ½ç»“å©š
                 if (!marry.isEditable()) {
                     marry.setEditable(true);
                     m_ct.repaintAll();
@@ -815,7 +815,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
                 if (marry.getValue().equals(Boolean.TRUE)) {
                     marry.setValue(Boolean.FALSE);
                     ComplexTableModel model = m_ct.getComplexTableModel();
-                    model.fireTableCellUpdated(model.getRowIndex(row), 4); //·¢Í¨Öª
+                    model.fireTableCellUpdated(model.getRowIndex(row), 4); //å‘é€šçŸ¥
                 }
             }
 
@@ -825,15 +825,15 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     }
 
     /**
-     * Ô¼ÊøĞ½Ë®ÁĞ¡£
-     * @param row ĞĞ¡£
+     * çº¦æŸè–ªæ°´åˆ—ã€‚
+     * @param row è¡Œã€‚
      */
     protected void constrainPay(ComplexTableRow row) {
         try {
             ComplexTableCell pay = row.getCell(5);
             ComplexTableCell rp = row.getCell(6);
 
-            if (((BigInteger) pay.getValue()).intValue() < 5000 && ((BigInteger) rp.getValue()).intValue() > 50) { //Ğ½Ë®5000Ò»ÏÂ£¬ÈËÆ·50ÒÔÉÏ²ÅÄÜ¼ÓĞ½
+            if (((BigInteger) pay.getValue()).intValue() < 5000 && ((BigInteger) rp.getValue()).intValue() > 50) { //è–ªæ°´5000ä¸€ä¸‹ï¼Œäººå“50ä»¥ä¸Šæ‰èƒ½åŠ è–ª
                 if (!pay.containsAction(m_raises)) {
                     pay.addAction(m_raises);
                 }
@@ -848,7 +848,7 @@ public class ComplexTableDemo extends JPanel implements IBaseConstants, IComplex
     }
 
     /**
-     * Ô¼Êø¡£
+     * çº¦æŸã€‚
      */
     protected void constrain() {
         for (int i = 0, size = m_ct.getRowCount(); i < size; i++) {

@@ -1,25 +1,25 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-5-11 ÏÂÎç01:59:06¡£
+ * æ­¤ä»£ç åˆ›å»ºäºŽ 2008-5-11 ä¸‹åˆ01:59:06ã€‚
  */
 package com.apollo.swing.component.complextable;
 
 /**
- * <p>ÎÄ¼þÃû³Æ£ºIComplexTableManager.java</p>
- * <p>ÀàÐÍÃèÊö£º×ÛºÏ±í¹ÜÀíÆ÷½Ó¿Ú£¬Ö÷ÒªÓÃÓÚÒ»Ð©ÌØÊâµÄ×ÛºÏÀ©Õ¹¹¦ÄÜ£¬ºóÐøÓÉ¿ÉÄÜ½øÒ»²½À©³ä½Ó¿Ú¡£</p>
- * <p>°æÈ¨ËùÓÐ£º°æÈ¨ËùÓÐ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈÝÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-11</p>
- * <p>ÐÞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šIComplexTableManager.java</p>
+ * <p>ç±»åž‹æè¿°ï¼šç»¼åˆè¡¨ç®¡ç†å™¨æŽ¥å£ï¼Œä¸»è¦ç”¨äºŽä¸€äº›ç‰¹æ®Šçš„ç»¼åˆæ‰©å±•åŠŸèƒ½ï¼ŒåŽç»­ç”±å¯èƒ½è¿›ä¸€æ­¥æ‰©å……æŽ¥å£ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜Žï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-11</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ÐÞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ÐÞ ¸Ä ÈË£º
- *    ÐÞ¸ÄÄÚÈÝ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æŽé•‡
  * @since T3 V1.1
  */
 public interface IComplexTableManager {
@@ -31,11 +31,11 @@ public interface IComplexTableManager {
     /*------------------------------------- Public Abstract Method -------------------------------------*/
 
     /**
-     * <p>×ÛºÏ±í²Ëµ¥ÉÏÈç¹ûÔÊÐí²åÈëÐÂÐÐ£¬ÔòÐÂÐÐµÄÐÐÊý¾Ý³õÊ¼»¯¿ÉÍ¨¹ýÕâ¸ö·½·¨»Øµ÷Éú³É³öÀ´¡£</p>
-     * <p>×¢Òâ£ºÈç¹û²»ÊµÏÖÕâ¸ö·½·¨¶øÓÖÔÊÐí²åÈëÐÂÐÐ£¬ÔòÈ±Ê¡µÄÃ¿ÐÐÊý¾Ý¶¼ÊÇ¿Õ×Ö·û´®ÀàÐÍ£¬ÕâÑùÊÇÓÐ¿ÉÄÜ·¢ÉúÄ£ÐÍ²ãvalueÖµ×ªÐÍÒì³£µÄ¡£</p>
-     * @param table ÐèÒªÔö¼ÓÐÐµÄ×ÛºÏ±í¶ÔÏó¡£
-     * @param index ÐÂµÄÐÐËùÔÚµÄË÷Òý¡£
-     * @return ÐÐÊý¾Ý¶ÔÏó¡£
+     * <p>ç»¼åˆè¡¨èœå•ä¸Šå¦‚æžœå…è®¸æ’å…¥æ–°è¡Œï¼Œåˆ™æ–°è¡Œçš„è¡Œæ•°æ®åˆå§‹åŒ–å¯é€šè¿‡è¿™ä¸ªæ–¹æ³•å›žè°ƒç”Ÿæˆå‡ºæ¥ã€‚</p>
+     * <p>æ³¨æ„ï¼šå¦‚æžœä¸å®žçŽ°è¿™ä¸ªæ–¹æ³•è€Œåˆå…è®¸æ’å…¥æ–°è¡Œï¼Œåˆ™ç¼ºçœçš„æ¯è¡Œæ•°æ®éƒ½æ˜¯ç©ºå­—ç¬¦ä¸²ç±»åž‹ï¼Œè¿™æ ·æ˜¯æœ‰å¯èƒ½å‘ç”Ÿæ¨¡åž‹å±‚valueå€¼è½¬åž‹å¼‚å¸¸çš„ã€‚</p>
+     * @param table éœ€è¦å¢žåŠ è¡Œçš„ç»¼åˆè¡¨å¯¹è±¡ã€‚
+     * @param index æ–°çš„è¡Œæ‰€åœ¨çš„ç´¢å¼•ã€‚
+     * @return è¡Œæ•°æ®å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public abstract ComplexTableRow createRow(ComplexTable table, int index);

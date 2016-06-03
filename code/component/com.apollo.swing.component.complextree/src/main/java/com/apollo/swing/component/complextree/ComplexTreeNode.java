@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-13 ÉÏÎç09:27:26
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-13 ä¸Šåˆ09:27:26
  */
 package com.apollo.swing.component.complextree;
 
@@ -9,22 +9,22 @@ import javax.swing.tree.TreeCellEditor;
 import javax.swing.tree.TreeCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeNode.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷½ÚµãÀà£¬·â×°ÁË×ÛºÏÊ÷½ÚµãµÄ²Ù×÷ºÍÊı¾İ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-13</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeNode.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘èŠ‚ç‚¹ç±»ï¼Œå°è£…äº†ç»¼åˆæ ‘èŠ‚ç‚¹çš„æ“ä½œå’Œæ•°æ®ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-13</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -89,27 +89,27 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶½ÚµãÊÇ·ñ¿É±à¼­¡£
+     * æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
      */
     protected volatile boolean m_isEditable = false;
 
     /**
-     * ½ÚµãµÄäÖÈ¾Æ÷¡£
+     * èŠ‚ç‚¹çš„æ¸²æŸ“å™¨ã€‚
      */
     protected TreeCellRenderer m_renderer = null;
 
     /**
-     * ½Úµã±à¼­Æ÷£¬ÓÉÓÚµã»÷Ñ¡Ôñ½Úµã¸´Ñ¡¿òµÄÏŞÖÆµ¼ÖÂÁËshouldSelectCell()·½·¨²»»á±»Õı³£µ÷ÓÃµ½£¬ËùÒÔm_editor²»±ØÊµÏÖ´Ë·½·¨¡£
+     * èŠ‚ç‚¹ç¼–è¾‘å™¨ï¼Œç”±äºç‚¹å‡»é€‰æ‹©èŠ‚ç‚¹å¤é€‰æ¡†çš„é™åˆ¶å¯¼è‡´äº†shouldSelectCell()æ–¹æ³•ä¸ä¼šè¢«æ­£å¸¸è°ƒç”¨åˆ°ï¼Œæ‰€ä»¥m_editorä¸å¿…å®ç°æ­¤æ–¹æ³•ã€‚
      */
     protected TreeCellEditor m_editor = null;
 
     /**
-     * ±êÊ¶½ÚµãÊÇ·ñ×Ô¶¯£¨ÉèÖÃ£©¹¤¾ßÌáÊ¾¡£
+     * æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦è‡ªåŠ¨ï¼ˆè®¾ç½®ï¼‰å·¥å…·æç¤ºã€‚
      */
     protected boolean m_isAutoToolTip = false;
 
     /**
-     * ¹¤¾ßÌáÊ¾ÎÄ±¾¡£
+     * å·¥å…·æç¤ºæ–‡æœ¬ã€‚
      */
     protected String m_toolTipText = null;
 
@@ -128,7 +128,7 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeNode() {
@@ -136,8 +136,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeNode(Object userObject) {
@@ -145,9 +145,9 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
-     * @param allowsChildren ±êÊ¶ÊÇ·ñÔÊĞí¸Ã½ÚµãÓµÓĞ×Ó½Úµã¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
+     * @param allowsChildren æ ‡è¯†æ˜¯å¦å…è®¸è¯¥èŠ‚ç‚¹æ‹¥æœ‰å­èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeNode(Object userObject, boolean allowsChildren) {
@@ -169,8 +169,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * ÅĞ¶Ï½ÚµãÊÇ·ñ¿É±à¼­¡£
-     * @return ±êÊ¶½ÚµãÊÇ·ñ¿É±à¼­¡£
+     * åˆ¤æ–­èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
+     * @return æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
      * @since T3 V1.1
      */
     public boolean isEditable() {
@@ -178,8 +178,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÉèÖÃ½ÚµãÊÇ·ñ¿É±à¼­¡£
-     * @param isEditable ±êÊ¶½ÚµãÊÇ·ñ¿É±à¼­¡£
+     * è®¾ç½®èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
+     * @param isEditable æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
      * @since T3 V1.1
      */
     public void setEditable(boolean isEditable) {
@@ -187,8 +187,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * »ñÈ¡½ÚµãäÖÈ¾Æ÷¡£
-     * @return ½ÚµãäÖÈ¾Æ÷¡£
+     * è·å–èŠ‚ç‚¹æ¸²æŸ“å™¨ã€‚
+     * @return èŠ‚ç‚¹æ¸²æŸ“å™¨ã€‚
      * @since T3 V1.1
      */
     public TreeCellRenderer getRenderer() {
@@ -196,8 +196,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÉèÖÃ½ÚµãäÖÈ¾Æ÷¡£
-     * @param renderer ½ÚµãäÖÈ¾Æ÷¡£
+     * è®¾ç½®èŠ‚ç‚¹æ¸²æŸ“å™¨ã€‚
+     * @param renderer èŠ‚ç‚¹æ¸²æŸ“å™¨ã€‚
      * @since T3 V1.1
      */
     public void setRenderer(TreeCellRenderer renderer) {
@@ -205,8 +205,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * »ñÈ¡½Úµã±à¼­Æ÷¡£
-     * @return ½Úµã±à¼­Æ÷¡£
+     * è·å–èŠ‚ç‚¹ç¼–è¾‘å™¨ã€‚
+     * @return èŠ‚ç‚¹ç¼–è¾‘å™¨ã€‚
      * @since T3 V1.1
      */
     public TreeCellEditor getEditor() {
@@ -214,8 +214,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÉèÖÃ½Úµã±à¼­Æ÷¡£
-     * @param editor ½Úµã±à¼­Æ÷¡£
+     * è®¾ç½®èŠ‚ç‚¹ç¼–è¾‘å™¨ã€‚
+     * @param editor èŠ‚ç‚¹ç¼–è¾‘å™¨ã€‚
      * @since T3 V1.1
      */
     public void setEditor(TreeCellEditor editor) {
@@ -223,8 +223,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÅĞ¶Ï½ÚµãÊÇ·ñ×Ô¶¯£¨ÉèÖÃ£©¹¤¾ßÌáÊ¾£¬¼´¹â±êÒÆµ½½Úµã£¬×Ô¶¯µ¯³öÌáÊ¾ĞÅÏ¢£¬ĞÅÏ¢ÄÚÈİÎª½ÚµãµÄuserObjectµÄtoString£¬¶ÔÓÚ³¤½Úµã±»¹ö¶¯Ãæ°åÕÚ×¡µÄÇé¿öÏÂºÜÓĞÓÃ¡£
-     * @return ±êÊ¶½ÚµãÊÇ·ñ×Ô¶¯£¨ÉèÖÃ£©¹¤¾ßÌáÊ¾¡£
+     * åˆ¤æ–­èŠ‚ç‚¹æ˜¯å¦è‡ªåŠ¨ï¼ˆè®¾ç½®ï¼‰å·¥å…·æç¤ºï¼Œå³å…‰æ ‡ç§»åˆ°èŠ‚ç‚¹ï¼Œè‡ªåŠ¨å¼¹å‡ºæç¤ºä¿¡æ¯ï¼Œä¿¡æ¯å†…å®¹ä¸ºèŠ‚ç‚¹çš„userObjectçš„toStringï¼Œå¯¹äºé•¿èŠ‚ç‚¹è¢«æ»šåŠ¨é¢æ¿é®ä½çš„æƒ…å†µä¸‹å¾ˆæœ‰ç”¨ã€‚
+     * @return æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦è‡ªåŠ¨ï¼ˆè®¾ç½®ï¼‰å·¥å…·æç¤ºã€‚
      * @since T3 V1.1
      */
     public boolean isAutoToolTip() {
@@ -232,8 +232,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÉèÖÃ½ÚµãÊÇ·ñ×Ô¶¯£¨ÉèÖÃ£©¹¤¾ßÌáÊ¾£¬¼´¹â±êÒÆµ½½Úµã£¬×Ô¶¯µ¯³öÌáÊ¾ĞÅÏ¢£¬ĞÅÏ¢ÄÚÈİÎª½ÚµãµÄuserObjectµÄtoString£¬¶ÔÓÚ³¤½Úµã±»¹ö¶¯Ãæ°åÕÚ×¡µÄÇé¿öÏÂºÜÓĞÓÃ¡£
-     * @param isAutoToolTip ±êÊ¶½ÚµãÊÇ·ñ×Ô¶¯£¨ÉèÖÃ£©¹¤¾ßÌáÊ¾¡£
+     * è®¾ç½®èŠ‚ç‚¹æ˜¯å¦è‡ªåŠ¨ï¼ˆè®¾ç½®ï¼‰å·¥å…·æç¤ºï¼Œå³å…‰æ ‡ç§»åˆ°èŠ‚ç‚¹ï¼Œè‡ªåŠ¨å¼¹å‡ºæç¤ºä¿¡æ¯ï¼Œä¿¡æ¯å†…å®¹ä¸ºèŠ‚ç‚¹çš„userObjectçš„toStringï¼Œå¯¹äºé•¿èŠ‚ç‚¹è¢«æ»šåŠ¨é¢æ¿é®ä½çš„æƒ…å†µä¸‹å¾ˆæœ‰ç”¨ã€‚
+     * @param isAutoToolTip æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦è‡ªåŠ¨ï¼ˆè®¾ç½®ï¼‰å·¥å…·æç¤ºã€‚
      * @since T3 V1.1
      */
     public void setAutoToolTip(boolean isAutoToolTip) {
@@ -241,8 +241,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * »ñÈ¡¹¤¾ßÌáÊ¾ÎÄ±¾¡£
-     * @return ¹¤¾ßÌáÊ¾ÎÄ±¾¡£
+     * è·å–å·¥å…·æç¤ºæ–‡æœ¬ã€‚
+     * @return å·¥å…·æç¤ºæ–‡æœ¬ã€‚
      * @since T3 V1.1
      */
     public String getToolTipText() {
@@ -255,8 +255,8 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
     }
 
     /**
-     * ÉèÖÃ¹¤¾ßÌáÊ¾ÎÄ±¾£¬Èç¹ûÉèÖÃÁËÌáÊ¾ÎÄ±¾£¬ÔòautoToolTipÎŞĞ§£¬ÒÔÉèÖÃµÄÌáÊ¾ÎÄ±¾Îª×¼¡£
-     * @param toolTipText ¹¤¾ßÌáÊ¾ÎÄ±¾¡£
+     * è®¾ç½®å·¥å…·æç¤ºæ–‡æœ¬ï¼Œå¦‚æœè®¾ç½®äº†æç¤ºæ–‡æœ¬ï¼Œåˆ™autoToolTipæ— æ•ˆï¼Œä»¥è®¾ç½®çš„æç¤ºæ–‡æœ¬ä¸ºå‡†ã€‚
+     * @param toolTipText å·¥å…·æç¤ºæ–‡æœ¬ã€‚
      * @since T3 V1.1
      */
     public void setToolTipText(String toolTipText) {
@@ -267,7 +267,7 @@ public class ComplexTreeNode extends DefaultMutableTreeNode implements IConstant
 
     /**
      * @see javax.swing.tree.DefaultMutableTreeNode#insert(javax.swing.tree.MutableTreeNode, int)
-     * @throws IllegalArgumentException ÉèÖÃµÄĞÂ½Úµã²»ÊÇÒ»¸öTComplexTreeNode»òÉèÖÃµÄĞÂ½ÚµãÊÇÒ»¸öTChoiceTreeNode£¬µ«¸¸½Úµã£¨±¾½Úµã£©²»ÊÇÒ»¸öTChoiceTreeNodeÔò»áÅ×³ö´ËÒì³£¡£
+     * @throws IllegalArgumentException è®¾ç½®çš„æ–°èŠ‚ç‚¹ä¸æ˜¯ä¸€ä¸ªTComplexTreeNodeæˆ–è®¾ç½®çš„æ–°èŠ‚ç‚¹æ˜¯ä¸€ä¸ªTChoiceTreeNodeï¼Œä½†çˆ¶èŠ‚ç‚¹ï¼ˆæœ¬èŠ‚ç‚¹ï¼‰ä¸æ˜¯ä¸€ä¸ªTChoiceTreeNodeåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void insert(MutableTreeNode newChild, int childIndex) {
         if (!(newChild instanceof ComplexTreeNode)) {

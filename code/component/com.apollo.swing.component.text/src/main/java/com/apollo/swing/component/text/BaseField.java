@@ -1,27 +1,27 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-9-8 ÏÂÎç04:17:22¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-9-8 ä¸‹åˆ04:17:22ã€‚
  */
 package com.apollo.swing.component.text;
 
 import javax.swing.JFormattedTextField;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºBaseField.java</p>
- * <p>ÀàĞÍÃèÊö£º³éÏóµÄÊäÈë¿ò£¬ÆäËûText×é¼şÓÉÕâ¸öÀàÀ©Õ¹£¬µ«Ö÷ÒªµÄÂß¼­»¹ÊÇ·ÅÔÚFormatterÀïÃæ¡£×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-8</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šBaseField.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæŠ½è±¡çš„è¾“å…¥æ¡†ï¼Œå…¶ä»–Textç»„ä»¶ç”±è¿™ä¸ªç±»æ‰©å±•ï¼Œä½†ä¸»è¦çš„é€»è¾‘è¿˜æ˜¯æ”¾åœ¨Formatteré‡Œé¢ã€‚æ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-8</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -86,12 +86,12 @@ public class BaseField extends JFormattedTextField {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíµ¯³öÌáÊ¾¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸å¼¹å‡ºæç¤ºã€‚
      */
     protected volatile boolean m_isEnabledPopupTip = true;
 
     /**
-     * ÓÃ»§ÌáÊ¾ÎÄ±¾¡£
+     * ç”¨æˆ·æç¤ºæ–‡æœ¬ã€‚
      */
     protected String m_userTipText = null;
 
@@ -110,8 +110,8 @@ public class BaseField extends JFormattedTextField {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param formatter ¸ñÊ½Æ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param formatter æ ¼å¼å™¨ã€‚
      * @since T3 V1.1
      */
     public BaseField(BaseFormatter formatter) {
@@ -133,8 +133,8 @@ public class BaseField extends JFormattedTextField {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledPopupTip µÄÖµ£¬ÅĞ¶ÏÊÇ·ñÔÊĞíµ¯³öÊäÈëÌáÊ¾ĞÅÏ¢¡£
-     * @return ×Ö¶Î isEnabledPopupTip µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledPopupTip çš„å€¼ï¼Œåˆ¤æ–­æ˜¯å¦å…è®¸å¼¹å‡ºè¾“å…¥æç¤ºä¿¡æ¯ã€‚
+     * @return å­—æ®µ isEnabledPopupTip çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEnabledPopupTip() {
@@ -142,8 +142,8 @@ public class BaseField extends JFormattedTextField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledPopupTip µÄÖµ£¬ÉèÖÃÊÇ·ñÔÊĞíµ¯³öÊäÈëÌáÊ¾ĞÅÏ¢¡£
-     * @param isEnabledPopupTip ×Ö¶Î isEnabledPopupTip µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledPopupTip çš„å€¼ï¼Œè®¾ç½®æ˜¯å¦å…è®¸å¼¹å‡ºè¾“å…¥æç¤ºä¿¡æ¯ã€‚
+     * @param isEnabledPopupTip å­—æ®µ isEnabledPopupTip çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEnabledPopupTip(boolean isEnabledPopupTip) {
@@ -158,8 +158,8 @@ public class BaseField extends JFormattedTextField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î userTipText µÄÖµ£¬»ñÈ¡µ¯³öµÄÊäÈëÌáÊ¾ĞÅÏ¢¡£
-     * @return ×Ö¶Î userTipText µÄÖµ¡£
+     * è·å–å­—æ®µ userTipText çš„å€¼ï¼Œè·å–å¼¹å‡ºçš„è¾“å…¥æç¤ºä¿¡æ¯ã€‚
+     * @return å­—æ®µ userTipText çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public String getUserTipText() {
@@ -167,8 +167,8 @@ public class BaseField extends JFormattedTextField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î userTipText µÄÖµ£¬ÉèÖÃµ¯³öµÄÊäÈëÌáÊ¾ĞÅÏ¢¡£
-     * @param userTipText ×Ö¶Î userTipText µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ userTipText çš„å€¼ï¼Œè®¾ç½®å¼¹å‡ºçš„è¾“å…¥æç¤ºä¿¡æ¯ã€‚
+     * @param userTipText å­—æ®µ userTipText çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setUserTipText(String userTipText) {
@@ -190,7 +190,7 @@ public class BaseField extends JFormattedTextField {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * Ë¢ĞÂÌáÊ¾ÎÄ±¾¡£
+     * åˆ·æ–°æç¤ºæ–‡æœ¬ã€‚
      */
     protected void refreshTipText() {
         super.setToolTipText(m_userTipText);

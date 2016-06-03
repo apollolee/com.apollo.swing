@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-15 ÏÂÎç01:53:25¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-15 ä¸‹åˆ01:53:25ã€‚
  */
 package com.apollo.swing.component.table.demo;
 
@@ -17,22 +17,22 @@ import com.apollo.swing.component.table.TableUtilities;
 import com.apollo.swing.laf.TLookAndFeelManager;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTableUtilitiesDemo.java</p>
- * <p>ÀàĞÍÃèÊö£º±í¸ñ¹¤¾ßÑİÊ¾Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-15</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTableUtilitiesDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šè¡¨æ ¼å·¥å…·æ¼”ç¤ºç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-15</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TableCustomDemo implements IBaseConstants {
@@ -169,8 +169,8 @@ public class TableCustomDemo implements IBaseConstants {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * Èë¿Ú·½·¨¡£
-     * @param args Èë¿Ú²ÎÊı¡£
+     * å…¥å£æ–¹æ³•ã€‚
+     * @param args å…¥å£å‚æ•°ã€‚
      */
     //	public static void main(String[] args) {
     //		MainFrame.loadDefaultLookAndFeel();
@@ -184,7 +184,7 @@ public class TableCustomDemo implements IBaseConstants {
     //		sp.setRowHeaderView(rh);
     //		sp.setCorner(JScrollPane.UPPER_LEFT_CORNER, rh.getTableHeader());
     //
-    //		JFrame f = new JFrame("ÁĞ±í¶¨ÖÆÑİÊ¾");
+    //		JFrame f = new JFrame("åˆ—è¡¨å®šåˆ¶æ¼”ç¤º");
     //		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //
     //		mt.setCellSelectionEnabled(true);
@@ -210,10 +210,10 @@ public class TableCustomDemo implements IBaseConstants {
         //			}
         //			
         //		} catch (FileNotFoundException ex) {
-        //			/* TODO ÇëÌí¼ÓÒì³£´¦Àí´úÂë */
+        //			/* TODO è¯·æ·»åŠ å¼‚å¸¸å¤„ç†ä»£ç  */
         //			ex.printStackTrace();
         //		} catch (IOException ex) {
-        //			/* TODO ÇëÌí¼ÓÒì³£´¦Àí´úÂë */
+        //			/* TODO è¯·æ·»åŠ å¼‚å¸¸å¤„ç†ä»£ç  */
         //			ex.printStackTrace();
         //		}
 
@@ -223,7 +223,7 @@ public class TableCustomDemo implements IBaseConstants {
         JScrollPane sp = new JScrollPane(mt);
         TableCustomDialog cd = new TableCustomDialog(mt, null, "ddd");
 
-        JFrame f = new JFrame("ÁĞ±í¶¨ÖÆÑİÊ¾");
+        JFrame f = new JFrame("åˆ—è¡¨å®šåˆ¶æ¼”ç¤º");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         mt.setCellSelectionEnabled(true);

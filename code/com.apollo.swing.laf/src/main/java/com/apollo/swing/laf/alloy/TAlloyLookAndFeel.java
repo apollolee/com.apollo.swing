@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-6-3 ÉÏÎç10:10:34¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-6-3 ä¸Šåˆ10:10:34ã€‚
  */
 package com.apollo.swing.laf.alloy;
 
@@ -22,22 +22,22 @@ import com.incors.plaf.alloy.AlloyLookAndFeel;
 import com.incors.plaf.alloy.AlloyTheme;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTAlloyLookAndFeel.java</p>
- * <p>ÀàĞÍÃèÊö£ºAlloy¹Û¸ĞÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-6-3</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTAlloyLookAndFeel.java</p>
+ * <p>ç±»å‹æè¿°ï¼šAlloyè§‚æ„Ÿç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-6-3</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TAlloyLookAndFeel extends AlloyLookAndFeel {
@@ -85,20 +85,20 @@ public class TAlloyLookAndFeel extends AlloyLookAndFeel {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     protected static Icon getIcon(String iconFilename) {
         return getIcon(AlloyLookAndFeel.class, "com/incors/plaf/alloy/icons/", iconFilename);
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param type Í¼±êÎÄ¼şËùÔÚÀà¡£
-     * @param baseName ×ÊÔ´»ù±¾Ãû³Æ¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param type å›¾æ ‡æ–‡ä»¶æ‰€åœ¨ç±»ã€‚
+     * @param baseName èµ„æºåŸºæœ¬åç§°ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     public static Icon getIcon(Class type, String baseName, String iconFilename) {
         URL icon = type.getClassLoader().getResource(baseName + iconFilename);
@@ -136,7 +136,7 @@ public class TAlloyLookAndFeel extends AlloyLookAndFeel {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public TAlloyLookAndFeel() {
         super();
@@ -145,8 +145,8 @@ public class TAlloyLookAndFeel extends AlloyLookAndFeel {
     /*------------------------------------- Protected Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param theme Ö÷Ìâ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param theme ä¸»é¢˜ã€‚
      */
     protected TAlloyLookAndFeel(AlloyTheme theme) {
         super(theme);

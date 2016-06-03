@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-1-13 ÉÏÎç10:04:53¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-1-13 ä¸Šåˆ10:04:53ã€‚
  */
 package com.apollo.swing.component.text;
 
@@ -10,22 +10,22 @@ import java.text.DecimalFormat;
 import java.text.ParseException;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºDecimalFormatter.java</p>
- * <p>ÀàĞÍÃèÊö£ºĞ¡Êı¸ñÊ½Æ÷£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-1-13</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šDecimalFormatter.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå°æ•°æ ¼å¼å™¨ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-1-13</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -88,17 +88,17 @@ public class DecimalFormatter extends BaseFormatter {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ×îĞ¡Öµ¡£
+     * æœ€å°å€¼ã€‚
      */
     protected BigDecimal m_minimum;
 
     /**
-     * ×î´óÖµ¡£
+     * æœ€å¤§å€¼ã€‚
      */
     protected BigDecimal m_maximum;
 
     /**
-     * ¾«¶È¡£
+     * ç²¾åº¦ã€‚
      */
     protected BigInteger m_scale;
 
@@ -117,7 +117,7 @@ public class DecimalFormatter extends BaseFormatter {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public DecimalFormatter() {
@@ -125,12 +125,12 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param scale ¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param scale ç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
      * @since T3 V1.1
      */
     public DecimalFormatter(boolean isNeedInput, boolean isEnabledPopupErrorTip, BigDecimal minimum, BigDecimal maximum, BigInteger scale) {
@@ -140,7 +140,7 @@ public class DecimalFormatter extends BaseFormatter {
         setMaximum(maximum);
         setScale(scale);
 
-        if (m_tipText == null) { //ÉÏÃæµÄset·½·¨¶¼Î´Ö´ĞĞµ½updateTipText()¾Í·µ»ØÁË
+        if (m_tipText == null) { //ä¸Šé¢çš„setæ–¹æ³•éƒ½æœªæ‰§è¡Œåˆ°updateTipText()å°±è¿”å›äº†
             updateTipText();
         }
     }
@@ -160,8 +160,8 @@ public class DecimalFormatter extends BaseFormatter {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î minimum µÄÖµ¡£
+     * è·å–å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigDecimal getMinimum() {
@@ -169,12 +169,12 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinimum(BigDecimal minimum) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_minimum, minimum)) {
             return;
         }
@@ -191,8 +191,8 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigDecimal getMaximum() {
@@ -200,12 +200,12 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaximum(BigDecimal maximum) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_maximum, maximum)) {
             return;
         }
@@ -222,8 +222,8 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î scale µÄÖµ£¬¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
-     * @return ×Ö¶Î scale µÄÖµ¡£
+     * è·å–å­—æ®µ scale çš„å€¼ï¼Œç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
+     * @return å­—æ®µ scale çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getScale() {
@@ -231,12 +231,12 @@ public class DecimalFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î scale µÄÖµ£¬¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
-     * @param scale ×Ö¶Î scale µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ scale çš„å€¼ï¼Œç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
+     * @param scale å­—æ®µ scale çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setScale(BigInteger scale) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_scale, scale)) {
             return;
         }
@@ -256,12 +256,12 @@ public class DecimalFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#stringToValue(java.lang.String)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´valueÖµ²»»á¸Ä±ä£¬¼´×î½üÒ»´ÎµÄÖµ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆvalueå€¼ä¸ä¼šæ”¹å˜ï¼Œå³æœ€è¿‘ä¸€æ¬¡çš„å€¼ã€‚
      */
     public Object stringToValue(String text) throws ParseException {
         verify(text, true);
 
-        /* ÅĞ¶ÏÎÄ±¾ÊÇ·ñÎª¿Õ£¬×¢Òâ£ºÈç¹ûÎª¿ÕÍ¬Ê±Ò²±íÊ¾m_isNeedInputÊÇfalse£¬·ñÔòÔç¾Í»áÔÚÑéÖ¤µÄÊ±ºòÅ×³öÒì³£ÁË */
+        /* åˆ¤æ–­æ–‡æœ¬æ˜¯å¦ä¸ºç©ºï¼Œæ³¨æ„ï¼šå¦‚æœä¸ºç©ºåŒæ—¶ä¹Ÿè¡¨ç¤ºm_isNeedInputæ˜¯falseï¼Œå¦åˆ™æ—©å°±ä¼šåœ¨éªŒè¯çš„æ—¶å€™æŠ›å‡ºå¼‚å¸¸äº† */
         if ("".equals(text)) {
             return null;
         }
@@ -271,10 +271,10 @@ public class DecimalFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#valueToString(java.lang.Object)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´textÎÄ±¾ÄÚÈİÔò»áÖÃÎª¿Õ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆtextæ–‡æœ¬å†…å®¹åˆ™ä¼šç½®ä¸ºç©ºã€‚
      */
     public String valueToString(Object value) throws ParseException {
-        /* ÅĞ¶ÏValueÖµÊÇ·ñºÏ·¨ */
+        /* åˆ¤æ–­Valueå€¼æ˜¯å¦åˆæ³• */
         if (value == null || !(value instanceof BigDecimal)) {
             return "";
 
@@ -297,11 +297,11 @@ public class DecimalFormatter extends BaseFormatter {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÑéÖ¤ÖÆ¶¨µÄ¹æÔòÊÇ·ñºÏ·¨¡£
-     * @return Îªtrue±íÊ¾ÖÆ¶¨µÄ¹æÔòºÏ·¨£¬Îªfalse±íÊ¾ÖÆ¶¨µÄ¹æÔò²»ºÏ·¨¡£
+     * éªŒè¯åˆ¶å®šçš„è§„åˆ™æ˜¯å¦åˆæ³•ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™åˆæ³•ï¼Œä¸ºfalseè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™ä¸åˆæ³•ã€‚
      */
     protected boolean verifyRule() {
-        /* ÑéÖ¤¾«¶È */
+        /* éªŒè¯ç²¾åº¦ */
         if (m_scale != null) {
             if (m_minimum != null && m_minimum.scale() > m_scale.intValue()) {
                 return false;
@@ -312,12 +312,12 @@ public class DecimalFormatter extends BaseFormatter {
             }
         }
 
-        /* ×îĞ¡ÖµºÍ×î´óÖµÖ»ÒªÓĞÒ»¸ö²»ÉèÖÃ£¬ÄÇÃ´¶ÔÓ¦ËùÓĞ¹æÔò¶¼ÊÇºÏ·¨µÄ */
+        /* æœ€å°å€¼å’Œæœ€å¤§å€¼åªè¦æœ‰ä¸€ä¸ªä¸è®¾ç½®ï¼Œé‚£ä¹ˆå¯¹åº”æ‰€æœ‰è§„åˆ™éƒ½æ˜¯åˆæ³•çš„ */
         if (m_minimum == null || m_maximum == null) {
             return true;
         }
 
-        /* ×îĞ¡Öµ´óÓÚ×î´óÖµ£¨»òÕß×î´óÖµĞ¡ÓÚ×îĞ¡Öµ£©ÊÇ²»ºÏ·¨µÄ */
+        /* æœ€å°å€¼å¤§äºæœ€å¤§å€¼ï¼ˆæˆ–è€…æœ€å¤§å€¼å°äºæœ€å°å€¼ï¼‰æ˜¯ä¸åˆæ³•çš„ */
         if (m_minimum.compareTo(m_maximum) > 0) {
             return false;
         }
@@ -331,8 +331,8 @@ public class DecimalFormatter extends BaseFormatter {
      * @see com.apollo.swing.component.text.BaseFormatter#verify(java.lang.String, boolean)
      */
     protected void verify(String text, boolean isFull) throws ParseException {
-        /* ÑéÖ¤×Ö·ûºÏ·¨ĞÔ¡¢¸ñÊ½ÒÔ¼°ÓĞĞ§ĞÔ */
-        if (isFull) { //´ıÑéÖ¤ÎÄ±¾ÊÇÍêÕûµÄ
+        /* éªŒè¯å­—ç¬¦åˆæ³•æ€§ã€æ ¼å¼ä»¥åŠæœ‰æ•ˆæ€§ */
+        if (isFull) { //å¾…éªŒè¯æ–‡æœ¬æ˜¯å®Œæ•´çš„
             if ("".equals(text)) {
                 if (m_isNeedInput) {
                     throwParseException(I18N_INFO_CHARACTERISILLEGAL);
@@ -350,7 +350,7 @@ public class DecimalFormatter extends BaseFormatter {
                 }
             }
 
-        } else { //´ıÑéÖ¤ÎÄ±¾²»ÊÇÍêÕûµÄ
+        } else { //å¾…éªŒè¯æ–‡æœ¬ä¸æ˜¯å®Œæ•´çš„
             if ("".equals(text)) {
                 return;
 
@@ -392,14 +392,14 @@ public class DecimalFormatter extends BaseFormatter {
             }
         }
 
-        /* »ñÈ¡¼ÆËãÖµ */
+        /* è·å–è®¡ç®—å€¼ */
         BigDecimal value = new BigDecimal(text);
         BigDecimal nextMinValue = new BigDecimal(text + (text.startsWith("-") ? "9" : "0"));
         BigDecimal nextMaxValue = new BigDecimal(text + (text.startsWith("-") ? "0" : "9"));
         BigDecimal nextNextMinValue = new BigDecimal(text + (text.startsWith("-") ? "99" : "00"));
         BigDecimal nextNextMaxValue = new BigDecimal(text + (text.startsWith("-") ? "00" : "99"));
 
-        /* ÑéÖ¤×îĞ¡Öµ */
+        /* éªŒè¯æœ€å°å€¼ */
         if (isFull || text.startsWith("-")) {
             if (m_minimum != null && value.compareTo(m_minimum) < 0) {
                 throwParseException(I18N_INFO_VALUEISTOOSMALL);
@@ -411,7 +411,7 @@ public class DecimalFormatter extends BaseFormatter {
             }
         }
 
-        /* ÑéÖ¤×î´óÖµ */
+        /* éªŒè¯æœ€å¤§å€¼ */
         if (isFull || !text.startsWith("-")) {
             if (m_maximum != null && value.compareTo(m_maximum) > 0) {
                 throwParseException(I18N_INFO_VALUEISTOOBIG);
@@ -423,7 +423,7 @@ public class DecimalFormatter extends BaseFormatter {
             }
         }
 
-        /* ÑéÖ¤¾«¶È */
+        /* éªŒè¯ç²¾åº¦ */
         if (m_scale != null && m_scale.intValue() < value.scale()) {
             throwParseException(I18N_INFO_FALLSHORTOFPRECISION);
         }
@@ -433,7 +433,7 @@ public class DecimalFormatter extends BaseFormatter {
      * @see com.apollo.swing.component.text.BaseFormatter#increment(java.awt.event.ActionEvent)
      */
     protected int[] increment(ActionEvent evt) {
-        /* TODO Ôİ²»Ö§³Ö*/
+        /* TODO æš‚ä¸æ”¯æŒ*/
         return null;
     }
 
@@ -441,7 +441,7 @@ public class DecimalFormatter extends BaseFormatter {
      * @see com.apollo.swing.component.text.BaseFormatter#decrement(java.awt.event.ActionEvent)
      */
     protected int[] decrement(ActionEvent evt) {
-        /* TODO Ôİ²»Ö§³Ö*/
+        /* TODO æš‚ä¸æ”¯æŒ*/
         return null;
     }
 
@@ -471,8 +471,8 @@ public class DecimalFormatter extends BaseFormatter {
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * »ñÈ¡¾«¶ÈÏÔÊ¾ĞÅÏ¢¡£
-     * @return ¾«¶ÈÏÔÊ¾ĞÅÏ¢¡£
+     * è·å–ç²¾åº¦æ˜¾ç¤ºä¿¡æ¯ã€‚
+     * @return ç²¾åº¦æ˜¾ç¤ºä¿¡æ¯ã€‚
      */
     private String getScaleDisplay() {
         StringBuffer sb = new StringBuffer();

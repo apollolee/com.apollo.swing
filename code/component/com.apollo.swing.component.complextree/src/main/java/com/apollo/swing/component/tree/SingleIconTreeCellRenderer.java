@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-8-18 ÉÏÎç10:12:20¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-8-18 ä¸Šåˆ10:12:20ã€‚
  */
 package com.apollo.swing.component.tree;
 
@@ -10,22 +10,22 @@ import javax.swing.ImageIcon;
 import javax.swing.tree.DefaultTreeCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºSingleIconTreeCellRenderer.java</p>
- * <p>ÀàĞÍÃèÊö£ºµ¥Í¼±êÊ÷äÖÈ¾Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-8-18</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šSingleIconTreeCellRenderer.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå•å›¾æ ‡æ ‘æ¸²æŸ“å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-8-18</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
@@ -89,7 +89,7 @@ public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * µ¥Í¼±ê¡£
+     * å•å›¾æ ‡ã€‚
      */
     protected Icon m_singleIcon;
 
@@ -108,46 +108,46 @@ public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public SingleIconTreeCellRenderer() {
         this((Icon) null);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param imageLocation µ¥Í¼±êÍ¼ÏñµÄÎ»ÖÃ£¬ÏÈ°Ñ´Ë×Ö·û´®ÏÈµ±³ÉÒ»¸öÏµÍ³×ÊÔ´Ãû×ÖÈ¥²éÕÒ£¬ÕÒ²»µ½¾Íµ±³ÉÒ»¸öÎÄ¼şÃûÈ¥²éÕÒ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param imageLocation å•å›¾æ ‡å›¾åƒçš„ä½ç½®ï¼Œå…ˆæŠŠæ­¤å­—ç¬¦ä¸²å…ˆå½“æˆä¸€ä¸ªç³»ç»Ÿèµ„æºåå­—å»æŸ¥æ‰¾ï¼Œæ‰¾ä¸åˆ°å°±å½“æˆä¸€ä¸ªæ–‡ä»¶åå»æŸ¥æ‰¾ã€‚
      */
     public SingleIconTreeCellRenderer(String imageLocation) {
-        /* ¶ÔÏóÅĞ¿Õ */
+        /* å¯¹è±¡åˆ¤ç©º */
         if (imageLocation == null) {
             setSingleIcon(null);
 
         } else {
-            /* ´ÓimageLocationÖ¸¶¨µÄÎ»ÖÃ»ñÈ¡ÏµÍ³×ÊÔ´µÄURL */
+            /* ä»imageLocationæŒ‡å®šçš„ä½ç½®è·å–ç³»ç»Ÿèµ„æºçš„URL */
             URL imageUrl = ClassLoader.getSystemResource(imageLocation);
 
-            /* ÒÀ¾İ»ñÈ¡µÄÏµÍ³×ÊÔ´µÄURL½øĞĞ²»Í¬µÄ´¦Àí */
-            if (imageUrl == null) { //»ñÈ¡²»µ½ÏµÍ³×ÊÔ´
-                setSingleIcon(new ImageIcon(imageLocation)); //°ÑimageLocationµ±³ÉÒ»¸öfilenameÈ¥´¦Àí
+            /* ä¾æ®è·å–çš„ç³»ç»Ÿèµ„æºçš„URLè¿›è¡Œä¸åŒçš„å¤„ç† */
+            if (imageUrl == null) { //è·å–ä¸åˆ°ç³»ç»Ÿèµ„æº
+                setSingleIcon(new ImageIcon(imageLocation)); //æŠŠimageLocationå½“æˆä¸€ä¸ªfilenameå»å¤„ç†
 
-            } else { //»ñÈ¡µ½ÁËÏµÍ³×ÊÔ´
+            } else { //è·å–åˆ°äº†ç³»ç»Ÿèµ„æº
                 setSingleIcon(new ImageIcon(imageUrl));
             }
         }
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param imageUrl µ¥Í¼±êÍ¼ÏñµÄµÄURLµØÖ·¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param imageUrl å•å›¾æ ‡å›¾åƒçš„çš„URLåœ°å€ã€‚
      */
     public SingleIconTreeCellRenderer(URL imageUrl) {
         this(new ImageIcon(imageUrl));
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param singleIcon µ¥Í¼±ê¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param singleIcon å•å›¾æ ‡ã€‚
      * @see SingleIconTreeCellRenderer#setSingleIcon(Icon)
      */
     public SingleIconTreeCellRenderer(Icon singleIcon) {
@@ -169,16 +169,16 @@ public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡µ¥Í¼±ê¡£
-     * @return µ¥Í¼±ê¡£
+     * è·å–å•å›¾æ ‡ã€‚
+     * @return å•å›¾æ ‡ã€‚
      */
     public Icon getSingleIcon() {
         return m_singleIcon;
     }
 
     /**
-     * ÉèÖÃµ¥Í¼±ê¡£
-     * @param singleIcon µ¥Í¼±ê¡£
+     * è®¾ç½®å•å›¾æ ‡ã€‚
+     * @param singleIcon å•å›¾æ ‡ã€‚
      */
     public void setSingleIcon(Icon singleIcon) {
         m_singleIcon = singleIcon;

@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-7-24 ÉÏÎç09:26:15¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-7-24 ä¸Šåˆ09:26:15ã€‚
  */
 package com.apollo.swing.component.tree;
 
@@ -18,22 +18,22 @@ import com.apollo.swing.component.complextree.ComplexTreeCacheNode;
 import com.apollo.swing.component.complextree.ComplexTreeNode;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeUtilities.java</p>
- * <p>ÀàĞÍÃèÊö£ºÊ÷¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-7-24</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeUtilities.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ‘å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-7-24</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TreeUtilities implements IBaseConstants {
@@ -77,10 +77,10 @@ public class TreeUtilities implements IBaseConstants {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, ComplexTree tree, Component parent) {
         String oldText = text;
@@ -98,10 +98,10 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, ComplexTree tree) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -133,34 +133,34 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Ê÷µÄ¸ùÂ·¾¶¡£
-     * @param tree Ê÷¡£
-     * @return Ê÷µÄ¸ùÂ·¾¶¡£
+     * è·å–æ ‘çš„æ ¹è·¯å¾„ã€‚
+     * @param tree æ ‘ã€‚
+     * @return æ ‘çš„æ ¹è·¯å¾„ã€‚
      */
     public static TreePath getTreeRootPath(JTree tree) {
         return new TreePath(((DefaultMutableTreeNode) tree.getModel().getRoot()).getPath());
     }
 
     /**
-     * Ñ¡ÔñÊ÷µÄ¸ù¡£
-     * @param tree Ê÷¡£
+     * é€‰æ‹©æ ‘çš„æ ¹ã€‚
+     * @param tree æ ‘ã€‚
      */
     public static void selectRoot(JTree tree) {
         tree.setSelectionPath(getTreeRootPath(tree));
     }
 
     /**
-     * Õ¹¿ªÊ÷¡£
-     * @param tree Ê÷¡£
+     * å±•å¼€æ ‘ã€‚
+     * @param tree æ ‘ã€‚
      */
     public static void expand(JTree tree) {
         expand(tree, (DefaultMutableTreeNode) tree.getModel().getRoot());
     }
 
     /**
-     * Õ¹¿ªÊ÷¡£
-     * @param tree Ê÷¡£
-     * @param node ½Úµã¡£
+     * å±•å¼€æ ‘ã€‚
+     * @param tree æ ‘ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
      */
     public static void expand(JTree tree, DefaultMutableTreeNode node) {
         tree.expandPath(new TreePath(node.getPath()));
@@ -171,17 +171,17 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * ÕÛµşÊ÷¡£
-     * @param tree Ê÷¡£
+     * æŠ˜å æ ‘ã€‚
+     * @param tree æ ‘ã€‚
      */
     public static void collapse(JTree tree) {
         collapse(tree, (DefaultMutableTreeNode) tree.getModel().getRoot());
     }
 
     /**
-     * ÕÛµşÊ÷¡£
-     * @param tree Ê÷¡£
-     * @param node ½Úµã¡£
+     * æŠ˜å æ ‘ã€‚
+     * @param tree æ ‘ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
      */
     public static void collapse(JTree tree, DefaultMutableTreeNode node) {
         for (int i = 0, size = node.getChildCount(); i < size; i++) {
@@ -192,8 +192,8 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * Í£Ö¹±à¼­¡£
-     * @param tree Ê÷¡£
+     * åœæ­¢ç¼–è¾‘ã€‚
+     * @param tree æ ‘ã€‚
      */
     public static void stopEditing(JTree tree) {
         if (tree.isEditing()) {
@@ -202,8 +202,8 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * È¡Ïû±à¼­¡£
-     * @param tree Ê÷¡£
+     * å–æ¶ˆç¼–è¾‘ã€‚
+     * @param tree æ ‘ã€‚
      */
     public static void cancelEditing(JTree tree) {
         if (tree.isEditing()) {
@@ -222,9 +222,9 @@ public class TreeUtilities implements IBaseConstants {
     /*------------------------------------- Private Static Method -------------------------------------*/
 
     /**
-     * »ñÈ¡½Úµã¼¯¡£
-     * @param node ½Úµã¡£
-     * @return ½Úµã¼¯¡£
+     * è·å–èŠ‚ç‚¹é›†ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return èŠ‚ç‚¹é›†ã€‚
      */
     private static List getNodes(ComplexTreeNode node) {
         List nodes = new ArrayList();
@@ -240,11 +240,11 @@ public class TreeUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½Úµã½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @param nodes ×ÛºÏÊ÷½Úµã¼¯¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘èŠ‚ç‚¹è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @param nodes ç»¼åˆæ ‘èŠ‚ç‚¹é›†ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     private static boolean searchText(String text, ComplexTree tree, List nodes) {
         for (int i = 0, size = nodes.size(); i < size; i++) {

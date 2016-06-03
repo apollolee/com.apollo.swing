@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-6-2 ÏÂÎç03:36:19¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-6-2 ä¸‹åˆ03:36:19ã€‚
  */
 package com.apollo.swing.laf;
 
@@ -17,22 +17,22 @@ import com.apollo.swing.laf.windows.TWindowsLookAndFeel;
 import com.incors.plaf.alloy.AlloyLookAndFeel;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTLookAndFeelManager.java</p>
- * <p>ÀàĞÍÃèÊö£º¹Û¸Ğ¹ÜÀíÆ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-6-3</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTLookAndFeelManager.java</p>
+ * <p>ç±»å‹æè¿°ï¼šè§‚æ„Ÿç®¡ç†å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-6-3</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TLookAndFeelManager {
@@ -78,60 +78,60 @@ public class TLookAndFeelManager {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ÔØÈëAlloy¹Û¸Ğ¡£
-     * @param isDecoratedWindow Îªtrue±íÊ¾ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú£¬Îªfalse±íÊ¾²»ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Alloyè§‚æ„Ÿã€‚
+     * @param isDecoratedWindow ä¸ºtrueè¡¨ç¤ºç”¨è§‚æ„Ÿè£…é¥°çª—å£ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç”¨è§‚æ„Ÿè£…é¥°çª—å£ã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadAlloy(boolean isDecoratedWindow) {
         return loadAlloy(TAlloyLookAndFeel.class, isDecoratedWindow);
     }
 
     /**
-     * ÔØÈëGlassÖ÷ÌâAlloy¹Û¸Ğ¡£
-     * @param isDecoratedWindow Îªtrue±íÊ¾ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú£¬Îªfalse±íÊ¾²»ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Glassä¸»é¢˜Alloyè§‚æ„Ÿã€‚
+     * @param isDecoratedWindow ä¸ºtrueè¡¨ç¤ºç”¨è§‚æ„Ÿè£…é¥°çª—å£ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç”¨è§‚æ„Ÿè£…é¥°çª—å£ã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadGlassThemeAlloy(boolean isDecoratedWindow) {
         return loadAlloy(TGlassThemeAlloyLookAndFeel.class, isDecoratedWindow);
     }
 
     /**
-     * ÔØÈëAcidÖ÷ÌâAlloy¹Û¸Ğ¡£
-     * @param isDecoratedWindow Îªtrue±íÊ¾ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú£¬Îªfalse±íÊ¾²»ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Acidä¸»é¢˜Alloyè§‚æ„Ÿã€‚
+     * @param isDecoratedWindow ä¸ºtrueè¡¨ç¤ºç”¨è§‚æ„Ÿè£…é¥°çª—å£ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç”¨è§‚æ„Ÿè£…é¥°çª—å£ã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadAcidThemeAlloy(boolean isDecoratedWindow) {
         return loadAlloy(TAcidThemeAlloyLookAndFeel.class, isDecoratedWindow);
     }
 
     /**
-     * ÔØÈëBedouinÖ÷ÌâAlloy¹Û¸Ğ¡£
-     * @param isDecoratedWindow Îªtrue±íÊ¾ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú£¬Îªfalse±íÊ¾²»ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Bedouinä¸»é¢˜Alloyè§‚æ„Ÿã€‚
+     * @param isDecoratedWindow ä¸ºtrueè¡¨ç¤ºç”¨è§‚æ„Ÿè£…é¥°çª—å£ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç”¨è§‚æ„Ÿè£…é¥°çª—å£ã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadBedouinThemeAlloy(boolean isDecoratedWindow) {
         return loadAlloy(TBedouinThemeAlloyLookAndFeel.class, isDecoratedWindow);
     }
 
     /**
-     * ÔØÈëMetal¹Û¸Ğ¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Metalè§‚æ„Ÿã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadMetal() {
         return load(new TMetalLookAndFeel());
     }
 
     /**
-     * ÔØÈëMotif¹Û¸Ğ¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Motifè§‚æ„Ÿã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadMotif() {
         return load(new TMotifLookAndFeel());
     }
 
     /**
-     * ÔØÈëWindows¹Û¸Ğ¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Windowsè§‚æ„Ÿã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     public static boolean loadWindows() {
         return load(new TWindowsLookAndFeel());
@@ -140,10 +140,10 @@ public class TLookAndFeelManager {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * ÔØÈëAlloy¹Û¸Ğ¡£
-     * @param lafType ¹Û¸ĞÀàĞÍ¡£
-     * @param isDecoratedWindow Îªtrue±íÊ¾ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú£¬Îªfalse±íÊ¾²»ÓÃ¹Û¸Ğ×°ÊÎ´°¿Ú¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥Alloyè§‚æ„Ÿã€‚
+     * @param lafType è§‚æ„Ÿç±»å‹ã€‚
+     * @param isDecoratedWindow ä¸ºtrueè¡¨ç¤ºç”¨è§‚æ„Ÿè£…é¥°çª—å£ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç”¨è§‚æ„Ÿè£…é¥°çª—å£ã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     protected static boolean loadAlloy(Class lafType, boolean isDecoratedWindow) {
         AlloyLookAndFeel.setProperty("alloy.isLookAndFeelFrameDecoration", String.valueOf(isDecoratedWindow));
@@ -158,9 +158,9 @@ public class TLookAndFeelManager {
     }
 
     /**
-     * ÔØÈë¹Û¸Ğ¡£
-     * @param laf ¹Û¸Ğ¡£
-     * @return ·µ»Øtrue±íÊ¾ÔØÈë³É¹¦£¬·µ»Øfalse±íÊ¾ÔØÈëÊ§°Ü¡£
+     * è½½å…¥è§‚æ„Ÿã€‚
+     * @param laf è§‚æ„Ÿã€‚
+     * @return è¿”å›trueè¡¨ç¤ºè½½å…¥æˆåŠŸï¼Œè¿”å›falseè¡¨ç¤ºè½½å…¥å¤±è´¥ã€‚
      */
     protected static boolean load(LookAndFeel laf) {
         try {
@@ -216,10 +216,10 @@ public class TLookAndFeelManager {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private TLookAndFeelManager() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Method -------------------------------------*/

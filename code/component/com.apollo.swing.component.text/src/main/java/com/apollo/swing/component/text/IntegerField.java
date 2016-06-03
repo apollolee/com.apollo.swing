@@ -1,27 +1,27 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-3-2 ÏÂÎç03:36:52¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-3-2 ä¸‹åˆ03:36:52ã€‚
  */
 package com.apollo.swing.component.text;
 
 import java.math.BigInteger;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºIntegerField.java</p>
- * <p>ÀàĞÍÃèÊö£ºÕûĞÍÊıÊäÈë¿ò£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-3-2</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šIntegerField.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ•´å‹æ•°è¾“å…¥æ¡†ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-3-2</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -102,7 +102,7 @@ public class IntegerField extends BaseField {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public IntegerField() {
@@ -110,10 +110,10 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
      * @since T3 V1.1
      */
     public IntegerField(int columns, long minimum, long maximum) {
@@ -121,11 +121,11 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public IntegerField(int columns, long minimum, long maximum, long value) {
@@ -133,12 +133,12 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param step ²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public IntegerField(int columns, long minimum, long maximum, long step, long value) {
@@ -153,13 +153,13 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param step ²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public IntegerField(int columns, long minimum, long maximum, long step, long stepBase, long value) {
@@ -174,15 +174,15 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param step ²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public IntegerField(int columns,
@@ -204,15 +204,15 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param step ²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param step æ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#TIntegerFormatter(boolean, boolean, BigInteger, BigInteger, BigInteger)
      * @since T3 V1.1
      */
@@ -245,8 +245,8 @@ public class IntegerField extends BaseField {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡ÕûÊı£¬×¢Òâ£º´Ë´¦»ñÈ¡µÄÖµ²¢²»¾ÍÊÇ½çÃæÉÏµÄÖµ£¬Ö»ÓĞcommitEditÒÔºó£¬½çÃæÉÏµÄÖµ²Å»á´æÈëÄ£ĞÍ£¬ÕâµãºÍJFormattedTextFieldÍêÈ«Ò»Ñù¡£
-     * @return ÕûÊı£¬Èç¹ûÎªnull±íÊ¾Î´ÊäÈë»òÊäÈëÎª¿Õ¡£
+     * è·å–æ•´æ•°ï¼Œæ³¨æ„ï¼šæ­¤å¤„è·å–çš„å€¼å¹¶ä¸å°±æ˜¯ç•Œé¢ä¸Šçš„å€¼ï¼Œåªæœ‰commitEditä»¥åï¼Œç•Œé¢ä¸Šçš„å€¼æ‰ä¼šå­˜å…¥æ¨¡å‹ï¼Œè¿™ç‚¹å’ŒJFormattedTextFieldå®Œå…¨ä¸€æ ·ã€‚
+     * @return æ•´æ•°ï¼Œå¦‚æœä¸ºnullè¡¨ç¤ºæœªè¾“å…¥æˆ–è¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public BigInteger getInteger() {
@@ -254,8 +254,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃÕûÊı£¬×¢Òâ£ºÓ¦ÓÃ±ØĞë±£Ö¤ÉèÖÃµÄÕûÊıÊÇºÏ·¨µÄ¡£
-     * @param integer ÕûÊı£¬Îªnull±íÊ¾ÊäÈëÎª¿Õ¡£
+     * è®¾ç½®æ•´æ•°ï¼Œæ³¨æ„ï¼šåº”ç”¨å¿…é¡»ä¿è¯è®¾ç½®çš„æ•´æ•°æ˜¯åˆæ³•çš„ã€‚
+     * @param integer æ•´æ•°ï¼Œä¸ºnullè¡¨ç¤ºè¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public void setInteger(BigInteger integer) {
@@ -263,8 +263,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃÕûÊı£¬×¢Òâ£ºÓ¦ÓÃ±ØĞë±£Ö¤ÉèÖÃµÄÕûÊıÊÇºÏ·¨µÄ¡£
-     * @param integer ÕûÊı¡£
+     * è®¾ç½®æ•´æ•°ï¼Œæ³¨æ„ï¼šåº”ç”¨å¿…é¡»ä¿è¯è®¾ç½®çš„æ•´æ•°æ˜¯åˆæ³•çš„ã€‚
+     * @param integer æ•´æ•°ã€‚
      * @since T3 V1.1
      */
     public void setInteger(long integer) {
@@ -272,8 +272,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡ÕûÊı¸ñÊ½Æ÷¡£
-     * @return ÕûÊı¸ñÊ½Æ÷¡£
+     * è·å–æ•´æ•°æ ¼å¼å™¨ã€‚
+     * @return æ•´æ•°æ ¼å¼å™¨ã€‚
      * @since T3 V1.1
      */
     public IntegerFormatter getIntegerFormatter() {
@@ -281,8 +281,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @return ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è·å–å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @return å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#isNeedInput()
      * @since T3 V1.1
      */
@@ -291,8 +291,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isNeedInput ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isNeedInput å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setNeedInput(boolean)
      * @since T3 V1.1
      */
@@ -301,8 +301,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @return ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @return å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#isEnabledPopupErrorTip()
      * @since T3 V1.1
      */
@@ -311,8 +311,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param isEnabledPopupErrorTip ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param isEnabledPopupErrorTip å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setEnabledPopupErrorTip(boolean)
      * @since T3 V1.1
      */
@@ -321,8 +321,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î minimum µÄÖµ¡£
+     * è·å–å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ minimum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#getMinimum()
      * @since T3 V1.1
      */
@@ -331,8 +331,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setMinimum(BigInteger)
      * @since T3 V1.1
      */
@@ -341,8 +341,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinimum(long minimum) {
@@ -350,8 +350,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maximum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#getMaximum()
      * @since T3 V1.1
      */
@@ -360,8 +360,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setMaximum(BigInteger)
      * @since T3 V1.1
      */
@@ -370,8 +370,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaximum(long maximum) {
@@ -379,8 +379,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î step µÄÖµ£¬²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @return ×Ö¶Î step µÄÖµ¡£
+     * è·å–å­—æ®µ step çš„å€¼ï¼Œæ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @return å­—æ®µ step çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#getStep()
      * @since T3 V1.1
      */
@@ -389,8 +389,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î step µÄÖµ£¬²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param step ×Ö¶Î step µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ step çš„å€¼ï¼Œæ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param step å­—æ®µ step çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setStep(BigInteger)
      * @since T3 V1.1
      */
@@ -399,8 +399,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î step µÄÖµ£¬²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param step ×Ö¶Î step µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ step çš„å€¼ï¼Œæ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param step å­—æ®µ step çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setStep(long step) {
@@ -408,8 +408,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î stepBase µÄÖµ£¬²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @return ×Ö¶Î stepBase µÄÖµ¡£
+     * è·å–å­—æ®µ stepBase çš„å€¼ï¼Œæ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @return å­—æ®µ stepBase çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#getStepBase()
      * @since T3 V1.1
      */
@@ -418,8 +418,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î stepBase µÄÖµ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ×Ö¶Î stepBase µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ stepBase çš„å€¼æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase å­—æ®µ stepBase çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#setStepBase(BigInteger)
      * @since T3 V1.1
      */
@@ -428,8 +428,8 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î stepBase µÄÖµ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ×Ö¶Î stepBase µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ stepBase çš„å€¼æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase å­—æ®µ stepBase çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setStepBase(long stepBase) {
@@ -439,7 +439,7 @@ public class IntegerField extends BaseField {
     /*------------------------------------- JFormattedTextField Public Method -------------------------------------*/
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃgetInteger·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨getIntegeræ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#getValue()
      * @see com.apollo.swing.component.text.IntegerField#getInteger()
      */
@@ -448,7 +448,7 @@ public class IntegerField extends BaseField {
     }
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃsetInteger·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨setIntegeræ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#setValue(java.lang.Object)
      * @see com.apollo.swing.component.text.IntegerField#setInteger(BigInteger)
      */

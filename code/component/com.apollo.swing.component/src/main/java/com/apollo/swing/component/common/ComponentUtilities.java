@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-2-26 ÏÂÎç03:31:54
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-2-26 ä¸‹åˆ03:31:54
  */
 package com.apollo.swing.component.common;
 
@@ -41,22 +41,22 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTComponentUtilities.java</p>
- * <p>ÎÄ¼şÃèÊö£º×é¼ş¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-6-15</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTComponentUtilities.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»„ä»¶å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-6-15</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public final class ComponentUtilities {
@@ -64,7 +64,7 @@ public final class ComponentUtilities {
     /*------------------------------------- Public Static Field -------------------------------------*/
 
     /**
-     * ×é¼ş¼àÌıÆ÷------ÏŞÖÆ³ß´ç¡£
+     * ç»„ä»¶ç›‘å¬å™¨------é™åˆ¶å°ºå¯¸ã€‚
      */
     public static final ComponentListener CPL_LIMITSIZE = new ComponentAdapter() {
 
@@ -72,18 +72,18 @@ public final class ComponentUtilities {
          * @see java.awt.event.ComponentAdapter#componentResized(java.awt.event.ComponentEvent)
          */
         public void componentResized(ComponentEvent evt) {
-            /* »ñÈ¡Ä¿±ê×é¼ş */
+            /* è·å–ç›®æ ‡ç»„ä»¶ */
             Component component = evt.getComponent();
 
-            /* »ñÈ¡Ä¿±ê×é¼şÉèÖÃµÄ¸÷ÖÖ³ß´ç */
+            /* è·å–ç›®æ ‡ç»„ä»¶è®¾ç½®çš„å„ç§å°ºå¯¸ */
             Dimension newSize = component.getSize();
             Dimension minSize = component.getMinimumSize();
             Dimension maxSize = component.getMaximumSize();
 
-            /* ´´½¨Ä¿±ê×é¼şÉèÖÃµÄ×îÖÕ³ß´ç */
+            /* åˆ›å»ºç›®æ ‡ç»„ä»¶è®¾ç½®çš„æœ€ç»ˆå°ºå¯¸ */
             Dimension finalSize = new Dimension();
 
-            /* È·¶¨Ä¿±ê×é¼şµÄ×îÖÕ¿í¶È */
+            /* ç¡®å®šç›®æ ‡ç»„ä»¶çš„æœ€ç»ˆå®½åº¦ */
             if (newSize.width < minSize.width) {
                 finalSize.width = minSize.width;
 
@@ -94,7 +94,7 @@ public final class ComponentUtilities {
                 finalSize.width = newSize.width;
             }
 
-            /* È·¶¨Ä¿±ê×é¼şµÄ×îÖÕ¸ß¶È */
+            /* ç¡®å®šç›®æ ‡ç»„ä»¶çš„æœ€ç»ˆé«˜åº¦ */
             if (newSize.height < minSize.height) {
                 finalSize.height = minSize.height;
 
@@ -105,7 +105,7 @@ public final class ComponentUtilities {
                 finalSize.height = newSize.height;
             }
 
-            /* ÉèÖÃÄ¿±ê×é¼şÉèÖÃµÄ×îÖÕ³ß´ç */
+            /* è®¾ç½®ç›®æ ‡ç»„ä»¶è®¾ç½®çš„æœ€ç»ˆå°ºå¯¸ */
             component.setSize(finalSize);
         }
 
@@ -130,17 +130,17 @@ public final class ComponentUtilities {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private ComponentUtilities() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * Èç¹ûµ±Ç°Ïß³Ì±¾À´¾ÍÊÇawtÊÂ¼şÏß³Ì¾ÍÖ±½ÓÖ´ĞĞcode.run()£¬·ñÔò»áµ÷ÓÃSwingUtilities.invokeLater()°Ñcode·ÅÈëÊÂ¼ş¶ÓÁĞÖ´ĞĞ¡£
-     * @param code ĞèÒªÔËĞĞµÄ´úÂë¡£
+     * å¦‚æœå½“å‰çº¿ç¨‹æœ¬æ¥å°±æ˜¯awtäº‹ä»¶çº¿ç¨‹å°±ç›´æ¥æ‰§è¡Œcode.run()ï¼Œå¦åˆ™ä¼šè°ƒç”¨SwingUtilities.invokeLater()æŠŠcodeæ”¾å…¥äº‹ä»¶é˜Ÿåˆ—æ‰§è¡Œã€‚
+     * @param code éœ€è¦è¿è¡Œçš„ä»£ç ã€‚
      */
     public static final void safelyInvokeLater(Runnable code) {
         if (SwingUtilities.isEventDispatchThread()) {
@@ -152,102 +152,102 @@ public final class ComponentUtilities {
     }
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨ÈİÆ÷ÊÇ·ñÔÊĞíÌî³ä´¹Ö±ÇøÓòÒÔÀ­ÉìÈİÆ÷µÄÏÔÊ¾ÇøÓò¡£
-     * @param container Ö¸¶¨µÄÈİÆ÷¡£
-     * @return Îªtrue±íÊ¾ÔÊĞíÌî³ä´¹Ö±ÇøÓò£¬Îªfalse±íÊ¾²»ÔÊĞíÌî³ä´¹Ö±ÇøÓò¡£
+     * åˆ¤æ–­æŒ‡å®šå®¹å™¨æ˜¯å¦å…è®¸å¡«å……å‚ç›´åŒºåŸŸä»¥æ‹‰ä¼¸å®¹å™¨çš„æ˜¾ç¤ºåŒºåŸŸã€‚
+     * @param container æŒ‡å®šçš„å®¹å™¨ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºå…è®¸å¡«å……å‚ç›´åŒºåŸŸï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¡«å……å‚ç›´åŒºåŸŸã€‚
      */
     public static final boolean isFillVertical(Container container) {
-        /* ¹ıÂË²ÎÊıÎªnullµÄÇéĞÎ */
+        /* è¿‡æ»¤å‚æ•°ä¸ºnullçš„æƒ…å½¢ */
         if (container == null) {
             return false;
         }
 
-        /* »ñÈ¡ÈİÆ÷µÄ²¼¾Ö¹ÜÀíÆ÷ */
+        /* è·å–å®¹å™¨çš„å¸ƒå±€ç®¡ç†å™¨ */
         LayoutManager layout = container.getLayout();
 
-        /* ¹ıÂËÈİÆ÷µÄ²¼¾Ö¹ÜÀíÆ÷²»ÊÇGridBagLayoutµÄÇéĞÎ */
+        /* è¿‡æ»¤å®¹å™¨çš„å¸ƒå±€ç®¡ç†å™¨ä¸æ˜¯GridBagLayoutçš„æƒ…å½¢ */
         if (!(layout instanceof GridBagLayout)) {
             return true;
         }
 
-        /* »ñÈ¡GridBagLayoutºÍÈİÆ÷µÄÈ«²¿×é¼ş */
+        /* è·å–GridBagLayoutå’Œå®¹å™¨çš„å…¨éƒ¨ç»„ä»¶ */
         GridBagLayout gridBagLayout = (GridBagLayout) layout;
         Component[] components = container.getComponents();
 
-        /* ÅĞ¶ÏÖ¸¶¨ÈİÆ÷ÊÇ·ñÔÊĞíÌî³ä´¹Ö±ÇøÓòÒÔÀ­ÉìÈİÆ÷µÄÏÔÊ¾ÇøÓò */
+        /* åˆ¤æ–­æŒ‡å®šå®¹å™¨æ˜¯å¦å…è®¸å¡«å……å‚ç›´åŒºåŸŸä»¥æ‹‰ä¼¸å®¹å™¨çš„æ˜¾ç¤ºåŒºåŸŸ */
         for (int i = 0; i < components.length; i++) {
-            /* »ñÈ¡GridBagConstraints */
+            /* è·å–GridBagConstraints */
             GridBagConstraints gbc = gridBagLayout.getConstraints(components[i]);
 
-            /* ÅĞ¶Ï×é¼şÊÇ·ñÔÊĞíÌî³ä´¹Ö±ÇøÓòÒÔÀ­ÉìÈİÆ÷µÄÏÔÊ¾ÇøÓò */
+            /* åˆ¤æ–­ç»„ä»¶æ˜¯å¦å…è®¸å¡«å……å‚ç›´åŒºåŸŸä»¥æ‹‰ä¼¸å®¹å™¨çš„æ˜¾ç¤ºåŒºåŸŸ */
             if (gbc.fill == GridBagConstraints.VERTICAL || gbc.fill == GridBagConstraints.BOTH) {
                 return true;
             }
         }
 
-        /* ²»ÔÊĞíÌî³ä´¹Ö±ÇøÓò */
+        /* ä¸å…è®¸å¡«å……å‚ç›´åŒºåŸŸ */
         return false;
     }
 
     /**
-     * µ÷ÕûJTableµÄÏà¹ØÊ×Ñ¡¿í¶È£¬°üÀ¨ÆäÖĞµÄ¸÷ÁĞ£¬ÒÔ¼°¹ö¶¯´°¸ñÖĞµÄÊ×Ñ¡¿í¶È£¨·ÇÏß³Ì°²È«£©¡£
-     * ×¢Òâ£º1.Èç¹ûÄãµÄtargetTableËùÓĞÄ£ĞÍ£¨°üÀ¨ÁĞÄ£ĞÍ£©¼°ÆääÖÈ¾Æ÷£¨°üÀ¨±íÍ·äÖÈ¾Æ÷£©Ã»ÓĞ×¼±¸ºÃ£¬´Ë·½·¨ÓĞ¿ÉÄÜÅ×³ö²»¿ÉÓö¼ûµÄÒì³£¡£
-     * ¡¡¡¡¡¡2.Èç¹ûÄãµÄtargetTableÑ¡ÔñµÄAutoResizeModeÊÇ·ÇAUTO_RESIZE_OFF£¬ÄÇÃ´´ËÉèÖÃ²»»áÔÚ½çÃæĞĞ²úÉúÄãÏëÒªµÄĞ§¹û¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
+     * è°ƒæ•´JTableçš„ç›¸å…³é¦–é€‰å®½åº¦ï¼ŒåŒ…æ‹¬å…¶ä¸­çš„å„åˆ—ï¼Œä»¥åŠæ»šåŠ¨çª—æ ¼ä¸­çš„é¦–é€‰å®½åº¦ï¼ˆéçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * æ³¨æ„ï¼š1.å¦‚æœä½ çš„targetTableæ‰€æœ‰æ¨¡å‹ï¼ˆåŒ…æ‹¬åˆ—æ¨¡å‹ï¼‰åŠå…¶æ¸²æŸ“å™¨ï¼ˆåŒ…æ‹¬è¡¨å¤´æ¸²æŸ“å™¨ï¼‰æ²¡æœ‰å‡†å¤‡å¥½ï¼Œæ­¤æ–¹æ³•æœ‰å¯èƒ½æŠ›å‡ºä¸å¯é‡è§çš„å¼‚å¸¸ã€‚
+     * ã€€ã€€ã€€2.å¦‚æœä½ çš„targetTableé€‰æ‹©çš„AutoResizeModeæ˜¯éAUTO_RESIZE_OFFï¼Œé‚£ä¹ˆæ­¤è®¾ç½®ä¸ä¼šåœ¨ç•Œé¢è¡Œäº§ç”Ÿä½ æƒ³è¦çš„æ•ˆæœã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
      */
     public static final void adjustJTablePreferredWidths(JTable targetTable) {
         if (targetTable == null) {
-            return; //Ä¿±ê±í¸ñÎª¿Õ²»×öÒÔÏÂ´¦Àí
+            return; //ç›®æ ‡è¡¨æ ¼ä¸ºç©ºä¸åšä»¥ä¸‹å¤„ç†
         }
 
-        TableColumnModel cm = targetTable.getColumnModel(); //»ñÈ¡ÁĞÄ£ĞÍ
-        JTableHeader th = targetTable.getTableHeader(); //»ñÈ¡±íÍ·
+        TableColumnModel cm = targetTable.getColumnModel(); //è·å–åˆ—æ¨¡å‹
+        JTableHeader th = targetTable.getTableHeader(); //è·å–è¡¨å¤´
 
-        final int columnMargin = cm.getColumnMargin(); //±í¸ñµÄÁĞ¼ä¾à
-        int targetTablePreferredWidths = 0; //Ä¿±ê±íµÄÊ×Ñ¡¿í¶ÈÊÕ¼¯±äÁ¿
+        final int columnMargin = cm.getColumnMargin(); //è¡¨æ ¼çš„åˆ—é—´è·
+        int targetTablePreferredWidths = 0; //ç›®æ ‡è¡¨çš„é¦–é€‰å®½åº¦æ”¶é›†å˜é‡
 
-        for (int i = 0, columnCount = cm.getColumnCount(); i < columnCount; i++) { //±éÀúÁĞ
+        for (int i = 0, columnCount = cm.getColumnCount(); i < columnCount; i++) { //éå†åˆ—
             TableColumn column = cm.getColumn(i);
 
             TableCellRenderer headerRenderer = column.getHeaderRenderer();
-            if (headerRenderer == null) { //ÓÃ»§Ã»ÉèÖÃ±íÍ·äÖÈ¾Æ÷¾ÍÊ¹ÓÃÄ¬ÈÏµÄ
+            if (headerRenderer == null) { //ç”¨æˆ·æ²¡è®¾ç½®è¡¨å¤´æ¸²æŸ“å™¨å°±ä½¿ç”¨é»˜è®¤çš„
                 headerRenderer = th.getDefaultRenderer();
             }
 
             Object headerValue = column.getHeaderValue();
 
-            /* »ñÈ¡±íÍ·µÄÊ×Ñ¡¿í¶È */
+            /* è·å–è¡¨å¤´çš„é¦–é€‰å®½åº¦ */
             Component headerComponent = headerRenderer.getTableCellRendererComponent(targetTable, headerValue, false, false, 0, i);
-            int columnMaxWidth = headerComponent.getPreferredSize().width; //µ±Ç°ÁĞµÄ×î´ó¿í¶È£¬ÓÃÓÚÒÔÏÂµÄÌæ»»±È½Ï
+            int columnMaxWidth = headerComponent.getPreferredSize().width; //å½“å‰åˆ—çš„æœ€å¤§å®½åº¦ï¼Œç”¨äºä»¥ä¸‹çš„æ›¿æ¢æ¯”è¾ƒ
 
-            for (int j = 0, rowCount = targetTable.getRowCount(); j < rowCount; j++) { //±éÀúĞĞ
+            for (int j = 0, rowCount = targetTable.getRowCount(); j < rowCount; j++) { //éå†è¡Œ
                 TableCellRenderer cellRenderer = targetTable.getCellRenderer(j, i);
                 Object cellValue = targetTable.getValueAt(j, i);
 
-                /* »ñÈ¡µ±ÁĞµÄµ±Ç°ĞĞµÄÊ×Ñ¡¿í¶È */
+                /* è·å–å½“åˆ—çš„å½“å‰è¡Œçš„é¦–é€‰å®½åº¦ */
                 Component cellComponent = cellRenderer.getTableCellRendererComponent(targetTable, cellValue, false, false, j, i);
-                columnMaxWidth = Math.max(columnMaxWidth, cellComponent.getPreferredSize().width); //±È½ÏÌæ»»
+                columnMaxWidth = Math.max(columnMaxWidth, cellComponent.getPreferredSize().width); //æ¯”è¾ƒæ›¿æ¢
             }
 
-            columnMaxWidth += columnMargin; //×î´óÁĞ¿íĞèÒª¿¼ÂÇµ½ÁĞ¼ä¾à
-            column.setPreferredWidth(columnMaxWidth); //ÉèÖÃÁĞµÄÊ×Ñ¡¿í¶È
-            targetTablePreferredWidths += column.getPreferredWidth(); //ÊÕ¼¯¸÷¸öÁĞµÄÊ×Ñ¡¿í¶È
+            columnMaxWidth += columnMargin; //æœ€å¤§åˆ—å®½éœ€è¦è€ƒè™‘åˆ°åˆ—é—´è·
+            column.setPreferredWidth(columnMaxWidth); //è®¾ç½®åˆ—çš„é¦–é€‰å®½åº¦
+            targetTablePreferredWidths += column.getPreferredWidth(); //æ”¶é›†å„ä¸ªåˆ—çš„é¦–é€‰å®½åº¦
         }
 
-        /* ÉèÖÃ¹ö¶¯´°¸ñÊÓ¿ÚµÄ×î´ó³ß´ç£¨JTable×ÔÉíµÄÊ×Ñ¡¿í¶È»á¸ù¾İ¸÷¸öÁĞ¼ÆËã³öÀ´£¬ËùÒÔ²»ĞèÒªÌØ±ğÉè¶¨£© */
+        /* è®¾ç½®æ»šåŠ¨çª—æ ¼è§†å£çš„æœ€å¤§å°ºå¯¸ï¼ˆJTableè‡ªèº«çš„é¦–é€‰å®½åº¦ä¼šæ ¹æ®å„ä¸ªåˆ—è®¡ç®—å‡ºæ¥ï¼Œæ‰€ä»¥ä¸éœ€è¦ç‰¹åˆ«è®¾å®šï¼‰ */
         Dimension psvs = targetTable.getPreferredScrollableViewportSize();
         psvs.width = targetTablePreferredWidths;
-        /* ×¢Òâ£ºÕâÀï²»ÄÜÖ±½ÓÉèÖÃÎªJTableµÄÊ×Ñ¡´óĞ¡£¬ÕâÑù»áÆÆ»µÓÃ»§ÒÑÉè¶¨µÄ¹ö¶¯´°¸ñµÄÊ×Ñ¡"¸ß¶È"µÄ */
+        /* æ³¨æ„ï¼šè¿™é‡Œä¸èƒ½ç›´æ¥è®¾ç½®ä¸ºJTableçš„é¦–é€‰å¤§å°ï¼Œè¿™æ ·ä¼šç ´åç”¨æˆ·å·²è®¾å®šçš„æ»šåŠ¨çª—æ ¼çš„é¦–é€‰"é«˜åº¦"çš„ */
         targetTable.setPreferredScrollableViewportSize(psvs);
     }
 
     /**
-     * Í£Ö¹Ö¸¶¨±í¸ñµÄµ¥Ôª¸ñ±à¼­¶¯×÷£¨Èç¹ûÓĞ±í¸ñÓĞÕıÔÚ±à¼­µÄµÄµ¥Ôª¸ñµÄ»°£©¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
+     * åœæ­¢æŒ‡å®šè¡¨æ ¼çš„å•å…ƒæ ¼ç¼–è¾‘åŠ¨ä½œï¼ˆå¦‚æœæœ‰è¡¨æ ¼æœ‰æ­£åœ¨ç¼–è¾‘çš„çš„å•å…ƒæ ¼çš„è¯ï¼‰ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
      */
     public static final void stopJTableCellEditing(JTable targetTable) {
         if (targetTable == null) {
-            return; //Ä¿±ê±í¸ñÎª¿Õ²»×öÒÔÏÂ´¦Àí
+            return; //ç›®æ ‡è¡¨æ ¼ä¸ºç©ºä¸åšä»¥ä¸‹å¤„ç†
         }
 
         if (targetTable.isEditing()) {
@@ -259,135 +259,135 @@ public final class ComponentUtilities {
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã¿ò¼Ü¡£
-     * @param component Ö¸¶¨µÄ×é¼ş¡£
-     * @return Ö¸¶¨×é¼şµÄµÄ¶¥²ã¿ò¼Ü¡£
+     * è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚æ¡†æ¶ã€‚
+     * @param component æŒ‡å®šçš„ç»„ä»¶ã€‚
+     * @return æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚æ¡†æ¶ã€‚
      */
     public static final JFrame getFrame(Component component) {
-        /* »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú */
+        /* è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ */
         Window window = getWindow(component);
 
-        /* ·µ»ØÖ¸¶¨×é¼şµÄµÄ¶¥²ã¿ò¼Ü */
-        if (window instanceof JFrame) { //Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿ÚÊÇ¿ò¼Ü
+        /* è¿”å›æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚æ¡†æ¶ */
+        if (window instanceof JFrame) { //æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£æ˜¯æ¡†æ¶
             return (JFrame) window;
 
-        } else { //Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú²»ÊÇ¿ò¼Ü
+        } else { //æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ä¸æ˜¯æ¡†æ¶
             return null;
         }
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã¶Ô»°¿ò¡£
-     * @param component Ö¸¶¨µÄ×é¼ş¡£
-     * @return Ö¸¶¨×é¼şµÄµÄ¶¥²ã¶Ô»°¿ò¡£
+     * è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚å¯¹è¯æ¡†ã€‚
+     * @param component æŒ‡å®šçš„ç»„ä»¶ã€‚
+     * @return æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚å¯¹è¯æ¡†ã€‚
      */
     public static final JDialog getDialog(Component component) {
-        /* »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú */
+        /* è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ */
         Window window = getWindow(component);
 
-        /* ·µ»ØÖ¸¶¨×é¼şµÄµÄ¶¥²ã¶Ô»°¿ò */
-        if (window instanceof JDialog) { //Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿ÚÊÇ¶Ô»°¿ò
+        /* è¿”å›æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚å¯¹è¯æ¡† */
+        if (window instanceof JDialog) { //æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£æ˜¯å¯¹è¯æ¡†
             return (JDialog) window;
 
-        } else { //Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú²»ÊÇ¶Ô»°¿ò
+        } else { //æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ä¸æ˜¯å¯¹è¯æ¡†
             return null;
         }
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú¡£
-     * @param component Ö¸¶¨µÄ×é¼ş¡£
-     * @return Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú¡£
+     * è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ã€‚
+     * @param component æŒ‡å®šçš„ç»„ä»¶ã€‚
+     * @return æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ã€‚
      */
     public static final Window getWindow(Component component) {
-        /* ·µ»ØÖ¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú */
-        if (component != null) { //Ö¸¶¨µÄ×é¼ş²»Îª¿Õ
-            if (component instanceof JDialog || component instanceof JFrame) { //Ö¸¶¨µÄ×é¼şÊÇ¿ò¼Ü»ò¶Ô»°¿ò
+        /* è¿”å›æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ */
+        if (component != null) { //æŒ‡å®šçš„ç»„ä»¶ä¸ä¸ºç©º
+            if (component instanceof JDialog || component instanceof JFrame) { //æŒ‡å®šçš„ç»„ä»¶æ˜¯æ¡†æ¶æˆ–å¯¹è¯æ¡†
                 return (Window) component;
 
-            } else { //Ö¸¶¨µÄ×é¼şÊÇ²»ÊÇ¿ò¼ÜºÍ¶Ô»°¿ò
-                /* »ñÈ¡Ö¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú */
+            } else { //æŒ‡å®šçš„ç»„ä»¶æ˜¯ä¸æ˜¯æ¡†æ¶å’Œå¯¹è¯æ¡†
+                /* è·å–æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ */
                 Window window = SwingUtilities.windowForComponent(component);
 
-                /* »ñÈ¡µÄÖ¸¶¨×é¼şµÄµÄ¶¥²ã´°¿ÚÎªnull¹ıÂË */
+                /* è·å–çš„æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ä¸ºnullè¿‡æ»¤ */
                 if (window == null) {
                     window = KeyboardFocusManager.getCurrentKeyboardFocusManager().getActiveWindow();
                 }
 
-                /* ·µ»ØÖ¸¶¨×é¼şµÄµÄ¶¥²ã´°¿Ú */
+                /* è¿”å›æŒ‡å®šç»„ä»¶çš„çš„é¡¶å±‚çª—å£ */
                 return window;
             }
 
-        } else { //Ö¸¶¨µÄ×é¼şÎª¿Õ
+        } else { //æŒ‡å®šçš„ç»„ä»¶ä¸ºç©º
             return null;
         }
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã¡£
-     * @param window Ö¸¶¨µÄ´°¿Ú¡£
-     * @return Ö¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã¡£
+     * è·å–æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ã€‚
+     * @param window æŒ‡å®šçš„çª—å£ã€‚
+     * @return æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ã€‚
      */
     public static final Point getLocationOnCenterInScreen(Window window) {
-        /* ´´½¨Ö¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* åˆ›å»ºæŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         Point location = new Point(0, 0);
 
-        /* »ñÈ¡ÆÁÄ»µÄ³ß´çºÍÖ¸¶¨´°¿ÚµÄ³ß´ç */
+        /* è·å–å±å¹•çš„å°ºå¯¸å’ŒæŒ‡å®šçª—å£çš„å°ºå¯¸ */
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension windowSize = window.getSize();
 
-        /* ¼ÆËãÖ¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* è®¡ç®—æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         location.x = screenSize.width / 2 - windowSize.width / 2;
         location.y = screenSize.height / 2 - windowSize.height / 2;
 
-        /* ·µ»ØÖ¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* è¿”å›æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         return location;
     }
 
     /**
-     * »ñÈ¡Ò»¸ö×é¼şÔÚÆÁÄ»ÄÚµÄÊ×Ñ¡ÏÔÊ¾Î»ÖÃ¡£
-     * @param targetComponent Ä¿±ê×é¼ş¡£
-     * @param expectantLocation Ä¿±ê×é¼şÆÚ´ı³öÏÖµÄÎ»ÖÃ£¨×é¼ş×óÉÏ½ÇµÄ×ø±êµã£©¡£
-     * @return Èç¹ûÄ¿±ê×é¼ş»òÄ¿±ê×é¼şÆÚ´ı³öÏÖµÄÎ»ÖÃÎª¿ÕÔò·µ»Ønull¡£
+     * è·å–ä¸€ä¸ªç»„ä»¶åœ¨å±å¹•å†…çš„é¦–é€‰æ˜¾ç¤ºä½ç½®ã€‚
+     * @param targetComponent ç›®æ ‡ç»„ä»¶ã€‚
+     * @param expectantLocation ç›®æ ‡ç»„ä»¶æœŸå¾…å‡ºç°çš„ä½ç½®ï¼ˆç»„ä»¶å·¦ä¸Šè§’çš„åæ ‡ç‚¹ï¼‰ã€‚
+     * @return å¦‚æœç›®æ ‡ç»„ä»¶æˆ–ç›®æ ‡ç»„ä»¶æœŸå¾…å‡ºç°çš„ä½ç½®ä¸ºç©ºåˆ™è¿”å›nullã€‚
      */
     public static final Point getPreferredLocationInScreen(JComponent targetComponent, Point expectantLocation) {
         if (targetComponent == null || expectantLocation == null) {
             return null;
         }
 
-        Point preferredLocation = new Point(); //Ê×Ñ¡ÏÔÊ¾Î»ÖÃ
+        Point preferredLocation = new Point(); //é¦–é€‰æ˜¾ç¤ºä½ç½®
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension targetComponentPreferredSize = targetComponent.getPreferredSize();
 
-        /* ¼ÆËãxÖáµÄ×ø±êÖµ */
-        if (expectantLocation.x < 0) { //ÆÚ´ıµÄx×ø±êÔÚÆÁÄ»ÍâÃæ£¨×ó²à£©
+        /* è®¡ç®—xè½´çš„åæ ‡å€¼ */
+        if (expectantLocation.x < 0) { //æœŸå¾…çš„xåæ ‡åœ¨å±å¹•å¤–é¢ï¼ˆå·¦ä¾§ï¼‰
             preferredLocation.x = expectantLocation.x + targetComponentPreferredSize.width;
 
-        } else if (expectantLocation.x + targetComponentPreferredSize.width > screenSize.width) { //ÆÚ´ıµÄx×ø±ê¿¿ÓÒ²»ÄÜÏÔÊ¾ÍêÕûµÄ×é¼ş£¬ÆäÖĞ°üº¬ÁËÆÚ´ıµÄx×ø±êÔÚÆÁÄ»ÍâÃæ£¨ÓÒ²à£©µÄÇé¿ö
+        } else if (expectantLocation.x + targetComponentPreferredSize.width > screenSize.width) { //æœŸå¾…çš„xåæ ‡é å³ä¸èƒ½æ˜¾ç¤ºå®Œæ•´çš„ç»„ä»¶ï¼Œå…¶ä¸­åŒ…å«äº†æœŸå¾…çš„xåæ ‡åœ¨å±å¹•å¤–é¢ï¼ˆå³ä¾§ï¼‰çš„æƒ…å†µ
             preferredLocation.x = expectantLocation.x - targetComponentPreferredSize.width;
 
-        } else { //Õı³£Çé¿ö
+        } else { //æ­£å¸¸æƒ…å†µ
             preferredLocation.x = expectantLocation.x;
         }
 
-        /* ¼ÆËãyÖáµÄ×ø±êÖµ */
-        if (expectantLocation.y < 0) { //ÆÚ´ıµÄy×ø±êÔÚÆÁÄ»ÍâÃæ£¨ÉÏ²à£©
+        /* è®¡ç®—yè½´çš„åæ ‡å€¼ */
+        if (expectantLocation.y < 0) { //æœŸå¾…çš„yåæ ‡åœ¨å±å¹•å¤–é¢ï¼ˆä¸Šä¾§ï¼‰
             preferredLocation.y = expectantLocation.y + targetComponentPreferredSize.height;
 
-        } else if (expectantLocation.y + targetComponentPreferredSize.height > screenSize.height) { //ÆÚ´ıµÄy×ø±ê¿¿ÏÂ²»ÄÜÏÔÊ¾ÍêÕûµÄ×é¼ş£¬ÆäÖĞ°üº¬ÁËÆÚ´ıµÄy×ø±êÔÚÆÁÄ»ÍâÃæ£¨ÏÂ²à£©µÄÇé¿ö
+        } else if (expectantLocation.y + targetComponentPreferredSize.height > screenSize.height) { //æœŸå¾…çš„yåæ ‡é ä¸‹ä¸èƒ½æ˜¾ç¤ºå®Œæ•´çš„ç»„ä»¶ï¼Œå…¶ä¸­åŒ…å«äº†æœŸå¾…çš„yåæ ‡åœ¨å±å¹•å¤–é¢ï¼ˆä¸‹ä¾§ï¼‰çš„æƒ…å†µ
             preferredLocation.y = expectantLocation.y - targetComponentPreferredSize.height;
 
-        } else { //Õı³£Çé¿ö
+        } else { //æ­£å¸¸æƒ…å†µ
             preferredLocation.y = expectantLocation.y;
         }
 
-        /* ´¦ÀíÆÚ´ıµÄ×ø±êĞ¡ÓÚÆÁÄ»ºÜ¶àÊ±µÄÇéĞÎ */
-        if (preferredLocation.x < 0) { //ÆÚ´ıµÄx×ø±êÊÇ¸ºÊı£¬¶øÇÒ¹ıÓÚĞ¡ÒÔÖÁÓÚ¼ÓÉÏ×é¼ş¿í¶ÈºóÈÔÈ»ÊÇ¸ºÊı£¬ÔÚÆÁÄ»ÍâÃæ
+        /* å¤„ç†æœŸå¾…çš„åæ ‡å°äºå±å¹•å¾ˆå¤šæ—¶çš„æƒ…å½¢ */
+        if (preferredLocation.x < 0) { //æœŸå¾…çš„xåæ ‡æ˜¯è´Ÿæ•°ï¼Œè€Œä¸”è¿‡äºå°ä»¥è‡³äºåŠ ä¸Šç»„ä»¶å®½åº¦åä»ç„¶æ˜¯è´Ÿæ•°ï¼Œåœ¨å±å¹•å¤–é¢
             preferredLocation.x = 0;
         }
 
-        if (preferredLocation.y < 0) { //ÆÚ´ıµÄy×ø±êÊÇ¸ºÊı£¬¶øÇÒ¹ıÓÚĞ¡ÒÔÖÁÓÚ¼ÓÉÏ×é¼ş¸ß¶ÈºóÈÔÈ»ÊÇ¸ºÊı£¬ÔÚÆÁÄ»ÍâÃæ
+        if (preferredLocation.y < 0) { //æœŸå¾…çš„yåæ ‡æ˜¯è´Ÿæ•°ï¼Œè€Œä¸”è¿‡äºå°ä»¥è‡³äºåŠ ä¸Šç»„ä»¶é«˜åº¦åä»ç„¶æ˜¯è´Ÿæ•°ï¼Œåœ¨å±å¹•å¤–é¢
             preferredLocation.y = 0;
         }
 
@@ -395,9 +395,9 @@ public final class ComponentUtilities {
     }
 
     /**
-     * °ÑÊó±êÊÂ¼şµÄÖĞÃèÊöµÄµã×ª»¯ÎªÆÁÄ»ÉÏµÄ×ø±êµã¡£
-     * @param evt Êó±êÊÂ¼ş¡£
-     * @return Èç¹ûÊó±êÊÂ¼şÎª¿ÕÔò·µ»ØÎªnull¡£
+     * æŠŠé¼ æ ‡äº‹ä»¶çš„ä¸­æè¿°çš„ç‚¹è½¬åŒ–ä¸ºå±å¹•ä¸Šçš„åæ ‡ç‚¹ã€‚
+     * @param evt é¼ æ ‡äº‹ä»¶ã€‚
+     * @return å¦‚æœé¼ æ ‡äº‹ä»¶ä¸ºç©ºåˆ™è¿”å›ä¸ºnullã€‚
      */
     public static final Point convertLocationToScreen(MouseEvent evt) {
         if (evt == null) {
@@ -408,10 +408,10 @@ public final class ComponentUtilities {
     }
 
     /**
-     * ½«Ò»¸ö×é¼şµÄÏà¶Ô×ø±êµã×ª»¯ÎªÆÁÄ»ÉÏµÄ¾ø¶Ô×ø±êµã¡£
-     * @param source Ô´×é¼ş¡£
+     * å°†ä¸€ä¸ªç»„ä»¶çš„ç›¸å¯¹åæ ‡ç‚¹è½¬åŒ–ä¸ºå±å¹•ä¸Šçš„ç»å¯¹åæ ‡ç‚¹ã€‚
+     * @param source æºç»„ä»¶ã€‚
      * @param relativeLocation
-     * @return Èç¹û×é¼şÔ´Îª¿ÕÔò·µ»Ønull¡£
+     * @return å¦‚æœç»„ä»¶æºä¸ºç©ºåˆ™è¿”å›nullã€‚
      */
     public static final Point convertLocationToScreen(Component source, Point relativeLocation) {
         if (source == null) {
@@ -428,26 +428,26 @@ public final class ComponentUtilities {
     }
 
     /**
-     * ¸ù¾İResourceBundle»úÖÆ»ñÈ¡i18nĞÅÏ¢£¬Èç¹ûÖ¸¶¨µÄ×ÊÔ´ÕÒ²»µ½½«Ö±½Ó·µ»Øi18nKey¡£
-     * @param i18nBaseName ×ÊÔ´°üµÄ»ù±¾Ãû³Æ£¬ÊÇÒ»¸öÍêÈ«ÏŞ¶¨ÀàÃû¡£
-     * @param i18nKey ¹ú¼Ê»¯×ÊÔ´µÄ¹ú¼Ê»¯¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢¡£
+     * æ ¹æ®ResourceBundleæœºåˆ¶è·å–i18nä¿¡æ¯ï¼Œå¦‚æœæŒ‡å®šçš„èµ„æºæ‰¾ä¸åˆ°å°†ç›´æ¥è¿”å›i18nKeyã€‚
+     * @param i18nBaseName èµ„æºåŒ…çš„åŸºæœ¬åç§°ï¼Œæ˜¯ä¸€ä¸ªå®Œå…¨é™å®šç±»åã€‚
+     * @param i18nKey å›½é™…åŒ–èµ„æºçš„å›½é™…åŒ–å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ã€‚
      */
     public static final String getI18nMessage(String i18nBaseName, String i18nKey) {
         try {
             ResourceBundle rb = ResourceBundle.getBundle(i18nBaseName);
             return rb.getString(i18nKey);
 
-        } catch (MissingResourceException ex) { //ÕÒ²»µ½Ö¸¶¨µÄ×ÊÔ´
+        } catch (MissingResourceException ex) { //æ‰¾ä¸åˆ°æŒ‡å®šçš„èµ„æº
             return i18nKey;
         }
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨¾«¶ÈµÄ¸¡µãÊıµÄ×Ö·û´®ÃèÊöĞÎÊ½¡£
-     * @param floatValue ¸¡µãÖµ¡£
-     * @param precision ¾«¶È¡£
-     * @return ×Ö·û´®ÃèÊö¡£
+     * è·å–æŒ‡å®šç²¾åº¦çš„æµ®ç‚¹æ•°çš„å­—ç¬¦ä¸²æè¿°å½¢å¼ã€‚
+     * @param floatValue æµ®ç‚¹å€¼ã€‚
+     * @param precision ç²¾åº¦ã€‚
+     * @return å­—ç¬¦ä¸²æè¿°ã€‚
      */
     public static final String getFloatDescriptionByPrecision(double floatValue, int precision) {
         BigDecimal floatValueBd = new BigDecimal(floatValue);
@@ -458,52 +458,52 @@ public final class ComponentUtilities {
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÀàµÄclassÎÄ¼şËùÔÚµÄÎ»ÖÃ¡£
-     * @param targetClass Ä¿±êÀà¡£
-     * @param isClasspathParent Îªtrue·µ»ØµÄÊÇclassÎÄ¼şËùÔÚÀàÂ·¾¶µÄ¸¸Ä¿Â¼£»Îªfalse½«Ö±½Ó·µ»ØÀàÂ·¾¶£¨×¢Òâ£ºÈç¹ûclassÎÄ¼şÔÚjar»òzipÖĞ½«·µ»ØµÄÊÇjarÎÄ¼ş»òzipÎÄ¼şµÄÂ·¾¶£©¡£
-     * @param isRealSpace Îªtrue½«Ê¹ÓÃÕæÊµµÄ¿Õ¸ñÀ´Ìæ»»URLÀïÃæµÄ×ªÒå¿Õ¸ñ£¬Îªfalse½«Ö±½ÓÊ¹ÓÃURLÀïÃæ¹æ¶¨µÄ×ªÒå¿Õ¸ñ£¨×¢Òâ£ºÈç¹ûURLÓÃÓÚ¹¹½¨File£¬´Ë²ÎÊıĞèÒªÉèÖÃÎªtrue£©¡£
-     * @return ±êÊ¶Î»ÖÃ£¬Îªnull±íÊ¾targetClassÎªnull»ò¹¹ÔìURLÊ§°ÜÁË¡£
+     * è·å–æŒ‡å®šç±»çš„classæ–‡ä»¶æ‰€åœ¨çš„ä½ç½®ã€‚
+     * @param targetClass ç›®æ ‡ç±»ã€‚
+     * @param isClasspathParent ä¸ºtrueè¿”å›çš„æ˜¯classæ–‡ä»¶æ‰€åœ¨ç±»è·¯å¾„çš„çˆ¶ç›®å½•ï¼›ä¸ºfalseå°†ç›´æ¥è¿”å›ç±»è·¯å¾„ï¼ˆæ³¨æ„ï¼šå¦‚æœclassæ–‡ä»¶åœ¨jaræˆ–zipä¸­å°†è¿”å›çš„æ˜¯jaræ–‡ä»¶æˆ–zipæ–‡ä»¶çš„è·¯å¾„ï¼‰ã€‚
+     * @param isRealSpace ä¸ºtrueå°†ä½¿ç”¨çœŸå®çš„ç©ºæ ¼æ¥æ›¿æ¢URLé‡Œé¢çš„è½¬ä¹‰ç©ºæ ¼ï¼Œä¸ºfalseå°†ç›´æ¥ä½¿ç”¨URLé‡Œé¢è§„å®šçš„è½¬ä¹‰ç©ºæ ¼ï¼ˆæ³¨æ„ï¼šå¦‚æœURLç”¨äºæ„å»ºFileï¼Œæ­¤å‚æ•°éœ€è¦è®¾ç½®ä¸ºtrueï¼‰ã€‚
+     * @return æ ‡è¯†ä½ç½®ï¼Œä¸ºnullè¡¨ç¤ºtargetClassä¸ºnullæˆ–æ„é€ URLå¤±è´¥äº†ã€‚
      */
     public static final URL getClassCodeLocation(Class targetClass, boolean isClasspathParent, boolean isRealSpace) {
-        /* Ä¿±êÀàÅĞ¿Õ */
+        /* ç›®æ ‡ç±»åˆ¤ç©º */
         if (targetClass == null) {
             return null;
         }
 
         /*
-         * ×¢Òâ£ºÕâÀï¿ÉÒÔÖ±½Óµ÷ÓÃClass.getProtectionDomain().getCodeSource().getLocation()·½·¨À´µÃµ½ÎÒÃÇÏëÒªµÄLocation£¬µ«
-         * ¡¡¡¡¡¡ÊÇÕâ¸ö·½·¨ÓĞ2¸öÏŞÖÆ²»Ì«·½±ã£º
-         * ¡¡¡¡¡¡1.´Ë·½·¨ĞèÒªÏàÓ¦µÄ°²È«È¨ÏŞ£¬Èç¹ûÃ»ÓĞ£¬»áÅ×Java°²È«Òì³£µÄ¡£
-         * ¡¡¡¡¡¡2.´Ë·½·¨µÄgetCodeSource()ÔÚµ±ClassÎªÆô¶¯Àà¼ÓÔØÆ÷¼ÓÔØÊ±»á·µ»Ønull£¬ËäÈ»ºÜÉÙ»áÓÃµ½£¬µ«Õâ»¹ÊÇÎÒÃÇ²»Ï£ÍûµÄ¡£
-         * ¡¡¡¡¡¡»ùÓÚÒÔÉÏÁ½¸öÈ±µã£¬ÎÒÃÇ²»Ê¹ÓÃ´Ë·½·¨À´»ñÈ¡Location¡£
+         * æ³¨æ„ï¼šè¿™é‡Œå¯ä»¥ç›´æ¥è°ƒç”¨Class.getProtectionDomain().getCodeSource().getLocation()æ–¹æ³•æ¥å¾—åˆ°æˆ‘ä»¬æƒ³è¦çš„Locationï¼Œä½†
+         * ã€€ã€€ã€€æ˜¯è¿™ä¸ªæ–¹æ³•æœ‰2ä¸ªé™åˆ¶ä¸å¤ªæ–¹ä¾¿ï¼š
+         * ã€€ã€€ã€€1.æ­¤æ–¹æ³•éœ€è¦ç›¸åº”çš„å®‰å…¨æƒé™ï¼Œå¦‚æœæ²¡æœ‰ï¼Œä¼šæŠ›Javaå®‰å…¨å¼‚å¸¸çš„ã€‚
+         * ã€€ã€€ã€€2.æ­¤æ–¹æ³•çš„getCodeSource()åœ¨å½“Classä¸ºå¯åŠ¨ç±»åŠ è½½å™¨åŠ è½½æ—¶ä¼šè¿”å›nullï¼Œè™½ç„¶å¾ˆå°‘ä¼šç”¨åˆ°ï¼Œä½†è¿™è¿˜æ˜¯æˆ‘ä»¬ä¸å¸Œæœ›çš„ã€‚
+         * ã€€ã€€ã€€åŸºäºä»¥ä¸Šä¸¤ä¸ªç¼ºç‚¹ï¼Œæˆ‘ä»¬ä¸ä½¿ç”¨æ­¤æ–¹æ³•æ¥è·å–Locationã€‚
          */
 
-        /* »ñÈ¡Ä¿±êÀàclassÎÄ¼şµÄURL£¬²¢µÃµ½Ïà¹ØĞÅÏ¢ */
+        /* è·å–ç›®æ ‡ç±»classæ–‡ä»¶çš„URLï¼Œå¹¶å¾—åˆ°ç›¸å…³ä¿¡æ¯ */
         String clsName = targetClass.getName();
         String clsRes = "/" + clsName.replace('.', '/') + ".class";
         URL url = targetClass.getResource(clsRes);
         String protocol = url.getProtocol();
         String spec = url.toString();
 
-        /* TODO Ìæ»»¿Õ¸ñ£¬URLÖĞÃèÊö¿Õ¸ñÓÃ"%20"£¬ÓÃÕâÑùµÄURLÀ´¹¹½¨FileÀà½«ÎŞ·¨ÕÒµ½ÎÄ¼ş£¬±ØĞëÌæ»»µ½£¬µ«¿ÉÄÜ»á´æÔÚÆ½Ì¨²îÒìĞÔ¡£ */
+        /* TODO æ›¿æ¢ç©ºæ ¼ï¼ŒURLä¸­æè¿°ç©ºæ ¼ç”¨"%20"ï¼Œç”¨è¿™æ ·çš„URLæ¥æ„å»ºFileç±»å°†æ— æ³•æ‰¾åˆ°æ–‡ä»¶ï¼Œå¿…é¡»æ›¿æ¢åˆ°ï¼Œä½†å¯èƒ½ä¼šå­˜åœ¨å¹³å°å·®å¼‚æ€§ã€‚ */
         if (isRealSpace) {
             spec = spec.replaceAll("%20", " ");
         }
 
-        /* »ñÈ¡ÀàÂ·¾¶ */
-        if (protocol.equals("jar") || protocol.equals("zip")) { //classÎÄ¼şÊÇ·ÅÔÚjar»òzipÖĞµÄ
+        /* è·å–ç±»è·¯å¾„ */
+        if (protocol.equals("jar") || protocol.equals("zip")) { //classæ–‡ä»¶æ˜¯æ”¾åœ¨jaræˆ–zipä¸­çš„
             spec = spec.substring(spec.indexOf(":") + 1, spec.lastIndexOf("!"));
 
-        } else { //ÊÇÆÕÍ¨µÄÄ¿Â¼
+        } else { //æ˜¯æ™®é€šçš„ç›®å½•
             spec = spec.substring(0, spec.lastIndexOf(clsRes));
         }
 
-        /* »ñÈ¡ÀàÂ·¾¶µÄ¸¸Ä¿Â¼ */
+        /* è·å–ç±»è·¯å¾„çš„çˆ¶ç›®å½• */
         if (isClasspathParent) {
             spec = spec.substring(0, spec.lastIndexOf("/"));
         }
 
-        /* ¹¹ÔìURL²¢·µ»Ø */
+        /* æ„é€ URLå¹¶è¿”å› */
         try {
             return new URL(spec);
 
@@ -513,17 +513,17 @@ public final class ComponentUtilities {
     }
 
     /**
-     * ¸ù¾İÖ¸¶¨Ê÷½Úµã»ñÈ¡Ê÷µÄÂ·¾¶ĞÅÏ¢¡£
-     * @param node Ä¿±ê½Úµã¡£
-     * @return Â·¾¶ĞÅÏ¢£¬Èç¹ûÄ¿±ê½ÚµãÎª¿Õ½«·µ»Ønull¡£
+     * æ ¹æ®æŒ‡å®šæ ‘èŠ‚ç‚¹è·å–æ ‘çš„è·¯å¾„ä¿¡æ¯ã€‚
+     * @param node ç›®æ ‡èŠ‚ç‚¹ã€‚
+     * @return è·¯å¾„ä¿¡æ¯ï¼Œå¦‚æœç›®æ ‡èŠ‚ç‚¹ä¸ºç©ºå°†è¿”å›nullã€‚
      */
     public static final TreePath getTreePath(TreeNode node) {
-        /* ²ÎÊıÅĞ¿Õ */
+        /* å‚æ•°åˆ¤ç©º */
         if (node == null) {
             return null;
         }
 
-        /* »ñÈ¡Ä¿±ê½Úµãµ½¸ù½ÚµãµÄÁĞ±í */
+        /* è·å–ç›®æ ‡èŠ‚ç‚¹åˆ°æ ¹èŠ‚ç‚¹çš„åˆ—è¡¨ */
         List nodeList = new ArrayList();
         nodeList.add(node);
         TreeNode parent = node.getParent();
@@ -532,87 +532,87 @@ public final class ComponentUtilities {
             parent = parent.getParent();
         }
 
-        /* »ñÈ¡¸ù½Úµãµ½Ä¿±ê½ÚµãµÄÊı×é */
+        /* è·å–æ ¹èŠ‚ç‚¹åˆ°ç›®æ ‡èŠ‚ç‚¹çš„æ•°ç»„ */
         Object[] path = new Object[nodeList.size()];
         for (int i = 0; i < path.length; i++) {
             path[i] = nodeList.get(path.length - 1 - i);
         }
 
-        /* ¹¹Ôì²¢·µ»ØÂ·¾¶ĞÅÏ¢ */
+        /* æ„é€ å¹¶è¿”å›è·¯å¾„ä¿¡æ¯ */
         return new TreePath(path);
     }
 
     /**
-     * ÅĞ¶ÏÊ÷ÉÏµÄÒ»¸ö½ÚµãÊÇ·ñÔÚÊ÷µÄ¿ÉÊÓÇøÓòÉÏ¡£
-     * @param tree Ä¿±êÊ÷¡£
-     * @param node Ä¿±ê½Úµã¡£
-     * @param isContainFull Îªtrue±íÊ¾Òª°üº­Ä¿±ê½ÚµãµÄÈ«²¿ÏñËØ²ÅÅĞ¶¨ÎªÔÚ¿ÉÊÓÇøÓòÄÚ£¬Îªfalse±íÊ¾Ö»Òª°üº­Ä¿±ê½ÚµãµÄÒ»¸öÏñËØ¾ÍÅĞ¶¨ÎªÔÚ¿ÉÊÓÇøÓòÖĞ¡£
-     * @return ÔÚ¿ÉÊÓÇøÓòÀï·µ»Øtrue£¬²»ÔÚÏÔÊ¾ÇøÓòÀï»ò²ÎÊı´íÎóÔò·µ»Øfalse¡£
+     * åˆ¤æ–­æ ‘ä¸Šçš„ä¸€ä¸ªèŠ‚ç‚¹æ˜¯å¦åœ¨æ ‘çš„å¯è§†åŒºåŸŸä¸Šã€‚
+     * @param tree ç›®æ ‡æ ‘ã€‚
+     * @param node ç›®æ ‡èŠ‚ç‚¹ã€‚
+     * @param isContainFull ä¸ºtrueè¡¨ç¤ºè¦åŒ…æ¶µç›®æ ‡èŠ‚ç‚¹çš„å…¨éƒ¨åƒç´ æ‰åˆ¤å®šä¸ºåœ¨å¯è§†åŒºåŸŸå†…ï¼Œä¸ºfalseè¡¨ç¤ºåªè¦åŒ…æ¶µç›®æ ‡èŠ‚ç‚¹çš„ä¸€ä¸ªåƒç´ å°±åˆ¤å®šä¸ºåœ¨å¯è§†åŒºåŸŸä¸­ã€‚
+     * @return åœ¨å¯è§†åŒºåŸŸé‡Œè¿”å›trueï¼Œä¸åœ¨æ˜¾ç¤ºåŒºåŸŸé‡Œæˆ–å‚æ•°é”™è¯¯åˆ™è¿”å›falseã€‚
      */
     public static final boolean isInTreeVisibleRect(JTree tree, TreeNode node, boolean isContainFull) {
-        /* ²ÎÊıÅĞ¿Õ */
+        /* å‚æ•°åˆ¤ç©º */
         if (tree == null || node == null) {
             return false;
         }
 
-        /* ¼ÆËãÊ÷µÄ¿ÉÊÓÇøÓòºÍ½ÚµãµÄÏÔÊ¾ÇøÓò */
+        /* è®¡ç®—æ ‘çš„å¯è§†åŒºåŸŸå’ŒèŠ‚ç‚¹çš„æ˜¾ç¤ºåŒºåŸŸ */
         Rectangle vr = tree.getVisibleRect();
         Rectangle pb = tree.getPathBounds(getTreePath(node));
 
-        /* °ÑÊ÷µÄ¿ÉÊÓÇøÓòÀ©´ó1¸öÏñËØÒÔ´Ë°Ñ½ÚµãµÄ±ß¿ò¼ÆËãÔÚÄÚ */
+        /* æŠŠæ ‘çš„å¯è§†åŒºåŸŸæ‰©å¤§1ä¸ªåƒç´ ä»¥æ­¤æŠŠèŠ‚ç‚¹çš„è¾¹æ¡†è®¡ç®—åœ¨å†… */
         vr.x--;
         vr.y--;
         vr.width += 2;
         vr.height += 2;
 
-        /* ¼ÆËã½á¹ûÅĞ¿Õ */
+        /* è®¡ç®—ç»“æœåˆ¤ç©º */
         if (vr == null || pb == null) {
             return false;
         }
 
-        /* ¿ÉÊÓÇøÓò¼ÆËã */
-        if (isContainFull) { //ÍêÕû°üº­
+        /* å¯è§†åŒºåŸŸè®¡ç®— */
+        if (isContainFull) { //å®Œæ•´åŒ…æ¶µ
             return vr.contains(pb);
 
-        } else { //²¿·Ö°üº­
-            if (vr.contains(pb.x, pb.y)) { //×óÉÏ½Ç
+        } else { //éƒ¨åˆ†åŒ…æ¶µ
+            if (vr.contains(pb.x, pb.y)) { //å·¦ä¸Šè§’
                 return true;
 
-            } else if (vr.contains(pb.x, pb.y + pb.height)) { //×óÏÂ½Ç
+            } else if (vr.contains(pb.x, pb.y + pb.height)) { //å·¦ä¸‹è§’
                 return true;
 
-            } else if (vr.contains(pb.x + pb.width, pb.y)) { //ÓÒÉÏ½Ç
+            } else if (vr.contains(pb.x + pb.width, pb.y)) { //å³ä¸Šè§’
                 return true;
 
-            } else if (vr.contains(pb.x + pb.width, pb.y + pb.height)) { //ÓÒÏÂ½Ç
+            } else if (vr.contains(pb.x + pb.width, pb.y + pb.height)) { //å³ä¸‹è§’
                 return true;
 
-            } else { //½ÚµãÒ»¸öÏñËØ¶¼²»ÔÚÊ÷µÄ¿ÉÊÓÇøÓòÄÚ
+            } else { //èŠ‚ç‚¹ä¸€ä¸ªåƒç´ éƒ½ä¸åœ¨æ ‘çš„å¯è§†åŒºåŸŸå†…
                 return false;
             }
         }
     }
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨µÄ¶ÔÏóÊı×éÊÇ·ñ°üº¬ÁËÖ¸¶¨¶ÔÏó£¬ÅĞ¶Ï±ê×¼ÊÇ¶ÔÏóÏàÍ¬£¨²»ÊÇÏàµÈ£©¡£
-     * @param objectArray Ä¿±ê¶ÔÏóÊı×é¡£
-     * @param object Ä¿±ê¶ÔÏó¡£
-     * @return Èç¹û°üº¬Ôò·µ»Øtrue£»Èç¹û²»°üº¬¡¢Ä¿±ê¶ÔÏóÊı×éÎª¿Õ»òÄ¿±ê¶ÔÏóÎª¿ÕÔò·µ»Øfalse¡£
+     * åˆ¤æ–­æŒ‡å®šçš„å¯¹è±¡æ•°ç»„æ˜¯å¦åŒ…å«äº†æŒ‡å®šå¯¹è±¡ï¼Œåˆ¤æ–­æ ‡å‡†æ˜¯å¯¹è±¡ç›¸åŒï¼ˆä¸æ˜¯ç›¸ç­‰ï¼‰ã€‚
+     * @param objectArray ç›®æ ‡å¯¹è±¡æ•°ç»„ã€‚
+     * @param object ç›®æ ‡å¯¹è±¡ã€‚
+     * @return å¦‚æœåŒ…å«åˆ™è¿”å›trueï¼›å¦‚æœä¸åŒ…å«ã€ç›®æ ‡å¯¹è±¡æ•°ç»„ä¸ºç©ºæˆ–ç›®æ ‡å¯¹è±¡ä¸ºç©ºåˆ™è¿”å›falseã€‚
      */
     public static final boolean containsObject(Object[] objectArray, Object object) {
-        /* ¶ÔÏóÅĞ¿Õ */
+        /* å¯¹è±¡åˆ¤ç©º */
         if (objectArray == null || objectArray.length == 0 || object == null) {
             return false;
         }
 
-        /* µü´ú±È½Ï */
+        /* è¿­ä»£æ¯”è¾ƒ */
         for (int i = 0; i < objectArray.length; i++) {
-            if (objectArray[i] == object) { //µ±Ç°¶ÔÏóºÍÄ¿±ê¶ÔÏóÏàÍ¬
+            if (objectArray[i] == object) { //å½“å‰å¯¹è±¡å’Œç›®æ ‡å¯¹è±¡ç›¸åŒ
                 return true;
             }
         }
 
-        /* Ã»ÕÒµ½ÏàÍ¬µÄ¶ÔÏó£¬·µ»Øfalse */
+        /* æ²¡æ‰¾åˆ°ç›¸åŒçš„å¯¹è±¡ï¼Œè¿”å›false */
         return false;
     }
 

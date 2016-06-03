@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-5-5 ÏÂÎç04:13:40¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-5-5 ä¸‹åˆ04:13:40ã€‚
  */
 package com.apollo.swing.component.table;
 
@@ -8,22 +8,22 @@ import java.math.BigInteger;
 import javax.swing.table.TableColumn;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTableCustom.java</p>
- * <p>ÀàĞÍÃèÊö£ºÁĞ±í¶¨ÖÆĞÅÏ¢Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-5</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTableCustom.java</p>
+ * <p>ç±»å‹æè¿°ï¼šåˆ—è¡¨å®šåˆ¶ä¿¡æ¯ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-5</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public class TableCustom {
 
@@ -86,17 +86,17 @@ public class TableCustom {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÁĞ¶ÔÏó¡£
+     * åˆ—å¯¹è±¡ã€‚
      */
     protected TableColumn m_column;
 
     /**
-     * ±êÊ¶ÁĞÊÇ·ñ¿É¼û¡£
+     * æ ‡è¯†åˆ—æ˜¯å¦å¯è§ã€‚
      */
     protected Boolean m_visible;
 
     /**
-     * ÁĞ¿í¡£
+     * åˆ—å®½ã€‚
      */
     protected BigInteger m_width;
 
@@ -115,18 +115,18 @@ public class TableCustom {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param column ÁĞ¶ÔÏó¡£
-     * @param visible ±êÊ¶ÁĞÊÇ·ñ¿É¼û¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param column åˆ—å¯¹è±¡ã€‚
+     * @param visible æ ‡è¯†åˆ—æ˜¯å¦å¯è§ã€‚
      */
     public TableCustom(TableColumn column, boolean visible) {
         this(column, new Boolean(visible));
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param column ÁĞ¶ÔÏó¡£
-     * @param visible ±êÊ¶ÁĞÊÇ·ñ¿É¼û¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param column åˆ—å¯¹è±¡ã€‚
+     * @param visible æ ‡è¯†åˆ—æ˜¯å¦å¯è§ã€‚
      */
     public TableCustom(TableColumn column, Boolean visible) {
         m_column = column;
@@ -154,16 +154,16 @@ public class TableCustom {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î column µÄÖµ¡£
-     * @return ×Ö¶Î column µÄÖµ¡£
+     * è·å–å­—æ®µ column çš„å€¼ã€‚
+     * @return å­—æ®µ column çš„å€¼ã€‚
      */
     public TableColumn getColumn() {
         return m_column;
     }
 
     /**
-     * »ñÈ¡×Ö¶Î visible µÄÖµ¡£
-     * @return ×Ö¶Î visible µÄÖµ¡£
+     * è·å–å­—æ®µ visible çš„å€¼ã€‚
+     * @return å­—æ®µ visible çš„å€¼ã€‚
      */
     public boolean isVisible() {
         return m_visible.booleanValue();
@@ -176,14 +176,14 @@ public class TableCustom {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ´ÓÁĞ¶ÔÏóÍ¬²½ÁĞ¿í¡£
+     * ä»åˆ—å¯¹è±¡åŒæ­¥åˆ—å®½ã€‚
      */
     protected void syncWidthFromColumn() {
         m_width = BigInteger.valueOf(m_column.getWidth());
     }
 
     /**
-     * Í¬²½ÁĞ¿íµ½ÁĞ¶ÔÏó¡£
+     * åŒæ­¥åˆ—å®½åˆ°åˆ—å¯¹è±¡ã€‚
      */
     protected void syncWidthToColumn() {
         m_column.setPreferredWidth(m_width.intValue());

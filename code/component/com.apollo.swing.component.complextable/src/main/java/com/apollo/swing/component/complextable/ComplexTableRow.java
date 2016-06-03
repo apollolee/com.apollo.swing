@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÉÏÎç09:39:01¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸Šåˆ09:39:01ã€‚
  */
 package com.apollo.swing.component.complextable;
 
@@ -12,22 +12,22 @@ import javax.swing.Action;
 import javax.swing.JMenuItem;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTableRow.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íĞĞÀà£¬·â×°ÁË×ÛºÏ±íµÄĞĞ¶ÔÏóµÄÊı¾İºÍ²Ù×÷£¬´Ë¶ÔÏóÒ²ÊÇÒ»¸öList£¬ÓÃÓÚÈİÄÉĞĞ¶ÔÏó°üº¬µÄµ¥Ôª¸ñ¶ÔÏó¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTableRow.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨è¡Œç±»ï¼Œå°è£…äº†ç»¼åˆè¡¨çš„è¡Œå¯¹è±¡çš„æ•°æ®å’Œæ“ä½œï¼Œæ­¤å¯¹è±¡ä¹Ÿæ˜¯ä¸€ä¸ªListï¼Œç”¨äºå®¹çº³è¡Œå¯¹è±¡åŒ…å«çš„å•å…ƒæ ¼å¯¹è±¡ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -72,10 +72,10 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´´½¨ĞĞ£¬¹¤¾ß·½·¨¡£
-     * @param modelIndex Ä£ĞÍË÷Òı£¬²»¿ÉºÍÆäËûµÄĞĞ¶ÔÏóÖØ¸´£¬ĞĞÄ£ĞÍË÷ÒıµÄ¸ÅÄîºÍÁĞÄ£ĞÍË÷Òı¸ÅÄîÊÇÒ»ÑùµÄ¡£
-     * @param cells µ¥Ôª¸ñ¼¯¡£
-     * @return ĞĞ¡£
+     * åˆ›å»ºè¡Œï¼Œå·¥å…·æ–¹æ³•ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ï¼Œä¸å¯å’Œå…¶ä»–çš„è¡Œå¯¹è±¡é‡å¤ï¼Œè¡Œæ¨¡å‹ç´¢å¼•çš„æ¦‚å¿µå’Œåˆ—æ¨¡å‹ç´¢å¼•æ¦‚å¿µæ˜¯ä¸€æ ·çš„ã€‚
+     * @param cells å•å…ƒæ ¼é›†ã€‚
+     * @return è¡Œã€‚
      * @since T3 V1.1
      */
     public static ComplexTableRow create(int modelIndex, Object[] cells) {
@@ -107,57 +107,57 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * Ä£ĞÍË÷Òı¡£
+     * æ¨¡å‹ç´¢å¼•ã€‚
      */
     protected volatile int m_modelIndex;
 
     /**
-     * ±êÊ¶ÊÇ·ñÎªÒÑÌí¼ÓµÄĞĞ¡£
+     * æ ‡è¯†æ˜¯å¦ä¸ºå·²æ·»åŠ çš„è¡Œã€‚
      */
     protected volatile boolean m_isInserted;
 
     /**
-     * ±êÊ¶ÊÇ·ñÎªÒÑÒÆ³ıµÄĞĞ¡£
+     * æ ‡è¯†æ˜¯å¦ä¸ºå·²ç§»é™¤çš„è¡Œã€‚
      */
     protected volatile boolean m_isRemoved;
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿É±à¼­¡£
+     * æ ‡è¯†æ˜¯å¦å¯ç¼–è¾‘ã€‚
      */
     protected volatile boolean m_editable;
 
     /**
-     * ±³¾°É«¡£
+     * èƒŒæ™¯è‰²ã€‚
      */
     protected Color m_background;
 
     /**
-     * Ç°¾°É«¡£
+     * å‰æ™¯è‰²ã€‚
      */
     protected Color m_foreground;
 
     /**
-     * ÌáÊ¾¡£
+     * æç¤ºã€‚
      */
     protected String m_toolTipText = null;
 
     /**
-     * ÓÃ»§¶ÔÏó¡£
+     * ç”¨æˆ·å¯¹è±¡ã€‚
      */
     protected Object m_userObject = null;
 
     /**
-     * ²Ëµ¥Ïî¼¯£¨ĞĞÍ·ºÍĞĞµ¥Ôª¸ñ¶¼»áÏÔÊ¾£©¡£
+     * èœå•é¡¹é›†ï¼ˆè¡Œå¤´å’Œè¡Œå•å…ƒæ ¼éƒ½ä¼šæ˜¾ç¤ºï¼‰ã€‚
      */
     protected List m_menuItems = new ArrayList();
 
     /**
-     * ĞĞÍ·²Ëµ¥Ïî¼¯¡£
+     * è¡Œå¤´èœå•é¡¹é›†ã€‚
      */
     protected List m_headerMenuItems = new ArrayList();
 
     /**
-     * ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯¡£
+     * è¡Œå•å…ƒæ ¼èœå•é¡¹é›†ã€‚
      */
     protected List m_cellMenuItems = new ArrayList();
 
@@ -176,7 +176,7 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow() {
@@ -184,8 +184,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param modelIndex Ä£ĞÍË÷Òı£¬²»¿ÉºÍÆäËûµÄĞĞ¶ÔÏóÖØ¸´£¬ĞĞÄ£ĞÍË÷ÒıµÄ¸ÅÄîºÍÁĞÄ£ĞÍË÷Òı¸ÅÄîÊÇÒ»ÑùµÄ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ï¼Œä¸å¯å’Œå…¶ä»–çš„è¡Œå¯¹è±¡é‡å¤ï¼Œè¡Œæ¨¡å‹ç´¢å¼•çš„æ¦‚å¿µå’Œåˆ—æ¨¡å‹ç´¢å¼•æ¦‚å¿µæ˜¯ä¸€æ ·çš„ã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow(int modelIndex) {
@@ -193,14 +193,14 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param modelIndex Ä£ĞÍË÷Òı£¬²»¿ÉºÍÆäËûµÄĞĞ¶ÔÏóÖØ¸´£¬ĞĞÄ£ĞÍË÷ÒıµÄ¸ÅÄîºÍÁĞÄ£ĞÍË÷Òı¸ÅÄîÊÇÒ»ÑùµÄ¡£
-     * @param isInserted ±êÊ¶ÊÇ·ñÎªÒÑÌí¼ÓµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼ÓºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£
-     * @param isRemoved ±êÊ¶ÊÇ·ñÎªÒÑÒÆ³ıµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼õºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£
-     * @param editable ±êÊ¶ÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÎªÔÊĞí±à¼­¡£
-     * @param background ĞĞÉÏËùÓĞµ¥Ôª¸ñµÄ±³¾°É«£¬ÒÑÉèÖÃ±³¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @param foreground ĞĞÉÏËùÓĞµ¥Ôª¸ñµÄÇ°¾°É«£¬ÒÑÉèÖÃÇ°¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @param menuItems ĞĞÊı¾İ²Ëµ¥Ïî¼¯£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ï¼Œä¸å¯å’Œå…¶ä»–çš„è¡Œå¯¹è±¡é‡å¤ï¼Œè¡Œæ¨¡å‹ç´¢å¼•çš„æ¦‚å¿µå’Œåˆ—æ¨¡å‹ç´¢å¼•æ¦‚å¿µæ˜¯ä¸€æ ·çš„ã€‚
+     * @param isInserted æ ‡è¯†æ˜¯å¦ä¸ºå·²æ·»åŠ çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªåŠ å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @param isRemoved æ ‡è¯†æ˜¯å¦ä¸ºå·²ç§»é™¤çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªå‡å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @param editable æ ‡è¯†æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœä¸ºå…è®¸ç¼–è¾‘ã€‚
+     * @param background è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œå·²è®¾ç½®èƒŒæ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @param foreground è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œå·²è®¾ç½®å‰æ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @param menuItems è¡Œæ•°æ®èœå•é¡¹é›†ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow(int modelIndex,
@@ -237,8 +237,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î modelIndex µÄÖµ£¬»ñÈ¡Ä£ĞÍË÷Òı£¬²»¿ÉºÍÆäËûµÄĞĞ¶ÔÏóÖØ¸´£¬ĞĞÄ£ĞÍË÷ÒıµÄ¸ÅÄîºÍÁĞÄ£ĞÍË÷Òı¸ÅÄîÊÇÒ»ÑùµÄ¡£
-     * @return ×Ö¶Î modelIndex µÄÖµ¡£
+     * è·å–å­—æ®µ modelIndex çš„å€¼ï¼Œè·å–æ¨¡å‹ç´¢å¼•ï¼Œä¸å¯å’Œå…¶ä»–çš„è¡Œå¯¹è±¡é‡å¤ï¼Œè¡Œæ¨¡å‹ç´¢å¼•çš„æ¦‚å¿µå’Œåˆ—æ¨¡å‹ç´¢å¼•æ¦‚å¿µæ˜¯ä¸€æ ·çš„ã€‚
+     * @return å­—æ®µ modelIndex çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public int getModelIndex() {
@@ -246,8 +246,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î modelIndex µÄÖµ£¬ÉèÖÃÄ£ĞÍË÷Òı£¬²»¿ÉºÍÆäËûµÄĞĞ¶ÔÏóÖØ¸´£¬ĞĞÄ£ĞÍË÷ÒıµÄ¸ÅÄîºÍÁĞÄ£ĞÍË÷Òı¸ÅÄîÊÇÒ»ÑùµÄ¡£
-     * @param modelIndex ×Ö¶Î modelIndex µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ modelIndex çš„å€¼ï¼Œè®¾ç½®æ¨¡å‹ç´¢å¼•ï¼Œä¸å¯å’Œå…¶ä»–çš„è¡Œå¯¹è±¡é‡å¤ï¼Œè¡Œæ¨¡å‹ç´¢å¼•çš„æ¦‚å¿µå’Œåˆ—æ¨¡å‹ç´¢å¼•æ¦‚å¿µæ˜¯ä¸€æ ·çš„ã€‚
+     * @param modelIndex å­—æ®µ modelIndex çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setModelIndex(int modelIndex) {
@@ -255,8 +255,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isInserted µÄÖµ£¬ÅĞ¶ÏÊÇ·ñÎªÒÑÌí¼ÓµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼ÓºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£
-     * @return ×Ö¶Î isInserted µÄÖµ¡£
+     * è·å–å­—æ®µ isInserted çš„å€¼ï¼Œåˆ¤æ–­æ˜¯å¦ä¸ºå·²æ·»åŠ çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªåŠ å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @return å­—æ®µ isInserted çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isInserted() {
@@ -264,8 +264,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isInserted µÄÖµ£¬ÉèÖÃÊÇ·ñÎªÒÑÌí¼ÓµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼ÓºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£¡£
-     * @param isInserted ×Ö¶Î isInserted µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isInserted çš„å€¼ï¼Œè®¾ç½®æ˜¯å¦ä¸ºå·²æ·»åŠ çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªåŠ å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚ã€‚
+     * @param isInserted å­—æ®µ isInserted çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setInserted(boolean isInserted) {
@@ -273,8 +273,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isRemoved µÄÖµ£¬ÅĞ¶ÏÊÇ·ñÎªÒÑÒÆ³ıµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼õºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£
-     * @return ×Ö¶Î isRemoved µÄÖµ¡£
+     * è·å–å­—æ®µ isRemoved çš„å€¼ï¼Œåˆ¤æ–­æ˜¯å¦ä¸ºå·²ç§»é™¤çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªå‡å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @return å­—æ®µ isRemoved çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isRemoved() {
@@ -282,8 +282,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isRemoved µÄÖµ£¬ÉèÖÃÊÇ·ñÎªÒÑÒÆ³ıµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸ö¼õºÅµÄ±êÊ¶£¬È±Ê¡Îªfalse¡£
-     * @param isRemoved ×Ö¶Î isRemoved µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isRemoved çš„å€¼ï¼Œè®¾ç½®æ˜¯å¦ä¸ºå·²ç§»é™¤çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªå‡å·çš„æ ‡è¯†ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @param isRemoved å­—æ®µ isRemoved çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setRemoved(boolean isRemoved) {
@@ -292,8 +292,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isChanged µÄÖµ£¬ÅĞ¶ÏÊÇ·ñÎªÒÑĞŞ¸ÄµÄĞĞ£¬ÎªtrueÔòĞĞÍ·ÉÏ»áÓĞÒ»¸öĞÇºÅµÄ±êÊ¶¡£
-     * @return ×Ö¶Î isChanged µÄÖµ¡£
+     * è·å–å­—æ®µ isChanged çš„å€¼ï¼Œåˆ¤æ–­æ˜¯å¦ä¸ºå·²ä¿®æ”¹çš„è¡Œï¼Œä¸ºtrueåˆ™è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªæ˜Ÿå·çš„æ ‡è¯†ã€‚
+     * @return å­—æ®µ isChanged çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isChanged() {
@@ -307,8 +307,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editable µÄÖµ£¬ÅĞ¶ÏÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÎªÔÊĞí±à¼­¡£
-     * @return ×Ö¶Î editable µÄÖµ¡£
+     * è·å–å­—æ®µ editable çš„å€¼ï¼Œåˆ¤æ–­æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœä¸ºå…è®¸ç¼–è¾‘ã€‚
+     * @return å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEditable() {
@@ -316,8 +316,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editable µÄÖµ£¬ÉèÖÃÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÎªÔÊĞí±à¼­¡£
-     * @param editable ×Ö¶Î editable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editable çš„å€¼ï¼Œè®¾ç½®æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœä¸ºå…è®¸ç¼–è¾‘ã€‚
+     * @param editable å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditable(boolean editable) {
@@ -325,8 +325,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î background µÄÖµ£¬»ñÈ¡ĞĞÉÏËùÓĞµ¥Ôª¸ñµÄ±³¾°É«£¬ÒÑÉèÖÃ±³¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @return ×Ö¶Î background µÄÖµ¡£
+     * è·å–å­—æ®µ background çš„å€¼ï¼Œè·å–è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œå·²è®¾ç½®èƒŒæ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @return å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getBackground() {
@@ -334,8 +334,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î background µÄÖµ£¬ÉèÖÃĞĞÉÏËùÓĞµ¥Ôª¸ñµÄ±³¾°É«£¬ÒÑÉèÖÃ±³¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @param background ×Ö¶Î background µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ background çš„å€¼ï¼Œè®¾ç½®è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œå·²è®¾ç½®èƒŒæ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @param background å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setBackground(Color background) {
@@ -343,8 +343,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î foreground µÄÖµ£¬»ñÈ¡ĞĞÉÏËùÓĞµ¥Ôª¸ñµÄÇ°¾°É«£¬ÒÑÉèÖÃÇ°¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @return ×Ö¶Î foreground µÄÖµ¡£
+     * è·å–å­—æ®µ foreground çš„å€¼ï¼Œè·å–è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œå·²è®¾ç½®å‰æ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @return å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getForeground() {
@@ -352,8 +352,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î foreground µÄÖµ£¬ÉèÖÃĞĞÉÏËùÓĞµ¥Ôª¸ñµÄÇ°¾°É«£¬ÒÑÉèÖÃÇ°¾°É«µÄµ¥Ôª¸ñ»áºöÂÔ´Ë²ÎÊı¡£
-     * @param foreground ×Ö¶Î foreground µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ foreground çš„å€¼ï¼Œè®¾ç½®è¡Œä¸Šæ‰€æœ‰å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œå·²è®¾ç½®å‰æ™¯è‰²çš„å•å…ƒæ ¼ä¼šå¿½ç•¥æ­¤å‚æ•°ã€‚
+     * @param foreground å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setForeground(Color foreground) {
@@ -361,24 +361,24 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡ÌáÊ¾¡£
-     * @return ÌáÊ¾¡£
+     * è·å–æç¤ºã€‚
+     * @return æç¤ºã€‚
      */
     public String getToolTipText() {
         return m_toolTipText;
     }
 
     /**
-     * ÉèÖÃÌáÊ¾¡£
-     * @param toolTipText ÌáÊ¾¡£
+     * è®¾ç½®æç¤ºã€‚
+     * @param toolTipText æç¤ºã€‚
      */
     public void setToolTipText(String toolTipText) {
         m_toolTipText = toolTipText;
     }
 
     /**
-     * »ñÈ¡×Ö¶Î userObject µÄÖµ£¬»ñÈ¡ÓÃ»§¶ÔÏó£¬Õâ¸ö¶ÔÏó×ÛºÏ±íÍêÈ«²»Ê¹ÓÃ£¬ÊÇÌá¹©¸øÓ¦ÓÃÓÃÓÚĞĞ°ó¶¨Ò»¸öÊı¾İ¶ÔÏóµÄ¡£
-     * @return ×Ö¶Î userObject µÄÖµ¡£
+     * è·å–å­—æ®µ userObject çš„å€¼ï¼Œè·å–ç”¨æˆ·å¯¹è±¡ï¼Œè¿™ä¸ªå¯¹è±¡ç»¼åˆè¡¨å®Œå…¨ä¸ä½¿ç”¨ï¼Œæ˜¯æä¾›ç»™åº”ç”¨ç”¨äºè¡Œç»‘å®šä¸€ä¸ªæ•°æ®å¯¹è±¡çš„ã€‚
+     * @return å­—æ®µ userObject çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Object getUserObject() {
@@ -386,8 +386,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î userObject µÄÖµ£¬ÉèÖÃÓÃ»§¶ÔÏó£¬Õâ¸ö¶ÔÏó×ÛºÏ±íÍêÈ«²»Ê¹ÓÃ£¬ÊÇÌá¹©¸øÓ¦ÓÃÓÃÓÚĞĞ°ó¶¨Ò»¸öÊı¾İ¶ÔÏóµÄ¡£
-     * @param userObject ×Ö¶Î userObject µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ userObject çš„å€¼ï¼Œè®¾ç½®ç”¨æˆ·å¯¹è±¡ï¼Œè¿™ä¸ªå¯¹è±¡ç»¼åˆè¡¨å®Œå…¨ä¸ä½¿ç”¨ï¼Œæ˜¯æä¾›ç»™åº”ç”¨ç”¨äºè¡Œç»‘å®šä¸€ä¸ªæ•°æ®å¯¹è±¡çš„ã€‚
+     * @param userObject å­—æ®µ userObject çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setUserObject(Object userObject) {
@@ -395,8 +395,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡²Ëµ¥Ïî¼¯£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @return ²Ëµ¥Ïî¼¯¡£
+     * è·å–èœå•é¡¹é›†ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @return èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getMenuItems() {
@@ -404,8 +404,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡ĞĞÍ·²Ëµ¥Ïî¼¯£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @return ĞĞÍ·²Ëµ¥Ïî¼¯¡£
+     * è·å–è¡Œå¤´èœå•é¡¹é›†ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @return è¡Œå¤´èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getHeaderMenuItems() {
@@ -413,8 +413,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @return ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯¡£
+     * è·å–è¡Œå•å…ƒæ ¼èœå•é¡¹é›†ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @return è¡Œå•å…ƒæ ¼èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getCellMenuItems() {
@@ -422,8 +422,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(Action action) {
@@ -431,9 +431,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(int index, Action action) {
@@ -441,8 +441,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeAction(int index) {
@@ -450,8 +450,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeAction(Action action) {
@@ -463,9 +463,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsAction(Action action) {
@@ -478,8 +478,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ĞĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ è¡Œå¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction è¡Œå¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addHeaderAction(Action headerAction) {
@@ -487,9 +487,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param headerAction ĞĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ è¡Œå¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param headerAction è¡Œå¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addHeaderAction(int index, Action headerAction) {
@@ -497,8 +497,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤è¡Œå¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderAction(int index) {
@@ -506,8 +506,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ĞĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤è¡Œå¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction è¡Œå¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeHeaderAction(Action headerAction) {
@@ -519,9 +519,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ĞĞÍ·²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction è¡Œå¤´èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsHeaderAction(Action headerAction) {
@@ -534,8 +534,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellAction ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addCellAction(Action cellAction) {
@@ -543,9 +543,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param cellAction ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param cellAction è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addCellAction(int index, Action cellAction) {
@@ -553,8 +553,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeCellAction(int index) {
@@ -562,8 +562,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellAction ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeCellAction(Action cellAction) {
@@ -575,9 +575,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellAction ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsCellAction(Action cellAction) {
@@ -590,8 +590,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(JMenuItem menuItem) {
@@ -599,9 +599,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(int index, JMenuItem menuItem) {
@@ -609,8 +609,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(int index) {
@@ -618,8 +618,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * ç§»é™¤èœå•é¡¹ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(JMenuItem menuItem) {
@@ -627,9 +627,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî£¨ĞĞÍ·ºÍĞĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ï¼ˆè¡Œå¤´å’Œè¡Œçš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsMenuItem(JMenuItem menuItem) {
@@ -637,8 +637,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞÍ·²Ëµ¥Ïî£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ĞĞÍ·²Ëµ¥Ïî¡£
+     * æ·»åŠ è¡Œå¤´èœå•é¡¹ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem è¡Œå¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -646,9 +646,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞÍ·²Ëµ¥Ïî£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param headerMenuItem ĞĞÍ·²Ëµ¥Ïî¡£
+     * æ·»åŠ è¡Œå¤´èœå•é¡¹ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param headerMenuItem è¡Œå¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addHeaderMenuItem(int index, JMenuItem headerMenuItem) {
@@ -656,8 +656,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞÍ·²Ëµ¥Ïî£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤è¡Œå¤´èœå•é¡¹ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderMenuItem(int index) {
@@ -665,8 +665,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞÍ·²Ëµ¥Ïî£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ĞĞÍ·²Ëµ¥Ïî¡£
+     * ç§»é™¤è¡Œå¤´èœå•é¡¹ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem è¡Œå¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -674,9 +674,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞÍ·²Ëµ¥Ïî£¨½öĞĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ĞĞÍ·²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞÍ·²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå¤´èœå•é¡¹ï¼ˆä»…è¡Œå¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem è¡Œå¤´èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -684,8 +684,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellMenuItem ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * æ·»åŠ è¡Œå•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem è¡Œå•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addCellMenuItem(JMenuItem cellMenuItem) {
@@ -693,9 +693,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * Ìí¼ÓĞĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param cellMenuItem ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * æ·»åŠ è¡Œå•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param cellMenuItem è¡Œå•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addCellMenuItem(int index, JMenuItem cellMenuItem) {
@@ -703,8 +703,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤è¡Œå•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeCellMenuItem(int index) {
@@ -712,8 +712,8 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÒÆ³ıĞĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellMenuItem ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * ç§»é™¤è¡Œå•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem è¡Œå•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeCellMenuItem(JMenuItem cellMenuItem) {
@@ -721,9 +721,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öĞĞµÄµ¥Ôª¸ñÓĞĞ§£©¡£
-     * @param cellMenuItem ĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄĞĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…è¡Œçš„å•å…ƒæ ¼æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem è¡Œå•å…ƒæ ¼èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„è¡Œå•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsCellMenuItem(JMenuItem cellMenuItem) {
@@ -731,9 +731,9 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »ñÈ¡µ¥Ôª¸ñ¶ÔÏó¡£
-     * @param index ÁĞÄ£ĞÍË÷Òı¡£
-     * @return µ¥Ôª¸ñ¡£
+     * è·å–å•å…ƒæ ¼å¯¹è±¡ã€‚
+     * @param index åˆ—æ¨¡å‹ç´¢å¼•ã€‚
+     * @return å•å…ƒæ ¼ã€‚
      * @since T3 V1.1
      */
     public ComplexTableCell getCell(int index) {
@@ -796,7 +796,7 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ±£´æ¡£
+     * ä¿å­˜ã€‚
      */
     protected void save() {
         for (int i = 0, size = size(); i < size; i++) {
@@ -807,7 +807,7 @@ public class ComplexTableRow extends ArrayList implements IConstants {
     }
 
     /**
-     * »Ö¸´¡£
+     * æ¢å¤ã€‚
      */
     protected void restore() {
         if (m_isRemoved) {

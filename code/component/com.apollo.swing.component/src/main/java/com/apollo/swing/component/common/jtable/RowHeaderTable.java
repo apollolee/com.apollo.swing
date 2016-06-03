@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-6-8 ÉÏÎç09:37:37
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-6-8 ä¸Šåˆ09:37:37
  */
 package com.apollo.swing.component.common.jtable;
 
@@ -23,22 +23,22 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTRowHeaderTable.java</p>
- * <p>ÎÄ¼şÃèÊö£ºĞĞÍ·±í¿Ø¼şÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-7-2</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTRowHeaderTable.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šè¡Œå¤´è¡¨æ§ä»¶ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-7-2</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public final class RowHeaderTable extends JTable {
@@ -54,35 +54,35 @@ public final class RowHeaderTable extends JTable {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
-     * @param targetColumnModelIndexs Ä¿±êÁĞË÷Òı¡£
-     * @exception IllegalArgumentException ÉèÖÃ²ÎÊı·Ç·¨Ê±ÔòÅ×³ö´ËÒì³£¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
+     * @param targetColumnModelIndexs ç›®æ ‡åˆ—ç´¢å¼•ã€‚
+     * @exception IllegalArgumentException è®¾ç½®å‚æ•°éæ³•æ—¶åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public RowHeaderTable(JTable targetTable, int[] targetColumnModelIndexs) {
-        if (targetTable == null) { //Ä¿±ê±íÎª¿Õ
+        if (targetTable == null) { //ç›®æ ‡è¡¨ä¸ºç©º
             throw new IllegalArgumentException("Target table is null !");
         }
 
-        if (targetColumnModelIndexs == null || targetColumnModelIndexs.length == 0) { //Ä¿±êÁĞÎª¿Õ
+        if (targetColumnModelIndexs == null || targetColumnModelIndexs.length == 0) { //ç›®æ ‡åˆ—ä¸ºç©º
             throw new IllegalArgumentException("Target column view index array is null or empty !");
         }
 
-        /* ³õÊ¼»¯ÊôĞÔ */
+        /* åˆå§‹åŒ–å±æ€§ */
         m_targetTable = targetTable;
         m_targetColumnModelIndexs = targetColumnModelIndexs;
 
-        /* ÉèÖÃ¸÷¸öÄ£ĞÍ */
-        setModel(m_targetTable.getModel()); //ĞĞÍ·µÄÊı¾İÄ£ĞÍ¾ÍÊÇÄ¿±ê±íµÄÊı¾İÄ£ĞÍ
-        setSelectionModel(m_targetTable.getSelectionModel()); //ĞĞÍ·µÄĞĞÑ¡ÔñÄ£ĞÍ¾ÍÊÇÄ¿±ê±íµÄĞĞÑ¡ÔñÄ£ĞÍ
+        /* è®¾ç½®å„ä¸ªæ¨¡å‹ */
+        setModel(m_targetTable.getModel()); //è¡Œå¤´çš„æ•°æ®æ¨¡å‹å°±æ˜¯ç›®æ ‡è¡¨çš„æ•°æ®æ¨¡å‹
+        setSelectionModel(m_targetTable.getSelectionModel()); //è¡Œå¤´çš„è¡Œé€‰æ‹©æ¨¡å‹å°±æ˜¯ç›®æ ‡è¡¨çš„è¡Œé€‰æ‹©æ¨¡å‹
 
-        /* ÉèÖÃÊôĞÔ */
+        /* è®¾ç½®å±æ€§ */
         setAutoResizeMode(AUTO_RESIZE_OFF);
         getTableHeader().setReorderingAllowed(false);
         getTableHeader().setResizingAllowed(false);
-        updatePreferredScrollableViewportSize(); //Ë¢ĞÂÒ»´ÎĞĞÍ·±í¹ö¶¯ÊÓ¿ÚµÄ³ß´ç
+        updatePreferredScrollableViewportSize(); //åˆ·æ–°ä¸€æ¬¡è¡Œå¤´è¡¨æ»šåŠ¨è§†å£çš„å°ºå¯¸
 
-        /* ÉèÖÃ×é¼şÒÆ¶¯¼àÌıÆ÷£»´¦Àí¼üÅÌ·½Ïò¼üÒıÆğµÄĞĞÍ·±í¹ö¶¯£¬µ«Ä¿±ê±í£¨ÊÓ¿Ú£©Î´·¢Éú¹ö¶¯µÄÇéĞÎ */
+        /* è®¾ç½®ç»„ä»¶ç§»åŠ¨ç›‘å¬å™¨ï¼›å¤„ç†é”®ç›˜æ–¹å‘é”®å¼•èµ·çš„è¡Œå¤´è¡¨æ»šåŠ¨ï¼Œä½†ç›®æ ‡è¡¨ï¼ˆè§†å£ï¼‰æœªå‘ç”Ÿæ»šåŠ¨çš„æƒ…å½¢ */
         addComponentListener(new ComponentAdapter() {
 
             /**
@@ -91,13 +91,13 @@ public final class RowHeaderTable extends JTable {
             public void componentMoved(ComponentEvent evt) {
                 Container parent = m_targetTable.getParent();
 
-                if (parent instanceof JViewport) { //Ä¿±ê±íÊÇ·ÅÔÚ¹ö¶¯´°¸ñÀï
+                if (parent instanceof JViewport) { //ç›®æ ‡è¡¨æ˜¯æ”¾åœ¨æ»šåŠ¨çª—æ ¼é‡Œ
                     JViewport viewport = (JViewport) parent;
 
                     int offsetY = getVisibleRect().y;
                     Point viewPosition = viewport.getViewPosition();
 
-                    if (viewPosition.y != offsetY) { //Ä¿±ê±íÎ»ÖÃ»¹Î´ÒÆ¶¯¹ı
+                    if (viewPosition.y != offsetY) { //ç›®æ ‡è¡¨ä½ç½®è¿˜æœªç§»åŠ¨è¿‡
                         viewPosition.y = offsetY;
                         viewport.setViewPosition(viewPosition);
                     }
@@ -106,7 +106,7 @@ public final class RowHeaderTable extends JTable {
 
         });
 
-        /* ³õÊ¼»¯Ä¿±ê±íÁĞÄ£ĞÍ¼àÌıÆ÷ */
+        /* åˆå§‹åŒ–ç›®æ ‡è¡¨åˆ—æ¨¡å‹ç›‘å¬å™¨ */
         m_targetTableColumnModelListener = new TableColumnModelListener() {
 
             /**
@@ -127,28 +127,28 @@ public final class RowHeaderTable extends JTable {
              * @see javax.swing.event.TableColumnModelListener#columnMarginChanged(javax.swing.event.ChangeEvent)
              */
             public void columnMarginChanged(ChangeEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ´Ë·½·¨ */
+                /* æš‚ä¸å¿…å®ç°æ­¤æ–¹æ³• */
             }
 
             /**
              * @see javax.swing.event.TableColumnModelListener#columnMoved(javax.swing.event.TableColumnModelEvent)
              */
             public void columnMoved(TableColumnModelEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ´Ë·½·¨ */
+                /* æš‚ä¸å¿…å®ç°æ­¤æ–¹æ³• */
             }
 
             /**
              * @see javax.swing.event.TableColumnModelListener#columnSelectionChanged(javax.swing.event.ListSelectionEvent)
              */
             public void columnSelectionChanged(ListSelectionEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ´Ë·½·¨ */
+                /* æš‚ä¸å¿…å®ç°æ­¤æ–¹æ³• */
             }
 
         };
         m_targetTable.getColumnModel().addColumnModelListener(m_targetTableColumnModelListener);
-        clearTargetColumnFromTargetTable(); //¼àÌıÆ÷ÉèÖÃÍê±Ï²¢²»ÄÜÁ¢¼´Æğ×÷ÓÃ£¬ÕâÀïĞèÒªÊÖ¹¤Çå³ıÒ»´ÎÄ¿±ê±íÉÏ²»Ó¦¸Ã´æÔÚµÄÄ¿±êÁĞ
+        clearTargetColumnFromTargetTable(); //ç›‘å¬å™¨è®¾ç½®å®Œæ¯•å¹¶ä¸èƒ½ç«‹å³èµ·ä½œç”¨ï¼Œè¿™é‡Œéœ€è¦æ‰‹å·¥æ¸…é™¤ä¸€æ¬¡ç›®æ ‡è¡¨ä¸Šä¸åº”è¯¥å­˜åœ¨çš„ç›®æ ‡åˆ—
 
-        /* ÉèÖÃÄ¿±ê±íµÄÊôĞÔ¸Ä±ä¼àÌıÆ÷ */
+        /* è®¾ç½®ç›®æ ‡è¡¨çš„å±æ€§æ”¹å˜ç›‘å¬å™¨ */
         m_targetTable.addPropertyChangeListener(new PropertyChangeListener() {
 
             /**
@@ -157,28 +157,28 @@ public final class RowHeaderTable extends JTable {
             public void propertyChange(PropertyChangeEvent evt) {
                 String propertyName = evt.getPropertyName();
 
-                if ("rowHeight".equals(propertyName)) { //Ä¿±ê±íĞĞ¸ß±ä»¯
+                if ("rowHeight".equals(propertyName)) { //ç›®æ ‡è¡¨è¡Œé«˜å˜åŒ–
                     int newRowHeight = ((Integer) evt.getNewValue()).intValue();
                     setRowHeight(newRowHeight);
 
-                } else if ("rowMargin".equals(propertyName)) { //Ä¿±ê±íĞĞ¼ä¾à±ä»¯
+                } else if ("rowMargin".equals(propertyName)) { //ç›®æ ‡è¡¨è¡Œé—´è·å˜åŒ–
                     int newRowMargin = ((Integer) evt.getNewValue()).intValue();
                     setRowMargin(newRowMargin);
 
-                } else if ("columnModel".equals(propertyName)) { //Ä¿±êÁĞÄ£ĞÍ·¢Éú±ä»¯
+                } else if ("columnModel".equals(propertyName)) { //ç›®æ ‡åˆ—æ¨¡å‹å‘ç”Ÿå˜åŒ–
                     TableColumnModel oldCm = (TableColumnModel) evt.getOldValue();
-                    if (oldCm != null) { //¾ÉµÄÁĞÄ£ĞÍ²»Îª¿Õ
-                        oldCm.removeColumnModelListener(m_targetTableColumnModelListener); //¾ÉÄ£ĞÍÒÆ³ıÏà¹Ø¼àÌıÆ÷
+                    if (oldCm != null) { //æ—§çš„åˆ—æ¨¡å‹ä¸ä¸ºç©º
+                        oldCm.removeColumnModelListener(m_targetTableColumnModelListener); //æ—§æ¨¡å‹ç§»é™¤ç›¸å…³ç›‘å¬å™¨
                     }
 
                     TableColumnModel newCm = (TableColumnModel) evt.getNewValue();
-                    newCm.addColumnModelListener(m_targetTableColumnModelListener); //ĞÂÄ£ĞÍÒÆ³ıÏà¹Ø¼àÌıÆ÷
+                    newCm.addColumnModelListener(m_targetTableColumnModelListener); //æ–°æ¨¡å‹ç§»é™¤ç›¸å…³ç›‘å¬å™¨
                 }
             }
 
         });
 
-        /* ½ûÖ¹Ä¿±ê±íÊ×ÁĞ×óÒÆÍÏ¶¯²Ù×÷ */
+        /* ç¦æ­¢ç›®æ ‡è¡¨é¦–åˆ—å·¦ç§»æ‹–åŠ¨æ“ä½œ */
         TableHeaderController thc = new TableHeaderController(m_targetTable.getTableHeader());
         thc.addDisabledMovingLeftColumnViewIndex(0);
     }
@@ -202,8 +202,8 @@ public final class RowHeaderTable extends JTable {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Ä¿±ê±í¡£
-     * @return Ä¿±ê±í¡£
+     * è·å–ç›®æ ‡è¡¨ã€‚
+     * @return ç›®æ ‡è¡¨ã€‚
      */
     public JTable getTargetTable() {
         return m_targetTable;
@@ -215,28 +215,28 @@ public final class RowHeaderTable extends JTable {
      * @see javax.swing.JTable#getCellRenderer(int, int)
      */
     public TableCellRenderer getCellRenderer(int row, int column) {
-        /* TODO Ä¿Ç°äÖÈ¾Æ÷ÓëÄ¿±ê±íµÄäÖÈ¾Æ÷±£³ÖÒ»ÖÂ£¬ÕâĞèÒªÄ¿±ê±íÔÚäÖÈ¾Æ÷ÖĞÌØÊâ´¦ÀíÒÔÖ§³ÖÕâÖÖ·½Ê½ */
+        /* TODO ç›®å‰æ¸²æŸ“å™¨ä¸ç›®æ ‡è¡¨çš„æ¸²æŸ“å™¨ä¿æŒä¸€è‡´ï¼Œè¿™éœ€è¦ç›®æ ‡è¡¨åœ¨æ¸²æŸ“å™¨ä¸­ç‰¹æ®Šå¤„ç†ä»¥æ”¯æŒè¿™ç§æ–¹å¼ */
         return m_targetTable.getCellRenderer(row, column);
     }
 
     /**
-     * Ö»´´½¨¹æ¶¨µÄÊÓÍ¼ÁĞ¡£
+     * åªåˆ›å»ºè§„å®šçš„è§†å›¾åˆ—ã€‚
      * @see javax.swing.JTable#createDefaultColumnsFromModel()
      */
     public void createDefaultColumnsFromModel() {
-        if (m_targetTable == null || m_targetColumnModelIndexs == null) { //ĞĞÍ·±í»¹Ã»ÓĞ³õÊ¼»¯
+        if (m_targetTable == null || m_targetColumnModelIndexs == null) { //è¡Œå¤´è¡¨è¿˜æ²¡æœ‰åˆå§‹åŒ–
             super.createDefaultColumnsFromModel();
 
-        } else { //ĞĞÍ·±íÒÑ¾­³õÊ¼»¯£¬¿ÉÒÔÊµÊ±±ä»¯ĞĞÍ·
+        } else { //è¡Œå¤´è¡¨å·²ç»åˆå§‹åŒ–ï¼Œå¯ä»¥å®æ—¶å˜åŒ–è¡Œå¤´
             TableModel dm = getModel();
             if (dm != null) {
-                /* Çå¿Õµ±Ç°È«²¿ÁĞ */
+                /* æ¸…ç©ºå½“å‰å…¨éƒ¨åˆ— */
                 TableColumnModel cm = getColumnModel();
                 for (int i = 0, size = cm.getColumnCount(); i < size; i++) {
                     cm.removeColumn(cm.getColumn(0));
                 }
 
-                /* ´´½¨¹æ¶¨µÄÁĞ */
+                /* åˆ›å»ºè§„å®šçš„åˆ— */
                 for (int i = 0; i < m_targetColumnModelIndexs.length; i++) {
                     TableColumn newColumn = new TableColumn(m_targetColumnModelIndexs[i]);
                     addColumn(newColumn);
@@ -268,7 +268,7 @@ public final class RowHeaderTable extends JTable {
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ¸üĞÂÊ×Ñ¡¹ö¶¯ÊÓ¿ÚµÄ´óĞ¡¡£
+     * æ›´æ–°é¦–é€‰æ»šåŠ¨è§†å£çš„å¤§å°ã€‚
      */
     private void updatePreferredScrollableViewportSize() {
         Dimension thps = getTableHeader().getPreferredSize();
@@ -280,7 +280,7 @@ public final class RowHeaderTable extends JTable {
     }
 
     /**
-     * Çå³ıÄ¿±ê±íÉÏ²»Ó¦¸Ã´æÔÚµÄÄ¿±êÁĞ¡£
+     * æ¸…é™¤ç›®æ ‡è¡¨ä¸Šä¸åº”è¯¥å­˜åœ¨çš„ç›®æ ‡åˆ—ã€‚
      */
     private void clearTargetColumnFromTargetTable() {
         TableColumnModel cm = m_targetTable.getColumnModel();
@@ -288,7 +288,7 @@ public final class RowHeaderTable extends JTable {
         for (int i = 0; i < m_targetColumnModelIndexs.length; i++) {
             int viewIndex = m_targetTable.convertColumnIndexToView(m_targetColumnModelIndexs[i]);
 
-            if (viewIndex >= 0) { //Ä¿±êÁĞ»¹´æÔÚ
+            if (viewIndex >= 0) { //ç›®æ ‡åˆ—è¿˜å­˜åœ¨
                 cm.removeColumn(cm.getColumn(viewIndex));
             }
         }
@@ -349,17 +349,17 @@ public final class RowHeaderTable extends JTable {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * Ä¿±ê±í¡£
+     * ç›®æ ‡è¡¨ã€‚
      */
     private JTable m_targetTable;
 
     /**
-     * Ä¿±êÁĞÄ£ĞÍË÷ÒıÊı×é¡£
+     * ç›®æ ‡åˆ—æ¨¡å‹ç´¢å¼•æ•°ç»„ã€‚
      */
     private int[] m_targetColumnModelIndexs;
 
     /**
-     * Ä¿±ê±íÁĞÄ£ĞÍ¼àÌıÆ÷¡£
+     * ç›®æ ‡è¡¨åˆ—æ¨¡å‹ç›‘å¬å™¨ã€‚
      */
     private TableColumnModelListener m_targetTableColumnModelListener;
 

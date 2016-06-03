@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-7-1 ÏÂÎç12:28:10
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-7-1 ä¸‹åˆ12:28:10
  */
 package com.apollo.swing.component.icon;
 
@@ -14,22 +14,22 @@ import javax.swing.UIManager;
 import com.apollo.base.util.IBaseConstants;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTSortIcon.java</p>
- * <p>ÀàĞÍÃèÊö£ºÅÅĞòÍ¼±êÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-9</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTSortIcon.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ’åºå›¾æ ‡ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-9</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public class SortIcon implements Icon, IBaseConstants {
 
@@ -52,24 +52,24 @@ public class SortIcon implements Icon, IBaseConstants {
     /*------------------------------------- Public Static Field -------------------------------------*/
 
     /**
-     * ÅÅĞò×´Ì¬------ÉıĞò¡£
+     * æ’åºçŠ¶æ€------å‡åºã€‚
      */
     public static final int STATE_ASCENDING = 1;
 
     /**
-     * ÅÅĞò×´Ì¬------½µĞò¡£
+     * æ’åºçŠ¶æ€------é™åºã€‚
      */
     public static final int STATE_DESCENDING = -1;
 
     /**
-     * ÅÅĞò×´Ì¬------ÎŞĞò£¨ÆÕÍ¨×´Ì¬£©¡£
+     * æ’åºçŠ¶æ€------æ— åºï¼ˆæ™®é€šçŠ¶æ€ï¼‰ã€‚
      */
     public static final int STATE_NORMAL = 0;
 
     /*------------------------------------- Protected Static Field -------------------------------------*/
 
     /**
-     * Ğ´Í¼±êËù´ú±íµÄÅÅĞòÁĞµÄĞòºÅÊ±ËùÓÃµÄ×ÖÌå¡£
+     * å†™å›¾æ ‡æ‰€ä»£è¡¨çš„æ’åºåˆ—çš„åºå·æ—¶æ‰€ç”¨çš„å­—ä½“ã€‚
      */
     protected static final Font SMALL_FONT = new Font("Serif", Font.TRUETYPE_FONT, 10);
 
@@ -108,32 +108,32 @@ public class SortIcon implements Icon, IBaseConstants {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±³¹âÃæ±ß½çÑÕÉ«¡£
+     * èƒŒå…‰é¢è¾¹ç•Œé¢œè‰²ã€‚
      */
     protected Color m_edgeColor1;
 
     /**
-     * Ó­¹âÃæ±ß½çÑÕÉ«¡£
+     * è¿å…‰é¢è¾¹ç•Œé¢œè‰²ã€‚
      */
     protected Color m_edgeColor2;
 
     /**
-     * Í¼±êÌî³äÑÕÉ«¡£
+     * å›¾æ ‡å¡«å……é¢œè‰²ã€‚
      */
     protected Color m_fillColor;
 
     /**
-     * Í¼±êµÄ´óĞ¡£¨ÒòÎªÍ¼±êÊÇÕı·½ĞÎ£¬Õâ¸ö´óĞ¡¾ÍÊÇ±ß³¤£©¡£
+     * å›¾æ ‡çš„å¤§å°ï¼ˆå› ä¸ºå›¾æ ‡æ˜¯æ­£æ–¹å½¢ï¼Œè¿™ä¸ªå¤§å°å°±æ˜¯è¾¹é•¿ï¼‰ã€‚
      */
     protected int m_size;
 
     /**
-     * µ±Ç°ËùäÖÈ¾µÄÁĞÔÚËùÓĞÅÅĞòÁĞÖĞµÄĞòºÅ£¬ĞòºÅÔ½¿¿Ç°µÄÁĞÔÚÅÅĞòÖĞËùÆğµÄ×÷ÓÃÔ½´ó¡£
+     * å½“å‰æ‰€æ¸²æŸ“çš„åˆ—åœ¨æ‰€æœ‰æ’åºåˆ—ä¸­çš„åºå·ï¼Œåºå·è¶Šé å‰çš„åˆ—åœ¨æ’åºä¸­æ‰€èµ·çš„ä½œç”¨è¶Šå¤§ã€‚
      */
     protected int m_index;
 
     /**
-     * ÅÅĞò×´Ì¬¡£
+     * æ’åºçŠ¶æ€ã€‚
      */
     protected int m_state;
 
@@ -152,28 +152,28 @@ public class SortIcon implements Icon, IBaseConstants {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public SortIcon() {
         this(STATE_NORMAL, false, false);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param state ÅÅĞò×´Ì¬¡£
-     * @param isRaisedView Í¼±êÊÇ·ñ¸¡Í¹ÏÔÊ¾¡£
-     * @param isPressedView ×°ÔØÍ¼±êµÄÈİÆ÷ÊÇ·ñ±»°´ÏÂ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param state æ’åºçŠ¶æ€ã€‚
+     * @param isRaisedView å›¾æ ‡æ˜¯å¦æµ®å‡¸æ˜¾ç¤ºã€‚
+     * @param isPressedView è£…è½½å›¾æ ‡çš„å®¹å™¨æ˜¯å¦è¢«æŒ‰ä¸‹ã€‚
      */
     public SortIcon(int state, boolean isRaisedView, boolean isPressedView) {
         this(1, state, isRaisedView, isPressedView);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param index ÏÔÊ¾ÔÚÍ¼±êÉÏµÄÊı×Ö¡£
-     * @param state ÅÅĞò×´Ì¬¡£
-     * @param isRaisedView Í¼±êÊÇ·ñ¸¡Í¹ÏÔÊ¾¡£
-     * @param isPressedView ×°ÔØÍ¼±êµÄÈİÆ÷ÊÇ·ñ±»°´ÏÂ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param index æ˜¾ç¤ºåœ¨å›¾æ ‡ä¸Šçš„æ•°å­—ã€‚
+     * @param state æ’åºçŠ¶æ€ã€‚
+     * @param isRaisedView å›¾æ ‡æ˜¯å¦æµ®å‡¸æ˜¾ç¤ºã€‚
+     * @param isPressedView è£…è½½å›¾æ ‡çš„å®¹å™¨æ˜¯å¦è¢«æŒ‰ä¸‹ã€‚
      */
     public SortIcon(int index, int state, boolean isRaisedView, boolean isPressedView) {
         m_index = index;
@@ -195,7 +195,7 @@ public class SortIcon implements Icon, IBaseConstants {
             }
 
         } else {
-            /* ¿¼ÂÇµ½Í¼±êºÍÊı×Ö¾ù½ÏĞ¡£¬ÎªÃÀ¹ÛºÍ±ãÓÚÓÃ»§±æÈÏ£¬²»ÔÙÇø·ÖisPressedView£¬Í³Ò»²ÉÓÃÉîÉ«±³¾° -- ÀîÎ° */
+            /* è€ƒè™‘åˆ°å›¾æ ‡å’Œæ•°å­—å‡è¾ƒå°ï¼Œä¸ºç¾è§‚å’Œä¾¿äºç”¨æˆ·è¾¨è®¤ï¼Œä¸å†åŒºåˆ†isPressedViewï¼Œç»Ÿä¸€é‡‡ç”¨æ·±è‰²èƒŒæ™¯ -- æä¼Ÿ */
             initialize(UIManager.getColor("controlDkShadow"),
                        UIManager.getColor("controlLtHighlight"),
                        UIManager.getColor("controlShadow"),
@@ -219,32 +219,32 @@ public class SortIcon implements Icon, IBaseConstants {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡´ËäÖÈ¾Æ÷Ëù·şÎñµÄÅÅĞòÁĞµÄĞòºÅ¡£
-     * @return ´ËäÖÈ¾Æ÷Ëù·şÎñµÄÅÅĞòÁĞµÄĞòºÅ¡£
+     * è·å–æ­¤æ¸²æŸ“å™¨æ‰€æœåŠ¡çš„æ’åºåˆ—çš„åºå·ã€‚
+     * @return æ­¤æ¸²æŸ“å™¨æ‰€æœåŠ¡çš„æ’åºåˆ—çš„åºå·ã€‚
      */
     public int getIndex() {
         return m_index;
     }
 
     /**
-     * ÉèÖÃ´ËäÖÈ¾Æ÷Ëù·şÎñµÄÅÅĞòÁĞµÄĞòºÅ¡£
-     * @param index ´ËäÖÈ¾Æ÷Ëù·şÎñµÄÅÅĞòÁĞµÄĞòºÅ¡£
+     * è®¾ç½®æ­¤æ¸²æŸ“å™¨æ‰€æœåŠ¡çš„æ’åºåˆ—çš„åºå·ã€‚
+     * @param index æ­¤æ¸²æŸ“å™¨æ‰€æœåŠ¡çš„æ’åºåˆ—çš„åºå·ã€‚
      */
     public void setIndex(int index) {
         m_index = index;
     }
 
     /**
-     * »ñÈ¡ÉèÖÃÅÅĞò×´Ì¬¡£
-     * @return ÅÅĞò×´Ì¬¡£
+     * è·å–è®¾ç½®æ’åºçŠ¶æ€ã€‚
+     * @return æ’åºçŠ¶æ€ã€‚
      */
     public int getState() {
         return m_state;
     }
 
     /**
-     * ÉèÖÃÅÅĞò×´Ì¬¡£
-     * @param state ÅÅĞò×´Ì¬¡£
+     * è®¾ç½®æ’åºçŠ¶æ€ã€‚
+     * @param state æ’åºçŠ¶æ€ã€‚
      */
     public void setState(int state) {
         m_state = state;
@@ -327,12 +327,12 @@ public class SortIcon implements Icon, IBaseConstants {
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ³õÊ¼»¯Í¼±ê¡£
-     * @param edgeColor1 ±³¹âÃæ±ß½çÑÕÉ«¡£
-     * @param edgeColor2 Ó­¹âÃæ±ß½çÑÕÉ«¡£
-     * @param fillColor Ìî³äÑÕÉ«¡£
-     * @param size Í¼±ê³ß´ç¡£
-     * @param state ÅÅĞò×´Ì¬¡£
+     * åˆå§‹åŒ–å›¾æ ‡ã€‚
+     * @param edgeColor1 èƒŒå…‰é¢è¾¹ç•Œé¢œè‰²ã€‚
+     * @param edgeColor2 è¿å…‰é¢è¾¹ç•Œé¢œè‰²ã€‚
+     * @param fillColor å¡«å……é¢œè‰²ã€‚
+     * @param size å›¾æ ‡å°ºå¯¸ã€‚
+     * @param state æ’åºçŠ¶æ€ã€‚
      */
     private void initialize(Color edgeColor1, Color edgeColor2, Color fillColor, int size, int state) {
         m_edgeColor1 = edgeColor1;
@@ -343,107 +343,107 @@ public class SortIcon implements Icon, IBaseConstants {
     }
 
     /**
-     * »­ĞÎ×´ÎªÕıÈı½ÇµÄÍ¼±ê¡£
-     * @param g Í¼ĞÎÉè±¸¾ä±ú¡£
-     * @param x Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄx×ø±ê¡£
-     * @param y Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄy×ø±ê¡£
+     * ç”»å½¢çŠ¶ä¸ºæ­£ä¸‰è§’çš„å›¾æ ‡ã€‚
+     * @param g å›¾å½¢è®¾å¤‡å¥æŸ„ã€‚
+     * @param x å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„xåæ ‡ã€‚
+     * @param y å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„yåæ ‡ã€‚
      */
     private void drawUpArrow(Graphics g, int x, int y) {
-        /* »­ÕıÈı½ÇĞÎ¶¥µã */
+        /* ç”»æ­£ä¸‰è§’å½¢é¡¶ç‚¹ */
         g.setColor(m_edgeColor1);
         int offsetX = x + m_size / 2;
         g.drawLine(offsetX, y, offsetX, y);
 
-        /* µ÷Õû×ø±êµ½¶¥µãÏÂÆ«×óÒ»¸öÏóËØÎ»ÖÃ */
+        /* è°ƒæ•´åæ ‡åˆ°é¡¶ç‚¹ä¸‹åå·¦ä¸€ä¸ªè±¡ç´ ä½ç½® */
         offsetX--;
         int offsetY = y + 1;
         for (int dx = 0; y + m_size > offsetY + 3; dx += 2) {
             g.setColor(m_edgeColor1);
-            g.drawLine(offsetX, offsetY, offsetX + 1, offsetY); //»­ÕıÈı½ÇĞÎ×óÏÒÒõÓ°
-            g.drawLine(offsetX, offsetY + 1, offsetX + 1, offsetY + 1); //»­ÕıÈı½ÇĞÎ×óÏÒÒõÓ°£¬Ö»ÊÇy×ø±êÏòÏÂµ÷ÕûÁËÒ»¸öÏóËØ
+            g.drawLine(offsetX, offsetY, offsetX + 1, offsetY); //ç”»æ­£ä¸‰è§’å½¢å·¦å¼¦é˜´å½±
+            g.drawLine(offsetX, offsetY + 1, offsetX + 1, offsetY + 1); //ç”»æ­£ä¸‰è§’å½¢å·¦å¼¦é˜´å½±ï¼Œåªæ˜¯yåæ ‡å‘ä¸‹è°ƒæ•´äº†ä¸€ä¸ªè±¡ç´ 
 
             if (dx > 0) {
                 g.setColor(m_fillColor);
-                g.drawLine(offsetX + 2, offsetY, offsetX + 1 + dx, offsetY); //Ê¹ÓÃÌî³äÉ«½øĞĞÌî³ä
-                g.drawLine(offsetX + 2, offsetY + 1, offsetX + 1 + dx, offsetY + 1); //Ê¹ÓÃÌî³äÉ«½øĞĞÌî³ä
+                g.drawLine(offsetX + 2, offsetY, offsetX + 1 + dx, offsetY); //ä½¿ç”¨å¡«å……è‰²è¿›è¡Œå¡«å……
+                g.drawLine(offsetX + 2, offsetY + 1, offsetX + 1 + dx, offsetY + 1); //ä½¿ç”¨å¡«å……è‰²è¿›è¡Œå¡«å……
             }
 
             g.setColor(m_edgeColor2);
-            g.drawLine(offsetX + dx + 2, offsetY, offsetX + dx + 3, offsetY); //»­ÕıÈı½ÇĞÎÓÒÏÒ·´¹â
-            g.drawLine(offsetX + dx + 2, offsetY + 1, offsetX + dx + 3, offsetY + 1); //»­ÕıÈı½ÇĞÎÓÒÏÒ·´¹â£¬Ö»ÊÇy×ø±êÏòÏÂµ÷ÕûÁËÒ»¸öÏóËØ
+            g.drawLine(offsetX + dx + 2, offsetY, offsetX + dx + 3, offsetY); //ç”»æ­£ä¸‰è§’å½¢å³å¼¦åå…‰
+            g.drawLine(offsetX + dx + 2, offsetY + 1, offsetX + dx + 3, offsetY + 1); //ç”»æ­£ä¸‰è§’å½¢å³å¼¦åå…‰ï¼Œåªæ˜¯yåæ ‡å‘ä¸‹è°ƒæ•´äº†ä¸€ä¸ªè±¡ç´ 
             offsetX--;
-            offsetY += 2; // Ã¿´ÎÑ­»·£¬yÖáÏòÏÂ·½Ïò²½½øµÄ¿ç·ùÎª2ÏóËØ
+            offsetY += 2; // æ¯æ¬¡å¾ªç¯ï¼Œyè½´å‘ä¸‹æ–¹å‘æ­¥è¿›çš„è·¨å¹…ä¸º2è±¡ç´ 
         }
 
-        /* »­×óÏÒÉÏ×îºóÒ»¸öÒõÓ° */
+        /* ç”»å·¦å¼¦ä¸Šæœ€åä¸€ä¸ªé˜´å½± */
         g.setColor(m_edgeColor1);
         g.drawLine(x, (y + m_size) - 3, x + 1, (y + m_size) - 3);
         g.setColor(m_edgeColor2);
-        g.drawLine(x + 2, (y + m_size) - 2, (x + m_size) - 1, (y + m_size) - 2); //»­½ô°¤×ÅÕıÈı½ÇĞÎÏÂÏÒµÄ±ß£¬Ä£Äâ·´¹âĞ§¹û
-        g.drawLine(x, (y + m_size) - 1, x + m_size, (y + m_size) - 1); //»­ÕıÈı½ÇĞÎÏÂÏÒ£¬Ä£Äâ·´¹âĞ§¹û
+        g.drawLine(x + 2, (y + m_size) - 2, (x + m_size) - 1, (y + m_size) - 2); //ç”»ç´§æŒ¨ç€æ­£ä¸‰è§’å½¢ä¸‹å¼¦çš„è¾¹ï¼Œæ¨¡æ‹Ÿåå…‰æ•ˆæœ
+        g.drawLine(x, (y + m_size) - 1, x + m_size, (y + m_size) - 1); //ç”»æ­£ä¸‰è§’å½¢ä¸‹å¼¦ï¼Œæ¨¡æ‹Ÿåå…‰æ•ˆæœ
 
-        /* »­µ¹Èı½ÇĞÎÄÚµÄÅÅĞòÁĞĞòºÅ */
+        /* ç”»å€’ä¸‰è§’å½¢å†…çš„æ’åºåˆ—åºå· */
         Font font = g.getFont();
         g.setColor(Color.black);
         g.setFont(SMALL_FONT);
         //g.drawString(m_sortNumber, (x + m_size / 2) - 2, y + m_size / 2 + 4);
-        g.drawString(String.valueOf(m_index), (x + m_size / 2) - 3, y + m_size / 2 + 4); //¿¼ÂÇµ½Ë÷ÒıÎªÁ½Î»ÊıÊ±£¬Èı½ÇĞÎÄÚÏÔÊ¾²»È«£¬ÊÊµ±½«drawStringµÄ×óÆğµãÏò×ó¶àÒÆ¶¯1¸öÏóËØ -- ÀîÎ°
+        g.drawString(String.valueOf(m_index), (x + m_size / 2) - 3, y + m_size / 2 + 4); //è€ƒè™‘åˆ°ç´¢å¼•ä¸ºä¸¤ä½æ•°æ—¶ï¼Œä¸‰è§’å½¢å†…æ˜¾ç¤ºä¸å…¨ï¼Œé€‚å½“å°†drawStringçš„å·¦èµ·ç‚¹å‘å·¦å¤šç§»åŠ¨1ä¸ªè±¡ç´  -- æä¼Ÿ
         g.setFont(font);
     }
 
     /**
-     * »­´øĞÎ×´Îªµ¹Èı½ÇµÄÍ¼±ê¡£
-     * @param g Í¼ĞÎÉè±¸¾ä±ú¡£
-     * @param x Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄx×ø±ê¡£
-     * @param y Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄy×ø±ê¡£
+     * ç”»å¸¦å½¢çŠ¶ä¸ºå€’ä¸‰è§’çš„å›¾æ ‡ã€‚
+     * @param g å›¾å½¢è®¾å¤‡å¥æŸ„ã€‚
+     * @param x å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„xåæ ‡ã€‚
+     * @param y å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„yåæ ‡ã€‚
      */
     private void drawDownArrow(Graphics g, int x, int y) {
         g.setColor(m_edgeColor1);
-        g.drawLine(x, y, (x + m_size) - 1, y); //»­µ¹Èı½ÇµÄÉÏ±ß½ç
-        g.drawLine(x, y + 1, (x + m_size) - 3, y + 1); //»­ÉÏ±ß½çµÄÒõÓ°
+        g.drawLine(x, y, (x + m_size) - 1, y); //ç”»å€’ä¸‰è§’çš„ä¸Šè¾¹ç•Œ
+        g.drawLine(x, y + 1, (x + m_size) - 3, y + 1); //ç”»ä¸Šè¾¹ç•Œçš„é˜´å½±
 
         g.setColor(m_edgeColor2);
-        g.drawLine((x + m_size) - 2, y + 1, (x + m_size) - 1, y + 1); //»­ÉÏ±ß½çµÄÒõÓ°µÄ²ĞÓà²¿·Ö£¬Ä£Äâ³ö¸Ã²¿·Ö¸ø¹âÔ´ÕÕµ½µÄĞ§¹û
+        g.drawLine((x + m_size) - 2, y + 1, (x + m_size) - 1, y + 1); //ç”»ä¸Šè¾¹ç•Œçš„é˜´å½±çš„æ®‹ä½™éƒ¨åˆ†ï¼Œæ¨¡æ‹Ÿå‡ºè¯¥éƒ¨åˆ†ç»™å…‰æºç…§åˆ°çš„æ•ˆæœ
 
-        /* x,yµÄÎ»ÖÃÖ¸ÏòÉÏ±ß½çÒõÓ°ÏßÏÂ×ó±ßÎ»ÖÃ */
+        /* x,yçš„ä½ç½®æŒ‡å‘ä¸Šè¾¹ç•Œé˜´å½±çº¿ä¸‹å·¦è¾¹ä½ç½® */
         int offsetX = x + 1;
         int offsetY = y + 2;
         for (int dx = m_size - 6; y + m_size > offsetY + 1; dx -= 2) {
             g.setColor(m_edgeColor1);
-            g.drawLine(offsetX, offsetY, offsetX + 1, offsetY); //»­µ¹Èı½ÇĞÎ×óÏÒÒõÓ°
-            g.drawLine(offsetX, offsetY + 1, offsetX + 1, offsetY + 1); //»­µ¹Èı½ÇĞÎ×óÏÒÒõÓ°£¬Ö»ÊÇy×ø±êÏòÏÂµ÷ÕûÁËÒ»¸öÏóËØ
+            g.drawLine(offsetX, offsetY, offsetX + 1, offsetY); //ç”»å€’ä¸‰è§’å½¢å·¦å¼¦é˜´å½±
+            g.drawLine(offsetX, offsetY + 1, offsetX + 1, offsetY + 1); //ç”»å€’ä¸‰è§’å½¢å·¦å¼¦é˜´å½±ï¼Œåªæ˜¯yåæ ‡å‘ä¸‹è°ƒæ•´äº†ä¸€ä¸ªè±¡ç´ 
 
             if (dx > 0) {
                 g.setColor(m_fillColor);
-                g.drawLine(offsetX + 2, offsetY, offsetX + 1 + dx, offsetY); //Ê¹ÓÃÌî³äÉ«½øĞĞÌî³ä
-                g.drawLine(offsetX + 2, offsetY + 1, offsetX + 1 + dx, offsetY + 1); //Ê¹ÓÃÌî³äÉ«½øĞĞÌî³ä
+                g.drawLine(offsetX + 2, offsetY, offsetX + 1 + dx, offsetY); //ä½¿ç”¨å¡«å……è‰²è¿›è¡Œå¡«å……
+                g.drawLine(offsetX + 2, offsetY + 1, offsetX + 1 + dx, offsetY + 1); //ä½¿ç”¨å¡«å……è‰²è¿›è¡Œå¡«å……
             }
 
             g.setColor(m_edgeColor2);
-            g.drawLine(offsetX + dx + 2, offsetY, offsetX + dx + 3, offsetY); //»­µ¹Èı½ÇĞÎÓÒÏÒ·´¹â
-            g.drawLine(offsetX + dx + 2, offsetY + 1, offsetX + dx + 3, offsetY + 1); //»­µ¹Èı½ÇĞÎÓÒÏÒ·´¹â£¬Ö»ÊÇy×ø±êÏòÏÂµ÷ÕûÁËÒ»¸öÏóËØ
+            g.drawLine(offsetX + dx + 2, offsetY, offsetX + dx + 3, offsetY); //ç”»å€’ä¸‰è§’å½¢å³å¼¦åå…‰
+            g.drawLine(offsetX + dx + 2, offsetY + 1, offsetX + dx + 3, offsetY + 1); //ç”»å€’ä¸‰è§’å½¢å³å¼¦åå…‰ï¼Œåªæ˜¯yåæ ‡å‘ä¸‹è°ƒæ•´äº†ä¸€ä¸ªè±¡ç´ 
             offsetX++;
-            offsetY += 2; //Ã¿´ÎÑ­»·£¬yÖáÏòÏÂ·½Ïò²½½øµÄ¿ç·ùÎª2ÏóËØ
+            offsetY += 2; //æ¯æ¬¡å¾ªç¯ï¼Œyè½´å‘ä¸‹æ–¹å‘æ­¥è¿›çš„è·¨å¹…ä¸º2è±¡ç´ 
         }
 
-        /* »­µ¹Èı½ÇĞÎÏÂ¶¥µã */
+        /* ç”»å€’ä¸‰è§’å½¢ä¸‹é¡¶ç‚¹ */
         g.setColor(m_edgeColor1);
         g.drawLine(x + m_size / 2, (y + m_size) - 1, x + m_size / 2, (y + m_size) - 1);
 
-        /* »­µ¹Èı½ÇĞÎÄÚµÄÅÅĞòÁĞĞòºÅ */
+        /* ç”»å€’ä¸‰è§’å½¢å†…çš„æ’åºåˆ—åºå· */
         Font font = g.getFont();
         g.setColor(Color.black);
         g.setFont(SMALL_FONT);
         //g.drawString(m_sortNumber, (x + m_size / 2) - 2, y + m_size / 2 + 2);
-        g.drawString(String.valueOf(m_index), (x + m_size / 2) - 3, y + m_size / 2 + 2); //¿¼ÂÇµ½Ë÷ÒıÎªÁ½Î»ÊıÊ±£¬Èı½ÇĞÎÄÚÏÔÊ¾²»È«£¬ÊÊµ±½«drawStringµÄ×óÆğµãÏò×ó¶àÒÆ¶¯1¸öÏóËØ -- ÀîÎ°
+        g.drawString(String.valueOf(m_index), (x + m_size / 2) - 3, y + m_size / 2 + 2); //è€ƒè™‘åˆ°ç´¢å¼•ä¸ºä¸¤ä½æ•°æ—¶ï¼Œä¸‰è§’å½¢å†…æ˜¾ç¤ºä¸å…¨ï¼Œé€‚å½“å°†drawStringçš„å·¦èµ·ç‚¹å‘å·¦å¤šç§»åŠ¨1ä¸ªè±¡ç´  -- æä¼Ÿ
         g.setFont(font);
     }
 
     /**
-     * »­Ã»ÓĞ¼ıÍ·µÄÍ¼±ê¡£
-     * @param g Í¼ĞÎÉè±¸¾ä±ú¡£
-     * @param x Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄx×ø±ê¡£
-     * @param y Í¼±ê»æ»­ÆğÊ¼Ô­µãµÄy×ø±ê¡£
+     * ç”»æ²¡æœ‰ç®­å¤´çš„å›¾æ ‡ã€‚
+     * @param g å›¾å½¢è®¾å¤‡å¥æŸ„ã€‚
+     * @param x å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„xåæ ‡ã€‚
+     * @param y å›¾æ ‡ç»˜ç”»èµ·å§‹åŸç‚¹çš„yåæ ‡ã€‚
      */
     private void drawBlank(Graphics g, int x, int y) {
         //g.drawRect(x, y, m_size - 1, m_size - 1);

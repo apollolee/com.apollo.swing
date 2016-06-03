@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-5-4 ÏÂÎç01:59:15¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-5-4 ä¸‹åˆ01:59:15ã€‚
  */
 package com.apollo.swing.component.table;
 
@@ -21,22 +21,22 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºColumnView.java</p>
- * <p>ÀàĞÍÃèÊö£ºÁĞÊÓÍ¼Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-4</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šColumnView.java</p>
+ * <p>ç±»å‹æè¿°ï¼šåˆ—è§†å›¾ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-4</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class ColumnView extends DefaultTableColumnModel implements SwingConstants, ITableConstants, TableColumnModelListener {
@@ -80,9 +80,9 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨ÁĞÊÇ·ñÎªĞĞºÅÁĞ¡£
-     * @param column Ö¸¶¨ÁĞ¡£
-     * @return Îªtrue±íÊ¾Ö¸¶¨ÁĞÊÇĞĞºÅÁĞ£¬Îªfalse±íÊ¾Ö¸¶¨ÁĞ²»ÊÇĞĞºÅÁĞ¡£
+     * åˆ¤æ–­æŒ‡å®šåˆ—æ˜¯å¦ä¸ºè¡Œå·åˆ—ã€‚
+     * @param column æŒ‡å®šåˆ—ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºæŒ‡å®šåˆ—æ˜¯è¡Œå·åˆ—ï¼Œä¸ºfalseè¡¨ç¤ºæŒ‡å®šåˆ—ä¸æ˜¯è¡Œå·åˆ—ã€‚
      */
     public static boolean isRowIdColumn(TableColumn column) {
         return I18N_INFO_ROWID.equals(column.getIdentifier());
@@ -107,27 +107,27 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±í¸ñ¡£
+     * è¡¨æ ¼ã€‚
      */
     protected JTable m_table;
 
     /**
-     * ÊÓÍ¼Ô´¡£
+     * è§†å›¾æºã€‚
      */
     protected TableColumnModel m_source;
 
     /**
-     * ±êÊ¶ÊÇ·ñÎªĞĞÍ·ÁĞ¡£
+     * æ ‡è¯†æ˜¯å¦ä¸ºè¡Œå¤´åˆ—ã€‚
      */
     protected volatile boolean m_isRowHeader;
 
     /**
-     * ±êÊ¶ÊÇ·ñÏÔÊ¾ĞĞºÅÁĞ¡£
+     * æ ‡è¯†æ˜¯å¦æ˜¾ç¤ºè¡Œå·åˆ—ã€‚
      */
     protected volatile boolean m_isRowIdVisible;
 
     /**
-     * ĞĞºÅÁĞäÖÈ¾Æ÷¡£
+     * è¡Œå·åˆ—æ¸²æŸ“å™¨ã€‚
      */
     protected TableCellRenderer m_rowIdRenderer;
 
@@ -146,29 +146,29 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÓÍ¼Ô´¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source è§†å›¾æºã€‚
      */
     public ColumnView(TableColumnModel source) {
         this(source, false, false, null);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÓÍ¼Ô´¡£
-     * @param isRowIdVisible ±êÊ¶ÊÇ·ñÏÔÊ¾ĞĞºÅÁĞ¡£
-     * @param rowIdRenderer ĞĞºÅÁĞäÖÈ¾Æ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source è§†å›¾æºã€‚
+     * @param isRowIdVisible æ ‡è¯†æ˜¯å¦æ˜¾ç¤ºè¡Œå·åˆ—ã€‚
+     * @param rowIdRenderer è¡Œå·åˆ—æ¸²æŸ“å™¨ã€‚
      */
     public ColumnView(TableColumnModel source, boolean isRowIdVisible, TableCellRenderer rowIdRenderer) {
         this(source, true, isRowIdVisible, rowIdRenderer);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÓÍ¼Ô´¡£
-     * @param isRowHeader ±êÊ¶ÊÇ·ñÎªĞĞÍ·ÁĞ¡£
-     * @param isRowIdVisible ±êÊ¶ÊÇ·ñÏÔÊ¾ĞĞºÅÁĞ¡£
-     * @param rowIdRenderer ĞĞºÅÁĞäÖÈ¾Æ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source è§†å›¾æºã€‚
+     * @param isRowHeader æ ‡è¯†æ˜¯å¦ä¸ºè¡Œå¤´åˆ—ã€‚
+     * @param isRowIdVisible æ ‡è¯†æ˜¯å¦æ˜¾ç¤ºè¡Œå·åˆ—ã€‚
+     * @param rowIdRenderer è¡Œå·åˆ—æ¸²æŸ“å™¨ã€‚
      */
     public ColumnView(TableColumnModel source, boolean isRowHeader, boolean isRowIdVisible, TableCellRenderer rowIdRenderer) {
         m_isRowHeader = isRowHeader;
@@ -199,27 +199,27 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * °ÑÊÓÍ¼Ë÷Òı×ª»¯ÎªÊÓÍ¼Ô´ÊÓÍ¼Ë÷Òı¡£
-     * @param viewColumnIndex ÊÓÍ¼Ë÷Òı¡£
-     * @return ÊÓÍ¼Ô´ÊÓÍ¼Ë÷Òı¡£
+     * æŠŠè§†å›¾ç´¢å¼•è½¬åŒ–ä¸ºè§†å›¾æºè§†å›¾ç´¢å¼•ã€‚
+     * @param viewColumnIndex è§†å›¾ç´¢å¼•ã€‚
+     * @return è§†å›¾æºè§†å›¾ç´¢å¼•ã€‚
      */
     public int convertIndexToSource(int viewColumnIndex) {
         return m_source.getColumnIndex(getColumn(viewColumnIndex).getIdentifier());
     }
 
     /**
-     * °ÑÊÓÍ¼Ô´ÊÓÍ¼Ë÷Òı×ª»¯ÎªÊÓÍ¼Ë÷Òı¡£
-     * @param sourceColumnIndex ÊÓÍ¼Ô´ÊÓÍ¼Ë÷Òı¡£
-     * @return ÊÓÍ¼Ë÷Òı¡£
+     * æŠŠè§†å›¾æºè§†å›¾ç´¢å¼•è½¬åŒ–ä¸ºè§†å›¾ç´¢å¼•ã€‚
+     * @param sourceColumnIndex è§†å›¾æºè§†å›¾ç´¢å¼•ã€‚
+     * @return è§†å›¾ç´¢å¼•ã€‚
      */
     public int convertIndexToView(int sourceColumnIndex) {
         return getColumnIndex(m_source.getColumn(sourceColumnIndex).getIdentifier());
     }
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨ÁĞÊÇ·ñÎªĞĞºÅÁĞ¡£
-     * @param column Ö¸¶¨ÁĞË÷Òı¡£
-     * @return Îªtrue±íÊ¾Ö¸¶¨ÁĞÊÇĞĞºÅÁĞ£¬Îªfalse±íÊ¾Ö¸¶¨ÁĞ²»ÊÇĞĞºÅÁĞ¡£
+     * åˆ¤æ–­æŒ‡å®šåˆ—æ˜¯å¦ä¸ºè¡Œå·åˆ—ã€‚
+     * @param column æŒ‡å®šåˆ—ç´¢å¼•ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºæŒ‡å®šåˆ—æ˜¯è¡Œå·åˆ—ï¼Œä¸ºfalseè¡¨ç¤ºæŒ‡å®šåˆ—ä¸æ˜¯è¡Œå·åˆ—ã€‚
      */
     public boolean isRowIdColumn(int column) {
         return isRowIdColumn(getColumn(column));
@@ -279,7 +279,7 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
      * @see javax.swing.event.TableColumnModelListener#columnMoved(javax.swing.event.TableColumnModelEvent)
      */
     public void columnMoved(TableColumnModelEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
@@ -293,14 +293,14 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
      * @see javax.swing.event.TableColumnModelListener#columnSelectionChanged(javax.swing.event.ListSelectionEvent)
      */
     public void columnSelectionChanged(ListSelectionEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÉèÖÃÊÓÍ¼Ô´¡£
-     * @param source ÊÓÍ¼Ô´¡£
+     * è®¾ç½®è§†å›¾æºã€‚
+     * @param source è§†å›¾æºã€‚
      */
     protected void setSource(TableColumnModel source) {
         if (m_source != null) {
@@ -324,7 +324,7 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
             rowIdColumn.setHeaderRenderer(new TableCellRenderer() {
 
                 /**
-                 * äÖÈ¾Æ÷×é¼ş¡£
+                 * æ¸²æŸ“å™¨ç»„ä»¶ã€‚
                  */
                 protected JLabel m_rc = new JLabel();
 
@@ -372,9 +372,9 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     }
 
     /**
-     * »ñÈ¡ÊÓÍ¼Ô´Í¬²½ÁĞ¡£
-     * @param modelIndex Ä£ĞÍË÷Òı¡£
-     * @return ÊÓÍ¼Ô´Í¬²½ÁĞ¡£
+     * è·å–è§†å›¾æºåŒæ­¥åˆ—ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ã€‚
+     * @return è§†å›¾æºåŒæ­¥åˆ—ã€‚
      */
     protected TableColumn getSyncColumn(int modelIndex) {
         for (int i = m_isRowIdVisible ? 1 : 0, size = getColumnCount(); i < size; i++) {
@@ -391,9 +391,9 @@ public class ColumnView extends DefaultTableColumnModel implements SwingConstant
     }
 
     /**
-     * ÅĞ¶ÏÁĞÊÇ·ñ»¹ÔÚÊÓÍ¼Ô´ÖĞ¡£
-     * @param column ÁĞ¡£
-     * @return Îªtrue±íÊ¾ÁĞ»¹ÔÚÊÓÍ¼Ô´ÖĞ£¬Îªfalse±íÊ¾ÁĞ²»ÔÚÊÓÍ¼Ô´ÖĞ¡£
+     * åˆ¤æ–­åˆ—æ˜¯å¦è¿˜åœ¨è§†å›¾æºä¸­ã€‚
+     * @param column åˆ—ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºåˆ—è¿˜åœ¨è§†å›¾æºä¸­ï¼Œä¸ºfalseè¡¨ç¤ºåˆ—ä¸åœ¨è§†å›¾æºä¸­ã€‚
      */
     protected boolean isInSource(TableColumn column) {
         return TableUtilities.contains(m_source, column);

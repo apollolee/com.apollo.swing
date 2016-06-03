@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-1-13 ÉÏÎç10:06:09¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-1-13 ä¸Šåˆ10:06:09ã€‚
  */
 package com.apollo.swing.component.text;
 
@@ -7,22 +7,22 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºDecimalField.java</p>
- * <p>ÀàĞÍÃèÊö£ºĞ¡ÊıÊäÈë¿ò£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-1-13</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šDecimalField.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå°æ•°è¾“å…¥æ¡†ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-1-13</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -103,7 +103,7 @@ public class DecimalField extends BaseField {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public DecimalField() {
@@ -111,12 +111,12 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param scale ¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»¡£
-     * @param value ³õÊ¼»¯ÓÃµÄĞ¡ÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param scale ç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„å°æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public DecimalField(int columns, double minimum, double maximum, int scale, double value) {
@@ -124,14 +124,14 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param scale ¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»¡£
-     * @param value ³õÊ¼»¯ÓÃµÄĞ¡ÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param scale ç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„å°æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public DecimalField(int columns,
@@ -151,14 +151,14 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param scale ¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
-     * @param value ³õÊ¼»¯ÓÃµÄĞ¡ÊıÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ³õÊ¼Öµ£¬×¢Òâ£ºÈç¹ûisNeedInputÎªtrue£¬ÄÇ´Ë´¦±ØĞë¸ø¶¨Ò»¸ö³õÊ¼Öµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param scale ç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„å°æ•°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰åˆå§‹å€¼ï¼Œæ³¨æ„ï¼šå¦‚æœisNeedInputä¸ºtrueï¼Œé‚£æ­¤å¤„å¿…é¡»ç»™å®šä¸€ä¸ªåˆå§‹å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#TDecimalFormatter(boolean, boolean, BigDecimal, BigDecimal, BigInteger)
      * @since T3 V1.1
      */
@@ -190,8 +190,8 @@ public class DecimalField extends BaseField {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Ğ¡Êı¶ÔÏó£¬×¢Òâ£º´Ë´¦»ñÈ¡µÄÖµ²¢²»¾ÍÊÇ½çÃæÉÏµÄÖµ£¬Ö»ÓĞcommitEditÒÔºó£¬½çÃæÉÏµÄÖµ²Å»á´æÈëÄ£ĞÍ£¬ÕâµãºÍJFormattedTextFieldÍêÈ«Ò»Ñù¡£
-     * @return Ğ¡Êı£¬Èç¹ûÎªnull±íÊ¾Î´ÊäÈë»òÊäÈëÎª¿Õ¡£
+     * è·å–å°æ•°å¯¹è±¡ï¼Œæ³¨æ„ï¼šæ­¤å¤„è·å–çš„å€¼å¹¶ä¸å°±æ˜¯ç•Œé¢ä¸Šçš„å€¼ï¼Œåªæœ‰commitEditä»¥åï¼Œç•Œé¢ä¸Šçš„å€¼æ‰ä¼šå­˜å…¥æ¨¡å‹ï¼Œè¿™ç‚¹å’ŒJFormattedTextFieldå®Œå…¨ä¸€æ ·ã€‚
+     * @return å°æ•°ï¼Œå¦‚æœä¸ºnullè¡¨ç¤ºæœªè¾“å…¥æˆ–è¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public BigDecimal getDecimal() {
@@ -199,8 +199,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃĞ¡Êı£¬×¢Òâ£ºÓ¦ÓÃ±ØĞë±£Ö¤ÉèÖÃµÄĞ¡ÊıÊÇºÏ·¨µÄ¡£
-     * @param decimal Ğ¡Êı£¬Îªnull±íÊ¾ÊäÈëÎª¿Õ¡£
+     * è®¾ç½®å°æ•°ï¼Œæ³¨æ„ï¼šåº”ç”¨å¿…é¡»ä¿è¯è®¾ç½®çš„å°æ•°æ˜¯åˆæ³•çš„ã€‚
+     * @param decimal å°æ•°ï¼Œä¸ºnullè¡¨ç¤ºè¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public void setDecimal(BigDecimal decimal) {
@@ -208,8 +208,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃĞ¡Êı£¬×¢Òâ£ºÓ¦ÓÃ±ØĞë±£Ö¤ÉèÖÃµÄĞ¡ÊıÊÇºÏ·¨µÄ¡£
-     * @param decimal Ğ¡Êı¡£
+     * è®¾ç½®å°æ•°ï¼Œæ³¨æ„ï¼šåº”ç”¨å¿…é¡»ä¿è¯è®¾ç½®çš„å°æ•°æ˜¯åˆæ³•çš„ã€‚
+     * @param decimal å°æ•°ã€‚
      * @since T3 V1.1
      */
     public void setDecimal(double decimal) {
@@ -217,8 +217,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * »ñÈ¡Ğ¡Êı¸ñÊ½Æ÷¡£
-     * @return Ğ¡Êı¸ñÊ½Æ÷¡£
+     * è·å–å°æ•°æ ¼å¼å™¨ã€‚
+     * @return å°æ•°æ ¼å¼å™¨ã€‚
      * @since T3 V1.1
      */
     public DecimalFormatter getDecimalFormatter() {
@@ -226,8 +226,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @return ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è·å–å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @return å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#isNeedInput()
      * @since T3 V1.1
      */
@@ -236,8 +236,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isNeedInput ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isNeedInput å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#setNeedInput(boolean)
      * @since T3 V1.1
      */
@@ -246,8 +246,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @return ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @return å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#isEnabledPopupErrorTip()
      * @since T3 V1.1
      */
@@ -256,8 +256,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param isEnabledPopupErrorTip ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param isEnabledPopupErrorTip å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#setEnabledPopupErrorTip(boolean)
      * @since T3 V1.1
      */
@@ -266,8 +266,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î minimum µÄÖµ¡£
+     * è·å–å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ minimum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#getMinimum()
      * @since T3 V1.1
      */
@@ -276,8 +276,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#setMinimum(BigDecimal)
      * @since T3 V1.1
      */
@@ -286,8 +286,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinimum(long minimum) {
@@ -295,8 +295,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maximum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#getMaximum()
      * @since T3 V1.1
      */
@@ -305,8 +305,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#setMaximum(BigDecimal)
      * @since T3 V1.1
      */
@@ -315,8 +315,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaximum(long maximum) {
@@ -324,8 +324,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î scale µÄÖµ£¬¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
-     * @return ×Ö¶Î scale µÄÖµ¡£
+     * è·å–å­—æ®µ scale çš„å€¼ï¼Œç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
+     * @return å­—æ®µ scale çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#getScale()
      * @since T3 V1.1
      */
@@ -334,8 +334,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î scale µÄÖµ£¬¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞ¾«¶È£¬¿ÉÒÔÎŞÏŞ¾«¶È£¬µ«±ØĞëÓÃ°ü×°¶ÔÏóÀ´´¦ÀíÒ»ÇĞÔËËã¡£
-     * @param scale ×Ö¶Î scale µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ scale çš„å€¼ï¼Œç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ç²¾åº¦ï¼Œå¯ä»¥æ— é™ç²¾åº¦ï¼Œä½†å¿…é¡»ç”¨åŒ…è£…å¯¹è±¡æ¥å¤„ç†ä¸€åˆ‡è¿ç®—ã€‚
+     * @param scale å­—æ®µ scale çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.DecimalFormatter#setScale(BigInteger)
      * @since T3 V1.1
      */
@@ -344,8 +344,8 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î scale µÄÖµ£¬¾«¶È£¬¼´Ğ¡Êıµãºó¼¸Î»¡£
-     * @param scale ×Ö¶Î scale µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ scale çš„å€¼ï¼Œç²¾åº¦ï¼Œå³å°æ•°ç‚¹åå‡ ä½ã€‚
+     * @param scale å­—æ®µ scale çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setScale(int scale) {
@@ -355,7 +355,7 @@ public class DecimalField extends BaseField {
     /*------------------------------------- JFormattedTextField Public Method -------------------------------------*/
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃgetDecimal·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨getDecimalæ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#getValue()
      * @see com.apollo.swing.component.text.DecimalField#getDecimal()
      */
@@ -364,7 +364,7 @@ public class DecimalField extends BaseField {
     }
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃsetDecimal·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨setDecimalæ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#setValue(java.lang.Object)
      * @see com.apollo.swing.component.text.DecimalField#setDecimal(BigDecimal)
      */

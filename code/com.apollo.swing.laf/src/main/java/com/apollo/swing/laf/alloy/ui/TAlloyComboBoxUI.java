@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2012-11-8 ÏÂÎç07:30:52¡£
+ * æ­¤ä»£ç åˆ›å»ºäºŽ 2012-11-8 ä¸‹åˆ07:30:52ã€‚
  */
 package com.apollo.swing.laf.alloy.ui;
 
@@ -11,22 +11,22 @@ import javax.swing.plaf.ComponentUI;
 import com.incors.plaf.alloy.AlloyComboBoxUI;
 
 /**
- * <p>ÎÄ¼þÃû³Æ£ºTAlloyComboBoxUI.java</p>
- * <p>ÀàÐÍÃèÊö£ºTAlloyComboBoxUI¡£</p>
- * <p>°æÈ¨ËùÓÐ£º°æÈ¨ËùÓÐ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈÝÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2012-11-8</p>
- * <p>ÐÞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTAlloyComboBoxUI.java</p>
+ * <p>ç±»åž‹æè¿°ï¼šTAlloyComboBoxUIã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜Žï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2012-11-8</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ÐÞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ÐÞ ¸Ä ÈË£º
- *    ÐÞ¸ÄÄÚÈÝ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æŽé•‡
  */
 public class TAlloyComboBoxUI extends AlloyComboBoxUI {
 

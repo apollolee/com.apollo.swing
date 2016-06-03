@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-2-28 ÉÏÎç09:37:36¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-2-28 ä¸Šåˆ09:37:36ã€‚
  */
 package com.apollo.swing.component.text;
 
@@ -10,22 +10,22 @@ import java.text.ParseException;
 import javax.swing.JFormattedTextField;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºIntegerFormatter.java</p>
- * <p>ÀàĞÍÃèÊö£ºÕûÊı¸ñÊ½Æ÷£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-2-28</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šIntegerFormatter.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ•´æ•°æ ¼å¼å™¨ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-2-28</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -90,22 +90,22 @@ public class IntegerFormatter extends BaseFormatter {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ×îĞ¡Öµ¡£
+     * æœ€å°å€¼ã€‚
      */
     protected BigInteger m_minimum;
 
     /**
-     * ×î´óÖµ¡£
+     * æœ€å¤§å€¼ã€‚
      */
     protected BigInteger m_maximum;
 
     /**
-     * ²½³¤¡£
+     * æ­¥é•¿ã€‚
      */
     protected BigInteger m_step;
 
     /**
-     * ²½³¤»ùÖµ¡£
+     * æ­¥é•¿åŸºå€¼ã€‚
      */
     protected BigInteger m_stepBase;
 
@@ -124,7 +124,7 @@ public class IntegerFormatter extends BaseFormatter {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public IntegerFormatter() {
@@ -132,13 +132,13 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param maximum ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param step ²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum å…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param step æ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
      * @since T3 V1.1
      */
     public IntegerFormatter(boolean isNeedInput,
@@ -154,7 +154,7 @@ public class IntegerFormatter extends BaseFormatter {
         setStep(step);
         setStepBase(stepBase);
 
-        if (m_tipText == null) { //ÉÏÃæµÄset·½·¨¶¼Î´Ö´ĞĞµ½updateTipText()¾Í·µ»ØÁË
+        if (m_tipText == null) { //ä¸Šé¢çš„setæ–¹æ³•éƒ½æœªæ‰§è¡Œåˆ°updateTipText()å°±è¿”å›äº†
             updateTipText();
         }
     }
@@ -174,8 +174,8 @@ public class IntegerFormatter extends BaseFormatter {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î minimum µÄÖµ¡£
+     * è·å–å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getMinimum() {
@@ -183,12 +183,12 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minimum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×îĞ¡Öµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÏÂÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃ¸ºÎŞÇî±íÊ¾¡£
-     * @param minimum ×Ö¶Î minimum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minimum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å°å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸‹é™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨è´Ÿæ— ç©·è¡¨ç¤ºã€‚
+     * @param minimum å­—æ®µ minimum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinimum(BigInteger minimum) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_minimum, minimum)) {
             return;
         }
@@ -205,8 +205,8 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getMaximum() {
@@ -214,12 +214,12 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maximum µÄÖµ£¬ÔÊĞíÊäÈëµÄ×î´óÖµ£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾ÊäÈëÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maximum ×Ö¶Î maximum µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maximum çš„å€¼ï¼Œå…è®¸è¾“å…¥çš„æœ€å¤§å€¼ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºè¾“å…¥æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maximum å­—æ®µ maximum çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaximum(BigInteger maximum) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_maximum, maximum)) {
             return;
         }
@@ -236,8 +236,8 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î step µÄÖµ£¬²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @return ×Ö¶Î step µÄÖµ¡£
+     * è·å–å­—æ®µ step çš„å€¼ï¼Œæ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @return å­—æ®µ step çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getStep() {
@@ -250,12 +250,12 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î step µÄÖµ£¬²½³¤£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param step ×Ö¶Î step µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ step çš„å€¼ï¼Œæ­¥é•¿ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param step å­—æ®µ step çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setStep(BigInteger step) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_step, step)) {
             return;
         }
@@ -272,8 +272,8 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î stepBase µÄÖµ£¬²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @return ×Ö¶Î stepBase µÄÖµ¡£
+     * è·å–å­—æ®µ stepBase çš„å€¼ï¼Œæ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @return å­—æ®µ stepBase çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getStepBase() {
@@ -289,12 +289,12 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î stepBase µÄÖµ£¬²½³¤»ùÖµ£¬¼´´Ó²½³¤»ùÖµ¿ªÊ¼¼ÆËã£¬ÊäÈëµÄÊı¶¼ÒªÊÇ²½³¤ÖµµÄÕûÊı±¶£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾Ê¹ÓÃÈ±Ê¡Öµ£¬²½³¤È±Ê¡ÖµÎª1£¬²½³¤»ùÖµÈ±Ê¡Îª0¡£
-     * @param stepBase ×Ö¶Î stepBase µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ stepBase çš„å€¼ï¼Œæ­¥é•¿åŸºå€¼ï¼Œå³ä»æ­¥é•¿åŸºå€¼å¼€å§‹è®¡ç®—ï¼Œè¾“å…¥çš„æ•°éƒ½è¦æ˜¯æ­¥é•¿å€¼çš„æ•´æ•°å€ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºä½¿ç”¨ç¼ºçœå€¼ï¼Œæ­¥é•¿ç¼ºçœå€¼ä¸º1ï¼Œæ­¥é•¿åŸºå€¼ç¼ºçœä¸º0ã€‚
+     * @param stepBase å­—æ®µ stepBase çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setStepBase(BigInteger stepBase) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_stepBase, stepBase)) {
             return;
         }
@@ -314,12 +314,12 @@ public class IntegerFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#stringToValue(java.lang.String)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´valueÖµ²»»á¸Ä±ä£¬¼´×î½üÒ»´ÎµÄÖµ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆvalueå€¼ä¸ä¼šæ”¹å˜ï¼Œå³æœ€è¿‘ä¸€æ¬¡çš„å€¼ã€‚
      */
     public Object stringToValue(String text) throws ParseException {
         verify(text, true);
 
-        /* ÅĞ¶ÏÎÄ±¾ÊÇ·ñÎª¿Õ£¬×¢Òâ£ºÈç¹ûÎª¿ÕÍ¬Ê±Ò²±íÊ¾m_isNeedInputÊÇfalse£¬·ñÔòÔç¾Í»áÔÚÑéÖ¤µÄÊ±ºòÅ×³öÒì³£ÁË */
+        /* åˆ¤æ–­æ–‡æœ¬æ˜¯å¦ä¸ºç©ºï¼Œæ³¨æ„ï¼šå¦‚æœä¸ºç©ºåŒæ—¶ä¹Ÿè¡¨ç¤ºm_isNeedInputæ˜¯falseï¼Œå¦åˆ™æ—©å°±ä¼šåœ¨éªŒè¯çš„æ—¶å€™æŠ›å‡ºå¼‚å¸¸äº† */
         if ("".equals(text)) {
             return null;
         }
@@ -329,10 +329,10 @@ public class IntegerFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#valueToString(java.lang.Object)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´textÎÄ±¾ÄÚÈİÔò»áÖÃÎª¿Õ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆtextæ–‡æœ¬å†…å®¹åˆ™ä¼šç½®ä¸ºç©ºã€‚
      */
     public String valueToString(Object value) throws ParseException {
-        /* ÅĞ¶ÏValueÖµÊÇ·ñºÏ·¨ */
+        /* åˆ¤æ–­Valueå€¼æ˜¯å¦åˆæ³• */
         if (value == null || !(value instanceof BigInteger)) {
             return "";
 
@@ -346,21 +346,21 @@ public class IntegerFormatter extends BaseFormatter {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÑéÖ¤ÖÆ¶¨µÄ¹æÔòÊÇ·ñºÏ·¨¡£
-     * @return Îªtrue±íÊ¾ÖÆ¶¨µÄ¹æÔòºÏ·¨£¬Îªfalse±íÊ¾ÖÆ¶¨µÄ¹æÔò²»ºÏ·¨¡£
+     * éªŒè¯åˆ¶å®šçš„è§„åˆ™æ˜¯å¦åˆæ³•ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™åˆæ³•ï¼Œä¸ºfalseè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™ä¸åˆæ³•ã€‚
      */
     protected boolean verifyRule() {
-        /* ×îĞ¡ÖµºÍ×î´óÖµÖ»ÒªÓĞÒ»¸ö²»ÉèÖÃ£¬ÄÇÃ´¶ÔÓ¦ËùÓĞ¹æÔò¶¼ÊÇºÏ·¨µÄ */
+        /* æœ€å°å€¼å’Œæœ€å¤§å€¼åªè¦æœ‰ä¸€ä¸ªä¸è®¾ç½®ï¼Œé‚£ä¹ˆå¯¹åº”æ‰€æœ‰è§„åˆ™éƒ½æ˜¯åˆæ³•çš„ */
         if (m_minimum == null || m_maximum == null) {
             return true;
         }
 
-        /* ×îĞ¡Öµ´óÓÚ×î´óÖµ£¨»òÕß×î´óÖµĞ¡ÓÚ×îĞ¡Öµ£©ÊÇ²»ºÏ·¨µÄ */
+        /* æœ€å°å€¼å¤§äºæœ€å¤§å€¼ï¼ˆæˆ–è€…æœ€å¤§å€¼å°äºæœ€å°å€¼ï¼‰æ˜¯ä¸åˆæ³•çš„ */
         if (m_minimum.compareTo(m_maximum) > 0) {
             return false;
         }
 
-        /* ×îĞ¡Öµ¾­¹ıÏòÉÏ¶ÔÆëºó´óÓÚ×î´óÖµÊÇ²»ºÏ·¨µÄ£¨Ã»ÓĞÈÎºÎÒ»¸öÕûÊıÖµÂäÔÚºÏ·¨Çø¼äÄÚ£© */
+        /* æœ€å°å€¼ç»è¿‡å‘ä¸Šå¯¹é½åå¤§äºæœ€å¤§å€¼æ˜¯ä¸åˆæ³•çš„ï¼ˆæ²¡æœ‰ä»»ä½•ä¸€ä¸ªæ•´æ•°å€¼è½åœ¨åˆæ³•åŒºé—´å†…ï¼‰ */
         if (getFlushInteger(m_minimum, true).compareTo(m_maximum) > 0) {
             return false;
         }
@@ -369,48 +369,48 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎª×îĞ¡²½³¤£¬¼´²½³¤ÊÇ·ñÎª1¡£
-     * @return Îªtrue±íÊ¾ÊÇ×îĞ¡²½³¤£¬Îªfalse±íÊ¾²»ÊÇ×îĞ¡²½³¤¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºæœ€å°æ­¥é•¿ï¼Œå³æ­¥é•¿æ˜¯å¦ä¸º1ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºæ˜¯æœ€å°æ­¥é•¿ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯æœ€å°æ­¥é•¿ã€‚
      */
     protected boolean isMinimumStep() {
         return getStep().equals(BigInteger.valueOf(1));
     }
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨µÄÕûÊıÊÇ·ñ·ûºÏ²½³¤¡£
-     * @param value Ö¸¶¨µÄÕûÊı¡£
-     * @return Îªtrue±íÊ¾Ö¸¶¨µÄÕûÊı·ûºÏ²½³¤£¬Îªfalse±íÊ¾Ö¸¶¨µÄÕûÊı²»·ûºÏ²½³¤¡£
+     * åˆ¤æ–­æŒ‡å®šçš„æ•´æ•°æ˜¯å¦ç¬¦åˆæ­¥é•¿ã€‚
+     * @param value æŒ‡å®šçš„æ•´æ•°ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºæŒ‡å®šçš„æ•´æ•°ç¬¦åˆæ­¥é•¿ï¼Œä¸ºfalseè¡¨ç¤ºæŒ‡å®šçš„æ•´æ•°ä¸ç¬¦åˆæ­¥é•¿ã€‚
      */
     protected boolean isTrueOfStep(BigInteger value) {
         return getMod(value).equals(BigInteger.ZERO);
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÕûÊı²¢·ûºÏ²½³¤µÄÏÂÒ»¸öÖµ¡£
-     * @param value Ö¸¶¨µÄÕûÊı¡£
-     * @return Ö¸¶¨ÕûÊı²¢·ûºÏ²½³¤µÄÏÂÒ»¸öÖµ¡£
+     * è·å–æŒ‡å®šæ•´æ•°å¹¶ç¬¦åˆæ­¥é•¿çš„ä¸‹ä¸€ä¸ªå€¼ã€‚
+     * @param value æŒ‡å®šçš„æ•´æ•°ã€‚
+     * @return æŒ‡å®šæ•´æ•°å¹¶ç¬¦åˆæ­¥é•¿çš„ä¸‹ä¸€ä¸ªå€¼ã€‚
      */
     protected BigInteger getNextInteger(BigInteger value) {
         return getStep().subtract(getMod(value)).add(value);
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÕûÊı²¢·ûºÏ²½³¤µÄÉÏÒ»¸öÖµ¡£
-     * @param value Ö¸¶¨µÄÕûÊı¡£
-     * @return Ö¸¶¨ÕûÊı²¢·ûºÏ²½³¤µÄÉÏÒ»¸öÖµ¡£
+     * è·å–æŒ‡å®šæ•´æ•°å¹¶ç¬¦åˆæ­¥é•¿çš„ä¸Šä¸€ä¸ªå€¼ã€‚
+     * @param value æŒ‡å®šçš„æ•´æ•°ã€‚
+     * @return æŒ‡å®šæ•´æ•°å¹¶ç¬¦åˆæ­¥é•¿çš„ä¸Šä¸€ä¸ªå€¼ã€‚
      */
     protected BigInteger getPreviousInteger(BigInteger value) {
         return value.subtract(isTrueOfStep(value) ? getStep() : getMod(value));
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÕûÊı¶ÔÆëºóµÄÖµ¡£
-     * @param value Ö¸¶¨µÄÕûÊı¡£
-     * @param isUpFlush Îªtrue±íÊ¾ÏòÉÏ¶ÔÆë£¬Îªfalse±íÊ¾ÏòÏÂ¶ÔÆë¡£
-     * @return Ö¸¶¨ÕûÊı¶ÔÆëºóµÄÖµ¡£
+     * è·å–æŒ‡å®šæ•´æ•°å¯¹é½åçš„å€¼ã€‚
+     * @param value æŒ‡å®šçš„æ•´æ•°ã€‚
+     * @param isUpFlush ä¸ºtrueè¡¨ç¤ºå‘ä¸Šå¯¹é½ï¼Œä¸ºfalseè¡¨ç¤ºå‘ä¸‹å¯¹é½ã€‚
+     * @return æŒ‡å®šæ•´æ•°å¯¹é½åçš„å€¼ã€‚
      */
     protected BigInteger getFlushInteger(BigInteger value, boolean isUpFlush) {
-        if (isTrueOfStep(value)) { //Ö¸¶¨ÕûÊıÒÑ¾­ÊÇ·ûºÏ²½³¤µÄ
+        if (isTrueOfStep(value)) { //æŒ‡å®šæ•´æ•°å·²ç»æ˜¯ç¬¦åˆæ­¥é•¿çš„
             return value;
 
         } else {
@@ -424,9 +424,9 @@ public class IntegerFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÕûÊıÓë²½³¤µÄÄ£Öµ¡£
-     * @param value Ö¸¶¨ÕûÊı¡£
-     * @return Ö¸¶¨ÕûÊıÓë²½³¤µÄÄ£Öµ¡£
+     * è·å–æŒ‡å®šæ•´æ•°ä¸æ­¥é•¿çš„æ¨¡å€¼ã€‚
+     * @param value æŒ‡å®šæ•´æ•°ã€‚
+     * @return æŒ‡å®šæ•´æ•°ä¸æ­¥é•¿çš„æ¨¡å€¼ã€‚
      */
     protected BigInteger getMod(BigInteger value) {
         return value.subtract(getStepBase()).mod(getStep());
@@ -438,8 +438,8 @@ public class IntegerFormatter extends BaseFormatter {
      * @see com.apollo.swing.component.text.BaseFormatter#verify(java.lang.String, boolean)
      */
     protected void verify(String text, boolean isFull) throws ParseException {
-        /* ÑéÖ¤×Ö·ûºÏ·¨ĞÔ¡¢¸ñÊ½ÒÔ¼°ÓĞĞ§ĞÔ */
-        if (isFull) { //´ıÑéÖ¤ÎÄ±¾ÊÇÍêÕûµÄ
+        /* éªŒè¯å­—ç¬¦åˆæ³•æ€§ã€æ ¼å¼ä»¥åŠæœ‰æ•ˆæ€§ */
+        if (isFull) { //å¾…éªŒè¯æ–‡æœ¬æ˜¯å®Œæ•´çš„
             if ("".equals(text)) {
                 if (m_isNeedInput) {
                     throwParseException(I18N_INFO_CHARACTERISILLEGAL);
@@ -454,7 +454,7 @@ public class IntegerFormatter extends BaseFormatter {
                 }
             }
 
-        } else { //´ıÑéÖ¤ÎÄ±¾²»ÊÇÍêÕûµÄ
+        } else { //å¾…éªŒè¯æ–‡æœ¬ä¸æ˜¯å®Œæ•´çš„
             if ("".equals(text)) {
                 return;
 
@@ -493,14 +493,14 @@ public class IntegerFormatter extends BaseFormatter {
             }
         }
 
-        /* »ñÈ¡¼ÆËãÖµ */
+        /* è·å–è®¡ç®—å€¼ */
         BigInteger value = new BigInteger(text);
         BigInteger nextMinValue = new BigInteger(text + (text.startsWith("-") ? "9" : "0"));
         BigInteger nextMaxValue = new BigInteger(text + (text.startsWith("-") ? "0" : "9"));
         BigInteger nextNextMinValue = new BigInteger(text + (text.startsWith("-") ? "99" : "00"));
         BigInteger nextNextMaxValue = new BigInteger(text + (text.startsWith("-") ? "00" : "99"));
 
-        /* ÑéÖ¤×îĞ¡Öµ */
+        /* éªŒè¯æœ€å°å€¼ */
         if (isFull || text.startsWith("-")) {
             if (m_minimum != null && value.compareTo(m_minimum) < 0) {
                 throwParseException(I18N_INFO_VALUEISTOOSMALL);
@@ -512,7 +512,7 @@ public class IntegerFormatter extends BaseFormatter {
             }
         }
 
-        /* ÑéÖ¤×î´óÖµ */
+        /* éªŒè¯æœ€å¤§å€¼ */
         if (isFull || !text.startsWith("-")) {
             if (m_maximum != null && value.compareTo(m_maximum) > 0) {
                 throwParseException(I18N_INFO_VALUEISTOOBIG);
@@ -524,7 +524,7 @@ public class IntegerFormatter extends BaseFormatter {
             }
         }
 
-        /* ÑéÖ¤²½³¤ */
+        /* éªŒè¯æ­¥é•¿ */
         if (isFull) {
             if (!isMinimumStep() && !isTrueOfStep(value)) {
                 throwParseException(I18N_INFO_FALLSHORTOFSTEP);

@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÉÏÎç09:40:33¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸Šåˆ09:40:33ã€‚
  */
 package com.apollo.swing.component.complextable;
 
@@ -12,22 +12,22 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTableModel.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íÄ£ĞÍÀà£¬·â×°ÁË×ÛºÏ±íÄ£ĞÍÊı¾İºÍ²Ù×÷£¬Õâ¸öÀàÊÇ×ÛºÏ±íÂß¼­¹¦ÄÜµÄºËĞÄ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTableModel.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨æ¨¡å‹ç±»ï¼Œå°è£…äº†ç»¼åˆè¡¨æ¨¡å‹æ•°æ®å’Œæ“ä½œï¼Œè¿™ä¸ªç±»æ˜¯ç»¼åˆè¡¨é€»è¾‘åŠŸèƒ½çš„æ ¸å¿ƒã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -72,9 +72,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´´½¨ĞĞ¼¯£¬¹¤¾ß·½·¨¡£
-     * @param data ĞĞÊı¾İÊı¾İ¼¯¡£
-     * @return ĞĞ¼¯¡£
+     * åˆ›å»ºè¡Œé›†ï¼Œå·¥å…·æ–¹æ³•ã€‚
+     * @param data è¡Œæ•°æ®æ•°æ®é›†ã€‚
+     * @return è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public static ComplexTableRow[] createRows(Object[][] data) {
@@ -88,9 +88,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ´´½¨ÁĞ¼¯£¬¹¤¾ß·½·¨¡£
-     * @param identifiers ÁĞ±êÊ¶¶ÔÏó¼¯¡£
-     * @return ÁĞ¼¯¡£
+     * åˆ›å»ºåˆ—é›†ï¼Œå·¥å…·æ–¹æ³•ã€‚
+     * @param identifiers åˆ—æ ‡è¯†å¯¹è±¡é›†ã€‚
+     * @return åˆ—é›†ã€‚
      * @since T3 V1.1
      */
     public static ComplexTableColumn[] createColumns(Object[] identifiers) {
@@ -122,22 +122,22 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ËùÓĞĞĞ¡£
+     * æ‰€æœ‰è¡Œã€‚
      */
     protected List m_rows = new ArrayList();
 
     /**
-     * ËùÓĞÁĞ¡£
+     * æ‰€æœ‰åˆ—ã€‚
      */
     protected List m_columns = new ArrayList();
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿ÉÅÅĞò¡£
+     * æ ‡è¯†æ˜¯å¦å¯æ’åºã€‚
      */
     protected volatile boolean m_sortable = true;
 
     /**
-     * ÅÅĞò±È½ÏÆ÷¡£
+     * æ’åºæ¯”è¾ƒå™¨ã€‚
      */
     protected Comparator m_sorter = new Comparator() {
 
@@ -178,8 +178,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ËùÓĞÁĞ¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns æ‰€æœ‰åˆ—å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableModel(ComplexTableColumn[] columns) {
@@ -187,9 +187,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param data ËùÓĞÊı¾İ£¬¶şÎ»Êı¾İ±í½á¹¹¡£
-     * @param identifiers ËùÓĞÁĞ±êÊ¶¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param data æ‰€æœ‰æ•°æ®ï¼ŒäºŒä½æ•°æ®è¡¨ç»“æ„ã€‚
+     * @param identifiers æ‰€æœ‰åˆ—æ ‡è¯†å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableModel(Object[][] data, Object[] identifiers) {
@@ -197,9 +197,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param rows ËùÓĞĞĞ¶ÔÏó¡£
-     * @param identifiers ËùÓĞÁĞ±êÊ¶¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param rows æ‰€æœ‰è¡Œå¯¹è±¡ã€‚
+     * @param identifiers æ‰€æœ‰åˆ—æ ‡è¯†å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableModel(ComplexTableRow[] rows, Object[] identifiers) {
@@ -207,9 +207,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param rows ËùÓĞĞĞ¶ÔÏó¡£
-     * @param columns ËùÓĞÁĞ¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param rows æ‰€æœ‰è¡Œå¯¹è±¡ã€‚
+     * @param columns æ‰€æœ‰åˆ—å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableModel(ComplexTableRow[] rows, ComplexTableColumn[] columns) {
@@ -231,8 +231,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î sortable µÄÖµ£¬¼´±êÊ¶Õû¸ö×ÛºÏ±íÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÊÇÔÊĞí¡£
-     * @return ×Ö¶Î sortable µÄÖµ¡£
+     * è·å–å­—æ®µ sortable çš„å€¼ï¼Œå³æ ‡è¯†æ•´ä¸ªç»¼åˆè¡¨æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœæ˜¯å…è®¸ã€‚
+     * @return å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isSortable() {
@@ -240,8 +240,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î sortable µÄÖµ£¬¼´±êÊ¶Õû¸ö×ÛºÏ±íÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÊÇÔÊĞí£¬×¢Òâ£º´Ë·½·¨µ÷ÓÃºóĞèÒªÊ¹ÓÃTComplexTable.repaintAll()·½·¨ÒÔË¢ĞÂ±íÍ·¡£
-     * @param sortable ×Ö¶Î sortable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ sortable çš„å€¼ï¼Œå³æ ‡è¯†æ•´ä¸ªç»¼åˆè¡¨æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœæ˜¯å…è®¸ï¼Œæ³¨æ„ï¼šæ­¤æ–¹æ³•è°ƒç”¨åéœ€è¦ä½¿ç”¨TComplexTable.repaintAll()æ–¹æ³•ä»¥åˆ·æ–°è¡¨å¤´ã€‚
+     * @param sortable å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setSortable(boolean sortable) {
@@ -253,8 +253,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * È¡ÏûÅÅĞò£¬¼´È¡ÏûÄ³Ò»¸öÁĞµÄÅÅĞò¡£
-     * @param column ÁĞ¡£
+     * å–æ¶ˆæ’åºï¼Œå³å–æ¶ˆæŸä¸€ä¸ªåˆ—çš„æ’åºã€‚
+     * @param column åˆ—ã€‚
      * @since T3 V1.1
      */
     public void cancelSort(ComplexTableColumn column) {
@@ -276,7 +276,7 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * È¡ÏûÈ«²¿ÁĞµÄÅÅĞò¡£
+     * å–æ¶ˆå…¨éƒ¨åˆ—çš„æ’åºã€‚
      * @since T3 V1.1
      */
     public void cancelSort() {
@@ -290,8 +290,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÅÅĞòÄ³Ò»ÁĞ¡£
-     * @param column ÁĞ¡£
+     * æ’åºæŸä¸€åˆ—ã€‚
+     * @param column åˆ—ã€‚
      * @since T3 V1.1
      */
     public void sort(ComplexTableColumn column) {
@@ -318,9 +318,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ĞĞ¶ÔÏó¡£
-     * @param row ĞĞÊÓÍ¼Ë÷Òı¡£
-     * @return ĞĞ¡£
+     * è·å–è¡Œå¯¹è±¡ã€‚
+     * @param row è¡Œè§†å›¾ç´¢å¼•ã€‚
+     * @return è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow getRow(int row) {
@@ -328,9 +328,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ĞĞÊÓÍ¼Ë÷Òı¡£
-     * @param row ĞĞ¡£
-     * @return ĞĞË÷Òı¡£
+     * è·å–è¡Œè§†å›¾ç´¢å¼•ã€‚
+     * @param row è¡Œã€‚
+     * @return è¡Œç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public int getRowIndex(ComplexTableRow row) {
@@ -338,8 +338,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞÒÑÌí¼Óµ«»¹Ã»ÓĞ¼ÓÈëÄ£ĞÍÖĞµÄĞĞ£¬¼´½çÃæÉÏĞĞÍ·ÓĞ¼ÓºÅ±êÊ¶µÄĞĞ¡£
-     * @return ËùÓĞÒÑÌí¼ÓµÄĞĞ¡£
+     * è·å–æ‰€æœ‰å·²æ·»åŠ ä½†è¿˜æ²¡æœ‰åŠ å…¥æ¨¡å‹ä¸­çš„è¡Œï¼Œå³ç•Œé¢ä¸Šè¡Œå¤´æœ‰åŠ å·æ ‡è¯†çš„è¡Œã€‚
+     * @return æ‰€æœ‰å·²æ·»åŠ çš„è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow[] getInsertedRows() {
@@ -357,8 +357,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞÒÑÒÆ³ıµ«»¹Ã´ÓĞ´ÓÄ£ĞÍÖĞÌŞ³ıµÄĞĞ£¬¼´½çÃæÉÏĞĞÍ·ÓĞ¼õºÅ±êÊ¶µÄĞĞ¡£
-     * @return ËùÓĞÒÑÒÆ³ıµÄĞĞ¡£
+     * è·å–æ‰€æœ‰å·²ç§»é™¤ä½†è¿˜ä¹ˆæœ‰ä»æ¨¡å‹ä¸­å‰”é™¤çš„è¡Œï¼Œå³ç•Œé¢ä¸Šè¡Œå¤´æœ‰å‡å·æ ‡è¯†çš„è¡Œã€‚
+     * @return æ‰€æœ‰å·²ç§»é™¤çš„è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow[] getRemovedRows() {
@@ -376,8 +376,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞÒÑĞŞ¸Äµ«»¹Ã»ÓĞ±£´æ½øÄ£ĞÍµÄĞĞ£¬¼´½çÃæÉÏĞĞÍ·ÓĞĞÇºÅ±êÊ¶µÄĞĞ¡£
-     * @return ËùÓĞÒÑĞŞ¸ÄµÄĞĞ¡£
+     * è·å–æ‰€æœ‰å·²ä¿®æ”¹ä½†è¿˜æ²¡æœ‰ä¿å­˜è¿›æ¨¡å‹çš„è¡Œï¼Œå³ç•Œé¢ä¸Šè¡Œå¤´æœ‰æ˜Ÿå·æ ‡è¯†çš„è¡Œã€‚
+     * @return æ‰€æœ‰å·²ä¿®æ”¹çš„è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow[] getChangedRows() {
@@ -395,8 +395,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞĞĞ¶ÔÏó£¬Ë³ĞòÊÇÊÓÍ¼ÉÏµÄµ±Ç°Ë³Ğò¡£
-     * @return ËùÓĞĞĞ¡£
+     * è·å–æ‰€æœ‰è¡Œå¯¹è±¡ï¼Œé¡ºåºæ˜¯è§†å›¾ä¸Šçš„å½“å‰é¡ºåºã€‚
+     * @return æ‰€æœ‰è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow[] getRows() {
@@ -404,8 +404,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»ĞĞÊı¾İµ½±í¸ñÎ²²¿¡£
-     * @param row ĞĞ¡£
+     * æ·»åŠ ä¸€è¡Œæ•°æ®åˆ°è¡¨æ ¼å°¾éƒ¨ã€‚
+     * @param row è¡Œã€‚
      * @since T3 V1.1
      */
     public void addRow(ComplexTableRow row) {
@@ -413,9 +413,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»ĞĞÊı¾İµ½Ö¸¶¨ĞĞË÷ÒıÎ»ÖÃ¡£
-     * @param index Ë÷Òı¡£
-     * @param row ĞĞ¡£
+     * æ·»åŠ ä¸€è¡Œæ•°æ®åˆ°æŒ‡å®šè¡Œç´¢å¼•ä½ç½®ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param row è¡Œã€‚
      * @since T3 V1.1
      */
     public void addRow(int index, ComplexTableRow row) {
@@ -423,10 +423,10 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»ĞĞÊı¾İµ½Ö¸¶¨ĞĞË÷ÒıÎ»ÖÃ¡£
-     * @param index ÊÓÍ¼Ë÷Òı¡£
-     * @param modelIndex Ä£ĞÍË÷Òı¡£
-     * @param row ĞĞ¡£
+     * æ·»åŠ ä¸€è¡Œæ•°æ®åˆ°æŒ‡å®šè¡Œç´¢å¼•ä½ç½®ã€‚
+     * @param index è§†å›¾ç´¢å¼•ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ã€‚
+     * @param row è¡Œã€‚
      * @since T3 V1.1
      */
     public void addRow(int index, int modelIndex, ComplexTableRow row) {
@@ -434,8 +434,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»¸öĞĞÊı¾İ¼¯ºÍµ½±í¸ñÎ²²¿¡£
-     * @param rows ĞĞ¼¯¡£
+     * æ·»åŠ ä¸€ä¸ªè¡Œæ•°æ®é›†å’Œåˆ°è¡¨æ ¼å°¾éƒ¨ã€‚
+     * @param rows è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public void addRows(ComplexTableRow[] rows) {
@@ -443,9 +443,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»¸öĞĞÊı¾İ¼¯ºÍµ½Ö¸¶¨ĞĞË÷ÒıÎ»ÖÃ¡£
-     * @param index Ë÷Òı¡£
-     * @param rows ĞĞ¼¯¡£
+     * æ·»åŠ ä¸€ä¸ªè¡Œæ•°æ®é›†å’Œåˆ°æŒ‡å®šè¡Œç´¢å¼•ä½ç½®ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param rows è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public void addRows(int index, ComplexTableRow[] rows) {
@@ -458,10 +458,10 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÒ»¸öĞĞÊı¾İ¼¯ºÍµ½Ö¸¶¨ĞĞË÷ÒıÎ»ÖÃ¡£
-     * @param index ÊÓÍ¼Ë÷Òı¡£
-     * @param modelIndex Ä£ĞÍË÷Òı¡£
-     * @param rows ĞĞ¼¯¡£
+     * æ·»åŠ ä¸€ä¸ªè¡Œæ•°æ®é›†å’Œåˆ°æŒ‡å®šè¡Œç´¢å¼•ä½ç½®ã€‚
+     * @param index è§†å›¾ç´¢å¼•ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ã€‚
+     * @param rows è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public void addRows(int index, int modelIndex, ComplexTableRow[] rows) {
@@ -482,9 +482,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨ĞĞÊı¾İ¡£
-     * @param row ĞĞ¡£
-     * @return ÒÆ³ıµÄĞĞ¡£
+     * ç§»é™¤æŒ‡å®šè¡Œæ•°æ®ã€‚
+     * @param row è¡Œã€‚
+     * @return ç§»é™¤çš„è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow removeRow(ComplexTableRow row) {
@@ -492,9 +492,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄĞĞÊı¾İ¡£
-     * @param index Ë÷Òı¡£
-     * @return ÒÆ³ıµÄĞĞ¡£
+     * ç§»é™¤æŒ‡å®šç´¢å¼•ä½ç½®çš„è¡Œæ•°æ®ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @return ç§»é™¤çš„è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow removeRow(int index) {
@@ -514,8 +514,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨µÄĞĞÊı¾İ¼¯ºÏ¡£
-     * @param rows ĞĞ¼¯¡£
+     * ç§»é™¤æŒ‡å®šçš„è¡Œæ•°æ®é›†åˆã€‚
+     * @param rows è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public void removeRows(ComplexTableRow[] rows) {
@@ -525,8 +525,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄĞĞÊı¾İ¼¯ºÍ¡£
-     * @param indexes ĞĞË÷Òı¼¯¡£
+     * ç§»é™¤æŒ‡å®šç´¢å¼•ä½ç½®çš„è¡Œæ•°æ®é›†å’Œã€‚
+     * @param indexes è¡Œç´¢å¼•é›†ã€‚
      * @since T3 V1.1
      */
     public void removeRows(int[] indexes) {
@@ -538,7 +538,7 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıËùÓĞĞĞÊı¾İ¡£
+     * ç§»é™¤æ‰€æœ‰è¡Œæ•°æ®ã€‚
      * @since T3 V1.1
      */
     public void removeAllRow() {
@@ -547,8 +547,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃËùÓĞĞĞÊı¾İ¡£
-     * @param data ËùÓĞÊı¾İ¡£
+     * è®¾ç½®æ‰€æœ‰è¡Œæ•°æ®ã€‚
+     * @param data æ‰€æœ‰æ•°æ®ã€‚
      * @since T3 V1.1
      */
     public void setRows(Object[][] data) {
@@ -556,8 +556,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃËùÓĞĞĞÊı¾İ¡£
-     * @param rows ËùÓĞĞĞ¡£
+     * è®¾ç½®æ‰€æœ‰è¡Œæ•°æ®ã€‚
+     * @param rows æ‰€æœ‰è¡Œã€‚
      * @since T3 V1.1
      */
     public void setRows(ComplexTableRow[] rows) {
@@ -566,9 +566,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ÁĞ¶ÔÏó¡£
-     * @param column ÁĞÄ£ĞÍË÷Òı¡£
-     * @return ÁĞ¡£
+     * è·å–åˆ—å¯¹è±¡ã€‚
+     * @param column åˆ—æ¨¡å‹ç´¢å¼•ã€‚
+     * @return åˆ—ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn getColumn(int column) {
@@ -576,9 +576,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ÁĞÄ£ĞÍË÷Òı¡£
-     * @param column ÁĞ¶ÔÏó¡£
-     * @return ÁĞË÷Òı¡£
+     * è·å–åˆ—æ¨¡å‹ç´¢å¼•ã€‚
+     * @param column åˆ—å¯¹è±¡ã€‚
+     * @return åˆ—ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public int getColumnIndex(ComplexTableColumn column) {
@@ -586,8 +586,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞÁĞ¶ÔÏó¡£
-     * @return ËùÓĞÁĞ¡£
+     * è·å–æ‰€æœ‰åˆ—å¯¹è±¡ã€‚
+     * @return æ‰€æœ‰åˆ—ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn[] getColumns() {
@@ -595,8 +595,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÁĞ¶ÔÏóµ½±í¸ñÁĞµÄÎ²²¿¡£
-     * @param column ÁĞ¡£
+     * æ·»åŠ åˆ—å¯¹è±¡åˆ°è¡¨æ ¼åˆ—çš„å°¾éƒ¨ã€‚
+     * @param column åˆ—ã€‚
      * @since T3 V1.1
      */
     public void addColumn(ComplexTableColumn column) {
@@ -604,9 +604,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * Ìí¼ÓÁĞ¶ÔÏóµ½Ö¸¶¨ÁĞÄ£ĞÍË÷ÒıµÄÎ»ÖÃ¡£
-     * @param index Ä£ĞÍ¡£
-     * @param column ÁĞ¡£
+     * æ·»åŠ åˆ—å¯¹è±¡åˆ°æŒ‡å®šåˆ—æ¨¡å‹ç´¢å¼•çš„ä½ç½®ã€‚
+     * @param index æ¨¡å‹ã€‚
+     * @param column åˆ—ã€‚
      * @since T3 V1.1
      */
     public void addColumn(int index, ComplexTableColumn column) {
@@ -621,9 +621,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨µÄÁĞ¶ÔÏó¡£
-     * @param column ÁĞ¡£
-     * @return ÒÆ³ıµÄÁĞ¡£
+     * ç§»é™¤æŒ‡å®šçš„åˆ—å¯¹è±¡ã€‚
+     * @param column åˆ—ã€‚
+     * @return ç§»é™¤çš„åˆ—ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn removeColumn(ComplexTableColumn column) {
@@ -631,9 +631,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÒÆ³ıÖ¸¶¨ÁĞÄ£ĞÍË÷ÒıÎ»ÖÃµÄÁĞ¶ÔÏó¡£
-     * @param index Ë÷Òı¡£
-     * @return ÒÆ³ıµÄÁĞ¡£
+     * ç§»é™¤æŒ‡å®šåˆ—æ¨¡å‹ç´¢å¼•ä½ç½®çš„åˆ—å¯¹è±¡ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @return ç§»é™¤çš„åˆ—ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn removeColumn(int index) {
@@ -654,8 +654,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃËùÓĞÁĞ¶ÔÏó¡£
-     * @param identifiers ËùÓĞÁĞ±êÊ¶¡£
+     * è®¾ç½®æ‰€æœ‰åˆ—å¯¹è±¡ã€‚
+     * @param identifiers æ‰€æœ‰åˆ—æ ‡è¯†ã€‚
      * @since T3 V1.1
      */
     public void setColumns(Object[] identifiers) {
@@ -663,8 +663,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃËùÓĞÁĞ¶ÔÏó¡£
-     * @param columns ËùÓĞÁĞ¡£
+     * è®¾ç½®æ‰€æœ‰åˆ—å¯¹è±¡ã€‚
+     * @param columns æ‰€æœ‰åˆ—ã€‚
      * @since T3 V1.1
      */
     public void setColumns(ComplexTableColumn[] columns) {
@@ -673,9 +673,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃ±í¸ñËùÓĞÊı¾İ¡£
-     * @param data ËùÓĞÊı¾İ¡£
-     * @param identifiers ËùÓĞÁĞ±êÊ¶¡£
+     * è®¾ç½®è¡¨æ ¼æ‰€æœ‰æ•°æ®ã€‚
+     * @param data æ‰€æœ‰æ•°æ®ã€‚
+     * @param identifiers æ‰€æœ‰åˆ—æ ‡è¯†ã€‚
      * @since T3 V1.1
      */
     public void setData(Object[][] data, Object[] identifiers) {
@@ -683,9 +683,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃ±í¸ñËùÓĞÊı¾İ¡£
-     * @param data ËùÓĞÊı¾İ¡£
-     * @param columns ËùÓĞÁĞ¡£
+     * è®¾ç½®è¡¨æ ¼æ‰€æœ‰æ•°æ®ã€‚
+     * @param data æ‰€æœ‰æ•°æ®ã€‚
+     * @param columns æ‰€æœ‰åˆ—ã€‚
      * @since T3 V1.1
      */
     public void setData(Object[][] data, ComplexTableColumn[] columns) {
@@ -693,9 +693,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃ±í¸ñËùÓĞÊı¾İ¡£
-     * @param rows ËùÓĞĞĞ¡£
-     * @param identifiers ËùÓĞÁĞ±êÊ¶¡£
+     * è®¾ç½®è¡¨æ ¼æ‰€æœ‰æ•°æ®ã€‚
+     * @param rows æ‰€æœ‰è¡Œã€‚
+     * @param identifiers æ‰€æœ‰åˆ—æ ‡è¯†ã€‚
      * @since T3 V1.1
      */
     public void setData(ComplexTableRow[] rows, Object[] identifiers) {
@@ -703,9 +703,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃ±í¸ñËùÓĞÊı¾İ¡£
-     * @param rows ËùÓĞĞĞ¡£
-     * @param columns ËùÓĞÁĞ¡£
+     * è®¾ç½®è¡¨æ ¼æ‰€æœ‰æ•°æ®ã€‚
+     * @param rows æ‰€æœ‰è¡Œã€‚
+     * @param columns æ‰€æœ‰åˆ—ã€‚
      * @since T3 V1.1
      */
     public void setData(ComplexTableRow[] rows, ComplexTableColumn[] columns) {
@@ -716,10 +716,10 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨Î»ÖÃµÄµ¥Ôª¸ñ¶ÔÏó¡£
-     * @param row ĞĞÄ£ĞÍË÷Òı¡£
-     * @param column ÁĞÄ£ĞÍË÷Òı¡£
-     * @return µ¥Ôª¸ñ¡£
+     * è·å–æŒ‡å®šä½ç½®çš„å•å…ƒæ ¼å¯¹è±¡ã€‚
+     * @param row è¡Œæ¨¡å‹ç´¢å¼•ã€‚
+     * @param column åˆ—æ¨¡å‹ç´¢å¼•ã€‚
+     * @return å•å…ƒæ ¼ã€‚
      * @since T3 V1.1
      */
     public ComplexTableCell getCell(int row, int column) {
@@ -789,8 +789,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÉèÖÃËùÓĞĞĞ£¨²»·¢Í¨Öª£©¡£
-     * @param rows ËùÓĞĞĞ¡£
+     * è®¾ç½®æ‰€æœ‰è¡Œï¼ˆä¸å‘é€šçŸ¥ï¼‰ã€‚
+     * @param rows æ‰€æœ‰è¡Œã€‚
      */
     protected void setRowsWithoutNotify(ComplexTableRow[] rows) {
         m_rows.clear();
@@ -802,8 +802,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÉèÖÃËùÓĞÁĞ£¨²»·¢Í¨Öª£©¡£
-     * @param columns ËùÓĞÁĞ¡£
+     * è®¾ç½®æ‰€æœ‰åˆ—ï¼ˆä¸å‘é€šçŸ¥ï¼‰ã€‚
+     * @param columns æ‰€æœ‰åˆ—ã€‚
      */
     protected void setColumnsWithoutNotify(ComplexTableColumn[] columns) {
         m_columns.clear();
@@ -821,7 +821,7 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ÅÅĞò¡£
+     * æ’åºã€‚
      */
     protected void sort() {
         Collections.sort(m_rows, m_sorter);
@@ -829,8 +829,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ËùÓĞÅÅĞòÁĞ¡£
-     * @return ËùÓĞÅÅĞòÁĞ¡£
+     * è·å–æ‰€æœ‰æ’åºåˆ—ã€‚
+     * @return æ‰€æœ‰æ’åºåˆ—ã€‚
      */
     protected ComplexTableColumn[] getSortColumns() {
         List sortColumns = new ArrayList();
@@ -858,8 +858,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * ±£´æĞĞ¡£
-     * @param rowIndex Ë÷Òı¡£
+     * ä¿å­˜è¡Œã€‚
+     * @param rowIndex ç´¢å¼•ã€‚
      */
     protected void saveRow(int rowIndex) {
         ComplexTableRow row = getRow(rowIndex);
@@ -874,8 +874,8 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »Ö¸´ĞĞ¡£
-     * @param rowIndex Ë÷Òı¡£
+     * æ¢å¤è¡Œã€‚
+     * @param rowIndex ç´¢å¼•ã€‚
      */
     protected void restoreRow(int rowIndex) {
         ComplexTableRow row = getRow(rowIndex);
@@ -891,9 +891,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡Ä£ĞÍĞĞË÷Òı¼¯¡£
-     * @param viewRows ÊÓÍ¼ĞĞË÷Òı¼¯¡£
-     * @return Ä£ĞÍĞĞË÷Òı¼¯¡£
+     * è·å–æ¨¡å‹è¡Œç´¢å¼•é›†ã€‚
+     * @param viewRows è§†å›¾è¡Œç´¢å¼•é›†ã€‚
+     * @return æ¨¡å‹è¡Œç´¢å¼•é›†ã€‚
      */
     protected int[] getModelRows(int[] viewRows) {
         int[] modelRows = new int[viewRows.length];
@@ -906,9 +906,9 @@ public class ComplexTableModel extends AbstractTableModel implements IConstants 
     }
 
     /**
-     * »ñÈ¡ÊÓÍ¼ĞĞË÷Òı¼¯¡£
-     * @param modelRows Ä£ĞÍĞĞË÷Òı¼¯¡£
-     * @return ÊÓÍ¼ĞĞË÷Òı¼¯¡£
+     * è·å–è§†å›¾è¡Œç´¢å¼•é›†ã€‚
+     * @param modelRows æ¨¡å‹è¡Œç´¢å¼•é›†ã€‚
+     * @return è§†å›¾è¡Œç´¢å¼•é›†ã€‚
      */
     protected int[] getViewRows(int[] modelRows) {
         int[] viewRows = new int[modelRows.length];

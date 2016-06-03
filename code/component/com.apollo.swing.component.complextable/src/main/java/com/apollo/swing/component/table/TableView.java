@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-5-5 ÉÏÎç09:12:12¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-5-5 ä¸Šåˆ09:12:12ã€‚
  */
 package com.apollo.swing.component.table;
 
@@ -31,22 +31,22 @@ import com.apollo.swing.component.complextable.ComplexTableColumn;
 import com.apollo.swing.component.complextable.ComplexTableRow;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTableView.java</p>
- * <p>ÀàĞÍÃèÊö£º±í¸ñÊÓÍ¼Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-5</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTableView.java</p>
+ * <p>ç±»å‹æè¿°ï¼šè¡¨æ ¼è§†å›¾ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-5</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TableView extends JTable implements ITableConstants, PropertyChangeListener, MouseListener, IBaseConstants {
@@ -110,27 +110,27 @@ public class TableView extends JTable implements ITableConstants, PropertyChange
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÊÓÍ¼Ô´¡£
+     * è§†å›¾æºã€‚
      */
     protected JTable m_source;
 
     /**
-     * ²Ëµ¥¹ÜÀíÆ÷¡£
+     * èœå•ç®¡ç†å™¨ã€‚
      */
     protected ITableMenuManager m_menuManager;
 
     /**
-     * ±êÊ¶ÊÇ·ñ×Ô¶¯¹ÜÀíäÖÈ¾Æ÷×é¼ş¼¤»îÓë·ñ¡£
+     * æ ‡è¯†æ˜¯å¦è‡ªåŠ¨ç®¡ç†æ¸²æŸ“å™¨ç»„ä»¶æ¿€æ´»ä¸å¦ã€‚
      */
     protected boolean m_isAutoEnabledRenderer;
 
     /**
-     * ²Ëµ¥¡£
+     * èœå•ã€‚
      */
     protected JPopupMenu m_menu = new JPopupMenu();
 
     /**
-     * ËùÓĞÈ±Ê¡¶¯×÷¡£
+     * æ‰€æœ‰ç¼ºçœåŠ¨ä½œã€‚
      */
     protected List m_defaultActions = new ArrayList();
 
@@ -149,11 +149,11 @@ public class TableView extends JTable implements ITableConstants, PropertyChange
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÓÍ¼Ô´¡£
-     * @param columnView ÁĞÊÓÍ¼¡£
-     * @param menuManager ²Ëµ¥¹ÜÀíÆ÷¡£
-     * @param isAutoEnabledRenderer ±êÊ¶ÊÇ·ñ×Ô¶¯¹ÜÀíäÖÈ¾Æ÷×é¼ş¼¤»îÓë·ñ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source è§†å›¾æºã€‚
+     * @param columnView åˆ—è§†å›¾ã€‚
+     * @param menuManager èœå•ç®¡ç†å™¨ã€‚
+     * @param isAutoEnabledRenderer æ ‡è¯†æ˜¯å¦è‡ªåŠ¨ç®¡ç†æ¸²æŸ“å™¨ç»„ä»¶æ¿€æ´»ä¸å¦ã€‚
      */
     public TableView(JTable source, ColumnView columnView, ITableMenuManager menuManager, boolean isAutoEnabledRenderer) {
         super(source.getModel(), columnView, source.getSelectionModel());
@@ -192,16 +192,16 @@ public class TableView extends JTable implements ITableConstants, PropertyChange
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡ÊÓÍ¼Ô´¡£
-     * @return ÊÓÍ¼Ô´¡£
+     * è·å–è§†å›¾æºã€‚
+     * @return è§†å›¾æºã€‚
      */
     public JTable getSource() {
         return m_source;
     }
 
     /**
-     * »ñÈ¡ÁĞÊÓÍ¼¡£
-     * @return ÁĞÊÓÍ¼¡£
+     * è·å–åˆ—è§†å›¾ã€‚
+     * @return åˆ—è§†å›¾ã€‚
      */
     public ColumnView getColumnView() {
         return (ColumnView) columnModel;
@@ -365,16 +365,16 @@ public class TableView extends JTable implements ITableConstants, PropertyChange
     public void propertyChange(PropertyChangeEvent evt) {
         String propertyName = evt.getPropertyName();
 
-        if ("model".equals(propertyName)) { //Ä¿±êÄ£ĞÍ·¢Éú±ä»¯
+        if ("model".equals(propertyName)) { //ç›®æ ‡æ¨¡å‹å‘ç”Ÿå˜åŒ–
             setModel((TableModel) evt.getNewValue());
 
-        } else if ("columnModel".equals(propertyName)) { //Ä¿±êÁĞÄ£ĞÍ·¢Éú±ä»¯
+        } else if ("columnModel".equals(propertyName)) { //ç›®æ ‡åˆ—æ¨¡å‹å‘ç”Ÿå˜åŒ–
             getColumnView().setSource((TableColumnModel) evt.getNewValue());
 
-        } else if ("rowHeight".equals(propertyName)) { //Ä¿±ê±íĞĞ¸ß±ä»¯
+        } else if ("rowHeight".equals(propertyName)) { //ç›®æ ‡è¡¨è¡Œé«˜å˜åŒ–
             setRowHeight(((Integer) evt.getNewValue()).intValue());
 
-        } else if ("rowMargin".equals(propertyName)) { //Ä¿±ê±íĞĞ¼ä¾à±ä»¯
+        } else if ("rowMargin".equals(propertyName)) { //ç›®æ ‡è¡¨è¡Œé—´è·å˜åŒ–
             setRowMargin(((Integer) evt.getNewValue()).intValue());
 
         } else if ("rowSelectionAllowed".equals(propertyName)) {
@@ -448,34 +448,34 @@ public class TableView extends JTable implements ITableConstants, PropertyChange
      * @see java.awt.event.MouseListener#mouseExited(java.awt.event.MouseEvent)
      */
     public void mouseExited(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
      */
     public void mousePressed(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
      */
     public void mouseReleased(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ¸üĞÂÊ×Ñ¡¹ö¶¯ÊÓ¿ÚµÄ´óĞ¡¡£
+     * æ›´æ–°é¦–é€‰æ»šåŠ¨è§†å£çš„å¤§å°ã€‚
      */
     protected void updateViewportSize() {
         TableUtilities.updateViewportSize(this);
     }
 
     /**
-     * ÖØÖÃ²Ëµ¥¡£
+     * é‡ç½®èœå•ã€‚
      */
     protected void resetMenu() {
         m_menu.removeAll();

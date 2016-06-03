@@ -1,104 +1,104 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-25 ÉÏÎç09:24:14¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-25 ä¸Šåˆ09:24:14ã€‚
  */
 package com.apollo.swing.component.table;
 
 import javax.swing.Icon;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºITableConstants.java</p>
- * <p>ÀàĞÍÃèÊö£º±í¸ñ³£Á¿Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-25</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šITableConstants.java</p>
+ * <p>ç±»å‹æè¿°ï¼šè¡¨æ ¼å¸¸é‡ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-25</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public interface ITableConstants {
 
     /*------------------------------------- Public Static Final Field -------------------------------------*/
 
     /**
-     * È±Ê¡µÄĞĞºÅÁĞ¿í¶È¡£
+     * ç¼ºçœçš„è¡Œå·åˆ—å®½åº¦ã€‚
      */
     public static final int DEFAULT_ROWIDWIDTH = 50;
 
     /**
-     * È±Ê¡µÄ¶¨ÖÆÎÄ¼şÃû£¬×¢Òâ£º´ËÎÄ¼ş½«·ÅÔÚTTableUtilities.classËùÔÚµÄÀàÂ·¾¶£¨Jar°ü£©Ò»¼¶µÄÄ¿Â¼ÖĞ¡£
+     * ç¼ºçœçš„å®šåˆ¶æ–‡ä»¶åï¼Œæ³¨æ„ï¼šæ­¤æ–‡ä»¶å°†æ”¾åœ¨TTableUtilities.classæ‰€åœ¨çš„ç±»è·¯å¾„ï¼ˆJaråŒ…ï¼‰ä¸€çº§çš„ç›®å½•ä¸­ã€‚
      */
     public static final String DEFAULT_CUSTOMFILENAME = "default-tablecustom.xml";
 
     /**
-     * ¿Í»§¶ËÊôĞÔ------ÁĞ±í¶¨ÖÆ¡£
+     * å®¢æˆ·ç«¯å±æ€§------åˆ—è¡¨å®šåˆ¶ã€‚
      */
     public static final String CP_TABLECUSTOM = "TableCustom";
 
     /**
-     * ¿Í»§¶ËÊôĞÔ------È±Ê¡ÁĞ±í¶¨ÖÆ¡£
+     * å®¢æˆ·ç«¯å±æ€§------ç¼ºçœåˆ—è¡¨å®šåˆ¶ã€‚
      */
     public static final String CP_TableDefaultCustom = "TableDefaultCustom";
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁĞ±í¶¨ÖÆ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ—è¡¨å®šåˆ¶ã€‚
      */
     public static final String I18N_INFO_TABLECUSTOM = TableUtilities.getI18nMessage("tableCustom");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞĞºÅ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¡Œå·ã€‚
      */
     public static final String I18N_INFO_ROWID = TableUtilities.getI18nMessage("rowId");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞĞÍ·£¨¹Ì¶¨ÁĞ¼¯ºÏ£©¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¡Œå¤´ï¼ˆå›ºå®šåˆ—é›†åˆï¼‰ã€‚
      */
     public static final String I18N_INFO_ROWHEADER = TableUtilities.getI18nMessage("rowHeader");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±íÌå£¨¿ÉÍÏ¶¯ÁĞ¼¯ºÏ£©¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¡¨ä½“ï¼ˆå¯æ‹–åŠ¨åˆ—é›†åˆï¼‰ã€‚
      */
     public static final String I18N_INFO_BODY = TableUtilities.getI18nMessage("body");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁĞÃû¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ—åã€‚
      */
     public static final String I18N_INFO_COLUMNNAME = TableUtilities.getI18nMessage("columnName");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏÔÊ¾¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ˜¾ç¤ºã€‚
      */
     public static final String I18N_INFO_VISIBLE = TableUtilities.getI18nMessage("visible");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁĞ¿í¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ—å®½ã€‚
      */
     public static final String I18N_INFO_WIDTH = TableUtilities.getI18nMessage("width");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È«¾ÖÁĞ¿í¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å…¨å±€åˆ—å®½ã€‚
      */
     public static final String I18N_INFO_ALLWIDTH = TableUtilities.getI18nMessage("allWidth");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏÔÊ¾ÁĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ˜¾ç¤ºåˆ—ã€‚
      */
     public static final String I18N_INFO_SHOW = TableUtilities.getI18nMessage("show");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Òş²ØÁĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------éšè—åˆ—ã€‚
      */
     public static final String I18N_INFO_HIDE = TableUtilities.getI18nMessage("hide");
 
     /**
-     * Í¼±ê------ÁĞ±í¶¨ÖÆ¡£
+     * å›¾æ ‡------åˆ—è¡¨å®šåˆ¶ã€‚
      */
     public static final Icon ICON_TABLECUSTOM = TableUtilities.getIcon("table-custom.gif");
 

@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÉÏÎç09:39:24¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸Šåˆ09:39:24ã€‚
  */
 package com.apollo.swing.component.complextable;
 
@@ -47,22 +47,22 @@ import com.apollo.swing.component.table.TableUtilities;
 import com.apollo.swing.component.table.TableView;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTable.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íÀà£¬×¢Òâ£º´Ë±íµÄÉè¼ÆÊÇÒ»¸öÄ£ĞÍ¶ÔÓÚÁ½¸öÊÓÍ¼£¬Ò»¸ö½ĞRowHeader£¬ÁíÒ»¸ö½ĞBody£¬¶øComplexTable¶ÔÏó±¾ÉíÊÇ²¢²»ÏÔÊ¾³öÀ´¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTable.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨ç±»ï¼Œæ³¨æ„ï¼šæ­¤è¡¨çš„è®¾è®¡æ˜¯ä¸€ä¸ªæ¨¡å‹å¯¹äºä¸¤ä¸ªè§†å›¾ï¼Œä¸€ä¸ªå«RowHeaderï¼Œå¦ä¸€ä¸ªå«Bodyï¼Œè€ŒComplexTableå¯¹è±¡æœ¬èº«æ˜¯å¹¶ä¸æ˜¾ç¤ºå‡ºæ¥ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -75,17 +75,17 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Protected (Static) Inner Class -------------------------------------*/
 
     /**
-     * µ±Ç°ÊÓÍ¼Àà¡£
+     * å½“å‰è§†å›¾ç±»ã€‚
      */
     protected class TCurrentView extends JTable {
 
         /**
-         * ·Ö¸îË÷Òı¡£
+         * åˆ†å‰²ç´¢å¼•ã€‚
          */
         protected int m_dividedIndex;
 
         /**
-         * ¹¹Ôì·½·¨¡£
+         * æ„é€ æ–¹æ³•ã€‚
          */
         public TCurrentView() {
             super(ComplexTable.this.getModel());
@@ -178,36 +178,36 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * Ìí¼Ó¶¯×÷µ½²Ëµ¥¡£
-     * @param menu ²Ëµ¥¡£
-     * @param action ¶¯×÷¡£
+     * æ·»åŠ åŠ¨ä½œåˆ°èœå•ã€‚
+     * @param menu èœå•ã€‚
+     * @param action åŠ¨ä½œã€‚
      */
     protected static void addAction(JPopupMenu menu, Action action) {
         addMenuItem(menu, new JMenuItem(action));
     }
 
     /**
-     * Ìí¼Ó¶¯×÷¼¯µ½²Ëµ¥¡£
-     * @param menu ²Ëµ¥¡£
-     * @param actions ¶¯×÷¼¯¡£
+     * æ·»åŠ åŠ¨ä½œé›†åˆ°èœå•ã€‚
+     * @param menu èœå•ã€‚
+     * @param actions åŠ¨ä½œé›†ã€‚
      */
     protected static void addActions(JPopupMenu menu, Action[] actions) {
         addMenuItems(menu, BaseUtilities.createMenuItems(actions));
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïîµ½²Ëµ¥¡£
-     * @param menu ²Ëµ¥¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹åˆ°èœå•ã€‚
+     * @param menu èœå•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      */
     protected static void addMenuItem(JPopupMenu menu, JMenuItem menuItem) {
         addMenuItems(menu, new JMenuItem[] { menuItem });
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¼¯µ½²Ëµ¥¡£
-     * @param menu ²Ëµ¥¡£
-     * @param menuItems ²Ëµ¥Ïî¼¯¡£
+     * æ·»åŠ èœå•é¡¹é›†åˆ°èœå•ã€‚
+     * @param menu èœå•ã€‚
+     * @param menuItems èœå•é¡¹é›†ã€‚
      */
     protected static void addMenuItems(JPopupMenu menu, JMenuItem[] menuItems) {
         if (menuItems.length > 0) {
@@ -236,72 +236,72 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞí²åÈëĞĞ¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸æ’å…¥è¡Œã€‚
      */
     protected volatile boolean m_isEnabledInsertRow;
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíÒÆ³ıĞĞ¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸ç§»é™¤è¡Œã€‚
      */
     protected volatile boolean m_isEnabledRemoveRow;
 
     /**
-     * ×ÛºÏ±í¹ÜÀíÆ÷¡£
+     * ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
      */
     protected IComplexTableManager m_manager;
 
     /**
-     * ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     protected String m_customKey;
 
     /**
-     * ²Ëµ¥Ïî¼¯¡£
+     * èœå•é¡¹é›†ã€‚
      */
     protected List m_menuItems = new ArrayList();
 
     /**
-     * ±êÊ¶ÊÇ·ñÊÇÔÄ¶ÁÄ£Ê½¡£
+     * æ ‡è¯†æ˜¯å¦æ˜¯é˜…è¯»æ¨¡å¼ã€‚
      */
     protected volatile boolean m_isReadMode = false;
 
     /**
-     * ±íÌå¡£
+     * è¡¨ä½“ã€‚
      */
     protected TableBody m_body;
 
     /**
-     * ĞĞÍ·¡£
+     * è¡Œå¤´ã€‚
      */
     protected TableRowHeader m_rowHeader;
 
     /**
-     * Ñ¡ÖĞµÄ±í¸ñÊÓÍ¼¡£
+     * é€‰ä¸­çš„è¡¨æ ¼è§†å›¾ã€‚
      */
     protected TableView m_chooseTableView;
 
     /**
-     * Ñ¡ÖĞµÄÁĞË÷Òı¡£
+     * é€‰ä¸­çš„åˆ—ç´¢å¼•ã€‚
      */
     protected volatile int m_chooseColumnIndex;
 
     /**
-     * ÒÑ¸Ä±äµ¥Ôª¸ñµÄÇ°¾°É«¡£
+     * å·²æ”¹å˜å•å…ƒæ ¼çš„å‰æ™¯è‰²ã€‚
      */
     protected Color m_changedCellForeground = new Color(16741122);
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíÕ¹ÏÖ±ê¼Ç¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸å±•ç°æ ‡è®°ã€‚
      */
     protected volatile boolean m_isEnabledShowFlag = true;
 
     /**
-     * ±êÊ¶ÊÇ·ñÊ¹ÄÜ¡£
+     * æ ‡è¯†æ˜¯å¦ä½¿èƒ½ã€‚
      */
     protected volatile boolean m_isEnabled = true;
 
     /**
-     * ĞĞºÅäÖÈ¾Æ÷¡£
+     * è¡Œå·æ¸²æŸ“å™¨ã€‚
      */
     protected TableCellRenderer m_rowIdRenderer = new RowIdRenderer() {
 
@@ -341,7 +341,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * È¡ÏûÅÅĞò¡£
+     * å–æ¶ˆæ’åºã€‚
      */
     protected Action m_cancelSort = new AbstractAction() {
 
@@ -365,7 +365,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * È¡ÏûËùÓĞÅÅĞò¡£
+     * å–æ¶ˆæ‰€æœ‰æ’åºã€‚
      */
     protected Action m_cancelAllSort = new AbstractAction() {
 
@@ -383,7 +383,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * Ñ¡ÔñÁĞ¡£
+     * é€‰æ‹©åˆ—ã€‚
      */
     protected Action m_chooseColumn = new AbstractAction() {
 
@@ -402,7 +402,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ²åÈëĞĞµ½µ±Ç°ĞĞµÄÇ°Ãæ¡£
+     * æ’å…¥è¡Œåˆ°å½“å‰è¡Œçš„å‰é¢ã€‚
      */
     protected Action m_insertRowAtPrevious = new AbstractAction() {
 
@@ -420,7 +420,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ²åÈëĞĞµ½µ±Ç°ĞĞµÄºóÃæ¡£
+     * æ’å…¥è¡Œåˆ°å½“å‰è¡Œçš„åé¢ã€‚
      */
     protected Action m_insertRowAtNext = new AbstractAction() {
 
@@ -438,7 +438,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ²åÈëĞĞµ½Ê×ĞĞ¡£
+     * æ’å…¥è¡Œåˆ°é¦–è¡Œã€‚
      */
     protected Action m_insertRowAtFirst = new AbstractAction() {
 
@@ -456,7 +456,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ²åÈëĞĞµ½Ä©ĞĞ¡£
+     * æ’å…¥è¡Œåˆ°æœ«è¡Œã€‚
      */
     protected Action m_insertRowAtLast = new AbstractAction() {
 
@@ -474,7 +474,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ÒÆ³ıÑ¡ÖĞĞĞ¡£
+     * ç§»é™¤é€‰ä¸­è¡Œã€‚
      */
     protected Action m_removeRows = new AbstractAction() {
 
@@ -492,7 +492,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ÒÆ³ıËùÓĞĞĞ¡£
+     * ç§»é™¤æ‰€æœ‰è¡Œã€‚
      */
     protected Action m_removeAllRow = new AbstractAction() {
 
@@ -510,7 +510,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ±£´æÑ¡ÖĞĞĞ¡£
+     * ä¿å­˜é€‰ä¸­è¡Œã€‚
      */
     protected Action m_saveRows = new AbstractAction() {
 
@@ -535,7 +535,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * ±£´æËùÓĞĞĞ¡£
+     * ä¿å­˜æ‰€æœ‰è¡Œã€‚
      */
     protected Action m_saveAllRow = new AbstractAction() {
 
@@ -553,7 +553,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * »Ö¸´Ñ¡ÖĞĞĞ¡£
+     * æ¢å¤é€‰ä¸­è¡Œã€‚
      */
     protected Action m_restoreRows = new AbstractAction() {
 
@@ -578,7 +578,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * »Ö¸´ËùÓĞĞĞ¡£
+     * æ¢å¤æ‰€æœ‰è¡Œã€‚
      */
     protected Action m_restoreAllRow = new AbstractAction() {
 
@@ -596,7 +596,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     };
 
     /**
-     * Ë¢ĞÂ¡£
+     * åˆ·æ–°ã€‚
      */
     protected Action m_refresh = new AbstractAction() {
 
@@ -629,8 +629,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model) {
@@ -638,9 +638,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ½øĞĞÁĞ±í¶¨ÖÆ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥è¿›è¡Œåˆ—è¡¨å®šåˆ¶ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model, String customKey) {
@@ -648,11 +648,11 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model, boolean isEnabledInsertRow, boolean isEnabledRemoveRow, IComplexTableManager manager) {
@@ -660,12 +660,12 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ¶¨ÖÆÁĞ±í£¬Èç¹ûÄãÎŞ·¨±£Ö¤ÁĞĞÅÏ¢²»±ä£¬ÇëÉèÖÃÎªnullÒÔ½ûÖ¹±£´æÁĞ±í¶¨ÖÆĞÅÏ¢¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥å®šåˆ¶åˆ—è¡¨ï¼Œå¦‚æœä½ æ— æ³•ä¿è¯åˆ—ä¿¡æ¯ä¸å˜ï¼Œè¯·è®¾ç½®ä¸ºnullä»¥ç¦æ­¢ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model,
@@ -677,13 +677,13 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ¶¨ÖÆÁĞ±í£¬Èç¹ûÄãÎŞ·¨±£Ö¤ÁĞĞÅÏ¢²»±ä£¬ÇëÉèÖÃÎªnullÒÔ½ûÖ¹±£´æÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-     * @param menuItems ±í¼¶²Ëµ¥Ïî¼¯¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥å®šåˆ¶åˆ—è¡¨ï¼Œå¦‚æœä½ æ— æ³•ä¿è¯åˆ—ä¿¡æ¯ä¸å˜ï¼Œè¯·è®¾ç½®ä¸ºnullä»¥ç¦æ­¢ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+     * @param menuItems è¡¨çº§èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model,
@@ -696,14 +696,14 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ¶¨ÖÆÁĞ±í£¬Èç¹ûÄãÎŞ·¨±£Ö¤ÁĞĞÅÏ¢²»±ä£¬ÇëÉèÖÃÎªnullÒÔ½ûÖ¹±£´æÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-     * @param menuItems ±í¼¶²Ëµ¥Ïî¼¯¡£
-     * @param isAutoEnabledRenderer ±êÊ¶ÊÇ·ñ×Ô¶¯¹ÜÀíäÖÈ¾Æ÷×é¼şµÄ¼¤»î×´Ì¬£¬ÎªtrueÔòäÖÈ¾Æ÷×é¼ş¼¤»î×´Ì¬¸úµ¥Ôª¸ñÊÇ·ñ¿É±à¼­±£³ÖÁª¶¯£¬ÎªfalseÔò²»Áª¶¯¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥å®šåˆ¶åˆ—è¡¨ï¼Œå¦‚æœä½ æ— æ³•ä¿è¯åˆ—ä¿¡æ¯ä¸å˜ï¼Œè¯·è®¾ç½®ä¸ºnullä»¥ç¦æ­¢ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+     * @param menuItems è¡¨çº§èœå•é¡¹é›†ã€‚
+     * @param isAutoEnabledRenderer æ ‡è¯†æ˜¯å¦è‡ªåŠ¨ç®¡ç†æ¸²æŸ“å™¨ç»„ä»¶çš„æ¿€æ´»çŠ¶æ€ï¼Œä¸ºtrueåˆ™æ¸²æŸ“å™¨ç»„ä»¶æ¿€æ´»çŠ¶æ€è·Ÿå•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘ä¿æŒè”åŠ¨ï¼Œä¸ºfalseåˆ™ä¸è”åŠ¨ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model,
@@ -717,15 +717,15 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ¶¨ÖÆÁĞ±í£¬Èç¹ûÄãÎŞ·¨±£Ö¤ÁĞĞÅÏ¢²»±ä£¬ÇëÉèÖÃÎªnullÒÔ½ûÖ¹±£´æÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-     * @param menuItems ±í¼¶²Ëµ¥Ïî¼¯¡£
-     * @param isAutoEnabledRenderer ±êÊ¶ÊÇ·ñ×Ô¶¯¹ÜÀíäÖÈ¾Æ÷×é¼şµÄ¼¤»î×´Ì¬£¬ÎªtrueÔòäÖÈ¾Æ÷×é¼ş¼¤»î×´Ì¬¸úµ¥Ôª¸ñÊÇ·ñ¿É±à¼­±£³ÖÁª¶¯£¬ÎªfalseÔò²»Áª¶¯¡£
-     * @param isAutoSetPreferredWidth ±êÊ¶ÊÇ·ñ×Ô¶¯ÉèÖÃ×î¼Ñ¿í¶È£¬Õâ¸ö²ÎÊıÖ÷Òª×÷ÓÃÊÇÔÚÓĞÁĞ±í¶¨ÖÆµÄÇé¿öÏÂ£¬ÔÚÁĞ±í¶¨ÖÆÆğ×÷ÓÃÇ°£¬ÏÈÉèÖÃÒ»ÏÂ×î¼ÑÁĞ¿í£¬Ê¹µÚÒ»´Î±í¸ñÊ¹ÓÃÊ±ÄÜ¹»ÉèÖÃ×î¼ÑÁĞ¿í£¬È±Ê¡Îªfalse¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥å®šåˆ¶åˆ—è¡¨ï¼Œå¦‚æœä½ æ— æ³•ä¿è¯åˆ—ä¿¡æ¯ä¸å˜ï¼Œè¯·è®¾ç½®ä¸ºnullä»¥ç¦æ­¢ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+     * @param menuItems è¡¨çº§èœå•é¡¹é›†ã€‚
+     * @param isAutoEnabledRenderer æ ‡è¯†æ˜¯å¦è‡ªåŠ¨ç®¡ç†æ¸²æŸ“å™¨ç»„ä»¶çš„æ¿€æ´»çŠ¶æ€ï¼Œä¸ºtrueåˆ™æ¸²æŸ“å™¨ç»„ä»¶æ¿€æ´»çŠ¶æ€è·Ÿå•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘ä¿æŒè”åŠ¨ï¼Œä¸ºfalseåˆ™ä¸è”åŠ¨ã€‚
+     * @param isAutoSetPreferredWidth æ ‡è¯†æ˜¯å¦è‡ªåŠ¨è®¾ç½®æœ€ä½³å®½åº¦ï¼Œè¿™ä¸ªå‚æ•°ä¸»è¦ä½œç”¨æ˜¯åœ¨æœ‰åˆ—è¡¨å®šåˆ¶çš„æƒ…å†µä¸‹ï¼Œåœ¨åˆ—è¡¨å®šåˆ¶èµ·ä½œç”¨å‰ï¼Œå…ˆè®¾ç½®ä¸€ä¸‹æœ€ä½³åˆ—å®½ï¼Œä½¿ç¬¬ä¸€æ¬¡è¡¨æ ¼ä½¿ç”¨æ—¶èƒ½å¤Ÿè®¾ç½®æœ€ä½³åˆ—å®½ï¼Œç¼ºçœä¸ºfalseã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model,
@@ -740,17 +740,17 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏ±íÄ£ĞÍ¡£
-     * @param isEnabledInsertRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´²åÈëĞĞ¡£
-     * @param isEnabledRemoveRow ±êÊ¶ÊÇ·ñÔÊĞíÍ¨¹ı×ÛºÏ±í×Ô´øµÄ²Ëµ¥ÏîÀ´ÒÆ³ıĞĞ¡£
-     * @param manager ×ÛºÏ±í¹ÜÀíÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö£¬Èç¹ûÎª¿Õ¾Í²»±£´æÁĞ±í¶¨ÖÆĞÅÏ¢£¬µ«»¹ÊÇ¿ÉÒÔ¶¨ÖÆÁĞ±í£¬Èç¹ûÄãÎŞ·¨±£Ö¤ÁĞĞÅÏ¢²»±ä£¬ÇëÉèÖÃÎªnullÒÔ½ûÖ¹±£´æÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-     * @param menuItems ±í¼¶²Ëµ¥Ïî¼¯¡£
-     * @param isAutoEnabledRenderer ±êÊ¶ÊÇ·ñ×Ô¶¯¹ÜÀíäÖÈ¾Æ÷×é¼şµÄ¼¤»î×´Ì¬£¬ÎªtrueÔòäÖÈ¾Æ÷×é¼ş¼¤»î×´Ì¬¸úµ¥Ôª¸ñÊÇ·ñ¿É±à¼­±£³ÖÁª¶¯£¬ÎªfalseÔò²»Áª¶¯¡£
-     * @param isAutoSetPreferredWidth ±êÊ¶ÊÇ·ñ×Ô¶¯ÉèÖÃ×î¼Ñ¿í¶È£¬Õâ¸ö²ÎÊıÖ÷Òª×÷ÓÃÊÇÔÚÓĞÁĞ±í¶¨ÖÆµÄÇé¿öÏÂ£¬ÔÚÁĞ±í¶¨ÖÆÆğ×÷ÓÃÇ°£¬ÏÈÉèÖÃÒ»ÏÂ×î¼ÑÁĞ¿í£¬Ê¹µÚÒ»´Î±í¸ñÊ¹ÓÃÊ±ÄÜ¹»ÉèÖÃ×î¼ÑÁĞ¿í£¬È±Ê¡Îªfalse¡£
-     * @param bodyDefaultCustoms ±íÌåÈ±Ê¡µÄÁĞ±í¶¨ÖÆĞÅÏ¢¼¯¡£
-     * @param rowHeaderDefaultCustoms ĞĞÍ·È±Ê¡µÄÁĞ±í¶¨ÖÆĞÅÏ¢¼¯¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @param isEnabledInsertRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥æ’å…¥è¡Œã€‚
+     * @param isEnabledRemoveRow æ ‡è¯†æ˜¯å¦å…è®¸é€šè¿‡ç»¼åˆè¡¨è‡ªå¸¦çš„èœå•é¡¹æ¥ç§»é™¤è¡Œã€‚
+     * @param manager ç»¼åˆè¡¨ç®¡ç†å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ï¼Œå¦‚æœä¸ºç©ºå°±ä¸ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œä½†è¿˜æ˜¯å¯ä»¥å®šåˆ¶åˆ—è¡¨ï¼Œå¦‚æœä½ æ— æ³•ä¿è¯åˆ—ä¿¡æ¯ä¸å˜ï¼Œè¯·è®¾ç½®ä¸ºnullä»¥ç¦æ­¢ä¿å­˜åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+     * @param menuItems è¡¨çº§èœå•é¡¹é›†ã€‚
+     * @param isAutoEnabledRenderer æ ‡è¯†æ˜¯å¦è‡ªåŠ¨ç®¡ç†æ¸²æŸ“å™¨ç»„ä»¶çš„æ¿€æ´»çŠ¶æ€ï¼Œä¸ºtrueåˆ™æ¸²æŸ“å™¨ç»„ä»¶æ¿€æ´»çŠ¶æ€è·Ÿå•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘ä¿æŒè”åŠ¨ï¼Œä¸ºfalseåˆ™ä¸è”åŠ¨ã€‚
+     * @param isAutoSetPreferredWidth æ ‡è¯†æ˜¯å¦è‡ªåŠ¨è®¾ç½®æœ€ä½³å®½åº¦ï¼Œè¿™ä¸ªå‚æ•°ä¸»è¦ä½œç”¨æ˜¯åœ¨æœ‰åˆ—è¡¨å®šåˆ¶çš„æƒ…å†µä¸‹ï¼Œåœ¨åˆ—è¡¨å®šåˆ¶èµ·ä½œç”¨å‰ï¼Œå…ˆè®¾ç½®ä¸€ä¸‹æœ€ä½³åˆ—å®½ï¼Œä½¿ç¬¬ä¸€æ¬¡è¡¨æ ¼ä½¿ç”¨æ—¶èƒ½å¤Ÿè®¾ç½®æœ€ä½³åˆ—å®½ï¼Œç¼ºçœä¸ºfalseã€‚
+     * @param bodyDefaultCustoms è¡¨ä½“ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯é›†ã€‚
+     * @param rowHeaderDefaultCustoms è¡Œå¤´ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯é›†ã€‚
      * @since T3 V1.1
      */
     public ComplexTable(ComplexTableModel model,
@@ -827,7 +827,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * ÉèÖÃ×î¼Ñ¿í¶È¡£
+     * è®¾ç½®æœ€ä½³å®½åº¦ã€‚
      */
     public void setPreferredWidth() {
         TableUtilities.setPreferredWidth(m_body);
@@ -835,8 +835,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡±íÌå£¬¼´×ÛºÏ±íÊµ¼ÊÏÔÊ¾ÔÚ¹ö¶¯Ãæ°åÖĞÑëµÄÄÇ¸öJTable¡£
-     * @return ±íÌå¡£
+     * è·å–è¡¨ä½“ï¼Œå³ç»¼åˆè¡¨å®é™…æ˜¾ç¤ºåœ¨æ»šåŠ¨é¢æ¿ä¸­å¤®çš„é‚£ä¸ªJTableã€‚
+     * @return è¡¨ä½“ã€‚
      * @since T3 V1.1
      */
     public TableBody getBody() {
@@ -844,8 +844,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡ĞĞÍ·£¬¼´×ÛºÏ±íÊµ¼ÊÏÔÊ¾ÔÚ¹ö¶¯Ãæ°åRowHeaderÎ»ÖÃµÄµÄÄÇ¸öJTable¡£
-     * @return ĞĞÍ·¡£
+     * è·å–è¡Œå¤´ï¼Œå³ç»¼åˆè¡¨å®é™…æ˜¾ç¤ºåœ¨æ»šåŠ¨é¢æ¿RowHeaderä½ç½®çš„çš„é‚£ä¸ªJTableã€‚
+     * @return è¡Œå¤´ã€‚
      * @since T3 V1.1
      */
     public TableRowHeader getRowHeader() {
@@ -853,8 +853,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡µ±Ç°ÊÓÍ¼£¬Õâ¸öÊÓÍ¼½öÓÃÓÚ¸ø´òÓ¡Ä£¿éÊ¹ÓÃ£¬²»ÔÊĞíÖ´ĞĞÈÎºÎĞ´²Ù×÷¡£
-     * @return µ±Ç°ÊÓÍ¼¡£
+     * è·å–å½“å‰è§†å›¾ï¼Œè¿™ä¸ªè§†å›¾ä»…ç”¨äºç»™æ‰“å°æ¨¡å—ä½¿ç”¨ï¼Œä¸å…è®¸æ‰§è¡Œä»»ä½•å†™æ“ä½œã€‚
+     * @return å½“å‰è§†å›¾ã€‚
      * @since T3 V1.1
      */
     public JTable getCurrentView() {
@@ -862,8 +862,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡²Ëµ¥Ïî¼¯¡£
-     * @return ²Ëµ¥Ïî¼¯¡£
+     * è·å–èœå•é¡¹é›†ã€‚
+     * @return èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getMenuItems() {
@@ -871,24 +871,24 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isReadMode µÄÖµ¡£
-     * @return ×Ö¶Î isReadMode µÄÖµ¡£
+     * è·å–å­—æ®µ isReadMode çš„å€¼ã€‚
+     * @return å­—æ®µ isReadMode çš„å€¼ã€‚
      */
     public boolean isReadMode() {
         return m_isReadMode;
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isReadMode µÄÖµ¡£
-     * @param isReadMode ×Ö¶Î isReadMode µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isReadMode çš„å€¼ã€‚
+     * @param isReadMode å­—æ®µ isReadMode çš„å€¼ã€‚
      */
     public void setReadMode(boolean isReadMode) {
         m_isReadMode = isReadMode;
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(Action action) {
@@ -896,9 +896,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷¡£
-     * @param index Ë÷Òı¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(int index, Action action) {
@@ -906,8 +906,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeAction(int index) {
@@ -915,8 +915,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeAction(Action action) {
@@ -928,9 +928,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsAction(Action action) {
@@ -943,8 +943,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(JMenuItem menuItem) {
@@ -952,9 +952,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¡£
-     * @param index Ë÷Òı¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(int index, JMenuItem menuItem) {
@@ -962,8 +962,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(int index) {
@@ -971,8 +971,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * ç§»é™¤èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(JMenuItem menuItem) {
@@ -980,9 +980,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsMenuItem(JMenuItem menuItem) {
@@ -990,8 +990,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡×Ö¶Î changedCellForeground µÄÖµ£¬¼´µ¥Ôª¸ñÖµ¸Ä±äºó£¬µ¥Ôª¸ñµÄÇ°¾°É«±ä³ÉÊ²Ã´ÑÕÉ«£¬È±Ê¡ÊÇµ­ºìÉ«¡£
-     * @return ×Ö¶Î changedCellForeground µÄÖµ¡£
+     * è·å–å­—æ®µ changedCellForeground çš„å€¼ï¼Œå³å•å…ƒæ ¼å€¼æ”¹å˜åï¼Œå•å…ƒæ ¼çš„å‰æ™¯è‰²å˜æˆä»€ä¹ˆé¢œè‰²ï¼Œç¼ºçœæ˜¯æ·¡çº¢è‰²ã€‚
+     * @return å­—æ®µ changedCellForeground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getChangedCellForeground() {
@@ -999,8 +999,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î changedCellForeground µÄÖµ£¬¼´µ¥Ôª¸ñÖµ¸Ä±äºó£¬µ¥Ôª¸ñµÄÇ°¾°É«±ä³ÉÊ²Ã´ÑÕÉ«£¬È±Ê¡ÊÇµ­ºìÉ«¡£
-     * @param changedCellForeground ×Ö¶Î changedCellForeground µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ changedCellForeground çš„å€¼ï¼Œå³å•å…ƒæ ¼å€¼æ”¹å˜åï¼Œå•å…ƒæ ¼çš„å‰æ™¯è‰²å˜æˆä»€ä¹ˆé¢œè‰²ï¼Œç¼ºçœæ˜¯æ·¡çº¢è‰²ã€‚
+     * @param changedCellForeground å­—æ®µ changedCellForeground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setChangedCellForeground(Color changedCellForeground) {
@@ -1008,8 +1008,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledShowFlag µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÕ¹ÏÖ±ê¼Ç£¬È±Ê¡ÊÇÔÊĞíµÄ¡£
-     * @return ×Ö¶Î isEnabledShowFlag µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledShowFlag çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸å±•ç°æ ‡è®°ï¼Œç¼ºçœæ˜¯å…è®¸çš„ã€‚
+     * @return å­—æ®µ isEnabledShowFlag çš„å€¼ã€‚
      * @since T3 V1.2
      */
     public boolean isEnabledShowFlag() {
@@ -1017,8 +1017,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledShowFlag µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÕ¹ÏÖ±ê¼Ç£¬È±Ê¡ÊÇÔÊĞíµÄ¡£
-     * @param isEnabledShowFlag ×Ö¶Î isEnabledShowFlag µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledShowFlag çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸å±•ç°æ ‡è®°ï¼Œç¼ºçœæ˜¯å…è®¸çš„ã€‚
+     * @param isEnabledShowFlag å­—æ®µ isEnabledShowFlag çš„å€¼ã€‚
      * @since T3 V1.2
      */
     public void setEnabledShowFlag(boolean isEnabledShowFlag) {
@@ -1027,8 +1027,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡×ÛºÏ±íÄ£ĞÍ¡£
-     * @return ×ÛºÏ±íÄ£ĞÍ¡£
+     * è·å–ç»¼åˆè¡¨æ¨¡å‹ã€‚
+     * @return ç»¼åˆè¡¨æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public ComplexTableModel getComplexTableModel() {
@@ -1036,8 +1036,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡×Ö¶Î sortable µÄÖµ£¬¼´ÅĞ¶Ïµ±Ç°×ÛºÏ±íÊÇ·ñÔÊĞíµã»÷ÁĞÍ·ÅÅĞò¡£
-     * @return ×Ö¶Î sortable µÄÖµ¡£
+     * è·å–å­—æ®µ sortable çš„å€¼ï¼Œå³åˆ¤æ–­å½“å‰ç»¼åˆè¡¨æ˜¯å¦å…è®¸ç‚¹å‡»åˆ—å¤´æ’åºã€‚
+     * @return å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isSortable() {
@@ -1045,8 +1045,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î sortable µÄÖµ£¬¼´ÉèÖÃµ±Ç°×ÛºÏ±íÊÇ·ñÔÊĞíµã»÷ÁĞÍ·ÅÅĞò¡£
-     * @param sortable ×Ö¶Î sortable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ sortable çš„å€¼ï¼Œå³è®¾ç½®å½“å‰ç»¼åˆè¡¨æ˜¯å¦å…è®¸ç‚¹å‡»åˆ—å¤´æ’åºã€‚
+     * @param sortable å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setSortable(boolean sortable) {
@@ -1055,9 +1055,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡ÔÚÖ¸¶¨ĞĞÊÓÍ¼Ë÷ÒıµÄĞĞ¶ÔÏó¡£
-     * @param row ĞĞË÷Òı¡£
-     * @return ĞĞ¡£
+     * è·å–åœ¨æŒ‡å®šè¡Œè§†å›¾ç´¢å¼•çš„è¡Œå¯¹è±¡ã€‚
+     * @param row è¡Œç´¢å¼•ã€‚
+     * @return è¡Œã€‚
      * @since T3 V1.1
      */
     public ComplexTableRow getRow(int row) {
@@ -1065,10 +1065,10 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡µ¥Ôª¸ñ¶ÔÏó¡£
-     * @param row ĞĞÊÓÍ¼Ë÷Òı¡£
-     * @param column ÁĞÊÓÍ¼Ë÷Òı£¬×¢Òâ£º´Ë´¦ÁĞÊÓÍ¼Ë÷ÒıÓÉÓÚ´æÔÚ¶à¸öÊÓÍ¼£¬ÓĞÊ±²¢²»ºÃÈ·¶¨£¬ÕâÊÇÓ¦¸ÃÊ¹ÓÃÄ£ĞÍµÄgetCell·½·¨£¬Í¨¹ıÄ£ĞÍË÷ÒıÀ´»ñÈ¡µ¥Ôª¸ñÊı¾İ¡£
-     * @return µ¥Ôª¸ñ¡£
+     * è·å–å•å…ƒæ ¼å¯¹è±¡ã€‚
+     * @param row è¡Œè§†å›¾ç´¢å¼•ã€‚
+     * @param column åˆ—è§†å›¾ç´¢å¼•ï¼Œæ³¨æ„ï¼šæ­¤å¤„åˆ—è§†å›¾ç´¢å¼•ç”±äºå­˜åœ¨å¤šä¸ªè§†å›¾ï¼Œæœ‰æ—¶å¹¶ä¸å¥½ç¡®å®šï¼Œè¿™æ˜¯åº”è¯¥ä½¿ç”¨æ¨¡å‹çš„getCellæ–¹æ³•ï¼Œé€šè¿‡æ¨¡å‹ç´¢å¼•æ¥è·å–å•å…ƒæ ¼æ•°æ®ã€‚
+     * @return å•å…ƒæ ¼ã€‚
      * @see ComplexTableModel#getCell(int, int)
      * @since T3 V1.1
      */
@@ -1077,7 +1077,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ±£´æ£¬¼´°ÑËùÓĞ´¦ÓÚĞŞ¸Ä×´Ì¬µÄĞĞÊı¾İ±£´æ½øÄ£ĞÍ£¬ĞĞÍ·ÉÏÏàÓ¦µÄĞÇºÅÒ²»áÏûÊ§¡£
+     * ä¿å­˜ï¼Œå³æŠŠæ‰€æœ‰å¤„äºä¿®æ”¹çŠ¶æ€çš„è¡Œæ•°æ®ä¿å­˜è¿›æ¨¡å‹ï¼Œè¡Œå¤´ä¸Šç›¸åº”çš„æ˜Ÿå·ä¹Ÿä¼šæ¶ˆå¤±ã€‚
      * @since T3 V1.1
      */
     public void save() {
@@ -1089,7 +1089,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »Ö¸´£¬¼´°ÑËùÓĞ´¦ÓÚĞŞ¸Ä×´Ì¬µÄĞĞÊı¾İÓÃÄ£ĞÍÖĞµÄÊı¾İ»Ö¸´¹ıÀ´£¬ĞĞÍ·ÉÏÏàÓ¦µÄĞÇºÅÒ²»áÏûÊ§¡£
+     * æ¢å¤ï¼Œå³æŠŠæ‰€æœ‰å¤„äºä¿®æ”¹çŠ¶æ€çš„è¡Œæ•°æ®ç”¨æ¨¡å‹ä¸­çš„æ•°æ®æ¢å¤è¿‡æ¥ï¼Œè¡Œå¤´ä¸Šç›¸åº”çš„æ˜Ÿå·ä¹Ÿä¼šæ¶ˆå¤±ã€‚
      * @since T3 V1.1
      */
     public void restore() {
@@ -1101,7 +1101,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Ë¢ĞÂ£¬¼´Ë¢ĞÂ½çÃæÉÏ²»Ò»ÖÂµÄ×´Ì¬£¬±ÈÈçÄ£ĞÍ²ãÄ³Ğ©ÖµĞŞ¸ÄÁËµ¼ÖÂÁĞÍ·ÅÅĞò×´Ì¬²»Ò»ÖÂ£¬µ÷ÓÃÕâ¸ö·½·¨ºó£¬ÁĞ»áÖØĞÂÅÅÁĞÒ»ÏÂ¡£
+     * åˆ·æ–°ï¼Œå³åˆ·æ–°ç•Œé¢ä¸Šä¸ä¸€è‡´çš„çŠ¶æ€ï¼Œæ¯”å¦‚æ¨¡å‹å±‚æŸäº›å€¼ä¿®æ”¹äº†å¯¼è‡´åˆ—å¤´æ’åºçŠ¶æ€ä¸ä¸€è‡´ï¼Œè°ƒç”¨è¿™ä¸ªæ–¹æ³•åï¼Œåˆ—ä¼šé‡æ–°æ’åˆ—ä¸€ä¸‹ã€‚
      * @since T3 V1.1
      */
     public void refresh() {
@@ -1109,7 +1109,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Í£Ö¹±à¼­¡£
+     * åœæ­¢ç¼–è¾‘ã€‚
      * @since T3 V1.1
      */
     public void stopEditing() {
@@ -1119,7 +1119,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * È¡ÏûËùÓĞÁĞµÄÅÅĞò¡£
+     * å–æ¶ˆæ‰€æœ‰åˆ—çš„æ’åºã€‚
      * @since T3 V1.1
      */
     public void cancelSort() {
@@ -1129,9 +1129,9 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * <p>²åÈëĞĞÊı¾İ£¬²åÈëÖĞ»á»Øµ÷×ÛºÏ±í¹ÜÀíÆ÷µÄcreateRow·½·¨½øĞĞÊı¾İ¹¹½¨¡£</p>
-     * <p>×¢Òâ£ºÕâ¸ö²åÈë·½·¨²»ÊÇÖ±½Ó¸ÄÄ£ĞÍÊı¾İµÄ£¬ËùÒÔ½çÃæÉÏĞÂÔöĞĞµÄĞĞÍ·»áÓĞÒ»¸ö¼ÓºÅ±êÊ¶£¬Õâ¸ö²Ù×÷¿ÉÒÔ±£´æ£¬Ò²¿ÉÒÔ±»»ØÍË¡£</p>
-     * @param index Ë÷Òı¡£
+     * <p>æ’å…¥è¡Œæ•°æ®ï¼Œæ’å…¥ä¸­ä¼šå›è°ƒç»¼åˆè¡¨ç®¡ç†å™¨çš„createRowæ–¹æ³•è¿›è¡Œæ•°æ®æ„å»ºã€‚</p>
+     * <p>æ³¨æ„ï¼šè¿™ä¸ªæ’å…¥æ–¹æ³•ä¸æ˜¯ç›´æ¥æ”¹æ¨¡å‹æ•°æ®çš„ï¼Œæ‰€ä»¥ç•Œé¢ä¸Šæ–°å¢è¡Œçš„è¡Œå¤´ä¼šæœ‰ä¸€ä¸ªåŠ å·æ ‡è¯†ï¼Œè¿™ä¸ªæ“ä½œå¯ä»¥ä¿å­˜ï¼Œä¹Ÿå¯ä»¥è¢«å›é€€ã€‚</p>
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void insertRow(int index) {
@@ -1151,8 +1151,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ıĞĞ¼¯£¬×¢Òâ£ºÕâ¸öÉ¾³ı·½·¨²»ÊÇÖ±½Ó¸ÄÄ£ĞÍÊı¾İµÄ£¬ËùÒÔ½çÃæÉÏ²»»áÁ¢¼´É¾³ıÕâĞ©ĞĞ£¬ÕâĞ©ĞĞµÄĞĞÍ·ÉÏ»áÓĞÒ»¸ö²æºÅ±êÊ¶£¬²¢ÇÒ²»ÔÊĞí±à¼­£¬Õâ¸ö²Ù×÷¿ÉÒÔ±£´æ£¬Ò²¿ÉÒÔ±»»ØÍË¡£
-     * @param rows ĞĞ¼¯¡£
+     * ç§»é™¤è¡Œé›†ï¼Œæ³¨æ„ï¼šè¿™ä¸ªåˆ é™¤æ–¹æ³•ä¸æ˜¯ç›´æ¥æ”¹æ¨¡å‹æ•°æ®çš„ï¼Œæ‰€ä»¥ç•Œé¢ä¸Šä¸ä¼šç«‹å³åˆ é™¤è¿™äº›è¡Œï¼Œè¿™äº›è¡Œçš„è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªå‰å·æ ‡è¯†ï¼Œå¹¶ä¸”ä¸å…è®¸ç¼–è¾‘ï¼Œè¿™ä¸ªæ“ä½œå¯ä»¥ä¿å­˜ï¼Œä¹Ÿå¯ä»¥è¢«å›é€€ã€‚
+     * @param rows è¡Œé›†ã€‚
      * @since T3 V1.1
      */
     public void removeRows(int[] rows) {
@@ -1173,7 +1173,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÒÆ³ıËùÓĞĞĞ£¬×¢Òâ£ºÕâ¸öÉ¾³ı·½·¨²»ÊÇÖ±½Ó¸ÄÄ£ĞÍÊı¾İµÄ£¬ËùÒÔ½çÃæÉÏ²»»áÁ¢¼´É¾³ıËùÒÔĞĞ£¬Ö»ÊÇÔÚËùÓĞĞĞµÄĞĞÍ·ÉÏ»áÓĞÒ»¸ö²æºÅ±êÊ¶£¬²¢ÇÒ²»ÔÊĞí±à¼­£¬Õâ¸ö²Ù×÷¿ÉÒÔ±£´æ£¬Ò²¿ÉÒÔ±»»ØÍË¡£
+     * ç§»é™¤æ‰€æœ‰è¡Œï¼Œæ³¨æ„ï¼šè¿™ä¸ªåˆ é™¤æ–¹æ³•ä¸æ˜¯ç›´æ¥æ”¹æ¨¡å‹æ•°æ®çš„ï¼Œæ‰€ä»¥ç•Œé¢ä¸Šä¸ä¼šç«‹å³åˆ é™¤æ‰€ä»¥è¡Œï¼Œåªæ˜¯åœ¨æ‰€æœ‰è¡Œçš„è¡Œå¤´ä¸Šä¼šæœ‰ä¸€ä¸ªå‰å·æ ‡è¯†ï¼Œå¹¶ä¸”ä¸å…è®¸ç¼–è¾‘ï¼Œè¿™ä¸ªæ“ä½œå¯ä»¥ä¿å­˜ï¼Œä¹Ÿå¯ä»¥è¢«å›é€€ã€‚
      * @since T3 V1.1
      */
     public void removeAllRow() {
@@ -1181,8 +1181,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ±£´æĞĞ£¬¼´°ÑÖ¸¶¨ĞĞµÄĞĞÊı¾İ±£´æ½øÄ£ĞÍ£¬ĞĞÍ·ÉÏÏàÓ¦µÄĞÇºÅÒ²»áÏûÊ§¡£
-     * @param index Ë÷Òı¡£
+     * ä¿å­˜è¡Œï¼Œå³æŠŠæŒ‡å®šè¡Œçš„è¡Œæ•°æ®ä¿å­˜è¿›æ¨¡å‹ï¼Œè¡Œå¤´ä¸Šç›¸åº”çš„æ˜Ÿå·ä¹Ÿä¼šæ¶ˆå¤±ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void saveRow(int index) {
@@ -1191,8 +1191,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »Ö¸´ĞĞ£¬¼´°ÑÖ¸¶¨ĞĞµÄĞĞÊı¾İÓÃÄ£ĞÍÖĞµÄÊı¾İ»Ö¸´¹ıÀ´£¬ĞĞÍ·ÉÏÏàÓ¦µÄĞÇºÅÒ²»áÏûÊ§¡£
-     * @param index Ë÷Òı¡£
+     * æ¢å¤è¡Œï¼Œå³æŠŠæŒ‡å®šè¡Œçš„è¡Œæ•°æ®ç”¨æ¨¡å‹ä¸­çš„æ•°æ®æ¢å¤è¿‡æ¥ï¼Œè¡Œå¤´ä¸Šç›¸åº”çš„æ˜Ÿå·ä¹Ÿä¼šæ¶ˆå¤±ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void restoreRow(int index) {
@@ -1201,8 +1201,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * »ñÈ¡ËùÓĞÑ¡ÖĞµÄ×ÛºÏ±íÁĞ¡£
-     * @return ËùÓĞÑ¡ÖĞµÄ×ÛºÏ±íÁĞ¡£
+     * è·å–æ‰€æœ‰é€‰ä¸­çš„ç»¼åˆè¡¨åˆ—ã€‚
+     * @return æ‰€æœ‰é€‰ä¸­çš„ç»¼åˆè¡¨åˆ—ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn[] getChosenColumns() {
@@ -1234,7 +1234,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÖØ»æËùÓĞ£¬ÒòÎª×ÛºÏ±í´æÔÚBodyºÍRowHeader£¬ËùÒÔÕâ¸ö·½·¨¾ÍÊÇµ÷ÓÃÕâÁ½¸öJTableµÄrepaint·½·¨¡£
+     * é‡ç»˜æ‰€æœ‰ï¼Œå› ä¸ºç»¼åˆè¡¨å­˜åœ¨Bodyå’ŒRowHeaderï¼Œæ‰€ä»¥è¿™ä¸ªæ–¹æ³•å°±æ˜¯è°ƒç”¨è¿™ä¸¤ä¸ªJTableçš„repaintæ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public void repaintAll() {
@@ -1246,7 +1246,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ÇåÀíÁĞ±í¶¨ÖÆĞÅÏ¢¡£
+     * æ¸…ç†åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
      * @since T3 V1.1
      */
     public void clearCustoms() {
@@ -1404,7 +1404,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * @deprecated ´Ë·½·¨ÊÇJTable¹ÜÀíÁĞµÄ·½·¨£¬ÔÚ×ÛºÏ±íÖĞÊ¹ÓÃ»áÕÕ³ÉÎÊÌâ£¬ÇëÊ¹ÓÃ×ÛºÏ±íÄ£ĞÍµÄÏà¹Ø·½·¨Íê³ÉÏàÓ¦¹¦ÄÜ¡£
+     * @deprecated æ­¤æ–¹æ³•æ˜¯JTableç®¡ç†åˆ—çš„æ–¹æ³•ï¼Œåœ¨ç»¼åˆè¡¨ä¸­ä½¿ç”¨ä¼šç…§æˆé—®é¢˜ï¼Œè¯·ä½¿ç”¨ç»¼åˆè¡¨æ¨¡å‹çš„ç›¸å…³æ–¹æ³•å®Œæˆç›¸åº”åŠŸèƒ½ã€‚
      * @see javax.swing.JTable#addColumn(javax.swing.table.TableColumn)
      * @see ComplexTableModel#addColumn(ComplexTableColumn)
      */
@@ -1413,7 +1413,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * @deprecated ´Ë·½·¨ÊÇJTable¹ÜÀíÁĞµÄ·½·¨£¬ÔÚ×ÛºÏ±íÖĞÊ¹ÓÃ»áÕÕ³ÉÎÊÌâ£¬ÇëÊ¹ÓÃ×ÛºÏ±íÄ£ĞÍµÄÏà¹Ø·½·¨Íê³ÉÏàÓ¦¹¦ÄÜ¡£
+     * @deprecated æ­¤æ–¹æ³•æ˜¯JTableç®¡ç†åˆ—çš„æ–¹æ³•ï¼Œåœ¨ç»¼åˆè¡¨ä¸­ä½¿ç”¨ä¼šç…§æˆé—®é¢˜ï¼Œè¯·ä½¿ç”¨ç»¼åˆè¡¨æ¨¡å‹çš„ç›¸å…³æ–¹æ³•å®Œæˆç›¸åº”åŠŸèƒ½ã€‚
      * @see javax.swing.JTable#removeColumn(javax.swing.table.TableColumn)
      * @see ComplexTableModel#removeColumn(ComplexTableColumn)
      */
@@ -1474,7 +1474,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
 
                     int[] viewRows = ctm.getViewRows(modelRows);
                     for (int i = 0; i < viewRows.length; i++) {
-                        /* µ±ListSelectionModel.SINGLE_INTERVAL_SELECTIONÊ±£¬½çÃæÉÏ¿ÉÄÜ»áÓÉÓÚÖØĞÂÉèÖÃµÄÑ¡Ôñ²»Á¬Ğø¶øÏÔÊ¾´íÎó */
+                        /* å½“ListSelectionModel.SINGLE_INTERVAL_SELECTIONæ—¶ï¼Œç•Œé¢ä¸Šå¯èƒ½ä¼šç”±äºé‡æ–°è®¾ç½®çš„é€‰æ‹©ä¸è¿ç»­è€Œæ˜¾ç¤ºé”™è¯¯ */
                         getSelectionModel().addSelectionInterval(viewRows[i], viewRows[i]);
                     }
 
@@ -1488,28 +1488,28 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
      * @see java.awt.event.MouseListener#mouseEntered(java.awt.event.MouseEvent)
      */
     public void mouseEntered(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.MouseListener#mouseExited(java.awt.event.MouseEvent)
      */
     public void mouseExited(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
      */
     public void mousePressed(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
      */
     public void mouseReleased(MouseEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /*------------------------------------- ITableMenuManager Public Method -------------------------------------*/
@@ -1634,7 +1634,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
      * @see com.apollo.swing.component.table.ITableMenuManager#manageScrollPaneMenu(javax.swing.JTable, javax.swing.JPopupMenu)
      */
     public void manageScrollPaneMenu(JTable table, JPopupMenu menu) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /*------------------------------------- IComplexTableManager Public Method -------------------------------------*/
@@ -1658,7 +1658,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * Ô¼Êø¡£
+     * çº¦æŸã€‚
      */
     protected void constrain() {
         if (m_insertRowAtPrevious == null) {
@@ -1689,7 +1689,7 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * Ñ¡ÔñËùÓĞÁĞ¡£
+     * é€‰æ‹©æ‰€æœ‰åˆ—ã€‚
      */
     protected void selectAllColumn() {
         m_body.setColumnSelectionInterval(0, m_body.getColumnCount() - 1);
@@ -1697,8 +1697,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ´´½¨²åÈëĞĞ²Ëµ¥¡£
-     * @return ²åÈëĞĞ²Ëµ¥¡£
+     * åˆ›å»ºæ’å…¥è¡Œèœå•ã€‚
+     * @return æ’å…¥è¡Œèœå•ã€‚
      */
     protected JMenu createInsertRowMenu() {
         JMenu insertRowMenu = new JMenu(I18N_INFO_INSERTROW);
@@ -1712,8 +1712,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ´´½¨ÒÆ³ıĞĞ²Ëµ¥¡£
-     * @return ÒÆ³ıĞĞ²Ëµ¥¡£
+     * åˆ›å»ºç§»é™¤è¡Œèœå•ã€‚
+     * @return ç§»é™¤è¡Œèœå•ã€‚
      */
     protected JMenu createRemoveRowMenu() {
         JMenu removeRowMenu = new JMenu(I18N_INFO_REMOVEROW);
@@ -1725,8 +1725,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ´´½¨±£´æĞĞ²Ëµ¥¡£
-     * @return ±£´æĞĞ²Ëµ¥¡£
+     * åˆ›å»ºä¿å­˜è¡Œèœå•ã€‚
+     * @return ä¿å­˜è¡Œèœå•ã€‚
      */
     protected JMenu createSaveRowMenu() {
         JMenu saveRowMenu = new JMenu(I18N_INFO_SAVEROW);
@@ -1738,8 +1738,8 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
     }
 
     /**
-     * ´´½¨»Ö¸´ĞĞ²Ëµ¥¡£
-     * @return »Ö¸´ĞĞ²Ëµ¥¡£
+     * åˆ›å»ºæ¢å¤è¡Œèœå•ã€‚
+     * @return æ¢å¤è¡Œèœå•ã€‚
      */
     protected JMenu createRestoreRowMenu() {
         JMenu restoreRowMenu = new JMenu(I18N_INFO_RESTOREROW);
@@ -1785,149 +1785,149 @@ public class ComplexTable extends JTable implements IConstants, IClose, MouseLis
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTable.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±í³£Á¿½Ó¿Ú¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-24</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTable.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨å¸¸é‡æ¥å£ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-24</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 interface IConstants extends IBaseConstants {
 
     /*------------------------------------- Public Static Final Field -------------------------------------*/
 
     /**
-     * ÅÅĞò×´Ì¬------ÉıĞò¡£
+     * æ’åºçŠ¶æ€------å‡åºã€‚
      */
     public static final int SORTSTATE_ASCENDING = SortIcon.STATE_ASCENDING;
 
     /**
-     * ÅÅĞò×´Ì¬------½µĞò¡£
+     * æ’åºçŠ¶æ€------é™åºã€‚
      */
     public static final int SORTSTATE_DESCENDING = SortIcon.STATE_DESCENDING;
 
     /**
-     * ÅÅĞò×´Ì¬------ÎŞĞò£¨ÆÕÍ¨×´Ì¬£©¡£
+     * æ’åºçŠ¶æ€------æ— åºï¼ˆæ™®é€šçŠ¶æ€ï¼‰ã€‚
      */
     public static final int SORTSTATE_NORMAL = SortIcon.STATE_NORMAL;
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²»¿É±à¼­¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸å¯ç¼–è¾‘ã€‚
      */
     public static final String I18N_INFO_INEDITABLE = Utilities.getI18nMessage("ineditable");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²åÈëĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’å…¥è¡Œã€‚
      */
     public static final String I18N_INFO_INSERTROW = Utilities.getI18nMessage("insertRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²åÈëµ½µ±Ç°ĞĞµÄÇ°Ãæ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’å…¥åˆ°å½“å‰è¡Œçš„å‰é¢ã€‚
      */
     public static final String I18N_INFO_INSERTROWATPREVIOUS = Utilities.getI18nMessage("insertRowAtPrevious");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²åÈëµ½µ±Ç°ĞĞµÄºóÃæ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’å…¥åˆ°å½“å‰è¡Œçš„åé¢ã€‚
      */
     public static final String I18N_INFO_INSERTROWATNEXT = Utilities.getI18nMessage("insertRowAtNext");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²åÈëµ½Ê×ĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’å…¥åˆ°é¦–è¡Œã€‚
      */
     public static final String I18N_INFO_INSERTROWATFIRST = Utilities.getI18nMessage("insertRowAtFirst");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²åÈëµ½Ä©ĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’å…¥åˆ°æœ«è¡Œã€‚
      */
     public static final String I18N_INFO_INSERTROWATLAST = Utilities.getI18nMessage("insertRowAtLast");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------É¾³ıĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ é™¤è¡Œã€‚
      */
     public static final String I18N_INFO_REMOVEROW = Utilities.getI18nMessage("removeRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------É¾³ıÑ¡ÖĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ é™¤é€‰ä¸­è¡Œã€‚
      */
     public static final String I18N_INFO_REMOVEROWS = Utilities.getI18nMessage("removeRows");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------É¾³ıËùÓĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ é™¤æ‰€æœ‰è¡Œã€‚
      */
     public static final String I18N_INFO_REMOVEALLROW = Utilities.getI18nMessage("removeAllRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±£´æĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿å­˜è¡Œã€‚
      */
     public static final String I18N_INFO_SAVEROW = Utilities.getI18nMessage("saveRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±£´æÑ¡ÖĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿å­˜é€‰ä¸­è¡Œã€‚
      */
     public static final String I18N_INFO_SAVEROWS = Utilities.getI18nMessage("saveRows");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±£´æËùÓĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿å­˜æ‰€æœ‰è¡Œã€‚
      */
     public static final String I18N_INFO_SAVEALLROW = Utilities.getI18nMessage("saveAllRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»Ö¸´ĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¢å¤è¡Œã€‚
      */
     public static final String I18N_INFO_RESTOREROW = Utilities.getI18nMessage("restoreRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»Ö¸´Ñ¡ÖĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¢å¤é€‰ä¸­è¡Œã€‚
      */
     public static final String I18N_INFO_RESTOREROWS = Utilities.getI18nMessage("restoreRows");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»Ö¸´ËùÓĞĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¢å¤æ‰€æœ‰è¡Œã€‚
      */
     public static final String I18N_INFO_RESTOREALLROW = Utilities.getI18nMessage("restoreAllRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ë¢ĞÂĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ·æ–°è¡Œã€‚
      */
     public static final String I18N_INFO_REFRESHROW = Utilities.getI18nMessage("refreshRow");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È¡ÏûÅÅĞò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å–æ¶ˆæ’åºã€‚
      */
     public static final String I18N_INFO_CANCELSORT = Utilities.getI18nMessage("cancelSort");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È¡ÏûËùÓĞÅÅĞò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å–æ¶ˆæ‰€æœ‰æ’åºã€‚
      */
     public static final String I18N_INFO_CANCELALLSORT = Utilities.getI18nMessage("cancelAllSort");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡ÔñÁĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©åˆ—ã€‚
      */
     public static final String I18N_INFO_CHOOSECOLUMN = Utilities.getI18nMessage("chooseColumn");
 
     /**
-     * Í¼±ê------ÒÑ²åÈë¡£
+     * å›¾æ ‡------å·²æ’å…¥ã€‚
      */
     public static final Icon ICON_INSERTED = Utilities.getIcon("inserted.gif");
 
     /**
-     * Í¼±ê------ÒÑÒÆ³ı¡£
+     * å›¾æ ‡------å·²ç§»é™¤ã€‚
      */
     public static final Icon ICON_REMOVED = Utilities.getIcon("removed.gif");
 
     /**
-     * Í¼±ê------ÒÑĞŞ¸Ä¡£
+     * å›¾æ ‡------å·²ä¿®æ”¹ã€‚
      */
     public static final Icon ICON_CHANGED = Utilities.getIcon("changed.gif");
 
@@ -1938,22 +1938,22 @@ interface IConstants extends IBaseConstants {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTable.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±í¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-10</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTable.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-10</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 class Utilities implements IConstants {
 
@@ -2000,18 +2000,18 @@ class Utilities implements IConstants {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * Í¨¹ıkeyÀ´»ñÈ¡ÁĞ±í¶¨ÖÆµÄ¹ú¼Ê»¯ĞÅÏ¢¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢¡£
+     * é€šè¿‡keyæ¥è·å–åˆ—è¡¨å®šåˆ¶çš„å›½é™…åŒ–ä¿¡æ¯ã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ã€‚
      */
     protected static String getI18nMessage(String i18nKey) {
         return BaseUtilities.getI18nMessage("com.apollo.swing.component.complextable.resource.ComplexTable", i18nKey);
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     protected static Icon getIcon(String iconFilename) {
         return BaseUtilities.getIcon(Utilities.class, "com/apollo/swing/component/complextable/resource/icon/", iconFilename);
@@ -2060,10 +2060,10 @@ class Utilities implements IConstants {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private Utilities() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Method -------------------------------------*/

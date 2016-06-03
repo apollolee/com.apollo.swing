@@ -1,27 +1,27 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-12 ÏÂÎç05:36:18
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-12 ä¸‹åˆ05:36:18
  */
 package com.apollo.swing.component.complextree;
 
 import javax.swing.tree.TreePath;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeChoiceNode.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷Ñ¡Ôñ½ÚµãÀà£¬·â×°ÁËÔÊĞíÈıÌ¬Ñ¡ÔñµÄ½ÚµãµÄ²Ù×÷ºÍÊı¾İ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-12</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeChoiceNode.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘é€‰æ‹©èŠ‚ç‚¹ç±»ï¼Œå°è£…äº†å…è®¸ä¸‰æ€é€‰æ‹©çš„èŠ‚ç‚¹çš„æ“ä½œå’Œæ•°æ®ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-12</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -58,17 +58,17 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     /*------------------------------------- Private Static Field -------------------------------------*/
 
     /**
-     * Ñ¡Ôñ×´Ì¬------ÒÑÑ¡Ôñ¡£
+     * é€‰æ‹©çŠ¶æ€------å·²é€‰æ‹©ã€‚
      */
     private static final byte STATE_SELECTED = 0;
 
     /**
-     * Ñ¡Ôñ×´Ì¬------Î´Ñ¡Ôñ¡£
+     * é€‰æ‹©çŠ¶æ€------æœªé€‰æ‹©ã€‚
      */
     private static final byte STATE_DESELECTED = 1;
 
     /**
-     * Ñ¡Ôñ×´Ì¬------²»È·¶¨£¨°ëÑ¡£©¡£
+     * é€‰æ‹©çŠ¶æ€------ä¸ç¡®å®šï¼ˆåŠé€‰ï¼‰ã€‚
      */
     private static final byte STATE_INDETERMINATE = 2;
 
@@ -107,7 +107,7 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * Ñ¡Ôñ×´Ì¬¡£
+     * é€‰æ‹©çŠ¶æ€ã€‚
      */
     private volatile byte m_state = STATE_DESELECTED;
 
@@ -118,8 +118,8 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeChoiceNode(Object userObject) {
@@ -127,9 +127,9 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
-     * @param allowsChildren ±êÊ¶ÊÇ·ñÔÊĞí¸Ã½ÚµãÓµÓĞ×Ó½Úµã¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
+     * @param allowsChildren æ ‡è¯†æ˜¯å¦å…è®¸è¯¥èŠ‚ç‚¹æ‹¥æœ‰å­èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeChoiceNode(Object userObject, boolean allowsChildren) {
@@ -151,8 +151,8 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Ñ¡ÖĞÓÃµÄÂ·¾¶£¬¼´´Ó´Ë½Úµãµ½¸ù½ÚµãµÄÂ·¾¶£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @return Ñ¡ÖĞÓÃµÄÂ·¾¶¡£
+     * è·å–é€‰ä¸­ç”¨çš„è·¯å¾„ï¼Œå³ä»æ­¤èŠ‚ç‚¹åˆ°æ ¹èŠ‚ç‚¹çš„è·¯å¾„ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @return é€‰ä¸­ç”¨çš„è·¯å¾„ã€‚
      * @since T3 V1.1
      */
     public TreePath getChosenPath() {
@@ -160,8 +160,8 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚ¹´Ñ¡×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºå‹¾é€‰çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public boolean isSelected() {
@@ -169,7 +169,7 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÉèÖÃÎªÒÑÑ¡Ôñ×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚ¹´Ñ¡×´Ì¬¡£
+     * è®¾ç½®ä¸ºå·²é€‰æ‹©çŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºå‹¾é€‰çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public void setSelected() {
@@ -177,8 +177,8 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎªÎ´Ñ¡Ôñ×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚÎ´¹´Ñ¡×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎªÎ´Ñ¡Ôñ×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºæœªé€‰æ‹©çŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºæœªå‹¾é€‰çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºæœªé€‰æ‹©çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public boolean isDeselected() {
@@ -186,7 +186,7 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÉèÖÃÎªÎ´Ñ¡Ôñ×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚÎ´¹´Ñ¡×´Ì¬¡£
+     * è®¾ç½®ä¸ºæœªé€‰æ‹©çŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºæœªå‹¾é€‰çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public void setDeselected() {
@@ -194,8 +194,8 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎª²»È·¶¨×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚ°ë¹´Ñ¡×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎª²»È·¶¨×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºä¸ç¡®å®šçŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºåŠå‹¾é€‰çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºä¸ç¡®å®šçŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public boolean isIndetermined() {
@@ -203,7 +203,7 @@ public class ComplexTreeChoiceNode extends ComplexTreeNode {
     }
 
     /**
-     * ÉèÖÃÎª²»È·¶¨×´Ì¬£¬¼´½çÃæÉÏ´Ë½ÚµãÇ°ÃæµÄÑ¡Ôñ¿òÊÇ·ñ´¦ÓÚ°ë¹´Ñ¡×´Ì¬¡£
+     * è®¾ç½®ä¸ºä¸ç¡®å®šçŠ¶æ€ï¼Œå³ç•Œé¢ä¸Šæ­¤èŠ‚ç‚¹å‰é¢çš„é€‰æ‹©æ¡†æ˜¯å¦å¤„äºåŠå‹¾é€‰çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public void setIndetermined() {

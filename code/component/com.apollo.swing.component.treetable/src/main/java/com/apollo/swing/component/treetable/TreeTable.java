@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-9-14 ÏÂÎç02:37:12¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-9-14 ä¸‹åˆ02:37:12ã€‚
  */
 package com.apollo.swing.component.treetable;
 
@@ -25,22 +25,22 @@ import com.apollo.swing.component.complextree.ComplexTreeModel;
 import com.apollo.swing.component.complextree.ComplexTreeNode;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeTable.java</p>
- * <p>ÀàĞÍÃèÊö£ºÊ÷±íÀà£¬×¢Òâ£ºÊ÷±í×é¼şÒÀÀµÓÚ×ÛºÏÊ÷×é¼ş£¬Ê÷±íµÄÊ÷¾ÍÊÇ×ÛºÏÊ÷£¬Òò´Ë£¬Õâ¸öÊ÷±íÒ²Ö§³ÖÈıÌ¬Ñ¡ÔñºÍ»º´æ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-14</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeTable.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ‘è¡¨ç±»ï¼Œæ³¨æ„ï¼šæ ‘è¡¨ç»„ä»¶ä¾èµ–äºç»¼åˆæ ‘ç»„ä»¶ï¼Œæ ‘è¡¨çš„æ ‘å°±æ˜¯ç»¼åˆæ ‘ï¼Œå› æ­¤ï¼Œè¿™ä¸ªæ ‘è¡¨ä¹Ÿæ”¯æŒä¸‰æ€é€‰æ‹©å’Œç¼“å­˜ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-14</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -105,7 +105,7 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñÊÇÔÄ¶ÁÄ£Ê½¡£
+     * æ ‡è¯†æ˜¯å¦æ˜¯é˜…è¯»æ¨¡å¼ã€‚
      */
     protected volatile boolean m_isReadMode = false;
 
@@ -124,8 +124,8 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model Ê÷±íÄ£ĞÍ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model æ ‘è¡¨æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public TreeTable(TreeTableModel model) {
@@ -149,24 +149,24 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î isReadMode µÄÖµ¡£
-     * @return ×Ö¶Î isReadMode µÄÖµ¡£
+     * è·å–å­—æ®µ isReadMode çš„å€¼ã€‚
+     * @return å­—æ®µ isReadMode çš„å€¼ã€‚
      */
     public boolean isReadMode() {
         return m_isReadMode;
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isReadMode µÄÖµ¡£
-     * @param isReadMode ×Ö¶Î isReadMode µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isReadMode çš„å€¼ã€‚
+     * @param isReadMode å­—æ®µ isReadMode çš„å€¼ã€‚
      */
     public void setReadMode(boolean isReadMode) {
         m_isReadMode = isReadMode;
     }
 
     /**
-     * »ñÈ¡Ê÷±íÄ£ĞÍ¡£
-     * @return Ê÷±íÄ£ĞÍ¡£
+     * è·å–æ ‘è¡¨æ¨¡å‹ã€‚
+     * @return æ ‘è¡¨æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public TreeTableModel getTreeTableModel() {
@@ -336,10 +336,10 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×îÖÕµÄäÖÈ¾Æ÷¡£
-     * @param row ĞĞ¡£
-     * @param column ÁĞ¡£
-     * @return äÖÈ¾Æ÷¡£
+     * è·å–æœ€ç»ˆçš„æ¸²æŸ“å™¨ã€‚
+     * @param row è¡Œã€‚
+     * @param column åˆ—ã€‚
+     * @return æ¸²æŸ“å™¨ã€‚
      */
     private TableCellRenderer getFinalCellRenderer(int row, int column) {
         TreeTableModel model = getTreeTableModel();
@@ -371,9 +371,9 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     }
 
     /**
-     * »ñÈ¡Ñ¡ÖĞµÄ¾ØĞÎ¡£
-     * @param row ĞĞ¡£
-     * @return Ñ¡ÖĞµÄ¾ØĞÎ¡£
+     * è·å–é€‰ä¸­çš„çŸ©å½¢ã€‚
+     * @param row è¡Œã€‚
+     * @return é€‰ä¸­çš„çŸ©å½¢ã€‚
      */
     private Rectangle getChoiceBounds(int row) {
         Rectangle tableCellRect = getCellRect(row, 0, true);
@@ -389,9 +389,9 @@ public class TreeTable extends JTable implements IBaseConstants, TableCellRender
     }
 
     /**
-     * »ñÈ¡°ÑÊÖµÄ¾ØĞÎ¡£
-     * @param row ĞĞ¡£
-     * @return °ÑÊÖµÄ¾ØĞÎ¡£
+     * è·å–æŠŠæ‰‹çš„çŸ©å½¢ã€‚
+     * @param row è¡Œã€‚
+     * @return æŠŠæ‰‹çš„çŸ©å½¢ã€‚
      */
     private Rectangle getToggleBounds(int row) {
         Rectangle tableCellRect = getCellRect(row, 0, true);

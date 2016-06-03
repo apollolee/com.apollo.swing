@@ -1,25 +1,25 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-6-3 ÏÂÎç02:05:30¡£
+ * æ­¤ä»£ç åˆ›å»ºäºŽ 2008-6-3 ä¸‹åˆ02:05:30ã€‚
  */
 import com.apollo.swing.laf.TLookAndFeelManager;
 
 /**
- * <p>ÎÄ¼þÃû³Æ£ºTLookAndFeelDemo.java</p>
- * <p>ÀàÐÍÃèÊö£º¹Û¸ÐÑÝÊ¾Àà¡£</p>
- * <p>°æÈ¨ËùÓÐ£º°æÈ¨ËùÓÐ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈÝÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-6-3</p>
- * <p>ÐÞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTLookAndFeelDemo.java</p>
+ * <p>ç±»åž‹æè¿°ï¼šè§‚æ„Ÿæ¼”ç¤ºç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜Žï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-6-3</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ÐÞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ÐÞ ¸Ä ÈË£º
- *    ÐÞ¸ÄÄÚÈÝ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æŽé•‡
  */
 public class TLookAndFeelDemo {
 
@@ -62,8 +62,8 @@ public class TLookAndFeelDemo {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * Èë¿Ú¡£
-     * @param args ²ÎÊý¡£
+     * å…¥å£ã€‚
+     * @param args å‚æ•°ã€‚
      */
     public static void main(String[] args) {
         //TLookAndFeelManager.loadMetal();

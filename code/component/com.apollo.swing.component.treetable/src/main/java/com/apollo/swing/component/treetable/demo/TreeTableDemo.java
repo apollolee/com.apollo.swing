@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-9-16 ÏÂÎç02:36:26¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-9-16 ä¸‹åˆ02:36:26ã€‚
  */
 package com.apollo.swing.component.treetable.demo;
 
@@ -72,22 +72,22 @@ import com.apollo.swing.component.treetable.TreeTableObject;
 import com.apollo.swing.laf.TLookAndFeelManager;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeTableDemo.java</p>
- * <p>ÀàĞÍÃèÊö£ºÊ÷±íÑİÊ¾Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-19</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeTableDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ‘è¡¨æ¼”ç¤ºç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-19</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TreeTableDemo extends JPanel
@@ -134,35 +134,35 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Private Static Field -------------------------------------*/
 
     /**
-     * äÖÈ¾Æ÷------È«Íø×ÊÔ´¡£
+     * æ¸²æŸ“å™¨------å…¨ç½‘èµ„æºã€‚
      */
     private static final TreeCellRenderer RENDERER_ROOT = new SingleIconTreeCellRenderer(BaseUtilities.getIcon(TreeTableDemo.class,
                                                                                                                "com/apollo/swing/component/treetable/demo/",
                                                                                                                "root.gif"));
 
     /**
-     * äÖÈ¾Æ÷------EMS¡£
+     * æ¸²æŸ“å™¨------EMSã€‚
      */
     private static final TreeCellRenderer RENDERER_EMS = new SingleIconTreeCellRenderer(BaseUtilities.getIcon(TreeTableDemo.class,
                                                                                                               "com/apollo/swing/component/treetable/demo/",
                                                                                                               "ems.png"));
 
     /**
-     * äÖÈ¾Æ÷------ÍøÔª¡£
+     * æ¸²æŸ“å™¨------ç½‘å…ƒã€‚
      */
     private static final TreeCellRenderer RENDERER_NE = new SingleIconTreeCellRenderer(BaseUtilities.getIcon(TreeTableDemo.class,
                                                                                                              "com/apollo/swing/component/treetable/demo/",
                                                                                                              "ne.png"));
 
     /**
-     * äÖÈ¾Æ÷------µ¥°å¡£
+     * æ¸²æŸ“å™¨------å•æ¿ã€‚
      */
     private static final TreeCellRenderer RENDERER_BOARD = new SingleIconTreeCellRenderer(BaseUtilities.getIcon(TreeTableDemo.class,
                                                                                                                 "com/apollo/swing/component/treetable/demo/",
                                                                                                                 "board.png"));
 
     /**
-     * äÖÈ¾Æ÷------¶Ë¿Ú¡£
+     * æ¸²æŸ“å™¨------ç«¯å£ã€‚
      */
     private static final TreeCellRenderer RENDERER_PTP = new SingleIconTreeCellRenderer(BaseUtilities.getIcon(TreeTableDemo.class,
                                                                                                               "com/apollo/swing/component/treetable/demo/",
@@ -175,13 +175,13 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * Ö÷·½·¨¡£
-     * @param args Èë¿Ú²ÎÊı¼¯¡£
+     * ä¸»æ–¹æ³•ã€‚
+     * @param args å…¥å£å‚æ•°é›†ã€‚
      */
     public static void main(String[] args) {
         TLookAndFeelManager.loadAlloy(false);
 
-        JFrame f = new JFrame("Ê÷±íÑİÊ¾");
+        JFrame f = new JFrame("æ ‘è¡¨æ¼”ç¤º");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setContentPane(new TreeTableDemo());
         f.pack();
@@ -207,14 +207,14 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ½ø¶ÈÌõäÖÈ¾Æ÷¡£
+     * è¿›åº¦æ¡æ¸²æŸ“å™¨ã€‚
      */
     protected TableCellRenderer m_pbRenderer = new TableCellRenderer() {
 
         private final Border noFocusBorder = new EmptyBorder(1, 1, 1, 1);
 
         /**
-         * ½ø¶ÈÌõ¡£
+         * è¿›åº¦æ¡ã€‚
          */
         protected JProgressBar m_pb = new JProgressBar();
 
@@ -256,22 +256,22 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
+     * å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
      */
     private TreePath[] m_chosenPaths = null;
 
     /**
-     * Ê÷±íÄ£ĞÍ¡£
+     * æ ‘è¡¨æ¨¡å‹ã€‚
      */
     private TreeTableModel m_model;
 
     /**
-     * Ê÷±í¡£
+     * æ ‘è¡¨ã€‚
      */
     private TreeTable m_table;
 
     /**
-     * ÏûÏ¢ÇøÓò¡£
+     * æ¶ˆæ¯åŒºåŸŸã€‚
      */
     private JTextArea m_msg = new JTextArea() {
 
@@ -290,12 +290,12 @@ public class TreeTableDemo extends JPanel
     };
 
     /**
-     * ¶¯×÷------ÖØÖÃÊ÷±í¡£
+     * åŠ¨ä½œ------é‡ç½®æ ‘è¡¨ã€‚
      */
     private Action m_resetTable = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÖØÖÃÊ÷±í");
+            BaseUtilities.setAction(this, "é‡ç½®æ ‘è¡¨");
         }
 
         /**
@@ -308,19 +308,19 @@ public class TreeTableDemo extends JPanel
     };
 
     /**
-     * ¶¯×÷------Ìí¼Ó½Úµã¡£
+     * åŠ¨ä½œ------æ·»åŠ èŠ‚ç‚¹ã€‚
      */
     private Action m_addNode = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Ìí¼Ó½Úµã");
+            BaseUtilities.setAction(this, "æ·»åŠ èŠ‚ç‚¹");
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            ComplexTreeChoiceNode temp = new ComplexTreeChoiceNode(new TreeTableObject("Ìí¼ÓµÄ½Úµã", createCells()));
+            ComplexTreeChoiceNode temp = new ComplexTreeChoiceNode(new TreeTableObject("æ·»åŠ çš„èŠ‚ç‚¹", createCells()));
 
             int row = m_table.getSelectedRow();
             if (row == -1) {
@@ -335,12 +335,12 @@ public class TreeTableDemo extends JPanel
     };
 
     /**
-     * ¶¯×÷------»ñÈ¡ÒÑÑ¡ÖĞÂ·¾¶¡£
+     * åŠ¨ä½œ------è·å–å·²é€‰ä¸­è·¯å¾„ã€‚
      */
     private Action m_getChosenPaths = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "»ñÈ¡ÒÑÑ¡ÖĞÂ·¾¶");
+            BaseUtilities.setAction(this, "è·å–å·²é€‰ä¸­è·¯å¾„");
             setEnabled(false);
         }
 
@@ -348,23 +348,23 @@ public class TreeTableDemo extends JPanel
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            m_msg.append("---------------------------------ÒÑÑ¡ÖĞÂ·¾¶£¨¿ªÊ¼£©---------------------------------\n");
+            m_msg.append("---------------------------------å·²é€‰ä¸­è·¯å¾„ï¼ˆå¼€å§‹ï¼‰---------------------------------\n");
             m_chosenPaths = m_model.getTree().getComplexTreeModel().getChosenPaths();
             for (int i = 0; i < m_chosenPaths.length; i++) {
                 m_msg.append(m_chosenPaths[i].toString() + "\n");
             }
-            m_msg.append("---------------------------------ÒÑÑ¡ÖĞÂ·¾¶£¨½áÊø£©---------------------------------\n");
+            m_msg.append("---------------------------------å·²é€‰ä¸­è·¯å¾„ï¼ˆç»“æŸï¼‰---------------------------------\n");
         }
 
     };
 
     /**
-     * ¶¯×÷------ÉèÖÃÒÑÑ¡ÖĞÂ·¾¶¡£
+     * åŠ¨ä½œ------è®¾ç½®å·²é€‰ä¸­è·¯å¾„ã€‚
      */
     private Action m_setChosenPaths = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÉèÖÃÒÑÑ¡ÖĞÂ·¾¶");
+            BaseUtilities.setAction(this, "è®¾ç½®å·²é€‰ä¸­è·¯å¾„");
             setEnabled(false);
         }
 
@@ -381,12 +381,12 @@ public class TreeTableDemo extends JPanel
     };
 
     /**
-     * ¶¯×÷------Çå³ıÏûÏ¢¡£
+     * åŠ¨ä½œ------æ¸…é™¤æ¶ˆæ¯ã€‚
      */
     private Action m_clearMsg = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Çå¿ÕÏûÏ¢¿ò");
+            BaseUtilities.setAction(this, "æ¸…ç©ºæ¶ˆæ¯æ¡†");
         }
 
         /**
@@ -399,12 +399,12 @@ public class TreeTableDemo extends JPanel
     };
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíÑ¡ÖĞ¡£
+     * å¤é€‰æ¡†------å…è®¸é€‰ä¸­ã€‚
      */
     private JCheckBox m_enabledChoice = new JCheckBox(new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÔÊĞíÑ¡ÖĞ");
+            BaseUtilities.setAction(this, "å…è®¸é€‰ä¸­");
         }
 
         /**
@@ -421,42 +421,42 @@ public class TreeTableDemo extends JPanel
     });
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíListSelectionListener¡£
+     * å¤é€‰æ¡†------å…è®¸ListSelectionListenerã€‚
      */
     private JCheckBox m_enabledListSelectionListener = new JCheckBox("ListSelectionListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTableModelListener¡£
+     * å¤é€‰æ¡†------å…è®¸TableModelListenerã€‚
      */
     private JCheckBox m_enabledTableModelListener = new JCheckBox("TableModelListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTableColumnModelListener¡£
+     * å¤é€‰æ¡†------å…è®¸TableColumnModelListenerã€‚
      */
     private JCheckBox m_enabledTableColumnModelListener = new JCheckBox("TableColumnModelListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTreeSelectionListener¡£
+     * å¤é€‰æ¡†------å…è®¸TreeSelectionListenerã€‚
      */
     private JCheckBox m_enabledTreeSelectionListener = new JCheckBox("TreeSelectionListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTreeWillExpandListener¡£
+     * å¤é€‰æ¡†------å…è®¸TreeWillExpandListenerã€‚
      */
     private JCheckBox m_enabledTreeWillExpandListener = new JCheckBox("TreeWillExpandListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTreeExpansionListener¡£
+     * å¤é€‰æ¡†------å…è®¸TreeExpansionListenerã€‚
      */
     private JCheckBox m_enabledTreeExpansionListener = new JCheckBox("TreeExpansionListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíIComplexTreeModelListener¡£
+     * å¤é€‰æ¡†------å…è®¸IComplexTreeModelListenerã€‚
      */
     private JCheckBox m_enabledComplexTreeModelListener = new JCheckBox("IComplexTreeModelListener");
 
     /**
-     * ¸´Ñ¡¿ò------ÔÊĞíTreeModelListener¡£
+     * å¤é€‰æ¡†------å…è®¸TreeModelListenerã€‚
      */
     private JCheckBox m_enabledTreeModelListener = new JCheckBox("TreeModelListener");
 
@@ -467,17 +467,17 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public TreeTableDemo() {
         super(new GridBagLayout());
 
-        m_model = new TreeTableModel(new ComplexTreeModel(createRoot(), this, 5, false), new String[] { "×ÊÔ´",
-                                                                                                       "Éú²úÊ±¼ä",
-                                                                                                       "Éè±¸ÖÆÔìÉÌ",
-                                                                                                       "ÊÇ·ñÆôÓÃ",
-                                                                                                       "Ê¹ÓÃÄêÏŞ",
-                                                                                                       "±¸×¢" });
+        m_model = new TreeTableModel(new ComplexTreeModel(createRoot(), this, 5, false), new String[] { "èµ„æº",
+                                                                                                       "ç”Ÿäº§æ—¶é—´",
+                                                                                                       "è®¾å¤‡åˆ¶é€ å•†",
+                                                                                                       "æ˜¯å¦å¯ç”¨",
+                                                                                                       "ä½¿ç”¨å¹´é™",
+                                                                                                       "å¤‡æ³¨" });
         m_model.setColumnClass(3, Boolean.class);
         m_model.addTableModelListener(this);
 
@@ -499,27 +499,27 @@ public class TreeTableDemo extends JPanel
         m_table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         m_table.getColumnModel().addColumnModelListener(this);
         m_table.getSelectionModel().addListSelectionListener(this);
-        m_table.getColumn("×ÊÔ´").setPreferredWidth(180);
-        m_table.getColumn("Éú²úÊ±¼ä").setPreferredWidth(120);
-        m_table.getColumn("Éè±¸ÖÆÔìÉÌ").setPreferredWidth(70);
-        m_table.getColumn("ÊÇ·ñÆôÓÃ").setPreferredWidth(60);
-        m_table.getColumn("Ê¹ÓÃÄêÏŞ").setPreferredWidth(60);
-        m_table.getColumn("±¸×¢").setPreferredWidth(200);
+        m_table.getColumn("èµ„æº").setPreferredWidth(180);
+        m_table.getColumn("ç”Ÿäº§æ—¶é—´").setPreferredWidth(120);
+        m_table.getColumn("è®¾å¤‡åˆ¶é€ å•†").setPreferredWidth(70);
+        m_table.getColumn("æ˜¯å¦å¯ç”¨").setPreferredWidth(60);
+        m_table.getColumn("ä½¿ç”¨å¹´é™").setPreferredWidth(60);
+        m_table.getColumn("å¤‡æ³¨").setPreferredWidth(200);
 
         //m_table.setSelectionBackground(Color.BLUE);
 
         JScrollPane tableView = new JScrollPane(m_table);
-        tableView.setBorder(BorderFactory.createTitledBorder("Ê÷±í"));
+        tableView.setBorder(BorderFactory.createTitledBorder("æ ‘è¡¨"));
 
         JScrollPane msgView = new JScrollPane(m_msg);
-        msgView.setBorder(BorderFactory.createTitledBorder("ÏûÏ¢ÇøÓò"));
+        msgView.setBorder(BorderFactory.createTitledBorder("æ¶ˆæ¯åŒºåŸŸ"));
 
         JSplitPane tableAndMsgView = new JSplitPane(JSplitPane.VERTICAL_SPLIT, tableView, msgView);
         tableAndMsgView.setDividerLocation(300);
         tableAndMsgView.setPreferredSize(new Dimension(700, 500));
 
         JPanel opView = new JPanel(new GridBagLayout());
-        opView.setBorder(BorderFactory.createTitledBorder("²Ù×÷"));
+        opView.setBorder(BorderFactory.createTitledBorder("æ“ä½œ"));
         opView.add(new JButton(m_resetTable), new GridBagConstraints(0,
                                                                      0,
                                                                      1,
@@ -960,8 +960,8 @@ public class TreeTableDemo extends JPanel
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ´´½¨¸ù½Úµã¡£
-     * @return ¸ù½Úµã¡£
+     * åˆ›å»ºæ ¹èŠ‚ç‚¹ã€‚
+     * @return æ ¹èŠ‚ç‚¹ã€‚
      */
     private ComplexTreeNode createRoot() {
         List cells = createCells();
@@ -969,7 +969,7 @@ public class TreeTableDemo extends JPanel
             ((TreeTableCell) cells.get(i)).setBackground((Color.ORANGE));
         }
 
-        TreeTableObject obj = new TreeTableObject("È«Íø×ÊÔ´", cells);
+        TreeTableObject obj = new TreeTableObject("å…¨ç½‘èµ„æº", cells);
         obj.setNodeBackground(Color.CYAN);
         //obj.setBackground(Color.RED);
 
@@ -986,8 +986,8 @@ public class TreeTableDemo extends JPanel
     }
 
     /**
-     * ´´½¨ÍøÔª½Úµã¼¯¡£
-     * @return ÍøÔª½Úµã¼¯¡£
+     * åˆ›å»ºç½‘å…ƒèŠ‚ç‚¹é›†ã€‚
+     * @return ç½‘å…ƒèŠ‚ç‚¹é›†ã€‚
      */
     private List createNes() {
         List nes = new ArrayList();
@@ -1006,8 +1006,8 @@ public class TreeTableDemo extends JPanel
     }
 
     /**
-     * ´´½¨µ¥°å½Úµã¼¯¡£
-     * @return µ¥°å½Úµã¼¯¡£
+     * åˆ›å»ºå•æ¿èŠ‚ç‚¹é›†ã€‚
+     * @return å•æ¿èŠ‚ç‚¹é›†ã€‚
      */
     private List createBoards() {
         List boards = new ArrayList();
@@ -1025,8 +1025,8 @@ public class TreeTableDemo extends JPanel
     }
 
     /**
-     * ´´½¨¶Ë¿Ú½Úµã¼¯¡£
-     * @return ¶Ë¿Ú½Úµã¼¯¡£
+     * åˆ›å»ºç«¯å£èŠ‚ç‚¹é›†ã€‚
+     * @return ç«¯å£èŠ‚ç‚¹é›†ã€‚
      */
     private List createPtps() {
         List Ptps = new ArrayList();
@@ -1041,8 +1041,8 @@ public class TreeTableDemo extends JPanel
     }
 
     /**
-     * ´´½¨µ¥Ôª¸ñ¼¯¡£
-     * @return µ¥Ôª¸ñ¼¯¡£
+     * åˆ›å»ºå•å…ƒæ ¼é›†ã€‚
+     * @return å•å…ƒæ ¼é›†ã€‚
      */
     private List createCells() {
         List cells = new ArrayList();

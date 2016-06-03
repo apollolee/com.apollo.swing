@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÉÏÎç09:38:27¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸Šåˆ09:38:27ã€‚
  */
 package com.apollo.swing.component.complextable;
 
@@ -14,22 +14,22 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTableCell.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íµ¥Ôª¸ñÀà£¬·â×°ÁË¶Ô×ÛºÏ±íµ¥Ôª¸ñµÄËùÓĞ²Ù×÷¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTableCell.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨å•å…ƒæ ¼ç±»ï¼Œå°è£…äº†å¯¹ç»¼åˆè¡¨å•å…ƒæ ¼çš„æ‰€æœ‰æ“ä½œã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -94,47 +94,47 @@ public class ComplexTableCell implements Comparable {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * Öµ¡£
+     * å€¼ã€‚
      */
     protected Object m_value;
 
     /**
-     * »ùÖµ¡£
+     * åŸºå€¼ã€‚
      */
     protected Object m_baseValue;
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿É±à¼­¡£
+     * æ ‡è¯†æ˜¯å¦å¯ç¼–è¾‘ã€‚
      */
     protected volatile boolean m_editable;
 
     /**
-     * äÖÈ¾Æ÷¡£
+     * æ¸²æŸ“å™¨ã€‚
      */
     protected TableCellRenderer m_renderer;
 
     /**
-     * ±à¼­Æ÷¡£
+     * ç¼–è¾‘å™¨ã€‚
      */
     protected TableCellEditor m_editor;
 
     /**
-     * ±³¾°É«¡£
+     * èƒŒæ™¯è‰²ã€‚
      */
     protected Color m_background;
 
     /**
-     * Ç°¾°É«¡£
+     * å‰æ™¯è‰²ã€‚
      */
     protected Color m_foreground;
 
     /**
-     * ÌáÊ¾¡£
+     * æç¤ºã€‚
      */
     protected String m_toolTipText = null;
 
     /**
-     * ²Ëµ¥Ïî¼¯¡£
+     * èœå•é¡¹é›†ã€‚
      */
     protected List m_menuItems = new ArrayList();
 
@@ -153,8 +153,8 @@ public class ComplexTableCell implements Comparable {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param value µ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param value å•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableCell(Object value) {
@@ -162,9 +162,9 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param value µ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏó¡£
-     * @param editable ±êÊ¶µ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param value å•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡ã€‚
+     * @param editable æ ‡è¯†å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ã€‚
      * @since T3 V1.2
      */
     public ComplexTableCell(Object value, boolean editable) {
@@ -172,14 +172,14 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param value µ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏó¡£
-     * @param editable ±êÊ¶µ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­¡£
-     * @param renderer ÓÃÓÚäÖÈ¾µ¥Ôª¸ñµÄäÖÈ¾Æ÷¡£
-     * @param editor ÓÃÓÚ±à¼­µ¥Ôª¸ñµÄ±à¼­Æ÷¡£
-     * @param background µ¥Ôª¸ñµÄ±³¾°É«£¬ÈçÉèÖÃÁËäÖÈ¾Æ÷Ôò´Ë²ÎÊıÎŞĞ§¡£
-     * @param foreground µ¥Ôª¸ñµÄÇ°¾°É«£¬ÈçÉèÖÃÁËäÖÈ¾Æ÷Ôò´Ë²ÎÊıÎŞĞ§¡£
-     * @param menuItems µ¥Ôª¸ñµÄ²Ëµ¥Ïî¼¯¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param value å•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡ã€‚
+     * @param editable æ ‡è¯†å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ã€‚
+     * @param renderer ç”¨äºæ¸²æŸ“å•å…ƒæ ¼çš„æ¸²æŸ“å™¨ã€‚
+     * @param editor ç”¨äºç¼–è¾‘å•å…ƒæ ¼çš„ç¼–è¾‘å™¨ã€‚
+     * @param background å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œå¦‚è®¾ç½®äº†æ¸²æŸ“å™¨åˆ™æ­¤å‚æ•°æ— æ•ˆã€‚
+     * @param foreground å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œå¦‚è®¾ç½®äº†æ¸²æŸ“å™¨åˆ™æ­¤å‚æ•°æ— æ•ˆã€‚
+     * @param menuItems å•å…ƒæ ¼çš„èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public ComplexTableCell(Object value,
@@ -205,7 +205,7 @@ public class ComplexTableCell implements Comparable {
     /*------------------------------------- Protected Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     protected ComplexTableCell() {
         this("");
@@ -222,8 +222,8 @@ public class ComplexTableCell implements Comparable {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î value µÄÖµ£¬¼´£ºµ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏó¡£
-     * @return ×Ö¶Î value µÄÖµ¡£
+     * è·å–å­—æ®µ value çš„å€¼ï¼Œå³ï¼šå•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡ã€‚
+     * @return å­—æ®µ value çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Object getValue() {
@@ -231,8 +231,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î value µÄÖµ£¬¼´£ºµ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏó¡£
-     * @param value ×Ö¶Î value µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ value çš„å€¼ï¼Œå³ï¼šå•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡ã€‚
+     * @param value å­—æ®µ value çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setValue(Object value) {
@@ -240,8 +240,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡ÅÅĞòÖµ£¬×¢Òâ£ºµã»÷ÁĞÍ·ÅÅĞò¾ÍÊÇÊ¹ÓÃÕâ¸ö·µ»ØµÄ¶ÔÏó£¬ÉèÖÃ·½Ê½ÊÇµ¥Ôª¸ñ·â×°µÄÖµ¶ÔÏóÊµÏÖComparable½Ó¿Ú¼´¿É£¬Èç¹ûÃ»ÊµÏÖÔòÊ¹ÓÃÖµ¶ÔÏóµÄtoString×÷ÎªÅÅĞòÖµ¡£
-     * @return ÅÅĞòÖµ¡£
+     * è·å–æ’åºå€¼ï¼Œæ³¨æ„ï¼šç‚¹å‡»åˆ—å¤´æ’åºå°±æ˜¯ä½¿ç”¨è¿™ä¸ªè¿”å›çš„å¯¹è±¡ï¼Œè®¾ç½®æ–¹å¼æ˜¯å•å…ƒæ ¼å°è£…çš„å€¼å¯¹è±¡å®ç°Comparableæ¥å£å³å¯ï¼Œå¦‚æœæ²¡å®ç°åˆ™ä½¿ç”¨å€¼å¯¹è±¡çš„toStringä½œä¸ºæ’åºå€¼ã€‚
+     * @return æ’åºå€¼ã€‚
      * @since T3 V1.1
      */
     public Comparable getSortValue() {
@@ -249,7 +249,7 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ±£´æÖµ£¬¼´°Ñµ±Ç°ÖµĞ´ÈëÄ£ĞÍÖĞ¡£
+     * ä¿å­˜å€¼ï¼Œå³æŠŠå½“å‰å€¼å†™å…¥æ¨¡å‹ä¸­ã€‚
      * @since T3 V1.1
      */
     public void saveValue() {
@@ -257,7 +257,7 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »Ö¸´Öµ£¬¼´ÓÃÄ£ĞÍÖĞµÄÖµ¸²¸Çµ±Ç°Öµ¡£
+     * æ¢å¤å€¼ï¼Œå³ç”¨æ¨¡å‹ä¸­çš„å€¼è¦†ç›–å½“å‰å€¼ã€‚
      * @since T3 V1.1
      */
     public void restoreValue() {
@@ -265,8 +265,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î baseValue µÄÖµ£¬¼´»ñÈ¡Ä£ĞÍÖĞµÄÖµ¡£
-     * @return ×Ö¶Î baseValue µÄÖµ¡£
+     * è·å–å­—æ®µ baseValue çš„å€¼ï¼Œå³è·å–æ¨¡å‹ä¸­çš„å€¼ã€‚
+     * @return å­—æ®µ baseValue çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Object getBaseValue() {
@@ -274,8 +274,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î baseValue µÄÖµ£¬¼´ÉèÖÃÄ£ĞÍÖĞµÄÖµ¡£
-     * @param baseValue ×Ö¶Î baseValue µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ baseValue çš„å€¼ï¼Œå³è®¾ç½®æ¨¡å‹ä¸­çš„å€¼ã€‚
+     * @param baseValue å­—æ®µ baseValue çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setBaseValue(Object baseValue) {
@@ -283,8 +283,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÅĞ¶Ïµ¥Ôª¸ñµÄÖµÊÇ·ñÒÑ¸Ä±ä¡£
-     * @return Îªtrue±íÊ¾µ¥Ôª¸ñÒÑ¸Ä±ä£¬Îªfalse±íÊ¾µ¥Ôª¸ñÎ´¸Ä±ä¡£
+     * åˆ¤æ–­å•å…ƒæ ¼çš„å€¼æ˜¯å¦å·²æ”¹å˜ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºå•å…ƒæ ¼å·²æ”¹å˜ï¼Œä¸ºfalseè¡¨ç¤ºå•å…ƒæ ¼æœªæ”¹å˜ã€‚
      * @since T3 V1.1
      */
     public boolean isChanged() {
@@ -292,8 +292,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editable µÄÖµ£¬¼´ÅĞ¶Ïµ¥Ôª¸ñÊÇ·ñ¿É±à¼­¡£
-     * @return ×Ö¶Î editable µÄÖµ¡£
+     * è·å–å­—æ®µ editable çš„å€¼ï¼Œå³åˆ¤æ–­å•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘ã€‚
+     * @return å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEditable() {
@@ -301,8 +301,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editable µÄÖµ£¬¼´ÉèÖÃµ¥Ôª¸ñÊÇ·ñ¿É±à¼­¡£
-     * @param editable ×Ö¶Î editable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editable çš„å€¼ï¼Œå³è®¾ç½®å•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘ã€‚
+     * @param editable å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditable(boolean editable) {
@@ -310,8 +310,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î renderer µÄÖµ£¬¼´»ñÈ¡µ¥Ôª¸ñµÄäÖÈ¾Æ÷¶ÔÏó¡£
-     * @return ×Ö¶Î renderer µÄÖµ¡£
+     * è·å–å­—æ®µ renderer çš„å€¼ï¼Œå³è·å–å•å…ƒæ ¼çš„æ¸²æŸ“å™¨å¯¹è±¡ã€‚
+     * @return å­—æ®µ renderer çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public TableCellRenderer getRenderer() {
@@ -319,8 +319,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î renderer µÄÖµ£¬¼´ÉèÖÃµ¥Ôª¸ñµÄäÖÈ¾Æ÷¶ÔÏó¡£
-     * @param renderer ×Ö¶Î renderer µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ renderer çš„å€¼ï¼Œå³è®¾ç½®å•å…ƒæ ¼çš„æ¸²æŸ“å™¨å¯¹è±¡ã€‚
+     * @param renderer å­—æ®µ renderer çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setRenderer(TableCellRenderer renderer) {
@@ -328,8 +328,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editor µÄÖµ£¬¼´»ñÈ¡µ¥Ôª¸ñµÄ±à¼­Æ÷¶ÔÏó¡£
-     * @return ×Ö¶Î editor µÄÖµ¡£
+     * è·å–å­—æ®µ editor çš„å€¼ï¼Œå³è·å–å•å…ƒæ ¼çš„ç¼–è¾‘å™¨å¯¹è±¡ã€‚
+     * @return å­—æ®µ editor çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public TableCellEditor getEditor() {
@@ -337,8 +337,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editor µÄÖµ£¬¼´ÉèÖÃµ¥Ôª¸ñµÄ±à¼­Æ÷¶ÔÏó¡£
-     * @param editor ×Ö¶Î editor µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editor çš„å€¼ï¼Œå³è®¾ç½®å•å…ƒæ ¼çš„ç¼–è¾‘å™¨å¯¹è±¡ã€‚
+     * @param editor å­—æ®µ editor çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditor(TableCellEditor editor) {
@@ -346,8 +346,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î background µÄÖµ£¬¼´»ñÈ¡µ¥Ôª¸ñµÄ±³¾°É«£¬×¢Òâ£ºÉèÖÃäÖÈ¾Æ÷ºó´ËÖµÎŞĞ§¡£
-     * @return ×Ö¶Î background µÄÖµ¡£
+     * è·å–å­—æ®µ background çš„å€¼ï¼Œå³è·å–å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œæ³¨æ„ï¼šè®¾ç½®æ¸²æŸ“å™¨åæ­¤å€¼æ— æ•ˆã€‚
+     * @return å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getBackground() {
@@ -355,8 +355,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î background µÄÖµ£¬¼´ÉèÖÃµ¥Ôª¸ñµÄ±³¾°É«£¬×¢Òâ£ºÉèÖÃäÖÈ¾Æ÷ºó´ËÖµÎŞĞ§¡£
-     * @param background ×Ö¶Î background µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ background çš„å€¼ï¼Œå³è®¾ç½®å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œæ³¨æ„ï¼šè®¾ç½®æ¸²æŸ“å™¨åæ­¤å€¼æ— æ•ˆã€‚
+     * @param background å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setBackground(Color background) {
@@ -364,8 +364,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î foreground µÄÖµ£¬¼´»ñÈ¡µ¥Ôª¸ñµÄÇ°¾°É«£¬×¢Òâ£ºÉèÖÃäÖÈ¾Æ÷ºó´ËÖµÎŞĞ§¡£
-     * @return ×Ö¶Î foreground µÄÖµ¡£
+     * è·å–å­—æ®µ foreground çš„å€¼ï¼Œå³è·å–å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œæ³¨æ„ï¼šè®¾ç½®æ¸²æŸ“å™¨åæ­¤å€¼æ— æ•ˆã€‚
+     * @return å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getForeground() {
@@ -373,8 +373,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î foreground µÄÖµ£¬¼´ÉèÖÃµ¥Ôª¸ñµÄÇ°¾°É«£¬×¢Òâ£ºÉèÖÃäÖÈ¾Æ÷ºó´ËÖµÎŞĞ§¡£
-     * @param foreground ×Ö¶Î foreground µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ foreground çš„å€¼ï¼Œå³è®¾ç½®å•å…ƒæ ¼çš„å‰æ™¯è‰²ï¼Œæ³¨æ„ï¼šè®¾ç½®æ¸²æŸ“å™¨åæ­¤å€¼æ— æ•ˆã€‚
+     * @param foreground å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setForeground(Color foreground) {
@@ -382,24 +382,24 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * »ñÈ¡ÌáÊ¾¡£
-     * @return ÌáÊ¾¡£
+     * è·å–æç¤ºã€‚
+     * @return æç¤ºã€‚
      */
     public String getToolTipText() {
         return m_toolTipText;
     }
 
     /**
-     * ÉèÖÃÌáÊ¾¡£
-     * @param toolTipText ÌáÊ¾¡£
+     * è®¾ç½®æç¤ºã€‚
+     * @param toolTipText æç¤ºã€‚
      */
     public void setToolTipText(String toolTipText) {
         m_toolTipText = toolTipText;
     }
 
     /**
-     * »ñÈ¡µ¥Ôª¸ñµÄ²Ëµ¥Ïî¼¯¡£
-     * @return ²Ëµ¥Ïî¼¯¡£
+     * è·å–å•å…ƒæ ¼çš„èœå•é¡¹é›†ã€‚
+     * @return èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getMenuItems() {
@@ -407,8 +407,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(Action action) {
@@ -416,9 +416,9 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷¡£
-     * @param index Ë÷Òı¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(int index, Action action) {
@@ -426,8 +426,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeAction(int index) {
@@ -435,8 +435,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeAction(Action action) {
@@ -448,9 +448,9 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsAction(Action action) {
@@ -463,8 +463,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(JMenuItem menuItem) {
@@ -472,9 +472,9 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¡£
-     * @param index Ë÷Òı¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(int index, JMenuItem menuItem) {
@@ -482,8 +482,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(int index) {
@@ -491,8 +491,8 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * ç§»é™¤èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(JMenuItem menuItem) {
@@ -500,9 +500,9 @@ public class ComplexTableCell implements Comparable {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsMenuItem(JMenuItem menuItem) {

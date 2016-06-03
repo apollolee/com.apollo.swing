@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-2-28 ÉÏÎç09:10:08¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-2-28 ä¸Šåˆ09:10:08ã€‚
  */
 package com.apollo.swing.component.text;
 
@@ -33,22 +33,22 @@ import com.apollo.base.util.BaseUtilities;
 import com.apollo.base.util.IBaseConstants;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºBaseFormatter.java</p>
- * <p>ÀàĞÍÃèÊö£º³éÏóµÄ¸ñÊ½Æ÷£¬Ö÷ÒªµÄÂß¼­ÊÇÒÔFormatterÎªÖĞĞÄÀ´´¦ÀíµÄ¡£×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-2-28</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šBaseFormatter.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæŠ½è±¡çš„æ ¼å¼å™¨ï¼Œä¸»è¦çš„é€»è¾‘æ˜¯ä»¥Formatterä¸ºä¸­å¿ƒæ¥å¤„ç†çš„ã€‚æ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-2-28</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -77,87 +77,87 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Protected Static Field -------------------------------------*/
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·¶Î§¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èŒƒå›´ã€‚
      */
     protected static final String I18N_INFO_RANGE = getI18nMessage("text.range");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------³¤¶È·¶Î§¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é•¿åº¦èŒƒå›´ã€‚
      */
     protected static final String I18N_INFO_LENGTHRANGE = getI18nMessage("text.lengthRange");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¾«¶È¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç²¾åº¦ã€‚
      */
     protected static final String I18N_INFO_PRECISION = getI18nMessage("text.precision");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²½³¤¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ­¥é•¿ã€‚
      */
     protected static final String I18N_INFO_STEP = getI18nMessage("text.step");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²½³¤»ùÖµ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ­¥é•¿åŸºå€¼ã€‚
      */
     protected static final String I18N_INFO_STEPBASE = getI18nMessage("text.stepBase");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ºÏ·¨×Ö·û¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆæ³•å­—ç¬¦ã€‚
      */
     protected static final String I18N_INFO_LEGALCHARACTER = getI18nMessage("text.legalCharacter");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·Ç·¨×Ö·û¡£
+     * å›½é™…åŒ–ä¿¡æ¯------éæ³•å­—ç¬¦ã€‚
      */
     protected static final String I18N_INFO_ILLEGALCHARACTER = getI18nMessage("text.illegalCharacter");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÕıÔò±í´ïÊ½¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ­£åˆ™è¡¨è¾¾å¼ã€‚
      */
     protected static final String I18N_INFO_REGEX = getI18nMessage("text.regex");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈëµÄ×Ö·ûÊÇ²»ºÏ·¨µÄ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥çš„å­—ç¬¦æ˜¯ä¸åˆæ³•çš„ã€‚
      */
     protected static final String I18N_INFO_CHARACTERISILLEGAL = getI18nMessage("text.characterIsIllegal");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈëµÄ×Ö·ûÊÇÎŞĞ§µÄ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥çš„å­—ç¬¦æ˜¯æ— æ•ˆçš„ã€‚
      */
     protected static final String I18N_INFO_CHARACTERISINVALID = getI18nMessage("text.characterIsInvalid");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë¸ñÊ½´íÎó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥æ ¼å¼é”™è¯¯ã€‚
      */
     protected static final String I18N_INFO_FORMATISERROR = getI18nMessage("text.formatIsError");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë×Ö·û´®³¤¶ÈÌ«¶Ì¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥å­—ç¬¦ä¸²é•¿åº¦å¤ªçŸ­ã€‚
      */
     protected static final String I18N_INFO_LENGTHISTO0SHORT = getI18nMessage("text.lengthIsTooShort");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë×Ö·û´®³¤¶ÈÌ«³¤¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥å­—ç¬¦ä¸²é•¿åº¦å¤ªé•¿ã€‚
      */
     protected static final String I18N_INFO_LENGTHISTO0LONG = getI18nMessage("text.lengthIsTooLong");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈëÖµÌ«Ğ¡¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥å€¼å¤ªå°ã€‚
      */
     protected static final String I18N_INFO_VALUEISTOOSMALL = getI18nMessage("text.valueIsTooSmall");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈëÖµÌ«´ó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥å€¼å¤ªå¤§ã€‚
      */
     protected static final String I18N_INFO_VALUEISTOOBIG = getI18nMessage("text.valueIsTooBig");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë²»·ûºÏ¾«¶ÈÒªÇó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥ä¸ç¬¦åˆç²¾åº¦è¦æ±‚ã€‚
      */
     protected static final String I18N_INFO_FALLSHORTOFPRECISION = getI18nMessage("text.fallShortOfPrecision");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë²»·ûºÏ²½³¤ÒªÇó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥ä¸ç¬¦åˆæ­¥é•¿è¦æ±‚ã€‚
      */
     protected static final String I18N_INFO_FALLSHORTOFSTEP = getI18nMessage("text.fallShortOfStep");
 
@@ -180,19 +180,19 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * »ñÈ¡¹ú¼Ê»¯ĞÅÏ¢£¬¹ú¼Ê»¯ÎÄ¼şÔÚcom.zte.ican.gui.component.text.resource.Text°üÄ¿Â¼ÏÂ¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢¡£
+     * è·å–å›½é™…åŒ–ä¿¡æ¯ï¼Œå›½é™…åŒ–æ–‡ä»¶åœ¨com.zte.ican.gui.component.text.resource.TextåŒ…ç›®å½•ä¸‹ã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ã€‚
      */
     protected static final String getI18nMessage(String i18nKey) {
         return BaseUtilities.getI18nMessage("com.apollo.swing.component.text.resource.Text", i18nKey);
     }
 
     /**
-     * ÅĞ¶ÏbÊÇ·ñÓëaÖØ¸´¡£
-     * @param a ¶ÔÏóa¡£
-     * @param b ¶ÔÏób¡£
-     * @return Îªtrue±íÊ¾aÓëbÖØ¸´¡£
+     * åˆ¤æ–­bæ˜¯å¦ä¸aé‡å¤ã€‚
+     * @param a å¯¹è±¡aã€‚
+     * @param b å¯¹è±¡bã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºaä¸bé‡å¤ã€‚
      */
     protected static final boolean isRepeated(Object a, Object b) {
         if (a == null) {
@@ -218,32 +218,32 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñ±ØĞëÊäÈë¡£
+     * æ ‡è¯†æ˜¯å¦å¿…é¡»è¾“å…¥ã€‚
      */
     protected volatile boolean m_isNeedInput;
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
      */
     protected volatile boolean m_isEnabledPopupErrorTip;
 
     /**
-     * ÌáÊ¾ÎÄ±¾£¬ÓÃÓÚ±£´æÕûÌåµÄÌáÊ¾ĞÅÏ¢¡£
+     * æç¤ºæ–‡æœ¬ï¼Œç”¨äºä¿å­˜æ•´ä½“çš„æç¤ºä¿¡æ¯ã€‚
      */
     protected String m_tipText = null;
 
     /**
-     * ´íÎóÌáÊ¾×é¼ş¡£
+     * é”™è¯¯æç¤ºç»„ä»¶ã€‚
      */
     protected JToolTip m_errorTip = new JToolTip();
 
     /**
-     * ´íÎóÌáÊ¾µ¯³ö¹¤¾ß¡£
+     * é”™è¯¯æç¤ºå¼¹å‡ºå·¥å…·ã€‚
      */
     protected Popup m_errorTipPopup = null;
 
     /**
-     * ×é¼ş¼àÌıÆ÷£¨ÎªÁË¹Ø±Õ¿ÉÄÜ¸¡¶¯ÔÚÍâÃæµÄ´íÎóÌáÊ¾£©¡£
+     * ç»„ä»¶ç›‘å¬å™¨ï¼ˆä¸ºäº†å…³é—­å¯èƒ½æµ®åŠ¨åœ¨å¤–é¢çš„é”™è¯¯æç¤ºï¼‰ã€‚
      */
     protected ComponentListener m_componentListener = new ComponentAdapter() {
 
@@ -271,7 +271,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     };
 
     /**
-     * ½¹µã¼àÌıÆ÷£¨ÎªÁË¹Ø±Õ¿ÉÄÜ¸¡¶¯ÔÚÍâÃæµÄ´íÎóÌáÊ¾£©¡£
+     * ç„¦ç‚¹ç›‘å¬å™¨ï¼ˆä¸ºäº†å…³é—­å¯èƒ½æµ®åŠ¨åœ¨å¤–é¢çš„é”™è¯¯æç¤ºï¼‰ã€‚
      */
     protected FocusListener m_focusListener = new FocusListener() {
 
@@ -292,7 +292,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     };
 
     /**
-     * ×æÏÈÈİÆ÷¼àÌıÆ÷£¨ÎªÁË¹Ø±Õ¿ÉÄÜ¸¡¶¯ÔÚÍâÃæµÄ´íÎóÌáÊ¾£©¡£
+     * ç¥–å…ˆå®¹å™¨ç›‘å¬å™¨ï¼ˆä¸ºäº†å…³é—­å¯èƒ½æµ®åŠ¨åœ¨å¤–é¢çš„é”™è¯¯æç¤ºï¼‰ã€‚
      */
     protected AncestorListener m_ancestorListener = new AncestorListener() {
 
@@ -320,7 +320,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     };
 
     /**
-     * ÎÄµµ¹ıÂËÆ÷£¬ÑéÖ¤Âß¼­µÄÖ´ĞĞ¼¯ÖĞÓÚ´Ë¡£
+     * æ–‡æ¡£è¿‡æ»¤å™¨ï¼ŒéªŒè¯é€»è¾‘çš„æ‰§è¡Œé›†ä¸­äºæ­¤ã€‚
      */
     protected DocumentFilter m_documentFilter = new DocumentFilter() {
 
@@ -328,10 +328,10 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
          * @see javax.swing.text.DocumentFilter#insertString(javax.swing.text.DocumentFilter.FilterBypass, int, java.lang.String, javax.swing.text.AttributeSet)
          */
         public void insertString(FilterBypass fb, int offset, String text, AttributeSet attr) throws BadLocationException {
-            /* Òş²Ø´íÎóÌáÊ¾ */
+            /* éšè—é”™è¯¯æç¤º */
             hideErrorTip();
 
-            /* ÑéÖ¤ÎÄ±¾ */
+            /* éªŒè¯æ–‡æœ¬ */
             try {
                 verify(text, false);
 
@@ -341,7 +341,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
                 return;
             }
 
-            /* Î¯ÍĞ¸ø¸¸Àà´¦Àí */
+            /* å§”æ‰˜ç»™çˆ¶ç±»å¤„ç† */
             super.insertString(fb, offset, text, attr);
         }
 
@@ -349,16 +349,16 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
          * @see javax.swing.text.DocumentFilter#remove(javax.swing.text.DocumentFilter.FilterBypass, int, int)
          */
         public void remove(FilterBypass fb, int offset, int length) throws BadLocationException {
-            /* Òş²Ø´íÎóÌáÊ¾ */
+            /* éšè—é”™è¯¯æç¤º */
             hideErrorTip();
 
-            /* Æ´½Ó´ıÑéÖ¤ÎÄ±¾ */
+            /* æ‹¼æ¥å¾…éªŒè¯æ–‡æœ¬ */
             String oldText = getFormattedTextField().getText();
             StringBuffer sb = new StringBuffer();
             sb.append(oldText.substring(0, offset));
             sb.append(oldText.substring(offset + length, oldText.length()));
 
-            /* ÑéÖ¤ÎÄ±¾ */
+            /* éªŒè¯æ–‡æœ¬ */
             try {
                 verify(sb.toString(), false);
 
@@ -368,7 +368,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
                 return;
             }
 
-            /* Î¯ÍĞ¸ø¸¸Àà´¦Àí */
+            /* å§”æ‰˜ç»™çˆ¶ç±»å¤„ç† */
             super.remove(fb, offset, length);
         }
 
@@ -376,17 +376,17 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
          * @see javax.swing.text.DocumentFilter#replace(javax.swing.text.DocumentFilter.FilterBypass, int, int, java.lang.String, javax.swing.text.AttributeSet)
          */
         public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException {
-            /* Òş²Ø´íÎóÌáÊ¾ */
+            /* éšè—é”™è¯¯æç¤º */
             hideErrorTip();
 
-            /* Æ´½Ó´ıÑéÖ¤ÎÄ±¾ */
+            /* æ‹¼æ¥å¾…éªŒè¯æ–‡æœ¬ */
             String oldText = getFormattedTextField().getText();
             StringBuffer sb = new StringBuffer();
             sb.append(oldText.substring(0, offset));
             sb.append(text);
             sb.append(oldText.substring(offset + length, oldText.length()));
 
-            /* ÑéÖ¤ÎÄ±¾ */
+            /* éªŒè¯æ–‡æœ¬ */
             try {
                 verify(sb.toString(), false);
 
@@ -396,14 +396,14 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
                 return;
             }
 
-            /* Î¯ÍĞ¸ø¸¸Àà´¦Àí */
+            /* å§”æ‰˜ç»™çˆ¶ç±»å¤„ç† */
             super.replace(fb, offset, length, text, attrs);
         }
 
     };
 
     /**
-     * ËùÓĞ¶¯×÷£¨Ä¿Ç°Ö§³ÖÔö¼Ó¡¢¼õÉÙ£©¡£
+     * æ‰€æœ‰åŠ¨ä½œï¼ˆç›®å‰æ”¯æŒå¢åŠ ã€å‡å°‘ï¼‰ã€‚
      */
     protected Action[] m_actions = new Action[] { new AbstractAction() {
 
@@ -448,9 +448,9 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
      * @since T3 V1.1
      */
     public BaseFormatter(boolean isNeedInput, boolean isEnabledPopupErrorTip) {
@@ -473,8 +473,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @return ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è·å–å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @return å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isNeedInput() {
@@ -482,8 +482,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isNeedInput ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isNeedInput å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setNeedInput(boolean isNeedInput) {
@@ -491,8 +491,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @return ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @return å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEnabledPopupErrorTip() {
@@ -500,8 +500,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param isEnabledPopupErrorTip ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param isEnabledPopupErrorTip å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEnabledPopupErrorTip(boolean isEnabledPopupErrorTip) {
@@ -514,10 +514,10 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
      * @see javax.swing.JFormattedTextField.AbstractFormatter#install(javax.swing.JFormattedTextField)
      */
     public void install(JFormattedTextField ftf) {
-        /* Î¯ÍĞ¸ø¸¸Àà´¦Àí */
+        /* å§”æ‰˜ç»™çˆ¶ç±»å¤„ç† */
         super.install(ftf);
 
-        /* °²×°¹¤¾ßÌáÊ¾ºÍ¼àÌıÆ÷ */
+        /* å®‰è£…å·¥å…·æç¤ºå’Œç›‘å¬å™¨ */
         if (ftf != null) {
             ftf.setToolTipText(m_tipText);
             ftf.addComponentListener(m_componentListener);
@@ -532,7 +532,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     public void uninstall() {
         JFormattedTextField ftf = getFormattedTextField();
 
-        /* Ğ¶ÔØ¼àÌıÆ÷ºÍ¹¤¾ßÌáÊ¾ */
+        /* å¸è½½ç›‘å¬å™¨å’Œå·¥å…·æç¤º */
         if (ftf != null) {
             ftf.removeAncestorListener(m_ancestorListener);
             ftf.removeFocusListener(m_focusListener);
@@ -540,17 +540,17 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
             ftf.setToolTipText(null);
         }
 
-        /* Î¯ÍĞ¸ø¸¸Àà´¦Àí */
+        /* å§”æ‰˜ç»™çˆ¶ç±»å¤„ç† */
         super.uninstall();
     }
 
     /*------------------------------------- Abstract Protected Method -------------------------------------*/
 
     /**
-     * ÑéÖ¤ÎÄ±¾¡£
-     * @param text ´ıÑéÖ¤µÄÎÄ±¾¡£
-     * @param isFull Èç¹ûÎªtrue±íÊ¾´ıÑéÖ¤µÄÎÄ±¾ÊÇÍêÕûµÄ£¬Èç¹ûÎªfalse±íÊ¾´ıÑéÖ¤µÄÎÄ±¾ÊÇ²»ÍêÕûµÄ¡£
-     * @throws ParseException Èç¹ûÑéÖ¤²»Í¨¹ıÔòÅ×³ö´ËÒì³££¬TODO ´Ë´¦ÓÃParseExceptionÍêÈ«ÊÇÎªÁË@seeÃèÊöµÄÁ½¸ö·½·¨±ãÓÚ´¦Àí¡£
+     * éªŒè¯æ–‡æœ¬ã€‚
+     * @param text å¾…éªŒè¯çš„æ–‡æœ¬ã€‚
+     * @param isFull å¦‚æœä¸ºtrueè¡¨ç¤ºå¾…éªŒè¯çš„æ–‡æœ¬æ˜¯å®Œæ•´çš„ï¼Œå¦‚æœä¸ºfalseè¡¨ç¤ºå¾…éªŒè¯çš„æ–‡æœ¬æ˜¯ä¸å®Œæ•´çš„ã€‚
+     * @throws ParseException å¦‚æœéªŒè¯ä¸é€šè¿‡åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ï¼ŒTODO æ­¤å¤„ç”¨ParseExceptionå®Œå…¨æ˜¯ä¸ºäº†@seeæè¿°çš„ä¸¤ä¸ªæ–¹æ³•ä¾¿äºå¤„ç†ã€‚
      * @see javax.swing.JFormattedTextField.AbstractFormatter#stringToValue(java.lang.String)
      * @see javax.swing.JFormattedTextField.AbstractFormatter#valueToString(java.lang.Object)
      */
@@ -559,26 +559,26 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * Ôö¼Ó¶¯×÷£¬¶ÔÔö¼Ó¶¯×÷ÎŞ´¦ÀíµÄ¿É²»¸²Ğ´´Ë·½·¨¡£
-     * @param evt ¶¯×÷ÊÂ¼ş¡£
-     * @return [0]±íÊ¾¹â±êÎ»ÖÃ£¬[1]±íÊ¾±ê¼ÇÆğÊ¼Î»ÖÃ£¬[2]±íÊ¾±ê¼Ç½áÊøÎ»ÖÃ£»Èç¹û²»ĞèÒª±ê¼Ç¿É·µ»Ønull¡£
+     * å¢åŠ åŠ¨ä½œï¼Œå¯¹å¢åŠ åŠ¨ä½œæ— å¤„ç†çš„å¯ä¸è¦†å†™æ­¤æ–¹æ³•ã€‚
+     * @param evt åŠ¨ä½œäº‹ä»¶ã€‚
+     * @return [0]è¡¨ç¤ºå…‰æ ‡ä½ç½®ï¼Œ[1]è¡¨ç¤ºæ ‡è®°èµ·å§‹ä½ç½®ï¼Œ[2]è¡¨ç¤ºæ ‡è®°ç»“æŸä½ç½®ï¼›å¦‚æœä¸éœ€è¦æ ‡è®°å¯è¿”å›nullã€‚
      */
     protected int[] increment(ActionEvent evt) {
         return getPositionsForMarkAll();
     }
 
     /**
-     * ¼õÉÙ¶¯×÷£¬¶Ô¼õÉÙ¶¯×÷ÎŞ´¦ÀíµÄ¿É²»¸²Ğ´´Ë·½·¨¡£
-     * @param evt ¶¯×÷ÊÂ¼ş¡£
-     * @return [0]±íÊ¾¹â±êÎ»ÖÃ£¬[1]±íÊ¾±ê¼ÇÆğÊ¼Î»ÖÃ£¬[2]±íÊ¾±ê¼Ç½áÊøÎ»ÖÃ£»Èç¹û²»ĞèÒª±ê¼Ç¿É·µ»Ønull¡£
+     * å‡å°‘åŠ¨ä½œï¼Œå¯¹å‡å°‘åŠ¨ä½œæ— å¤„ç†çš„å¯ä¸è¦†å†™æ­¤æ–¹æ³•ã€‚
+     * @param evt åŠ¨ä½œäº‹ä»¶ã€‚
+     * @return [0]è¡¨ç¤ºå…‰æ ‡ä½ç½®ï¼Œ[1]è¡¨ç¤ºæ ‡è®°èµ·å§‹ä½ç½®ï¼Œ[2]è¡¨ç¤ºæ ‡è®°ç»“æŸä½ç½®ï¼›å¦‚æœä¸éœ€è¦æ ‡è®°å¯è¿”å›nullã€‚
      */
     protected int[] decrement(ActionEvent evt) {
         return getPositionsForMarkAll();
     }
 
     /**
-     * ½¨ÒéËùÓĞ×ÓÀà¶¼¸²Ğ´´Ë·½·¨£¬²¢ÔÚ¸²Ğ´µÄ·½·¨Ä©Î²µ÷ÓÃ¸¸ÀàµÄÊµÏÖ¡£
-     * ¸üĞÂÌáÊ¾ÎÄ±¾¡£
+     * å»ºè®®æ‰€æœ‰å­ç±»éƒ½è¦†å†™æ­¤æ–¹æ³•ï¼Œå¹¶åœ¨è¦†å†™çš„æ–¹æ³•æœ«å°¾è°ƒç”¨çˆ¶ç±»çš„å®ç°ã€‚
+     * æ›´æ–°æç¤ºæ–‡æœ¬ã€‚
      */
     protected void updateTipText() {
         m_errorTip.setTipText(m_tipText);
@@ -590,8 +590,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * »ñÈ¡±ê¼ÇËùÓĞÎÄ±¾µÄÎ»ÖÃÊı×é¡£
-     * @return ±ê¼ÇËùÓĞÎÄ±¾µÄÎ»ÖÃÊı×é¡£
+     * è·å–æ ‡è®°æ‰€æœ‰æ–‡æœ¬çš„ä½ç½®æ•°ç»„ã€‚
+     * @return æ ‡è®°æ‰€æœ‰æ–‡æœ¬çš„ä½ç½®æ•°ç»„ã€‚
      */
     protected int[] getPositionsForMarkAll() {
         JFormattedTextField ftf = getFormattedTextField();
@@ -610,8 +610,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * ±ê¼ÇÎÄ±¾¡£
-     * @param positions ±ê¼ÇÎÄ±¾µÄÎ»ÖÃÊı×é¡£
+     * æ ‡è®°æ–‡æœ¬ã€‚
+     * @param positions æ ‡è®°æ–‡æœ¬çš„ä½ç½®æ•°ç»„ã€‚
      */
     protected void mark(int[] positions) {
         if (positions == null || positions.length != 3) {
@@ -622,10 +622,10 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * ±ê¼ÇÎÄ±¾¡£
-     * @param caretPosition ¹â±êÎ»ÖÃ¡£
-     * @param startPosition ±ê¼ÇÆğÊ¼Î»ÖÃ¡£
-     * @param endPosition ±ê¼Ç½áÊøÎ»ÖÃ¡£
+     * æ ‡è®°æ–‡æœ¬ã€‚
+     * @param caretPosition å…‰æ ‡ä½ç½®ã€‚
+     * @param startPosition æ ‡è®°èµ·å§‹ä½ç½®ã€‚
+     * @param endPosition æ ‡è®°ç»“æŸä½ç½®ã€‚
      */
     protected void mark(int caretPosition, int startPosition, int endPosition) {
         JFormattedTextField ftf = getFormattedTextField();
@@ -640,19 +640,19 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * Å×½âÎöÒì³£¡£
-     * @param exMsg Òì³£ĞÅÏ¢¡£
-     * @throws ParseException Å×³öµÄ½âÎöÒì³£¡£
+     * æŠ›è§£æå¼‚å¸¸ã€‚
+     * @param exMsg å¼‚å¸¸ä¿¡æ¯ã€‚
+     * @throws ParseException æŠ›å‡ºçš„è§£æå¼‚å¸¸ã€‚
      */
     protected void throwParseException(String exMsg) throws ParseException {
         throwParseException(exMsg, 0);
     }
 
     /**
-     * Å×½âÎöÒì³£¡£
-     * @param exMsg Òì³£ĞÅÏ¢¡£
-     * @param errorOffset ÊäÈë¿òÒì³£Î»ÖÃ¡£
-     * @throws ParseException Å×³öµÄ½âÎöÒì³£¡£
+     * æŠ›è§£æå¼‚å¸¸ã€‚
+     * @param exMsg å¼‚å¸¸ä¿¡æ¯ã€‚
+     * @param errorOffset è¾“å…¥æ¡†å¼‚å¸¸ä½ç½®ã€‚
+     * @throws ParseException æŠ›å‡ºçš„è§£æå¼‚å¸¸ã€‚
      */
     protected void throwParseException(String exMsg, int errorOffset) throws ParseException {
         throw new ParseException(exMsg, 0);
@@ -681,8 +681,8 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ÏÔÊ¾´íÎóÌáÊ¾¡£
-     * @param offset ´íÎóÌáÊ¾ËùÔÚµÄÎÄ±¾ĞĞÆ«ÒÆÎ»ÖÃ¡£
+     * æ˜¾ç¤ºé”™è¯¯æç¤ºã€‚
+     * @param offset é”™è¯¯æç¤ºæ‰€åœ¨çš„æ–‡æœ¬è¡Œåç§»ä½ç½®ã€‚
      */
     private void showErrorTip(int offset) {
         JFormattedTextField ftf = getFormattedTextField();
@@ -693,57 +693,57 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
     }
 
     /**
-     * ÏÔÊ¾´íÎóÌáÊ¾¡£
-     * @param location ´íÎóÌáÊ¾ËùÔÚµÄ×ø±êµãÎ»ÖÃ¡£
+     * æ˜¾ç¤ºé”™è¯¯æç¤ºã€‚
+     * @param location é”™è¯¯æç¤ºæ‰€åœ¨çš„åæ ‡ç‚¹ä½ç½®ã€‚
      */
     private void showErrorTip(Point location) {
-        /* ÅĞ¶ÏÊÇ·ñĞèÒªÏÔÊ¾´íÎóÌáÊ¾ */
+        /* åˆ¤æ–­æ˜¯å¦éœ€è¦æ˜¾ç¤ºé”™è¯¯æç¤º */
         if (m_isEnabledPopupErrorTip && m_errorTip.getTipText() != null) {
-            /* Òş²Ø´íÎóÌáÊ¾ */
+            /* éšè—é”™è¯¯æç¤º */
             hideErrorTip();
 
-            /* »ñÈ¡´íÎóÌáÊ¾µ¯³ö¹¤¾ß */
+            /* è·å–é”™è¯¯æç¤ºå¼¹å‡ºå·¥å…· */
             m_errorTipPopup = PopupFactory.getSharedInstance().getPopup(getFormattedTextField(), m_errorTip, location.x, location.y);
             ToolTipManager.sharedInstance().setEnabled(false);
 
-            /* ÏÔÊ¾´íÎóÌáÊ¾ */
+            /* æ˜¾ç¤ºé”™è¯¯æç¤º */
             m_errorTipPopup.show();
         }
     }
 
     /**
-     * Òş²Ø´íÎóÌáÊ¾¡£
+     * éšè—é”™è¯¯æç¤ºã€‚
      */
     private void hideErrorTip() {
-        /* ÅĞ¶ÏÊÇ·ñĞèÒªÒş²Ø´íÎóÌáÊ¾ */
+        /* åˆ¤æ–­æ˜¯å¦éœ€è¦éšè—é”™è¯¯æç¤º */
         if (m_errorTipPopup != null) {
-            /* Òş²Ø´íÎóÌáÊ¾ */
+            /* éšè—é”™è¯¯æç¤º */
             m_errorTipPopup.hide();
 
-            /* Çå¿Õ´íÎóÌáÊ¾µ¯³ö¹¤¾ß */
+            /* æ¸…ç©ºé”™è¯¯æç¤ºå¼¹å‡ºå·¥å…· */
             m_errorTipPopup = null;
             ToolTipManager.sharedInstance().setEnabled(true);
         }
     }
 
     /**
-     * ¸ù¾İ´íÎóÌáÊ¾ËùÔÚµÄÎÄ±¾ĞĞÆ«ÒÆÎ»ÖÃ»ñÈ¡´íÎóÌáÊ¾ËùÔÚµÄ×ø±êµãÎ»ÖÃ¡£
-     * @param offset ´íÎóÌáÊ¾ËùÔÚµÄÎÄ±¾ĞĞÆ«ÒÆÎ»ÖÃ¡£
-     * @return ´íÎóÌáÊ¾ËùÔÚµÄ×ø±êµãÎ»ÖÃ¡£
+     * æ ¹æ®é”™è¯¯æç¤ºæ‰€åœ¨çš„æ–‡æœ¬è¡Œåç§»ä½ç½®è·å–é”™è¯¯æç¤ºæ‰€åœ¨çš„åæ ‡ç‚¹ä½ç½®ã€‚
+     * @param offset é”™è¯¯æç¤ºæ‰€åœ¨çš„æ–‡æœ¬è¡Œåç§»ä½ç½®ã€‚
+     * @return é”™è¯¯æç¤ºæ‰€åœ¨çš„åæ ‡ç‚¹ä½ç½®ã€‚
      */
     private Point getErrorTipLocation(int offset) {
         JFormattedTextField ftf = getFormattedTextField();
 
-        /* »ñÈ¡×é¼şÔÚÆÁÄ»ÉÏµÄÎ»ÖÃ */
+        /* è·å–ç»„ä»¶åœ¨å±å¹•ä¸Šçš„ä½ç½® */
         Point location = ftf.getLocationOnScreen();
         location.x -= ftf.getScrollOffset();
 
-        /* »ñÈ¡¼ÆËãÓÃµÄÏà¹Ø²ÎÊı */
+        /* è·å–è®¡ç®—ç”¨çš„ç›¸å…³å‚æ•° */
         Dimension ss = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension ttps = m_errorTip.getPreferredSize();
         FontMetrics fm = ftf.getFontMetrics(ftf.getFont());
 
-        /* »ñÈ¡Æ«ÒÆÎÄ±¾ */
+        /* è·å–åç§»æ–‡æœ¬ */
         String offsetText = null;
         try {
             offsetText = ftf.getText(0, offset + 1);
@@ -752,11 +752,11 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
             offsetText = ftf.getText();
         }
 
-        /* »ñÈ¡ÎÄ±¾×ÖÌåÆ«ÒÆÁ¿ */
+        /* è·å–æ–‡æœ¬å­—ä½“åç§»é‡ */
         int offsetX = fm.stringWidth(offsetText);
         int offsetY = fm.getHeight();
 
-        /* ¼ÆËãÊäÈëÌáÊ¾µÄxÖá×ø±ê */
+        /* è®¡ç®—è¾“å…¥æç¤ºçš„xè½´åæ ‡ */
         if (location.x + offsetX + ttps.width > ss.width) {
             location.x = location.x + offsetX - ttps.width;
 
@@ -764,7 +764,7 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
             location.x += offsetX;
         }
 
-        /* ¼ÆËãÊäÈëÌáÊ¾µÄyÖá×ø±ê */
+        /* è®¡ç®—è¾“å…¥æç¤ºçš„yè½´åæ ‡ */
         if (location.y + offsetY + ttps.height > ss.height) {
             location.y -= ttps.height;
 
@@ -772,29 +772,29 @@ public abstract class BaseFormatter extends AbstractFormatter implements IBaseCo
             location.y += offsetY;
         }
 
-        /* ·µ»ØÊäÈëÌáÊ¾µÄÎ»ÖÃ */
+        /* è¿”å›è¾“å…¥æç¤ºçš„ä½ç½® */
         return location;
     }
 
     /**
-     * ÉèÖÃ´íÎóÌáÊ¾ÎÄ±¾¡£
-     * @param errorTipText ´íÎóÌáÊ¾ÎÄ±¾¡£
+     * è®¾ç½®é”™è¯¯æç¤ºæ–‡æœ¬ã€‚
+     * @param errorTipText é”™è¯¯æç¤ºæ–‡æœ¬ã€‚
      */
     private void setErrorTipText(String errorTipText) {
-        /* ´´½¨×Ö·û´®»º´æ */
+        /* åˆ›å»ºå­—ç¬¦ä¸²ç¼“å­˜ */
         StringBuffer sb = new StringBuffer();
 
-        /* Ìî³ä´íÎóÎÄ±¾ */
+        /* å¡«å……é”™è¯¯æ–‡æœ¬ */
         sb.append("<html><font color=\"#ff0000\">");
         sb.append(errorTipText);
         sb.append("</font>");
 
-        /* Ìî³äÌáÊ¾ÎÄ±¾ */
+        /* å¡«å……æç¤ºæ–‡æœ¬ */
         if (m_tipText != null && !m_tipText.equals("")) {
             sb.append("<br>").append(m_tipText);
         }
 
-        /* ¸üĞÂµ½ÌáÊ¾ĞÅÏ¢ */
+        /* æ›´æ–°åˆ°æç¤ºä¿¡æ¯ */
         m_errorTip.setTipText(sb.toString());
     }
 

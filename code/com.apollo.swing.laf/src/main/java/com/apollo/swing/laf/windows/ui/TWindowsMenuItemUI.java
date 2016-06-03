@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2012-11-9 ÉÏÎç11:14:38¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2012-11-9 ä¸Šåˆ11:14:38ã€‚
  */
 package com.apollo.swing.laf.windows.ui;
 
@@ -16,22 +16,22 @@ import javax.swing.plaf.basic.BasicMenuItemUI;
 import com.sun.java.swing.plaf.windows.WindowsMenuItemUI;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTWindowsMenuItemUI.java</p>
- * <p>ÀàĞÍÃèÊö£ºTWindowsMenuItemUI¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2012-11-9</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTWindowsMenuItemUI.java</p>
+ * <p>ç±»å‹æè¿°ï¼šTWindowsMenuItemUIã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2012-11-9</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public class TWindowsMenuItemUI extends WindowsMenuItemUI {
 

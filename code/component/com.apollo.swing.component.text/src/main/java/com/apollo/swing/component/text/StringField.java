@@ -1,27 +1,27 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-3-2 ÏÂÎç03:36:52¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-3-2 ä¸‹åˆ03:36:52ã€‚
  */
 package com.apollo.swing.component.text;
 
 import java.math.BigInteger;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºStringField.java</p>
- * <p>ÀàĞÍÃèÊö£º×Ö·û´®ÊäÈë¿ò£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-3-2</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šStringField.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå­—ç¬¦ä¸²è¾“å…¥æ¡†ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-3-2</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -102,7 +102,7 @@ public class StringField extends BaseField {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public StringField() {
@@ -110,9 +110,9 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param minLength ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È¡£
-     * @param maxLength ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param minLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ã€‚
+     * @param maxLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ã€‚
      * @since T3 V1.1
      */
     public StringField(long minLength, long maxLength) {
@@ -120,10 +120,10 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param minLength ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È¡£
-     * @param maxLength ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È¡£
-     * @param string ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param minLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ã€‚
+     * @param maxLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ã€‚
+     * @param string åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public StringField(long minLength, long maxLength, String string) {
@@ -131,16 +131,16 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minLength ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È¡£
-     * @param maxLength ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È¡£
-     * @param characters ×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param legal ±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param regex ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @param string ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ã€‚
+     * @param maxLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ã€‚
+     * @param characters å­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param legal æ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param regex æ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @param string åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @since T3 V1.1
      */
     public StringField(int columns,
@@ -164,16 +164,16 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı£¬Õâ¸ö²ÎÊı¸úJTextµÄÄÇ¸öÒ»ÑùµÄÒâË¼¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minLength ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @param maxLength ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param characters ×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param legal ±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param regex ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @param string ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ï¼Œè¿™ä¸ªå‚æ•°è·ŸJTextçš„é‚£ä¸ªä¸€æ ·çš„æ„æ€ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @param maxLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param characters å­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param legal æ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param regex æ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @param string åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      * @see com.apollo.swing.component.text.IntegerFormatter#TIntegerFormatter(boolean, boolean, BigInteger, BigInteger, BigInteger)
      * @since T3 V1.1
      */
@@ -207,8 +207,8 @@ public class StringField extends BaseField {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö·û´®£¬×¢Òâ£º´Ë´¦»ñÈ¡µÄÖµ²¢²»¾ÍÊÇ½çÃæÉÏµÄÖµ£¬Ö»ÓĞcommitEditÒÔºó£¬½çÃæÉÏµÄÖµ²Å»á´æÈëÄ£ĞÍ£¬ÕâµãºÍJFormattedTextFieldÍêÈ«Ò»Ñù¡£
-     * @return ×Ö·û´®£¬Èç¹ûÎªnull±íÊ¾Î´ÊäÈë»òÊäÈëÎª¿Õ¡£
+     * è·å–å­—ç¬¦ä¸²ï¼Œæ³¨æ„ï¼šæ­¤å¤„è·å–çš„å€¼å¹¶ä¸å°±æ˜¯ç•Œé¢ä¸Šçš„å€¼ï¼Œåªæœ‰commitEditä»¥åï¼Œç•Œé¢ä¸Šçš„å€¼æ‰ä¼šå­˜å…¥æ¨¡å‹ï¼Œè¿™ç‚¹å’ŒJFormattedTextFieldå®Œå…¨ä¸€æ ·ã€‚
+     * @return å­—ç¬¦ä¸²ï¼Œå¦‚æœä¸ºnullè¡¨ç¤ºæœªè¾“å…¥æˆ–è¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public String getString() {
@@ -216,8 +216,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö·û´®£¬×¢Òâ£ºÓ¦ÓÃ±ØĞë±£Ö¤ÉèÖÃµÄ×Ö·û´®ÊÇºÏ·¨µÄ¡£
-     * @param string ×Ö·û´®£¬Îªnull±íÊ¾ÊäÈëÎª¿Õ¡£
+     * è®¾ç½®å­—ç¬¦ä¸²ï¼Œæ³¨æ„ï¼šåº”ç”¨å¿…é¡»ä¿è¯è®¾ç½®çš„å­—ç¬¦ä¸²æ˜¯åˆæ³•çš„ã€‚
+     * @param string å­—ç¬¦ä¸²ï¼Œä¸ºnullè¡¨ç¤ºè¾“å…¥ä¸ºç©ºã€‚
      * @since T3 V1.1
      */
     public void setString(String string) {
@@ -225,8 +225,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö·û´®¸ñÊ½Æ÷¡£
-     * @return ×Ö·û´®¸ñÊ½Æ÷¡£
+     * è·å–å­—ç¬¦ä¸²æ ¼å¼å™¨ã€‚
+     * @return å­—ç¬¦ä¸²æ ¼å¼å™¨ã€‚
      * @since T3 V1.1
      */
     public StringFormatter getStringFormatter() {
@@ -234,8 +234,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @return ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è·å–å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @return å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#isNeedInput()
      * @since T3 V1.1
      */
@@ -244,8 +244,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isNeedInput µÄÖµ£¬¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isNeedInput ×Ö¶Î isNeedInput µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isNeedInput çš„å€¼ï¼Œå®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isNeedInput å­—æ®µ isNeedInput çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setNeedInput(boolean)
      * @since T3 V1.1
      */
@@ -254,8 +254,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @return ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @return å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#isEnabledPopupErrorTip()
      * @since T3 V1.1
      */
@@ -264,8 +264,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledPopupErrorTip µÄÖµ£¬µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param isEnabledPopupErrorTip ×Ö¶Î isEnabledPopupErrorTip µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledPopupErrorTip çš„å€¼ï¼Œå½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param isEnabledPopupErrorTip å­—æ®µ isEnabledPopupErrorTip çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setEnabledPopupErrorTip(boolean)
      * @since T3 V1.1
      */
@@ -274,8 +274,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î minLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @return ×Ö¶Î minLength µÄÖµ¡£
+     * è·å–å­—æ®µ minLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @return å­—æ®µ minLength çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#getMinLength()
      * @since T3 V1.1
      */
@@ -284,8 +284,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @param minLength ×Ö¶Î minLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @param minLength å­—æ®µ minLength çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setMinLength(BigInteger)
      * @since T3 V1.1
      */
@@ -294,8 +294,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È¡£
-     * @param minLength ×Ö¶Î minLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ã€‚
+     * @param minLength å­—æ®µ minLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinLength(long minLength) {
@@ -303,8 +303,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maxLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maxLength çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#getMaxLength()
      * @since T3 V1.1
      */
@@ -313,8 +313,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maxLength ×Ö¶Î maxLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maxLength å­—æ®µ maxLength çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setMaxLength(BigInteger)
      * @since T3 V1.1
      */
@@ -323,8 +323,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È¡£
-     * @param maxLength ×Ö¶Î maxLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ã€‚
+     * @param maxLength å­—æ®µ maxLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaxLength(long maxLength) {
@@ -332,8 +332,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î characters µÄÖµ£¬×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @return ×Ö¶Î characters µÄÖµ¡£
+     * è·å–å­—æ®µ characters çš„å€¼ï¼Œå­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @return å­—æ®µ characters çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#getCharacters()
      * @since T3 V1.1
      */
@@ -342,8 +342,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î characters µÄÖµ£¬×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param characters ×Ö¶Î characters µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ characters çš„å€¼ï¼Œå­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param characters å­—æ®µ characters çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setCharacters(String)
      * @since T3 V1.1
      */
@@ -352,8 +352,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î legal µÄÖµ£¬±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @return ×Ö¶Î legal µÄÖµ¡£
+     * è·å–å­—æ®µ legal çš„å€¼ï¼Œæ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @return å­—æ®µ legal çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#isLegal()
      * @since T3 V1.1
      */
@@ -362,8 +362,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î legal µÄÖµ£¬±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param legal ×Ö¶Î legal µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ legal çš„å€¼ï¼Œæ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param legal å­—æ®µ legal çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setLegal(boolean)
      * @since T3 V1.1
      */
@@ -372,8 +372,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î regex µÄÖµ£¬ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @return ×Ö¶Î regex µÄÖµ¡£
+     * è·å–å­—æ®µ regex çš„å€¼ï¼Œæ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @return å­—æ®µ regex çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#getRegex()
      * @since T3 V1.1
      */
@@ -382,8 +382,8 @@ public class StringField extends BaseField {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î regex µÄÖµ£¬ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @param regex ×Ö¶Î regex µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ regex çš„å€¼ï¼Œæ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @param regex å­—æ®µ regex çš„å€¼ã€‚
      * @see com.apollo.swing.component.text.StringFormatter#setRegex(String)
      * @since T3 V1.1
      */
@@ -394,7 +394,7 @@ public class StringField extends BaseField {
     /*------------------------------------- JFormattedTextField Public Method -------------------------------------*/
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃgetString·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨getStringæ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#getValue()
      * @see StringField#getString()
      */
@@ -403,7 +403,7 @@ public class StringField extends BaseField {
     }
 
     /**
-     * @deprecated ½¨ÒéÖ±½ÓÊ¹ÓÃsetString·½·¨¡£
+     * @deprecated å»ºè®®ç›´æ¥ä½¿ç”¨setStringæ–¹æ³•ã€‚
      * @see javax.swing.JFormattedTextField#setValue(java.lang.Object)
      * @see StringField#setString(String)
      */

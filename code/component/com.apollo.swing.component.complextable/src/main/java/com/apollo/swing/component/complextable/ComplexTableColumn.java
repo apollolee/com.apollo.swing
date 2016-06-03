@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-23 ÉÏÎç10:37:44¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-23 ä¸Šåˆ10:37:44ã€‚
  */
 package com.apollo.swing.component.complextable;
 
@@ -21,22 +21,22 @@ import javax.swing.table.TableColumn;
 import com.apollo.swing.component.icon.SortIcon;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTableColumn.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏ±íÁĞÀà£¬Õâ¸öÀàÖ÷ÒªÊÇ·â×°ÁË×ÛºÏ±íÁĞ¶ÔÏóµÄÏà¹Ø²Ù×÷ºÍÊı¾İ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTableColumn.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆè¡¨åˆ—ç±»ï¼Œè¿™ä¸ªç±»ä¸»è¦æ˜¯å°è£…äº†ç»¼åˆè¡¨åˆ—å¯¹è±¡çš„ç›¸å…³æ“ä½œå’Œæ•°æ®ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -81,9 +81,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´´½¨ÁĞ£¬ÕâÊÇÒ»¸ö¹¤¾ß·½·¨¡£
-     * @param identifier ÁĞ±êÊ¶¶ÔÏó¡£
-     * @return ÁĞ¡£
+     * åˆ›å»ºåˆ—ï¼Œè¿™æ˜¯ä¸€ä¸ªå·¥å…·æ–¹æ³•ã€‚
+     * @param identifier åˆ—æ ‡è¯†å¯¹è±¡ã€‚
+     * @return åˆ—ã€‚
      * @since T3 V1.1
      */
     public static ComplexTableColumn create(Object identifier) {
@@ -114,49 +114,49 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÀàĞÍ¡£
+     * ç±»å‹ã€‚
      */
     protected Class m_type;
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿ÉÅÅĞò¡£
+     * æ ‡è¯†æ˜¯å¦å¯æ’åºã€‚
      */
     protected volatile boolean m_sortable;
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿É±à¼­¡£
+     * æ ‡è¯†æ˜¯å¦å¯ç¼–è¾‘ã€‚
      */
     protected volatile boolean m_editable;
 
     /**
-     * ÅÅĞòÍ¼±ê¡£
+     * æ’åºå›¾æ ‡ã€‚
      */
     protected SortIcon m_sort = new SortIcon();
 
     /**
-     * äÖÈ¾Æ÷×é¼ş¡£
+     * æ¸²æŸ“å™¨ç»„ä»¶ã€‚
      */
     protected JLabel m_rc = new JLabel(m_sort);
 
     /**
-     * ²Ëµ¥Ïî¼¯£¨ÁĞÍ·ºÍÁĞµ¥Ôª¸ñ¶¼»áÏÔÊ¾£©¡£
+     * èœå•é¡¹é›†ï¼ˆåˆ—å¤´å’Œåˆ—å•å…ƒæ ¼éƒ½ä¼šæ˜¾ç¤ºï¼‰ã€‚
      */
     protected List m_menuItems = new ArrayList();
 
     /**
-     * ÁĞÍ·²Ëµ¥Ïî¼¯¡£
+     * åˆ—å¤´èœå•é¡¹é›†ã€‚
      */
     protected List m_headerMenuItems = new ArrayList();
 
     /**
-     * ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯¡£
+     * åˆ—å•å…ƒæ ¼èœå•é¡¹é›†ã€‚
      */
     protected List m_cellMenuItems = new ArrayList();
 
     /*------------------------------------- Friendly Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñÊ¹ÄÜ¡£
+     * æ ‡è¯†æ˜¯å¦ä½¿èƒ½ã€‚
      */
     volatile boolean m_isEnabled = true;
 
@@ -171,8 +171,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn(Object identifier) {
@@ -180,9 +180,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
-     * @param preferredWidth ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
+     * @param preferredWidth åˆ—çš„é¦–é€‰å®½åº¦ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn(Object identifier, int preferredWidth) {
@@ -190,9 +190,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
-     * @param sortable ±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
+     * @param sortable æ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn(Object identifier, boolean sortable) {
@@ -200,10 +200,10 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
-     * @param sortable ±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
-     * @param editable ±êÊ¶ÁĞÏÂµÄµ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÔÊĞí¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
+     * @param sortable æ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
+     * @param editable æ ‡è¯†åˆ—ä¸‹çš„å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœå…è®¸ã€‚
      * @since T3 V1.2
      */
     public ComplexTableColumn(Object identifier, boolean sortable, boolean editable) {
@@ -211,12 +211,12 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
-     * @param type ÁĞµÄÀàĞÍ£¬¿ÉÓÃÓÚ±íµÄ¹«¹²äÖÈ¾£¬´ËÖµÈ±Ê¡ÎªObject.class¡£
-     * @param sortable ±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
-     * @param editable ±êÊ¶ÁĞÏÂµÄµ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÔÊĞí¡£
-     * @param menuItems ÁĞ²Ëµ¥Ïî¼¯£¬ÔÚÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñÉÏ¶¼ÓĞĞ§¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
+     * @param type åˆ—çš„ç±»å‹ï¼Œå¯ç”¨äºè¡¨çš„å…¬å…±æ¸²æŸ“ï¼Œæ­¤å€¼ç¼ºçœä¸ºObject.classã€‚
+     * @param sortable æ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
+     * @param editable æ ‡è¯†åˆ—ä¸‹çš„å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœå…è®¸ã€‚
+     * @param menuItems åˆ—èœå•é¡¹é›†ï¼Œåœ¨åˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼ä¸Šéƒ½æœ‰æ•ˆã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn(Object identifier, Class type, boolean sortable, boolean editable, JMenuItem[] menuItems) {
@@ -224,13 +224,13 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param identifier ±êÊ¶¶ÔÏó¡£
-     * @param type ÁĞµÄÀàĞÍ£¬¿ÉÓÃÓÚ±íµÄ¹«¹²äÖÈ¾£¬´ËÖµÈ±Ê¡ÎªObject.class¡£
-     * @param sortable ±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
-     * @param editable ±êÊ¶ÁĞÏÂµÄµ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÔÊĞí¡£
-     * @param menuItems ÁĞ²Ëµ¥Ïî¼¯£¬ÔÚÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñÉÏ¶¼ÓĞĞ§¡£
-     * @param preferredWidth ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param identifier æ ‡è¯†å¯¹è±¡ã€‚
+     * @param type åˆ—çš„ç±»å‹ï¼Œå¯ç”¨äºè¡¨çš„å…¬å…±æ¸²æŸ“ï¼Œæ­¤å€¼ç¼ºçœä¸ºObject.classã€‚
+     * @param sortable æ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
+     * @param editable æ ‡è¯†åˆ—ä¸‹çš„å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœå…è®¸ã€‚
+     * @param menuItems åˆ—èœå•é¡¹é›†ï¼Œåœ¨åˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼ä¸Šéƒ½æœ‰æ•ˆã€‚
+     * @param preferredWidth åˆ—çš„é¦–é€‰å®½åº¦ã€‚
      * @since T3 V1.1
      */
     public ComplexTableColumn(Object identifier, Class type, boolean sortable, boolean editable, JMenuItem[] menuItems, int preferredWidth) {
@@ -270,8 +270,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î type µÄÖµ£¬ÁĞµÄÀàĞÍ£¬¿ÉÓÃÓÚ±íµÄ¹«¹²äÖÈ¾£¬´ËÖµÈ±Ê¡ÎªObject.class¡£
-     * @return ×Ö¶Î type µÄÖµ¡£
+     * è·å–å­—æ®µ type çš„å€¼ï¼Œåˆ—çš„ç±»å‹ï¼Œå¯ç”¨äºè¡¨çš„å…¬å…±æ¸²æŸ“ï¼Œæ­¤å€¼ç¼ºçœä¸ºObject.classã€‚
+     * @return å­—æ®µ type çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Class getType() {
@@ -279,8 +279,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î type µÄÖµ£¬ÁĞµÄÀàĞÍ£¬¿ÉÓÃÓÚ±íµÄ¹«¹²äÖÈ¾£¬´ËÖµÈ±Ê¡ÎªObject.class¡£
-     * @param type ×Ö¶Î type µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ type çš„å€¼ï¼Œåˆ—çš„ç±»å‹ï¼Œå¯ç”¨äºè¡¨çš„å…¬å…±æ¸²æŸ“ï¼Œæ­¤å€¼ç¼ºçœä¸ºObject.classã€‚
+     * @param type å­—æ®µ type çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setType(Class type) {
@@ -288,8 +288,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡×Ö¶Î sortable µÄÖµ£¬±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
-     * @return ×Ö¶Î sortable µÄÖµ¡£
+     * è·å–å­—æ®µ sortable çš„å€¼ï¼Œæ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
+     * @return å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isSortable() {
@@ -297,8 +297,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î sortable µÄÖµ£¬±êÊ¶ÁĞÊÇ·ñÔÊĞíÅÅĞò£¬È±Ê¡ÔÊĞí¡£
-     * @param sortable ×Ö¶Î sortable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ sortable çš„å€¼ï¼Œæ ‡è¯†åˆ—æ˜¯å¦å…è®¸æ’åºï¼Œç¼ºçœå…è®¸ã€‚
+     * @param sortable å­—æ®µ sortable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setSortable(boolean sortable) {
@@ -310,8 +310,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editable µÄÖµ£¬±êÊ¶ÁĞÏÂµÄµ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÔÊĞí¡£
-     * @return ×Ö¶Î editable µÄÖµ¡£
+     * è·å–å­—æ®µ editable çš„å€¼ï¼Œæ ‡è¯†åˆ—ä¸‹çš„å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœå…è®¸ã€‚
+     * @return å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEditable() {
@@ -319,8 +319,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editable µÄÖµ£¬±êÊ¶ÁĞÏÂµÄµ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­£¬È±Ê¡ÔÊĞí¡£
-     * @param editable ×Ö¶Î editable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editable çš„å€¼ï¼Œæ ‡è¯†åˆ—ä¸‹çš„å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ï¼Œç¼ºçœå…è®¸ã€‚
+     * @param editable å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditable(boolean editable) {
@@ -328,8 +328,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡ÅÅĞòË÷Òı£¬¶àÁĞÅÅĞòÖĞ´ËÖµ±êÊ¶ÎªµÚ¼¸ÅÅĞòÁĞ¡£
-     * @return ÅÅĞòË÷Òı¡£
+     * è·å–æ’åºç´¢å¼•ï¼Œå¤šåˆ—æ’åºä¸­æ­¤å€¼æ ‡è¯†ä¸ºç¬¬å‡ æ’åºåˆ—ã€‚
+     * @return æ’åºç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public int getSortIndex() {
@@ -337,8 +337,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÉèÖÃÅÅĞòË÷Òı£¬¶àÁĞÅÅĞòÖĞ´ËÖµ±êÊ¶ÎªµÚ¼¸ÅÅĞòÁĞ£¬×¢Òâ£ºÕâ¸ö·½·¨Ö÷ÒªÓÃÓÚ³õÊ¼±í¸ñÊ±¾ÍÖ¸¶¨ÅÅĞò·½Ê½£¬Õâ¸öÖµµÄÒ»ÖÂĞÔÓÉÓ¦ÓÃ×Ô¼ºÎ¬»¤¡£
-     * @param sortIndex ÅÅĞòË÷Òı¡£
+     * è®¾ç½®æ’åºç´¢å¼•ï¼Œå¤šåˆ—æ’åºä¸­æ­¤å€¼æ ‡è¯†ä¸ºç¬¬å‡ æ’åºåˆ—ï¼Œæ³¨æ„ï¼šè¿™ä¸ªæ–¹æ³•ä¸»è¦ç”¨äºåˆå§‹è¡¨æ ¼æ—¶å°±æŒ‡å®šæ’åºæ–¹å¼ï¼Œè¿™ä¸ªå€¼çš„ä¸€è‡´æ€§ç”±åº”ç”¨è‡ªå·±ç»´æŠ¤ã€‚
+     * @param sortIndex æ’åºç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void setSortIndex(int sortIndex) {
@@ -346,8 +346,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡ÅÅĞò×´Ì¬£¬¼´µ±Ç°ÁĞÊÇ½µĞò¡¢ÉıĞò»¹ÊÇÎŞĞò¡£
-     * @return ÅÅĞò×´Ì¬¡£
+     * è·å–æ’åºçŠ¶æ€ï¼Œå³å½“å‰åˆ—æ˜¯é™åºã€å‡åºè¿˜æ˜¯æ— åºã€‚
+     * @return æ’åºçŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public int getSortState() {
@@ -355,8 +355,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÉèÖÃÅÅĞò×´Ì¬£¬¼´ÉèÖÃµ±Ç°ÁĞÊÇ½µĞò¡¢ÉıĞò»¹ÊÇÎŞĞò¡£
-     * @param sortState ÅÅĞò×´Ì¬¡£
+     * è®¾ç½®æ’åºçŠ¶æ€ï¼Œå³è®¾ç½®å½“å‰åˆ—æ˜¯é™åºã€å‡åºè¿˜æ˜¯æ— åºã€‚
+     * @param sortState æ’åºçŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public void setSortState(int sortState) {
@@ -364,8 +364,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡²Ëµ¥Ïî¼¯£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @return ²Ëµ¥Ïî¼¯¡£
+     * è·å–èœå•é¡¹é›†ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @return èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getMenuItems() {
@@ -373,8 +373,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡ÁĞÍ·²Ëµ¥Ïî¼¯£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @return ÁĞÍ·²Ëµ¥Ïî¼¯¡£
+     * è·å–åˆ—å¤´èœå•é¡¹é›†ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @return åˆ—å¤´èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getHeaderMenuItems() {
@@ -382,8 +382,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * »ñÈ¡ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @return ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¼¯¡£
+     * è·å–åˆ—å•å…ƒæ ¼èœå•é¡¹é›†ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @return åˆ—å•å…ƒæ ¼èœå•é¡¹é›†ã€‚
      * @since T3 V1.1
      */
     public JMenuItem[] getCellMenuItems() {
@@ -391,8 +391,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(Action action) {
@@ -400,9 +400,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî¶¯×÷£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ èœå•é¡¹åŠ¨ä½œï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addAction(int index, Action action) {
@@ -410,8 +410,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeAction(int index) {
@@ -419,8 +419,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî¶¯×÷£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤èœå•é¡¹åŠ¨ä½œï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeAction(Action action) {
@@ -432,9 +432,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param action ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param action èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsAction(Action action) {
@@ -447,8 +447,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ÁĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ åˆ—å¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction åˆ—å¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addHeaderAction(Action headerAction) {
@@ -456,9 +456,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param headerAction ÁĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ åˆ—å¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param headerAction åˆ—å¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addHeaderAction(int index, Action headerAction) {
@@ -466,8 +466,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤åˆ—å¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderAction(int index) {
@@ -475,8 +475,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ÁĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤åˆ—å¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction åˆ—å¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeHeaderAction(Action headerAction) {
@@ -488,9 +488,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞÍ·²Ëµ¥Ïî¶¯×÷£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerAction ÁĞÍ·²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞÍ·²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å¤´èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerAction åˆ—å¤´èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å¤´èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsHeaderAction(Action headerAction) {
@@ -503,8 +503,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellAction ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addCellAction(Action cellAction) {
@@ -512,9 +512,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param cellAction ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * æ·»åŠ åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param cellAction åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void addCellAction(int index, Action cellAction) {
@@ -522,8 +522,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeCellAction(int index) {
@@ -531,8 +531,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellAction ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * ç§»é™¤åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public void removeCellAction(Action cellAction) {
@@ -544,9 +544,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellAction ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¶¯×÷¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellAction åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å•å…ƒæ ¼èœå•é¡¹åŠ¨ä½œã€‚
      * @since T3 V1.1
      */
     public boolean containsCellAction(Action cellAction) {
@@ -559,8 +559,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(JMenuItem menuItem) {
@@ -568,9 +568,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addMenuItem(int index, JMenuItem menuItem) {
@@ -578,8 +578,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤èœå•é¡¹ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(int index) {
@@ -587,8 +587,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * ç§»é™¤èœå•é¡¹ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeMenuItem(JMenuItem menuItem) {
@@ -596,9 +596,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî£¨ÁĞÍ·ºÍÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ï¼ˆåˆ—å¤´å’Œåˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsMenuItem(JMenuItem menuItem) {
@@ -606,8 +606,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞÍ·²Ëµ¥Ïî£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ÁĞÍ·²Ëµ¥Ïî¡£
+     * æ·»åŠ åˆ—å¤´èœå•é¡¹ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem åˆ—å¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -615,9 +615,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞÍ·²Ëµ¥Ïî£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param headerMenuItem ÁĞÍ·²Ëµ¥Ïî¡£
+     * æ·»åŠ åˆ—å¤´èœå•é¡¹ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param headerMenuItem åˆ—å¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addHeaderMenuItem(int index, JMenuItem headerMenuItem) {
@@ -625,8 +625,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞÍ·²Ëµ¥Ïî£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤åˆ—å¤´èœå•é¡¹ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderMenuItem(int index) {
@@ -634,8 +634,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞÍ·²Ëµ¥Ïî£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ÁĞÍ·²Ëµ¥Ïî¡£
+     * ç§»é™¤åˆ—å¤´èœå•é¡¹ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem åˆ—å¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -643,9 +643,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞÍ·²Ëµ¥Ïî£¨½öÁĞÍ·ÓĞĞ§£©¡£
-     * @param headerMenuItem ÁĞÍ·²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞÍ·²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å¤´èœå•é¡¹ï¼ˆä»…åˆ—å¤´æœ‰æ•ˆï¼‰ã€‚
+     * @param headerMenuItem åˆ—å¤´èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å¤´èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsHeaderMenuItem(JMenuItem headerMenuItem) {
@@ -653,8 +653,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellMenuItem ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * æ·»åŠ åˆ—å•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem åˆ—å•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addCellMenuItem(JMenuItem cellMenuItem) {
@@ -662,9 +662,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * Ìí¼ÓÁĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
-     * @param cellMenuItem ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * æ·»åŠ åˆ—å•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
+     * @param cellMenuItem åˆ—å•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void addCellMenuItem(int index, JMenuItem cellMenuItem) {
@@ -672,8 +672,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param index Ë÷Òı¡£
+     * ç§»é™¤åˆ—å•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param index ç´¢å¼•ã€‚
      * @since T3 V1.1
      */
     public void removeCellMenuItem(int index) {
@@ -681,8 +681,8 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÒÆ³ıÁĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellMenuItem ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * ç§»é™¤åˆ—å•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem åˆ—å•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public void removeCellMenuItem(JMenuItem cellMenuItem) {
@@ -690,9 +690,9 @@ public class ComplexTableColumn extends TableColumn implements SwingConstants, I
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞµ¥Ôª¸ñ²Ëµ¥Ïî£¨½öÁĞµÄµ¥Ôª¸ñ¶¼ÓĞĞ§£©¡£
-     * @param cellMenuItem ÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
-     * @return ±êÊ¶ÊÇ·ñ°üº¬Ö¸¶¨µÄÁĞµ¥Ôª¸ñ²Ëµ¥Ïî¡£
+     * åˆ¤æ–­æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å•å…ƒæ ¼èœå•é¡¹ï¼ˆä»…åˆ—çš„å•å…ƒæ ¼éƒ½æœ‰æ•ˆï¼‰ã€‚
+     * @param cellMenuItem åˆ—å•å…ƒæ ¼èœå•é¡¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦åŒ…å«æŒ‡å®šçš„åˆ—å•å…ƒæ ¼èœå•é¡¹ã€‚
      * @since T3 V1.1
      */
     public boolean containsCellMenuItem(JMenuItem cellMenuItem) {

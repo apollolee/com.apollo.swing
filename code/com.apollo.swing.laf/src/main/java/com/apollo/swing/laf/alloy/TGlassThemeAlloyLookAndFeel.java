@@ -1,27 +1,27 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2012-11-8 ÏÂÎç04:54:33¡£
+ * æ­¤ä»£ç åˆ›å»ºäºŽ 2012-11-8 ä¸‹åˆ04:54:33ã€‚
  */
 package com.apollo.swing.laf.alloy;
 
 import com.incors.plaf.alloy.themes.glass.GlassTheme;
 
 /**
- * <p>ÎÄ¼þÃû³Æ£ºTGlassThemeAlloyLookAndFeel.java</p>
- * <p>ÀàÐÍÃèÊö£ºGlassÖ÷ÌâµÄAlloy¹Û¸ÐÀà¡£</p>
- * <p>°æÈ¨ËùÓÐ£º°æÈ¨ËùÓÐ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈÝÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2012-11-8</p>
- * <p>ÐÞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTGlassThemeAlloyLookAndFeel.java</p>
+ * <p>ç±»åž‹æè¿°ï¼šGlassä¸»é¢˜çš„Alloyè§‚æ„Ÿç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜Žï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2012-11-8</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ÐÞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ÐÞ ¸Ä ÈË£º
- *    ÐÞ¸ÄÄÚÈÝ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æŽé•‡
  */
 @SuppressWarnings("all")
 public class TGlassThemeAlloyLookAndFeel extends TAlloyLookAndFeel {
@@ -101,7 +101,7 @@ public class TGlassThemeAlloyLookAndFeel extends TAlloyLookAndFeel {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æž„é€ æ–¹æ³•ã€‚
      */
     public TGlassThemeAlloyLookAndFeel() {
         super(new GlassTheme());

@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-9-14 ÏÂÎç02:37:36¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-9-14 ä¸‹åˆ02:37:36ã€‚
  */
 package com.apollo.swing.component.treetable;
 
@@ -9,22 +9,22 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeTableCell.java</p>
- * <p>ÀàĞÍÃèÊö£ºÊ÷±íµ¥Ôª¸ñÀà£¬·â×°ÁËÊ÷±íÖĞµÄµ¥Ôª¸ñÊı¾İ£¬×¢Òâ£ºÊ÷µ¥Ôª¸ñ³ıÍâ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-14</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeTableCell.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ‘è¡¨å•å…ƒæ ¼ç±»ï¼Œå°è£…äº†æ ‘è¡¨ä¸­çš„å•å…ƒæ ¼æ•°æ®ï¼Œæ³¨æ„ï¼šæ ‘å•å…ƒæ ¼é™¤å¤–ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-14</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 public class TreeTableCell {
@@ -96,32 +96,32 @@ public class TreeTableCell {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * Öµ¡£
+     * å€¼ã€‚
      */
     private Object m_value;
 
     /**
-     * ±êÊ¶ÊÇ·ñ¿É±à¼­¡£
+     * æ ‡è¯†æ˜¯å¦å¯ç¼–è¾‘ã€‚
      */
     private volatile boolean m_editable;
 
     /**
-     * Ç°¾°É«¡£
+     * å‰æ™¯è‰²ã€‚
      */
     private Color m_foreground = null;
 
     /**
-     * ±³¾°É«¡£
+     * èƒŒæ™¯è‰²ã€‚
      */
     private Color m_background = null;
 
     /**
-     * äÖÈ¾Æ÷¡£
+     * æ¸²æŸ“å™¨ã€‚
      */
     private TableCellRenderer m_renderer;
 
     /**
-     * ±à¼­Æ÷¡£
+     * ç¼–è¾‘å™¨ã€‚
      */
     private TableCellEditor m_editor;
 
@@ -132,8 +132,8 @@ public class TreeTableCell {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param value Öµ¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param value å€¼å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public TreeTableCell(Object value) {
@@ -141,11 +141,11 @@ public class TreeTableCell {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param value Öµ¶ÔÏó¡£
-     * @param editable ±êÊ¶µ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­¡£
-     * @param renderer µ¥Ôª¸ñäÖÈ¾Æ÷¡£
-     * @param editor µ¥Ôª¸ñ±à¼­Æ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param value å€¼å¯¹è±¡ã€‚
+     * @param editable æ ‡è¯†å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ã€‚
+     * @param renderer å•å…ƒæ ¼æ¸²æŸ“å™¨ã€‚
+     * @param editor å•å…ƒæ ¼ç¼–è¾‘å™¨ã€‚
      * @since T3 V1.1
      */
     public TreeTableCell(Object value, boolean editable, TableCellRenderer renderer, TableCellEditor editor) {
@@ -170,8 +170,8 @@ public class TreeTableCell {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î value µÄÖµ£¬Öµ¶ÔÏó¡£
-     * @return ×Ö¶Î value µÄÖµ¡£
+     * è·å–å­—æ®µ value çš„å€¼ï¼Œå€¼å¯¹è±¡ã€‚
+     * @return å­—æ®µ value çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Object getValue() {
@@ -179,8 +179,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î value µÄÖµ£¬Öµ¶ÔÏó¡£
-     * @param value ×Ö¶Î value µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ value çš„å€¼ï¼Œå€¼å¯¹è±¡ã€‚
+     * @param value å­—æ®µ value çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setValue(Object value) {
@@ -188,8 +188,8 @@ public class TreeTableCell {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editable µÄÖµ£¬±êÊ¶µ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­¡£
-     * @return ×Ö¶Î editable µÄÖµ¡£
+     * è·å–å­—æ®µ editable çš„å€¼ï¼Œæ ‡è¯†å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ã€‚
+     * @return å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEditable() {
@@ -197,8 +197,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editable µÄÖµ£¬±êÊ¶µ¥Ôª¸ñÊÇ·ñÔÊĞí±à¼­¡£
-     * @param editable ×Ö¶Î editable µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editable çš„å€¼ï¼Œæ ‡è¯†å•å…ƒæ ¼æ˜¯å¦å…è®¸ç¼–è¾‘ã€‚
+     * @param editable å­—æ®µ editable çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditable(boolean editable) {
@@ -206,8 +206,8 @@ public class TreeTableCell {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î foreground µÄÖµ£¬µ¥Ôª¸ñµÄÇ°¾°É«¡£
-     * @return ×Ö¶Î foreground µÄÖµ¡£
+     * è·å–å­—æ®µ foreground çš„å€¼ï¼Œå•å…ƒæ ¼çš„å‰æ™¯è‰²ã€‚
+     * @return å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getForeground() {
@@ -215,8 +215,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î foreground µÄÖµ£¬µ¥Ôª¸ñµÄÇ°±³¾°É«¡£
-     * @param foreground ×Ö¶Î foreground µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ foreground çš„å€¼ï¼Œå•å…ƒæ ¼çš„å‰èƒŒæ™¯è‰²ã€‚
+     * @param foreground å­—æ®µ foreground çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setForeground(Color foreground) {
@@ -224,8 +224,8 @@ public class TreeTableCell {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î background µÄÖµ£¬µ¥Ôª¸ñµÄ±³¾°É«£¬×¢Òâ£º±í¸ñ×ÔÉí¿É¸ù¾İµ¥Ôª¸ñÊÇ·ñ¿É±à¼­À´¸Ä±äµ¥Ôª¸ñÏÔÊ¾µÄ±³¾°É«£¬²»¿É±à¼­µ¥Ôª¸ñµÄ±³¾°É«ÎªÇ³»ÒÉ«£¬µ«Èç¹ûµ¥Ôª¸ñÓĞ×Ô¼ºµÄäÖÈ¾Æ÷»ò±³¾°É«Ôò±í¸ñÒÔµ¥Ôª¸ñÉèÖÃµÄäÖÈ¾É«Îª×¼¡£
-     * @return ×Ö¶Î background µÄÖµ¡£
+     * è·å–å­—æ®µ background çš„å€¼ï¼Œå•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œæ³¨æ„ï¼šè¡¨æ ¼è‡ªèº«å¯æ ¹æ®å•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘æ¥æ”¹å˜å•å…ƒæ ¼æ˜¾ç¤ºçš„èƒŒæ™¯è‰²ï¼Œä¸å¯ç¼–è¾‘å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ä¸ºæµ…ç°è‰²ï¼Œä½†å¦‚æœå•å…ƒæ ¼æœ‰è‡ªå·±çš„æ¸²æŸ“å™¨æˆ–èƒŒæ™¯è‰²åˆ™è¡¨æ ¼ä»¥å•å…ƒæ ¼è®¾ç½®çš„æ¸²æŸ“è‰²ä¸ºå‡†ã€‚
+     * @return å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public Color getBackground() {
@@ -233,8 +233,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î background µÄÖµ£¬µ¥Ôª¸ñµÄ±³¾°É«£¬×¢Òâ£º±í¸ñ×ÔÉí¿É¸ù¾İµ¥Ôª¸ñÊÇ·ñ¿É±à¼­À´¸Ä±äµ¥Ôª¸ñÏÔÊ¾µÄ±³¾°É«£¬²»¿É±à¼­µ¥Ôª¸ñµÄ±³¾°É«ÎªÇ³»ÒÉ«£¬µ«Èç¹ûµ¥Ôª¸ñÓĞ×Ô¼ºµÄäÖÈ¾Æ÷»ò±³¾°É«Ôò±í¸ñÒÔµ¥Ôª¸ñÉèÖÃµÄäÖÈ¾É«Îª×¼¡£
-     * @param background ×Ö¶Î background µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ background çš„å€¼ï¼Œå•å…ƒæ ¼çš„èƒŒæ™¯è‰²ï¼Œæ³¨æ„ï¼šè¡¨æ ¼è‡ªèº«å¯æ ¹æ®å•å…ƒæ ¼æ˜¯å¦å¯ç¼–è¾‘æ¥æ”¹å˜å•å…ƒæ ¼æ˜¾ç¤ºçš„èƒŒæ™¯è‰²ï¼Œä¸å¯ç¼–è¾‘å•å…ƒæ ¼çš„èƒŒæ™¯è‰²ä¸ºæµ…ç°è‰²ï¼Œä½†å¦‚æœå•å…ƒæ ¼æœ‰è‡ªå·±çš„æ¸²æŸ“å™¨æˆ–èƒŒæ™¯è‰²åˆ™è¡¨æ ¼ä»¥å•å…ƒæ ¼è®¾ç½®çš„æ¸²æŸ“è‰²ä¸ºå‡†ã€‚
+     * @param background å­—æ®µ background çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setBackground(Color background) {
@@ -242,8 +242,8 @@ public class TreeTableCell {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î renderer µÄÖµ£¬µ¥Ôª¸ñµÄäÖÈ¾Æ÷¡£
-     * @return ×Ö¶Î renderer µÄÖµ¡£
+     * è·å–å­—æ®µ renderer çš„å€¼ï¼Œå•å…ƒæ ¼çš„æ¸²æŸ“å™¨ã€‚
+     * @return å­—æ®µ renderer çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public TableCellRenderer getRenderer() {
@@ -251,8 +251,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î renderer µÄÖµ£¬µ¥Ôª¸ñµÄäÖÈ¾Æ÷¡£
-     * @param renderer ×Ö¶Î renderer µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ renderer çš„å€¼ï¼Œå•å…ƒæ ¼çš„æ¸²æŸ“å™¨ã€‚
+     * @param renderer å­—æ®µ renderer çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setRenderer(TableCellRenderer renderer) {
@@ -260,8 +260,8 @@ public class TreeTableCell {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î editor µÄÖµ£¬µ¥Ôª¸ñµÄ±à¼­Æ÷¡£
-     * @return ×Ö¶Î editor µÄÖµ¡£
+     * è·å–å­—æ®µ editor çš„å€¼ï¼Œå•å…ƒæ ¼çš„ç¼–è¾‘å™¨ã€‚
+     * @return å­—æ®µ editor çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public TableCellEditor getEditor() {
@@ -269,8 +269,8 @@ public class TreeTableCell {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î editor µÄÖµ£¬µ¥Ôª¸ñµÄ±à¼­Æ÷¡£
-     * @param editor ×Ö¶Î editor µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ editor çš„å€¼ï¼Œå•å…ƒæ ¼çš„ç¼–è¾‘å™¨ã€‚
+     * @param editor å­—æ®µ editor çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEditor(TableCellEditor editor) {

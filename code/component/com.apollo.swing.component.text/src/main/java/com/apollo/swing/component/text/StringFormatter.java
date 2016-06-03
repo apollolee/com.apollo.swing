@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-3-31 ÉÏÎç09:34:28¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-3-31 ä¸Šåˆ09:34:28ã€‚
  */
 package com.apollo.swing.component.text;
 
@@ -7,22 +7,22 @@ import java.math.BigInteger;
 import java.text.ParseException;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºStringFormatter.java</p>
- * <p>ÀàĞÍÃèÊö£º×Ö·û´®¸ñÊ½Æ÷£¬×¢Òâ£º´Ë×é¼ş»ùÓÚJFormattedTextField£¬Òò´ËÓ¦ÓÃÕßÓ¦¸ÃÊ×ÏÈÁË½âJFormattedTextField×é¼şµÄÓÃ·¨¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-3-31</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šStringFormatter.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå­—ç¬¦ä¸²æ ¼å¼å™¨ï¼Œæ³¨æ„ï¼šæ­¤ç»„ä»¶åŸºäºJFormattedTextFieldï¼Œå› æ­¤åº”ç”¨è€…åº”è¯¥é¦–å…ˆäº†è§£JFormattedTextFieldç»„ä»¶çš„ç”¨æ³•ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-3-31</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -87,27 +87,27 @@ public class StringFormatter extends BaseFormatter {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ×îĞ¡³¤¶È¡£
+     * æœ€å°é•¿åº¦ã€‚
      */
     protected BigInteger m_minLength;
 
     /**
-     * ×î´ó³¤¶È¡£
+     * æœ€å¤§é•¿åº¦ã€‚
      */
     protected BigInteger m_maxLength;
 
     /**
-     * ×Ö·û¼¯¡£
+     * å­—ç¬¦é›†ã€‚
      */
     protected String m_characters;
 
     /**
-     * ±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨¡£
+     * æ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ã€‚
      */
     protected boolean m_legal;
 
     /**
-     * ÕıÔò±í´ïÊ½¡£
+     * æ­£åˆ™è¡¨è¾¾å¼ã€‚
      */
     protected String m_regex;
 
@@ -126,7 +126,7 @@ public class StringFormatter extends BaseFormatter {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public StringFormatter() {
@@ -134,14 +134,14 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param isNeedInput ¶¨ÒåÊäÈë×é¼şÊÇ·ñ±ØĞëÊäÈëĞÅÏ¢£¬Èç¹û²»ÊÇ±ØĞëÊäÈëÔò±íÊ¾×é¼ş¿ÉÒÔ·µ»ØnullÖµ£¬Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip µ±ÊäÈë²»·ûºÏÌõ¼şÊ±£¬¶¨Òå×é¼şÊÇ·ñÔÚÊäÈëµÄÎ»ÖÃµ¯³ötooltipÌáÊ¾ÓÃ»§ÄÄÀïÊäÈë´íÁË£¬Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minLength ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @param maxLength ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param characters ×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param legal ±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param regex ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param isNeedInput å®šä¹‰è¾“å…¥ç»„ä»¶æ˜¯å¦å¿…é¡»è¾“å…¥ä¿¡æ¯ï¼Œå¦‚æœä¸æ˜¯å¿…é¡»è¾“å…¥åˆ™è¡¨ç¤ºç»„ä»¶å¯ä»¥è¿”å›nullå€¼ï¼Œä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip å½“è¾“å…¥ä¸ç¬¦åˆæ¡ä»¶æ—¶ï¼Œå®šä¹‰ç»„ä»¶æ˜¯å¦åœ¨è¾“å…¥çš„ä½ç½®å¼¹å‡ºtooltipæç¤ºç”¨æˆ·å“ªé‡Œè¾“å…¥é”™äº†ï¼Œä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @param maxLength å…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param characters å­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param legal æ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param regex æ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
      * @since T3 V1.1
      */
     public StringFormatter(boolean isNeedInput,
@@ -159,7 +159,7 @@ public class StringFormatter extends BaseFormatter {
         setLegal(legal);
         setRegex(regex);
 
-        if (m_tipText == null) { //ÉÏÃæµÄset·½·¨¶¼Î´Ö´ĞĞµ½updateTipText()¾Í·µ»ØÁË
+        if (m_tipText == null) { //ä¸Šé¢çš„setæ–¹æ³•éƒ½æœªæ‰§è¡Œåˆ°updateTipText()å°±è¿”å›äº†
             updateTipText();
         }
     }
@@ -179,8 +179,8 @@ public class StringFormatter extends BaseFormatter {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î minLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @return ×Ö¶Î minLength µÄÖµ¡£
+     * è·å–å­—æ®µ minLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @return å­—æ®µ minLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getMinLength() {
@@ -188,12 +188,12 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î minLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×îĞ¡³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬nullºÍ0Ò»Ñù¡£
-     * @param minLength ×Ö¶Î minLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ minLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å°é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œnullå’Œ0ä¸€æ ·ã€‚
+     * @param minLength å­—æ®µ minLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMinLength(BigInteger minLength) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_minLength, minLength)) {
             return;
         }
@@ -210,8 +210,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @return ×Ö¶Î maxLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @return å­—æ®µ maxLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public BigInteger getMaxLength() {
@@ -219,12 +219,12 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxLength µÄÖµ£¬ÔÊĞíÊäÈë×Ö·û´®µÄ×î´ó³¤¶È£¬ÓÃ°ü×°¶ÔÏóµÄ£¬ÔÊĞíÎªnull£¬±íÊ¾×Ö·û¸öÊıÃ»ÓĞÉÏÏŞ£¬ÔÚÌáÊ¾µÄtooltipÖĞÓÃÕıÎŞÇî±íÊ¾¡£
-     * @param maxLength ×Ö¶Î maxLength µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxLength çš„å€¼ï¼Œå…è®¸è¾“å…¥å­—ç¬¦ä¸²çš„æœ€å¤§é•¿åº¦ï¼Œç”¨åŒ…è£…å¯¹è±¡çš„ï¼Œå…è®¸ä¸ºnullï¼Œè¡¨ç¤ºå­—ç¬¦ä¸ªæ•°æ²¡æœ‰ä¸Šé™ï¼Œåœ¨æç¤ºçš„tooltipä¸­ç”¨æ­£æ— ç©·è¡¨ç¤ºã€‚
+     * @param maxLength å­—æ®µ maxLength çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaxLength(BigInteger maxLength) {
-        /* ¹ıÂËÖØ¸´ÉèÖÃ */
+        /* è¿‡æ»¤é‡å¤è®¾ç½® */
         if (isRepeated(m_maxLength, maxLength)) {
             return;
         }
@@ -241,8 +241,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î characters µÄÖµ£¬×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @return ×Ö¶Î characters µÄÖµ¡£
+     * è·å–å­—æ®µ characters çš„å€¼ï¼Œå­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @return å­—æ®µ characters çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public String getCharacters() {
@@ -250,8 +250,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î characters µÄÖµ£¬×Ö·û¼¯£¬ÊÇÒ»¸ö×Ö·ûÏŞÖÆÌõ¼ş£¬¸ù¾İlegal²ÎÊı¾ö¶¨ÊÇºÏ·¨×Ö·û¼¯»¹ÊÇ·Ç·¨×Ö·û¼¯£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param characters ×Ö¶Î characters µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ characters çš„å€¼ï¼Œå­—ç¬¦é›†ï¼Œæ˜¯ä¸€ä¸ªå­—ç¬¦é™åˆ¶æ¡ä»¶ï¼Œæ ¹æ®legalå‚æ•°å†³å®šæ˜¯åˆæ³•å­—ç¬¦é›†è¿˜æ˜¯éæ³•å­—ç¬¦é›†ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param characters å­—æ®µ characters çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setCharacters(String characters) {
@@ -260,8 +260,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î legal µÄÖµ£¬±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @return ×Ö¶Î legal µÄÖµ¡£
+     * è·å–å­—æ®µ legal çš„å€¼ï¼Œæ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @return å­—æ®µ legal çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isLegal() {
@@ -269,8 +269,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î legal µÄÖµ£¬±êÊ¶×Ö·û¼¯ÊÇ·ñºÏ·¨£¬×¢Òâ£ºÈç¹ûÉèÖÃÁËregexÔò´Ë²ÎÊıÎŞĞ§£¬ÒÔregexÎª×¼¡£
-     * @param legal ×Ö¶Î legal µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ legal çš„å€¼ï¼Œæ ‡è¯†å­—ç¬¦é›†æ˜¯å¦åˆæ³•ï¼Œæ³¨æ„ï¼šå¦‚æœè®¾ç½®äº†regexåˆ™æ­¤å‚æ•°æ— æ•ˆï¼Œä»¥regexä¸ºå‡†ã€‚
+     * @param legal å­—æ®µ legal çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setLegal(boolean legal) {
@@ -279,8 +279,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î regex µÄÖµ£¬ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @return ×Ö¶Î regex µÄÖµ¡£
+     * è·å–å­—æ®µ regex çš„å€¼ï¼Œæ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @return å­—æ®µ regex çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public String getRegex() {
@@ -288,8 +288,8 @@ public class StringFormatter extends BaseFormatter {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î regex µÄÖµ£¬ÕıÔò±í´ïÊ½£¬ÓÃÓÚÏŞÖÆÊäÈëµÄ×Ö·û´®£¬È±Ê¡Îªnull¡£
-     * @param regex ×Ö¶Î regex µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ regex çš„å€¼ï¼Œæ­£åˆ™è¡¨è¾¾å¼ï¼Œç”¨äºé™åˆ¶è¾“å…¥çš„å­—ç¬¦ä¸²ï¼Œç¼ºçœä¸ºnullã€‚
+     * @param regex å­—æ®µ regex çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setRegex(String regex) {
@@ -301,12 +301,12 @@ public class StringFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#stringToValue(java.lang.String)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´valueÖµ²»»á¸Ä±ä£¬¼´×î½üÒ»´ÎµÄÖµ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆvalueå€¼ä¸ä¼šæ”¹å˜ï¼Œå³æœ€è¿‘ä¸€æ¬¡çš„å€¼ã€‚
      */
     public Object stringToValue(String text) throws ParseException {
         verify(text, true);
 
-        /* ÅĞ¶ÏÎÄ±¾ÊÇ·ñÎª¿Õ£¬×¢Òâ£ºÈç¹ûÎª¿ÕÍ¬Ê±Ò²±íÊ¾m_isNeedInputÊÇfalse£¬·ñÔòÔç¾Í»áÔÚÑéÖ¤µÄÊ±ºòÅ×³öÒì³£ÁË */
+        /* åˆ¤æ–­æ–‡æœ¬æ˜¯å¦ä¸ºç©ºï¼Œæ³¨æ„ï¼šå¦‚æœä¸ºç©ºåŒæ—¶ä¹Ÿè¡¨ç¤ºm_isNeedInputæ˜¯falseï¼Œå¦åˆ™æ—©å°±ä¼šåœ¨éªŒè¯çš„æ—¶å€™æŠ›å‡ºå¼‚å¸¸äº† */
         if ("".equals(text) && !m_isNeedInput) {
             return null;
         }
@@ -316,10 +316,10 @@ public class StringFormatter extends BaseFormatter {
 
     /**
      * @see javax.swing.JFormattedTextField.AbstractFormatter#valueToString(java.lang.Object)
-     * @throws ParseException ×¢Òâ£ºÈç¹ûÅ×³ö´ËÒì³££¬ÄÇÃ´textÎÄ±¾ÄÚÈİÔò»áÖÃÎª¿Õ¡£
+     * @throws ParseException æ³¨æ„ï¼šå¦‚æœæŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œé‚£ä¹ˆtextæ–‡æœ¬å†…å®¹åˆ™ä¼šç½®ä¸ºç©ºã€‚
      */
     public String valueToString(Object value) throws ParseException {
-        /* ÅĞ¶ÏValueÖµÊÇ·ñºÏ·¨ */
+        /* åˆ¤æ–­Valueå€¼æ˜¯å¦åˆæ³• */
         if (value == null || !(value instanceof String)) {
             return "";
 
@@ -333,21 +333,21 @@ public class StringFormatter extends BaseFormatter {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÑéÖ¤ÖÆ¶¨µÄ¹æÔòÊÇ·ñºÏ·¨¡£
-     * @return Îªtrue±íÊ¾ÖÆ¶¨µÄ¹æÔòºÏ·¨£¬Îªfalse±íÊ¾ÖÆ¶¨µÄ¹æÔò²»ºÏ·¨¡£
+     * éªŒè¯åˆ¶å®šçš„è§„åˆ™æ˜¯å¦åˆæ³•ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™åˆæ³•ï¼Œä¸ºfalseè¡¨ç¤ºåˆ¶å®šçš„è§„åˆ™ä¸åˆæ³•ã€‚
      */
     protected boolean verifyRule() {
-        /* ×îĞ¡³¤¶È²»ÄÜĞ¡ÓÚ0 */
+        /* æœ€å°é•¿åº¦ä¸èƒ½å°äº0 */
         if (m_minLength != null && m_minLength.compareTo(BigInteger.ZERO) < 0) {
             return false;
         }
 
-        /* ×îĞ¡ÖµºÍ×î´óÖµÖ»ÒªÓĞÒ»¸ö²»ÉèÖÃ£¬ÄÇÃ´¶ÔÓ¦ËùÓĞ¹æÔò¶¼ÊÇºÏ·¨µÄ */
+        /* æœ€å°å€¼å’Œæœ€å¤§å€¼åªè¦æœ‰ä¸€ä¸ªä¸è®¾ç½®ï¼Œé‚£ä¹ˆå¯¹åº”æ‰€æœ‰è§„åˆ™éƒ½æ˜¯åˆæ³•çš„ */
         if (m_minLength == null || m_maxLength == null) {
             return true;
         }
 
-        /* ×îĞ¡Öµ´óÓÚ×î´óÖµ£¨»òÕß×î´óÖµĞ¡ÓÚ×îĞ¡Öµ£©ÊÇ²»ºÏ·¨µÄ */
+        /* æœ€å°å€¼å¤§äºæœ€å¤§å€¼ï¼ˆæˆ–è€…æœ€å¤§å€¼å°äºæœ€å°å€¼ï¼‰æ˜¯ä¸åˆæ³•çš„ */
         if (m_minLength.compareTo(m_maxLength) > 0) {
             return false;
         }
@@ -363,17 +363,17 @@ public class StringFormatter extends BaseFormatter {
     protected void verify(String text, boolean isFull) throws ParseException {
         int length = text.length();
 
-        /* ÑéÖ¤×îĞ¡³¤¶È */
+        /* éªŒè¯æœ€å°é•¿åº¦ */
         if (isFull && m_minLength != null && length < m_minLength.intValue()) {
             throwParseException(I18N_INFO_LENGTHISTO0SHORT);
         }
 
-        /* ÑéÖ¤×î´ó³¤¶È */
+        /* éªŒè¯æœ€å¤§é•¿åº¦ */
         if (m_maxLength != null && length > m_maxLength.intValue()) {
             throwParseException(I18N_INFO_LENGTHISTO0LONG);
         }
 
-        /* ÑéÖ¤×Ö·û¼¯ */
+        /* éªŒè¯å­—ç¬¦é›† */
         if (m_characters != null) {
             char[] characters = text.toCharArray();
             for (int i = 0; i < characters.length; i++) {
@@ -390,7 +390,7 @@ public class StringFormatter extends BaseFormatter {
             }
         }
 
-        /* ÑéÖ¤ÕıÔò±í´ïÊ½ */
+        /* éªŒè¯æ­£åˆ™è¡¨è¾¾å¼ */
         if (isFull && m_regex != null && !text.matches(m_regex)) {
             throwParseException(I18N_INFO_FORMATISERROR);
         }

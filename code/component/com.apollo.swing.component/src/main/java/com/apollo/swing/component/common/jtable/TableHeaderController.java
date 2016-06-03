@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-6-5 ÉÏÎç11:38:55
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-6-5 ä¸Šåˆ11:38:55
  */
 package com.apollo.swing.component.common.jtable;
 
@@ -17,22 +17,22 @@ import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTTableHeaderController.java</p>
- * <p>ÎÄ¼şÃèÊö£ºJTable±íÍ·¿ØÖÆÆ÷£¬¿ÉÒÔ·½±ãµÄ¿ØÖÆ±íÍ·µÄ¸÷ÖÖ¸ºÔğ²Ù×÷¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-6-5</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTTableHeaderController.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šJTableè¡¨å¤´æ§åˆ¶å™¨ï¼Œå¯ä»¥æ–¹ä¾¿çš„æ§åˆ¶è¡¨å¤´çš„å„ç§è´Ÿè´£æ“ä½œã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-6-5</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public final class TableHeaderController implements MouseMotionListener {
@@ -48,9 +48,9 @@ public final class TableHeaderController implements MouseMotionListener {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ±íÍ·¿ØÖÆÆ÷µ¥²ÎÊı¹¹ÔìÆ÷¡£
-     * @param controlledTableHeader ĞèÒª±»¿ØÖÆµÄ±í£¬ÕâÀïµÄ±í±ØĞëÊÇÍê³É±íÄ£ĞÍºÍÁĞÄ£ĞÍÒÔ¼°±íÍ·³õÊ¼»¯µÄ¡£
-     * @exception IllegalArgumentException ĞèÒª±»¿ØÖÆµÄ±íÎªnullÊ±Ôò»áÅ×³ö´ËÒì³£¡£
+     * è¡¨å¤´æ§åˆ¶å™¨å•å‚æ•°æ„é€ å™¨ã€‚
+     * @param controlledTableHeader éœ€è¦è¢«æ§åˆ¶çš„è¡¨ï¼Œè¿™é‡Œçš„è¡¨å¿…é¡»æ˜¯å®Œæˆè¡¨æ¨¡å‹å’Œåˆ—æ¨¡å‹ä»¥åŠè¡¨å¤´åˆå§‹åŒ–çš„ã€‚
+     * @exception IllegalArgumentException éœ€è¦è¢«æ§åˆ¶çš„è¡¨ä¸ºnullæ—¶åˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public TableHeaderController(JTableHeader controlledTableHeader) {
         if (controlledTableHeader == null) {
@@ -80,9 +80,9 @@ public final class TableHeaderController implements MouseMotionListener {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * Ìí¼ÓÒ»¸ö½ûÖ¹¸Ä±ä´ÎĞòµÄÁĞ£¨Ïß³Ì°²È«£©¡£
-     * @param columnViewIndex ÊÓÍ¼ÖĞµÄÁĞË÷Òı£¬ÖØ¸´µÄË÷ÒıÖ»Ìí¼ÓÒ»´Î¡£
-     * @exception IllegalArgumentException Èç¹ûÊÓÍ¼ÁĞË÷ÒıÖµ²»·ûºÏ¹æ·¶Ôò»áÅ×³ö´ËÒì³£¡£
+     * æ·»åŠ ä¸€ä¸ªç¦æ­¢æ”¹å˜æ¬¡åºçš„åˆ—ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @param columnViewIndex è§†å›¾ä¸­çš„åˆ—ç´¢å¼•ï¼Œé‡å¤çš„ç´¢å¼•åªæ·»åŠ ä¸€æ¬¡ã€‚
+     * @exception IllegalArgumentException å¦‚æœè§†å›¾åˆ—ç´¢å¼•å€¼ä¸ç¬¦åˆè§„èŒƒåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void addDisabledReorderingColumnViewIndex(int columnViewIndex) {
         if (columnViewIndex < 0 || columnViewIndex >= m_controlledTableHeader.getColumnModel().getColumnCount()) {
@@ -93,9 +93,9 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * Ìí¼ÓÒ»¸ö½ûÖ¹¸Ä±ä¿í¶ÈµÄÁĞ£¬ÕâÀïµÄ¸Ä±ä¿í¶ÈÊÇÏà¶ÔµÄ£¬ĞèÒª¿´AutoResizeModeµÄ²ßÂÔ£¨·ÇÏß³Ì°²È«£¬½¨Òé·ÅÔÚawtÊÂ¼şÏß³ÌÖĞÔËĞĞ£©¡£
-     * @param columnViewIndex ÊÓÍ¼ÖĞµÄÁĞË÷Òı£¬ÖØ¸´µÄË÷ÒıÖ»Ìí¼ÓÒ»´Î¡£
-     * @exception IllegalArgumentException Èç¹ûÊÓÍ¼ÁĞË÷ÒıÖµ²»·ûºÏ¹æ·¶Ôò»áÅ×³ö´ËÒì³£¡£
+     * æ·»åŠ ä¸€ä¸ªç¦æ­¢æ”¹å˜å®½åº¦çš„åˆ—ï¼Œè¿™é‡Œçš„æ”¹å˜å®½åº¦æ˜¯ç›¸å¯¹çš„ï¼Œéœ€è¦çœ‹AutoResizeModeçš„ç­–ç•¥ï¼ˆéçº¿ç¨‹å®‰å…¨ï¼Œå»ºè®®æ”¾åœ¨awtäº‹ä»¶çº¿ç¨‹ä¸­è¿è¡Œï¼‰ã€‚
+     * @param columnViewIndex è§†å›¾ä¸­çš„åˆ—ç´¢å¼•ï¼Œé‡å¤çš„ç´¢å¼•åªæ·»åŠ ä¸€æ¬¡ã€‚
+     * @exception IllegalArgumentException å¦‚æœè§†å›¾åˆ—ç´¢å¼•å€¼ä¸ç¬¦åˆè§„èŒƒåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void addDisabledResizingColumnViewIndex(int columnViewIndex) {
         if (columnViewIndex < 0 || columnViewIndex >= m_controlledTableHeader.getColumnModel().getColumnCount()) {
@@ -103,16 +103,16 @@ public final class TableHeaderController implements MouseMotionListener {
         }
 
         if (addColumnViewIndex(columnViewIndex, m_disabledResizingColumnViewIndexs)) {
-            /* TODO ÏÂÃæ´úÂëÏß³Ì²»°²È« */
-            /* TODO °Ñ±¾ÁĞÉèÖÃÎª²»¿É¸Ä±ä¿í¶È£¬ÕâÀïµÄ¸Ä±ä¿í¶ÈÊÇÏà¶ÔµÄ£¬ĞèÒª¿´AutoResizeModeµÄ²ßÂÔ£¬ÀıÈçÍ¨¹ıÍÏ¶¯½ûÖ¹ÁĞºÍÇ°Ò»ÁĞÖ®¼äµÄ·Ö¸îÏßÒ²¿ÉÒÔ¸Ä±ä */
+            /* TODO ä¸‹é¢ä»£ç çº¿ç¨‹ä¸å®‰å…¨ */
+            /* TODO æŠŠæœ¬åˆ—è®¾ç½®ä¸ºä¸å¯æ”¹å˜å®½åº¦ï¼Œè¿™é‡Œçš„æ”¹å˜å®½åº¦æ˜¯ç›¸å¯¹çš„ï¼Œéœ€è¦çœ‹AutoResizeModeçš„ç­–ç•¥ï¼Œä¾‹å¦‚é€šè¿‡æ‹–åŠ¨ç¦æ­¢åˆ—å’Œå‰ä¸€åˆ—ä¹‹é—´çš„åˆ†å‰²çº¿ä¹Ÿå¯ä»¥æ”¹å˜ */
             m_controlledTableHeader.getColumnModel().getColumn(columnViewIndex).setResizable(false);
         }
     }
 
     /**
-     * Ìí¼ÓÒ»¸ö½ûÖ¹×óÒÆµÄÁĞ£¨Ïß³Ì°²È«£©¡£
-     * @param columnViewIndex ÊÓÍ¼ÖĞµÄÁĞË÷Òı£¬ÖØ¸´µÄË÷ÒıÖ»Ìí¼ÓÒ»´Î¡£
-     * @exception IllegalArgumentException Èç¹ûÊÓÍ¼ÁĞË÷ÒıÖµ²»·ûºÏ¹æ·¶Ôò»áÅ×³ö´ËÒì³£¡£
+     * æ·»åŠ ä¸€ä¸ªç¦æ­¢å·¦ç§»çš„åˆ—ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @param columnViewIndex è§†å›¾ä¸­çš„åˆ—ç´¢å¼•ï¼Œé‡å¤çš„ç´¢å¼•åªæ·»åŠ ä¸€æ¬¡ã€‚
+     * @exception IllegalArgumentException å¦‚æœè§†å›¾åˆ—ç´¢å¼•å€¼ä¸ç¬¦åˆè§„èŒƒåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void addDisabledMovingLeftColumnViewIndex(int columnViewIndex) {
         if (columnViewIndex < 0 || columnViewIndex >= m_controlledTableHeader.getColumnModel().getColumnCount()) {
@@ -123,9 +123,9 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * Ìí¼ÓÒ»¸ö½ûÖ¹ÓÒÒÆµÄÁĞ£¨Ïß³Ì°²È«£©¡£
-     * @param columnViewIndex ÊÓÍ¼ÖĞµÄÁĞË÷Òı£¬ÖØ¸´µÄË÷ÒıÖ»Ìí¼ÓÒ»´Î¡£
-     * @exception IllegalArgumentException Èç¹ûÊÓÍ¼ÁĞË÷ÒıÖµ²»·ûºÏ¹æ·¶Ôò»áÅ×³ö´ËÒì³£¡£
+     * æ·»åŠ ä¸€ä¸ªç¦æ­¢å³ç§»çš„åˆ—ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @param columnViewIndex è§†å›¾ä¸­çš„åˆ—ç´¢å¼•ï¼Œé‡å¤çš„ç´¢å¼•åªæ·»åŠ ä¸€æ¬¡ã€‚
+     * @exception IllegalArgumentException å¦‚æœè§†å›¾åˆ—ç´¢å¼•å€¼ä¸ç¬¦åˆè§„èŒƒåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void addDisabledMovingRightColumnViewIndex(int columnViewIndex) {
         if (columnViewIndex < 0 || columnViewIndex >= m_controlledTableHeader.getColumnModel().getColumnCount()) {
@@ -136,46 +136,46 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * »ñÈ¡ËùÓĞ½ûÖ¹¸Ä±ä´ÎĞòµÄÁĞµÄÊÓÍ¼Ë÷Òı£¨Ïß³Ì°²È«£©¡£
-     * @return ËùÓĞ½ûÖ¹¸Ä±ä´ÎĞòµÄÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * è·å–æ‰€æœ‰ç¦æ­¢æ”¹å˜æ¬¡åºçš„åˆ—çš„è§†å›¾ç´¢å¼•ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @return æ‰€æœ‰ç¦æ­¢æ”¹å˜æ¬¡åºçš„åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public int[] getDisabledReorderingColumnViewIndexs() {
         return getColumnViewIndexs(m_disabledReorderingColumnViewIndexs);
     }
 
     /**
-     * »ñÈ¡ËùÓĞ½ûÖ¹¸Ä±ä¿í¶ÈµÄÁĞµÄÊÓÍ¼Ë÷Òı£¨Ïß³Ì°²È«£©¡£
-     * @return ËùÓĞ½ûÖ¹¸Ä±ä¿í¶ÈµÄÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * è·å–æ‰€æœ‰ç¦æ­¢æ”¹å˜å®½åº¦çš„åˆ—çš„è§†å›¾ç´¢å¼•ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @return æ‰€æœ‰ç¦æ­¢æ”¹å˜å®½åº¦çš„åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public int[] getDisabledResizingColumnViewIndexs() {
         return getColumnViewIndexs(m_disabledResizingColumnViewIndexs);
     }
 
     /**
-     * »ñÈ¡ËùÓĞ½ûÖ¹×óÒÆµÄÁĞµÄÊÓÍ¼Ë÷Òı£¨Ïß³Ì°²È«£©¡£
-     * @return ËùÓĞ½ûÖ¹×óÒÆµÄÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * è·å–æ‰€æœ‰ç¦æ­¢å·¦ç§»çš„åˆ—çš„è§†å›¾ç´¢å¼•ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @return æ‰€æœ‰ç¦æ­¢å·¦ç§»çš„åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public int[] getDisabledMovingLeftColumnViewIndexs() {
         return getColumnViewIndexs(m_disabledMovingLeftColumnViewIndexs);
     }
 
     /**
-     * »ñÈ¡ËùÓĞ½ûÖ¹ÓÒÒÆµÄÁĞµÄÊÓÍ¼Ë÷Òı£¨Ïß³Ì°²È«£©¡£
-     * @return ËùÓĞ½ûÖ¹ÓÒÒÆµÄÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * è·å–æ‰€æœ‰ç¦æ­¢å³ç§»çš„åˆ—çš„è§†å›¾ç´¢å¼•ï¼ˆçº¿ç¨‹å®‰å…¨ï¼‰ã€‚
+     * @return æ‰€æœ‰ç¦æ­¢å³ç§»çš„åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public int[] getDisabledMovingRightColumnViewIndexs() {
         return getColumnViewIndexs(m_disabledMovingRightColumnViewIndexs);
     }
 
     /**
-     * ÒÔ±¾±íÍ·¿ØÖÆÆ÷Êı¾İ¸üĞÂÈ«²¿½ûÖ¹¸Ä±ä¿í¶ÈµÄÁĞ¡£
+     * ä»¥æœ¬è¡¨å¤´æ§åˆ¶å™¨æ•°æ®æ›´æ–°å…¨éƒ¨ç¦æ­¢æ”¹å˜å®½åº¦çš„åˆ—ã€‚
      */
     public void updateDisabledResizingColumn() {
         if (m_controlledTableHeader == null) {
             return;
         }
 
-        if (!m_controlledTableHeader.getResizingAllowed()) { //Èç¹ûÈ«²¿¶¼½ûÖ¹Resizing£¬ÏÂÃæµÄ¹¤×÷¶¼²»ÓÃ¸ÉÁË
+        if (!m_controlledTableHeader.getResizingAllowed()) { //å¦‚æœå…¨éƒ¨éƒ½ç¦æ­¢Resizingï¼Œä¸‹é¢çš„å·¥ä½œéƒ½ä¸ç”¨å¹²äº†
             return;
         }
 
@@ -184,7 +184,7 @@ public final class TableHeaderController implements MouseMotionListener {
             return;
         }
 
-        /* TODO ÏÂÃæµÄ´úÂëÖ»°ÑÓÉ±¾¿ØÖÆÆ÷¹æ¶¨µÄ½ûÖ¹ResizingµÄÁĞ¸ø½ûÖ¹µô£¬ÆäËûÁĞÒ»ÂÉ¿ÉÒÔResizing£¬°üÀ¨ÓÃ»§Í¨¹ıÆäËü·½Ê½½ûÖ¹ResizingµÄÁĞ */
+        /* TODO ä¸‹é¢çš„ä»£ç åªæŠŠç”±æœ¬æ§åˆ¶å™¨è§„å®šçš„ç¦æ­¢Resizingçš„åˆ—ç»™ç¦æ­¢æ‰ï¼Œå…¶ä»–åˆ—ä¸€å¾‹å¯ä»¥Resizingï¼ŒåŒ…æ‹¬ç”¨æˆ·é€šè¿‡å…¶å®ƒæ–¹å¼ç¦æ­¢Resizingçš„åˆ— */
         for (int i = 0, size = cm.getColumnCount(); i < size; i++) {
             TableColumn column = cm.getColumn(i);
             column.setResizable(true);
@@ -198,7 +198,7 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ÊÍ·Å×ÊÔ´¡£
+     * é‡Šæ”¾èµ„æºã€‚
      */
     public void close() {
         m_controlledTableHeader.removeMouseMotionListener(this);
@@ -208,7 +208,7 @@ public final class TableHeaderController implements MouseMotionListener {
 
     /**
      * @see java.awt.event.MouseMotionListener#mouseDragged(java.awt.event.MouseEvent)
-     * @exception IllegalArgumentException ÊÂ¼şÔ´²»ÊÇ±íÍ·¿Ø¼şÊ±Ôò»áÅ×³ö´ËÒì³£¡£
+     * @exception IllegalArgumentException äº‹ä»¶æºä¸æ˜¯è¡¨å¤´æ§ä»¶æ—¶åˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void mouseDragged(MouseEvent draggedMouseEvent) {
         Object source = draggedMouseEvent.getSource();
@@ -217,24 +217,24 @@ public final class TableHeaderController implements MouseMotionListener {
         }
 
         JTableHeader tableHeader = (JTableHeader) source;
-        if (tableHeader.getDraggedDistance() == 0) { //Ã»ÓĞÁĞÍÏ¶¯µÄ¾àÀëÊ±²»ĞèÒªÏòÏÂ´¦Àí
+        if (tableHeader.getDraggedDistance() == 0) { //æ²¡æœ‰åˆ—æ‹–åŠ¨çš„è·ç¦»æ—¶ä¸éœ€è¦å‘ä¸‹å¤„ç†
             return;
         }
 
-        /* ËäÈ»ÒÑ¾­ÓÃÊó±êÊÂ¼ş¸ÉÔ¤ÁËUIÀàµÄ´¦ÀíÁ÷³Ì£¬µ«ÓÉÓÚÏß³ÌÎÊÌâ£¬ÕâÀï»¹ÊÇµÃ½øĞĞÒ»´ÎÅĞ¿Õ¹ıÂË */
-        if (tableHeader.getDraggedColumn() == null) { //ÍÏ¶¯ÁĞÎª¿Õ
+        /* è™½ç„¶å·²ç»ç”¨é¼ æ ‡äº‹ä»¶å¹²é¢„äº†UIç±»çš„å¤„ç†æµç¨‹ï¼Œä½†ç”±äºçº¿ç¨‹é—®é¢˜ï¼Œè¿™é‡Œè¿˜æ˜¯å¾—è¿›è¡Œä¸€æ¬¡åˆ¤ç©ºè¿‡æ»¤ */
+        if (tableHeader.getDraggedColumn() == null) { //æ‹–åŠ¨åˆ—ä¸ºç©º
             return;
         }
 
-        if (processDisabledReorderingColumn(tableHeader, draggedMouseEvent)) { //´¦Àí½ûÖ¹ÅÅĞòÁĞ
+        if (processDisabledReorderingColumn(tableHeader, draggedMouseEvent)) { //å¤„ç†ç¦æ­¢æ’åºåˆ—
             return;
         }
 
-        if (processDisabledMovingLeftColumn(tableHeader, draggedMouseEvent)) { //´¦Àí½ûÖ¹×óÒÆÁĞ
+        if (processDisabledMovingLeftColumn(tableHeader, draggedMouseEvent)) { //å¤„ç†ç¦æ­¢å·¦ç§»åˆ—
             return;
         }
 
-        if (processDisabledMovingRightColumn(tableHeader, draggedMouseEvent)) { //´¦Àí½ûÖ¹ÓÒÒÆÁĞ
+        if (processDisabledMovingRightColumn(tableHeader, draggedMouseEvent)) { //å¤„ç†ç¦æ­¢å³ç§»åˆ—
             return;
         }
     }
@@ -243,7 +243,7 @@ public final class TableHeaderController implements MouseMotionListener {
      * @see java.awt.event.MouseMotionListener#mouseMoved(java.awt.event.MouseEvent)
      */
     public void mouseMoved(MouseEvent event) {
-        /* ÎŞÊó±êÒÆ¶¯¼àÌıµÄ¶¯×÷ */
+        /* æ— é¼ æ ‡ç§»åŠ¨ç›‘å¬çš„åŠ¨ä½œ */
     }
 
     /*------------------------------------- Protected Static Method -------------------------------------*/
@@ -269,10 +269,10 @@ public final class TableHeaderController implements MouseMotionListener {
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ´¦Àí½ûÖ¹ÅÅĞòÁĞ¡£
-     * @param tableHeader ±íÍ·¡£
-     * @param draggedMouseEvent Êó±êÍÏ×§ÊÂ¼ş¡£
-     * @return Îªtrue±íÊ¾½ûÖ¹µôÁËµ±Ç°ÍÏ¶¯µÄ¶¯×÷£¬Îªfalse±íÊ¾Ã»ÓĞ½ûÖ¹µôµ±Ç°ÍÏ¶¯µÄ¶¯×÷¡£
+     * å¤„ç†ç¦æ­¢æ’åºåˆ—ã€‚
+     * @param tableHeader è¡¨å¤´ã€‚
+     * @param draggedMouseEvent é¼ æ ‡æ‹–æ‹½äº‹ä»¶ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºç¦æ­¢æ‰äº†å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œï¼Œä¸ºfalseè¡¨ç¤ºæ²¡æœ‰ç¦æ­¢æ‰å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œã€‚
      */
     private boolean processDisabledReorderingColumn(JTableHeader tableHeader, MouseEvent draggedMouseEvent) {
         TableColumn draggedColumn = tableHeader.getDraggedColumn();
@@ -281,13 +281,13 @@ public final class TableHeaderController implements MouseMotionListener {
         int[] disabledReorderingColumnViewIndexArray = getDisabledReorderingColumnViewIndexs();
 
         for (int i = 0; i < disabledReorderingColumnViewIndexArray.length; i++) {
-            /* ÍÏ¶¯ÁĞ¾ÍÊÇÏŞÖÆÁĞ */
+            /* æ‹–åŠ¨åˆ—å°±æ˜¯é™åˆ¶åˆ— */
             if (draggedColumnViewIndex == disabledReorderingColumnViewIndexArray[i]) {
                 disabledDragColumn(tableHeader, draggedMouseEvent);
                 return true;
             }
 
-            /* ÍÏ¶¯ÁĞ¾ÍÊÇÏŞÖÆÁĞµÄºóÒ»ÁĞ */
+            /* æ‹–åŠ¨åˆ—å°±æ˜¯é™åˆ¶åˆ—çš„åä¸€åˆ— */
             if (draggedColumnViewIndex == disabledReorderingColumnViewIndexArray[i] + 1) {
                 if (tableHeader.getDraggedDistance() < 0) {
                     disabledDragColumn(tableHeader, draggedMouseEvent);
@@ -296,7 +296,7 @@ public final class TableHeaderController implements MouseMotionListener {
                 continue;
             }
 
-            /* ÍÏ¶¯ÁĞ¾ÍÊÇÏŞÖÆÁĞµÄÇ°Ò»ÁĞ */
+            /* æ‹–åŠ¨åˆ—å°±æ˜¯é™åˆ¶åˆ—çš„å‰ä¸€åˆ— */
             if (draggedColumnViewIndex == disabledReorderingColumnViewIndexArray[i] - 1) {
                 if (tableHeader.getDraggedDistance() > 0) {
                     disabledDragColumn(tableHeader, draggedMouseEvent);
@@ -309,13 +309,13 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ´¦Àí½ûÖ¹×óÒÆÁĞ¡£
-     * @param tableHeader ±íÍ·¡£
-     * @param draggedMouseEvent Êó±êÍÏ×§ÊÂ¼ş¡£
-     * @return Îªtrue±íÊ¾½ûÖ¹µôÁËµ±Ç°ÍÏ¶¯µÄ¶¯×÷£¬Îªfalse±íÊ¾Ã»ÓĞ½ûÖ¹µôµ±Ç°ÍÏ¶¯µÄ¶¯×÷¡£
+     * å¤„ç†ç¦æ­¢å·¦ç§»åˆ—ã€‚
+     * @param tableHeader è¡¨å¤´ã€‚
+     * @param draggedMouseEvent é¼ æ ‡æ‹–æ‹½äº‹ä»¶ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºç¦æ­¢æ‰äº†å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œï¼Œä¸ºfalseè¡¨ç¤ºæ²¡æœ‰ç¦æ­¢æ‰å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œã€‚
      */
     private boolean processDisabledMovingLeftColumn(JTableHeader tableHeader, MouseEvent draggedMouseEvent) {
-        if (tableHeader.getDraggedDistance() >= 0) { //ÏòÓÒÍÏ¶¯
+        if (tableHeader.getDraggedDistance() >= 0) { //å‘å³æ‹–åŠ¨
             return false;
         }
 
@@ -325,7 +325,7 @@ public final class TableHeaderController implements MouseMotionListener {
         int[] disabledMovingLeftColumnViewIndexArray = getDisabledMovingLeftColumnViewIndexs();
 
         for (int i = 0; i < disabledMovingLeftColumnViewIndexArray.length; i++) {
-            /* ÍÏ¶¯ÁĞ¾ÍÊÇÏŞÖÆÁĞ */
+            /* æ‹–åŠ¨åˆ—å°±æ˜¯é™åˆ¶åˆ— */
             if (draggedColumnViewIndex == disabledMovingLeftColumnViewIndexArray[i]) {
                 disabledDragColumn(tableHeader, draggedMouseEvent);
                 return true;
@@ -336,13 +336,13 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ´¦Àí½ûÖ¹ÓÒÒÆÁĞ¡£
-     * @param tableHeader ±íÍ·¡£
-     * @param draggedMouseEvent Êó±êÍÏ×§ÊÂ¼ş¡£
-     * @return Îªtrue±íÊ¾½ûÖ¹µôÁËµ±Ç°ÍÏ¶¯µÄ¶¯×÷£¬Îªfalse±íÊ¾Ã»ÓĞ½ûÖ¹µôµ±Ç°ÍÏ¶¯µÄ¶¯×÷¡£
+     * å¤„ç†ç¦æ­¢å³ç§»åˆ—ã€‚
+     * @param tableHeader è¡¨å¤´ã€‚
+     * @param draggedMouseEvent é¼ æ ‡æ‹–æ‹½äº‹ä»¶ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºç¦æ­¢æ‰äº†å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œï¼Œä¸ºfalseè¡¨ç¤ºæ²¡æœ‰ç¦æ­¢æ‰å½“å‰æ‹–åŠ¨çš„åŠ¨ä½œã€‚
      */
     private boolean processDisabledMovingRightColumn(JTableHeader tableHeader, MouseEvent draggedMouseEvent) {
-        if (tableHeader.getDraggedDistance() <= 0) { //Ïò×óÍÏ¶¯
+        if (tableHeader.getDraggedDistance() <= 0) { //å‘å·¦æ‹–åŠ¨
             return false;
         }
 
@@ -352,7 +352,7 @@ public final class TableHeaderController implements MouseMotionListener {
         int[] disabledMovingRightColumnViewIndexArray = getDisabledMovingRightColumnViewIndexs();
 
         for (int i = 0; i < disabledMovingRightColumnViewIndexArray.length; i++) {
-            /* ÍÏ¶¯ÁĞ¾ÍÊÇÏŞÖÆÁĞ */
+            /* æ‹–åŠ¨åˆ—å°±æ˜¯é™åˆ¶åˆ— */
             if (draggedColumnViewIndex == disabledMovingRightColumnViewIndexArray[i]) {
                 disabledDragColumn(tableHeader, draggedMouseEvent);
                 return true;
@@ -363,10 +363,10 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ÖØ¹¹´úÂëÊ±²úÉúµÄ·½·¨£¬ÓÅ»¯ÁË´úÂë½á¹¹¡£
-     * @param columnViewIndex ÁĞµÄÊÓÍ¼Ë÷Òı¡£
-     * @param columnViewIndexList ÁĞµÄÊÓÍ¼Ë÷ÒıÁĞ±í¡£
-     * @return Îªtrue±íÊ¾²Ù×÷³É¹¦£¬Îªfalse±íÊ¾²Ù×÷Ê§°Ü¡£
+     * é‡æ„ä»£ç æ—¶äº§ç”Ÿçš„æ–¹æ³•ï¼Œä¼˜åŒ–äº†ä»£ç ç»“æ„ã€‚
+     * @param columnViewIndex åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
+     * @param columnViewIndexList åˆ—çš„è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºæ“ä½œæˆåŠŸï¼Œä¸ºfalseè¡¨ç¤ºæ“ä½œå¤±è´¥ã€‚
      */
     private boolean addColumnViewIndex(int columnViewIndex, List columnViewIndexList) {
         Integer index = new Integer(columnViewIndex);
@@ -382,9 +382,9 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ÖØ¹¹´úÂëÊ±²úÉúµÄ·½·¨£¬ÓÅ»¯ÁË´úÂë½á¹¹¡£
-     * @param columnViewIndexs ÁĞµÄÊÓÍ¼Ë÷ÒıÁĞ±í¡£
-     * @return ÁĞµÄÊÓÍ¼Ë÷ÒıÊı×é¡£
+     * é‡æ„ä»£ç æ—¶äº§ç”Ÿçš„æ–¹æ³•ï¼Œä¼˜åŒ–äº†ä»£ç ç»“æ„ã€‚
+     * @param columnViewIndexs åˆ—çš„è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
+     * @return åˆ—çš„è§†å›¾ç´¢å¼•æ•°ç»„ã€‚
      */
     private int[] getColumnViewIndexs(List columnViewIndexs) {
         synchronized (columnViewIndexs) {
@@ -398,14 +398,14 @@ public final class TableHeaderController implements MouseMotionListener {
     }
 
     /**
-     * ½ûÖ¹ÍÏ¶¯ÁĞµÄ²Ù×÷¡£
-     * @param tableHeader ±íÍ·¡£
-     * @param draggedMouseEvent Êó±êÍÏ×§ÊÂ¼ş¡£
+     * ç¦æ­¢æ‹–åŠ¨åˆ—çš„æ“ä½œã€‚
+     * @param tableHeader è¡¨å¤´ã€‚
+     * @param draggedMouseEvent é¼ æ ‡æ‹–æ‹½äº‹ä»¶ã€‚
      */
     private void disabledDragColumn(JTableHeader tableHeader, MouseEvent draggedMouseEvent) {
-        tableHeader.setDraggedColumn(null); //Ã»ÓĞ´ËÉèÖÃ£¬½çÃæÉÏ»á³öÏÖ¼·Ñ¹¶¶¶¯£¬¹À¼ÆÊÇUIÀàÀïÃæ×ö´¦ÀíÊ±·¢ÉúµÄ¶¯×÷
+        tableHeader.setDraggedColumn(null); //æ²¡æœ‰æ­¤è®¾ç½®ï¼Œç•Œé¢ä¸Šä¼šå‡ºç°æŒ¤å‹æŠ–åŠ¨ï¼Œä¼°è®¡æ˜¯UIç±»é‡Œé¢åšå¤„ç†æ—¶å‘ç”Ÿçš„åŠ¨ä½œ
 
-        /* ¹¹Ôìµ±Ç°µãÊó±êÌ§ÆğµÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡æŠ¬èµ·çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent releasedEvt = new MouseEvent((Component) draggedMouseEvent.getSource(),
                                                 MouseEvent.MOUSE_RELEASED,
                                                 System.currentTimeMillis(),
@@ -415,7 +415,7 @@ public final class TableHeaderController implements MouseMotionListener {
                                                 1,
                                                 false,
                                                 draggedMouseEvent.getButton());
-        /* ¹¹Ôìµ±Ç°µãÊó±ê°´ÏÂµÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡æŒ‰ä¸‹çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent pressedEvt = new MouseEvent((Component) draggedMouseEvent.getSource(),
                                                MouseEvent.MOUSE_PRESSED,
                                                System.currentTimeMillis(),
@@ -425,7 +425,7 @@ public final class TableHeaderController implements MouseMotionListener {
                                                1,
                                                false,
                                                draggedMouseEvent.getButton());
-        /* ¹¹Ôìµ±Ç°µãÊó±êÒÆ¶¯µÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡ç§»åŠ¨çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent movedEvt = new MouseEvent((Component) draggedMouseEvent.getSource(),
                                              MouseEvent.MOUSE_MOVED,
                                              System.currentTimeMillis(),
@@ -436,7 +436,7 @@ public final class TableHeaderController implements MouseMotionListener {
                                              false,
                                              draggedMouseEvent.getButton());
 
-        /* ·¢ËÍÁ½¸öÊÂ¼şµ½AWTÊÂ¼ş¶ÓÁĞÖĞ£¬¸øUIÀà×¢²áµÄÊó±êÊÂ¼ş¼àÌıÆ÷È¥´¦Àí */
+        /* å‘é€ä¸¤ä¸ªäº‹ä»¶åˆ°AWTäº‹ä»¶é˜Ÿåˆ—ä¸­ï¼Œç»™UIç±»æ³¨å†Œçš„é¼ æ ‡äº‹ä»¶ç›‘å¬å™¨å»å¤„ç† */
         EventQueue eq = Toolkit.getDefaultToolkit().getSystemEventQueue();
         eq.postEvent(releasedEvt);
         eq.postEvent(pressedEvt);
@@ -498,27 +498,27 @@ public final class TableHeaderController implements MouseMotionListener {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * ±»¿ØÖÆµÄ±íÍ·¿Ø¼ş¡£
+     * è¢«æ§åˆ¶çš„è¡¨å¤´æ§ä»¶ã€‚
      */
     private JTableHeader m_controlledTableHeader;
 
     /**
-     * ½ûÖ¹´ÓĞÂÅÅÁĞÎ»ÖÃµÄÁĞÊÓÍ¼Ë÷ÒıÁĞ±í¡£
+     * ç¦æ­¢ä»æ–°æ’åˆ—ä½ç½®çš„åˆ—è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
      */
     private List m_disabledReorderingColumnViewIndexs = new ArrayList();
 
     /**
-     * ½ûÖ¹´ÓĞÂ¸Ä±ä´óĞ¡µÄÁĞÊÓÍ¼Ë÷ÒıÁĞ±í¡£
+     * ç¦æ­¢ä»æ–°æ”¹å˜å¤§å°çš„åˆ—è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
      */
     private List m_disabledResizingColumnViewIndexs = new ArrayList();
 
     /**
-     * ½ûÖ¹×óÒÆµÄÁĞÊÓÍ¼Ë÷ÒıÁĞ±í¡£
+     * ç¦æ­¢å·¦ç§»çš„åˆ—è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
      */
     private List m_disabledMovingLeftColumnViewIndexs = new ArrayList();
 
     /**
-     * ½ûÖ¹ÓÒÒÆµÄÁĞÊÓÍ¼Ë÷ÒıÁĞ±í¡£
+     * ç¦æ­¢å³ç§»çš„åˆ—è§†å›¾ç´¢å¼•åˆ—è¡¨ã€‚
      */
     private List m_disabledMovingRightColumnViewIndexs = new ArrayList();
 

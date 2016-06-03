@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-6-5 ÏÂÎç05:34:46
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-6-5 ä¸‹åˆ05:34:46
  */
 package com.apollo.swing.component.common.jtable;
 
@@ -20,29 +20,29 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTComponentByEditorTableCellRenderer.java</p>
- * <p>ÎÄ¼şÃèÊö£ººÍ±à¼­Æ÷¹²ÓÃ×é¼şµÄ±í¸ñäÖÈ¾Æ÷£¬ĞèÒª±à¼­Æ÷·µ»ØµÄÊÇÒ»¸öJComponent×é¼ş¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-6-5</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTComponentByEditorTableCellRenderer.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šå’Œç¼–è¾‘å™¨å…±ç”¨ç»„ä»¶çš„è¡¨æ ¼æ¸²æŸ“å™¨ï¼Œéœ€è¦ç¼–è¾‘å™¨è¿”å›çš„æ˜¯ä¸€ä¸ªJComponentç»„ä»¶ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-6-5</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public final class ComponentByEditorTableCellRenderer implements TableCellRenderer {
 
     /*------------------------------------- Public Static Field -------------------------------------*/
 
     /**
-     * ¿Ø¼ş·Ç½¹µã×´Ì¬µÄ±ß¿ò£¬ÎªÒ»¸öËÄÖÜ¶¼ÊÇ1¸öÏñËØ¿í¶ÈµÄ¿Õ±ß¿ò¡£
+     * æ§ä»¶éç„¦ç‚¹çŠ¶æ€çš„è¾¹æ¡†ï¼Œä¸ºä¸€ä¸ªå››å‘¨éƒ½æ˜¯1ä¸ªåƒç´ å®½åº¦çš„ç©ºè¾¹æ¡†ã€‚
      */
     public static final Border NO_FOCUS_BORDER = new EmptyBorder(1, 1, 1, 1);
 
@@ -81,26 +81,26 @@ public final class ComponentByEditorTableCellRenderer implements TableCellRender
      */
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
         TableCellEditor editor = table.getCellEditor(row, column);
-        if (editor == null) { //Ã»ÓĞÌá¹©±à¼­Æ÷
+        if (editor == null) { //æ²¡æœ‰æä¾›ç¼–è¾‘å™¨
             return NO_EDITOR_LABEL;
         }
 
         JComponent component = (JComponent) editor.getTableCellEditorComponent(table, value, isSelected, row, column);
-        if (component == null) { //±à¼­Æ÷Ã»ÓĞÌá¹©×é¼ş
+        if (component == null) { //ç¼–è¾‘å™¨æ²¡æœ‰æä¾›ç»„ä»¶
             return NO_COMPONENT_LABEL;
         }
 
-        /* ÉèÖÃÍ¸Ã÷ĞÔ */
+        /* è®¾ç½®é€æ˜æ€§ */
         if (!component.isOpaque()) {
             component.setOpaque(true);
         }
 
-        /* ÉèÖÃ±ß¿ò£¨ÓĞĞ©¿Ø¼şÈ±Ê¡²»Ö§³Ö±ß¿ò»æÖÆ£© */
+        /* è®¾ç½®è¾¹æ¡†ï¼ˆæœ‰äº›æ§ä»¶ç¼ºçœä¸æ”¯æŒè¾¹æ¡†ç»˜åˆ¶ï¼‰ */
         if (!isBorderPainted(component)) {
             setBorderPainted(component, true);
         }
 
-        /* ÉèÖÃµ¥Ôª¸ñÑ¡ÖĞÓë·ÇÑ¡ÖĞ×´Ì¬Ê±ºò¿Ø¼şµÄ±³¾°É« */
+        /* è®¾ç½®å•å…ƒæ ¼é€‰ä¸­ä¸éé€‰ä¸­çŠ¶æ€æ—¶å€™æ§ä»¶çš„èƒŒæ™¯è‰² */
         if (isSelected) {
             component.setBackground(table.getSelectionBackground());
 
@@ -108,7 +108,7 @@ public final class ComponentByEditorTableCellRenderer implements TableCellRender
             component.setBackground(null);
         }
 
-        /* ÉèÖÃµ¥Ôª¸ñ»ñÈ¡½¹µãÓë·Ç½¹µã×´Ì¬Ê±ºò¿Ø¼şµÄ±ß¿ò */
+        /* è®¾ç½®å•å…ƒæ ¼è·å–ç„¦ç‚¹ä¸éç„¦ç‚¹çŠ¶æ€æ—¶å€™æ§ä»¶çš„è¾¹æ¡† */
         if (hasFocus) {
             component.setBorder(UIManager.getBorder("Table.focusCellHighlightBorder"));
 
@@ -142,12 +142,12 @@ public final class ComponentByEditorTableCellRenderer implements TableCellRender
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ÅĞ¶Ï×é¼şµÄ±ß¿òÊÇ·ñ¿É»æÖÆ¡£
-     * @param component ×é¼ş¡£
-     * @return Îªtrue±íÊ¾×é¼şµÄ±ß¿ò¿É»æÖÆ£¬Îªfalse±íÊ¾×é¼şµÄ±ß¿ò²»¿É»æÖÆ¡£
+     * åˆ¤æ–­ç»„ä»¶çš„è¾¹æ¡†æ˜¯å¦å¯ç»˜åˆ¶ã€‚
+     * @param component ç»„ä»¶ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºç»„ä»¶çš„è¾¹æ¡†å¯ç»˜åˆ¶ï¼Œä¸ºfalseè¡¨ç¤ºç»„ä»¶çš„è¾¹æ¡†ä¸å¯ç»˜åˆ¶ã€‚
      */
     private boolean isBorderPainted(JComponent component) {
-        /* ÒÔÏÂ5ÀàÌØÊâ×é¼şÊÇ¿ÉÒÔÉèÖÃ±ß¿òÊÇ·ñ¿É±à¼­µÄ£¬ÕâĞ©ÊÇÍ¨¹ı²éÑ¯JDKµÃµ½µÄ */
+        /* ä»¥ä¸‹5ç±»ç‰¹æ®Šç»„ä»¶æ˜¯å¯ä»¥è®¾ç½®è¾¹æ¡†æ˜¯å¦å¯ç¼–è¾‘çš„ï¼Œè¿™äº›æ˜¯é€šè¿‡æŸ¥è¯¢JDKå¾—åˆ°çš„ */
         if (component instanceof AbstractButton) {
             return ((AbstractButton) component).isBorderPainted();
 
@@ -163,18 +163,18 @@ public final class ComponentByEditorTableCellRenderer implements TableCellRender
         } else if (component instanceof JToolBar) {
             return ((JToolBar) component).isBorderPainted();
 
-        } else { //Ä¬ÈÏËùÓĞ¿Ø¼ş¶¼¿É»æÖÆ±ß¿ò
+        } else { //é»˜è®¤æ‰€æœ‰æ§ä»¶éƒ½å¯ç»˜åˆ¶è¾¹æ¡†
             return true;
         }
     }
 
     /**
-     * ÉèÖÃ×é¼şµÄ±ß¿òÊÇ·ñ¿É»æÖÆ¡£
-     * @param component ×é¼ş¡£
-     * @param isBorderPainted Îªtrue±íÊ¾×é¼şµÄ±ß¿ò¿É»æÖÆ£¬Îªfalse±íÊ¾×é¼şµÄ±ß¿ò²»¿É»æÖÆ¡£
+     * è®¾ç½®ç»„ä»¶çš„è¾¹æ¡†æ˜¯å¦å¯ç»˜åˆ¶ã€‚
+     * @param component ç»„ä»¶ã€‚
+     * @param isBorderPainted ä¸ºtrueè¡¨ç¤ºç»„ä»¶çš„è¾¹æ¡†å¯ç»˜åˆ¶ï¼Œä¸ºfalseè¡¨ç¤ºç»„ä»¶çš„è¾¹æ¡†ä¸å¯ç»˜åˆ¶ã€‚
      */
     private void setBorderPainted(JComponent component, boolean isBorderPainted) {
-        /* ÒÔÏÂ5ÀàÌØÊâ×é¼şÊÇ¿ÉÒÔÉèÖÃ±ß¿òÊÇ·ñ¿É±à¼­µÄ£¬ÕâĞ©ÊÇÍ¨¹ı²éÑ¯JDKµÃµ½µÄ */
+        /* ä»¥ä¸‹5ç±»ç‰¹æ®Šç»„ä»¶æ˜¯å¯ä»¥è®¾ç½®è¾¹æ¡†æ˜¯å¦å¯ç¼–è¾‘çš„ï¼Œè¿™äº›æ˜¯é€šè¿‡æŸ¥è¯¢JDKå¾—åˆ°çš„ */
         if (component instanceof AbstractButton) {
             ((AbstractButton) component).setBorderPainted(isBorderPainted);
 
@@ -243,12 +243,12 @@ public final class ComponentByEditorTableCellRenderer implements TableCellRender
     /*------------------------------------- Private Static Field -------------------------------------*/
 
     /**
-     * Ã»ÓĞ±à¼­Æ÷Ê±ÏÔÊ¾µÄ±êÇ©×é¼ş¡£
+     * æ²¡æœ‰ç¼–è¾‘å™¨æ—¶æ˜¾ç¤ºçš„æ ‡ç­¾ç»„ä»¶ã€‚
      */
     private static final JLabel NO_EDITOR_LABEL = new JLabel("No Support Editor");
 
     /**
-     * ±à¼­Æ÷·µ»ØÎŞĞ§×é¼şÊ±ÏÔÊ¾µÄ±êÇ©×é¼ş¡£
+     * ç¼–è¾‘å™¨è¿”å›æ— æ•ˆç»„ä»¶æ—¶æ˜¾ç¤ºçš„æ ‡ç­¾ç»„ä»¶ã€‚
      */
     private static final JLabel NO_COMPONENT_LABEL = new JLabel("No Support Component");
 

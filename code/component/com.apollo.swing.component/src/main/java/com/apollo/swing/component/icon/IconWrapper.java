@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-9-19 ÉÏÎç09:41:38¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-9-19 ä¸Šåˆ09:41:38ã€‚
  */
 package com.apollo.swing.component.icon;
 
@@ -12,22 +12,22 @@ import javax.swing.Icon;
 import javax.swing.UIManager;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTIconWrapper.java</p>
- * <p>ÀàĞÍÃèÊö£ºÍ¼±ê°ü×°Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-9-19</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTIconWrapper.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå›¾æ ‡åŒ…è£…å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-9-19</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public class IconWrapper implements Icon {
 
@@ -70,16 +70,16 @@ public class IconWrapper implements Icon {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´´½¨Ñ¡Ôñ¿òÍ¼±ê°ü×°Æ÷¡£
-     * @return Ñ¡Ôñ¿òÍ¼±ê°ü×°Æ÷¡£
+     * åˆ›å»ºé€‰æ‹©æ¡†å›¾æ ‡åŒ…è£…å™¨ã€‚
+     * @return é€‰æ‹©æ¡†å›¾æ ‡åŒ…è£…å™¨ã€‚
      */
     public static IconWrapper createCheckBoxIconWrapper() {
         return new IconWrapper(UIManager.getIcon("CheckBox.icon"));
     }
 
     /**
-     * ´´½¨µ¥Ñ¡°´Å¥Í¼±ê°ü×°Æ÷¡£
-     * @return µ¥Ñ¡°´Å¥Í¼±ê°ü×°Æ÷¡£
+     * åˆ›å»ºå•é€‰æŒ‰é’®å›¾æ ‡åŒ…è£…å™¨ã€‚
+     * @return å•é€‰æŒ‰é’®å›¾æ ‡åŒ…è£…å™¨ã€‚
      */
     public static IconWrapper createRadioButtonIconWrapper() {
         return new IconWrapper(UIManager.getIcon("RadioButton.icon"));
@@ -104,12 +104,12 @@ public class IconWrapper implements Icon {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±»°ü×°µÄÍ¼±ê¡£
+     * è¢«åŒ…è£…çš„å›¾æ ‡ã€‚
      */
     protected Icon m_icon;
 
     /**
-     * ±êÊ¶ÊÇ·ñ´¦ÓÚ²»È·¶¨×´Ì¬¡£
+     * æ ‡è¯†æ˜¯å¦å¤„äºä¸ç¡®å®šçŠ¶æ€ã€‚
      */
     protected volatile boolean m_isIndetermined;
 
@@ -128,17 +128,17 @@ public class IconWrapper implements Icon {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param icon ±»°ü×°µÄÍ¼±ê¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param icon è¢«åŒ…è£…çš„å›¾æ ‡ã€‚
      */
     public IconWrapper(Icon icon) {
         this(icon, false);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param icon ±»°ü×°µÄÍ¼±ê¡£
-     * @param isIndetermined ±êÊ¶ÊÇ·ñ´¦ÓÚ²»È·¶¨×´Ì¬¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param icon è¢«åŒ…è£…çš„å›¾æ ‡ã€‚
+     * @param isIndetermined æ ‡è¯†æ˜¯å¦å¤„äºä¸ç¡®å®šçŠ¶æ€ã€‚
      */
     public IconWrapper(Icon icon, boolean isIndetermined) {
         m_icon = icon;
@@ -160,32 +160,32 @@ public class IconWrapper implements Icon {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î icon µÄÖµ¡£
-     * @return ×Ö¶Î icon µÄÖµ¡£
+     * è·å–å­—æ®µ icon çš„å€¼ã€‚
+     * @return å­—æ®µ icon çš„å€¼ã€‚
      */
     public Icon getIcon() {
         return m_icon;
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î icon µÄÖµ¡£
-     * @param icon ×Ö¶Î icon µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ icon çš„å€¼ã€‚
+     * @param icon å­—æ®µ icon çš„å€¼ã€‚
      */
     public void setIcon(Icon icon) {
         m_icon = icon;
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isIndetermined µÄÖµ¡£
-     * @return ×Ö¶Î isIndetermined µÄÖµ¡£
+     * è·å–å­—æ®µ isIndetermined çš„å€¼ã€‚
+     * @return å­—æ®µ isIndetermined çš„å€¼ã€‚
      */
     public boolean isIndetermined() {
         return m_isIndetermined;
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isIndetermined µÄÖµ¡£
-     * @param isIndetermined ×Ö¶Î isIndetermined µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isIndetermined çš„å€¼ã€‚
+     * @param isIndetermined å­—æ®µ isIndetermined çš„å€¼ã€‚
      */
     public void setIndetermined(boolean isIndetermined) {
         m_isIndetermined = isIndetermined;
@@ -211,21 +211,21 @@ public class IconWrapper implements Icon {
      * @see javax.swing.Icon#paintIcon(java.awt.Component, java.awt.Graphics, int, int)
      */
     public void paintIcon(Component c, Graphics g, int x, int y) {
-        /* »ñÈ¡2D»æÍ¼¾ä±ú */
+        /* è·å–2Dç»˜å›¾å¥æŸ„ */
         Graphics2D g2d = (Graphics2D) g.create();
 
-        /* ÉèÖÃ»æÍ¼¾ä±úÎª°ëÍ¸Ã÷×´Ì¬ */
-        if (m_isIndetermined) { // µ±Ç°Ñ¡Ôñ×´Ì¬´¦ÓÚ²»È·¶¨×´Ì¬
-            /* TODO ×¢Òâ£ºÓÉÓÚÃ»ÓĞÕÒµ½ÍêÃÀäÖÈ¾²»È·¶¨×´Ì¬Ñ¡Ôñ¿òµÄ·½·¨£¬ËùÒÔÌá¹©ÒÔÏÂÁ½ÖÖ·½·¨¸ø´úÂëÎ¬»¤ÕßÑ¡ÔñºÍ²Î¿¼£¨¶şÑ¡Ò»£© */
+        /* è®¾ç½®ç»˜å›¾å¥æŸ„ä¸ºåŠé€æ˜çŠ¶æ€ */
+        if (m_isIndetermined) { // å½“å‰é€‰æ‹©çŠ¶æ€å¤„äºä¸ç¡®å®šçŠ¶æ€
+            /* TODO æ³¨æ„ï¼šç”±äºæ²¡æœ‰æ‰¾åˆ°å®Œç¾æ¸²æŸ“ä¸ç¡®å®šçŠ¶æ€é€‰æ‹©æ¡†çš„æ–¹æ³•ï¼Œæ‰€ä»¥æä¾›ä»¥ä¸‹ä¸¤ç§æ–¹æ³•ç»™ä»£ç ç»´æŠ¤è€…é€‰æ‹©å’Œå‚è€ƒï¼ˆäºŒé€‰ä¸€ï¼‰ */
 
-            /* ÉèÖÃ±³¾°É«À´äÖÈ¾²»È·¶¨×´Ì¬Ñ¡Ôñ¿ò£¬×¢Òâ£ºTODO ´ËÉèÖÃºÍ¹Û¸ĞÏà¹Ø£¬²»Í¬¹Û¸ĞÏÂĞèÒªµ÷Õû²ÎÊıÖµ£¬ÔİÊ±Ã»ÕÒµ½¸üºÃµÄ½â¾ö·½·¨ */
+            /* è®¾ç½®èƒŒæ™¯è‰²æ¥æ¸²æŸ“ä¸ç¡®å®šçŠ¶æ€é€‰æ‹©æ¡†ï¼Œæ³¨æ„ï¼šTODO æ­¤è®¾ç½®å’Œè§‚æ„Ÿç›¸å…³ï¼Œä¸åŒè§‚æ„Ÿä¸‹éœ€è¦è°ƒæ•´å‚æ•°å€¼ï¼Œæš‚æ—¶æ²¡æ‰¾åˆ°æ›´å¥½çš„è§£å†³æ–¹æ³• */
             g2d.setBackground(Color.GRAY);
             g2d.clearRect(6, (c.getHeight() - 10) / 2, 10, 10);
-            /* ÉèÖÃÍ¸Ã÷¶ÈÀ´äÖÈ¾²»È·¶¨×´Ì¬Ñ¡Ôñ¿ò */
-            //g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f)); // äÖÈ¾Îª°ëÍ¸Ã÷Ğ§¹û
+            /* è®¾ç½®é€æ˜åº¦æ¥æ¸²æŸ“ä¸ç¡®å®šçŠ¶æ€é€‰æ‹©æ¡† */
+            //g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.3f)); // æ¸²æŸ“ä¸ºåŠé€æ˜æ•ˆæœ
         }
 
-        /* »æÖÆÍ¼±ê */
+        /* ç»˜åˆ¶å›¾æ ‡ */
         m_icon.paintIcon(c, g2d, x, y);
     }
 

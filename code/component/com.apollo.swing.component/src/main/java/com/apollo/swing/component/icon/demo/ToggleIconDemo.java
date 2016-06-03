@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-9-19 ÉÏÎç10:14:52¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-9-19 ä¸Šåˆ10:14:52ã€‚
  */
 package com.apollo.swing.component.icon.demo;
 
@@ -53,7 +53,7 @@ public class ToggleIconDemo {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * TODO ÇëÌí¼Ó·½·¨µÄÃèÊöĞÅÏ¢¡£
+     * TODO è¯·æ·»åŠ æ–¹æ³•çš„æè¿°ä¿¡æ¯ã€‚
      * @param args
      */
     public static void main(String[] args) {

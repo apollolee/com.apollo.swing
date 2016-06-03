@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-12 ÏÂÎç05:38:21
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-12 ä¸‹åˆ05:38:21
  */
 package com.apollo.swing.component.complextree;
 
@@ -13,22 +13,22 @@ import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeModel.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷Ä£ĞÍÀà£¬×ÛºÏÊ÷µÄºËĞÄÂß¼­¶¼ÊÇÔÚ´ËÀàÊµÏÖµÄ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-12</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeModel.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘æ¨¡å‹ç±»ï¼Œç»¼åˆæ ‘çš„æ ¸å¿ƒé€»è¾‘éƒ½æ˜¯åœ¨æ­¤ç±»å®ç°çš„ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-12</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -37,25 +37,25 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Public (Static) Inner Class -------------------------------------*/
 
     /**
-     * ×î´óÑ¡ÔñÊıÔ½½çÒì³£Àà£¬ÓÃÓÚ·â×°Ñ¡Ôñ×´Ì¬³ö´íÊ±µÄÒ»ÖÖÌØÊâÒì³£¡£
+     * æœ€å¤§é€‰æ‹©æ•°è¶Šç•Œå¼‚å¸¸ç±»ï¼Œç”¨äºå°è£…é€‰æ‹©çŠ¶æ€å‡ºé”™æ—¶çš„ä¸€ç§ç‰¹æ®Šå¼‚å¸¸ã€‚
      * @since T3 V1.1
      */
     public static class TOutOfMaxChosenCountException extends RuntimeException {
 
         /**
-         * µ±Ç°Ñ¡ÖĞ¸öÊı¡£
+         * å½“å‰é€‰ä¸­ä¸ªæ•°ã€‚
          */
         private volatile long m_currentChosenCount;
 
         /**
-         * ×î´óÑ¡ÖĞ¸öÊı¡£
+         * æœ€å¤§é€‰ä¸­ä¸ªæ•°ã€‚
          */
         private volatile long m_maxChosenCount;
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param currentChosenCount µ±Ç°Ñ¡ÖĞ¸öÊı¡£
-         * @param maxChosenCount ×î´óÑ¡ÖĞ¸öÊı¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param currentChosenCount å½“å‰é€‰ä¸­ä¸ªæ•°ã€‚
+         * @param maxChosenCount æœ€å¤§é€‰ä¸­ä¸ªæ•°ã€‚
          * @since T3 V1.1
          */
         public TOutOfMaxChosenCountException(long currentChosenCount, long maxChosenCount) {
@@ -65,8 +65,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
         }
 
         /**
-         * »ñÈ¡×Ö¶Î currentChosenCount µÄÖµ£¬µ±Ç°Ñ¡ÖĞ¸öÊı¡£
-         * @return ×Ö¶Î currentChosenCount µÄÖµ¡£
+         * è·å–å­—æ®µ currentChosenCount çš„å€¼ï¼Œå½“å‰é€‰ä¸­ä¸ªæ•°ã€‚
+         * @return å­—æ®µ currentChosenCount çš„å€¼ã€‚
          * @since T3 V1.1
          */
         public long getCurrentChosenCount() {
@@ -74,8 +74,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
         }
 
         /**
-         * »ñÈ¡×Ö¶Î maxchosenCount µÄÖµ£¬×î´óÑ¡ÖĞ¸öÊı¡£
-         * @return ×Ö¶Î maxchosenCount µÄÖµ¡£
+         * è·å–å­—æ®µ maxchosenCount çš„å€¼ï¼Œæœ€å¤§é€‰ä¸­ä¸ªæ•°ã€‚
+         * @return å­—æ®µ maxchosenCount çš„å€¼ã€‚
          * @since T3 V1.1
          */
         public long getMaxchosenCount() {
@@ -87,18 +87,18 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Protected (Static) Inner Class -------------------------------------*/
 
     /**
-     * ÔØÈë¹¤×÷Ïß³ÌÀà¡£
+     * è½½å…¥å·¥ä½œçº¿ç¨‹ç±»ã€‚
      */
     protected class TLoadWorker extends SwingWorker<Object, Object> {
 
         /**
-         * ¸¸»º´æ½Úµã¡£
+         * çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
          */
         protected ComplexTreeCacheNode m_parent;
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param parent ¸¸»º´æ½Úµã¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param parent çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
          */
         public TLoadWorker(ComplexTreeCacheNode parent) {
             m_parent = parent;
@@ -180,9 +180,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * ¸ù¾İ×ÓÑ¡Ôñ½ÚµãÑ¡Ôñ×´Ì¬ÅĞ¶Ï¸¸Ñ¡Ôñ½ÚµãÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬¡£
-     * @param choiceNode ¸¸Ñ¡Ôñ½Úµã¡£
-     * @return ±êÊ¶¸¸Ñ¡Ôñ½ÚµãÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬¡£
+     * æ ¹æ®å­é€‰æ‹©èŠ‚ç‚¹é€‰æ‹©çŠ¶æ€åˆ¤æ–­çˆ¶é€‰æ‹©èŠ‚ç‚¹æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
+     * @param choiceNode çˆ¶é€‰æ‹©èŠ‚ç‚¹ã€‚
+     * @return æ ‡è¯†çˆ¶é€‰æ‹©èŠ‚ç‚¹æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
      */
     protected static boolean isSelected(ComplexTreeChoiceNode choiceNode) {
         if (choiceNode.isLeaf() || (choiceNode instanceof ComplexTreeCacheNode && !((ComplexTreeCacheNode) choiceNode).isLoaded())) {
@@ -200,9 +200,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¸ù¾İ×ÓÑ¡Ôñ½ÚµãÑ¡Ôñ×´Ì¬ÅĞ¶Ï¸¸Ñ¡Ôñ½ÚµãÊÇ·ñÎªÈ¡ÏûÑ¡Ôñ×´Ì¬¡£
-     * @param choiceNode ¸¸Ñ¡Ôñ½Úµã¡£
-     * @return ±êÊ¶¸¸Ñ¡Ôñ½ÚµãÊÇ·ñÎªÈ¡ÏûÑ¡Ôñ×´Ì¬¡£
+     * æ ¹æ®å­é€‰æ‹©èŠ‚ç‚¹é€‰æ‹©çŠ¶æ€åˆ¤æ–­çˆ¶é€‰æ‹©èŠ‚ç‚¹æ˜¯å¦ä¸ºå–æ¶ˆé€‰æ‹©çŠ¶æ€ã€‚
+     * @param choiceNode çˆ¶é€‰æ‹©èŠ‚ç‚¹ã€‚
+     * @return æ ‡è¯†çˆ¶é€‰æ‹©èŠ‚ç‚¹æ˜¯å¦ä¸ºå–æ¶ˆé€‰æ‹©çŠ¶æ€ã€‚
      */
     protected static boolean isDeselected(ComplexTreeChoiceNode choiceNode) {
         if (choiceNode.isLeaf() || (choiceNode instanceof ComplexTreeCacheNode && !((ComplexTreeCacheNode) choiceNode).isLoaded())) {
@@ -234,37 +234,37 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * Êı¾İÔ´¡£
+     * æ•°æ®æºã€‚
      */
     protected IComplexTreeDataSource m_dataSource;
 
     /**
-     * »º´æ´óĞ¡¡£
+     * ç¼“å­˜å¤§å°ã€‚
      */
     protected volatile int m_cacheSize;
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíÑ¡Ôñ¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸é€‰æ‹©ã€‚
      */
     protected volatile boolean m_isEnabledChoice;
 
     /**
-     * ×î´óÑ¡ÖĞ½ÚµãµÄ¸öÊı¡£
+     * æœ€å¤§é€‰ä¸­èŠ‚ç‚¹çš„ä¸ªæ•°ã€‚
      */
     protected volatile long m_maxChosenCount = Long.MAX_VALUE;
 
     /**
-     * ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
+     * å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
      */
     protected List m_chosenPaths = new ArrayList();
 
     /**
-     * »º´æ¼¯¡£
+     * ç¼“å­˜é›†ã€‚
      */
     protected List m_caches = new ArrayList();
 
     /**
-     * ±êÊ¶ÊÇ·ñÔÊĞíÔØÈë¡£
+     * æ ‡è¯†æ˜¯å¦å…è®¸è½½å…¥ã€‚
      */
     protected volatile boolean m_isEnabledLoad = true;
 
@@ -283,8 +283,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param root ¸ù½Úµã£¬¿ÉÒÔÊÇÑ¡Ôñ½Úµã»ò»º´æ½Úµã¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param root æ ¹èŠ‚ç‚¹ï¼Œå¯ä»¥æ˜¯é€‰æ‹©èŠ‚ç‚¹æˆ–ç¼“å­˜èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeModel(ComplexTreeNode root) {
@@ -292,9 +292,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param root ¸ù½Úµã£¬¿ÉÒÔÊÇÑ¡Ôñ½Úµã»ò»º´æ½Úµã¡£
-     * @param dataSource Êı¾İÔ´£¬Èç¹ûÄ£ĞÍ²ãÖĞ²»´øÓĞÈÎºÎ»º´æ½Úµã£¬ÔòÊı¾İÔ´¿ÉÒÔÉèÖÃÎªnull¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param root æ ¹èŠ‚ç‚¹ï¼Œå¯ä»¥æ˜¯é€‰æ‹©èŠ‚ç‚¹æˆ–ç¼“å­˜èŠ‚ç‚¹ã€‚
+     * @param dataSource æ•°æ®æºï¼Œå¦‚æœæ¨¡å‹å±‚ä¸­ä¸å¸¦æœ‰ä»»ä½•ç¼“å­˜èŠ‚ç‚¹ï¼Œåˆ™æ•°æ®æºå¯ä»¥è®¾ç½®ä¸ºnullã€‚
      * @since T3 V1.1
      */
     public ComplexTreeModel(ComplexTreeNode root, IComplexTreeDataSource dataSource) {
@@ -302,10 +302,10 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param root ¸ù½Úµã£¬¿ÉÒÔÊÇÑ¡Ôñ½Úµã»ò»º´æ½Úµã¡£
-     * @param dataSource Êı¾İÔ´£¬Èç¹ûÄ£ĞÍ²ãÖĞ²»´øÓĞÈÎºÎ»º´æ½Úµã£¬ÔòÊı¾İÔ´¿ÉÒÔÉèÖÃÎªnull¡£
-     * @param cacheSize »º´æ´óĞ¡£¬¼´Í¬Ê±´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄ¸öÊı£¬×¢Òâ£ºÄ£ĞÍ»á¾¡Á¿È¥Âú×ãÕâ¸öÏŞÖÆÖµ£¬µ«²»±£Ö¤Ò»¶¨ÄÜÂú×ã£¬Òò´ËÓĞĞ©Çé¿öÏÂ´ËÖµ»áÊ§Ğ§¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param root æ ¹èŠ‚ç‚¹ï¼Œå¯ä»¥æ˜¯é€‰æ‹©èŠ‚ç‚¹æˆ–ç¼“å­˜èŠ‚ç‚¹ã€‚
+     * @param dataSource æ•°æ®æºï¼Œå¦‚æœæ¨¡å‹å±‚ä¸­ä¸å¸¦æœ‰ä»»ä½•ç¼“å­˜èŠ‚ç‚¹ï¼Œåˆ™æ•°æ®æºå¯ä»¥è®¾ç½®ä¸ºnullã€‚
+     * @param cacheSize ç¼“å­˜å¤§å°ï¼Œå³åŒæ—¶å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„ä¸ªæ•°ï¼Œæ³¨æ„ï¼šæ¨¡å‹ä¼šå°½é‡å»æ»¡è¶³è¿™ä¸ªé™åˆ¶å€¼ï¼Œä½†ä¸ä¿è¯ä¸€å®šèƒ½æ»¡è¶³ï¼Œå› æ­¤æœ‰äº›æƒ…å†µä¸‹æ­¤å€¼ä¼šå¤±æ•ˆã€‚
      * @since T3 V1.1
      */
     public ComplexTreeModel(ComplexTreeNode root, IComplexTreeDataSource dataSource, int cacheSize) {
@@ -313,11 +313,11 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param root ¸ù½Úµã£¬¿ÉÒÔÊÇÑ¡Ôñ½Úµã»ò»º´æ½Úµã¡£
-     * @param dataSource Êı¾İÔ´£¬Èç¹ûÄ£ĞÍ²ãÖĞ²»´øÓĞÈÎºÎ»º´æ½Úµã£¬ÔòÊı¾İÔ´¿ÉÒÔÉèÖÃÎªnull¡£
-     * @param cacheSize »º´æ´óĞ¡£¬¼´Í¬Ê±´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄ¸öÊı£¬×¢Òâ£ºÄ£ĞÍ»á¾¡Á¿È¥Âú×ãÕâ¸öÏŞÖÆÖµ£¬µ«²»±£Ö¤Ò»¶¨ÄÜÂú×ã£¬Òò´ËÓĞĞ©Çé¿öÏÂ´ËÖµ»áÊ§Ğ§¡£
-     * @param isEnabledChoice ±êÊ¶ÊÇ·ñÔÊĞíÑ¡Ôñ£¬Èç¹û²»ÔÊĞíÔò½çÃæÉÏµÄ½ÚµãÇ°Ãæ²»»á´øÓĞÑ¡Ôñ¿ò£¬È±Ê¡ÎªÔÊĞí¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param root æ ¹èŠ‚ç‚¹ï¼Œå¯ä»¥æ˜¯é€‰æ‹©èŠ‚ç‚¹æˆ–ç¼“å­˜èŠ‚ç‚¹ã€‚
+     * @param dataSource æ•°æ®æºï¼Œå¦‚æœæ¨¡å‹å±‚ä¸­ä¸å¸¦æœ‰ä»»ä½•ç¼“å­˜èŠ‚ç‚¹ï¼Œåˆ™æ•°æ®æºå¯ä»¥è®¾ç½®ä¸ºnullã€‚
+     * @param cacheSize ç¼“å­˜å¤§å°ï¼Œå³åŒæ—¶å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„ä¸ªæ•°ï¼Œæ³¨æ„ï¼šæ¨¡å‹ä¼šå°½é‡å»æ»¡è¶³è¿™ä¸ªé™åˆ¶å€¼ï¼Œä½†ä¸ä¿è¯ä¸€å®šèƒ½æ»¡è¶³ï¼Œå› æ­¤æœ‰äº›æƒ…å†µä¸‹æ­¤å€¼ä¼šå¤±æ•ˆã€‚
+     * @param isEnabledChoice æ ‡è¯†æ˜¯å¦å…è®¸é€‰æ‹©ï¼Œå¦‚æœä¸å…è®¸åˆ™ç•Œé¢ä¸Šçš„èŠ‚ç‚¹å‰é¢ä¸ä¼šå¸¦æœ‰é€‰æ‹©æ¡†ï¼Œç¼ºçœä¸ºå…è®¸ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeModel(ComplexTreeNode root, IComplexTreeDataSource dataSource, int cacheSize, boolean isEnabledChoice) {
@@ -343,8 +343,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î dataSource µÄÖµ£¬Êı¾İÔ´£¬Èç¹ûÄ£ĞÍ²ãÖĞ²»´øÓĞÈÎºÎ»º´æ½Úµã£¬ÔòÊı¾İÔ´¿ÉÒÔÉèÖÃÎªnull¡£
-     * @return ×Ö¶Î dataSource µÄÖµ¡£
+     * è·å–å­—æ®µ dataSource çš„å€¼ï¼Œæ•°æ®æºï¼Œå¦‚æœæ¨¡å‹å±‚ä¸­ä¸å¸¦æœ‰ä»»ä½•ç¼“å­˜èŠ‚ç‚¹ï¼Œåˆ™æ•°æ®æºå¯ä»¥è®¾ç½®ä¸ºnullã€‚
+     * @return å­—æ®µ dataSource çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public IComplexTreeDataSource getDataSource() {
@@ -352,8 +352,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î dataSource µÄÖµ£¬Êı¾İÔ´£¬Èç¹ûÄ£ĞÍ²ãÖĞ²»´øÓĞÈÎºÎ»º´æ½Úµã£¬ÔòÊı¾İÔ´¿ÉÒÔÉèÖÃÎªnull¡£
-     * @param dataSource ×Ö¶Î dataSource µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ dataSource çš„å€¼ï¼Œæ•°æ®æºï¼Œå¦‚æœæ¨¡å‹å±‚ä¸­ä¸å¸¦æœ‰ä»»ä½•ç¼“å­˜èŠ‚ç‚¹ï¼Œåˆ™æ•°æ®æºå¯ä»¥è®¾ç½®ä¸ºnullã€‚
+     * @param dataSource å­—æ®µ dataSource çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setDataSource(IComplexTreeDataSource dataSource) {
@@ -361,8 +361,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î cacheSize µÄÖµ£¬»º´æ´óĞ¡£¬¼´Í¬Ê±´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄ¸öÊı£¬×¢Òâ£ºÄ£ĞÍ»á¾¡Á¿È¥Âú×ãÕâ¸öÏŞÖÆÖµ£¬µ«²»±£Ö¤Ò»¶¨ÄÜÂú×ã£¬Òò´ËÓĞĞ©Çé¿öÏÂ´ËÖµ»áÊ§Ğ§¡£
-     * @return ×Ö¶Î cacheSize µÄÖµ¡£
+     * è·å–å­—æ®µ cacheSize çš„å€¼ï¼Œç¼“å­˜å¤§å°ï¼Œå³åŒæ—¶å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„ä¸ªæ•°ï¼Œæ³¨æ„ï¼šæ¨¡å‹ä¼šå°½é‡å»æ»¡è¶³è¿™ä¸ªé™åˆ¶å€¼ï¼Œä½†ä¸ä¿è¯ä¸€å®šèƒ½æ»¡è¶³ï¼Œå› æ­¤æœ‰äº›æƒ…å†µä¸‹æ­¤å€¼ä¼šå¤±æ•ˆã€‚
+     * @return å­—æ®µ cacheSize çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public int getCacheSize() {
@@ -370,8 +370,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î cacheSize µÄÖµ£¬»º´æ´óĞ¡£¬¼´Í¬Ê±´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄ¸öÊı£¬×¢Òâ£ºÄ£ĞÍ»á¾¡Á¿È¥Âú×ãÕâ¸öÏŞÖÆÖµ£¬µ«²»±£Ö¤Ò»¶¨ÄÜÂú×ã£¬Òò´ËÓĞĞ©Çé¿öÏÂ´ËÖµ»áÊ§Ğ§¡£
-     * @param cacheSize ×Ö¶Î cacheSize µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ cacheSize çš„å€¼ï¼Œç¼“å­˜å¤§å°ï¼Œå³åŒæ—¶å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„ä¸ªæ•°ï¼Œæ³¨æ„ï¼šæ¨¡å‹ä¼šå°½é‡å»æ»¡è¶³è¿™ä¸ªé™åˆ¶å€¼ï¼Œä½†ä¸ä¿è¯ä¸€å®šèƒ½æ»¡è¶³ï¼Œå› æ­¤æœ‰äº›æƒ…å†µä¸‹æ­¤å€¼ä¼šå¤±æ•ˆã€‚
+     * @param cacheSize å­—æ®µ cacheSize çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setCacheSize(int cacheSize) {
@@ -379,8 +379,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isEnabledChoice µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÑ¡Ôñ£¬Èç¹û²»ÔÊĞíÔò½çÃæÉÏµÄ½ÚµãÇ°Ãæ²»»á´øÓĞÑ¡Ôñ¿ò£¬È±Ê¡ÎªÔÊĞí¡£
-     * @return ×Ö¶Î isEnabledChoice µÄÖµ¡£
+     * è·å–å­—æ®µ isEnabledChoice çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸é€‰æ‹©ï¼Œå¦‚æœä¸å…è®¸åˆ™ç•Œé¢ä¸Šçš„èŠ‚ç‚¹å‰é¢ä¸ä¼šå¸¦æœ‰é€‰æ‹©æ¡†ï¼Œç¼ºçœä¸ºå…è®¸ã€‚
+     * @return å­—æ®µ isEnabledChoice çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isEnabledChoice() {
@@ -388,8 +388,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡×Ö¶Î maxChosenCount µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÑ¡Ôñ£¬Èç¹û²»ÔÊĞíÔò½çÃæÉÏµÄ½ÚµãÇ°Ãæ²»»á´øÓĞÑ¡Ôñ¿ò£¬È±Ê¡ÎªÔÊĞí¡£
-     * @return ×Ö¶Î maxChosenCount µÄÖµ¡£
+     * è·å–å­—æ®µ maxChosenCount çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸é€‰æ‹©ï¼Œå¦‚æœä¸å…è®¸åˆ™ç•Œé¢ä¸Šçš„èŠ‚ç‚¹å‰é¢ä¸ä¼šå¸¦æœ‰é€‰æ‹©æ¡†ï¼Œç¼ºçœä¸ºå…è®¸ã€‚
+     * @return å­—æ®µ maxChosenCount çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public long getMaxChosenCount() {
@@ -397,8 +397,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î maxChosenCount µÄÖµ£¬×î´óÑ¡ÖĞÊıÉÏÏŞ¡£
-     * @param maxChosenCount ×Ö¶Î maxChosenCount µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ maxChosenCount çš„å€¼ï¼Œæœ€å¤§é€‰ä¸­æ•°ä¸Šé™ã€‚
+     * @param maxChosenCount å­—æ®µ maxChosenCount çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setMaxChosenCount(long maxChosenCount) {
@@ -406,8 +406,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ìí¼Ó×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
-     * @param listener ×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
+     * æ·»åŠ ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
+     * @param listener ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
      * @since T3 V1.1
      */
     public void addComplexTreeModelListener(IComplexTreeModelListener listener) {
@@ -415,8 +415,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÒÆ³ı×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
-     * @param listener ×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
+     * ç§»é™¤ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
+     * @param listener ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
      * @since T3 V1.1
      */
     public void removeComplexTreeModelListener(IComplexTreeModelListener listener) {
@@ -424,8 +424,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡ËùÓĞ×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
-     * @return ËùÓĞ×ÛºÏÊ÷Ä£ĞÍ¼àÌıÆ÷¡£
+     * è·å–æ‰€æœ‰ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
+     * @return æ‰€æœ‰ç»¼åˆæ ‘æ¨¡å‹ç›‘å¬å™¨ã€‚
      * @since T3 V1.1
      */
     public IComplexTreeModelListener[] getComplexTreeModelListener() {
@@ -433,7 +433,7 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÊÍ·ÅËùÓĞ»º´æ£¬Õâ¸öÊÇÊÖ¶¯ÊÍ·Å»º´æµÄ·½·¨£¬Ò»°ãÇé¿öÏÂ²»ĞèÒªÓ¦ÓÃ×ÔĞĞÈ¥µ÷ÓÃ¡£
+     * é‡Šæ”¾æ‰€æœ‰ç¼“å­˜ï¼Œè¿™ä¸ªæ˜¯æ‰‹åŠ¨é‡Šæ”¾ç¼“å­˜çš„æ–¹æ³•ï¼Œä¸€èˆ¬æƒ…å†µä¸‹ä¸éœ€è¦åº”ç”¨è‡ªè¡Œå»è°ƒç”¨ã€‚
      * @since T3 V1.1
      */
     public void releaseCache() {
@@ -441,8 +441,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÊÍ·ÅÖ¸¶¨½ÚµãÏÂµÄËùÓĞ»º´æ£¬Õâ¸öÊÇÊÖ¶¯ÊÍ·Å»º´æµÄ·½·¨£¬Ò»°ãÇé¿öÏÂ²»ĞèÒªÓ¦ÓÃ×ÔĞĞÈ¥µ÷ÓÃ¡£
-     * @param node Ö¸¶¨½Úµã¡£
+     * é‡Šæ”¾æŒ‡å®šèŠ‚ç‚¹ä¸‹çš„æ‰€æœ‰ç¼“å­˜ï¼Œè¿™ä¸ªæ˜¯æ‰‹åŠ¨é‡Šæ”¾ç¼“å­˜çš„æ–¹æ³•ï¼Œä¸€èˆ¬æƒ…å†µä¸‹ä¸éœ€è¦åº”ç”¨è‡ªè¡Œå»è°ƒç”¨ã€‚
+     * @param node æŒ‡å®šèŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public void releaseCache(ComplexTreeNode node) {
@@ -461,8 +461,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @return ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
+     * è·å–å·²é€‰ä¸­çš„è·¯å¾„é›†ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @return å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
      * @since T3 V1.1
      */
     public TreePath[] getChosenPaths() {
@@ -477,8 +477,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÉèÖÃÒÑÑ¡ÖĞµÄÂ·¾¶¼¯£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @param chosenPaths ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
+     * è®¾ç½®å·²é€‰ä¸­çš„è·¯å¾„é›†ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @param chosenPaths å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
      * @since T3 V1.1
      */
     public void setChosenPaths(TreePath[] chosenPaths) {
@@ -507,7 +507,7 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Çå³ıËùÓĞÒÑÑ¡ÖĞµÄÂ·¾¶¡£
+     * æ¸…é™¤æ‰€æœ‰å·²é€‰ä¸­çš„è·¯å¾„ã€‚
      * @since T3 V1.1
      */
     public void clearChosenPaths() {
@@ -523,8 +523,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * µã»÷Ö¸¶¨½Úµã£¬½ÚµãµÄÑ¡ÖĞ×´Ì¬»áËæÖ®ÇĞ»»¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * ç‚¹å‡»æŒ‡å®šèŠ‚ç‚¹ï¼ŒèŠ‚ç‚¹çš„é€‰ä¸­çŠ¶æ€ä¼šéšä¹‹åˆ‡æ¢ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public void doClick(ComplexTreeChoiceNode choiceNode) {
@@ -541,8 +541,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ñ¡ÔñÖ¸¶¨µÄ½Úµã¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * é€‰æ‹©æŒ‡å®šçš„èŠ‚ç‚¹ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public void select(ComplexTreeChoiceNode choiceNode) {
@@ -550,8 +550,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * È¡ÏûÑ¡ÔñÖ¸¶¨µÄ½Úµã¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * å–æ¶ˆé€‰æ‹©æŒ‡å®šçš„èŠ‚ç‚¹ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public void deselect(ComplexTreeChoiceNode choiceNode) {
@@ -559,8 +559,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¸üĞÂÑ¡ÖĞ½Úµã£¬Ö÷ÒªÊÇÎªÁË±£³ÖÑ¡ÖĞ×´Ì¬µÄÒ»ÖÂĞÔ£¬´Ë·½·¨Ïà¶ÔÀ´Ëµ±È½ÏºÄÊ±£¬ËùÒÔ×îºÃÉÙÓÃ£¬¶øÓ¦¸Ã¶à¿¿Ó¦ÓÃÀ´±£Ö¤½ÚµãÑ¡ÖĞ×´Ì¬µÄÒ»ÖÂĞÔ¡£
-     * @param parent ¸¸Ñ¡Ôñ½Úµã¡£
+     * æ›´æ–°é€‰ä¸­èŠ‚ç‚¹ï¼Œä¸»è¦æ˜¯ä¸ºäº†ä¿æŒé€‰ä¸­çŠ¶æ€çš„ä¸€è‡´æ€§ï¼Œæ­¤æ–¹æ³•ç›¸å¯¹æ¥è¯´æ¯”è¾ƒè€—æ—¶ï¼Œæ‰€ä»¥æœ€å¥½å°‘ç”¨ï¼Œè€Œåº”è¯¥å¤šé åº”ç”¨æ¥ä¿è¯èŠ‚ç‚¹é€‰ä¸­çŠ¶æ€çš„ä¸€è‡´æ€§ã€‚
+     * @param parent çˆ¶é€‰æ‹©èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public void update(ComplexTreeChoiceNode parent) {
@@ -619,15 +619,15 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * Í¬²½ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
+     * åŒæ­¥å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
      */
     protected void syncChosenPaths() {
         syncChosenPaths((ComplexTreeChoiceNode) root);
     }
 
     /**
-     * Í¬²½ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * åŒæ­¥å·²é€‰ä¸­çš„è·¯å¾„é›†ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      */
     protected void syncChosenPaths(ComplexTreeChoiceNode choiceNode) {
         TreePath chosenPath = choiceNode.getChosenPath();
@@ -648,7 +648,7 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÑéÖ¤ÒÑÑ¡ÖĞµÄÂ·¾¶¼¯ÊÇ·ñºÏ·¨¡£
+     * éªŒè¯å·²é€‰ä¸­çš„è·¯å¾„é›†æ˜¯å¦åˆæ³•ã€‚
      */
     protected void validate() {
         for (int i = m_chosenPaths.size() - 1; i >= 0; i--) {
@@ -659,9 +659,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÑéÖ¤ÒÑÑ¡ÖĞµÄÂ·¾¶ÊÇ·ñºÏ·¨¡£
-     * @param chosenPath ÒÑÑ¡ÖĞµÄÂ·¾¶¡£
-     * @return ±êÊ¶ÒÑÑ¡ÖĞµÄÂ·¾¶ÊÇ·ñºÏ·¨¡£
+     * éªŒè¯å·²é€‰ä¸­çš„è·¯å¾„æ˜¯å¦åˆæ³•ã€‚
+     * @param chosenPath å·²é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @return æ ‡è¯†å·²é€‰ä¸­çš„è·¯å¾„æ˜¯å¦åˆæ³•ã€‚
      */
     protected boolean validate(TreePath chosenPath) {
         ComplexTreeChoiceNode node = (ComplexTreeChoiceNode) root;
@@ -669,10 +669,10 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÑéÖ¤ÒÑÑ¡ÖĞµÄÂ·¾¶ÊÇ·ñºÏ·¨¡£
-     * @param chosenPath ÒÑÑ¡ÖĞµÄÂ·¾¶¡£
-     * @param node ½Úµã¡£
-     * @return ±êÊ¶ÒÑÑ¡ÖĞµÄÂ·¾¶ÊÇ·ñºÏ·¨¡£
+     * éªŒè¯å·²é€‰ä¸­çš„è·¯å¾„æ˜¯å¦åˆæ³•ã€‚
+     * @param chosenPath å·²é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return æ ‡è¯†å·²é€‰ä¸­çš„è·¯å¾„æ˜¯å¦åˆæ³•ã€‚
      */
     protected boolean validate(TreePath chosenPath, ComplexTreeChoiceNode node) {
         int level = node.getLevel();
@@ -693,8 +693,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍ½ÚµãÒÑ¸Ä±äÍ¨Öª£¨ÊÊÓÃÓÚ½ûÖ¹ÔØÈëÊ±£©¡£
-     * @param node ½Úµã¡£
+     * å‘é€èŠ‚ç‚¹å·²æ”¹å˜é€šçŸ¥ï¼ˆé€‚ç”¨äºç¦æ­¢è½½å…¥æ—¶ï¼‰ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
      */
     protected void reloadForDisabledLoad(TreeNode node) {
         m_isEnabledLoad = false;
@@ -703,9 +703,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡×î½üµÄ½Úµã¡£
-     * @param path Â·¾¶¡£
-     * @return ×î½üµÄ½Úµã¡£
+     * è·å–æœ€è¿‘çš„èŠ‚ç‚¹ã€‚
+     * @param path è·¯å¾„ã€‚
+     * @return æœ€è¿‘çš„èŠ‚ç‚¹ã€‚
      */
     protected ComplexTreeNode getLastNode(TreePath path) {
         Object[] userObjects = path.getPath();
@@ -736,9 +736,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ¸ù¾İÖ¸¶¨µÄÒÑÑ¡ÖĞÂ·¾¶»ñÈ¡Ñ¡ÖĞ½Úµã¡£
-     * @param chosenPath Ö¸¶¨µÄÒÑÑ¡ÖĞÂ·¾¶¡£
-     * @return Ñ¡ÖĞ½Úµã¡£
+     * æ ¹æ®æŒ‡å®šçš„å·²é€‰ä¸­è·¯å¾„è·å–é€‰ä¸­èŠ‚ç‚¹ã€‚
+     * @param chosenPath æŒ‡å®šçš„å·²é€‰ä¸­è·¯å¾„ã€‚
+     * @return é€‰ä¸­èŠ‚ç‚¹ã€‚
      */
     protected ComplexTreeChoiceNode getChosenNode(TreePath chosenPath) {
         if (!m_isEnabledChoice) {
@@ -783,9 +783,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÅĞ¶ÏÖ¸¶¨Â·¾¶ÊÇ·ñÊÇÒÑÑ¡ÖĞµÄÂ·¾¶¡£
-     * @param path Ö¸¶¨Â·¾¶¡£
-     * @return ±êÊ¶Ö¸¶¨Â·¾¶ÊÇ·ñÊÇÒÑÑ¡ÖĞµÄÂ·¾¶¡£
+     * åˆ¤æ–­æŒ‡å®šè·¯å¾„æ˜¯å¦æ˜¯å·²é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @param path æŒ‡å®šè·¯å¾„ã€‚
+     * @return æ ‡è¯†æŒ‡å®šè·¯å¾„æ˜¯å¦æ˜¯å·²é€‰ä¸­çš„è·¯å¾„ã€‚
      */
     protected boolean isChosenPath(TreePath path) {
         if (!m_isEnabledChoice) {
@@ -802,8 +802,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ìí¼ÓÒÑÑ¡ÖĞµÄÂ·¾¶¡£
-     * @param newChosenPath ÒÑÑ¡ÖĞµÄÂ·¾¶¡£
+     * æ·»åŠ å·²é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @param newChosenPath å·²é€‰ä¸­çš„è·¯å¾„ã€‚
      */
     protected void addChosenPath(TreePath newChosenPath) {
         if (!m_isEnabledChoice) {
@@ -826,8 +826,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ÒÆ³ıÒÑÑ¡ÖĞµÄÂ·¾¶¡£
-     * @param oldChosenPath ÒÑÑ¡ÖĞµÄÂ·¾¶¡£
+     * ç§»é™¤å·²é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @param oldChosenPath å·²é€‰ä¸­çš„è·¯å¾„ã€‚
      */
     protected void removeChosenPath(TreePath oldChosenPath) {
         if (!m_isEnabledChoice) {
@@ -866,9 +866,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * »ñÈ¡×î½üµÄÑ¡ÖĞÂ·¾¶¡£
-     * @param path Â·¾¶¡£
-     * @return ×î½üµÄÑ¡ÖĞÂ·¾¶¡£
+     * è·å–æœ€è¿‘çš„é€‰ä¸­è·¯å¾„ã€‚
+     * @param path è·¯å¾„ã€‚
+     * @return æœ€è¿‘çš„é€‰ä¸­è·¯å¾„ã€‚
      */
     protected TreePath getLastChosenPath(TreePath path) {
         if (!m_isEnabledChoice) {
@@ -889,11 +889,11 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ñ¡Ôñ¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã
-     * @param hasRefreshChosenPath ±êÊ¶ÊÇ·ñĞèÒªË¢ĞÂÑ¡ÖĞÂ·¾¶¡£
-     * @param hasCheckParent ±êÊ¶ÊÇ·ñĞèÒª¼ì²é¸¸½Úµã¡£
-     * @param hasNotify ±êÊ¶ÊÇ·ñĞèÒª·¢Í¨Öª¡£
+     * é€‰æ‹©ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹
+     * @param hasRefreshChosenPath æ ‡è¯†æ˜¯å¦éœ€è¦åˆ·æ–°é€‰ä¸­è·¯å¾„ã€‚
+     * @param hasCheckParent æ ‡è¯†æ˜¯å¦éœ€è¦æ£€æŸ¥çˆ¶èŠ‚ç‚¹ã€‚
+     * @param hasNotify æ ‡è¯†æ˜¯å¦éœ€è¦å‘é€šçŸ¥ã€‚
      */
     protected void select(ComplexTreeChoiceNode choiceNode, boolean hasRefreshChosenPath, boolean hasCheckParent, boolean hasNotify) {
         if (!m_isEnabledChoice || choiceNode == null || choiceNode.isSelected()) {
@@ -937,11 +937,11 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * È¡ÏûÑ¡Ôñ¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
-     * @param hasRefreshChosenPath ±êÊ¶ÊÇ·ñĞèÒªË¢ĞÂÑ¡ÖĞÂ·¾¶¡£
-     * @param hasCheckParent ±êÊ¶ÊÇ·ñĞèÒª¼ì²é¸¸½Úµã¡£
-     * @param hasNotify ±êÊ¶ÊÇ·ñĞèÒª·¢Í¨Öª¡£
+     * å–æ¶ˆé€‰æ‹©ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
+     * @param hasRefreshChosenPath æ ‡è¯†æ˜¯å¦éœ€è¦åˆ·æ–°é€‰ä¸­è·¯å¾„ã€‚
+     * @param hasCheckParent æ ‡è¯†æ˜¯å¦éœ€è¦æ£€æŸ¥çˆ¶èŠ‚ç‚¹ã€‚
+     * @param hasNotify æ ‡è¯†æ˜¯å¦éœ€è¦å‘é€šçŸ¥ã€‚
      */
     protected void deselect(ComplexTreeChoiceNode choiceNode, boolean hasRefreshChosenPath, boolean hasCheckParent, boolean hasNotify) {
         if (!m_isEnabledChoice || choiceNode == null || choiceNode.isDeselected()) {
@@ -985,8 +985,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ²»È·¶¨¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * ä¸ç¡®å®šã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      */
     protected void indetermine(ComplexTreeChoiceNode choiceNode) {
         if (!m_isEnabledChoice || choiceNode == null || choiceNode.isIndetermined()) {
@@ -998,15 +998,15 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ë¢ĞÂ¡£
+     * åˆ·æ–°ã€‚
      */
     protected void refresh() {
         refresh((ComplexTreeChoiceNode) root);
     }
 
     /**
-     * Ë¢ĞÂ¡£
-     * @param choiceNode Ñ¡Ôñ½Úµã¡£
+     * åˆ·æ–°ã€‚
+     * @param choiceNode é€‰æ‹©èŠ‚ç‚¹ã€‚
      */
     protected void refresh(ComplexTreeChoiceNode choiceNode) {
         if (!m_isEnabledChoice || choiceNode == null) {
@@ -1050,18 +1050,18 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍ½ÚµãÑ¡ÔñÒÑ¸Ä±äÍ¨Öª¡£
-     * @param chosenPath Ñ¡ÖĞµÄÂ·¾¶¡£
-     * @param isSelected ±êÊ¶ÊÇÑ¡Ôñ»¹ÊÇÈ¡ÏûÑ¡Ôñ¡£
+     * å‘é€èŠ‚ç‚¹é€‰æ‹©å·²æ”¹å˜é€šçŸ¥ã€‚
+     * @param chosenPath é€‰ä¸­çš„è·¯å¾„ã€‚
+     * @param isSelected æ ‡è¯†æ˜¯é€‰æ‹©è¿˜æ˜¯å–æ¶ˆé€‰æ‹©ã€‚
      */
     protected void fireNodeChoiceChanged(TreePath chosenPath, boolean isSelected) {
         fireNodeChoiceChanged(new TreePath[] { chosenPath }, isSelected);
     }
 
     /**
-     * ·¢ËÍ½ÚµãÑ¡ÔñÒÑ¸Ä±äÍ¨Öª¡£
-     * @param chosenPaths Ñ¡ÖĞµÄÂ·¾¶¼¯¡£
-     * @param isSelected ±êÊ¶ÊÇÑ¡Ôñ»¹ÊÇÈ¡ÏûÑ¡Ôñ¡£
+     * å‘é€èŠ‚ç‚¹é€‰æ‹©å·²æ”¹å˜é€šçŸ¥ã€‚
+     * @param chosenPaths é€‰ä¸­çš„è·¯å¾„é›†ã€‚
+     * @param isSelected æ ‡è¯†æ˜¯é€‰æ‹©è¿˜æ˜¯å–æ¶ˆé€‰æ‹©ã€‚
      */
     protected void fireNodeChoiceChanged(TreePath[] chosenPaths, boolean isSelected) {
         ComplexTreeModelEvent evt = new ComplexTreeModelEvent(this, chosenPaths, isSelected);
@@ -1075,8 +1075,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍ½Úµã¼´½«ÔØÈëÍ¨Öª¡£
-     * @param parent ¸¸»º´æ½Úµã¡£
+     * å‘é€èŠ‚ç‚¹å³å°†è½½å…¥é€šçŸ¥ã€‚
+     * @param parent çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
      */
     protected void fireNodeWillLoad(ComplexTreeCacheNode parent) {
         ComplexTreeModelEvent evt = new ComplexTreeModelEvent(parent);
@@ -1090,8 +1090,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍ½ÚµãÒÑÔØÈëÍ¨Öª¡£
-     * @param parent ¸¸»º´æ½Úµã¡£
+     * å‘é€èŠ‚ç‚¹å·²è½½å…¥é€šçŸ¥ã€‚
+     * @param parent çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
      */
     protected void fireNodeLoaded(ComplexTreeCacheNode parent) {
         ComplexTreeModelEvent evt = new ComplexTreeModelEvent(parent);
@@ -1105,9 +1105,9 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍ½ÚµãÔØÈëÒÑÊ§°ÜÍ¨Öª¡£
-     * @param parent ¸¸»º´æ½Úµã¡£
-     * @param dsEx Êı¾İÔ´Òì³£¡£
+     * å‘é€èŠ‚ç‚¹è½½å…¥å·²å¤±è´¥é€šçŸ¥ã€‚
+     * @param parent çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
+     * @param dsEx æ•°æ®æºå¼‚å¸¸ã€‚
      */
     protected void fireNodeLoadFailed(ComplexTreeCacheNode parent, ComplexTreeException dsEx) {
         ComplexTreeModelEvent evt = new ComplexTreeModelEvent(parent, dsEx);
@@ -1121,8 +1121,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * ·¢ËÍÊÍ·Å»º´æÍ¨Öª¡£
-     * @param parent ¸¸»º´æ½Úµã¡£
+     * å‘é€é‡Šæ”¾ç¼“å­˜é€šçŸ¥ã€‚
+     * @param parent çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
      */
     protected void fireReleaseCache(ComplexTreeCacheNode parent) {
         ComplexTreeModelEvent evt = new ComplexTreeModelEvent(parent, m_caches);
@@ -1136,8 +1136,8 @@ public class ComplexTreeModel extends DefaultTreeModel implements IConstants {
     }
 
     /**
-     * Ìí¼Ó»º´æ¡£
-     * @param cache »º´æ¡£
+     * æ·»åŠ ç¼“å­˜ã€‚
+     * @param cache ç¼“å­˜ã€‚
      */
     protected void addCache(ComplexTreeCacheNode cache) {
         if (m_caches.size() >= m_cacheSize) {

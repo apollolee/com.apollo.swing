@@ -1,25 +1,25 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-3-20 ÉÏÎç09:59:39¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-3-20 ä¸Šåˆ09:59:39ã€‚
  */
 package com.apollo.swing.component.complextree;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeException.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷Òì³£Àà£¬·â×°ÁËÓÉ×ÛºÏÊ÷Å×³öÀ´µÄÒì³£ĞÅÏ¢¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-3-20</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeException.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘å¼‚å¸¸ç±»ï¼Œå°è£…äº†ç”±ç»¼åˆæ ‘æŠ›å‡ºæ¥çš„å¼‚å¸¸ä¿¡æ¯ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-3-20</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -100,8 +100,8 @@ public class ComplexTreeException extends Exception {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param message Òì³£ĞÅÏ¢¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param message å¼‚å¸¸ä¿¡æ¯ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeException(String message) {
@@ -109,9 +109,9 @@ public class ComplexTreeException extends Exception {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param message Òì³£ĞÅÏ¢¡£
-     * @param cause Òì³£Ô­Òò¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param message å¼‚å¸¸ä¿¡æ¯ã€‚
+     * @param cause å¼‚å¸¸åŸå› ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeException(String message, Throwable cause) {

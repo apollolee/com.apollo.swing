@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-10-21 ÏÂÎç04:04:44¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-10-21 ä¸‹åˆ04:04:44ã€‚
  */
 package com.apollo.swing.component.complextree.demo;
 
@@ -50,22 +50,22 @@ import com.apollo.swing.component.complextree.IComplexTreeModelListener;
 import com.apollo.swing.laf.TLookAndFeelManager;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeDemo.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷ÑİÊ¾Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-10-21</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘æ¼”ç¤ºç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-10-21</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexTreeModelListener {
@@ -93,32 +93,32 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     /*------------------------------------- Protected Static Field -------------------------------------*/
 
     /**
-     * ÍøÂç×ÊÔ´äÖÈ¾Æ÷¡£
+     * ç½‘ç»œèµ„æºæ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_netResRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/net-res.gif");
 
     /**
-     * ÍøÔª×éäÖÈ¾Æ÷¡£
+     * ç½‘å…ƒç»„æ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_neGroupRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/ne-group.gif");
 
     /**
-     * ÍøÔªäÖÈ¾Æ÷¡£
+     * ç½‘å…ƒæ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_neRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/ne.gif");
 
     /**
-     * µ¥°åäÖÈ¾Æ÷¡£
+     * å•æ¿æ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_boardRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/board.gif");
 
     /**
-     * ¶Ë¿ÚäÖÈ¾Æ÷¡£
+     * ç«¯å£æ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_portRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/port.gif");
 
     /**
-     * ·ÇÑ¡Ôñ½ÚµãäÖÈ¾Æ÷¡£
+     * éé€‰æ‹©èŠ‚ç‚¹æ¸²æŸ“å™¨ã€‚
      */
     protected static TreeCellRenderer s_noSelectionRenderer = new SingleIconTreeCellRenderer("com/apollo/swing/component/complextree/demo/no-selection.gif");
 
@@ -137,10 +137,10 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, JTree tree, Component parent) {
         String oldText = text;
@@ -158,10 +158,10 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTree tree) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -193,9 +193,9 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     }
 
     /**
-     * »ñÈ¡½Úµã¼¯¡£
-     * @param node ½Úµã¡£
-     * @return ½Úµã¼¯¡£
+     * è·å–èŠ‚ç‚¹é›†ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return èŠ‚ç‚¹é›†ã€‚
      */
     private static List<DefaultMutableTreeNode> getNodes(DefaultMutableTreeNode node) {
         List<DefaultMutableTreeNode> nodes = new ArrayList<DefaultMutableTreeNode>();
@@ -211,11 +211,11 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½Úµã½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree ×ÛºÏÊ÷¡£
-     * @param nodes ×ÛºÏÊ÷½Úµã¼¯¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘èŠ‚ç‚¹è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree ç»¼åˆæ ‘ã€‚
+     * @param nodes ç»¼åˆæ ‘èŠ‚ç‚¹é›†ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     private static boolean searchText(String text, JTree tree, List<DefaultMutableTreeNode> nodes) {
         for (DefaultMutableTreeNode node : nodes) {
@@ -236,8 +236,8 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     }
 
     /**
-     * Ö÷·½·¨¡£
-     * @param args ²ÎÊı¡£
+     * ä¸»æ–¹æ³•ã€‚
+     * @param args å‚æ•°ã€‚
      */
     public static void main(String[] args) {
         TLookAndFeelManager.loadAlloy(false);
@@ -272,63 +272,63 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÒÑÑ¡ÖĞµÄÂ·¾¶¡£
+     * å·²é€‰ä¸­çš„è·¯å¾„ã€‚
      */
     protected TreePath[] m_chosenPaths = null;
 
     /**
-     * Ä£ĞÍ¡£
+     * æ¨¡å‹ã€‚
      */
     protected ComplexTreeModel m_model = new ComplexTreeModel(new ComplexTreeNode("root"));
 
     /**
-     * Ê÷¡£
+     * æ ‘ã€‚
      */
     protected ComplexTree m_tree = new ComplexTree(m_model);
 
     /**
-     * ÏûÏ¢¡£
+     * æ¶ˆæ¯ã€‚
      */
     protected JTextArea m_msg = new JTextArea();
 
     /**
-     * ¶¯×÷------×ÛºÏÊ÷¡£
+     * åŠ¨ä½œ------ç»¼åˆæ ‘ã€‚
      */
     protected Action m_complex = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "×ÛºÏÊ÷", 'C');
+            BaseUtilities.setAction(this, "ç»¼åˆæ ‘", 'C');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            /* ¹¹Ôì¸ù½Úµã */
-            ComplexTreeNode netRes = new ComplexTreeNode("ÍøÂç×ÊÔ´");
+            /* æ„é€ æ ¹èŠ‚ç‚¹ */
+            ComplexTreeNode netRes = new ComplexTreeNode("ç½‘ç»œèµ„æº");
             netRes.setRenderer(s_netResRenderer);
 
-            /* ¹¹ÔìµÚÒ»²ã½Úµã */
+            /* æ„é€ ç¬¬ä¸€å±‚èŠ‚ç‚¹ */
             /* for netRes */
-            ComplexTreeNode neGroup1 = new ComplexTreeNode("ÍøÔª×é 1");
+            ComplexTreeNode neGroup1 = new ComplexTreeNode("ç½‘å…ƒç»„ 1");
             neGroup1.setRenderer(s_neGroupRenderer);
-            neGroup1.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÍøÔª×é 1");
+            neGroup1.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- ç½‘å…ƒç»„ 1");
 
-            ComplexTreeNode neGroup2 = new ComplexTreeNode("ÍøÔª×é 2");
+            ComplexTreeNode neGroup2 = new ComplexTreeNode("ç½‘å…ƒç»„ 2");
             neGroup2.setRenderer(s_neGroupRenderer);
 
-            ComplexTreeNode neGroup3 = new ComplexTreeNode("ÍøÔª×é 3");
+            ComplexTreeNode neGroup3 = new ComplexTreeNode("ç½‘å…ƒç»„ 3");
             neGroup3.setRenderer(s_neGroupRenderer);
 
-            ComplexTreeNode neGroup4 = new ComplexTreeNode("ÍøÔª×é 4£¨¿É±à¼­£©");
+            ComplexTreeNode neGroup4 = new ComplexTreeNode("ç½‘å…ƒç»„ 4ï¼ˆå¯ç¼–è¾‘ï¼‰");
             neGroup4.setRenderer(s_neGroupRenderer);
             neGroup4.setEditable(true);
-            neGroup4.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÍøÔª×é 4£¨¿É±à¼­£©");
+            neGroup4.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- ç½‘å…ƒç»„ 4ï¼ˆå¯ç¼–è¾‘ï¼‰");
 
-            ComplexTreeNode ctn1 = new ComplexTreeNode("ÆÕÍ¨×ÛºÏÊ÷½Úµã");
+            ComplexTreeNode ctn1 = new ComplexTreeNode("æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹");
             ctn1.setRenderer(s_noSelectionRenderer);
 
-            /* Ìí¼ÓµÚÒ»²ã½Úµã */
+            /* æ·»åŠ ç¬¬ä¸€å±‚èŠ‚ç‚¹ */
             /* for netRes */
             netRes.add(neGroup1);
             netRes.add(neGroup2);
@@ -336,35 +336,35 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             netRes.add(neGroup4);
             netRes.add(ctn1);
 
-            /* ¹¹ÔìµÚ¶ş²ã½Úµã */
+            /* æ„é€ ç¬¬äºŒå±‚èŠ‚ç‚¹ */
             /* for neGroup1 */
-            ComplexTreeNode ne11 = new ComplexTreeNode("ÍøÔª 1-1£¨¿É±à¼­£©");
+            ComplexTreeNode ne11 = new ComplexTreeNode("ç½‘å…ƒ 1-1ï¼ˆå¯ç¼–è¾‘ï¼‰");
             ne11.setRenderer(s_neRenderer);
             ne11.setEditable(true);
 
-            ComplexTreeNode ne12 = new ComplexTreeNode("ÍøÔª 1-2");
+            ComplexTreeNode ne12 = new ComplexTreeNode("ç½‘å…ƒ 1-2");
             ne12.setRenderer(s_neRenderer);
 
-            ComplexTreeNode ne13 = new ComplexTreeNode("ÍøÔª 1-3");
+            ComplexTreeNode ne13 = new ComplexTreeNode("ç½‘å…ƒ 1-3");
             ne13.setRenderer(s_neRenderer);
 
-            ComplexTreeNode ctn2 = new ComplexTreeNode("ÆÕÍ¨×ÛºÏÊ÷½Úµã£¨¿É±à¼­£©");
+            ComplexTreeNode ctn2 = new ComplexTreeNode("æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹ï¼ˆå¯ç¼–è¾‘ï¼‰");
             ctn2.setRenderer(s_noSelectionRenderer);
             ctn2.setEditable(true);
-            ctn2.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÆÕÍ¨×ÛºÏÊ÷½Úµã£¨¿É±à¼­£©");
+            ctn2.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹ï¼ˆå¯ç¼–è¾‘ï¼‰");
 
             /* for neGroup2 */
-            ComplexTreeNode ne21 = new ComplexTreeNode("ÍøÔª 2-1");
+            ComplexTreeNode ne21 = new ComplexTreeNode("ç½‘å…ƒ 2-1");
             ne21.setRenderer(s_neRenderer);
 
             /* for neGroup3 */
-            ComplexTreeNode ne31 = new ComplexTreeNode("ÍøÔª 3-1");
+            ComplexTreeNode ne31 = new ComplexTreeNode("ç½‘å…ƒ 3-1");
             ne31.setRenderer(s_neRenderer);
 
-            ComplexTreeNode ne32 = new ComplexTreeNode("ÍøÔª 3-2");
+            ComplexTreeNode ne32 = new ComplexTreeNode("ç½‘å…ƒ 3-2");
             ne32.setRenderer(s_neRenderer);
 
-            /* Ìí¼ÓµÚ¶ş²ã½Úµã */
+            /* æ·»åŠ ç¬¬äºŒå±‚èŠ‚ç‚¹ */
             /* for neGroup1 */
             neGroup1.add(ne11);
             neGroup1.add(ne12);
@@ -378,29 +378,29 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             neGroup3.add(ne31);
             neGroup3.add(ne32);
 
-            /* ¹¹ÔìµÚÈı²ã½Úµã */
+            /* æ„é€ ç¬¬ä¸‰å±‚èŠ‚ç‚¹ */
             /* for ne12 */
-            ComplexTreeNode board121 = new ComplexTreeNode("µ¥°å 1-2-1");
+            ComplexTreeNode board121 = new ComplexTreeNode("å•æ¿ 1-2-1");
             board121.setRenderer(s_boardRenderer);
 
-            ComplexTreeNode board122 = new ComplexTreeNode("µ¥°å 1-2-2");
+            ComplexTreeNode board122 = new ComplexTreeNode("å•æ¿ 1-2-2");
             board122.setRenderer(s_boardRenderer);
 
-            ComplexTreeNode board123 = new ComplexTreeNode("µ¥°å 1-2-3");
+            ComplexTreeNode board123 = new ComplexTreeNode("å•æ¿ 1-2-3");
             board123.setRenderer(s_boardRenderer);
 
-            /* Ìí¼ÓµÚÈı²ã½Úµã */
+            /* æ·»åŠ ç¬¬ä¸‰å±‚èŠ‚ç‚¹ */
             /* for ne12 */
             ne12.add(board121);
             ne12.add(board122);
             ne12.add(board123);
 
-            /* ¹¹ÔìµÚËÄ²ã½Úµã */
+            /* æ„é€ ç¬¬å››å±‚èŠ‚ç‚¹ */
             /* for board122 */
-            ComplexTreeNode port1221 = new ComplexTreeNode("¶Ë¿Ú 1-2-2-1");
+            ComplexTreeNode port1221 = new ComplexTreeNode("ç«¯å£ 1-2-2-1");
             port1221.setRenderer(s_portRenderer);
 
-            ComplexTreeNode port1222 = new ComplexTreeNode("¶Ë¿Ú 1-2-2-2");
+            ComplexTreeNode port1222 = new ComplexTreeNode("ç«¯å£ 1-2-2-2");
             port1222.setRenderer(s_portRenderer);
 
             /* custom */
@@ -409,7 +409,7 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             customStn.setEditor(new CustomCellEditor());
             customStn.setEditable(true);
 
-            /* Ìí¼ÓµÚËÄ²ã½Úµã */
+            /* æ·»åŠ ç¬¬å››å±‚èŠ‚ç‚¹ */
             /* for board122 */
             board122.add(port1221);
             board122.add(port1222);
@@ -421,43 +421,43 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     };
 
     /**
-     * ¶¯×÷------Ñ¡ÔñÊ÷¡£
+     * åŠ¨ä½œ------é€‰æ‹©æ ‘ã€‚
      */
     protected Action m_choice = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Ñ¡ÔñÊ÷", 'O');
+            BaseUtilities.setAction(this, "é€‰æ‹©æ ‘", 'O');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            /* ¹¹Ôì¸ùÑ¡Ôñ½Úµã */
-            ComplexTreeChoiceNode netRes = new ComplexTreeChoiceNode("ÍøÂç×ÊÔ´");
+            /* æ„é€ æ ¹é€‰æ‹©èŠ‚ç‚¹ */
+            ComplexTreeChoiceNode netRes = new ComplexTreeChoiceNode("ç½‘ç»œèµ„æº");
             netRes.setRenderer(s_netResRenderer);
 
-            /* ¹¹ÔìµÚÒ»²ã½Úµã */
+            /* æ„é€ ç¬¬ä¸€å±‚èŠ‚ç‚¹ */
             /* for netRes */
-            ComplexTreeChoiceNode neGroup1 = new ComplexTreeChoiceNode("ÍøÔª×é 1");
+            ComplexTreeChoiceNode neGroup1 = new ComplexTreeChoiceNode("ç½‘å…ƒç»„ 1");
             neGroup1.setRenderer(s_neGroupRenderer);
-            neGroup1.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÍøÔª×é 1");
+            neGroup1.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- ç½‘å…ƒç»„ 1");
 
-            ComplexTreeChoiceNode neGroup2 = new ComplexTreeChoiceNode("ÍøÔª×é 2");
+            ComplexTreeChoiceNode neGroup2 = new ComplexTreeChoiceNode("ç½‘å…ƒç»„ 2");
             neGroup2.setRenderer(s_neGroupRenderer);
 
-            ComplexTreeChoiceNode neGroup3 = new ComplexTreeChoiceNode("ÍøÔª×é 3");
+            ComplexTreeChoiceNode neGroup3 = new ComplexTreeChoiceNode("ç½‘å…ƒç»„ 3");
             neGroup3.setRenderer(s_neGroupRenderer);
 
-            ComplexTreeChoiceNode neGroup4 = new ComplexTreeChoiceNode("ÍøÔª×é 4£¨¿É±à¼­£©");
+            ComplexTreeChoiceNode neGroup4 = new ComplexTreeChoiceNode("ç½‘å…ƒç»„ 4ï¼ˆå¯ç¼–è¾‘ï¼‰");
             neGroup4.setRenderer(s_neGroupRenderer);
             neGroup4.setEditable(true);
-            neGroup4.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÍøÔª×é 4£¨¿É±à¼­£©");
+            neGroup4.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- ç½‘å…ƒç»„ 4ï¼ˆå¯ç¼–è¾‘ï¼‰");
 
-            ComplexTreeNode ctn1 = new ComplexTreeNode("ÆÕÍ¨×ÛºÏÊ÷½Úµã");
+            ComplexTreeNode ctn1 = new ComplexTreeNode("æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹");
             ctn1.setRenderer(s_noSelectionRenderer);
 
-            /* Ìí¼ÓµÚÒ»²ã½Úµã */
+            /* æ·»åŠ ç¬¬ä¸€å±‚èŠ‚ç‚¹ */
             /* for netRes */
             netRes.add(neGroup1);
             netRes.add(neGroup2);
@@ -465,35 +465,35 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             netRes.add(neGroup4);
             netRes.add(ctn1);
 
-            /* ¹¹ÔìµÚ¶ş²ã½Úµã */
+            /* æ„é€ ç¬¬äºŒå±‚èŠ‚ç‚¹ */
             /* for neGroup1 */
-            ComplexTreeChoiceNode ne11 = new ComplexTreeChoiceNode("ÍøÔª 1-1£¨¿É±à¼­£©");
+            ComplexTreeChoiceNode ne11 = new ComplexTreeChoiceNode("ç½‘å…ƒ 1-1ï¼ˆå¯ç¼–è¾‘ï¼‰");
             ne11.setRenderer(s_neRenderer);
             ne11.setEditable(true);
 
-            ComplexTreeChoiceNode ne12 = new ComplexTreeChoiceNode("ÍøÔª 1-2");
+            ComplexTreeChoiceNode ne12 = new ComplexTreeChoiceNode("ç½‘å…ƒ 1-2");
             ne12.setRenderer(s_neRenderer);
 
-            ComplexTreeChoiceNode ne13 = new ComplexTreeChoiceNode("ÍøÔª 1-3");
+            ComplexTreeChoiceNode ne13 = new ComplexTreeChoiceNode("ç½‘å…ƒ 1-3");
             ne13.setRenderer(s_neRenderer);
 
-            ComplexTreeNode ctn2 = new ComplexTreeNode("ÆÕÍ¨×ÛºÏÊ÷½Úµã£¨¿É±à¼­£©");
+            ComplexTreeNode ctn2 = new ComplexTreeNode("æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹ï¼ˆå¯ç¼–è¾‘ï¼‰");
             ctn2.setRenderer(s_noSelectionRenderer);
             ctn2.setEditable(true);
-            ctn2.setToolTipText("²âÊÔ¹¤¾ßÌáÊ¾ÎÄ±¾£¡--- ÆÕÍ¨×ÛºÏÊ÷½Úµã£¨¿É±à¼­£©");
+            ctn2.setToolTipText("æµ‹è¯•å·¥å…·æç¤ºæ–‡æœ¬ï¼--- æ™®é€šç»¼åˆæ ‘èŠ‚ç‚¹ï¼ˆå¯ç¼–è¾‘ï¼‰");
 
             /* for neGroup2 */
-            ComplexTreeChoiceNode ne21 = new ComplexTreeChoiceNode("ÍøÔª 2-1");
+            ComplexTreeChoiceNode ne21 = new ComplexTreeChoiceNode("ç½‘å…ƒ 2-1");
             ne21.setRenderer(s_neRenderer);
 
             /* for neGroup3 */
-            ComplexTreeChoiceNode ne31 = new ComplexTreeChoiceNode("ÍøÔª 3-1");
+            ComplexTreeChoiceNode ne31 = new ComplexTreeChoiceNode("ç½‘å…ƒ 3-1");
             ne31.setRenderer(s_neRenderer);
 
-            ComplexTreeChoiceNode ne32 = new ComplexTreeChoiceNode("ÍøÔª 3-2");
+            ComplexTreeChoiceNode ne32 = new ComplexTreeChoiceNode("ç½‘å…ƒ 3-2");
             ne32.setRenderer(s_neRenderer);
 
-            /* Ìí¼ÓµÚ¶ş²ã½Úµã */
+            /* æ·»åŠ ç¬¬äºŒå±‚èŠ‚ç‚¹ */
             /* for neGroup1 */
             neGroup1.add(ne11);
             neGroup1.add(ne12);
@@ -507,29 +507,29 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             neGroup3.add(ne31);
             neGroup3.add(ne32);
 
-            /* ¹¹ÔìµÚÈı²ã½Úµã */
+            /* æ„é€ ç¬¬ä¸‰å±‚èŠ‚ç‚¹ */
             /* for ne12 */
-            ComplexTreeChoiceNode board121 = new ComplexTreeChoiceNode("µ¥°å 1-2-1");
+            ComplexTreeChoiceNode board121 = new ComplexTreeChoiceNode("å•æ¿ 1-2-1");
             board121.setRenderer(s_boardRenderer);
 
-            ComplexTreeChoiceNode board122 = new ComplexTreeChoiceNode("µ¥°å 1-2-2");
+            ComplexTreeChoiceNode board122 = new ComplexTreeChoiceNode("å•æ¿ 1-2-2");
             board122.setRenderer(s_boardRenderer);
 
-            ComplexTreeChoiceNode board123 = new ComplexTreeChoiceNode("µ¥°å 1-2-3");
+            ComplexTreeChoiceNode board123 = new ComplexTreeChoiceNode("å•æ¿ 1-2-3");
             board123.setRenderer(s_boardRenderer);
 
-            /* Ìí¼ÓµÚÈı²ã½Úµã */
+            /* æ·»åŠ ç¬¬ä¸‰å±‚èŠ‚ç‚¹ */
             /* for ne12 */
             ne12.add(board121);
             ne12.add(board122);
             ne12.add(board123);
 
-            /* ¹¹ÔìµÚËÄ²ã½Úµã */
+            /* æ„é€ ç¬¬å››å±‚èŠ‚ç‚¹ */
             /* for board122 */
-            ComplexTreeChoiceNode port1221 = new ComplexTreeChoiceNode("¶Ë¿Ú 1-2-2-1");
+            ComplexTreeChoiceNode port1221 = new ComplexTreeChoiceNode("ç«¯å£ 1-2-2-1");
             port1221.setRenderer(s_portRenderer);
 
-            ComplexTreeChoiceNode port1222 = new ComplexTreeChoiceNode("¶Ë¿Ú 1-2-2-2");
+            ComplexTreeChoiceNode port1222 = new ComplexTreeChoiceNode("ç«¯å£ 1-2-2-2");
             port1222.setRenderer(s_portRenderer);
 
             /* custom */
@@ -538,7 +538,7 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
             customStn.setEditor(new CustomCellEditor());
             customStn.setEditable(true);
 
-            /* Ìí¼ÓµÚËÄ²ã½Úµã */
+            /* æ·»åŠ ç¬¬å››å±‚èŠ‚ç‚¹ */
             /* for board122 */
             board122.add(port1221);
             board122.add(port1222);
@@ -550,12 +550,12 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     };
 
     /**
-     * ¶¯×÷------»º´æÊ÷¡£
+     * åŠ¨ä½œ------ç¼“å­˜æ ‘ã€‚
      */
     protected Action m_cache = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "»º´æÊ÷", 'A');
+            BaseUtilities.setAction(this, "ç¼“å­˜æ ‘", 'A');
         }
 
         /**
@@ -570,35 +570,35 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     };
 
     /**
-     * ¶¯×÷------»ñÈ¡ÒÑÑ¡ÖĞÂ·¾¶¡£
+     * åŠ¨ä½œ------è·å–å·²é€‰ä¸­è·¯å¾„ã€‚
      */
     protected Action m_getChosenPaths = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "»ñÈ¡ÒÑÑ¡ÖĞÂ·¾¶", 'G');
+            BaseUtilities.setAction(this, "è·å–å·²é€‰ä¸­è·¯å¾„", 'G');
         }
 
         /**
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            m_msg.append("---------------------------------ÒÑÑ¡ÖĞÂ·¾¶£¨¿ªÊ¼£©---------------------------------\n");
+            m_msg.append("---------------------------------å·²é€‰ä¸­è·¯å¾„ï¼ˆå¼€å§‹ï¼‰---------------------------------\n");
             m_chosenPaths = m_model.getChosenPaths();
             for (int i = 0; i < m_chosenPaths.length; i++) {
                 m_msg.append(m_chosenPaths[i].toString() + "\n");
             }
-            m_msg.append("---------------------------------ÒÑÑ¡ÖĞÂ·¾¶£¨½áÊø£©---------------------------------\n");
+            m_msg.append("---------------------------------å·²é€‰ä¸­è·¯å¾„ï¼ˆç»“æŸï¼‰---------------------------------\n");
         }
 
     };
 
     /**
-     * ¶¯×÷------ÉèÖÃÒÑÑ¡ÖĞÂ·¾¶¡£
+     * åŠ¨ä½œ------è®¾ç½®å·²é€‰ä¸­è·¯å¾„ã€‚
      */
     protected Action m_setChosenPaths = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÉèÖÃÒÑÑ¡ÖĞÂ·¾¶", 'S');
+            BaseUtilities.setAction(this, "è®¾ç½®å·²é€‰ä¸­è·¯å¾„", 'S');
         }
 
         /**
@@ -612,12 +612,12 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     };
 
     /**
-     * ¶¯×÷------»ñÈ¡ÒÑÔØÈëµÄ»º´æ½Úµã¡£
+     * åŠ¨ä½œ------è·å–å·²è½½å…¥çš„ç¼“å­˜èŠ‚ç‚¹ã€‚
      */
     protected Action m_getCaches = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "»ñÈ¡ÒÑÔØÈëµÄ»º´æ½Úµã", 'G');
+            BaseUtilities.setAction(this, "è·å–å·²è½½å…¥çš„ç¼“å­˜èŠ‚ç‚¹", 'G');
             setEnabled(false);
         }
 
@@ -625,22 +625,22 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
          * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
          */
         public void actionPerformed(ActionEvent evt) {
-            /*m_msg.append("---------------------------------ÒÑÔØÈëµÄ»º´æ½Úµã£¨¿ªÊ¼£©---------------------------------\n");
+            /*m_msg.append("---------------------------------å·²è½½å…¥çš„ç¼“å­˜èŠ‚ç‚¹ï¼ˆå¼€å§‹ï¼‰---------------------------------\n");
             for (int i = 0, size = m_model.m_caches.size(); i < size; i++) {
             	m_msg.append(m_model.m_caches.get(i).toString() + "\n");
             }
-            m_msg.append("---------------------------------ÒÑÔØÈëµÄ»º´æ½Úµã£¨½áÊø£©---------------------------------\n");*/
+            m_msg.append("---------------------------------å·²è½½å…¥çš„ç¼“å­˜èŠ‚ç‚¹ï¼ˆç»“æŸï¼‰---------------------------------\n");*/
         }
 
     };
 
     /**
-     * ¶¯×÷------Çå³ıÏûÏ¢¡£
+     * åŠ¨ä½œ------æ¸…é™¤æ¶ˆæ¯ã€‚
      */
     protected Action m_clearMsg = new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Çå³ıÏûÏ¢", 'R');
+            BaseUtilities.setAction(this, "æ¸…é™¤æ¶ˆæ¯", 'R');
         }
 
         /**
@@ -653,12 +653,12 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     };
 
     /**
-     * ¶¯×÷------Í¬²½Ñ¡Ôñ¡£
+     * åŠ¨ä½œ------åŒæ­¥é€‰æ‹©ã€‚
      */
     protected JCheckBox m_syncChoice = new JCheckBox(new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "Í¬²½Ñ¡Ôñ", 'S');
+            BaseUtilities.setAction(this, "åŒæ­¥é€‰æ‹©", 'S');
         }
 
         /**
@@ -672,12 +672,12 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     });
 
     /**
-     * ¶¯×÷------ÔÊĞíÑ¡Ôñ¡£
+     * åŠ¨ä½œ------å…è®¸é€‰æ‹©ã€‚
      */
     protected JCheckBox m_enabledChoice = new JCheckBox(new AbstractAction() {
 
         {
-            BaseUtilities.setAction(this, "ÔÊĞíÑ¡Ôñ", 'E');
+            BaseUtilities.setAction(this, "å…è®¸é€‰æ‹©", 'E');
         }
 
         /**
@@ -704,7 +704,7 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public ComplexTreeDemo() {
         super(new GridBagLayout());
@@ -715,16 +715,16 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
 
         JScrollPane treeView = new JScrollPane(m_tree);
         //m_tree.getSelectionModel().setSelectionMode(TreeSelectionModel.SINGLE_TREE_SELECTION);
-        treeView.setBorder(BorderFactory.createTitledBorder("×ÛºÏÊ÷"));
+        treeView.setBorder(BorderFactory.createTitledBorder("ç»¼åˆæ ‘"));
 
         JScrollPane msgView = new JScrollPane(m_msg);
-        msgView.setBorder(BorderFactory.createTitledBorder("ÏûÏ¢"));
+        msgView.setBorder(BorderFactory.createTitledBorder("æ¶ˆæ¯"));
 
         JSplitPane treeAndMsgView = new JSplitPane(JSplitPane.VERTICAL_SPLIT, treeView, msgView);
         treeAndMsgView.setDividerLocation(300);
 
         JPanel btnView = new JPanel(new GridBagLayout());
-        btnView.setBorder(BorderFactory.createTitledBorder("¹¦ÄÜ"));
+        btnView.setBorder(BorderFactory.createTitledBorder("åŠŸèƒ½"));
         btnView.add(new JButton(m_complex), new GridBagConstraints(0,
                                                                    0,
                                                                    1,
@@ -826,7 +826,7 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
                                                             IPADY_DEFAULT));
 
         final JTextField tf = new JTextField();
-        JButton bt = new JButton("²éÑ¯");
+        JButton bt = new JButton("æŸ¥è¯¢");
         bt.addActionListener(new ActionListener() {
 
             @Override
@@ -908,35 +908,35 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeChoiceChanged(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeChoiceChanged(ComplexTreeModelEvent evt) {
-        m_msg.append("½ÚµãÑ¡ÔñÒÑ¸Ä±ä£¨" + (evt.isSelected() ? "ÒÑÑ¡Ôñ" : "È¥Ñ¡Ôñ") + "£©£º" + Arrays.asList(evt.getPahts()) + "\n");
+        m_msg.append("èŠ‚ç‚¹é€‰æ‹©å·²æ”¹å˜ï¼ˆ" + (evt.isSelected() ? "å·²é€‰æ‹©" : "å»é€‰æ‹©") + "ï¼‰ï¼š" + Arrays.asList(evt.getPahts()) + "\n");
     }
 
     /**
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeWillLoad(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeWillLoad(ComplexTreeModelEvent evt) {
-        m_msg.append("½Úµã¼´½«ÔØÈë£º" + evt.getSource() + "\n");
+        m_msg.append("èŠ‚ç‚¹å³å°†è½½å…¥ï¼š" + evt.getSource() + "\n");
     }
 
     /**
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeLoaded(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeLoaded(ComplexTreeModelEvent evt) {
-        m_msg.append("½ÚµãÒÑÔØÈë£º" + evt.getSource() + "\n");
+        m_msg.append("èŠ‚ç‚¹å·²è½½å…¥ï¼š" + evt.getSource() + "\n");
     }
 
     /**
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeLoadFailed(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeLoadFailed(ComplexTreeModelEvent evt) {
-        m_msg.append("½ÚµãÔØÈëÒÑÊ§°Ü£º" + evt.getException() + "\n");
+        m_msg.append("èŠ‚ç‚¹è½½å…¥å·²å¤±è´¥ï¼š" + evt.getException() + "\n");
     }
 
     /**
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#releaseCache(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void releaseCache(ComplexTreeModelEvent evt) {
-        m_msg.append("ÊÍ·Å»º´æ£º" + evt.getCaches() + "\n");
+        m_msg.append("é‡Šæ”¾ç¼“å­˜ï¼š" + evt.getCaches() + "\n");
     }
 
     /*------------------------------------- Protected Method -------------------------------------*/
@@ -954,22 +954,22 @@ public class ComplexTreeDemo extends JPanel implements IBaseConstants, IComplexT
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeDemo.java</p>
- * <p>ÀàĞÍÃèÊö£º¶¨ÖÆ½ÚµãäÖÈ¾Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-10-22</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå®šåˆ¶èŠ‚ç‚¹æ¸²æŸ“å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-10-22</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 class CustomCellRenderer extends JComboBox implements TreeCellRenderer {
@@ -1049,7 +1049,7 @@ class CustomCellRenderer extends JComboBox implements TreeCellRenderer {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public CustomCellRenderer() {
         addItem("Demo Item 1");
@@ -1109,22 +1109,22 @@ class CustomCellRenderer extends JComboBox implements TreeCellRenderer {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeDemo.java</p>
- * <p>ÀàĞÍÃèÊö£º¶¨ÖÆ½Úµã±à¼­Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-10-22</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeDemo.java</p>
+ * <p>ç±»å‹æè¿°ï¼šå®šåˆ¶èŠ‚ç‚¹ç¼–è¾‘å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-10-22</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
@@ -1188,7 +1188,7 @@ class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±à¼­×é¼ş¡£
+     * ç¼–è¾‘ç»„ä»¶ã€‚
      */
     protected JComboBox m_comboBox = new JComboBox();
 
@@ -1207,7 +1207,7 @@ class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public CustomCellEditor() {
         m_comboBox.addItem("Demo Item 1");
@@ -1221,7 +1221,7 @@ class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
              * @see javax.swing.event.PopupMenuListener#popupMenuCanceled(javax.swing.event.PopupMenuEvent)
              */
             public void popupMenuCanceled(PopupMenuEvent evt) {
-                /* ÎŞĞèÊµÏÖ */
+                /* æ— éœ€å®ç° */
             }
 
             /**
@@ -1235,7 +1235,7 @@ class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
              * @see javax.swing.event.PopupMenuListener#popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent)
              */
             public void popupMenuWillBecomeVisible(PopupMenuEvent evt) {
-                /* ÎŞĞèÊµÏÖ */
+                /* æ— éœ€å®ç° */
             }
 
         });
@@ -1300,22 +1300,22 @@ class CustomCellEditor extends AbstractCellEditor implements TreeCellEditor {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºMockDataSource.java</p>
- * <p>ÀàĞÍÃèÊö£º´ò×®ÓÃµÄ×ÛºÏÊ÷Ä£ĞÍÊı¾İÔ´¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-3-27</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šMockDataSource.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ‰“æ¡©ç”¨çš„ç»¼åˆæ ‘æ¨¡å‹æ•°æ®æºã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-3-27</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 class MockDataSource implements IComplexTreeDataSource {
 
@@ -1378,27 +1378,27 @@ class MockDataSource implements IComplexTreeDataSource {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ³ß´ç¡£
+     * å°ºå¯¸ã€‚
      */
     protected int m_size;
 
     /**
-     * Éî¶È¡£
+     * æ·±åº¦ã€‚
      */
     protected int m_depth;
 
     /**
-     * ÑÓ³Ù¡£
+     * å»¶è¿Ÿã€‚
      */
     protected long m_delay;
 
     /**
-     * Ä£¡£
+     * æ¨¡ã€‚
      */
     protected int m_mod;
 
     /**
-     * Òì³£¡£
+     * å¼‚å¸¸ã€‚
      */
     protected ComplexTreeException m_dsEx = null;
 
@@ -1417,18 +1417,18 @@ class MockDataSource implements IComplexTreeDataSource {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public MockDataSource() {
         this(10, 5, 1000, 3);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param size ³ß´ç¡£
-     * @param depth Éî¶È¡£
-     * @param delay ÑÓ³Ù¡£
-     * @param mod Ä£¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param size å°ºå¯¸ã€‚
+     * @param depth æ·±åº¦ã€‚
+     * @param delay å»¶è¿Ÿã€‚
+     * @param mod æ¨¡ã€‚
      */
     public MockDataSource(int size, int depth, long delay, int mod) {
         m_size = size;
@@ -1452,16 +1452,16 @@ class MockDataSource implements IComplexTreeDataSource {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×Ö¶Î dsEx µÄÖµ¡£
-     * @return ×Ö¶Î dsEx µÄÖµ¡£
+     * è·å–å­—æ®µ dsEx çš„å€¼ã€‚
+     * @return å­—æ®µ dsEx çš„å€¼ã€‚
      */
     public ComplexTreeException getDataSourceException() {
         return m_dsEx;
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î dsEx µÄÖµ¡£
-     * @param dsEx ×Ö¶Î dsEx µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ dsEx çš„å€¼ã€‚
+     * @param dsEx å­—æ®µ dsEx çš„å€¼ã€‚
      */
     public void setDataSourceException(ComplexTreeException dsEx) {
         m_dsEx = dsEx;

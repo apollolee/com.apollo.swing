@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-9-14 ÏÂÎç02:36:20¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-9-14 ä¸‹åˆ02:36:20ã€‚
  */
 package com.apollo.swing.component.treetable;
 
@@ -39,22 +39,22 @@ import com.apollo.swing.component.complextree.ComplexTreeModel;
 import com.apollo.swing.component.complextree.ComplexTreeNode;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeTableModel.java</p>
- * <p>ÀàĞÍÃèÊö£ºÊ÷±íÄ£ĞÍÀà£¬Ê÷±íµÄºËĞÄÂß¼­´ó¶¼ÔÚÕâÀïÊµÏÖµÄ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-14</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeTableModel.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ‘è¡¨æ¨¡å‹ç±»ï¼Œæ ‘è¡¨çš„æ ¸å¿ƒé€»è¾‘å¤§éƒ½åœ¨è¿™é‡Œå®ç°çš„ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-14</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -111,18 +111,18 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Private Static Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Ê÷±í¶ÔÏó¡£
-     * @param node ½Úµã¡£
-     * @return Ê÷±í¶ÔÏó¡£
+     * è·å–æ ‘è¡¨å¯¹è±¡ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return æ ‘è¡¨å¯¹è±¡ã€‚
      */
     private static TreeTableObject getObject(ComplexTreeNode node) {
         return (TreeTableObject) node.getUserObject();
     }
 
     /**
-     * »ñÈ¡½ÚµãµÄÏÂÒ»¸öĞÖµÜ½Úµã¡£
-     * @param node ½Úµã¡£
-     * @return ½ÚµãµÄÏÂÒ»¸öĞÖµÜ½Úµã¡£
+     * è·å–èŠ‚ç‚¹çš„ä¸‹ä¸€ä¸ªå…„å¼ŸèŠ‚ç‚¹ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return èŠ‚ç‚¹çš„ä¸‹ä¸€ä¸ªå…„å¼ŸèŠ‚ç‚¹ã€‚
      */
     private static DefaultMutableTreeNode getNextSibling(DefaultMutableTreeNode node) {
         DefaultMutableTreeNode nextNode = node.getNextSibling();
@@ -144,22 +144,22 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * ×ÛºÏÊ÷¡£
+     * ç»¼åˆæ ‘ã€‚
      */
     private ComplexTree m_tree;
 
     /**
-     * ½Úµã¼¯¡£
+     * èŠ‚ç‚¹é›†ã€‚
      */
     private List m_nodes = new ArrayList();
 
     /**
-     * ÁĞÃû¼¯¡£
+     * åˆ—åé›†ã€‚
      */
     private List m_columnNames = new ArrayList();
 
     /**
-     * ÁĞÀàĞÍ¼¯¡£
+     * åˆ—ç±»å‹é›†ã€‚
      */
     private Map m_columnClasses = new HashMap();
 
@@ -170,9 +170,9 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏÊ÷Ä£ĞÍ¡£
-     * @param columnNames ÁĞÃû¼¯¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆæ ‘æ¨¡å‹ã€‚
+     * @param columnNames åˆ—åé›†ã€‚
      * @since T3 V1.1
      */
     public TreeTableModel(ComplexTreeModel model, String[] columnNames) {
@@ -196,8 +196,8 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×ÛºÏÊ÷£¬Ê÷±íµÄÊı¾İ½á¹¹ÆäÊµÊÇÒ»¸ö×ÛºÏÊ÷Ä£ĞÍ£¬Ö»ÊÇÔÚÃ¿¸ö½ÚµãµÄuserObjectÉÏÔÙ¶¨ÒåÁËÒ»²ã´øµ¥Ôª¸ñÁĞ±íµÄ½á¹¹¡£
-     * @return ×ÛºÏÊ÷¡£
+     * è·å–ç»¼åˆæ ‘ï¼Œæ ‘è¡¨çš„æ•°æ®ç»“æ„å…¶å®æ˜¯ä¸€ä¸ªç»¼åˆæ ‘æ¨¡å‹ï¼Œåªæ˜¯åœ¨æ¯ä¸ªèŠ‚ç‚¹çš„userObjectä¸Šå†å®šä¹‰äº†ä¸€å±‚å¸¦å•å…ƒæ ¼åˆ—è¡¨çš„ç»“æ„ã€‚
+     * @return ç»¼åˆæ ‘ã€‚
      * @since T3 V1.1
      */
     public ComplexTree getTree() {
@@ -205,9 +205,9 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     }
 
     /**
-     * »ñÈ¡½Úµã£¬µÃµ½½Úµã¾ÍÄÜµÃµ½½Úµã¶ÔÓÚµÄÏà¹ØÊı¾İ£¬±ÈÈç½Úµã´øµÄµ¥Ôª¸ñÊı¾İµÈ¡£
-     * @param rowIndex ĞĞË÷Òı¡£
-     * @return ½Úµã¡£
+     * è·å–èŠ‚ç‚¹ï¼Œå¾—åˆ°èŠ‚ç‚¹å°±èƒ½å¾—åˆ°èŠ‚ç‚¹å¯¹äºçš„ç›¸å…³æ•°æ®ï¼Œæ¯”å¦‚èŠ‚ç‚¹å¸¦çš„å•å…ƒæ ¼æ•°æ®ç­‰ã€‚
+     * @param rowIndex è¡Œç´¢å¼•ã€‚
+     * @return èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeNode getNode(int rowIndex) {
@@ -215,7 +215,7 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     }
 
     /**
-     * Ë¢ĞÂ£¬°ÑÊ÷Ä£ĞÍÊı¾İÍ¬²½µ½±íÄ£ĞÍÊı¾İÖĞ£¬Õâ¸ö·½·¨·Ç³£ÖØÒª£¬ÒòÎªÊ÷±íµÄÕıÈ·ÏÔÊ¾ÒÀÀµÓëÊ÷Ä£ĞÍºÍ±íÄ£ĞÍÊı¾İµÄÍ¬²½£¬¶øºÜ¶àÊı¾İµÄ¸Ä¶¯ÊÇÔÚÊ÷Ä£ĞÍÉÏ½øĞĞµÄ£¬¶ÔÊ÷Ä£ĞÍÓĞ½ÚµãÔöÉ¾Ê±£¬×îºÃÒªµ÷ÓÃÒ»ÏÂÕâ¸ö·½·¨¡£
+     * åˆ·æ–°ï¼ŒæŠŠæ ‘æ¨¡å‹æ•°æ®åŒæ­¥åˆ°è¡¨æ¨¡å‹æ•°æ®ä¸­ï¼Œè¿™ä¸ªæ–¹æ³•éå¸¸é‡è¦ï¼Œå› ä¸ºæ ‘è¡¨çš„æ­£ç¡®æ˜¾ç¤ºä¾èµ–ä¸æ ‘æ¨¡å‹å’Œè¡¨æ¨¡å‹æ•°æ®çš„åŒæ­¥ï¼Œè€Œå¾ˆå¤šæ•°æ®çš„æ”¹åŠ¨æ˜¯åœ¨æ ‘æ¨¡å‹ä¸Šè¿›è¡Œçš„ï¼Œå¯¹æ ‘æ¨¡å‹æœ‰èŠ‚ç‚¹å¢åˆ æ—¶ï¼Œæœ€å¥½è¦è°ƒç”¨ä¸€ä¸‹è¿™ä¸ªæ–¹æ³•ã€‚
      * @since T3 V1.1
      */
     public void refresh() {
@@ -225,9 +225,9 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     }
 
     /**
-     * ÉèÖÃÁĞÀàĞÍ£¬Õâ¸ö¹¦ÄÜºÍ±íÄ£ĞÍµÄ¶ÔÓÚ¹¦ÄÜÒ»Ñù£¬¿É²Î¿¼JDKÎÄµµ¡£
-     * @param columnIndex ÁĞË÷Òı¡£
-     * @param cls ÁĞÀàĞÍ¡£
+     * è®¾ç½®åˆ—ç±»å‹ï¼Œè¿™ä¸ªåŠŸèƒ½å’Œè¡¨æ¨¡å‹çš„å¯¹äºåŠŸèƒ½ä¸€æ ·ï¼Œå¯å‚è€ƒJDKæ–‡æ¡£ã€‚
+     * @param columnIndex åˆ—ç´¢å¼•ã€‚
+     * @param cls åˆ—ç±»å‹ã€‚
      * @since T3 V1.1
      */
     public void setColumnClass(int columnIndex, Class cls) {
@@ -395,9 +395,9 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Friendly Method -------------------------------------*/
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÊÇÔØÈëÖĞ¡£
-     * @param rowIndex ĞĞË÷Òı¡£
-     * @return ÊÇ·ñÊÇÔØÈëÖĞ¡£
+     * åˆ¤æ–­æ˜¯å¦æ˜¯è½½å…¥ä¸­ã€‚
+     * @param rowIndex è¡Œç´¢å¼•ã€‚
+     * @return æ˜¯å¦æ˜¯è½½å…¥ä¸­ã€‚
      */
     boolean isLoading(int rowIndex) {
         return ComplexTreeCacheNode.I18N_INFO_LOADING.equals(((ComplexTreeNode) m_nodes.get(rowIndex)).getUserObject());
@@ -406,9 +406,9 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * »ñÈ¡¿É¼ûµÄ½Úµã¼¯¡£
-     * @param node ½Úµã¡£
-     * @return ¿É¼ûµÄ½Úµã¼¯¡£
+     * è·å–å¯è§çš„èŠ‚ç‚¹é›†ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return å¯è§çš„èŠ‚ç‚¹é›†ã€‚
      */
     private List getVisibleNodes(ComplexTreeNode node) {
         List nodes = new ArrayList();
@@ -429,22 +429,22 @@ public class TreeTableModel extends AbstractTableModel implements TreeModelListe
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTreeTableModel.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷°ü×°Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-9-19</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTreeTableModel.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘åŒ…è£…ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-9-19</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 class TreeWrapper extends ComplexTree implements TableCellRenderer {
@@ -464,7 +464,7 @@ class TreeWrapper extends ComplexTree implements TableCellRenderer {
     /*------------------------------------- Private (Static) Inner Class -------------------------------------*/
 
     /**
-     * Ê÷äÖÈ¾Æ÷¡£
+     * æ ‘æ¸²æŸ“å™¨ã€‚
      */
     private class TTreeCellRenderer implements IBaseConstants, TreeCellRenderer {
 
@@ -543,7 +543,7 @@ class TreeWrapper extends ComplexTree implements TableCellRenderer {
     /*------------------------------------- Private Static Field -------------------------------------*/
 
     /**
-     * Ã»½¹µãµÄ±ß¿ò¡£
+     * æ²¡ç„¦ç‚¹çš„è¾¹æ¡†ã€‚
      */
     private static Border NO_FOCUS_BORDER = new EmptyBorder(0, 0, 0, 0);
 
@@ -582,22 +582,22 @@ class TreeWrapper extends ComplexTree implements TableCellRenderer {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * ±í¡£
+     * è¡¨ã€‚
      */
     private JTable m_table;
 
     /**
-     * Ê÷äÖÈ¾Æ÷¡£
+     * æ ‘æ¸²æŸ“å™¨ã€‚
      */
     private TreeCellRenderer m_treeRenderer;
 
     /**
-     * ĞĞ¡£
+     * è¡Œã€‚
      */
     private int m_row;
 
     /**
-     * ÊÓÍ¼¡£
+     * è§†å›¾ã€‚
      */
     private JPanel m_view = new JPanel(new BorderLayout());
 
@@ -608,9 +608,9 @@ class TreeWrapper extends ComplexTree implements TableCellRenderer {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param treeModel ×ÛºÏÊ÷Ä£ĞÍ¡£
-     * @param tableModel Ê÷±íÄ£ĞÍ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param treeModel ç»¼åˆæ ‘æ¨¡å‹ã€‚
+     * @param tableModel æ ‘è¡¨æ¨¡å‹ã€‚
      */
     public TreeWrapper(ComplexTreeModel treeModel, TreeTableModel tableModel) {
         super(treeModel);
@@ -618,8 +618,8 @@ class TreeWrapper extends ComplexTree implements TableCellRenderer {
         addTreeExpansionListener(tableModel);
         treeModel.addTreeModelListener(tableModel);
 
-        updateUI(); //ÖØÖÃ¼àÌıÆ÷Î»ÖÃ£¬±£Ö¤TTreeTableModel»Øµ÷·½·¨»á×îºó±»µ÷ÓÃ
-        setModel(treeModel); //ÖØÖÃ¼àÌıÆ÷Î»ÖÃ£¬±£Ö¤TTreeTableModel»Øµ÷·½·¨»á×îºó±»µ÷ÓÃ
+        updateUI(); //é‡ç½®ç›‘å¬å™¨ä½ç½®ï¼Œä¿è¯TTreeTableModelå›è°ƒæ–¹æ³•ä¼šæœ€åè¢«è°ƒç”¨
+        setModel(treeModel); //é‡ç½®ç›‘å¬å™¨ä½ç½®ï¼Œä¿è¯TTreeTableModelå›è°ƒæ–¹æ³•ä¼šæœ€åè¢«è°ƒç”¨
 
         m_treeRenderer = getCellRenderer();
         setCellRenderer(new TTreeCellRenderer());

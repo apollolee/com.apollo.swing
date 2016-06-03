@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-3-19 ÉÏÎç09:37:35¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-3-19 ä¸Šåˆ09:37:35ã€‚
  */
 package com.apollo.swing.component.complextree;
 
@@ -9,22 +9,22 @@ import java.util.List;
 import javax.swing.tree.TreePath;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeModelEvent.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷Ä£ĞÍÊÂ¼şÀà£¬·â×°ÁË×ÛºÏÊ÷²úÉúµÄÊÂ¼ş¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-3-20</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeModelEvent.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘æ¨¡å‹äº‹ä»¶ç±»ï¼Œå°è£…äº†ç»¼åˆæ ‘äº§ç”Ÿçš„äº‹ä»¶ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-3-20</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -89,22 +89,22 @@ public class ComplexTreeModelEvent extends EventObject {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * Â·¾¶¼¯¡£
+     * è·¯å¾„é›†ã€‚
      */
     protected TreePath[] m_paths = null;
 
     /**
-     * ±êÊ¶ÊÇ·ñÑ¡Ôñ¡£
+     * æ ‡è¯†æ˜¯å¦é€‰æ‹©ã€‚
      */
     protected volatile boolean m_isSelected = true;
 
     /**
-     * Òì³£¡£
+     * å¼‚å¸¸ã€‚
      */
     protected ComplexTreeException m_exception = null;
 
     /**
-     * »º´æ¼¯¡£
+     * ç¼“å­˜é›†ã€‚
      */
     protected List m_caches = null;
 
@@ -127,28 +127,28 @@ public class ComplexTreeModelEvent extends EventObject {
     /*------------------------------------- Protected Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÂ¼şÔ´¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source äº‹ä»¶æºã€‚
      */
     protected ComplexTreeModelEvent(Object source) {
         super(source);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÂ¼şÔ´¡£
-     * @param path Â·¾¶£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @param isSelected ±êÊ¶ÊÇ·ñÑ¡Ôñ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source äº‹ä»¶æºã€‚
+     * @param path è·¯å¾„ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @param isSelected æ ‡è¯†æ˜¯å¦é€‰æ‹©ã€‚
      */
     protected ComplexTreeModelEvent(Object source, TreePath path, boolean isSelected) {
         this(source, new TreePath[] { path }, isSelected);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÂ¼şÔ´¡£
-     * @param paths Â·¾¶¼¯£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @param isSelected ±êÊ¶ÊÇ·ñÑ¡Ôñ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source äº‹ä»¶æºã€‚
+     * @param paths è·¯å¾„é›†ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @param isSelected æ ‡è¯†æ˜¯å¦é€‰æ‹©ã€‚
      */
     protected ComplexTreeModelEvent(Object source, TreePath[] paths, boolean isSelected) {
         super(source);
@@ -157,9 +157,9 @@ public class ComplexTreeModelEvent extends EventObject {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÂ¼şÔ´¡£
-     * @param exception Òì³£¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source äº‹ä»¶æºã€‚
+     * @param exception å¼‚å¸¸ã€‚
      */
     protected ComplexTreeModelEvent(Object source, ComplexTreeException exception) {
         super(source);
@@ -167,9 +167,9 @@ public class ComplexTreeModelEvent extends EventObject {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param source ÊÂ¼şÔ´¡£
-     * @param caches »º´æ¼¯£¬¼´µ±Ç°´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄÁĞ±í¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param source äº‹ä»¶æºã€‚
+     * @param caches ç¼“å­˜é›†ï¼Œå³å½“å‰å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„åˆ—è¡¨ã€‚
      */
     protected ComplexTreeModelEvent(Object source, List caches) {
         super(source);
@@ -187,8 +187,8 @@ public class ComplexTreeModelEvent extends EventObject {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Â·¾¶¼¯£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @return Â·¾¶¼¯¡£
+     * è·å–è·¯å¾„é›†ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @return è·¯å¾„é›†ã€‚
      * @since T3 V1.1
      */
     public TreePath[] getPahts() {
@@ -196,8 +196,8 @@ public class ComplexTreeModelEvent extends EventObject {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÑ¡Ôñ¡£
-     * @return ±êÊ¶ÊÇ·ñÑ¡Ôñ¡£
+     * åˆ¤æ–­æ˜¯å¦é€‰æ‹©ã€‚
+     * @return æ ‡è¯†æ˜¯å¦é€‰æ‹©ã€‚
      * @since T3 V1.1
      */
     public boolean isSelected() {
@@ -205,8 +205,8 @@ public class ComplexTreeModelEvent extends EventObject {
     }
 
     /**
-     * »ñÈ¡Òì³£¡£
-     * @return Òì³£¡£
+     * è·å–å¼‚å¸¸ã€‚
+     * @return å¼‚å¸¸ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeException getException() {
@@ -214,8 +214,8 @@ public class ComplexTreeModelEvent extends EventObject {
     }
 
     /**
-     * »ñÈ¡»º´æ¼¯£¬¼´µ±Ç°´¦ÓÚÒÑÔØÈë×´Ì¬µÄ»º´æ½ÚµãµÄÁĞ±í¡£
-     * @return »º´æ¼¯¡£
+     * è·å–ç¼“å­˜é›†ï¼Œå³å½“å‰å¤„äºå·²è½½å…¥çŠ¶æ€çš„ç¼“å­˜èŠ‚ç‚¹çš„åˆ—è¡¨ã€‚
+     * @return ç¼“å­˜é›†ã€‚
      * @since T3 V1.1
      */
     public List getCaches() {

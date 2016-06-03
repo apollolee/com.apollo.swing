@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-7-8 ÏÂÎç02:46:20
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-7-8 ä¸‹åˆ02:46:20
  */
 package com.apollo.swing.component.table;
 
@@ -44,22 +44,22 @@ import com.apollo.base.util.IBaseConstants;
 import com.apollo.swing.component.complextable.ComplexTable;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTableUtilities.java</p>
- * <p>ÀàĞÍÃèÊö£º±í¸ñ¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-24</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTableUtilities.java</p>
+ * <p>ç±»å‹æè¿°ï¼šè¡¨æ ¼å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-24</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TableUtilities implements IBaseConstants, ITableConstants {
@@ -103,10 +103,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ¶Ô×ÛºÏ±í½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ×ÛºÏ±í¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹ç»¼åˆè¡¨è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table ç»¼åˆè¡¨ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, ComplexTable table, Component parent) {
         String oldText = text;
@@ -124,21 +124,21 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏ±í½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ×ÛºÏ±í¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆè¡¨è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table ç»¼åˆè¡¨ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, ComplexTable table) {
         return searchText(text, table, true);
     }
 
     /**
-     * ¶Ô×ÛºÏ±í½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ×ÛºÏ±í¡£
-     * @param isCircle ±êÊ¶ÊÇ·ñÑ­»·ËÑË÷£¬Èç¹ûÎªtrueÔò±íÊ¾È«±í¶¼»áËÑË÷µ½£¬Èç¹ûÎªfalseÔò±íÊ¾Ö»»á²é´Óµ±Ç°Ñ¡ÖĞĞĞ¿ªÊ¼ÒÔÏÂµÄËùÓĞĞĞ¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆè¡¨è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table ç»¼åˆè¡¨ã€‚
+     * @param isCircle æ ‡è¯†æ˜¯å¦å¾ªç¯æœç´¢ï¼Œå¦‚æœä¸ºtrueåˆ™è¡¨ç¤ºå…¨è¡¨éƒ½ä¼šæœç´¢åˆ°ï¼Œå¦‚æœä¸ºfalseåˆ™è¡¨ç¤ºåªä¼šæŸ¥ä»å½“å‰é€‰ä¸­è¡Œå¼€å§‹ä»¥ä¸‹çš„æ‰€æœ‰è¡Œã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, ComplexTable table, boolean isCircle) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -201,12 +201,12 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ¶Ô±í¸ñ½øĞĞÎÄ±¾ËÑË÷¶¨Î»£¬Èç¹ûÓöµ½ĞĞºÅÁĞÔòºöÂÔ£¨×¢Òâ£º´Ë·½·¨Î´½øĞĞ²ÎÊı¹ıÂË£¬½÷É÷Ê¹ÓÃ£©¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ±í¸ñ¡£
-     * @param row ĞĞ¡£
-     * @param column ÁĞ¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹è¡¨æ ¼è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ï¼Œå¦‚æœé‡åˆ°è¡Œå·åˆ—åˆ™å¿½ç•¥ï¼ˆæ³¨æ„ï¼šæ­¤æ–¹æ³•æœªè¿›è¡Œå‚æ•°è¿‡æ»¤ï¼Œè°¨æ…ä½¿ç”¨ï¼‰ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param row è¡Œã€‚
+     * @param column åˆ—ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTable table, int row, int column) {
         for (int i = column, size = table.getColumnCount(); i < size; i++) {
@@ -225,22 +225,22 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * »ñÈ¡±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
-     * @param table ±í¸ñ¡£
-     * @param columnIndex Ö¸¶¨ÁĞµÄÊÓÍ¼Ë÷Òı¡£
-     * @return ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * è·å–è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param columnIndex æŒ‡å®šåˆ—çš„è§†å›¾ç´¢å¼•ã€‚
+     * @return è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
      */
     public static int getPreferredWidth(JTable table, int columnIndex) {
         return getPreferredWidth(table, columnIndex, 0, table.getRowCount());
     }
 
     /**
-     * »ñÈ¡±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
-     * @param table ±í¸ñ¡£
-     * @param columnIndex Ö¸¶¨ÁĞµÄÊÓÍ¼Ë÷Òı¡£
-     * @param rowStart Ö¸¶¨ĞĞµÄÆôÊ¼Î»ÖÃ¡£
-     * @param rowSize Ö¸¶¨ĞĞÊı¡£
-     * @return ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * è·å–è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param columnIndex æŒ‡å®šåˆ—çš„è§†å›¾ç´¢å¼•ã€‚
+     * @param rowStart æŒ‡å®šè¡Œçš„å¯å§‹ä½ç½®ã€‚
+     * @param rowSize æŒ‡å®šè¡Œæ•°ã€‚
+     * @return è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
      */
     public static int getPreferredWidth(JTable table, int columnIndex, int rowStart, int rowSize) {
         JTableHeader header = table.getTableHeader();
@@ -265,8 +265,8 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÉèÖÃ±í¸ñµÄÊ×Ñ¡¿í¶È¡£
-     * @param table ±í¸ñ¡£
+     * è®¾ç½®è¡¨æ ¼çš„é¦–é€‰å®½åº¦ã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void setPreferredWidth(JTable table) {
         int allWidth = 0;
@@ -282,22 +282,22 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÉèÖÃ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
-     * @param table ±í¸ñ¡£
-     * @param columnIndex Ö¸¶¨ÁĞµÄÊÓÍ¼Ë÷Òı¡£
-     * @return ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * è®¾ç½®è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param columnIndex æŒ‡å®šåˆ—çš„è§†å›¾ç´¢å¼•ã€‚
+     * @return è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
      */
     public static int setPreferredWidth(JTable table, int columnIndex) {
         return setPreferredWidth(table, columnIndex, 0, table.getRowCount());
     }
 
     /**
-     * ÉèÖÃ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
-     * @param table ±í¸ñ¡£
-     * @param columnIndex Ö¸¶¨ÁĞµÄÊÓÍ¼Ë÷Òı¡£
-     * @param rowStart Ö¸¶¨ĞĞµÄÆôÊ¼Î»ÖÃ¡£
-     * @param rowSize Ö¸¶¨ĞĞÊı¡£
-     * @return ±í¸ñÖ¸¶¨ÁĞµÄÊ×Ñ¡¿í¶È¡£
+     * è®¾ç½®è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param columnIndex æŒ‡å®šåˆ—çš„è§†å›¾ç´¢å¼•ã€‚
+     * @param rowStart æŒ‡å®šè¡Œçš„å¯å§‹ä½ç½®ã€‚
+     * @param rowSize æŒ‡å®šè¡Œæ•°ã€‚
+     * @return è¡¨æ ¼æŒ‡å®šåˆ—çš„é¦–é€‰å®½åº¦ã€‚
      */
     public static int setPreferredWidth(JTable table, int columnIndex, int rowStart, int rowSize) {
         TableColumnModel columnModel = table.getColumnModel();
@@ -314,8 +314,8 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ¸üĞÂ±í¸ñÊ×Ñ¡¹ö¶¯ÊÓ¿ÚµÄ´óĞ¡¡£
-     * @param table ±í¸ñ¡£
+     * æ›´æ–°è¡¨æ ¼é¦–é€‰æ»šåŠ¨è§†å£çš„å¤§å°ã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void updateViewportSize(JTable table) {
         Dimension psvs = table.getPreferredScrollableViewportSize();
@@ -325,9 +325,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * Ìí¼Ó±í¸ñÄ£ĞÍ¼àÌıÆ÷¡£
-     * @param table ±í¸ñ¡£
-     * @param listener ¼àÌıÆ÷¡£
+     * æ·»åŠ è¡¨æ ¼æ¨¡å‹ç›‘å¬å™¨ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param listener ç›‘å¬å™¨ã€‚
      */
     public static void addTableModelListener(JTable table, TableModelListener listener) {
         TableModel model = table.getModel();
@@ -338,9 +338,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * Ìí¼Ó±í¸ñĞĞÑ¡Ôñ¼àÌıÆ÷¡£
-     * @param table ±í¸ñ¡£
-     * @param listener ¼àÌıÆ÷¡£
+     * æ·»åŠ è¡¨æ ¼è¡Œé€‰æ‹©ç›‘å¬å™¨ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param listener ç›‘å¬å™¨ã€‚
      */
     public static void addListSelectionListener(JTable table, ListSelectionListener listener) {
         ListSelectionModel sm = table.getSelectionModel();
@@ -351,24 +351,24 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * Ñ¡Ôñ±í¸ñµÄËùÓĞĞĞ¡£
-     * @param table ±í¸ñ¡£
+     * é€‰æ‹©è¡¨æ ¼çš„æ‰€æœ‰è¡Œã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void selectAllRow(JTable table) {
         table.setRowSelectionInterval(0, table.getRowCount() - 1);
     }
 
     /**
-     * Ñ¡Ôñ±í¸ñµÄËØÓĞÁĞ¡£
-     * @param table ±í¸ñ¡£
+     * é€‰æ‹©è¡¨æ ¼çš„ç´ æœ‰åˆ—ã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void selectAllColumn(JTable table) {
         table.setColumnSelectionInterval(0, table.getColumnCount() - 1);
     }
 
     /**
-     * ÇåÀíÁĞÄ£ĞÍ¡£
-     * @param columnModel ÁĞÄ£ĞÍ¡£
+     * æ¸…ç†åˆ—æ¨¡å‹ã€‚
+     * @param columnModel åˆ—æ¨¡å‹ã€‚
      */
     public static void clear(TableColumnModel columnModel) {
         for (int i = columnModel.getColumnCount() - 1; i >= 0; i--) {
@@ -377,10 +377,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÅĞ¶ÏÁĞÊÇ·ñÔÚÁĞÄ£ĞÍÖĞ¡£
-     * @param tableColumnModel ÁĞÄ£ĞÍ¡£
-     * @param column ÁĞ¡£
-     * @return ±êÊ¶ÁĞÊÇ·ñÔÚÁĞÄ£ĞÍÖĞ¡£
+     * åˆ¤æ–­åˆ—æ˜¯å¦åœ¨åˆ—æ¨¡å‹ä¸­ã€‚
+     * @param tableColumnModel åˆ—æ¨¡å‹ã€‚
+     * @param column åˆ—ã€‚
+     * @return æ ‡è¯†åˆ—æ˜¯å¦åœ¨åˆ—æ¨¡å‹ä¸­ã€‚
      */
     public static boolean contains(TableColumnModel tableColumnModel, TableColumn column) {
         for (int i = 0, size = tableColumnModel.getColumnCount(); i < size; i++) {
@@ -393,9 +393,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ´ÓÁĞÄ£ĞÍ»ñÈ¡ËùÓĞÁĞ±êÊ¶¡£
-     * @param columnModel ÁĞÄ£ĞÍ¡£
-     * @return ËùÓĞÁĞ±êÊ¶¡£
+     * ä»åˆ—æ¨¡å‹è·å–æ‰€æœ‰åˆ—æ ‡è¯†ã€‚
+     * @param columnModel åˆ—æ¨¡å‹ã€‚
+     * @return æ‰€æœ‰åˆ—æ ‡è¯†ã€‚
      */
     public static List getColumnIdentifiers(TableColumnModel columnModel) {
         List columns = new ArrayList();
@@ -408,10 +408,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * »ñÈ¡ÁĞ¡£
-     * @param columnModel ÁĞÄ£ĞÍ¡£
-     * @param modelIndex Ä£ĞÍË÷Òı¡£
-     * @return ÁĞ¡£
+     * è·å–åˆ—ã€‚
+     * @param columnModel åˆ—æ¨¡å‹ã€‚
+     * @param modelIndex æ¨¡å‹ç´¢å¼•ã€‚
+     * @return åˆ—ã€‚
      */
     public static TableColumn getColumn(TableColumnModel columnModel, int modelIndex) {
         for (int i = 0, size = columnModel.getColumnCount(); i < size; i++) {
@@ -426,9 +426,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ´ÓÁĞÄ£ĞÍ»ñÈ¡ËùÓĞÁĞ¡£
-     * @param columnModel ÁĞÄ£ĞÍ¡£
-     * @return ËùÓĞÁĞ¡£
+     * ä»åˆ—æ¨¡å‹è·å–æ‰€æœ‰åˆ—ã€‚
+     * @param columnModel åˆ—æ¨¡å‹ã€‚
+     * @return æ‰€æœ‰åˆ—ã€‚
      */
     public static List getColumns(TableColumnModel columnModel) {
         List columns = new ArrayList();
@@ -441,9 +441,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÉèÖÃËùÓĞÁĞµ½ÁĞÄ£ĞÍ¡£
-     * @param columnModel ÁĞÄ£ĞÍ¡£
-     * @param columns ËùÓĞÁĞ¡£
+     * è®¾ç½®æ‰€æœ‰åˆ—åˆ°åˆ—æ¨¡å‹ã€‚
+     * @param columnModel åˆ—æ¨¡å‹ã€‚
+     * @param columns æ‰€æœ‰åˆ—ã€‚
      */
     public static void setColumns(TableColumnModel columnModel, List columns) {
         clear(columnModel);
@@ -454,9 +454,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ½ûÖ¹ÁĞ×óÒÆ¡£
-     * @param table ±í¸ñ¡£
-     * @param disabledColumnViewIndex ½ûÖ¹ÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * ç¦æ­¢åˆ—å·¦ç§»ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param disabledColumnViewIndex ç¦æ­¢åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public static void disableColumnLeftMove(final JTable table, final int disabledColumnViewIndex) {
         final JTableHeader th = table.getTableHeader();
@@ -467,15 +467,15 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
              * @see java.awt.event.MouseMotionAdapter#mouseDragged(java.awt.event.MouseEvent)
              */
             public void mouseDragged(MouseEvent evt) {
-                if (th.getDraggedDistance() == 0) { //Ã»ÓĞÁĞÍÏ¶¯µÄ¾àÀëÊ±²»ĞèÒªÏòÏÂ´¦Àí
+                if (th.getDraggedDistance() == 0) { //æ²¡æœ‰åˆ—æ‹–åŠ¨çš„è·ç¦»æ—¶ä¸éœ€è¦å‘ä¸‹å¤„ç†
                     return;
                 }
 
-                if (th.getDraggedColumn() == null) { //ÍÏ¶¯ÁĞÎª¿Õ
+                if (th.getDraggedColumn() == null) { //æ‹–åŠ¨åˆ—ä¸ºç©º
                     return;
                 }
 
-                if (th.getDraggedDistance() >= 0) { //ÏòÓÒÍÏ¶¯
+                if (th.getDraggedDistance() >= 0) { //å‘å³æ‹–åŠ¨
                     return;
                 }
 
@@ -489,9 +489,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ½ûÖ¹ÁĞÓÒÒÆ¡£
-     * @param table ±í¸ñ¡£
-     * @param disabledColumnViewIndex ½ûÖ¹ÁĞµÄÊÓÍ¼Ë÷Òı¡£
+     * ç¦æ­¢åˆ—å³ç§»ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param disabledColumnViewIndex ç¦æ­¢åˆ—çš„è§†å›¾ç´¢å¼•ã€‚
      */
     public static void disableColumnRightMove(final JTable table, final int disabledColumnViewIndex) {
         final JTableHeader th = table.getTableHeader();
@@ -502,15 +502,15 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
              * @see java.awt.event.MouseMotionAdapter#mouseDragged(java.awt.event.MouseEvent)
              */
             public void mouseDragged(MouseEvent evt) {
-                if (th.getDraggedDistance() == 0) { //Ã»ÓĞÁĞÍÏ¶¯µÄ¾àÀëÊ±²»ĞèÒªÏòÏÂ´¦Àí
+                if (th.getDraggedDistance() == 0) { //æ²¡æœ‰åˆ—æ‹–åŠ¨çš„è·ç¦»æ—¶ä¸éœ€è¦å‘ä¸‹å¤„ç†
                     return;
                 }
 
-                if (th.getDraggedColumn() == null) { //ÍÏ¶¯ÁĞÎª¿Õ
+                if (th.getDraggedColumn() == null) { //æ‹–åŠ¨åˆ—ä¸ºç©º
                     return;
                 }
 
-                if (th.getDraggedDistance() <= 0) { //Ïò×óÍÏ¶¯
+                if (th.getDraggedDistance() <= 0) { //å‘å·¦æ‹–åŠ¨
                     return;
                 }
 
@@ -524,10 +524,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ¸ù¾İÁĞÄ£ĞÍË÷Òı»ñÈ¡±í¸ñµÄÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @param modelIndex ÁĞÄ£ĞÍË÷Òı¡£
-     * @return ÁĞ±í¶¨ÖÆÏî¡£
+     * æ ¹æ®åˆ—æ¨¡å‹ç´¢å¼•è·å–è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param modelIndex åˆ—æ¨¡å‹ç´¢å¼•ã€‚
+     * @return åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static TableCustom getTableCustom(JTable table, int modelIndex) {
         List customs = getTableCustoms(table);
@@ -548,27 +548,27 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * »ñÈ¡±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @return ±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
+     * è·å–è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @return è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static List getTableCustoms(JTable table) {
         return (List) table.getClientProperty(CP_TABLECUSTOM);
     }
 
     /**
-     * »ñÈ¡±í¸ñµÄÈ±Ê¡ËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @return ±í¸ñµÄÈ±Ê¡ËùÓĞÁĞ±í¶¨ÖÆÏî¡£
+     * è·å–è¡¨æ ¼çš„ç¼ºçœæ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @return è¡¨æ ¼çš„ç¼ºçœæ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static List<TableCustom> getTableDefaultCustoms(JTable table) {
         return (List<TableCustom>) table.getClientProperty(CP_TableDefaultCustom);
     }
 
     /**
-     * ´´½¨±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @return ±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
+     * åˆ›å»ºè¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @return è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static List createTableCustoms(JTable table) {
         List customs = new ArrayList();
@@ -592,18 +592,18 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÉèÖÃ±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @param customs ±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
+     * è®¾ç½®è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param customs è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static void setTableCustoms(JTable table, List customs) {
         table.putClientProperty(CP_TABLECUSTOM, customs);
     }
 
     /**
-     * ÉèÖÃ±í¸ñµÄÈ±Ê¡ËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
-     * @param customs ±í¸ñµÄÈ±Ê¡ËùÓĞÁĞ±í¶¨ÖÆÏî¡£
+     * è®¾ç½®è¡¨æ ¼çš„ç¼ºçœæ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param customs è¡¨æ ¼çš„ç¼ºçœæ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
      */
     public static void setTableDefaultCustoms(JTable table, List<TableCustom> customs) {
         table.putClientProperty(CP_TableDefaultCustom, customs);
@@ -646,8 +646,8 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ×Ô¶¯Í¬²½±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî¡£
-     * @param table ±í¸ñ¡£
+     * è‡ªåŠ¨åŒæ­¥è¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void autoSyncCustoms(final JTable table) {
         table.getColumnModel().addColumnModelListener(new TableColumnModelListener() {
@@ -656,28 +656,28 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
              * @see javax.swing.event.TableColumnModelListener#columnMarginChanged(javax.swing.event.ChangeEvent)
              */
             public void columnMarginChanged(ChangeEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ */
+                /* æš‚ä¸å¿…å®ç° */
             }
 
             /**
              * @see javax.swing.event.TableColumnModelListener#columnSelectionChanged(javax.swing.event.ListSelectionEvent)
              */
             public void columnSelectionChanged(ListSelectionEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ */
+                /* æš‚ä¸å¿…å®ç° */
             }
 
             /**
              * @see javax.swing.event.TableColumnModelListener#columnAdded(javax.swing.event.TableColumnModelEvent)
              */
             public void columnAdded(TableColumnModelEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ */
+                /* æš‚ä¸å¿…å®ç° */
             }
 
             /**
              * @see javax.swing.event.TableColumnModelListener#columnRemoved(javax.swing.event.TableColumnModelEvent)
              */
             public void columnRemoved(TableColumnModelEvent evt) {
-                /* Ôİ²»±ØÊµÏÖ */
+                /* æš‚ä¸å¿…å®ç° */
             }
 
             /**
@@ -711,45 +711,45 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ×Ô¶¯¹ÜÀíÖ¸¶¨±í¸ñµÄËùÓĞÁĞ±í¶¨ÖÆÏî£¬´Ë·½·¨Ó¦¸ÃÔÚpack()ºÍsetVisible(true)Ö®Ç°µ÷ÓÃ¡£
-     * @param key Ä¿±ê±í¸ñ¹Ø¼ü×Ö£¬²»ÄÜÎªnull»ò""£¬ÓÃÀ´Î¨Ò»±êÊ¶±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢£¬Î¨Ò»ĞÔÓÉÍâ½ç±£Ö¤¡£
-     * @param targetTable Ä¿±ê±í¸ñ£¬²»ÄÜÎªnull¡£
-     * @throws IllegalArgumentException Èç¹û²ÎÊı·Ç·¨Ôò»áÅ×³ö´ËÒì³£¡£
-     * @deprecated ×Ô¶¯¹ÜÀíÁĞ±í¶¨ÖÆµÄ±í¸ñ¶ÔÏóÖ»ÓĞµ½JVMÍË³öÊ±²ÅÔÊĞíÊÍ·ÅÄÚ´æ£¬ËùÒÔÇë¾¡Á¿ÊÖ¶¯¹ÜÀí±í¸ñµÄÁĞ±í¶¨ÖÆ¡£
+     * è‡ªåŠ¨ç®¡ç†æŒ‡å®šè¡¨æ ¼çš„æ‰€æœ‰åˆ—è¡¨å®šåˆ¶é¡¹ï¼Œæ­¤æ–¹æ³•åº”è¯¥åœ¨pack()å’ŒsetVisible(true)ä¹‹å‰è°ƒç”¨ã€‚
+     * @param key ç›®æ ‡è¡¨æ ¼å…³é”®å­—ï¼Œä¸èƒ½ä¸ºnullæˆ–""ï¼Œç”¨æ¥å”¯ä¸€æ ‡è¯†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œå”¯ä¸€æ€§ç”±å¤–ç•Œä¿è¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ï¼Œä¸èƒ½ä¸ºnullã€‚
+     * @throws IllegalArgumentException å¦‚æœå‚æ•°éæ³•åˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
+     * @deprecated è‡ªåŠ¨ç®¡ç†åˆ—è¡¨å®šåˆ¶çš„è¡¨æ ¼å¯¹è±¡åªæœ‰åˆ°JVMé€€å‡ºæ—¶æ‰å…è®¸é‡Šæ”¾å†…å­˜ï¼Œæ‰€ä»¥è¯·å°½é‡æ‰‹åŠ¨ç®¡ç†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ã€‚
      * @see #loadCustom(String, JTable)
      * @see #loadCustom(String, JTable, File)
      * @see #saveCustom(String, JTable)
      * @see #saveCustom(String, JTable, File)
      */
     public static synchronized void autoManageCustoms(final String key, final JTable targetTable) {
-        /* Ä¿±ê±í¹Ø¼ü×Ö·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨å…³é”®å­—éç©ºåˆ¤æ–­ */
         if (key == null || "".equals(key)) {
             throw new IllegalArgumentException("Target table key is null or \"\" !");
         }
 
-        /* Ä¿±ê±í·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨éç©ºåˆ¤æ–­ */
         if (targetTable == null) {
             throw new IllegalArgumentException("Target table is null !");
         }
 
-        /* µ±×é¼şµÄ¡°×æÏÈ¡±¸Ä±äÊ±½øĞĞloadºÍsave¶¯×÷ */
+        /* å½“ç»„ä»¶çš„â€œç¥–å…ˆâ€æ”¹å˜æ—¶è¿›è¡Œloadå’ŒsaveåŠ¨ä½œ */
         targetTable.addPropertyChangeListener("ancestor", new PropertyChangeListener() {
 
             /**
              * @see java.beans.PropertyChangeListener#propertyChange(java.beans.PropertyChangeEvent)
              */
             public void propertyChange(PropertyChangeEvent evt) {
-                if (targetTable.isDisplayable()) { //×æÏÈ¸Ä±äÇÒ×é¼ş¿ÉÏÔÊ¾±íÃ÷µ÷ÓÃÁËWindowµÄpack()»òsetVisible(true)·½·¨¡£
+                if (targetTable.isDisplayable()) { //ç¥–å…ˆæ”¹å˜ä¸”ç»„ä»¶å¯æ˜¾ç¤ºè¡¨æ˜è°ƒç”¨äº†Windowçš„pack()æˆ–setVisible(true)æ–¹æ³•ã€‚
                     loadCustom(key, targetTable);
 
-                } else { //×æÏÈ¸Ä±äÇÒ×é¼ş²»¿ÉÏÔÊ¾±íÃ÷µ÷ÓÃÁËWindowµÄdispose()·½·¨£¬µ«dispose()·½·¨ÎŞ·¨±£Ö¤ÍË³öÊ±Ò»¶¨µ÷ÓÃ£¬ËùÒÔ²ÅĞèÒªÏÂÃæµÄjvmÍË³öÊ±µÄ´¦Àí¡£
+                } else { //ç¥–å…ˆæ”¹å˜ä¸”ç»„ä»¶ä¸å¯æ˜¾ç¤ºè¡¨æ˜è°ƒç”¨äº†Windowçš„dispose()æ–¹æ³•ï¼Œä½†dispose()æ–¹æ³•æ— æ³•ä¿è¯é€€å‡ºæ—¶ä¸€å®šè°ƒç”¨ï¼Œæ‰€ä»¥æ‰éœ€è¦ä¸‹é¢çš„jvmé€€å‡ºæ—¶çš„å¤„ç†ã€‚
                     saveCustom(key, targetTable);
                 }
             }
 
         });
 
-        /* µ±jvmÍË³öÊ±Ò²saveÒ»´Î£¬È·±£ÄÜ¹»±£´æÏÂÁĞ±í¶¨ÖÆĞÅÏ¢ */
+        /* å½“jvmé€€å‡ºæ—¶ä¹Ÿsaveä¸€æ¬¡ï¼Œç¡®ä¿èƒ½å¤Ÿä¿å­˜ä¸‹åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ */
         Runtime.getRuntime().addShutdownHook(new Thread() {
 
             /**
@@ -763,56 +763,56 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ½«Ö¸¶¨±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢´æÈëµ½È±Ê¡µÄÁĞ±í¶¨ÖÆÎÄ¼şÖĞ£¬Ïß³Ì°²È«¡£
-     * @param key Ä¿±ê±í¸ñ¹Ø¼ü×Ö£¬²»ÄÜÎªnull»ò""£¬ÓÃÀ´Î¨Ò»±êÊ¶±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢£¬Î¨Ò»ĞÔÓÉÍâ½ç±£Ö¤¡£
-     * @param targetTable Ä¿±ê±í¸ñ£¬²»ÄÜÎªnull¡£
+     * å°†æŒ‡å®šè¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯å­˜å…¥åˆ°ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ä¸­ï¼Œçº¿ç¨‹å®‰å…¨ã€‚
+     * @param key ç›®æ ‡è¡¨æ ¼å…³é”®å­—ï¼Œä¸èƒ½ä¸ºnullæˆ–""ï¼Œç”¨æ¥å”¯ä¸€æ ‡è¯†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œå”¯ä¸€æ€§ç”±å¤–ç•Œä¿è¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ï¼Œä¸èƒ½ä¸ºnullã€‚
      */
     public static synchronized void saveCustom(String key, JTable targetTable) {
-        /* »ñÈ¡È±Ê¡µÄÁĞ±í¶¨ÖÆÎÄ¼ş */
+        /* è·å–ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ */
         URL url = BaseUtilities.getClassLocation(TableUtilities.class, true, true);
         File customFile = new File(url.getFile() + "/" + DEFAULT_CUSTOMFILENAME);
 
-        /* °ÑÁĞ±í¶¨ÖÆĞÅÏ¢´æÈëÁĞ±í¶¨ÖÆÎÄ¼şÖĞ */
+        /* æŠŠåˆ—è¡¨å®šåˆ¶ä¿¡æ¯å­˜å…¥åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ä¸­ */
         saveCustom(key, targetTable, customFile);
     }
 
     /**
-     * ½«Ö¸¶¨±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢´æÈëµ½Ö¸¶¨µÄÁĞ±í¶¨ÖÆÎÄ¼şÖĞ£¬Ïß³Ì°²È«¡£
-     * @param key Ä¿±ê±í¸ñ¹Ø¼ü×Ö£¬²»ÄÜÎªnull»ò""£¬ÓÃÀ´Î¨Ò»±êÊ¶±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢£¬Î¨Ò»ĞÔÓÉÍâ½ç±£Ö¤¡£
-     * @param targetTable Ä¿±ê±í¸ñ£¬²»ÄÜÎªnull¡£
-     * @param customFile Ö¸¶¨µÄÁĞ±í¶¨ÖÆÎÄ¼ş£¬²»ÄÜÎªnull£¬Èç¹ûÖ¸¶¨µÄÎÄ¼ş²»´æÔÚ»á´´½¨Ò»¸ö£¬µ«Èç¹û´´½¨Ê§°ÜÔòÈ·¶¨´Ë²ÎÊıÊÇ·Ç·¨µÄ¡£
-     * @throws IllegalArgumentException Èç¹û²ÎÊı·Ç·¨Ôò»áÅ×³ö´ËÒì³£¡£
+     * å°†æŒ‡å®šè¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯å­˜å…¥åˆ°æŒ‡å®šçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ä¸­ï¼Œçº¿ç¨‹å®‰å…¨ã€‚
+     * @param key ç›®æ ‡è¡¨æ ¼å…³é”®å­—ï¼Œä¸èƒ½ä¸ºnullæˆ–""ï¼Œç”¨æ¥å”¯ä¸€æ ‡è¯†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œå”¯ä¸€æ€§ç”±å¤–ç•Œä¿è¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ï¼Œä¸èƒ½ä¸ºnullã€‚
+     * @param customFile æŒ‡å®šçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ï¼Œä¸èƒ½ä¸ºnullï¼Œå¦‚æœæŒ‡å®šçš„æ–‡ä»¶ä¸å­˜åœ¨ä¼šåˆ›å»ºä¸€ä¸ªï¼Œä½†å¦‚æœåˆ›å»ºå¤±è´¥åˆ™ç¡®å®šæ­¤å‚æ•°æ˜¯éæ³•çš„ã€‚
+     * @throws IllegalArgumentException å¦‚æœå‚æ•°éæ³•åˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public static synchronized void saveCustom(String key, JTable targetTable, File customFile) {
-        /* Ä¿±ê±í¹Ø¼ü×Ö·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨å…³é”®å­—éç©ºåˆ¤æ–­ */
         if (key == null || "".equals(key)) {
             throw new IllegalArgumentException("Target table key is null or \"\" !");
         }
 
-        /* Ä¿±ê±í·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨éç©ºåˆ¤æ–­ */
         if (targetTable == null) {
             throw new IllegalArgumentException("Target table is null !");
         }
 
-        /* ÁĞ±í¶¨ÖÆÎÄ¼ş·Ç¿ÕÅĞ¶Ï */
+        /* åˆ—è¡¨å®šåˆ¶æ–‡ä»¶éç©ºåˆ¤æ–­ */
         if (customFile == null) {
             throw new IllegalArgumentException("Custom file is null !");
         }
 
-        /* ´ÓcustomFileÖĞ¶ÁÈ¡ÁĞ±í¶¨ÖÆÎÄµµÄ£ĞÍ£¬Èç¹û¶ÁÈ¡Ê§°ÜÔò´´½¨Ò»¸öĞÂµÄÎÄµµÄ£ĞÍ */
+        /* ä»customFileä¸­è¯»å–åˆ—è¡¨å®šåˆ¶æ–‡æ¡£æ¨¡å‹ï¼Œå¦‚æœè¯»å–å¤±è´¥åˆ™åˆ›å»ºä¸€ä¸ªæ–°çš„æ–‡æ¡£æ¨¡å‹ */
         SAXBuilder builder = new SAXBuilder();
         Document doc;
         Element tables;
         try {
             doc = builder.build(customFile);
-            tables = doc.getRootElement(); //¸ù½Úµã
+            tables = doc.getRootElement(); //æ ¹èŠ‚ç‚¹
 
         } catch (Exception ex) {
             tables = new Element("tables");
             doc = new Document(tables);
         }
 
-        /* ²éÕÒÖ¸¶¨targetTableKeyµÄtable£¬Èç¹ûÕÒ²»µ½Ôò´´½¨Ò»¸öĞÂµÄ */
+        /* æŸ¥æ‰¾æŒ‡å®štargetTableKeyçš„tableï¼Œå¦‚æœæ‰¾ä¸åˆ°åˆ™åˆ›å»ºä¸€ä¸ªæ–°çš„ */
         Element table = getTable(key, tables);
         if (table == null) {
             table = new Element("table");
@@ -820,14 +820,14 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
             tables.addContent(table);
         }
 
-        /* »ñÈ¡ĞÂµÄÁĞĞÅÏ¢£¬²¢Ìæ»»µôÔ­À´µÄÀÏµÄÁĞĞÅÏ¢ */
-        table.removeChildren("column"); //É¾³ıÔ­À´´æÔÚµÄÀÏµÄÁĞĞÅÏ¢
-        Element[] columns = getColumns(targetTable); //»ñÈ¡ĞÂµÄÁĞĞÅÏ¢
-        for (int i = 0; i < columns.length; i++) { //µü´úÌí¼Ó¸÷¸öÁĞĞÅÏ¢×Ó½Úµã
+        /* è·å–æ–°çš„åˆ—ä¿¡æ¯ï¼Œå¹¶æ›¿æ¢æ‰åŸæ¥çš„è€çš„åˆ—ä¿¡æ¯ */
+        table.removeChildren("column"); //åˆ é™¤åŸæ¥å­˜åœ¨çš„è€çš„åˆ—ä¿¡æ¯
+        Element[] columns = getColumns(targetTable); //è·å–æ–°çš„åˆ—ä¿¡æ¯
+        for (int i = 0; i < columns.length; i++) { //è¿­ä»£æ·»åŠ å„ä¸ªåˆ—ä¿¡æ¯å­èŠ‚ç‚¹
             table.addContent(columns[i]);
         }
 
-        /* ½«ĞÅÏ¢Ğ´Èëµ½Ö¸¶¨µÄxmlÎÄ¼şÖĞ */
+        /* å°†ä¿¡æ¯å†™å…¥åˆ°æŒ‡å®šçš„xmlæ–‡ä»¶ä¸­ */
         try {
             new XMLOutputter().output(doc, new FileOutputStream(customFile));
 
@@ -837,60 +837,60 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÓÃÈ±Ê¡µÄÁĞ±í¶¨ÖÆÎÄ¼şÀ´ÅäÖÃÖ¸¶¨µÄ±í¸ñ£¬Ïß³Ì°²È«¡£
-     * @param key Ä¿±ê±í¸ñ¹Ø¼ü×Ö£¬²»ÄÜÎªnull»ò""£¬ÓÃÀ´Î¨Ò»±êÊ¶±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢£¬Î¨Ò»ĞÔÓÉÍâ½ç±£Ö¤¡£
-     * @param targetTable Ä¿±ê±í¸ñ£¬²»ÄÜÎªnull¡£
-     * @return ±êÊ¶ÔØÈëÊÇ·ñ³É¹¦¡£
+     * ç”¨ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶æ¥é…ç½®æŒ‡å®šçš„è¡¨æ ¼ï¼Œçº¿ç¨‹å®‰å…¨ã€‚
+     * @param key ç›®æ ‡è¡¨æ ¼å…³é”®å­—ï¼Œä¸èƒ½ä¸ºnullæˆ–""ï¼Œç”¨æ¥å”¯ä¸€æ ‡è¯†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œå”¯ä¸€æ€§ç”±å¤–ç•Œä¿è¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ï¼Œä¸èƒ½ä¸ºnullã€‚
+     * @return æ ‡è¯†è½½å…¥æ˜¯å¦æˆåŠŸã€‚
      */
     public static synchronized boolean loadCustom(String key, JTable targetTable) {
-        /* »ñÈ¡È±Ê¡µÄÁĞ±í¶¨ÖÆÎÄ¼ş */
+        /* è·å–ç¼ºçœçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ */
         URL url = BaseUtilities.getClassLocation(TableUtilities.class, true, true);
         File customFile = new File(url.getFile() + "/" + DEFAULT_CUSTOMFILENAME);
 
-        /* °ÑÁĞ±í¶¨ÖÆĞÅÏ¢´æÈëÁĞ±í¶¨ÖÆÎÄ¼şÖĞ */
+        /* æŠŠåˆ—è¡¨å®šåˆ¶ä¿¡æ¯å­˜å…¥åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ä¸­ */
         return loadCustom(key, targetTable, customFile);
     }
 
     /**
-     * ÓÃÖ¸¶¨µÄÁĞ±í¶¨ÖÆÎÄ¼şÀ´ÅäÖÃÖ¸¶¨µÄ±í¸ñ£¬Ïß³Ì°²È«¡£
-     * @param key Ä¿±ê±í¸ñ¹Ø¼ü×Ö£¬²»ÄÜÎªnull»ò""£¬ÓÃÀ´Î¨Ò»±êÊ¶±í¸ñµÄÁĞ±í¶¨ÖÆĞÅÏ¢£¬Î¨Ò»ĞÔÓÉÍâ½ç±£Ö¤¡£
-     * @param targetTable Ä¿±ê±í¸ñ£¬²»ÄÜÎªnull¡£
-     * @param customFile Ö¸¶¨µÄÁĞ±í¶¨ÖÆÎÄ¼ş£¬²»ÄÜÎªnull»òÎÄ¼ş²»´æÔÚ¡£
-     * @return ±êÊ¶ÔØÈëÊÇ·ñ³É¹¦¡£
-     * @throws IllegalArgumentException Èç¹û²ÎÊı·Ç·¨Ôò»áÅ×³ö´ËÒì³£¡£
+     * ç”¨æŒ‡å®šçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶æ¥é…ç½®æŒ‡å®šçš„è¡¨æ ¼ï¼Œçº¿ç¨‹å®‰å…¨ã€‚
+     * @param key ç›®æ ‡è¡¨æ ¼å…³é”®å­—ï¼Œä¸èƒ½ä¸ºnullæˆ–""ï¼Œç”¨æ¥å”¯ä¸€æ ‡è¯†è¡¨æ ¼çš„åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ï¼Œå”¯ä¸€æ€§ç”±å¤–ç•Œä¿è¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ï¼Œä¸èƒ½ä¸ºnullã€‚
+     * @param customFile æŒ‡å®šçš„åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ï¼Œä¸èƒ½ä¸ºnullæˆ–æ–‡ä»¶ä¸å­˜åœ¨ã€‚
+     * @return æ ‡è¯†è½½å…¥æ˜¯å¦æˆåŠŸã€‚
+     * @throws IllegalArgumentException å¦‚æœå‚æ•°éæ³•åˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public static synchronized boolean loadCustom(String key, JTable targetTable, File customFile) {
-        /* Ä¿±ê±í¹Ø¼ü×Ö·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨å…³é”®å­—éç©ºåˆ¤æ–­ */
         if (key == null || "".equals(key)) {
             throw new IllegalArgumentException("Target table key is null or \"\" !");
         }
 
-        /* Ä¿±ê±í·Ç¿ÕÅĞ¶Ï */
+        /* ç›®æ ‡è¡¨éç©ºåˆ¤æ–­ */
         if (targetTable == null) {
             throw new IllegalArgumentException("Target table is null !");
         }
 
-        /* ÁĞ±í¶¨ÖÆÎÄ¼ş·Ç¿ÕÅĞ¶Ï */
+        /* åˆ—è¡¨å®šåˆ¶æ–‡ä»¶éç©ºåˆ¤æ–­ */
         if (customFile == null) {
             throw new IllegalArgumentException("Custom file is null !");
         }
 
-        /* ÁĞ±í¶¨ÖÆÎÄ¼ş²»´æÔÚÅĞ¶Ï */
+        /* åˆ—è¡¨å®šåˆ¶æ–‡ä»¶ä¸å­˜åœ¨åˆ¤æ–­ */
         if (!customFile.exists()) {
             System.out.println("Custom file is not exist !");
             return false;
         }
 
         /*
-         * ÁĞ±í¶¨ÖÆÒÑÔØÈëÅĞ¶Ï
-         * TODO ¶ÔÒ»¸öÒÑÔØÈëÁĞ±í¶¨ÖÆµÄ±í¸ñÖØ¸´ÔØÈëÊÇÃ»ÓĞÒâÒåµÄ£¬ÖÁÉÙÏÖÔÚ»¹Ã»Õâ¸öĞèÇó£¬¶øÇÒÏÂÃæµÄsyncViewIndex·½·¨Ò²¶Ô´ËÓĞËã·¨ÉÏµÄÏŞÖÆ
+         * åˆ—è¡¨å®šåˆ¶å·²è½½å…¥åˆ¤æ–­
+         * TODO å¯¹ä¸€ä¸ªå·²è½½å…¥åˆ—è¡¨å®šåˆ¶çš„è¡¨æ ¼é‡å¤è½½å…¥æ˜¯æ²¡æœ‰æ„ä¹‰çš„ï¼Œè‡³å°‘ç°åœ¨è¿˜æ²¡è¿™ä¸ªéœ€æ±‚ï¼Œè€Œä¸”ä¸‹é¢çš„syncViewIndexæ–¹æ³•ä¹Ÿå¯¹æ­¤æœ‰ç®—æ³•ä¸Šçš„é™åˆ¶
          */
         if (getTableCustoms(targetTable) != null) {
             System.out.println("Custom is loaded !");
             return false;
         }
 
-        /* ´ÓcustomFileÖĞ¶ÁÈ¡ÁĞ±í¶¨ÖÆÄ£ĞÍ */
+        /* ä»customFileä¸­è¯»å–åˆ—è¡¨å®šåˆ¶æ¨¡å‹ */
         SAXBuilder builder = new SAXBuilder();
         Document doc;
         try {
@@ -900,44 +900,44 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
             ex.printStackTrace();
             return false;
         }
-        Element tables = doc.getRootElement(); //¸ù½Úµã
+        Element tables = doc.getRootElement(); //æ ¹èŠ‚ç‚¹
 
-        /* ±éÀú±í¸ñ£¬ÕÒµ½¶ÔÓ¦µÄkey£¬È¡³öÈ¥ĞÅÏ¢ÉèÖÃµ½targetTableÖĞÈ¥ */
+        /* éå†è¡¨æ ¼ï¼Œæ‰¾åˆ°å¯¹åº”çš„keyï¼Œå–å‡ºå»ä¿¡æ¯è®¾ç½®åˆ°targetTableä¸­å» */
         Element table = getTable(key, tables);
         if (table == null) {
             System.out.println("Target table custom is not found !");
             return false;
         }
 
-        /* ¶Á³öÅäÖÃÊı¾İ */
+        /* è¯»å‡ºé…ç½®æ•°æ® */
         List columns = table.getChildren("column");
 
-        /* ¹ıÂËÅäÖÃÊı¾İ²»ºÏ·¨µÄÇéĞÎ */
+        /* è¿‡æ»¤é…ç½®æ•°æ®ä¸åˆæ³•çš„æƒ…å½¢ */
         if (columns.size() != getColumnCount(targetTable)) {
             System.out.println("Target table custom is illegal !");
             return false;
         }
 
-        /* ±éÀúÁĞĞÅÏ¢ÁĞ±í£¬°Ñ¶Á³öÅäÖÃÊı¾İÉèÖÃµ½targetTableÖĞÈ¥ */
+        /* éå†åˆ—ä¿¡æ¯åˆ—è¡¨ï¼ŒæŠŠè¯»å‡ºé…ç½®æ•°æ®è®¾ç½®åˆ°targetTableä¸­å» */
         for (int i = 0, size = columns.size(); i < size; i++) {
             setColumn((Element) columns.get(i), targetTable);
         }
 
-        /* ¸üĞÂĞĞÍ·Ê×Ñ¡¹ö¶¯ÊÓ¿ÚµÄ´óĞ¡ */
+        /* æ›´æ–°è¡Œå¤´é¦–é€‰æ»šåŠ¨è§†å£çš„å¤§å° */
         TableRowHeader rowHeader = getRowHeader(targetTable);
         if (rowHeader != null) {
             updateViewportSize(rowHeader);
         }
 
-        /* ¸üĞÂ±íÌåÊ×Ñ¡¹ö¶¯ÊÓ¿ÚµÄ´óĞ¡ */
+        /* æ›´æ–°è¡¨ä½“é¦–é€‰æ»šåŠ¨è§†å£çš„å¤§å° */
         updateViewportSize(getBody(targetTable));
 
         return true;
     }
 
     /**
-     * Í£Ö¹±à¼­¡£
-     * @param table ±í¸ñ¡£
+     * åœæ­¢ç¼–è¾‘ã€‚
+     * @param table è¡¨æ ¼ã€‚
      */
     public static void stopEditing(JTable table) {
         if (table.isEditing()) {
@@ -948,18 +948,18 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * Í¨¹ıkeyÀ´»ñÈ¡ÁĞ±í¶¨ÖÆµÄ¹ú¼Ê»¯ĞÅÏ¢¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢¡£
+     * é€šè¿‡keyæ¥è·å–åˆ—è¡¨å®šåˆ¶çš„å›½é™…åŒ–ä¿¡æ¯ã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ã€‚
      */
     protected static String getI18nMessage(String i18nKey) {
         return BaseUtilities.getI18nMessage("com.apollo.swing.component.table.resource.Table", i18nKey);
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     protected static Icon getIcon(String iconFilename) {
         return BaseUtilities.getIcon(TableUtilities.class, "com/apollo/swing/component/table/resource/icon/", iconFilename);
@@ -972,14 +972,14 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     /*------------------------------------- Private Static Method -------------------------------------*/
 
     /**
-     * ½ûÖ¹ÁĞµÄÍÏ¶¯µÄ²Ù×÷¡£
-     * @param th ±íÍ·¡£
-     * @param evt Êó±êÍÏ×§ÊÂ¼ş¡£
+     * ç¦æ­¢åˆ—çš„æ‹–åŠ¨çš„æ“ä½œã€‚
+     * @param th è¡¨å¤´ã€‚
+     * @param evt é¼ æ ‡æ‹–æ‹½äº‹ä»¶ã€‚
      */
     private static void disableColumnDrag(JTableHeader th, MouseEvent evt) {
-        th.setDraggedColumn(null); //Ã»ÓĞ´ËÉèÖÃ£¬½çÃæÉÏ»á³öÏÖ¼·Ñ¹¶¶¶¯£¬¹À¼ÆÊÇUIÀàÀïÃæ×ö´¦ÀíÊ±·¢ÉúµÄ¶¯×÷
+        th.setDraggedColumn(null); //æ²¡æœ‰æ­¤è®¾ç½®ï¼Œç•Œé¢ä¸Šä¼šå‡ºç°æŒ¤å‹æŠ–åŠ¨ï¼Œä¼°è®¡æ˜¯UIç±»é‡Œé¢åšå¤„ç†æ—¶å‘ç”Ÿçš„åŠ¨ä½œ
 
-        /* ¹¹Ôìµ±Ç°µãÊó±êÌ§ÆğµÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡æŠ¬èµ·çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent releasedEvt = new MouseEvent((Component) evt.getSource(),
                                                 MouseEvent.MOUSE_RELEASED,
                                                 System.currentTimeMillis(),
@@ -989,7 +989,7 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
                                                 1,
                                                 false,
                                                 evt.getButton());
-        /* ¹¹Ôìµ±Ç°µãÊó±ê°´ÏÂµÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡æŒ‰ä¸‹çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent pressedEvt = new MouseEvent((Component) evt.getSource(),
                                                MouseEvent.MOUSE_PRESSED,
                                                System.currentTimeMillis(),
@@ -999,7 +999,7 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
                                                1,
                                                false,
                                                evt.getButton());
-        /* ¹¹Ôìµ±Ç°µãÊó±êÒÆ¶¯µÄÊÂ¼ş£¬·¢ËÍ¸øÏàÓ¦µÄUIÀà´¦ÀíµÄ */
+        /* æ„é€ å½“å‰ç‚¹é¼ æ ‡ç§»åŠ¨çš„äº‹ä»¶ï¼Œå‘é€ç»™ç›¸åº”çš„UIç±»å¤„ç†çš„ */
         MouseEvent movedEvt = new MouseEvent((Component) evt.getSource(),
                                              MouseEvent.MOUSE_MOVED,
                                              System.currentTimeMillis(),
@@ -1010,7 +1010,7 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
                                              false,
                                              evt.getButton());
 
-        /* ·¢ËÍÁ½¸öÊÂ¼şµ½AWTÊÂ¼ş¶ÓÁĞÖĞ£¬¸øUIÀà×¢²áµÄÊó±êÊÂ¼ş¼àÌıÆ÷È¥´¦Àí */
+        /* å‘é€ä¸¤ä¸ªäº‹ä»¶åˆ°AWTäº‹ä»¶é˜Ÿåˆ—ä¸­ï¼Œç»™UIç±»æ³¨å†Œçš„é¼ æ ‡äº‹ä»¶ç›‘å¬å™¨å»å¤„ç† */
         EventQueue eq = Toolkit.getDefaultToolkit().getSystemEventQueue();
         eq.postEvent(releasedEvt);
         eq.postEvent(pressedEvt);
@@ -1018,10 +1018,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ¸ù¾İÖ¸¶¨µÄtableKeyÔÚtableCustomÀïÃæ²éÕÒtable¡£
-     * @param key ±í¸ñ¹Ø¼ü×Ö¡£
-     * @param tables ±í¸ñÅäÖÃÔªËØ¡£
-     * @return ±í¸ñÔªËØ¡£
+     * æ ¹æ®æŒ‡å®šçš„tableKeyåœ¨tableCustomé‡Œé¢æŸ¥æ‰¾tableã€‚
+     * @param key è¡¨æ ¼å…³é”®å­—ã€‚
+     * @param tables è¡¨æ ¼é…ç½®å…ƒç´ ã€‚
+     * @return è¡¨æ ¼å…ƒç´ ã€‚
      */
     private static Element getTable(String key, Element tables) {
         List children = tables.getChildren("table");
@@ -1034,13 +1034,13 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
             }
         }
 
-        return null; //Ã»ÓĞÕÒµ½¾Í·µ»Ønull
+        return null; //æ²¡æœ‰æ‰¾åˆ°å°±è¿”å›null
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨Ä¿±ê±í¸ñµÄÈ«²¿ÁĞĞÅÏ¢¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
-     * @return Ö¸¶¨Ä¿±ê±í¸ñµÄÈ«²¿ÁĞĞÅÏ¢¡£
+     * è·å–æŒ‡å®šç›®æ ‡è¡¨æ ¼çš„å…¨éƒ¨åˆ—ä¿¡æ¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
+     * @return æŒ‡å®šç›®æ ‡è¡¨æ ¼çš„å…¨éƒ¨åˆ—ä¿¡æ¯ã€‚
      */
     private static Element[] getColumns(JTable targetTable) {
         List columns = new ArrayList();
@@ -1092,9 +1092,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * ÉèÖÃÒ»¸öÖ¸¶¨µÄÁĞĞÅÏ¢µ½Ä¿±ê±í¸ñ¡£
-     * @param column ÁĞĞÅÏ¢¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
+     * è®¾ç½®ä¸€ä¸ªæŒ‡å®šçš„åˆ—ä¿¡æ¯åˆ°ç›®æ ‡è¡¨æ ¼ã€‚
+     * @param column åˆ—ä¿¡æ¯ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
      */
     private static void setColumn(Element column, JTable targetTable) {
         boolean fixed = new Boolean(column.getAttributeValue("fixed")).booleanValue();
@@ -1139,9 +1139,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * »ñÈ¡ÁĞÊı¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
-     * @return ÁĞÊı¡£
+     * è·å–åˆ—æ•°ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
+     * @return åˆ—æ•°ã€‚
      */
     private static int getColumnCount(JTable targetTable) {
         int columnCount = getBody(targetTable).getColumnCount();
@@ -1155,27 +1155,27 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * »ñÈ¡ĞĞÍ·¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
-     * @return ĞĞÍ·¡£
+     * è·å–è¡Œå¤´ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
+     * @return è¡Œå¤´ã€‚
      */
     private static TableRowHeader getRowHeader(JTable targetTable) {
         return targetTable instanceof TableRowHeader ? (TableRowHeader) targetTable : null;
     }
 
     /**
-     * »ñÈ¡±íÌå¡£
-     * @param targetTable ĞĞÍ·¡£
-     * @return ±íÌå¡£
+     * è·å–è¡¨ä½“ã€‚
+     * @param targetTable è¡Œå¤´ã€‚
+     * @return è¡¨ä½“ã€‚
      */
     private static JTable getBody(JTable targetTable) {
         return targetTable instanceof TableRowHeader ? ((TableRowHeader) targetTable).m_body : targetTable;
     }
 
     /**
-     * Ìí¼ÓÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-     * @param table ±í¸ñ¡£
-     * @param custom ÁĞ±í¶¨ÖÆĞÅÏ¢¡£
+     * æ·»åŠ åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param custom åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
      */
     private static void addCustom(JTable table, TableCustom custom) {
         List customs = getTableCustoms(table);
@@ -1189,9 +1189,9 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     }
 
     /**
-     * Í¬²½ÊÓÍ¼Ë÷Òı¡£
-     * @param table ±í¸ñ¡£
-     * @param column ÁĞ¡£
+     * åŒæ­¥è§†å›¾ç´¢å¼•ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param column åˆ—ã€‚
      */
     private static void syncViewIndex(JTable table, TableColumn column) {
         int viewIndex = 0;
@@ -1209,7 +1209,7 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
             }
         }
 
-        /* °ÑÁĞÒÆ¶¯µ½ÒÑÖª¿É¼ûÁĞµÄºóÃæ£¬×¢Òâ£ºÕâÀïÒªÇócustomsÊÇÖğ²½Ìí¼ÓµÄ£¬ËùÒÔ²»ÔÊĞíÔÚÒ»¸öÁĞ±í¶¨ÖÆÒÑÔØÈëºÃµÄ±í¸ñÉÏÔÙ´ÎÔØÈëÁĞ±í¶¨ÖÆĞÅÏ¢ */
+        /* æŠŠåˆ—ç§»åŠ¨åˆ°å·²çŸ¥å¯è§åˆ—çš„åé¢ï¼Œæ³¨æ„ï¼šè¿™é‡Œè¦æ±‚customsæ˜¯é€æ­¥æ·»åŠ çš„ï¼Œæ‰€ä»¥ä¸å…è®¸åœ¨ä¸€ä¸ªåˆ—è¡¨å®šåˆ¶å·²è½½å…¥å¥½çš„è¡¨æ ¼ä¸Šå†æ¬¡è½½å…¥åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ */
         cm.moveColumn(cm.getColumnIndex(column.getIdentifier()), viewIndex);
     }
 
@@ -1248,10 +1248,10 @@ public class TableUtilities implements IBaseConstants, ITableConstants {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private TableUtilities() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Method -------------------------------------*/

@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-8-11 ÏÂÎç04:04:39
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-8-11 ä¸‹åˆ04:04:39
  */
 package com.apollo.swing.component.common.jtable;
 
@@ -15,22 +15,22 @@ import javax.swing.JTable;
 import javax.swing.event.EventListenerList;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTTableActionUtilities.java</p>
- * <p>ÎÄ¼şÃèÊö£ºJTable¶¯×÷¿ØÖÆÆ÷£¬¿ÉÒÔ·½±ãµÃ¶ÔJTableµÄ¸÷ÖÖµ¼º½¶¯×÷µÄ½øĞĞ¿ØÖÆ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-8-11</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTTableActionUtilities.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šJTableåŠ¨ä½œæ§åˆ¶å™¨ï¼Œå¯ä»¥æ–¹ä¾¿å¾—å¯¹JTableçš„å„ç§å¯¼èˆªåŠ¨ä½œçš„è¿›è¡Œæ§åˆ¶ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-8-11</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public final class TableActionController {
@@ -46,20 +46,20 @@ public final class TableActionController {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param targetTable Ä¿±ê±í¸ñ¡£
-     * @exception IllegalArgumentException Ä¿±ê±í¸ñÎª¿ÕÊ±»áÅ×³ö´ËÒì³£¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param targetTable ç›®æ ‡è¡¨æ ¼ã€‚
+     * @exception IllegalArgumentException ç›®æ ‡è¡¨æ ¼ä¸ºç©ºæ—¶ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public TableActionController(JTable targetTable) {
-        /* Ä¿±ê±í¸ñÅĞ¿Õ */
+        /* ç›®æ ‡è¡¨æ ¼åˆ¤ç©º */
         if (targetTable == null) {
             throw new IllegalArgumentException("Target table is null !");
         }
 
-        /* ³õÊ¼»¯³ÉÔ±ÊôĞÔ */
+        /* åˆå§‹åŒ–æˆå‘˜å±æ€§ */
         m_targetTable = targetTable;
 
-        /* Ö´ĞĞ³õÊ¼»¯·½·¨ */
+        /* æ‰§è¡Œåˆå§‹åŒ–æ–¹æ³• */
         initialize();
     }
 
@@ -82,8 +82,8 @@ public final class TableActionController {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Right-P ; keyCode Right-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Right-P ; keyCode Right-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextColumnActionListener(ITableActionListener listener) {
@@ -91,8 +91,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Right-P ; keyCode Right-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Right-P ; keyCode Right-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextColumnActionListener(ITableActionListener listener) {
@@ -100,8 +100,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Left-P ; keyCode Left-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Left-P ; keyCode Left-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousColumnActionListener(ITableActionListener listener) {
@@ -109,8 +109,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Left-P ; keyCode Left-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Left-P ; keyCode Left-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousColumnActionListener(ITableActionListener listener) {
@@ -118,8 +118,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Down-P ; keyCode Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Down-P ; keyCode Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextRowActionListener(ITableActionListener listener) {
@@ -127,8 +127,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Down-P ; keyCode Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Down-P ; keyCode Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextRowActionListener(ITableActionListener listener) {
@@ -136,8 +136,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Up-P ; keyCode Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Up-P ; keyCode Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousRowActionListener(ITableActionListener listener) {
@@ -145,8 +145,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Up-P ; keyCode Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Up-P ; keyCode Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousRowActionListener(ITableActionListener listener) {
@@ -154,8 +154,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftRight-P ; keyCode ShiftRight-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftRight-P ; keyCode ShiftRight-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -163,8 +163,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftRight-P ; keyCode ShiftRight-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftRight-P ; keyCode ShiftRight-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -172,8 +172,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftLeft-P ; keyCode ShiftLeft-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftLeft-P ; keyCode ShiftLeft-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -181,8 +181,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftLeft-P ; keyCode ShiftLeft-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftLeft-P ; keyCode ShiftLeft-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -190,8 +190,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftDown-P ; keyCode ShiftDown-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftDown-P ; keyCode ShiftDown-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -199,8 +199,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftDown-P ; keyCode ShiftDown-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftDown-P ; keyCode ShiftDown-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -208,8 +208,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftUp-P ; keyCode ShiftUp-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftUp-P ; keyCode ShiftUp-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -217,8 +217,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftUp-P ; keyCode ShiftUp-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftUp-P ; keyCode ShiftUp-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -226,8 +226,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollUpChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Page Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollUpChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Page Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollUpChangeSelectionActionListener(ITableActionListener listener) {
@@ -235,8 +235,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollUpChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Page Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollUpChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Page Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollUpChangeSelectionActionListener(ITableActionListener listener) {
@@ -244,8 +244,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollDownChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Page Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollDownChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Page Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollDownChangeSelectionActionListener(ITableActionListener listener) {
@@ -253,8 +253,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollDownChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Page Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollDownChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Page Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollDownChangeSelectionActionListener(ITableActionListener listener) {
@@ -262,8 +262,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectFirstColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Home-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Home-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectFirstColumnActionListener(ITableActionListener listener) {
@@ -271,8 +271,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectFirstColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Home-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Home-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectFirstColumnActionListener(ITableActionListener listener) {
@@ -280,8 +280,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectLastColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode End-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode End-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectLastColumnActionListener(ITableActionListener listener) {
@@ -289,8 +289,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectLastColumn¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode End-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastColumnâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode End-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectLastColumnActionListener(ITableActionListener listener) {
@@ -298,8 +298,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollUpExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollUpExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollUpExtendSelectionActionListener(ITableActionListener listener) {
@@ -307,8 +307,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollUpExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollUpExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollUpExtendSelectionActionListener(ITableActionListener listener) {
@@ -316,8 +316,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollDownExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollDownExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollDownExtendSelectionActionListener(ITableActionListener listener) {
@@ -325,8 +325,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollDownExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollDownExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollDownExtendSelectionActionListener(ITableActionListener listener) {
@@ -334,8 +334,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectFirstColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectFirstColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -343,8 +343,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectFirstColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectFirstColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -352,8 +352,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectLastColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectLastColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -361,8 +361,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectLastColumnExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastColumnExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectLastColumnExtendSelectionActionListener(ITableActionListener listener) {
@@ -370,8 +370,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectFirstRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectFirstRowActionListener(ITableActionListener listener) {
@@ -379,8 +379,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectFirstRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectFirstRowActionListener(ITableActionListener listener) {
@@ -388,8 +388,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectLastRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectLastRowActionListener(ITableActionListener listener) {
@@ -397,8 +397,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectLastRow¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastRowâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectLastRowActionListener(ITableActionListener listener) {
@@ -406,8 +406,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectFirstRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectFirstRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -415,8 +415,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectFirstRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftHome-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectFirstRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftHome-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectFirstRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -424,8 +424,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectLastRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectLastRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -433,8 +433,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectLastRowExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftEnd-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectLastRowExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftEnd-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectLastRowExtendSelectionActionListener(ITableActionListener listener) {
@@ -442,8 +442,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextColumnCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Tab-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Tab-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextColumnCellActionListener(ITableActionListener listener) {
@@ -451,8 +451,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextColumnCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Tab-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextColumnCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Tab-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextColumnCellActionListener(ITableActionListener listener) {
@@ -460,8 +460,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumnCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftTab-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftTab-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousColumnCellActionListener(ITableActionListener listener) {
@@ -469,8 +469,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousColumnCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftTab-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousColumnCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftTab-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousColumnCellActionListener(ITableActionListener listener) {
@@ -478,8 +478,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectNextRowCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Enter-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Enter-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectNextRowCellActionListener(ITableActionListener listener) {
@@ -487,8 +487,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectNextRowCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Enter-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectNextRowCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Enter-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectNextRowCellActionListener(ITableActionListener listener) {
@@ -496,8 +496,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRowCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftEnter-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftEnter-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectPreviousRowCellActionListener(ITableActionListener listener) {
@@ -505,8 +505,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectPreviousRowCell¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode ShiftEnter-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectPreviousRowCellâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode ShiftEnter-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectPreviousRowCellActionListener(ITableActionListener listener) {
@@ -514,8 +514,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°selectAll¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlA-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œselectAllâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlA-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addSelectAllActionListener(ITableActionListener listener) {
@@ -523,8 +523,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°selectAll¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlA-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œselectAllâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlA-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeSelectAllActionListener(ITableActionListener listener) {
@@ -532,8 +532,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°cancel¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Escape-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œcancelâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Escape-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addCancelActionListener(ITableActionListener listener) {
@@ -541,8 +541,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°cancel¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Escape-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œcancelâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Escape-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeCancelActionListener(ITableActionListener listener) {
@@ -550,8 +550,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°startEditing¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode F2-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œstartEditingâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode F2-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addStartEditingActionListener(ITableActionListener listener) {
@@ -559,8 +559,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°startEditing¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode F2-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œstartEditingâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode F2-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeStartEditingActionListener(ITableActionListener listener) {
@@ -568,8 +568,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°cut¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlX-P ; keyCode Cut-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œcutâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlX-P ; keyCode Cut-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addCutActionListener(ITableActionListener listener) {
@@ -577,8 +577,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°cut¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlX-P ; keyCode Cut-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œcutâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlX-P ; keyCode Cut-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeCutActionListener(ITableActionListener listener) {
@@ -586,8 +586,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°copy¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Copy-P ; keyCode CtrlC-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œcopyâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Copy-P ; keyCode CtrlC-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addCopyActionListener(ITableActionListener listener) {
@@ -595,8 +595,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°copy¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Copy-P ; keyCode CtrlC-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œcopyâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Copy-P ; keyCode CtrlC-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeCopyActionListener(ITableActionListener listener) {
@@ -604,8 +604,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°paste¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlV-P ; keyCode Paste-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œpasteâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlV-P ; keyCode Paste-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addPasteActionListener(ITableActionListener listener) {
@@ -613,8 +613,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°paste¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlV-P ; keyCode Paste-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œpasteâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlV-P ; keyCode Paste-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removePasteActionListener(ITableActionListener listener) {
@@ -622,8 +622,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollLeftChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollLeftChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollLeftChangeSelectionActionListener(ITableActionListener listener) {
@@ -631,8 +631,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollLeftChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollLeftChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollLeftChangeSelectionActionListener(ITableActionListener listener) {
@@ -640,8 +640,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollRightChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollRightChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollRightChangeSelectionActionListener(ITableActionListener listener) {
@@ -649,8 +649,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollRightChangeSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode CtrlPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollRightChangeSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode CtrlPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollRightChangeSelectionActionListener(ITableActionListener listener) {
@@ -658,8 +658,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollLeftExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollLeftExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollLeftExtendSelectionActionListener(ITableActionListener listener) {
@@ -667,8 +667,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollLeftExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftPage Down-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollLeftExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftPage Down-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollLeftExtendSelectionActionListener(ITableActionListener listener) {
@@ -676,8 +676,8 @@ public final class TableActionController {
     }
 
     /**
-     * Ìí¼ÓÒ»¸öÖ¸¶¨µÄ¡°scrollRightExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„â€œscrollRightExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #addTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void addScrollRightExtendSelectionActionListener(ITableActionListener listener) {
@@ -685,8 +685,8 @@ public final class TableActionController {
     }
 
     /**
-     * ÒÆ³ıÒ»¸öÖ¸¶¨µÄ¡°scrollRightExtendSelection¡±µÄ¶¯×÷¼àÌıÆ÷£¨´Ë¶¯×÷¶ÔÓ¦µÄ¼üÅÌ²Ù×÷£º¡°keyCode Ctrl+ShiftPage Up-P¡±£©¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ç§»é™¤ä¸€ä¸ªæŒ‡å®šçš„â€œscrollRightExtendSelectionâ€çš„åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ­¤åŠ¨ä½œå¯¹åº”çš„é”®ç›˜æ“ä½œï¼šâ€œkeyCode Ctrl+ShiftPage Up-Pâ€ï¼‰ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      * @see #removeTableActionListener(String, com.zte.ican.gui.component.common.jtable.TTableActionController.ITableActionListener)
      */
     public void removeScrollRightExtendSelectionActionListener(ITableActionListener listener) {
@@ -716,7 +716,7 @@ public final class TableActionController {
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ³õÊ¼»¯·½·¨¡£
+     * åˆå§‹åŒ–æ–¹æ³•ã€‚
      */
     private void initialize() {
         initTableActionListenerListMap();
@@ -724,7 +724,7 @@ public final class TableActionController {
     }
 
     /**
-     * ³õÊ¼»¯¶¯×÷¼àÌıÆ÷ÁĞ±íµÄMap¡£
+     * åˆå§‹åŒ–åŠ¨ä½œç›‘å¬å™¨åˆ—è¡¨çš„Mapã€‚
      */
     private void initTableActionListenerListMap() {
         ActionMap actionMap = m_targetTable.getActionMap();
@@ -737,8 +737,8 @@ public final class TableActionController {
     }
 
     /**
-     * ³õÊ¼»¯ËùÓĞµÄ±í¸ñ¶¯×÷¼àÌıÆ÷£¬Ò²¾ÍÊÇ°ÑÄ¿±ê±í¸ñµÄËùÓĞactionÓÃĞÂµÄÓÃÓÚÀ¹½ØµÄactionÌæ»»µô¡£
-     * @exception IllegalStateException Èç¹ûÄ¿±ê±í¸ñÒÑ¾­°²×°¹ıÒ»´ÎÓÃÓÚ¶¯×÷À¹½ØµÄaction¾Í»áÅ×³ö´ËÒì³£¡£
+     * åˆå§‹åŒ–æ‰€æœ‰çš„è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œä¹Ÿå°±æ˜¯æŠŠç›®æ ‡è¡¨æ ¼çš„æ‰€æœ‰actionç”¨æ–°çš„ç”¨äºæ‹¦æˆªçš„actionæ›¿æ¢æ‰ã€‚
+     * @exception IllegalStateException å¦‚æœç›®æ ‡è¡¨æ ¼å·²ç»å®‰è£…è¿‡ä¸€æ¬¡ç”¨äºåŠ¨ä½œæ‹¦æˆªçš„actionå°±ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     private void initAllTableActionListener() {
         ActionMap actionMap = m_targetTable.getActionMap();
@@ -746,14 +746,14 @@ public final class TableActionController {
 
         for (int i = 0; i < allKeys.length; i++) {
             final Object key = allKeys[i];
-            final Action defaultAction = actionMap.get(key); //È±Ê¡µÄactionÒªÏÈÈ¡³öÀ´£¬ÔÚÀ¹½ØÊ±»áµ÷ÓÃ²¿·Ö»òÈ«²¿È±Ê¡¶¯×÷
+            final Action defaultAction = actionMap.get(key); //ç¼ºçœçš„actionè¦å…ˆå–å‡ºæ¥ï¼Œåœ¨æ‹¦æˆªæ—¶ä¼šè°ƒç”¨éƒ¨åˆ†æˆ–å…¨éƒ¨ç¼ºçœåŠ¨ä½œ
 
-            /* ¹ıÂËÈ±Ê¡µÄaction£¬×ñÑ­Í¬Ò»¸öJTableÓÃÓÚ¶¯×÷À¹½ØµÄactionÖ»ÄÜÉèÖÃÒ»´ÎµÄÔ­Ôò */
-            if (defaultAction instanceof ITableActionInterceptor) { //È±Ê¡µÄactionÒÑ¾­ÊÇÀ¹½ØµÄactionÁË
+            /* è¿‡æ»¤ç¼ºçœçš„actionï¼Œéµå¾ªåŒä¸€ä¸ªJTableç”¨äºåŠ¨ä½œæ‹¦æˆªçš„actionåªèƒ½è®¾ç½®ä¸€æ¬¡çš„åŸåˆ™ */
+            if (defaultAction instanceof ITableActionInterceptor) { //ç¼ºçœçš„actionå·²ç»æ˜¯æ‹¦æˆªçš„actionäº†
                 throw new IllegalStateException("Table action interceptor is already exist !");
             }
 
-            actionMap.put(key, new ITableActionInterceptor() { //ÖÃÈëÀ¹½ØÓÃµÄaction
+            actionMap.put(key, new ITableActionInterceptor() { //ç½®å…¥æ‹¦æˆªç”¨çš„action
 
                               /**
                                * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
@@ -761,19 +761,19 @@ public final class TableActionController {
                               public void actionPerformed(ActionEvent evt) {
                                   EventListenerList listenerList = (EventListenerList) m_tableActionListenerListMap.get(key);
                                   EventListener[] listeners = listenerList.getListeners(ITableActionListener.class);
-                                  boolean isExecuteDefaultAction = true; //ÓÃÓÚ±êÊ¶ÊÇ·ñÖ´ĞĞÈ±Ê¡¶¯×÷
+                                  boolean isExecuteDefaultAction = true; //ç”¨äºæ ‡è¯†æ˜¯å¦æ‰§è¡Œç¼ºçœåŠ¨ä½œ
 
-                                  /* È±Ê¡¶¯×÷Ö´ĞĞÇ°µÄ»Øµ÷¶¯×÷ */
+                                  /* ç¼ºçœåŠ¨ä½œæ‰§è¡Œå‰çš„å›è°ƒåŠ¨ä½œ */
                                   for (int i = 0; i < listeners.length; i++) {
                                       ITableActionListener listener = (ITableActionListener) listeners[i];
                                       boolean retValue = listener.executeBeforeAction(evt);
 
-                                      if (isExecuteDefaultAction) { //Ä¿Ç°»¹ÊÇÔÊĞíÖ´ĞĞÈ±Ê¡¶¯×÷µÄ
+                                      if (isExecuteDefaultAction) { //ç›®å‰è¿˜æ˜¯å…è®¸æ‰§è¡Œç¼ºçœåŠ¨ä½œçš„
                                           isExecuteDefaultAction = retValue;
                                       }
                                   }
 
-                                  /* Ö´ĞĞÈ±Ê¡¶¯×÷£¨Èç¹ûÔÊĞíÖ´ĞĞµÄ»°£© */
+                                  /* æ‰§è¡Œç¼ºçœåŠ¨ä½œï¼ˆå¦‚æœå…è®¸æ‰§è¡Œçš„è¯ï¼‰ */
                                   if (isExecuteDefaultAction) {
                                       defaultAction.actionPerformed(evt);
                                   }
@@ -826,26 +826,26 @@ public final class TableActionController {
     }
 
     /**
-     * ¸øÄ¿±ê±í¸ñÌí¼ÓÖ¸¶¨actionKeyµÄÖ¸¶¨±í¸ñ¶¯×÷¼àÌıÆ÷¡£
-     * @param actionKey ±í¸ñ¶¯×÷ÔÚactionMapÖĞµÄkeyÖµ¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
-     * @exception IllegalArgumentException ±í¸ñ¶¯×÷¼àÌıÆ÷Îª¿Õ»áÅ×³ö´ËÒì³£¡£
+     * ç»™ç›®æ ‡è¡¨æ ¼æ·»åŠ æŒ‡å®šactionKeyçš„æŒ‡å®šè¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
+     * @param actionKey è¡¨æ ¼åŠ¨ä½œåœ¨actionMapä¸­çš„keyå€¼ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
+     * @exception IllegalArgumentException è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ä¸ºç©ºä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     private void addTableActionListener(String actionKey, ITableActionListener listener) {
-        /* ±í¸ñ¶¯×÷¼àÌıÆ÷¶ÔÏóÅĞ¿Õ */
+        /* è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨å¯¹è±¡åˆ¤ç©º */
         if (listener == null) {
             throw new IllegalArgumentException("Table action listener is null !");
         }
 
-        /* Ìí¼ÓÖ¸¶¨actionKeyµÄ±í¸ñ¶¯×÷¼àÌıÆ÷ */
+        /* æ·»åŠ æŒ‡å®šactionKeyçš„è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ */
         EventListenerList listenerList = (EventListenerList) m_tableActionListenerListMap.get(actionKey);
         listenerList.add(ITableActionListener.class, listener);
     }
 
     /**
-     * ´ÓÄ¿±ê±í¸ñÒÆ³ıÖ¸¶¨actionKeyµÄÖ¸¶¨±í¸ñ¶¯×÷¼àÌıÆ÷¡£
-     * @param actionKey ±í¸ñ¶¯×÷ÔÚactionMapÖĞµÄkeyÖµ¡£
-     * @param listener ±í¸ñ¶¯×÷¼àÌıÆ÷¡£
+     * ä»ç›®æ ‡è¡¨æ ¼ç§»é™¤æŒ‡å®šactionKeyçš„æŒ‡å®šè¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
+     * @param actionKey è¡¨æ ¼åŠ¨ä½œåœ¨actionMapä¸­çš„keyå€¼ã€‚
+     * @param listener è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ã€‚
      */
     private void removeTableActionListener(String actionKey, ITableActionListener listener) {
         EventListenerList listenerList = (EventListenerList) m_tableActionListenerListMap.get(actionKey);
@@ -855,14 +855,14 @@ public final class TableActionController {
     /*------------------------------------- Public Static Inner Class -------------------------------------*/
 
     /**
-     * ±í¸ñ¶¯×÷¼àÌıÆ÷£¨×¢Òâ£º´Ë¼àÌıÒà¿ÉÒÔÓĞ×èÖ¹±í¸ñ¶¯×÷Ö´ĞĞµÄ¹¦ÄÜ£©¡£
+     * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼ˆæ³¨æ„ï¼šæ­¤ç›‘å¬äº¦å¯ä»¥æœ‰é˜»æ­¢è¡¨æ ¼åŠ¨ä½œæ‰§è¡Œçš„åŠŸèƒ½ï¼‰ã€‚
      */
     public static interface ITableActionListener extends EventListener {
 
         /**
-         * ÔÚ±í¸ñÈ±Ê¡µÄ¶¯×÷Ö´ĞĞÇ°£¬ÏÈµ÷ÓÃ´Ë·½·¨£¬²¢¸ù¾İ·µ»Ø½á¹û¾ö¶¨ÊÇ·ñÖ´ĞĞÈ±Ê¡¶¯×÷¡£
-         * @param evt ±í¸ñÈ±Ê¡¶¯×÷Ö´Ê±´«µİ½øÀ´µÄ¶¯×÷ÊÂ¼ş¡£
-         * @return Îªtrue±íÊ¾ÔÊĞíÖ´ĞĞÈ±Ê¡¶¯×÷£¬Îªfalse±íÊ¾½ûÖ¹Ö´ĞĞÈ±Ê¡¶¯×÷¡£
+         * åœ¨è¡¨æ ¼ç¼ºçœçš„åŠ¨ä½œæ‰§è¡Œå‰ï¼Œå…ˆè°ƒç”¨æ­¤æ–¹æ³•ï¼Œå¹¶æ ¹æ®è¿”å›ç»“æœå†³å®šæ˜¯å¦æ‰§è¡Œç¼ºçœåŠ¨ä½œã€‚
+         * @param evt è¡¨æ ¼ç¼ºçœåŠ¨ä½œæ‰§æ—¶ä¼ é€’è¿›æ¥çš„åŠ¨ä½œäº‹ä»¶ã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºå…è®¸æ‰§è¡Œç¼ºçœåŠ¨ä½œï¼Œä¸ºfalseè¡¨ç¤ºç¦æ­¢æ‰§è¡Œç¼ºçœåŠ¨ä½œã€‚
          */
         public boolean executeBeforeAction(ActionEvent evt);
 
@@ -891,7 +891,7 @@ public final class TableActionController {
     /*------------------------------------- Private Static Inner Class -------------------------------------*/
 
     /**
-     * ±í¸ñ¶¯×÷À¹½ØÆ÷½Ó¿Ú£¨±êÊ¶½Ó¿Ú£¬Ö÷ÒªÓÃÀ´±êÊ¶³ö±í¸ñÈ±Ê¡¶¯×÷ÊÇ·ñÒÑ¾­Ìæ»»ÎªÀ¹½Ø¶¯×÷ÁË£©¡£
+     * è¡¨æ ¼åŠ¨ä½œæ‹¦æˆªå™¨æ¥å£ï¼ˆæ ‡è¯†æ¥å£ï¼Œä¸»è¦ç”¨æ¥æ ‡è¯†å‡ºè¡¨æ ¼ç¼ºçœåŠ¨ä½œæ˜¯å¦å·²ç»æ›¿æ¢ä¸ºæ‹¦æˆªåŠ¨ä½œäº†ï¼‰ã€‚
      */
     private static interface ITableActionInterceptor extends Action {
     }
@@ -923,184 +923,184 @@ public final class TableActionController {
     /*------------------------------------- Private Field -------------------------------------*/
 
     /**
-     * Ä¿±ê±í¸ñ¡£
+     * ç›®æ ‡è¡¨æ ¼ã€‚
      */
     private JTable m_targetTable;
 
     /**
-     * ¶¯×÷¼àÌıÆ÷ÁĞ±íµÄMap£¬ÀïÃæ·ÅµÃ¶¼ÊÇ¸÷¸öactionKey¶ÔÓ¦µÄEventListenerList¡£
+     * åŠ¨ä½œç›‘å¬å™¨åˆ—è¡¨çš„Mapï¼Œé‡Œé¢æ”¾å¾—éƒ½æ˜¯å„ä¸ªactionKeyå¯¹åº”çš„EventListenerListã€‚
      */
     private final Map m_tableActionListenerListMap = new HashMap();
 
-    /*------------------------------------- ÒÔÏÂ×Ö¶ÎÎªÈ«²¿34¸ö¶¯×÷µÄ¼àÌıÆ÷£¬¿É¿½±´´úÂëÊ¹ÓÃ -------------------------------------*/
+    /*------------------------------------- ä»¥ä¸‹å­—æ®µä¸ºå…¨éƒ¨34ä¸ªåŠ¨ä½œçš„ç›‘å¬å™¨ï¼Œå¯æ‹·è´ä»£ç ä½¿ç”¨ -------------------------------------*/
 
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextColumn¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextColumnâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextColumnActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousColumn¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousColumnâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousColumnActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextRow¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextRowâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextRowActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousRow¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousRowâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousRowActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextColumnExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextColumnExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextColumnExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousColumnExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousColumnExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousColumnExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextRowExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextRowExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextRowExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousRowExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousRowExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousRowExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollUpChangeSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollUpChangeSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollUpChangeSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollDownChangeSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollDownChangeSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollDownChangeSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectFirstColumn¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectFirstColumnâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectFirstColumnActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectLastColumn¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectLastColumnâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectLastColumnActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollUpExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollUpExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollUpExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollDownExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollDownExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollDownExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectFirstColumnExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectFirstColumnExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectFirstColumnExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectLastColumnExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectLastColumnExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectLastColumnExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectFirstRow¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectFirstRowâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectFirstRowActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectLastRow¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectLastRowâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectLastRowActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectFirstRowExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectFirstRowExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectFirstRowExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectLastRowExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectLastRowExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectLastRowExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextColumnCell¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextColumnCellâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextColumnCellActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousColumnCell¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousColumnCellâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousColumnCellActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectNextRowCell¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectNextRowCellâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectNextRowCellActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectPreviousRowCell¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectPreviousRowCellâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectPreviousRowCellActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°selectAll¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œselectAllâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_selectAllActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°cancel¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œcancelâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_cancelActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°startEditing¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œstartEditingâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_startEditingActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°cut¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œcutâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_cutActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°copy¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œcopyâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_copyActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°paste¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œpasteâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_pasteActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollLeftChangeSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollLeftChangeSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollLeftChangeSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollRightChangeSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollRightChangeSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollRightChangeSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollLeftExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollLeftExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollLeftExtendSelectionActionListener = null;
     //
     //	/**
-    //	 * ±í¸ñ¶¯×÷¼àÌıÆ÷£¬¼àÌıÔÚActionMapÖĞkeyÖµÎª¡°scrollRightExtendSelection¡±µÄ¶¯×÷¡£
+    //	 * è¡¨æ ¼åŠ¨ä½œç›‘å¬å™¨ï¼Œç›‘å¬åœ¨ActionMapä¸­keyå€¼ä¸ºâ€œscrollRightExtendSelectionâ€çš„åŠ¨ä½œã€‚
     //	 */
     //	private ITableActionListener m_scrollRightExtendSelectionActionListener = null;
     /*------------------------------------- Static Initial Block -------------------------------------*/

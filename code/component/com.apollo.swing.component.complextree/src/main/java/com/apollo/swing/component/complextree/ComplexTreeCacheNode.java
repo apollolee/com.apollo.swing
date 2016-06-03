@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-12 ÏÂÎç05:36:44
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-12 ä¸‹åˆ05:36:44
  */
 package com.apollo.swing.component.complextree;
 
@@ -8,22 +8,22 @@ import javax.swing.Icon;
 import com.apollo.swing.component.common.jtree.SingleIconTreeCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTreeCacheNode.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷»º´æ½ÚµãÀà£¬·â×°ÁËÔÊĞí»º´æµÄ½ÚµãµÄ²Ù×÷ºÍÊı¾İ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-12</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTreeCacheNode.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘ç¼“å­˜èŠ‚ç‚¹ç±»ï¼Œå°è£…äº†å…è®¸ç¼“å­˜çš„èŠ‚ç‚¹çš„æ“ä½œå’Œæ•°æ®ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-12</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -48,13 +48,13 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     /*------------------------------------- Public Static Field -------------------------------------*/
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÔØÈëÖĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è½½å…¥ä¸­ã€‚
      * @since T3 V1.1
      */
     public static final String I18N_INFO_LOADING = Utilities.getI18nMessage("loading");
 
     /**
-     * Í¼±ê------ÔØÈëÖĞ¡£
+     * å›¾æ ‡------è½½å…¥ä¸­ã€‚
      * @since T3 V1.1
      */
     public static final Icon ICON_LOADING = Utilities.getIcon("loading.gif");
@@ -98,12 +98,12 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÔØÈëÖĞ½Úµã¡£
+     * è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
      */
     protected ComplexTreeNode m_loadingNode = new ComplexTreeNode(I18N_INFO_LOADING);
 
     /**
-     * ×´Ì¬¡£
+     * çŠ¶æ€ã€‚
      */
     protected volatile int m_state = STATE_READY;
 
@@ -122,8 +122,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeCacheNode(Object userObject) {
@@ -131,9 +131,9 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param userObject ÓÃ»§¶ÔÏó¡£
-     * @param allowsChildren ±êÊ¶ÊÇ·ñÔÊĞí¸Ã½ÚµãÓµÓĞ×Ó½Úµã¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param userObject ç”¨æˆ·å¯¹è±¡ã€‚
+     * @param allowsChildren æ ‡è¯†æ˜¯å¦å…è®¸è¯¥èŠ‚ç‚¹æ‹¥æœ‰å­èŠ‚ç‚¹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeCacheNode(Object userObject, boolean allowsChildren) {
@@ -158,8 +158,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * ÅĞ¶Ï½ÚµãÊÇ·ñ´¦ÓÚ×¼±¸×´Ì¬£¬×¼±¸×´Ì¬¼´»º´æ½ÚµãÏÂ»¹Ã»ÓĞÔØÈë×Ó½ÚµãµÄ×´Ì¬¡£
-     * @return ±êÊ¶½ÚµãÊÇ·ñ´¦ÓÚ×¼±¸×´Ì¬¡£
+     * åˆ¤æ–­èŠ‚ç‚¹æ˜¯å¦å¤„äºå‡†å¤‡çŠ¶æ€ï¼Œå‡†å¤‡çŠ¶æ€å³ç¼“å­˜èŠ‚ç‚¹ä¸‹è¿˜æ²¡æœ‰è½½å…¥å­èŠ‚ç‚¹çš„çŠ¶æ€ã€‚
+     * @return æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¤„äºå‡†å¤‡çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public synchronized boolean isReady() {
@@ -167,8 +167,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ÅĞ¶Ï½ÚµãÊÇ·ñ´¦ÓÚÔØÈëÖĞ×´Ì¬£¬ÔØÈëÖĞ×´Ì¬¼´»º´æ½ÚµãÕıÔÚÔØÈë×Ó½ÚµãµÄ×´Ì¬¡£
-     * @return ±êÊ¶½ÚµãÊÇ·ñ´¦ÓÚÔØÈëÖĞ×´Ì¬¡£
+     * åˆ¤æ–­èŠ‚ç‚¹æ˜¯å¦å¤„äºè½½å…¥ä¸­çŠ¶æ€ï¼Œè½½å…¥ä¸­çŠ¶æ€å³ç¼“å­˜èŠ‚ç‚¹æ­£åœ¨è½½å…¥å­èŠ‚ç‚¹çš„çŠ¶æ€ã€‚
+     * @return æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¤„äºè½½å…¥ä¸­çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public synchronized boolean isLoading() {
@@ -176,8 +176,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ÅĞ¶Ï½ÚµãÊÇ·ñ´¦ÓÚÒÑÔØÈë×´Ì¬£¬ÒÑÔØÈë×´Ì¬¼´»º´æ½ÚµãÒÑ¾­ÔØÈëÁË×Ó½ÚµãµÄ×´Ì¬¡£
-     * @return ±êÊ¶½ÚµãÊÇ·ñ´¦ÓÚÒÑÔØÈë×´Ì¬¡£
+     * åˆ¤æ–­èŠ‚ç‚¹æ˜¯å¦å¤„äºå·²è½½å…¥çŠ¶æ€ï¼Œå·²è½½å…¥çŠ¶æ€å³ç¼“å­˜èŠ‚ç‚¹å·²ç»è½½å…¥äº†å­èŠ‚ç‚¹çš„çŠ¶æ€ã€‚
+     * @return æ ‡è¯†èŠ‚ç‚¹æ˜¯å¦å¤„äºå·²è½½å…¥çŠ¶æ€ã€‚
      * @since T3 V1.1
      */
     public synchronized boolean isLoaded() {
@@ -187,16 +187,16 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÒÑ¾­ÓµÓĞÁËÔØÈëÖĞ½Úµã¡£
-     * @return ±êÊ¶ÊÇ·ñÒÑ¾­ÓµÓĞÁËÔØÈëÖĞ½Úµã¡£
+     * åˆ¤æ–­æ˜¯å¦å·²ç»æ‹¥æœ‰äº†è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦å·²ç»æ‹¥æœ‰äº†è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
      */
     protected boolean hasLoadingNode() {
         return getChildCount() == 1 ? (getChildAt(0) == m_loadingNode) : false;
     }
 
     /**
-     * ÉèÖÃÔØÈëÖĞ½Úµã¡£
-     * @return ±êÊ¶ÊÇ·ñ³É¹¦ÉèÖÃÁËÔØÈëÖĞ½Úµã¡£
+     * è®¾ç½®è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æˆåŠŸè®¾ç½®äº†è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
      */
     protected boolean setLoadingNode() {
         if (hasLoadingNode()) {
@@ -210,8 +210,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ½øÈë×¼±¸×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñ³É¹¦ÉèÖÃÁËÔØÈëÖĞ½Úµã¡£
+     * è¿›å…¥å‡†å¤‡çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æˆåŠŸè®¾ç½®äº†è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
      */
     protected synchronized boolean ready() {
         m_state = STATE_READY;
@@ -219,8 +219,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ½øÈëÔØÈëÖĞ×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñ³É¹¦ÉèÖÃÁËÔØÈëÖĞ½Úµã¡£
+     * è¿›å…¥è½½å…¥ä¸­çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æˆåŠŸè®¾ç½®äº†è½½å…¥ä¸­èŠ‚ç‚¹ã€‚
      */
     protected synchronized boolean loading() {
         m_state = STATE_LOADING;
@@ -228,8 +228,8 @@ public class ComplexTreeCacheNode extends ComplexTreeChoiceNode {
     }
 
     /**
-     * ½øÈëÒÑÔØÈë×´Ì¬¡£
-     * @param loadedNodes ÒÑÔØÈëµÄ½Úµã¼¯¡£
+     * è¿›å…¥å·²è½½å…¥çŠ¶æ€ã€‚
+     * @param loadedNodes å·²è½½å…¥çš„èŠ‚ç‚¹é›†ã€‚
      */
     protected synchronized void loaded(ComplexTreeNode[] loadedNodes) {
         removeAllChildren();

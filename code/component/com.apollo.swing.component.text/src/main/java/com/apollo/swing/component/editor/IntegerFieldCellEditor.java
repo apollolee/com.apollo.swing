@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-5-6 ÏÂÎç05:18:17¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-5-6 ä¸‹åˆ05:18:17ã€‚
  */
 package com.apollo.swing.component.editor;
 
@@ -8,22 +8,22 @@ import java.math.BigInteger;
 import com.apollo.swing.component.text.IntegerField;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºIntegerFieldCellEditor.java</p>
- * <p>ÀàĞÍÃèÊö£ºÕûĞÍÊıÊäÈë¿òµ¥Ôª¸ñ±à¼­Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-5-6</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šIntegerFieldCellEditor.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ•´å‹æ•°è¾“å…¥æ¡†å•å…ƒæ ¼ç¼–è¾‘å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-5-6</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
@@ -103,40 +103,40 @@ public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public IntegerFieldCellEditor() {
         this(0, true, true, null, null, null, null, null);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns, long minimum, long maximum) {
         this(columns, true, true, BigInteger.valueOf(minimum), BigInteger.valueOf(maximum), null, null, null);
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns, long minimum, long maximum, long value) {
         this(columns, true, true, BigInteger.valueOf(minimum), BigInteger.valueOf(maximum), null, null, BigInteger.valueOf(value));
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
-     * @param step ²½³¤¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns, long minimum, long maximum, long step, long value) {
         this(columns,
@@ -150,13 +150,13 @@ public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
-     * @param step ²½³¤¡£
-     * @param stepBase ²½³¤»ùÖµ¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns, long minimum, long maximum, long step, long stepBase, long value) {
         this(columns,
@@ -170,15 +170,15 @@ public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param isNeedInput Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
-     * @param step ²½³¤¡£
-     * @param stepBase ²½³¤»ùÖµ¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param isNeedInput ä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip ä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns,
                                   boolean isNeedInput,
@@ -199,15 +199,15 @@ public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param columns ÁĞÊı¡£
-     * @param isNeedInput Îªtrue±íÊ¾±ØĞëÊäÈë£¬Îªfalse±íÊ¾²»ÊÇ±ØĞëÊäÈë¡£
-     * @param isEnabledPopupErrorTip Îªtrue±íÊ¾ÔÊĞíµ¯³ö´íÎóÌáÊ¾£¬Îªfalse±íÊ¾²»ÔÊĞíµ¯³ö´íÎóÌáÊ¾¡£
-     * @param minimum ×îĞ¡Öµ¡£
-     * @param maximum ×î´óÖµ¡£
-     * @param step ²½³¤¡£
-     * @param stepBase ²½³¤»ùÖµ¡£
-     * @param value ³õÊ¼»¯ÓÃµÄÕûĞÍÊıÖµ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param columns åˆ—æ•°ã€‚
+     * @param isNeedInput ä¸ºtrueè¡¨ç¤ºå¿…é¡»è¾“å…¥ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯å¿…é¡»è¾“å…¥ã€‚
+     * @param isEnabledPopupErrorTip ä¸ºtrueè¡¨ç¤ºå…è®¸å¼¹å‡ºé”™è¯¯æç¤ºï¼Œä¸ºfalseè¡¨ç¤ºä¸å…è®¸å¼¹å‡ºé”™è¯¯æç¤ºã€‚
+     * @param minimum æœ€å°å€¼ã€‚
+     * @param maximum æœ€å¤§å€¼ã€‚
+     * @param step æ­¥é•¿ã€‚
+     * @param stepBase æ­¥é•¿åŸºå€¼ã€‚
+     * @param value åˆå§‹åŒ–ç”¨çš„æ•´å‹æ•°å€¼ã€‚
      */
     public IntegerFieldCellEditor(int columns,
                                   boolean isNeedInput,
@@ -221,8 +221,8 @@ public class IntegerFieldCellEditor extends FormattedFieldCellEditor {
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param field ÕûĞÍÊıÊäÈë¿ò¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param field æ•´å‹æ•°è¾“å…¥æ¡†ã€‚
      */
     public IntegerFieldCellEditor(IntegerField field) {
         super(field);

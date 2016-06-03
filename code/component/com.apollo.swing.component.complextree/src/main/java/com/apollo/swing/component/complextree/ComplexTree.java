@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-12 ÏÂÎç05:16:58
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-12 ä¸‹åˆ05:16:58
  */
 package com.apollo.swing.component.complextree;
 
@@ -42,22 +42,22 @@ import com.apollo.base.util.IBaseConstants;
 import com.apollo.swing.component.icon.IconWrapper;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷Àà£¬Õâ¸ö×é¼şÊÇ¶ÔÊ÷×é¼şµÄÒ»¸öÇ¿»¯£¬ÄÜ¿¿ÈıÖÖ²»Í¬ÀàĞÍµÄ½ÚµãµÄ×éºÏÀ´Ö§³ÖÈıÌ¬Ñ¡ÔñºÍ»º´æ¹¦ÄÜ¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-12</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘ç±»ï¼Œè¿™ä¸ªç»„ä»¶æ˜¯å¯¹æ ‘ç»„ä»¶çš„ä¸€ä¸ªå¼ºåŒ–ï¼Œèƒ½é ä¸‰ç§ä¸åŒç±»å‹çš„èŠ‚ç‚¹çš„ç»„åˆæ¥æ”¯æŒä¸‰æ€é€‰æ‹©å’Œç¼“å­˜åŠŸèƒ½ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-12</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  * @since T3 V1.1
  */
 @SuppressWarnings("all")
@@ -102,10 +102,10 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, JTree tree, Component parent) {
         String oldText = text;
@@ -123,10 +123,10 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTree tree) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -158,9 +158,9 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * »ñÈ¡½Úµã¼¯¡£
-     * @param node ½Úµã¡£
-     * @return ½Úµã¼¯¡£
+     * è·å–èŠ‚ç‚¹é›†ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return èŠ‚ç‚¹é›†ã€‚
      */
     public static List<DefaultMutableTreeNode> getNodes(DefaultMutableTreeNode node) {
         List<DefaultMutableTreeNode> nodes = new ArrayList<DefaultMutableTreeNode>();
@@ -176,11 +176,11 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½Úµã½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @param nodes ½Úµã¼¯¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘èŠ‚ç‚¹è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @param nodes èŠ‚ç‚¹é›†ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTree tree, List<DefaultMutableTreeNode> nodes) {
         for (DefaultMutableTreeNode node : nodes) {
@@ -203,10 +203,10 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * ÅĞ¶Ï»º´æÊÇ·ñÒÑ¾­¼ÓÈëÊÍ·ÅÁĞ±íÁË¡£
-     * @param cache »º´æ¡£
-     * @param willReleaseCaches ÊÍ·ÅÁĞ±í¡£
-     * @return ±êÊ¶ÊÇ·ñÒÑ¾­¼ÓÈëÊÍ·ÅÁĞ±íÁË¡£
+     * åˆ¤æ–­ç¼“å­˜æ˜¯å¦å·²ç»åŠ å…¥é‡Šæ”¾åˆ—è¡¨äº†ã€‚
+     * @param cache ç¼“å­˜ã€‚
+     * @param willReleaseCaches é‡Šæ”¾åˆ—è¡¨ã€‚
+     * @return æ ‡è¯†æ˜¯å¦å·²ç»åŠ å…¥é‡Šæ”¾åˆ—è¡¨äº†ã€‚
      */
     protected static boolean isReleased(ComplexTreeCacheNode cache, List willReleaseCaches) {
         for (int i = 0, size = willReleaseCaches.size(); i < size; i++) {
@@ -235,17 +235,17 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±êÊ¶ÊÇ·ñÑ¡Ôñ½ÚµãÊ±Ò²Í¬Ê±µã»÷Ñ¡Ôñ¿ò¡£
+     * æ ‡è¯†æ˜¯å¦é€‰æ‹©èŠ‚ç‚¹æ—¶ä¹ŸåŒæ—¶ç‚¹å‡»é€‰æ‹©æ¡†ã€‚
      */
     protected volatile boolean m_isSyncChoice = false;
 
     /**
-     * ±êÊ¶µ±Ñ¡Ôñ½Úµã´¦ÓÚ±à¼­×´Ì¬Ê±£¬µã»÷½Úµã×îÇ°ÃæÑ¡Ôñ¿òºóÊÇ·ñÁ¢¼´Í£Ö¹±à¼­¡£
+     * æ ‡è¯†å½“é€‰æ‹©èŠ‚ç‚¹å¤„äºç¼–è¾‘çŠ¶æ€æ—¶ï¼Œç‚¹å‡»èŠ‚ç‚¹æœ€å‰é¢é€‰æ‹©æ¡†åæ˜¯å¦ç«‹å³åœæ­¢ç¼–è¾‘ã€‚
      */
     protected volatile boolean m_isStopEditingWhenClickChoice = true;
 
     /**
-     * ¼´½«±»±à¼­µÄ½Úµã£¬ÁÙÊ±ÊôĞÔ¡£
+     * å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹ï¼Œä¸´æ—¶å±æ€§ã€‚
      */
     protected ComplexTreeNode m_willEditNode = null;
 
@@ -264,24 +264,24 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param model ×ÛºÏÊ÷Êı¾İÄ£ĞÍ¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param model ç»¼åˆæ ‘æ•°æ®æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public ComplexTree(ComplexTreeModel model) {
-        /* µ÷ÓÃ¸¸ÀàµÄ¹¹Ôì·½·¨ */
+        /* è°ƒç”¨çˆ¶ç±»çš„æ„é€ æ–¹æ³• */
         super(model);
 
-        /* °²×°äÖÈ¾Æ÷ºÍ±à¼­Æ÷£¬²¢ÇÒ²»ÔÊĞíÓÃ»§¸Ä±äÕâ¸öÉèÖÃ */
+        /* å®‰è£…æ¸²æŸ“å™¨å’Œç¼–è¾‘å™¨ï¼Œå¹¶ä¸”ä¸å…è®¸ç”¨æˆ·æ”¹å˜è¿™ä¸ªè®¾ç½® */
         super.setCellRenderer(new ComplexTreeCellRenderer());
         super.setCellEditor(new ComplexTreeCellEditor(this));
 
-        /* ÓÉÓÚ´æÔÚ¸üÏ¸Á£¶ÈµÄ¿ØÖÆ£¬ÕâÀïÕû¸ö×ÛºÏÊ÷ÉèÖÃÎªÄ¬ÈÏÔÊĞí±à¼­ */
+        /* ç”±äºå­˜åœ¨æ›´ç»†ç²’åº¦çš„æ§åˆ¶ï¼Œè¿™é‡Œæ•´ä¸ªç»¼åˆæ ‘è®¾ç½®ä¸ºé»˜è®¤å…è®¸ç¼–è¾‘ */
         setEditable(true);
         setShowsRootHandles(true);
         setToggleClickCount(0);
 
-        /* Õë¶Ô¸÷½ÚµãToolTipµÄÖ§³Ö£»TODO ×¢Òâ£ºÕâÀï¿ÉÄÜ´æÔÚÏÔÊ¾Ğ§ÂÊºÍÄÚ´æ°²È«µÈÎÊÌâ */
+        /* é’ˆå¯¹å„èŠ‚ç‚¹ToolTipçš„æ”¯æŒï¼›TODO æ³¨æ„ï¼šè¿™é‡Œå¯èƒ½å­˜åœ¨æ˜¾ç¤ºæ•ˆç‡å’Œå†…å­˜å®‰å…¨ç­‰é—®é¢˜ */
         ToolTipManager.sharedInstance().registerComponent(this);
     }
 
@@ -300,8 +300,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * »ñÈ¡×ÛºÏÊ÷Ä£ĞÍ¡£
-     * @return ×ÛºÏÊ÷Ä£ĞÍ¡£
+     * è·å–ç»¼åˆæ ‘æ¨¡å‹ã€‚
+     * @return ç»¼åˆæ ‘æ¨¡å‹ã€‚
      * @since T3 V1.1
      */
     public ComplexTreeModel getComplexTreeModel() {
@@ -309,8 +309,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * »ñÈ¡×Ö¶Î isSyncChoice µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÍ¬²½Ñ¡Ôñ£¬Èç¹ûÔÊĞíÔòµã»÷½ÚµãµÄ·ÇÑ¡Ôñ¿òÇøÓòÒ²»á°ÑÑ¡Ôñ¿ò¹´ÉÏ£¬±È½ÏÊÊºÏ·Ç±à¼­µÄ×ÛºÏÊ÷£¬Í¬²½Ñ¡ÔñÈ±Ê¡²»ÔÊĞí¡£
-     * @return ×Ö¶Î isSyncChoice µÄÖµ¡£
+     * è·å–å­—æ®µ isSyncChoice çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸åŒæ­¥é€‰æ‹©ï¼Œå¦‚æœå…è®¸åˆ™ç‚¹å‡»èŠ‚ç‚¹çš„éé€‰æ‹©æ¡†åŒºåŸŸä¹Ÿä¼šæŠŠé€‰æ‹©æ¡†å‹¾ä¸Šï¼Œæ¯”è¾ƒé€‚åˆéç¼–è¾‘çš„ç»¼åˆæ ‘ï¼ŒåŒæ­¥é€‰æ‹©ç¼ºçœä¸å…è®¸ã€‚
+     * @return å­—æ®µ isSyncChoice çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public boolean isSyncChoice() {
@@ -318,8 +318,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isSyncChoice µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÍ¬²½Ñ¡Ôñ£¬Èç¹ûÔÊĞíÔòµã»÷½ÚµãµÄ·ÇÑ¡Ôñ¿òÇøÓòÒ²»á°ÑÑ¡Ôñ¿ò¹´ÉÏ£¬±È½ÏÊÊºÏ·Ç±à¼­µÄ×ÛºÏÊ÷£¬Í¬²½Ñ¡ÔñÈ±Ê¡²»ÔÊĞí¡£
-     * @param isSyncChoice ×Ö¶Î isSyncChoice µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isSyncChoice çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸åŒæ­¥é€‰æ‹©ï¼Œå¦‚æœå…è®¸åˆ™ç‚¹å‡»èŠ‚ç‚¹çš„éé€‰æ‹©æ¡†åŒºåŸŸä¹Ÿä¼šæŠŠé€‰æ‹©æ¡†å‹¾ä¸Šï¼Œæ¯”è¾ƒé€‚åˆéç¼–è¾‘çš„ç»¼åˆæ ‘ï¼ŒåŒæ­¥é€‰æ‹©ç¼ºçœä¸å…è®¸ã€‚
+     * @param isSyncChoice å­—æ®µ isSyncChoice çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setSyncChoice(boolean isSyncChoice) {
@@ -327,8 +327,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ÅĞ¶Ïµ±Ñ¡Ôñ½Úµã´¦ÓÚ±à¼­×´Ì¬Ê±£¬µã»÷½Úµã×îÇ°ÃæÑ¡Ôñ¿òºóÊÇ·ñÁ¢¼´Í£Ö¹±à¼­¡£
-     * @return Îªtrue±íÊ¾Á¢¼´Í£Ö¹±à¼­£¬Îªfalse±íÊ¾²»Á¢¼´Í£Ö¹±à¼­¡£
+     * åˆ¤æ–­å½“é€‰æ‹©èŠ‚ç‚¹å¤„äºç¼–è¾‘çŠ¶æ€æ—¶ï¼Œç‚¹å‡»èŠ‚ç‚¹æœ€å‰é¢é€‰æ‹©æ¡†åæ˜¯å¦ç«‹å³åœæ­¢ç¼–è¾‘ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºç«‹å³åœæ­¢ç¼–è¾‘ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç«‹å³åœæ­¢ç¼–è¾‘ã€‚
      * @since T3 V1.1
      */
     public boolean isStopEditingWhenClickChoice() {
@@ -336,8 +336,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ÉèÖÃµ±Ñ¡Ôñ½Úµã´¦ÓÚ±à¼­×´Ì¬Ê±£¬µã»÷½Úµã×îÇ°ÃæÑ¡Ôñ¿òºóÊÇ·ñÁ¢¼´Í£Ö¹±à¼­¡£
-     * @param isStopEditingWhenClickChoice Îªtrue±íÊ¾Á¢¼´Í£Ö¹±à¼­£¬Îªfalse±íÊ¾²»Á¢¼´Í£Ö¹±à¼­¡£
+     * è®¾ç½®å½“é€‰æ‹©èŠ‚ç‚¹å¤„äºç¼–è¾‘çŠ¶æ€æ—¶ï¼Œç‚¹å‡»èŠ‚ç‚¹æœ€å‰é¢é€‰æ‹©æ¡†åæ˜¯å¦ç«‹å³åœæ­¢ç¼–è¾‘ã€‚
+     * @param isStopEditingWhenClickChoice ä¸ºtrueè¡¨ç¤ºç«‹å³åœæ­¢ç¼–è¾‘ï¼Œä¸ºfalseè¡¨ç¤ºä¸ç«‹å³åœæ­¢ç¼–è¾‘ã€‚
      * @since T3 V1.1
      */
     public void setStopEditingWhenClickChoice(boolean isStopEditingWhenClickChoice) {
@@ -345,8 +345,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ÉèÖÃ×Ö¶Î isEnabledChoice µÄÖµ£¬±êÊ¶ÊÇ·ñÔÊĞíÑ¡Ôñ£¬Èç¹û²»ÔÊĞíÔò½çÃæÉÏµÄ½ÚµãÇ°Ãæ²»»á´øÓĞÑ¡Ôñ¿ò£¬È±Ê¡ÎªÔÊĞí¡£
-     * @param isEnabledChoice ×Ö¶Î isEnabledChoice µÄÖµ¡£
+     * è®¾ç½®å­—æ®µ isEnabledChoice çš„å€¼ï¼Œæ ‡è¯†æ˜¯å¦å…è®¸é€‰æ‹©ï¼Œå¦‚æœä¸å…è®¸åˆ™ç•Œé¢ä¸Šçš„èŠ‚ç‚¹å‰é¢ä¸ä¼šå¸¦æœ‰é€‰æ‹©æ¡†ï¼Œç¼ºçœä¸ºå…è®¸ã€‚
+     * @param isEnabledChoice å­—æ®µ isEnabledChoice çš„å€¼ã€‚
      * @since T3 V1.1
      */
     public void setEnabledChoice(boolean isEnabledChoice) {
@@ -365,7 +365,7 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * Õ¹¿ªµ±Ç°ËùÓĞ±»¹´Ñ¡µÄ½ÚµãËùÔÚµÄÂ·¾¶¡£
+     * å±•å¼€å½“å‰æ‰€æœ‰è¢«å‹¾é€‰çš„èŠ‚ç‚¹æ‰€åœ¨çš„è·¯å¾„ã€‚
      * @since T3 V1.1
      */
     public void expand() {
@@ -373,8 +373,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * Õ¹¿ªÖ¸¶¨Â·¾¶¼¯£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @param paths Â·¾¶¼¯¡£
+     * å±•å¼€æŒ‡å®šè·¯å¾„é›†ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @param paths è·¯å¾„é›†ã€‚
      * @since T3 V1.1
      */
     public void expand(TreePath[] paths) {
@@ -388,8 +388,8 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * Õ¹¿ªÖ¸¶¨Â·¾¶£¬×¢Òâ£ºÂ·¾¶Àï°üº¬µÄÃ¿¸öÖµ²»ÊÇ½Úµã¶ÔÏó£¬¶øÊÇ½Úµã¶ÔÏóËù´øµÄuserObject¶ÔÏó¡£
-     * @param path Â·¾¶¡£
+     * å±•å¼€æŒ‡å®šè·¯å¾„ï¼Œæ³¨æ„ï¼šè·¯å¾„é‡ŒåŒ…å«çš„æ¯ä¸ªå€¼ä¸æ˜¯èŠ‚ç‚¹å¯¹è±¡ï¼Œè€Œæ˜¯èŠ‚ç‚¹å¯¹è±¡æ‰€å¸¦çš„userObjectå¯¹è±¡ã€‚
+     * @param path è·¯å¾„ã€‚
      * @since T3 V1.1
      */
     public void expand(final TreePath path) {
@@ -470,7 +470,7 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- JTree Public Method -------------------------------------*/
 
     /**
-     * Ï¸Á£¶ÈµÄ¿ØÖÆ½Úµã¹¤¾ßÌáÊ¾¡£
+     * ç»†ç²’åº¦çš„æ§åˆ¶èŠ‚ç‚¹å·¥å…·æç¤ºã€‚
      * @see javax.swing.JTree#getToolTipText(java.awt.event.MouseEvent)
      */
     public String getToolTipText(MouseEvent evt) {
@@ -488,12 +488,12 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * Ï¸Á£¶È¿ØÖÆ½ÚµãÊÇ·ñ¿É±à¼­¡£
+     * ç»†ç²’åº¦æ§åˆ¶èŠ‚ç‚¹æ˜¯å¦å¯ç¼–è¾‘ã€‚
      * @see javax.swing.JTree#isPathEditable(javax.swing.tree.TreePath)
      */
     public boolean isPathEditable(TreePath path) {
         if (super.isPathEditable(path)) {
-            /* ±£´æ¼´½«±»±à¼­µÄ½Úµã */
+            /* ä¿å­˜å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹ */
             m_willEditNode = (ComplexTreeNode) path.getLastPathComponent();
             return m_willEditNode.isEditable();
 
@@ -504,7 +504,7 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
 
     /**
      * @see javax.swing.JTree#setModel(javax.swing.tree.TreeModel)
-     * @throws IllegalArgumentException ÉèÖÃµÄĞÂÄ£ĞÍ²»ÊÇÒ»¸öComplexTreeModelÔò»áÅ×³ö´ËÒì³£¡£
+     * @throws IllegalArgumentException è®¾ç½®çš„æ–°æ¨¡å‹ä¸æ˜¯ä¸€ä¸ªComplexTreeModelåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void setModel(TreeModel newModel) {
         if (!(newModel instanceof ComplexTreeModel)) {
@@ -521,9 +521,9 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     }
 
     /**
-     * ×èÖ¹ÓÃ»§ÉèÖÃ±í¼¶µÄµ¥Ôª¸ñ±à¼­Æ÷¡£
+     * é˜»æ­¢ç”¨æˆ·è®¾ç½®è¡¨çº§çš„å•å…ƒæ ¼ç¼–è¾‘å™¨ã€‚
      * @see javax.swing.JTree#setCellEditor(javax.swing.tree.TreeCellEditor)
-     * @throws IllegalArgumentException ÓÃ»§µ÷ÓÃ´ËAPI»áÅ×³ö´ËÒì³£¡£
+     * @throws IllegalArgumentException ç”¨æˆ·è°ƒç”¨æ­¤APIä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void setCellEditor(TreeCellEditor newEditor) {
         throw new IllegalArgumentException("Can not set new tree cell editor !");
@@ -542,14 +542,14 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeWillLoad(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeWillLoad(ComplexTreeModelEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see com.apollo.swing.component.complextree.IComplexTreeModelListener#nodeLoaded(com.apollo.swing.component.complextree.ComplexTreeModelEvent)
      */
     public void nodeLoaded(ComplexTreeModelEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
@@ -609,9 +609,9 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * ÊÍ·Å»º´æÁĞ±í¡£
-     * @param caches »º´æÁĞ±í¡£
-     * @param parentCacheNode ¸¸»º´æ½Úµã¡£
+     * é‡Šæ”¾ç¼“å­˜åˆ—è¡¨ã€‚
+     * @param caches ç¼“å­˜åˆ—è¡¨ã€‚
+     * @param parentCacheNode çˆ¶ç¼“å­˜èŠ‚ç‚¹ã€‚
      */
     protected void releaseCaches(final List caches, final ComplexTreeCacheNode parentCacheNode) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -646,7 +646,7 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- JComponent Protected Method -------------------------------------*/
 
     /**
-     * µã»÷Ñ¡ÖĞµÄ¶¯×÷ÔÚÕâÀïÊµÏÖ¡£
+     * ç‚¹å‡»é€‰ä¸­çš„åŠ¨ä½œåœ¨è¿™é‡Œå®ç°ã€‚
      * @see javax.swing.JComponent#processMouseEvent(java.awt.event.MouseEvent)
      */
     protected void processMouseEvent(MouseEvent evt) {
@@ -669,9 +669,9 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
     /*------------------------------------- Friendly Method -------------------------------------*/
 
     /**
-     * »ñÈ¡Ñ¡Ôñ¿òµÄ·¶Î§¡£
-     * @param row ĞĞ¡£
-     * @return Ñ¡Ôñ¿òµÄ·¶Î§¡£
+     * è·å–é€‰æ‹©æ¡†çš„èŒƒå›´ã€‚
+     * @param row è¡Œã€‚
+     * @return é€‰æ‹©æ¡†çš„èŒƒå›´ã€‚
      */
     Rectangle getChoiceBounds(int row) {
         Rectangle rowBounds = getRowBounds(row);
@@ -692,39 +692,39 @@ public class ComplexTree extends JTree implements IBaseConstants, IComplexTreeMo
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷³£Á¿½Ó¿Ú¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-9-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘å¸¸é‡æ¥å£ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-9-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 interface IConstants extends IBaseConstants {
 
     /*------------------------------------- Public Static Final Field -------------------------------------*/
 
     /**
-     * ×´Ì¬------×¼±¸¡£
+     * çŠ¶æ€------å‡†å¤‡ã€‚
      */
     public static final int STATE_READY = 0;
 
     /**
-     * ×´Ì¬------ÔØÈëÖĞ¡£
+     * çŠ¶æ€------è½½å…¥ä¸­ã€‚
      */
     public static final int STATE_LOADING = 1;
 
     /**
-     * ×´Ì¬------ÒÑÔØÈë¡£
+     * çŠ¶æ€------å·²è½½å…¥ã€‚
      */
     public static final int STATE_LOADED = 2;
 
@@ -735,22 +735,22 @@ interface IConstants extends IBaseConstants {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÀàĞÍÃèÊö£º×ÛºÏÊ÷¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-9-23</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>ç±»å‹æè¿°ï¼šç»¼åˆæ ‘å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-9-23</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 class Utilities {
 
@@ -797,18 +797,18 @@ class Utilities {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * Í¨¹ıkeyÀ´»ñÈ¡ÁĞ±í¶¨ÖÆµÄ¹ú¼Ê»¯ĞÅÏ¢¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢¡£
+     * é€šè¿‡keyæ¥è·å–åˆ—è¡¨å®šåˆ¶çš„å›½é™…åŒ–ä¿¡æ¯ã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ã€‚
      */
     protected static String getI18nMessage(String i18nKey) {
         return BaseUtilities.getI18nMessage("com.apollo.swing.component.complextree.resource.ComplexTree", i18nKey);
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     protected static Icon getIcon(String iconFilename) {
         return BaseUtilities.getIcon(Utilities.class, "com/apollo/swing/component/complextree/resource/icon/", iconFilename);
@@ -857,10 +857,10 @@ class Utilities {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private Utilities() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Method -------------------------------------*/
@@ -882,22 +882,22 @@ class Utilities {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÀàĞÍÃèÊö£ºÑ¡ÔñÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-11-27</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>ç±»å‹æè¿°ï¼šé€‰æ‹©ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-11-27</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 class Choice {
 
@@ -964,12 +964,12 @@ class Choice {
     /*------------------------------------- Friendly Field -------------------------------------*/
 
     /**
-     * Ñ¡ÔñÍ¼±ê£¬´ËÊôĞÔÖ÷Òª¸ºÔğ±êÊ¶Ñ¡ÔñÊÇ·ñ´¦ÓÚ²»È·¶¨£¨°ëÑ¡£©×´Ì¬¡£
+     * é€‰æ‹©å›¾æ ‡ï¼Œæ­¤å±æ€§ä¸»è¦è´Ÿè´£æ ‡è¯†é€‰æ‹©æ˜¯å¦å¤„äºä¸ç¡®å®šï¼ˆåŠé€‰ï¼‰çŠ¶æ€ã€‚
      */
     IconWrapper m_choiceIcon = IconWrapper.createCheckBoxIconWrapper();
 
     /**
-     * Ñ¡Ôñ°´Å¥¡£
+     * é€‰æ‹©æŒ‰é’®ã€‚
      */
     JToggleButton m_choiceBtn = new JCheckBox(m_choiceIcon);
 
@@ -992,7 +992,7 @@ class Choice {
     /*------------------------------------- Friendly Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     Choice() {
         m_choiceBtn.setOpaque(false);
@@ -1005,15 +1005,15 @@ class Choice {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎªÒÑÑ¡Ôñ×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
      */
     public boolean isSelected() {
         return m_choiceBtn.isSelected() && !m_choiceIcon.isIndetermined();
     }
 
     /**
-     * ÉèÖÃÎªÒÑÑ¡Ôñ×´Ì¬¡£
+     * è®¾ç½®ä¸ºå·²é€‰æ‹©çŠ¶æ€ã€‚
      */
     public void setSelected() {
         m_choiceBtn.setSelected(true);
@@ -1021,15 +1021,15 @@ class Choice {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎªÎ´Ñ¡Ôñ×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎªÎ´Ñ¡Ôñ×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºæœªé€‰æ‹©çŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºæœªé€‰æ‹©çŠ¶æ€ã€‚
      */
     public boolean isDeselected() {
         return !m_choiceBtn.isSelected() && !m_choiceIcon.isIndetermined();
     }
 
     /**
-     * ÉèÖÃÎªÎ´Ñ¡Ôñ×´Ì¬¡£
+     * è®¾ç½®ä¸ºæœªé€‰æ‹©çŠ¶æ€ã€‚
      */
     public void setDeselected() {
         m_choiceBtn.setSelected(false);
@@ -1037,15 +1037,15 @@ class Choice {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÎª²»È·¶¨×´Ì¬¡£
-     * @return ±êÊ¶ÊÇ·ñÎª²»È·¶¨×´Ì¬¡£
+     * åˆ¤æ–­æ˜¯å¦ä¸ºä¸ç¡®å®šçŠ¶æ€ã€‚
+     * @return æ ‡è¯†æ˜¯å¦ä¸ºä¸ç¡®å®šçŠ¶æ€ã€‚
      */
     public boolean isIndetermined() {
         return m_choiceIcon.isIndetermined();
     }
 
     /**
-     * ÉèÖÃÎª²»È·¶¨×´Ì¬¡£
+     * è®¾ç½®ä¸ºä¸ç¡®å®šçŠ¶æ€ã€‚
      */
     public void setIndetermined() {
         m_choiceBtn.setSelected(true);
@@ -1067,22 +1067,22 @@ class Choice {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷äÖÈ¾Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-11-16</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘æ¸²æŸ“å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-11-16</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 class ComplexTreeCellRenderer extends DefaultTreeCellRenderer {
@@ -1146,12 +1146,12 @@ class ComplexTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * Ñ¡Ôñ¡£
+     * é€‰æ‹©ã€‚
      */
     protected Choice m_choice = new Choice();
 
     /**
-     * Ñ¡Ôñ½ÚµãÃæ°å¡£
+     * é€‰æ‹©èŠ‚ç‚¹é¢æ¿ã€‚
      */
     protected JPanel m_choiceNodeView = new JPanel(new GridBagLayout());
 
@@ -1170,7 +1170,7 @@ class ComplexTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     public ComplexTreeCellRenderer() {
         m_choiceNodeView.setOpaque(false);
@@ -1217,7 +1217,7 @@ class ComplexTreeCellRenderer extends DefaultTreeCellRenderer {
 
         m_choiceNodeView.removeAll();
 
-        /* ´¦ÀíÑ¡Ôñ½Úµã£¨Ñ¡Ôñ½ÚµãĞèÒªÔÚÒÑÓĞµÄäÖÈ¾×é¼şÇ°Ãæ¼ÓÉÏÒ»¸öÑ¡Ôñ¿ò£© */
+        /* å¤„ç†é€‰æ‹©èŠ‚ç‚¹ï¼ˆé€‰æ‹©èŠ‚ç‚¹éœ€è¦åœ¨å·²æœ‰çš„æ¸²æŸ“ç»„ä»¶å‰é¢åŠ ä¸Šä¸€ä¸ªé€‰æ‹©æ¡†ï¼‰ */
         if (((ComplexTree) tree).getComplexTreeModel().m_isEnabledChoice && node instanceof ComplexTreeChoiceNode) {
             ComplexTreeChoiceNode choiceNode = (ComplexTreeChoiceNode) node;
 
@@ -1274,22 +1274,22 @@ class ComplexTreeCellRenderer extends DefaultTreeCellRenderer {
 }
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºComplexTree.java</p>
- * <p>ÎÄ¼şÃèÊö£º×ÛºÏÊ÷±à¼­Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-11-16</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šComplexTree.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šç»¼åˆæ ‘ç¼–è¾‘å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-11-16</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 class ComplexTreeCellEditor extends DefaultTreeCellEditor {
 
@@ -1352,7 +1352,7 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ±à¼­½Úµãµ¥Ôª¸ñ±à¼­¼àÌıÆ÷¡£
+     * ç¼–è¾‘èŠ‚ç‚¹å•å…ƒæ ¼ç¼–è¾‘ç›‘å¬å™¨ã€‚
      */
     protected CellEditorListener m_cellEditorListener = new CellEditorListener() {
 
@@ -1375,9 +1375,9 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
     };
 
     /**
-     * ¶¯×÷¼àÌıÆ÷------µ±¶¯×÷·¢ÉúÊ±µã»÷Ñ¡Ôñ¿ò²¢ÖØĞÂ»æÖÆÊ÷£¬×îºóÅĞ¶ÏÊÇ·ñĞèÒªÖÕÖ¹±à¼­¶¯×÷¡£
-     * ×¢Òâ£ºË¢ĞÂºÍÏÂÃæµÄÍ£Ö¹±à¼­²»Í¬£¬ÕâÀï²»¿ÉÒÔÒÆ³ıµô´Ë¼àÌıÆ÷£¬·ñÔòÎŞ·¨³ÖĞøË¢ĞÂ£¬ÒòÎªÕâÀïµÄµã»÷²»»áÁ¢¿Ìµ¼ÖÂÍË³ö±à¼­×´Ì¬¡£
-     * TODO ÕâÀïÒ²»á´øÀ´Ò»¸öĞ¡µÄBUG£¬»áÓĞÈßÓàµÄË¢ĞÂ¶¯×÷ÔÚ½øĞĞ£¬µ«²»»á¶Ô½çÃæÔì³ÉÓ°Ïì¡£ 
+     * åŠ¨ä½œç›‘å¬å™¨------å½“åŠ¨ä½œå‘ç”Ÿæ—¶ç‚¹å‡»é€‰æ‹©æ¡†å¹¶é‡æ–°ç»˜åˆ¶æ ‘ï¼Œæœ€ååˆ¤æ–­æ˜¯å¦éœ€è¦ç»ˆæ­¢ç¼–è¾‘åŠ¨ä½œã€‚
+     * æ³¨æ„ï¼šåˆ·æ–°å’Œä¸‹é¢çš„åœæ­¢ç¼–è¾‘ä¸åŒï¼Œè¿™é‡Œä¸å¯ä»¥ç§»é™¤æ‰æ­¤ç›‘å¬å™¨ï¼Œå¦åˆ™æ— æ³•æŒç»­åˆ·æ–°ï¼Œå› ä¸ºè¿™é‡Œçš„ç‚¹å‡»ä¸ä¼šç«‹åˆ»å¯¼è‡´é€€å‡ºç¼–è¾‘çŠ¶æ€ã€‚
+     * TODO è¿™é‡Œä¹Ÿä¼šå¸¦æ¥ä¸€ä¸ªå°çš„BUGï¼Œä¼šæœ‰å†—ä½™çš„åˆ·æ–°åŠ¨ä½œåœ¨è¿›è¡Œï¼Œä½†ä¸ä¼šå¯¹ç•Œé¢é€ æˆå½±å“ã€‚ 
      */
     protected ActionListener m_choiceAction = new ActionListener() {
 
@@ -1396,17 +1396,17 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
     };
 
     /**
-     * ×ÛºÏÊ÷¶ÔÏóÒıÓÃ¡£
+     * ç»¼åˆæ ‘å¯¹è±¡å¼•ç”¨ã€‚
      */
     protected ComplexTree m_complexTree;
 
     /**
-     * Ñ¡Ôñ¡£
+     * é€‰æ‹©ã€‚
      */
     protected Choice m_choice = new Choice();
 
     /**
-     * Ñ¡Ôñ½ÚµãÃæ°å¡£
+     * é€‰æ‹©èŠ‚ç‚¹é¢æ¿ã€‚
      */
     protected JPanel m_choiceNodeView = new JPanel(new GridBagLayout());
 
@@ -1425,11 +1425,11 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param complexTree ×ÛºÏÊ÷¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param complexTree ç»¼åˆæ ‘ã€‚
      */
     public ComplexTreeCellEditor(ComplexTree complexTree) {
-        /* ÓÃ×ÛºÏÊ÷¶ÔÏó¼°ÆääÖÈ¾Æ÷À´³õÊ¼»¯±à¼­Æ÷£¬ÕâÀïÒªÇóÔÚ×ÛºÏÊ÷¹¹Ôì·½·¨ÖĞÏÈÉèÖÃäÖÈ¾Æ÷£¬ºóÉèÖÃ±à¼­Æ÷ */
+        /* ç”¨ç»¼åˆæ ‘å¯¹è±¡åŠå…¶æ¸²æŸ“å™¨æ¥åˆå§‹åŒ–ç¼–è¾‘å™¨ï¼Œè¿™é‡Œè¦æ±‚åœ¨ç»¼åˆæ ‘æ„é€ æ–¹æ³•ä¸­å…ˆè®¾ç½®æ¸²æŸ“å™¨ï¼Œåè®¾ç½®ç¼–è¾‘å™¨ */
         super(complexTree, (DefaultTreeCellRenderer) complexTree.getCellRenderer());
         m_complexTree = complexTree;
         m_choice.m_choiceBtn.addActionListener(m_choiceAction);
@@ -1466,19 +1466,19 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
             }
         }
 
-        if (m_complexTree.m_willEditNode.isEditable()) { //¼´½«±»±à¼­µÄ½ÚµãÔÊĞí±à¼­
-            /* »ñÈ¡¼´½«Òª±à¼­½ÚµãµÄ±à¼­Æ÷ */
+        if (m_complexTree.m_willEditNode.isEditable()) { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹å…è®¸ç¼–è¾‘
+            /* è·å–å³å°†è¦ç¼–è¾‘èŠ‚ç‚¹çš„ç¼–è¾‘å™¨ */
             TreeCellEditor editor = m_complexTree.m_willEditNode.getEditor();
 
-            /* °ÑÅĞ¶ÏÎ¯ÍĞ¸ø±à¼­Æ÷ */
-            if (editor == null) { //¼´½«±»±à¼­µÄ½ÚµãÃ»ÓĞÉèÖÃ±à¼­Æ÷£¬½»ÓÉÈ±Ê¡±à¼­Æ÷ÅĞ¶ÏÊÇ·ñÔÊĞí±à¼­
+            /* æŠŠåˆ¤æ–­å§”æ‰˜ç»™ç¼–è¾‘å™¨ */
+            if (editor == null) { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹æ²¡æœ‰è®¾ç½®ç¼–è¾‘å™¨ï¼Œäº¤ç”±ç¼ºçœç¼–è¾‘å™¨åˆ¤æ–­æ˜¯å¦å…è®¸ç¼–è¾‘
                 return super.isCellEditable(evt);
 
-            } else { //¼´½«±»±à¼­µÄ½ÚµãÉèÖÃÁË±à¼­Æ÷
+            } else { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹è®¾ç½®äº†ç¼–è¾‘å™¨
                 return editor.isCellEditable(evt);
             }
 
-        } else { //¼´½«±»±à¼­µÄ½Úµã²»ÔÊĞí±à¼­
+        } else { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹ä¸å…è®¸ç¼–è¾‘
             return false;
         }
     }
@@ -1492,30 +1492,30 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
                                                 boolean isExpanded,
                                                 boolean isLeaf,
                                                 int rowIndex) {
-        /* ¶¨Òå±à¼­×é¼ş */
+        /* å®šä¹‰ç¼–è¾‘ç»„ä»¶ */
         Component ec = null;
 
-        /* »ñÈ¡±à¼­½Úµã */
+        /* è·å–ç¼–è¾‘èŠ‚ç‚¹ */
         ComplexTreeNode node = (ComplexTreeNode) value;
 
-        /* °²×°±à¼­½Úµã */
+        /* å®‰è£…ç¼–è¾‘èŠ‚ç‚¹ */
         installEditingNode(node);
 
-        /* »ñÈ¡±à¼­×é¼ş */
+        /* è·å–ç¼–è¾‘ç»„ä»¶ */
         TreeCellEditor nodeEditor = node.getEditor();
-        if (nodeEditor == null) { //±à¼­½ÚµãÃ»ÓĞÉèÖÃ½Úµã±à¼­Æ÷
+        if (nodeEditor == null) { //ç¼–è¾‘èŠ‚ç‚¹æ²¡æœ‰è®¾ç½®èŠ‚ç‚¹ç¼–è¾‘å™¨
             ec = super.getTreeCellEditorComponent(tree, value, isSelected, isExpanded, isLeaf, rowIndex);
 
-        } else { //±à¼­½ÚµãÉèÖÃÁË½Úµã±à¼­Æ÷
+        } else { //ç¼–è¾‘èŠ‚ç‚¹è®¾ç½®äº†èŠ‚ç‚¹ç¼–è¾‘å™¨
             ec = nodeEditor.getTreeCellEditorComponent(tree, value, isSelected, isExpanded, isLeaf, rowIndex);
         }
 
-        /* Çå¿ÕÑ¡Ôñ½ÚµãÃæ°å */
+        /* æ¸…ç©ºé€‰æ‹©èŠ‚ç‚¹é¢æ¿ */
         m_choiceNodeView.removeAll();
 
-        /* ´¦ÀíÑ¡Ôñ½Úµã£¨Ñ¡Ôñ½ÚµãĞèÒªÔÚÒÑÓĞµÄ±à¼­×é¼şÇ°Ãæ¼ÓÉÏÒ»¸ö¸´Ñ¡¿ò£© */
-        if (m_complexTree.getComplexTreeModel().m_isEnabledChoice && node instanceof ComplexTreeChoiceNode) { //ÊÇÑ¡Ôñ½Úµã
-            /* »ñÈ¡Ñ¡Ôñ½Úµã */
+        /* å¤„ç†é€‰æ‹©èŠ‚ç‚¹ï¼ˆé€‰æ‹©èŠ‚ç‚¹éœ€è¦åœ¨å·²æœ‰çš„ç¼–è¾‘ç»„ä»¶å‰é¢åŠ ä¸Šä¸€ä¸ªå¤é€‰æ¡†ï¼‰ */
+        if (m_complexTree.getComplexTreeModel().m_isEnabledChoice && node instanceof ComplexTreeChoiceNode) { //æ˜¯é€‰æ‹©èŠ‚ç‚¹
+            /* è·å–é€‰æ‹©èŠ‚ç‚¹ */
             ComplexTreeChoiceNode choiceNode = (ComplexTreeChoiceNode) node;
 
             if (choiceNode.isSelected()) {
@@ -1528,7 +1528,7 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
                 m_choice.setIndetermined();
             }
 
-            /* Ìí¼Ó¸´Ñ¡¿òµ½Ñ¡Ôñ½ÚµãÃæ°å */
+            /* æ·»åŠ å¤é€‰æ¡†åˆ°é€‰æ‹©èŠ‚ç‚¹é¢æ¿ */
             m_choiceNodeView.add(m_choice.m_choiceBtn, new GridBagConstraints(GridBagConstraints.RELATIVE,
                                                                               0,
                                                                               1,
@@ -1542,7 +1542,7 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
                                                                               0));
         }
 
-        /* Ìí¼ÓäÖÈ¾×é¼şµ½Ñ¡Ôñ½ÚµãÃæ°å */
+        /* æ·»åŠ æ¸²æŸ“ç»„ä»¶åˆ°é€‰æ‹©èŠ‚ç‚¹é¢æ¿ */
         m_choiceNodeView.add(ec, new GridBagConstraints(GridBagConstraints.RELATIVE,
                                                         0,
                                                         1,
@@ -1555,99 +1555,99 @@ class ComplexTreeCellEditor extends DefaultTreeCellEditor {
                                                         0,
                                                         0));
 
-        /* ·µ»ØäÖÈ¾×é¼ş */
+        /* è¿”å›æ¸²æŸ“ç»„ä»¶ */
         return m_choiceNodeView;
     }
 
     /**
-     * ·µ»Øµ¥Ôª¸ñ±à¼­ÖµÊ±²»ÓÃ¿¼ÂÇÓÃ»§ÉèÖÃµÄ±à¼­Æ÷ÊÇ·ñ±»Ó¦ÓÃÁË£¬Ö»ÒªÓÃ»§ÉèÖÃÁË±à¼­Æ÷£¬¾ÍÎ¯ÍĞ¸øËü¡£
+     * è¿”å›å•å…ƒæ ¼ç¼–è¾‘å€¼æ—¶ä¸ç”¨è€ƒè™‘ç”¨æˆ·è®¾ç½®çš„ç¼–è¾‘å™¨æ˜¯å¦è¢«åº”ç”¨äº†ï¼Œåªè¦ç”¨æˆ·è®¾ç½®äº†ç¼–è¾‘å™¨ï¼Œå°±å§”æ‰˜ç»™å®ƒã€‚
      * @see javax.swing.tree.DefaultTreeCellEditor#getCellEditorValue()
      */
     public Object getCellEditorValue() {
-        /* »ñÈ¡¼´½«Òª±à¼­½ÚµãµÄ±à¼­Æ÷ */
+        /* è·å–å³å°†è¦ç¼–è¾‘èŠ‚ç‚¹çš„ç¼–è¾‘å™¨ */
         TreeCellEditor editor = m_complexTree.m_willEditNode.getEditor();
 
-        /* °ÑÅĞ¶ÏÎ¯ÍĞ¸ø±à¼­Æ÷ */
-        if (editor == null) { //¼´½«±»±à¼­µÄ½ÚµãÃ»ÓĞÉèÖÃ±à¼­Æ÷£¬½»ÓÉÈ±Ê¡±à¼­Æ÷ÅĞ¶ÏÊÇ·ñÔÊĞí±à¼­
+        /* æŠŠåˆ¤æ–­å§”æ‰˜ç»™ç¼–è¾‘å™¨ */
+        if (editor == null) { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹æ²¡æœ‰è®¾ç½®ç¼–è¾‘å™¨ï¼Œäº¤ç”±ç¼ºçœç¼–è¾‘å™¨åˆ¤æ–­æ˜¯å¦å…è®¸ç¼–è¾‘
             return super.getCellEditorValue();
 
-        } else { //¼´½«±»±à¼­µÄ½ÚµãÉèÖÃÁË±à¼­Æ÷
+        } else { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹è®¾ç½®äº†ç¼–è¾‘å™¨
             return editor.getCellEditorValue();
         }
     }
 
     /**
-     * Í£Ö¹µ¥Ôª¸ñ±à¼­Ê±ĞèÒª¿¼ÂÇÓÃ»§ÉèÖÃµÄ±à¼­Æ÷ÊÇ·ñ±»Ó¦ÓÃÁË£¬Ã»ÓĞ±»Ó¦ÓÃ¾Í²»ÓÃ¾ÍÎ¯ÍĞ¸øËüÁË¡£
+     * åœæ­¢å•å…ƒæ ¼ç¼–è¾‘æ—¶éœ€è¦è€ƒè™‘ç”¨æˆ·è®¾ç½®çš„ç¼–è¾‘å™¨æ˜¯å¦è¢«åº”ç”¨äº†ï¼Œæ²¡æœ‰è¢«åº”ç”¨å°±ä¸ç”¨å°±å§”æ‰˜ç»™å®ƒäº†ã€‚
      * @see javax.swing.tree.DefaultTreeCellEditor#stopCellEditing()
      */
     public boolean stopCellEditing() {
-        /* »ñÈ¡¼´½«Òª±à¼­½ÚµãµÄ±à¼­Æ÷ */
+        /* è·å–å³å°†è¦ç¼–è¾‘èŠ‚ç‚¹çš„ç¼–è¾‘å™¨ */
         TreeCellEditor editor = m_complexTree.m_willEditNode.getEditor();
 
-        /* ¶¨ÒåÅĞ¶Ï½á¹û */
+        /* å®šä¹‰åˆ¤æ–­ç»“æœ */
         boolean isStopCellEditing;
 
-        /* °ÑÅĞ¶ÏÎ¯ÍĞ¸ø±à¼­Æ÷ */
-        if (editor == null) { //¼´½«±»±à¼­µÄ½ÚµãÃ»ÓĞÉèÖÃ±à¼­Æ÷
-            isStopCellEditing = super.stopCellEditing(); //½»ÓÉÈ±Ê¡±à¼­Æ÷ÅĞ¶ÏÊÇ·ñÔÊĞí±à¼­
+        /* æŠŠåˆ¤æ–­å§”æ‰˜ç»™ç¼–è¾‘å™¨ */
+        if (editor == null) { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹æ²¡æœ‰è®¾ç½®ç¼–è¾‘å™¨
+            isStopCellEditing = super.stopCellEditing(); //äº¤ç”±ç¼ºçœç¼–è¾‘å™¨åˆ¤æ–­æ˜¯å¦å…è®¸ç¼–è¾‘
 
-        } else { //¼´½«±»±à¼­µÄ½ÚµãÉèÖÃÁË±à¼­Æ÷
+        } else { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹è®¾ç½®äº†ç¼–è¾‘å™¨
             isStopCellEditing = editor.stopCellEditing();
         }
 
-        /* Ğ¶ÔØ±à¼­½Úµã */
+        /* å¸è½½ç¼–è¾‘èŠ‚ç‚¹ */
         uninstallEditingNode(m_complexTree.m_willEditNode);
 
-        /* ·µ»ØÅĞ¶Ï½á¹û */
+        /* è¿”å›åˆ¤æ–­ç»“æœ */
         return isStopCellEditing;
     }
 
     /**
-     * È¡Ïûµ¥Ôª¸ñ±à¼­Ê±ĞèÒª¿¼ÂÇÓÃ»§ÉèÖÃµÄ±à¼­Æ÷ÊÇ·ñ±»Ó¦ÓÃÁË£¬Ã»ÓĞ±»Ó¦ÓÃ¾Í²»ÓÃ¾ÍÎ¯ÍĞ¸øËüÁË¡£
+     * å–æ¶ˆå•å…ƒæ ¼ç¼–è¾‘æ—¶éœ€è¦è€ƒè™‘ç”¨æˆ·è®¾ç½®çš„ç¼–è¾‘å™¨æ˜¯å¦è¢«åº”ç”¨äº†ï¼Œæ²¡æœ‰è¢«åº”ç”¨å°±ä¸ç”¨å°±å§”æ‰˜ç»™å®ƒäº†ã€‚
      * @see javax.swing.tree.DefaultTreeCellEditor#cancelCellEditing()
      */
     public void cancelCellEditing() {
-        /* »ñÈ¡¼´½«Òª±à¼­½ÚµãµÄ±à¼­Æ÷ */
+        /* è·å–å³å°†è¦ç¼–è¾‘èŠ‚ç‚¹çš„ç¼–è¾‘å™¨ */
         TreeCellEditor editor = m_complexTree.m_willEditNode.getEditor();
 
-        /* °ÑÅĞ¶ÏÎ¯ÍĞ¸ø±à¼­Æ÷ */
-        if (editor == null) { //¼´½«±»±à¼­µÄ½ÚµãÃ»ÓĞÉèÖÃ±à¼­Æ÷
-            super.cancelCellEditing(); //½»ÓÉÈ±Ê¡±à¼­Æ÷ÅĞ¶ÏÊÇ·ñÔÊĞí±à¼­
+        /* æŠŠåˆ¤æ–­å§”æ‰˜ç»™ç¼–è¾‘å™¨ */
+        if (editor == null) { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹æ²¡æœ‰è®¾ç½®ç¼–è¾‘å™¨
+            super.cancelCellEditing(); //äº¤ç”±ç¼ºçœç¼–è¾‘å™¨åˆ¤æ–­æ˜¯å¦å…è®¸ç¼–è¾‘
 
-        } else { //¼´½«±»±à¼­µÄ½ÚµãÉèÖÃÁË±à¼­Æ÷
+        } else { //å³å°†è¢«ç¼–è¾‘çš„èŠ‚ç‚¹è®¾ç½®äº†ç¼–è¾‘å™¨
             editor.cancelCellEditing();
         }
 
-        /* Ğ¶ÔØ±à¼­½Úµã */
+        /* å¸è½½ç¼–è¾‘èŠ‚ç‚¹ */
         uninstallEditingNode(m_complexTree.m_willEditNode);
     }
 
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * °²×°±à¼­½Úµã¡£
-     * @param node ±à¼­½Úµã¡£
+     * å®‰è£…ç¼–è¾‘èŠ‚ç‚¹ã€‚
+     * @param node ç¼–è¾‘èŠ‚ç‚¹ã€‚
      */
     protected void installEditingNode(ComplexTreeNode node) {
-        /* °²×°±à¼­½ÚµãÉèÖÃµÄÈ±Ê¡äÖÈ¾Æ÷ */
+        /* å®‰è£…ç¼–è¾‘èŠ‚ç‚¹è®¾ç½®çš„ç¼ºçœæ¸²æŸ“å™¨ */
         TreeCellRenderer nodeRenderer = node.getRenderer();
-        if (nodeRenderer instanceof DefaultTreeCellRenderer) { //±à¼­½ÚµãÉèÖÃµÄäÖÈ¾Æ÷ÊÇÒ»¸öÈ±Ê¡µÄÊ÷µ¥Ôª¸ñäÖÈ¾Æ÷
+        if (nodeRenderer instanceof DefaultTreeCellRenderer) { //ç¼–è¾‘èŠ‚ç‚¹è®¾ç½®çš„æ¸²æŸ“å™¨æ˜¯ä¸€ä¸ªç¼ºçœçš„æ ‘å•å…ƒæ ¼æ¸²æŸ“å™¨
             renderer = (DefaultTreeCellRenderer) nodeRenderer;
         }
 
-        /* °²×°±à¼­½ÚµãµÄµ¥Ôª¸ñ±à¼­¼àÌıÆ÷ */
-        TreeCellEditor nodeEditor = node.getEditor(); //»ñÈ¡½Úµã±à¼­Æ÷
-        if (nodeEditor != null) { //±à¼­½ÚµãÉèÖÃÁË½Úµã±à¼­Æ÷
-            nodeEditor.addCellEditorListener(m_cellEditorListener); //Ìí¼Ó±à¼­½ÚµãµÄµ¥Ôª¸ñ±à¼­¼àÌıÆ÷
+        /* å®‰è£…ç¼–è¾‘èŠ‚ç‚¹çš„å•å…ƒæ ¼ç¼–è¾‘ç›‘å¬å™¨ */
+        TreeCellEditor nodeEditor = node.getEditor(); //è·å–èŠ‚ç‚¹ç¼–è¾‘å™¨
+        if (nodeEditor != null) { //ç¼–è¾‘èŠ‚ç‚¹è®¾ç½®äº†èŠ‚ç‚¹ç¼–è¾‘å™¨
+            nodeEditor.addCellEditorListener(m_cellEditorListener); //æ·»åŠ ç¼–è¾‘èŠ‚ç‚¹çš„å•å…ƒæ ¼ç¼–è¾‘ç›‘å¬å™¨
         }
     }
 
     /**
-     * Ğ¶ÔØ±à¼­½Úµã¡£
-     * @param node ±à¼­½Úµã¡£
+     * å¸è½½ç¼–è¾‘èŠ‚ç‚¹ã€‚
+     * @param node ç¼–è¾‘èŠ‚ç‚¹ã€‚
      */
     protected void uninstallEditingNode(ComplexTreeNode node) {
-        /* Ğ¶ÔØ±à¼­½ÚµãÉèÖÃµÄÈ±Ê¡äÖÈ¾Æ÷ */
+        /* å¸è½½ç¼–è¾‘èŠ‚ç‚¹è®¾ç½®çš„ç¼ºçœæ¸²æŸ“å™¨ */
         renderer = (DefaultTreeCellRenderer) m_complexTree.getCellRenderer();
     }
 

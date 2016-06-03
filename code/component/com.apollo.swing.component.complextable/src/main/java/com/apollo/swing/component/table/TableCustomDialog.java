@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-4-26 ÏÂÎç12:31:37¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-4-26 ä¸‹åˆ12:31:37ã€‚
  */
 package com.apollo.swing.component.table;
 
@@ -49,22 +49,22 @@ import com.apollo.swing.component.editor.IntegerFieldCellEditor;
 import com.apollo.swing.component.text.IntegerField;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTableCustomDialog.java</p>
- * <p>ÀàĞÍÃèÊö£ºÁĞ±í¶¨ÖÆ¶Ô»°¿òÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-4-26</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTableCustomDialog.java</p>
+ * <p>ç±»å‹æè¿°ï¼šåˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-4-26</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class TableCustomDialog extends JDialog
@@ -83,36 +83,36 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Protected (Static) Inner Class -------------------------------------*/
 
     /**
-     * ÅäÖÃ±í¸ñµÄÄ£ĞÍÀà¡£
+     * é…ç½®è¡¨æ ¼çš„æ¨¡å‹ç±»ã€‚
      */
     protected static class TConfigTableModel extends AbstractTableModel {
 
         /**
-         * ËùÓĞÁĞ±í¶¨ÖÆĞÅÏ¢¡£
+         * æ‰€æœ‰åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
          */
         protected List m_customs = new ArrayList();
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param table ±í¸ñ¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         public TConfigTableModel(JTable table) {
             setTable(table);
         }
 
         /**
-         * ÅĞ¶ÏÖ¸¶¨µÄ¶¨ÖÆÁĞÊÇ·ñÏÔÊ¾¡£
-         * @param row ¶¨ÖÆÁĞËùÔÚµÄĞĞË÷Òı¡£
-         * @return Îªtrue±íÊ¾Ö¸¶¨µÄ¶¨ÖÆÁĞÊÇÏÔÊ¾µÄ£¬Îªfalse±íÊ¾Ö¸¶¨µÄ¶¨ÖÆÁĞÊÇÒş²ØµÄ¡£
+         * åˆ¤æ–­æŒ‡å®šçš„å®šåˆ¶åˆ—æ˜¯å¦æ˜¾ç¤ºã€‚
+         * @param row å®šåˆ¶åˆ—æ‰€åœ¨çš„è¡Œç´¢å¼•ã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºæŒ‡å®šçš„å®šåˆ¶åˆ—æ˜¯æ˜¾ç¤ºçš„ï¼Œä¸ºfalseè¡¨ç¤ºæŒ‡å®šçš„å®šåˆ¶åˆ—æ˜¯éšè—çš„ã€‚
          */
         public boolean isVisible(int row) {
             return ((TableCustom) m_customs.get(row)).m_visible.booleanValue();
         }
 
         /**
-         * ÅĞ¶ÏÖ¸¶¨µÄĞĞ¼¯ÊÇ·ñÈ«²¿Òş²Ø¡£
-         * @param rows Ö¸¶¨µÄĞĞ¡£
-         * @return Îªtrue±íÊ¾Ö¸¶¨µÄĞĞ¼¯ÊÇÈ«²¿Òş²Ø£¬Îªfalse±íÊ¾Ö¸¶¨µÄĞĞ¼¯²»ÊÇÈ«²¿Òş²Ø¡£
+         * åˆ¤æ–­æŒ‡å®šçš„è¡Œé›†æ˜¯å¦å…¨éƒ¨éšè—ã€‚
+         * @param rows æŒ‡å®šçš„è¡Œã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºæŒ‡å®šçš„è¡Œé›†æ˜¯å…¨éƒ¨éšè—ï¼Œä¸ºfalseè¡¨ç¤ºæŒ‡å®šçš„è¡Œé›†ä¸æ˜¯å…¨éƒ¨éšè—ã€‚
          */
         public boolean isHide(int[] rows) {
             for (int i = 0; i < rows.length; i++) {
@@ -125,9 +125,9 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ÅĞ¶Ï³ıÖ¸¶¨µÄ¶¨ÖÆÁĞÍâµÄÆäËû¶¨ÖÆÁĞÊÇ·ñÈ«²¿Òş²Ø¡£
-         * @param row ¶¨ÖÆÁĞËùÔÚµÄĞĞË÷Òı¡£
-         * @return Îªtrue±íÊ¾³ıÖ¸¶¨µÄ¶¨ÖÆÁĞÍâµÄÆäËû¶¨ÖÆÁĞÊÇÈ«²¿Òş²Ø£¬Îªfalse±íÊ¾³ıÖ¸¶¨µÄ¶¨ÖÆÁĞÍâµÄÆäËû¶¨ÖÆÁĞ²»ÊÇÈ«²¿Òş²Ø¡£
+         * åˆ¤æ–­é™¤æŒ‡å®šçš„å®šåˆ¶åˆ—å¤–çš„å…¶ä»–å®šåˆ¶åˆ—æ˜¯å¦å…¨éƒ¨éšè—ã€‚
+         * @param row å®šåˆ¶åˆ—æ‰€åœ¨çš„è¡Œç´¢å¼•ã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºé™¤æŒ‡å®šçš„å®šåˆ¶åˆ—å¤–çš„å…¶ä»–å®šåˆ¶åˆ—æ˜¯å…¨éƒ¨éšè—ï¼Œä¸ºfalseè¡¨ç¤ºé™¤æŒ‡å®šçš„å®šåˆ¶åˆ—å¤–çš„å…¶ä»–å®šåˆ¶åˆ—ä¸æ˜¯å…¨éƒ¨éšè—ã€‚
          */
         public boolean isHideOther(int row) {
             for (int i = 0, size = m_customs.size(); i < size; i++) {
@@ -170,7 +170,7 @@ public class TableCustomDialog extends JDialog
          * @see javax.swing.table.AbstractTableModel#getColumnClass(int)
          */
         public Class getColumnClass(int column) {
-            if (column == 1) { //ÃèÊöÊÇ·ñ¿É¼ûµÄÄÇÁĞÒªÇó¿É±à¼­£¬Ê¹ÓÃÈ±Ê¡µÄäÖÈ¾ºÍ±à¼­Æ÷À´¸ã¶¨BooleanÀàĞÍ
+            if (column == 1) { //æè¿°æ˜¯å¦å¯è§çš„é‚£åˆ—è¦æ±‚å¯ç¼–è¾‘ï¼Œä½¿ç”¨ç¼ºçœçš„æ¸²æŸ“å’Œç¼–è¾‘å™¨æ¥æå®šBooleanç±»å‹
                 return Boolean.class;
 
             } else if (column == 2) {
@@ -251,8 +251,8 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ÉèÖÃ±í¸ñ¡£
-         * @param table ±í¸ñ¡£
+         * è®¾ç½®è¡¨æ ¼ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         protected void setTable(JTable table) {
             m_customs.clear();
@@ -275,8 +275,8 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ´Ó±í¸ñÖØÖÃÅäÖÃ¡£
-         * @param table ±í¸ñ¡£
+         * ä»è¡¨æ ¼é‡ç½®é…ç½®ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         protected void resetFromTable(JTable table) {
             syncCustomsFromTable(table);
@@ -285,8 +285,8 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ´Ó±í¸ñÍ¬²½ÁĞ±í¶¨ÖÆĞÅÏ¢¡£
-         * @param table ±í¸ñ¡£
+         * ä»è¡¨æ ¼åŒæ­¥åˆ—è¡¨å®šåˆ¶ä¿¡æ¯ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         protected void syncCustomsFromTable(JTable table) {
             List customs = TableUtilities.getTableCustoms(table);
@@ -305,8 +305,8 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ´Ó±í¸ñÍ¬²½ÁĞÊÇ·ñ¿É¼û¡£
-         * @param table ±í¸ñ¡£
+         * ä»è¡¨æ ¼åŒæ­¥åˆ—æ˜¯å¦å¯è§ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         protected void syncVisibleFromTable(JTable table) {
             for (int i = 0, size = m_customs.size(); i < size; i++) {
@@ -316,7 +316,7 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ´ÓÁĞ¶ÔÏóÍ¬²½ÁĞ¿í¡£
+         * ä»åˆ—å¯¹è±¡åŒæ­¥åˆ—å®½ã€‚
          */
         protected void syncWidthFromColumn() {
             for (int i = 0, size = m_customs.size(); i < size; i++) {
@@ -325,9 +325,9 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * »ñÈ¡ÁĞĞÅÏ¢¡£
-         * @param row ĞĞË÷Òı¡£
-         * @return ÁĞĞÅÏ¢¡£
+         * è·å–åˆ—ä¿¡æ¯ã€‚
+         * @param row è¡Œç´¢å¼•ã€‚
+         * @return åˆ—ä¿¡æ¯ã€‚
          */
         protected TableCustom getCustom(int row) {
             return (TableCustom) m_customs.get(row);
@@ -336,42 +336,42 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ÅäÖÃ±í¸ñÀà¡£
+     * é…ç½®è¡¨æ ¼ç±»ã€‚
      */
     protected static class TConfigTable extends JTable implements MouseListener {
 
         /**
-         * ±í¸ñ£¨±»ÅäÖÃ£©¡£
+         * è¡¨æ ¼ï¼ˆè¢«é…ç½®ï¼‰ã€‚
          */
         protected JTable m_table;
 
         /**
-         * ¹ö¶¯Ãæ°å¡£
+         * æ»šåŠ¨é¢æ¿ã€‚
          */
         protected JScrollPane m_sp = new JScrollPane();
 
         /**
-         * ÊÓÍ¼¡£
+         * è§†å›¾ã€‚
          */
         protected JPanel m_view = new JPanel(new GridBagLayout());
 
         /**
-         * ±í¸ñ²Ëµ¥¡£
+         * è¡¨æ ¼èœå•ã€‚
          */
         protected JPopupMenu m_menu = new JPopupMenu();
 
         /**
-         * È«¾ÖÁĞ¿í±êÇ©¡£
+         * å…¨å±€åˆ—å®½æ ‡ç­¾ã€‚
          */
         protected JLabel m_allColumnWidthLabel = new JLabel();
 
         /**
-         * È«¾ÖÁĞ¿íÊäÈë¿ò¡£
+         * å…¨å±€åˆ—å®½è¾“å…¥æ¡†ã€‚
          */
         protected IntegerField m_allColumnWidthField = new IntegerField(2, 1, 999, 75);
 
         /**
-         * ÉèÖÃ¶¯×÷¡£
+         * è®¾ç½®åŠ¨ä½œã€‚
          */
         protected Action m_set = new AbstractAction() {
 
@@ -394,7 +394,7 @@ public class TableCustomDialog extends JDialog
         };
 
         /**
-         * ÏÔÊ¾ÁĞ¶¯×÷¡£
+         * æ˜¾ç¤ºåˆ—åŠ¨ä½œã€‚
          */
         protected Action m_show = new AbstractAction() {
 
@@ -420,7 +420,7 @@ public class TableCustomDialog extends JDialog
         };
 
         /**
-         * Òş²ØÁĞ¶¯×÷¡£
+         * éšè—åˆ—åŠ¨ä½œã€‚
          */
         protected Action m_hide = new AbstractAction() {
 
@@ -446,7 +446,7 @@ public class TableCustomDialog extends JDialog
         };
 
         /**
-         * ÉÏÒÆÁĞ¶¯×÷¡£
+         * ä¸Šç§»åˆ—åŠ¨ä½œã€‚
          */
         protected Action m_moveToUp = new AbstractAction() {
 
@@ -476,7 +476,7 @@ public class TableCustomDialog extends JDialog
         };
 
         /**
-         * ÏÂÒÆÁĞ¶¯×÷¡£
+         * ä¸‹ç§»åˆ—åŠ¨ä½œã€‚
          */
         protected Action m_moveToDown = new AbstractAction() {
 
@@ -506,8 +506,8 @@ public class TableCustomDialog extends JDialog
         };
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param table ±í¸ñ¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param table è¡¨æ ¼ã€‚
          */
         public TConfigTable(JTable table) {
             super(new TConfigTableModel(table));
@@ -572,24 +572,24 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * »ñÈ¡ÊÓÍ¼¡£
-         * @return ÊÓÍ¼¡£
+         * è·å–è§†å›¾ã€‚
+         * @return è§†å›¾ã€‚
          */
         public JPanel getView() {
             return m_view;
         }
 
         /**
-         * ÅĞ¶ÏËùÓĞÎ´Ñ¡ÔñµÄĞĞÊÇ·ñÈ«²¿Òş²Ø¡£
-         * @return Îªtrue±íÊ¾ËùÓĞÎ´Ñ¡ÔñµÄĞĞÊÇÈ«²¿Òş²Ø£¬Îªfalse±íÊ¾ËùÓĞÎ´Ñ¡ÔñµÄĞĞ²»ÊÇÈ«²¿Òş²Ø¡£
+         * åˆ¤æ–­æ‰€æœ‰æœªé€‰æ‹©çš„è¡Œæ˜¯å¦å…¨éƒ¨éšè—ã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºæ‰€æœ‰æœªé€‰æ‹©çš„è¡Œæ˜¯å…¨éƒ¨éšè—ï¼Œä¸ºfalseè¡¨ç¤ºæ‰€æœ‰æœªé€‰æ‹©çš„è¡Œä¸æ˜¯å…¨éƒ¨éšè—ã€‚
          */
         public boolean isHideDeselectedRows() {
             return getConfigTableModel().isHide(getDeselectedRows());
         }
 
         /**
-         * »ñÈ¡ËùÓĞÎ´Ñ¡ÔñµÄĞĞ¡£
-         * @return ËùÓĞÎ´Ñ¡ÔñµÄĞĞ¡£
+         * è·å–æ‰€æœ‰æœªé€‰æ‹©çš„è¡Œã€‚
+         * @return æ‰€æœ‰æœªé€‰æ‹©çš„è¡Œã€‚
          */
         public int[] getDeselectedRows() {
             int rowCount = getRowCount();
@@ -621,7 +621,7 @@ public class TableCustomDialog extends JDialog
             super.tableChanged(evt);
             constrain();
 
-            /* È«Ë¢£¬ÎªÁËÅäºÏ¡°ÏÔÊ¾¡±ÁĞµÄÔ¼ÊøË¢ĞÂ£»TODO ÕâÀïµ½ÊÇ¿ÉÒÔÓÅ»¯£¬²»¹ıÓÉÓÚ±í¸ñ¡°Ğ¡¡±£¬ĞÔÄÜ²»»áÓĞ¶à´óÌáÉı£¬ËùÒÔ¾ÍÏÈÊ¡ÏÂ´úÂëÁË */
+            /* å…¨åˆ·ï¼Œä¸ºäº†é…åˆâ€œæ˜¾ç¤ºâ€åˆ—çš„çº¦æŸåˆ·æ–°ï¼›TODO è¿™é‡Œåˆ°æ˜¯å¯ä»¥ä¼˜åŒ–ï¼Œä¸è¿‡ç”±äºè¡¨æ ¼â€œå°â€ï¼Œæ€§èƒ½ä¸ä¼šæœ‰å¤šå¤§æå‡ï¼Œæ‰€ä»¥å°±å…ˆçœä¸‹ä»£ç äº† */
             repaint();
         }
 
@@ -669,25 +669,25 @@ public class TableCustomDialog extends JDialog
          * @see java.awt.event.MouseListener#mouseExited(java.awt.event.MouseEvent)
          */
         public void mouseExited(MouseEvent evt) {
-            /* Ôİ²»±ØÊµÏÖ */
+            /* æš‚ä¸å¿…å®ç° */
         }
 
         /**
          * @see java.awt.event.MouseListener#mousePressed(java.awt.event.MouseEvent)
          */
         public void mousePressed(MouseEvent evt) {
-            /* Ôİ²»±ØÊµÏÖ */
+            /* æš‚ä¸å¿…å®ç° */
         }
 
         /**
          * @see java.awt.event.MouseListener#mouseReleased(java.awt.event.MouseEvent)
          */
         public void mouseReleased(MouseEvent evt) {
-            /* Ôİ²»±ØÊµÏÖ */
+            /* æš‚ä¸å¿…å®ç° */
         }
 
         /**
-         * ¹¹½¨ÊÓÍ¼¡£
+         * æ„å»ºè§†å›¾ã€‚
          */
         protected void buildView() {
             m_sp.setViewportView(this);
@@ -746,7 +746,7 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * Ô¼Êø¡£
+         * çº¦æŸã€‚
          */
         protected void constrain() {
             if (m_show == null) {
@@ -792,7 +792,7 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * Í£Ö¹±à¼­¡£
+         * åœæ­¢ç¼–è¾‘ã€‚
          */
         protected void stopEditing() {
             if (isEditing()) {
@@ -801,7 +801,7 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * ÖØÖÃ¡£
+         * é‡ç½®ã€‚
          */
         protected void reset() {
             getConfigTableModel().resetFromTable(m_table);
@@ -809,7 +809,7 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * Ô¼Êø¡£
+         * çº¦æŸã€‚
          */
         protected void constrainAllColumnWidth() {
             long minWidth = Long.MIN_VALUE;
@@ -845,16 +845,16 @@ public class TableCustomDialog extends JDialog
         }
 
         /**
-         * »ñÈ¡ÅäÖÃ±í¸ñÄ£ĞÍ¡£
-         * @return ÅäÖÃ±í¸ñÄ£ĞÍ¡£
+         * è·å–é…ç½®è¡¨æ ¼æ¨¡å‹ã€‚
+         * @return é…ç½®è¡¨æ ¼æ¨¡å‹ã€‚
          */
         protected TConfigTableModel getConfigTableModel() {
             return (TConfigTableModel) dataModel;
         }
 
         /**
-         * ÅĞ¶ÏÊÇ·ñÊÇĞĞÍ·¡£
-         * @return Îªtrue±íÊ¾ÊÇĞĞÍ·£¬Îªfalse±íÊ¾²»ÊÇĞĞÍ·¡£
+         * åˆ¤æ–­æ˜¯å¦æ˜¯è¡Œå¤´ã€‚
+         * @return ä¸ºtrueè¡¨ç¤ºæ˜¯è¡Œå¤´ï¼Œä¸ºfalseè¡¨ç¤ºä¸æ˜¯è¡Œå¤´ã€‚
          */
         protected boolean isRowHeader() {
             return m_table instanceof TableRowHeader;
@@ -893,37 +893,37 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´´½¨ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
-     * @param body ±íÌå¡£
-     * @param owner ÓµÓĞ¸Ã¶Ô»°¿òµÄÈİÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
-     * @return ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
+     * åˆ›å»ºåˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param owner æ‹¥æœ‰è¯¥å¯¹è¯æ¡†çš„å®¹å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
+     * @return åˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
      */
     public static TableCustomDialog create(JTable body, Component owner, String customKey) {
         return create(body, null, owner, customKey);
     }
 
     /**
-     * ´´½¨ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param owner ÓµÓĞ¸Ã¶Ô»°¿òµÄÈİÆ÷¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
-     * @return ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
+     * åˆ›å»ºåˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param owner æ‹¥æœ‰è¯¥å¯¹è¯æ¡†çš„å®¹å™¨ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
+     * @return åˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
      */
     public static TableCustomDialog create(JTable body, TableRowHeader rowHeader, Component owner, String customKey) {
         return create(body, rowHeader, owner, null, true, customKey);
     }
 
     /**
-     * ´´½¨ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param owner ÓµÓĞ¸Ã¶Ô»°¿òµÄÈİÆ÷¡£
-     * @param title ¶Ô»°¿ò±êÌâ¡£
-     * @param isModal Îªtrue±íÊ¾ÊÇÄ£Ì¬¶Ô»°¿ò£¬Îªfalse±íÊ¾ÊÇ·ÇÄ£Ì¬¶Ô»°¿ò¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
-     * @return ÁĞ±í¶¨ÖÆ¶Ô»°¿ò¡£
+     * åˆ›å»ºåˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param owner æ‹¥æœ‰è¯¥å¯¹è¯æ¡†çš„å®¹å™¨ã€‚
+     * @param title å¯¹è¯æ¡†æ ‡é¢˜ã€‚
+     * @param isModal ä¸ºtrueè¡¨ç¤ºæ˜¯æ¨¡æ€å¯¹è¯æ¡†ï¼Œä¸ºfalseè¡¨ç¤ºæ˜¯éæ¨¡æ€å¯¹è¯æ¡†ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
+     * @return åˆ—è¡¨å®šåˆ¶å¯¹è¯æ¡†ã€‚
      */
     public static TableCustomDialog create(JTable body,
                                            TableRowHeader rowHeader,
@@ -947,18 +947,18 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * »ñÈ¡±êÌâ¡£
-     * @param title ±êÌâ¡£
-     * @return Èç¹û±êÌâÎª¿Õ¾Í·µ»ØÈ±Ê¡±êÌâ¡£
+     * è·å–æ ‡é¢˜ã€‚
+     * @param title æ ‡é¢˜ã€‚
+     * @return å¦‚æœæ ‡é¢˜ä¸ºç©ºå°±è¿”å›ç¼ºçœæ ‡é¢˜ã€‚
      */
     protected static String getTitle(String title) {
         return title == null ? I18N_INFO_TABLECUSTOM : title;
     }
 
     /**
-     * ÒÆ¶¯Ñ¡ÔñµÄÁĞ¡£
-     * @param from À´×ÔµÄÅäÖÃ±í¸ñ¡£
-     * @param to ÒÆ¶¯µ½µÄÅäÖÃ±í¸ñ¡£
+     * ç§»åŠ¨é€‰æ‹©çš„åˆ—ã€‚
+     * @param from æ¥è‡ªçš„é…ç½®è¡¨æ ¼ã€‚
+     * @param to ç§»åŠ¨åˆ°çš„é…ç½®è¡¨æ ¼ã€‚
      */
     protected static void moveColumns(TConfigTable from, TConfigTable to) {
         from.stopEditing();
@@ -992,8 +992,8 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * Ó¦ÓÃ¡£
-     * @param ct ÅäÖÃ±í¸ñ¡£
+     * åº”ç”¨ã€‚
+     * @param ct é…ç½®è¡¨æ ¼ã€‚
      */
     protected static void apply(TConfigTable ct) {
         ct.stopEditing();
@@ -1029,12 +1029,12 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     protected String m_customKey;
 
     /**
-     * ±íÌåÒÆ¶¯Ñ¡ÖĞÁĞµ½ĞĞÍ·¶¯×÷¡£
+     * è¡¨ä½“ç§»åŠ¨é€‰ä¸­åˆ—åˆ°è¡Œå¤´åŠ¨ä½œã€‚
      */
     protected Action m_moveToLeft = new AbstractAction() {
 
@@ -1052,7 +1052,7 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * ĞĞÍ·ÒÆ¶¯Ñ¡ÖĞÁĞµ½±íÌå¶¯×÷¡£
+     * è¡Œå¤´ç§»åŠ¨é€‰ä¸­åˆ—åˆ°è¡¨ä½“åŠ¨ä½œã€‚
      */
     protected Action m_moveToRight = new AbstractAction() {
 
@@ -1070,7 +1070,7 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * »Ö¸´È±Ê¡Öµ¶¯×÷¡£
+     * æ¢å¤ç¼ºçœå€¼åŠ¨ä½œã€‚
      */
     protected Action m_restoreDefaults = new AbstractAction() {
 
@@ -1088,7 +1088,7 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * Ó¦ÓÃ¶¯×÷¡£
+     * åº”ç”¨åŠ¨ä½œã€‚
      */
     protected Action m_apply = new AbstractAction() {
 
@@ -1106,7 +1106,7 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * È·¶¨¶¯×÷¡£
+     * ç¡®å®šåŠ¨ä½œã€‚
      */
     protected Action m_ok = new AbstractAction() {
 
@@ -1129,7 +1129,7 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * È¡Ïû¶¯×÷¡£
+     * å–æ¶ˆåŠ¨ä½œã€‚
      */
     protected Action m_cancel = new AbstractAction() {
 
@@ -1147,27 +1147,27 @@ public class TableCustomDialog extends JDialog
     };
 
     /**
-     * ±íÌåµÄÅäÖÃ±í¸ñ¡£
+     * è¡¨ä½“çš„é…ç½®è¡¨æ ¼ã€‚
      */
     protected TConfigTable m_bodyCt;
 
     /**
-     * ĞĞÍ·µÄÅäÖÃ±í¸ñ¡£
+     * è¡Œå¤´çš„é…ç½®è¡¨æ ¼ã€‚
      */
     protected TConfigTable m_rhCt;
 
     /**
-     * ÉÏÒÆ°´Å¥¡£
+     * ä¸Šç§»æŒ‰é’®ã€‚
      */
     protected JButton m_moveToUpBtn = new JButton();
 
     /**
-     * ÏÂÒÆ°´Å¥¡£
+     * ä¸‹ç§»æŒ‰é’®ã€‚
      */
     protected JButton m_moveToDownBtn = new JButton();
 
     /**
-     * È¡Ïû°´Å¥¡£
+     * å–æ¶ˆæŒ‰é’®ã€‚
      */
     protected JButton m_cancelBtn = new JButton(m_cancel);
 
@@ -1186,10 +1186,10 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     public TableCustomDialog(JTable body, TableRowHeader rowHeader, String customKey) {
         super((Frame) null, getTitle(null));
@@ -1197,13 +1197,13 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param owner ÓµÓĞ¸Ã¶Ô»°¿òµÄÈİÆ÷¡£
-     * @param title ¶Ô»°¿ò±êÌâ¡£
-     * @param isModal Îªtrue±íÊ¾ÊÇÄ£Ì¬¶Ô»°¿ò£¬Îªfalse±íÊ¾ÊÇ·ÇÄ£Ì¬¶Ô»°¿ò¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param owner æ‹¥æœ‰è¯¥å¯¹è¯æ¡†çš„å®¹å™¨ã€‚
+     * @param title å¯¹è¯æ¡†æ ‡é¢˜ã€‚
+     * @param isModal ä¸ºtrueè¡¨ç¤ºæ˜¯æ¨¡æ€å¯¹è¯æ¡†ï¼Œä¸ºfalseè¡¨ç¤ºæ˜¯éæ¨¡æ€å¯¹è¯æ¡†ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     public TableCustomDialog(JTable body, TableRowHeader rowHeader, Frame owner, String title, boolean isModal, String customKey) {
         super(owner, getTitle(title), isModal);
@@ -1211,13 +1211,13 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param owner ÓµÓĞ¸Ã¶Ô»°¿òµÄÈİÆ÷¡£
-     * @param title ¶Ô»°¿ò±êÌâ¡£
-     * @param isModal Îªtrue±íÊ¾ÊÇÄ£Ì¬¶Ô»°¿ò£¬Îªfalse±íÊ¾ÊÇ·ÇÄ£Ì¬¶Ô»°¿ò¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param owner æ‹¥æœ‰è¯¥å¯¹è¯æ¡†çš„å®¹å™¨ã€‚
+     * @param title å¯¹è¯æ¡†æ ‡é¢˜ã€‚
+     * @param isModal ä¸ºtrueè¡¨ç¤ºæ˜¯æ¨¡æ€å¯¹è¯æ¡†ï¼Œä¸ºfalseè¡¨ç¤ºæ˜¯éæ¨¡æ€å¯¹è¯æ¡†ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     public TableCustomDialog(JTable body, TableRowHeader rowHeader, Dialog owner, String title, boolean isModal, String customKey) {
         super(owner, getTitle(title), isModal);
@@ -1265,42 +1265,42 @@ public class TableCustomDialog extends JDialog
      * @see java.awt.event.WindowListener#windowClosed(java.awt.event.WindowEvent)
      */
     public void windowClosed(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.WindowListener#windowClosing(java.awt.event.WindowEvent)
      */
     public void windowClosing(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.WindowListener#windowActivated(java.awt.event.WindowEvent)
      */
     public void windowActivated(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.WindowListener#windowDeactivated(java.awt.event.WindowEvent)
      */
     public void windowDeactivated(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.WindowListener#windowIconified(java.awt.event.WindowEvent)
      */
     public void windowIconified(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /**
      * @see java.awt.event.WindowListener#windowDeiconified(java.awt.event.WindowEvent)
      */
     public void windowDeiconified(WindowEvent evt) {
-        /* Ôİ²»±ØÊµÏÖ */
+        /* æš‚ä¸å¿…å®ç° */
     }
 
     /*------------------------------------- WindowFocusListener Public Method -------------------------------------*/
@@ -1359,7 +1359,7 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * Ô¼Êø¡£
+     * çº¦æŸã€‚
      */
     protected void constrain() {
         int[] rows = m_bodyCt.getSelectedRows();
@@ -1383,7 +1383,7 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * Í£Ö¹±à¼­¡£
+     * åœæ­¢ç¼–è¾‘ã€‚
      */
     protected void stopEditing() {
         m_bodyCt.stopEditing();
@@ -1394,7 +1394,7 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ÖØÖÃ¡£
+     * é‡ç½®ã€‚
      */
     protected void reset() {
         m_bodyCt.reset();
@@ -1405,7 +1405,7 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * »Ö¸´È±Ê¡Öµ¡£
+     * æ¢å¤ç¼ºçœå€¼ã€‚
      */
     protected void restoreDefaults() {
         restoreDefaults(m_bodyCt);
@@ -1418,7 +1418,7 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * Ó¦ÓÃ¡£
+     * åº”ç”¨ã€‚
      */
     protected void apply() {
         apply(m_bodyCt);
@@ -1435,10 +1435,10 @@ public class TableCustomDialog extends JDialog
     /*------------------------------------- Private Method -------------------------------------*/
 
     /**
-     * ³õÊ¼»¯¡£
-     * @param body ±íÌå¡£
-     * @param rowHeader ĞĞÍ·¡£
-     * @param customKey ÁĞ±í¶¨ÖÆ¹Ø¼ü×Ö¡£
+     * åˆå§‹åŒ–ã€‚
+     * @param body è¡¨ä½“ã€‚
+     * @param rowHeader è¡Œå¤´ã€‚
+     * @param customKey åˆ—è¡¨å®šåˆ¶å…³é”®å­—ã€‚
      */
     private void initialize(JTable body, TableRowHeader rowHeader, String customKey) {
         if (body == null) {
@@ -1552,8 +1552,8 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ´´½¨ÒÆ¶¯ÊÓÍ¼¡£
-     * @return ÒÆ¶¯ÊÓÍ¼¡£
+     * åˆ›å»ºç§»åŠ¨è§†å›¾ã€‚
+     * @return ç§»åŠ¨è§†å›¾ã€‚
      */
     private JPanel createMoveView() {
         JPanel moveView = new JPanel(new GridBagLayout());
@@ -1607,8 +1607,8 @@ public class TableCustomDialog extends JDialog
     }
 
     /**
-     * ´´½¨²Ù×÷ÊÓÍ¼¡£
-     * @return ²Ù×÷ÊÓÍ¼¡£
+     * åˆ›å»ºæ“ä½œè§†å›¾ã€‚
+     * @return æ“ä½œè§†å›¾ã€‚
      */
     private JPanel createOperationView() {
         JPanel operationView = new JPanel(new GridBagLayout());

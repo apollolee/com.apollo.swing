@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2007-9-20 ÏÂÎç04:10:17
+ * æ­¤ä»£ç åˆ›å»ºäº 2007-9-20 ä¸‹åˆ04:10:17
  */
 package com.apollo.swing.component.common.jtree;
 
@@ -10,22 +10,22 @@ import javax.swing.ImageIcon;
 import javax.swing.tree.DefaultTreeCellRenderer;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTSingleIconTreeCellRenderer.java</p>
- * <p>ÎÄ¼şÃèÊö£ºµ¥Í¼±êÊ÷äÖÈ¾Æ÷¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2007-9-20</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTSingleIconTreeCellRenderer.java</p>
+ * <p>æ–‡ä»¶æè¿°ï¼šå•å›¾æ ‡æ ‘æ¸²æŸ“å™¨ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2007-9-20</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
@@ -41,39 +41,39 @@ public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param imageLocation Ö¸¶¨Í¼ÏñµÄÎ»ÖÃ£¬ÏÈ°Ñ´Ë×Ö·û´®ÏÈµ±³ÉÒ»¸öÏµÍ³×ÊÔ´Ãû×ÖÈ¥²éÕÒ£¬ÕÒ²»µ½¾Íµ±³ÉÒ»¸öÎÄ¼şÃûÈ¥²éÕÒ¡£
-     * @exception IllegalArgumentException Ö¸¶¨Í¼ÏñµÄÎ»ÖÃÎª¿ÕÊ±Å×³ö´ËÒì³£¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param imageLocation æŒ‡å®šå›¾åƒçš„ä½ç½®ï¼Œå…ˆæŠŠæ­¤å­—ç¬¦ä¸²å…ˆå½“æˆä¸€ä¸ªç³»ç»Ÿèµ„æºåå­—å»æŸ¥æ‰¾ï¼Œæ‰¾ä¸åˆ°å°±å½“æˆä¸€ä¸ªæ–‡ä»¶åå»æŸ¥æ‰¾ã€‚
+     * @exception IllegalArgumentException æŒ‡å®šå›¾åƒçš„ä½ç½®ä¸ºç©ºæ—¶æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public SingleIconTreeCellRenderer(String imageLocation) {
-        /* ¶ÔÏóÅĞ¿Õ */
+        /* å¯¹è±¡åˆ¤ç©º */
         if (imageLocation == null) {
             throw new IllegalArgumentException("Image location is null !");
         }
 
-        /* ´ÓimageLocationÖ¸¶¨µÄÎ»ÖÃ»ñÈ¡ÏµÍ³×ÊÔ´µÄURL */
+        /* ä»imageLocationæŒ‡å®šçš„ä½ç½®è·å–ç³»ç»Ÿèµ„æºçš„URL */
         URL imageUrl = ClassLoader.getSystemResource(imageLocation);
 
-        /* ÒÀ¾İ»ñÈ¡µÄÏµÍ³×ÊÔ´µÄURL½øĞĞ²»Í¬µÄ´¦Àí */
-        if (imageUrl == null) { //»ñÈ¡²»µ½ÏµÍ³×ÊÔ´
-            setSingleIcon(new ImageIcon(imageLocation)); //°ÑimageLocationµ±³ÉÒ»¸öfilenameÈ¥´¦Àí
+        /* ä¾æ®è·å–çš„ç³»ç»Ÿèµ„æºçš„URLè¿›è¡Œä¸åŒçš„å¤„ç† */
+        if (imageUrl == null) { //è·å–ä¸åˆ°ç³»ç»Ÿèµ„æº
+            setSingleIcon(new ImageIcon(imageLocation)); //æŠŠimageLocationå½“æˆä¸€ä¸ªfilenameå»å¤„ç†
 
-        } else { //»ñÈ¡µ½ÁËÏµÍ³×ÊÔ´
+        } else { //è·å–åˆ°äº†ç³»ç»Ÿèµ„æº
             setSingleIcon(new ImageIcon(imageUrl));
         }
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param imageUrl Ö¸¶¨Í¼ÏñµÄµÄURLµØÖ·¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param imageUrl æŒ‡å®šå›¾åƒçš„çš„URLåœ°å€ã€‚
      */
     public SingleIconTreeCellRenderer(URL imageUrl) {
         this(new ImageIcon(imageUrl));
     }
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param singleIcon Ö¸¶¨Í¼±ê¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param singleIcon æŒ‡å®šå›¾æ ‡ã€‚
      * @see SingleIconTreeCellRenderer#setSingleIcon(Icon)
      */
     public SingleIconTreeCellRenderer(Icon singleIcon) {
@@ -99,17 +99,17 @@ public class SingleIconTreeCellRenderer extends DefaultTreeCellRenderer {
     /*------------------------------------- Public Method -------------------------------------*/
 
     /**
-     * ÉèÖÃµ¥Ò»Í¼±ê¡£
-     * @param singleIcon Ö¸¶¨Í¼±ê¡£
-     * @exception IllegalArgumentException Ö¸¶¨Í¼±êÎª¿ÕÊ±Å×³ö´ËÒì³£¡£
+     * è®¾ç½®å•ä¸€å›¾æ ‡ã€‚
+     * @param singleIcon æŒ‡å®šå›¾æ ‡ã€‚
+     * @exception IllegalArgumentException æŒ‡å®šå›¾æ ‡ä¸ºç©ºæ—¶æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public void setSingleIcon(Icon singleIcon) {
-        /* ¶ÔÏóÅĞ¿Õ */
+        /* å¯¹è±¡åˆ¤ç©º */
         if (singleIcon == null) {
             throw new IllegalArgumentException("Single icon is null !");
         }
 
-        /* °ÑÈ±Ê¡Ê÷äÖÈ¾Æ÷µÄËùÓĞÍ¼±êÉèÖÃÎªÖ¸¶¨µÄÍ¼±ê */
+        /* æŠŠç¼ºçœæ ‘æ¸²æŸ“å™¨çš„æ‰€æœ‰å›¾æ ‡è®¾ç½®ä¸ºæŒ‡å®šçš„å›¾æ ‡ */
         setOpenIcon(singleIcon);
         setClosedIcon(singleIcon);
         setLeafIcon(singleIcon);

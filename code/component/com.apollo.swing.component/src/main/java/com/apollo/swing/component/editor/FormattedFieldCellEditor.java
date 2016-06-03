@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2009-1-15 ÉÏÎç11:07:04¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2009-1-15 ä¸Šåˆ11:07:04ã€‚
  */
 package com.apollo.swing.component.editor;
 
@@ -20,22 +20,22 @@ import javax.swing.border.LineBorder;
 import com.apollo.base.util.IBaseConstants;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºTFormattedFieldCellEditor.java</p>
- * <p>ÀàĞÍÃèÊö£º¸ñÊ½»¯ÊäÈë¿òµ¥Ôª¸ñ±à¼­Æ÷Àà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2009-1-15</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šTFormattedFieldCellEditor.java</p>
+ * <p>ç±»å‹æè¿°ï¼šæ ¼å¼åŒ–è¾“å…¥æ¡†å•å…ƒæ ¼ç¼–è¾‘å™¨ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2009-1-15</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class FormattedFieldCellEditor extends DefaultCellEditor implements FocusListener, IBaseConstants {
@@ -99,7 +99,7 @@ public class FormattedFieldCellEditor extends DefaultCellEditor implements Focus
     /*------------------------------------- Protected Field -------------------------------------*/
 
     /**
-     * ÓÃÓÚ¶Ô»°¿òµÄ±êÌâ¡£
+     * ç”¨äºå¯¹è¯æ¡†çš„æ ‡é¢˜ã€‚
      */
     protected String m_title;
 
@@ -118,8 +118,8 @@ public class FormattedFieldCellEditor extends DefaultCellEditor implements Focus
     /*------------------------------------- Public Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
-     * @param field ¸ñÊ½»¯ÊäÈë¿ò¡£
+     * æ„é€ æ–¹æ³•ã€‚
+     * @param field æ ¼å¼åŒ–è¾“å…¥æ¡†ã€‚
      */
     public FormattedFieldCellEditor(JFormattedTextField field) {
         super(field);
@@ -203,7 +203,7 @@ public class FormattedFieldCellEditor extends DefaultCellEditor implements Focus
      * @see java.awt.event.FocusListener#focusGained(java.awt.event.FocusEvent)
      */
     public void focusGained(FocusEvent evt) {
-        /* Ôİ²»±Ø´¦Àí */
+        /* æš‚ä¸å¿…å¤„ç† */
     }
 
     /**
@@ -218,8 +218,8 @@ public class FormattedFieldCellEditor extends DefaultCellEditor implements Focus
     /*------------------------------------- Protected Method -------------------------------------*/
 
     /**
-     * »ñÈ¡¸ñÊ½»¯ÊäÈë¿ò¡£
-     * @return ¸ñÊ½»¯ÊäÈë¿ò¡£
+     * è·å–æ ¼å¼åŒ–è¾“å…¥æ¡†ã€‚
+     * @return æ ¼å¼åŒ–è¾“å…¥æ¡†ã€‚
      */
     protected JFormattedTextField getFormattedField() {
         return (JFormattedTextField) editorComponent;
